@@ -1,0 +1,388 @@
+{
+  "version": "2.0",
+  "title": "XC Photography - Footer Section",
+  "type": "section",
+  "description": "Footer with essential page links, social media icons, and copyright text for complete site navigation",
+  "section": {
+    "id": "footer-section",
+    "elType": "section",
+    "settings": {
+      "layout": "boxed",
+      "content_width": {
+        "unit": "px",
+        "size": 1200
+      },
+      "gap": "default",
+      "padding": {
+        "top": "60",
+        "right": "20",
+        "bottom": "40",
+        "left": "20",
+        "unit": "px",
+        "isLinked": false
+      },
+      "background_background": "classic",
+      "background_color": "#1a1a1a",
+      "border_border": "solid",
+      "border_width": {
+        "top": "3",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "unit": "px",
+        "isLinked": false
+      },
+      "border_color": "#d4af37"
+    },
+    "elements": [
+      {
+        "id": "footer-column-1",
+        "elType": "column",
+        "settings": {
+          "width": "33.333",
+          "_column_size": 33,
+          "content_position": "top"
+        },
+        "elements": [
+          {
+            "id": "footer-brand-heading",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "XC Photography",
+              "align": "left",
+              "align_tablet": "center",
+              "align_mobile": "center",
+              "header_size": "h3",
+              "title_color": "#d4af37",
+              "typography_typography": "custom",
+              "typography_font_family": "Montserrat",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 24,
+                "sizes": {
+                  "desktop": 24,
+                  "tablet": 22,
+                  "mobile": 20
+                }
+              },
+              "typography_font_weight": "700",
+              "typography_letter_spacing": {
+                "unit": "px",
+                "size": 1
+              },
+              "margin": {
+                "top": "0",
+                "right": "0",
+                "bottom": "20",
+                "left": "0",
+                "unit": "px"
+              }
+            }
+          },
+          {
+            "id": "footer-brand-text",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style='color: #cccccc; font-size: 14px; line-height: 1.6;'>Branding & Documentary Photography that demands attention. Creating iconic imagery for iconic brands with an edge.</p>",
+              "align": "left",
+              "align_tablet": "center",
+              "align_mobile": "center",
+              "text_color": "#cccccc",
+              "typography_typography": "custom",
+              "typography_font_family": "Open Sans",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 14
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.6
+              },
+              "margin": {
+                "top": "0",
+                "right": "0",
+                "bottom": "25",
+                "left": "0",
+                "unit": "px"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "footer-column-2",
+        "elType": "column",
+        "settings": {
+          "width": "33.333",
+          "_column_size": 33,
+          "content_position": "top"
+        },
+        "elements": [
+          {
+            "id": "footer-links-heading",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Quick Links",
+              "align": "left",
+              "align_tablet": "center",
+              "align_mobile": "center",
+              "header_size": "h4",
+              "title_color": "#ffffff",
+              "typography_typography": "custom",
+              "typography_font_family": "Montserrat",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 18,
+                "sizes": {
+                  "desktop": 18,
+                  "tablet": 17,
+                  "mobile": 16
+                }
+              },
+              "typography_font_weight": "600",
+              "margin": {
+                "top": "0",
+                "right": "0",
+                "bottom": "20",
+                "left": "0",
+                "unit": "px"
+              }
+            }
+          },
+          {
+            "id": "footer-nav-menu",
+            "elType": "widget",
+            "widgetType": "nav-menu",
+            "settings": {
+              "layout": "vertical",
+              "align_items": "left",
+              "align_items_tablet": "center",
+              "align_items_mobile": "center",
+              "pointer": "none",
+              "menu_items": [
+                {
+                  "text": "Home",
+                  "url": "#home",
+                  "is_external": false
+                },
+                {
+                  "text": "About",
+                  "url": "#about",
+                  "is_external": false
+                },
+                {
+                  "text": "Services",
+                  "url": "#services",
+                  "is_external": false
+                },
+                {
+                  "text": "Portfolio",
+                  "url": "#portfolio",
+                  "is_external": false
+                },
+                {
+                  "text": "Contact",
+                  "url": "#contact",
+                  "is_external": false
+                }
+              ],
+              "color_text": "#cccccc",
+              "color_text_hover": "#d4af37",
+              "typography_typography": "custom",
+              "typography_font_family": "Open Sans",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 15
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 2.2
+              },
+              "margin": {
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "unit": "px"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "footer-column-3",
+        "elType": "column",
+        "settings": {
+          "width": "33.333",
+          "_column_size": 33,
+          "content_position": "top"
+        },
+        "elements": [
+          {
+            "id": "footer-social-heading",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Follow Us",
+              "align": "left",
+              "align_tablet": "center",
+              "align_mobile": "center",
+              "header_size": "h4",
+              "title_color": "#ffffff",
+              "typography_typography": "custom",
+              "typography_font_family": "Montserrat",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 18,
+                "sizes": {
+                  "desktop": 18,
+                  "tablet": 17,
+                  "mobile": 16
+                }
+              },
+              "typography_font_weight": "600",
+              "margin": {
+                "top": "0",
+                "right": "0",
+                "bottom": "20",
+                "left": "0",
+                "unit": "px"
+              }
+            }
+          },
+          {
+            "id": "footer-social-icons",
+            "elType": "widget",
+            "widgetType": "social-icons",
+            "settings": {
+              "social_icon_list": [
+                {
+                  "social": "fa-facebook",
+                  "link": {
+                    "url": "https://facebook.com/xcphotography",
+                    "is_external": true
+                  }
+                },
+                {
+                  "social": "fa-instagram",
+                  "link": {
+                    "url": "https://instagram.com/xcphotography",
+                    "is_external": true
+                  }
+                },
+                {
+                  "social": "fa-twitter",
+                  "link": {
+                    "url": "https://twitter.com/xcphotography",
+                    "is_external": true
+                  }
+                },
+                {
+                  "social": "fa-linkedin",
+                  "link": {
+                    "url": "https://linkedin.com/company/xcphotography",
+                    "is_external": true
+                  }
+                },
+                {
+                  "social": "fa-pinterest",
+                  "link": {
+                    "url": "https://pinterest.com/xcphotography",
+                    "is_external": true
+                  }
+                }
+              ],
+              "shape": "circle",
+              "view": "default",
+              "align": "left",
+              "align_tablet": "center",
+              "align_mobile": "center",
+              "icon_color": "#ffffff",
+              "icon_color_hover": "#d4af37",
+              "icon_size": {
+                "unit": "px",
+                "size": 20
+              },
+              "icon_padding": {
+                "unit": "em",
+                "size": 0.8
+              },
+              "border_border": "solid",
+              "border_width": {
+                "top": "2",
+                "right": "2",
+                "bottom": "2",
+                "left": "2",
+                "unit": "px",
+                "isLinked": true
+              },
+              "border_color": "#666666",
+              "border_hover_color": "#d4af37",
+              "margin": {
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "unit": "px"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "copyright_section": {
+    "id": "footer-copyright",
+    "elType": "section",
+    "settings": {
+      "layout": "full_width",
+      "gap": "no",
+      "padding": {
+        "top": "25",
+        "right": "20",
+        "bottom": "25",
+        "left": "20",
+        "unit": "px",
+        "isLinked": false
+      },
+      "background_background": "classic",
+      "background_color": "#0f0f0f"
+    },
+    "elements": [
+      {
+        "id": "copyright-column",
+        "elType": "column",
+        "settings": {
+          "width": "100",
+          "_column_size": 100,
+          "content_position": "middle"
+        },
+        "elements": [
+          {
+            "id": "copyright-text",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style='text-align: center; color: #999999; font-size: 13px;'>&copy; 2025 XC Photography. All rights reserved. | <a href='#privacy' style='color: #d4af37; text-decoration: none;'>Privacy Policy</a> | <a href='#terms' style='color: #d4af37; text-decoration: none;'>Terms of Service</a></p>",
+              "align": "center",
+              "text_color": "#999999",
+              "typography_typography": "custom",
+              "typography_font_family": "Open Sans",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 13
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.5
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

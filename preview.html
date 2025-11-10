@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XC Photography Homepage - Template Preview</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -145,27 +146,206 @@
             color: #1a1a1a;
         }
         
-        /* Placeholder Section */
-        .placeholder-section {
+        /* Text Boxes / Services Section */
+        .text-boxes-section {
             background-color: #ffffff;
             padding: 80px 20px;
-            text-align: center;
         }
         
-        .placeholder-heading {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 36px;
-            font-weight: 600;
-            margin-bottom: 20px;
-            color: #1a1a1a;
-        }
-        
-        .placeholder-text {
-            font-size: 18px;
-            color: #666666;
-            line-height: 1.8;
-            max-width: 800px;
+        .text-boxes-grid {
+            max-width: 1200px;
             margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .text-box {
+            background-color: #fafafa;
+            border-bottom: 3px solid #d4af37;
+            padding: 40px 30px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .text-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .text-box-icon {
+            color: #d4af37;
+            font-size: 60px;
+            margin-bottom: 25px;
+        }
+        
+        .text-box-heading {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 26px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+        
+        .text-box-content {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            color: #666666;
+            line-height: 1.7;
+        }
+        
+        /* Bottom Hero Section */
+        .bottom-hero-section {
+            position: relative;
+            min-height: 80vh;
+            background: linear-gradient(180deg, rgba(26,26,26,0.6) 0%, rgba(26,26,26,0.8) 100%),
+                        url('https://via.placeholder.com/1920x900/2a2a2a/ffffff?text=Final+CTA+Background');
+            background-size: cover;
+            background-position: center center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        
+        .bottom-hero-content {
+            max-width: 900px;
+            z-index: 2;
+        }
+        
+        .bottom-hero-heading {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+            font-weight: 700;
+            color: #ffffff;
+            line-height: 1.3;
+            margin-bottom: 25px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+        }
+        
+        .bottom-hero-description {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 20px;
+            font-weight: 300;
+            color: #f0f0f0;
+            line-height: 1.6;
+            margin-bottom: 45px;
+            padding: 0 20px;
+        }
+        
+        /* Footer Section */
+        .footer-section {
+            background-color: #1a1a1a;
+            border-top: 3px solid #d4af37;
+            padding: 60px 20px 40px;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column {
+            color: #cccccc;
+        }
+        
+        .footer-heading {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: #d4af37;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-text {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #cccccc;
+        }
+        
+        .footer-subheading {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+        
+        .footer-nav {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-nav li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-nav a {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 15px;
+            color: #cccccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-nav a:hover {
+            color: #d4af37;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border: 2px solid #666666;
+            border-radius: 50%;
+            color: #ffffff;
+            font-size: 20px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            border-color: #d4af37;
+            color: #d4af37;
+            transform: translateY(-3px);
+        }
+        
+        .footer-copyright {
+            background-color: #0f0f0f;
+            text-align: center;
+            padding: 25px 20px;
+            margin: 0 -20px -40px -20px;
+        }
+        
+        .footer-copyright p {
+            font-size: 13px;
+            color: #999999;
+            line-height: 1.5;
+        }
+        
+        .footer-copyright a {
+            color: #d4af37;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-copyright a:hover {
+            color: #b8941f;
         }
         
         /* Responsive Design */
@@ -182,12 +362,41 @@
                 font-size: 28px;
             }
             
-            .placeholder-heading {
-                font-size: 24px;
-            }
-            
             .gallery-grid {
                 grid-template-columns: 1fr;
+            }
+            
+            .text-boxes-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .text-box-heading {
+                font-size: 22px;
+            }
+            
+            .text-box-content {
+                font-size: 14px;
+            }
+            
+            .bottom-hero-heading {
+                font-size: 28px;
+            }
+            
+            .bottom-hero-description {
+                font-size: 16px;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .footer-nav {
+                text-align: center;
+            }
+            
+            .social-icons {
+                justify-content: center;
             }
             
             .cta-buttons {
@@ -214,21 +423,55 @@
                 font-size: 36px;
             }
             
-            .placeholder-heading {
-                font-size: 30px;
+            .text-box-heading {
+                font-size: 24px;
+            }
+            
+            .bottom-hero-heading {
+                font-size: 38px;
+            }
+            
+            .bottom-hero-description {
+                font-size: 18px;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Hero Section -->
+    <!-- Top Hero Section -->
     <section class="hero-section">
         <div class="hero-content">
             <h1 class="hero-heading">Branding &amp; Documentary Photography That Demands Attention</h1>
             <h2 class="hero-subheading">Iconic Imagery for Iconic Brands with an Edge</h2>
             <div class="cta-buttons">
-                <a href="#consultation" class="btn btn-primary">Book Your Free Consultation</a>
-                <a href="#portfolio" class="btn btn-secondary">View Portfolio</a>
+                <a href="#contact" class="btn btn-primary">Book Your Free Consultation</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Text Boxes / Services Section -->
+    <section class="text-boxes-section">
+        <div class="text-boxes-grid">
+            <div class="text-box">
+                <div class="text-box-icon">
+                    <i class="fas fa-camera-retro"></i>
+                </div>
+                <h3 class="text-box-heading">Branding Photography</h3>
+                <p class="text-box-content">Elevate your brand identity with striking imagery that tells your unique story. Our branding photography creates powerful visual narratives that demand attention and leave lasting impressions.</p>
+            </div>
+            <div class="text-box">
+                <div class="text-box-icon">
+                    <i class="fas fa-film"></i>
+                </div>
+                <h3 class="text-box-heading">Documentary Storytelling</h3>
+                <p class="text-box-content">Capture authentic moments and genuine emotions through cinematic documentary photography. We specialize in telling real stories with raw honesty and artistic vision that moves your audience.</p>
+            </div>
+            <div class="text-box">
+                <div class="text-box-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <h3 class="text-box-heading">Creative Direction</h3>
+                <p class="text-box-content">Transform your vision into reality with expert creative direction that brings edge and sophistication to every project. We craft compelling visual concepts that set your brand apart from the crowd.</p>
             </div>
         </div>
     </section>
@@ -252,13 +495,46 @@
         </div>
     </section>
     
-    <!-- Placeholder Section -->
-    <section class="placeholder-section">
-        <h2 class="placeholder-heading">Additional Content Section</h2>
-        <p class="placeholder-text">
-            This is a placeholder section for additional content. You can add testimonials, 
-            services, team information, or any other relevant content here.
-        </p>
+    <!-- Bottom Hero Section / Final CTA -->
+    <section class="bottom-hero-section">
+        <div class="bottom-hero-content">
+            <h2 class="bottom-hero-heading">Ready to Tell Your Story?</h2>
+            <p class="bottom-hero-description">Let's create imagery that captures the essence of your brand and tells a story that resonates. Book your consultation today and discover what makes your brand truly iconic.</p>
+            <a href="#contact" class="btn btn-primary">Contact Us Now</a>
+        </div>
     </section>
+    
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3 class="footer-heading">XC Photography</h3>
+                <p class="footer-text">Branding & Documentary Photography that demands attention. Creating iconic imagery for iconic brands with an edge.</p>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-subheading">Quick Links</h4>
+                <ul class="footer-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-subheading">Follow Us</h4>
+                <div class="social-icons">
+                    <a href="https://facebook.com/xcphotography" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com/xcphotography" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/xcphotography" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="https://linkedin.com/company/xcphotography" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://pinterest.com/xcphotography" target="_blank" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2025 XC Photography. All rights reserved. | <a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
+        </div>
+    </footer>
 </body>
 </html>
