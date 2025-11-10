@@ -15,6 +15,7 @@
         body {
             font-family: 'Open Sans', sans-serif;
             color: #1a1a1a;
+            overflow-x: hidden;
         }
         
         /* Hero Section */
@@ -22,9 +23,10 @@
             position: relative;
             height: 100vh;
             background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.7) 100%), 
-                        url('https://via.placeholder.com/1920x1080/1a1a1a/ffffff?text=Cinematic+Background');
+                        url('https://via.placeholder.com/1920x1080/1a1a1a/ffffff?text=Woman+Hair+Eye');
             background-size: cover;
             background-position: center center;
+            background-attachment: fixed;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -98,8 +100,109 @@
             background-color: rgba(255,255,255,0.1);
         }
         
-        /* Gallery Section */
-        .gallery-section {
+        /* Bar with 4 Text Boxes (Gallery Bar) */
+        .gallery-bar {
+            background-color: #2a2a2a;
+            padding: 40px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .gallery-bar-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0;
+        }
+        
+        .gallery-bar-item {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.5s ease;
+        }
+        
+        .gallery-bar-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-bar-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .gallery-bar-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 100%);
+            display: flex;
+            align-items: flex-end;
+            padding: 30px;
+            transition: background 0.3s ease;
+        }
+        
+        .gallery-bar-item:hover .gallery-bar-overlay {
+            background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.9) 100%);
+        }
+        
+        .gallery-bar-text {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+            color: #ffffff;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        /* Parallax Transition Section */
+        .parallax-section {
+            position: relative;
+            height: 100vh;
+            background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.7) 100%), 
+                        url('https://via.placeholder.com/1920x1080/1a1a1a/ffffff?text=Triumph+Bike+Snow');
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .cta-banner {
+            background: rgba(26, 26, 26, 0.9);
+            padding: 60px 40px;
+            max-width: 800px;
+            text-align: center;
+            border: 2px solid #d4af37;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+        }
+        
+        .cta-banner-heading {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 42px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+        
+        .cta-banner-text {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 18px;
+            color: #f0f0f0;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+        
+        /* Masonry Gallery */
+        .masonry-gallery {
             background-color: #fafafa;
             padding: 80px 20px;
         }
@@ -113,59 +216,326 @@
             color: #1a1a1a;
         }
         
-        .gallery-grid {
+        .masonry-grid {
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-auto-rows: 250px;
+            gap: 15px;
         }
         
-        .gallery-item {
-            text-align: center;
+        .masonry-item {
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
         }
         
-        .gallery-item img {
+        .masonry-item:nth-child(1) {
+            grid-row: span 2;
+        }
+        
+        .masonry-item:nth-child(4) {
+            grid-row: span 2;
+        }
+        
+        .masonry-item:nth-child(7) {
+            grid-row: span 2;
+        }
+        
+        .masonry-item img {
             width: 100%;
-            height: auto;
-            transition: transform 0.3s ease;
-            display: block;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
         }
         
-        .gallery-item:hover img {
-            transform: scale(1.05);
+        .masonry-item:hover img {
+            transform: scale(1.1);
         }
         
-        .gallery-caption {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 20px;
-            font-weight: 600;
-            margin-top: 15px;
-            margin-bottom: 30px;
-            color: #1a1a1a;
-        }
-        
-        /* Placeholder Section */
-        .placeholder-section {
+        /* Text Content Block */
+        .text-block {
             background-color: #ffffff;
             padding: 80px 20px;
             text-align: center;
         }
         
-        .placeholder-heading {
+        .text-block-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .text-block-heading {
             font-family: 'Montserrat', sans-serif;
-            font-size: 36px;
-            font-weight: 600;
-            margin-bottom: 20px;
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 30px;
             color: #1a1a1a;
         }
         
-        .placeholder-text {
+        .text-block-content {
             font-size: 18px;
             color: #666666;
-            line-height: 1.8;
-            max-width: 800px;
+            line-height: 1.9;
+            margin-bottom: 20px;
+        }
+        
+        /* Checkerboard Layout */
+        .checkerboard-section {
+            background-color: #f5f5f5;
+        }
+        
+        .checkerboard-row {
+            display: flex;
+            align-items: center;
+            max-width: 1400px;
             margin: 0 auto;
+        }
+        
+        .checkerboard-row.reverse {
+            flex-direction: row-reverse;
+        }
+        
+        .checkerboard-image {
+            flex: 1;
+            min-height: 500px;
+        }
+        
+        .checkerboard-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .checkerboard-content {
+            flex: 1;
+            padding: 60px;
+            background-color: #ffffff;
+        }
+        
+        .checkerboard-heading {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            color: #1a1a1a;
+        }
+        
+        .checkerboard-text {
+            font-size: 17px;
+            color: #666666;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        
+        /* Additional Section 1: Statistics Bar */
+        .stats-section {
+            background-color: #1a1a1a;
+            padding: 60px 20px;
+        }
+        
+        .stats-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            text-align: center;
+        }
+        
+        .stat-item {
+            color: #ffffff;
+        }
+        
+        .stat-number {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+            font-weight: 700;
+            color: #d4af37;
+            margin-bottom: 10px;
+        }
+        
+        .stat-label {
+            font-size: 16px;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Additional Section 2: Process Timeline */
+        .process-section {
+            background-color: #ffffff;
+            padding: 80px 20px;
+        }
+        
+        .process-timeline {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .process-step {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 50px;
+            align-items: flex-start;
+        }
+        
+        .process-number {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 72px;
+            font-weight: 700;
+            color: #d4af37;
+            line-height: 1;
+            opacity: 0.3;
+            min-width: 80px;
+        }
+        
+        .process-content {
+            flex: 1;
+        }
+        
+        .process-heading {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+        
+        .process-text {
+            font-size: 16px;
+            color: #666666;
+            line-height: 1.8;
+        }
+        
+        /* Additional Section 3: Video Showcase */
+        .video-section {
+            position: relative;
+            height: 80vh;
+            background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%), 
+                        url('https://via.placeholder.com/1920x1080/3a3a3a/ffffff?text=Video+Background');
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .video-play-button {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: rgba(212, 175, 55, 0.9);
+            border: 3px solid #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .video-play-button:hover {
+            transform: scale(1.1);
+            background-color: #d4af37;
+        }
+        
+        .video-play-button::after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 25px solid #ffffff;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            margin-left: 5px;
+        }
+        
+        /* Additional Section 4: Testimonials Carousel */
+        .testimonials-section {
+            background-color: #f5f5f5;
+            padding: 80px 20px;
+        }
+        
+        .testimonials-container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .testimonial {
+            padding: 40px;
+        }
+        
+        .testimonial-quote {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 24px;
+            font-style: italic;
+            color: #1a1a1a;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+        
+        .testimonial-quote::before {
+            content: '"';
+            font-size: 60px;
+            color: #d4af37;
+            line-height: 0;
+            display: block;
+            margin-bottom: -20px;
+        }
+        
+        .testimonial-author {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 5px;
+        }
+        
+        .testimonial-role {
+            font-size: 14px;
+            color: #666666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Additional Section 5: Brand Partners */
+        .partners-section {
+            background-color: #ffffff;
+            padding: 60px 20px;
+        }
+        
+        .partners-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .partner-logo {
+            text-align: center;
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .partner-logo:hover {
+            opacity: 1;
+        }
+        
+        .partner-logo img {
+            max-width: 120px;
+            height: auto;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+        }
+        
+        .partner-logo:hover img {
+            filter: grayscale(0%);
         }
         
         /* Responsive Design */
@@ -182,12 +552,57 @@
                 font-size: 28px;
             }
             
-            .placeholder-heading {
-                font-size: 24px;
+            .gallery-bar-grid {
+                grid-template-columns: 1fr;
             }
             
-            .gallery-grid {
+            .gallery-bar-item {
+                height: 300px;
+            }
+            
+            .masonry-grid {
                 grid-template-columns: 1fr;
+                grid-auto-rows: 300px;
+            }
+            
+            .masonry-item:nth-child(n) {
+                grid-row: span 1;
+            }
+            
+            .checkerboard-row,
+            .checkerboard-row.reverse {
+                flex-direction: column;
+            }
+            
+            .checkerboard-image {
+                min-height: 300px;
+            }
+            
+            .checkerboard-content {
+                padding: 40px 30px;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 30px;
+            }
+            
+            .stat-number {
+                font-size: 36px;
+            }
+            
+            .process-step {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .process-number {
+                font-size: 48px;
+            }
+            
+            .partners-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
             }
             
             .cta-buttons {
@@ -198,6 +613,22 @@
             .btn {
                 width: 100%;
                 max-width: 300px;
+            }
+            
+            .cta-banner {
+                padding: 40px 25px;
+            }
+            
+            .cta-banner-heading {
+                font-size: 28px;
+            }
+            
+            .text-block-heading {
+                font-size: 28px;
+            }
+            
+            .checkerboard-heading {
+                font-size: 26px;
             }
         }
         
@@ -214,14 +645,22 @@
                 font-size: 36px;
             }
             
-            .placeholder-heading {
-                font-size: 30px;
+            .gallery-bar-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .partners-grid {
+                grid-template-columns: repeat(3, 1fr);
             }
         }
     </style>
 </head>
 <body>
-    <!-- Hero Section -->
+    <!-- 1. Hero Section (Top) -->
     <section class="hero-section">
         <div class="hero-content">
             <h1 class="hero-heading">Branding &amp; Documentary Photography That Demands Attention</h1>
@@ -233,32 +672,262 @@
         </div>
     </section>
     
-    <!-- Gallery Section -->
-    <section class="gallery-section">
-        <h2 class="section-title">Our Work</h2>
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="https://via.placeholder.com/600x800/2a2a2a/ffffff?text=Striking+Stories" alt="Striking Stories">
-                <h3 class="gallery-caption">Striking Stories</h3>
+    <!-- 2. Bar with 4 Text Boxes (Gallery) -->
+    <section class="gallery-bar">
+        <div class="gallery-bar-grid">
+            <div class="gallery-bar-item">
+                <img src="https://via.placeholder.com/600x800/2a2a2a/ffffff?text=Urban+Edge" alt="Urban Edge">
+                <div class="gallery-bar-overlay">
+                    <div class="gallery-bar-text">Urban Edge</div>
+                </div>
             </div>
-            <div class="gallery-item">
-                <img src="https://via.placeholder.com/600x700/3a3a3a/ffffff?text=Embracing+Individuality" alt="Embracing Individuality">
-                <h3 class="gallery-caption">Embracing Individuality</h3>
+            <div class="gallery-bar-item">
+                <img src="https://via.placeholder.com/600x800/3a3a3a/ffffff?text=Raw+Emotion" alt="Raw Emotion">
+                <div class="gallery-bar-overlay">
+                    <div class="gallery-bar-text">Raw Emotion</div>
+                </div>
             </div>
-            <div class="gallery-item">
-                <img src="https://via.placeholder.com/600x900/1a1a1a/ffffff?text=Timeless+Beauty" alt="Timeless Beauty">
-                <h3 class="gallery-caption">Timeless Beauty</h3>
+            <div class="gallery-bar-item">
+                <img src="https://via.placeholder.com/600x800/1a1a1a/ffffff?text=Bold+Stories" alt="Bold Stories">
+                <div class="gallery-bar-overlay">
+                    <div class="gallery-bar-text">Bold Stories</div>
+                </div>
+            </div>
+            <div class="gallery-bar-item">
+                <img src="https://via.placeholder.com/600x800/4a4a4a/ffffff?text=Timeless+Moments" alt="Timeless Moments">
+                <div class="gallery-bar-overlay">
+                    <div class="gallery-bar-text">Timeless Moments</div>
+                </div>
             </div>
         </div>
     </section>
     
-    <!-- Placeholder Section -->
-    <section class="placeholder-section">
-        <h2 class="placeholder-heading">Additional Content Section</h2>
-        <p class="placeholder-text">
-            This is a placeholder section for additional content. You can add testimonials, 
-            services, team information, or any other relevant content here.
-        </p>
+    <!-- 3. Parallax Transition Section -->
+    <section class="parallax-section">
+        <div class="cta-banner">
+            <h2 class="cta-banner-heading">Capture Your Brand's Essence</h2>
+            <p class="cta-banner-text">
+                Every image tells a story. Let's create something extraordinary together 
+                that resonates with your audience and elevates your brand to new heights.
+            </p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Start Your Journey</a>
+            </div>
+        </div>
     </section>
+    
+    <!-- 4. Masonry Gallery -->
+    <section class="masonry-gallery">
+        <h2 class="section-title">Our Portfolio</h2>
+        <div class="masonry-grid">
+            <div class="masonry-item">
+                <img src="https://via.placeholder.com/600x800/2a2a2a/ffffff?text=Image+1" alt="Portfolio Image 1">
+            </div>
+            <div class="masonry-item">
+                <img src="https://via.placeholder.com/600x400/3a3a3a/ffffff?text=Image+2" alt="Portfolio Image 2">
+            </div>
+            <div class="masonry-item">
+                <img src="https://via.placeholder.com/600x400/1a1a1a/ffffff?text=Image+3" alt="Portfolio Image 3">
+            </div>
+            <div class="masonry-item">
+                <img src="https://via.placeholder.com/600x800/4a4a4a/ffffff?text=Image+4" alt="Portfolio Image 4">
+            </div>
+            <div class="masonry-item">
+                <img src="https://via.placeholder.com/600x400/5a5a5a/ffffff?text=Image+5" alt="Portfolio Image 5">
+            </div>
+            <div class="masonry-item">
+                <img src="https://via.placeholder.com/600x400/2a2a2a/ffffff?text=Image+6" alt="Portfolio Image 6">
+            </div>
+            <div class="masonry-item">
+                <img src="https://via.placeholder.com/600x800/3a3a3a/ffffff?text=Image+7" alt="Portfolio Image 7">
+            </div>
+            <div class="masonry-item">
+                <img src="https://via.placeholder.com/600x400/1a1a1a/ffffff?text=Image+8" alt="Portfolio Image 8">
+            </div>
+        </div>
+    </section>
+    
+    <!-- 5. Blocks of Content (Text Focus) -->
+    <section class="text-block">
+        <div class="text-block-container">
+            <h2 class="text-block-heading">The Art of Visual Storytelling</h2>
+            <p class="text-block-content">
+                At XC Photography, we believe that every brand has a unique story waiting to be told. 
+                Our approach combines technical excellence with creative vision to produce imagery 
+                that doesn't just capture moments—it creates them.
+            </p>
+            <p class="text-block-content">
+                From bold branding campaigns to intimate documentary work, we bring an edge to every project. 
+                Our photography demands attention, challenges conventions, and leaves a lasting impression 
+                that resonates with your audience long after they've scrolled past.
+            </p>
+            <p class="text-block-content">
+                We work with brands that aren't afraid to stand out, that value authenticity over perfection, 
+                and that understand the power of imagery in shaping perceptions and driving engagement.
+            </p>
+        </div>
+    </section>
+    
+    <!-- 6. Checkerboard Layout - Image Left, Text Right -->
+    <section class="checkerboard-section">
+        <div class="checkerboard-row">
+            <div class="checkerboard-image">
+                <img src="https://via.placeholder.com/800x600/2a2a2a/ffffff?text=Branding+Excellence" alt="Branding Excellence">
+            </div>
+            <div class="checkerboard-content">
+                <h3 class="checkerboard-heading">Branding Excellence</h3>
+                <p class="checkerboard-text">
+                    Your brand deserves imagery that stands out in a crowded marketplace. 
+                    We create powerful visual identities that capture the essence of who you are 
+                    and what you stand for.
+                </p>
+                <p class="checkerboard-text">
+                    Our branding photography goes beyond simple product shots. We craft narratives 
+                    that connect emotionally with your target audience, building trust and recognition 
+                    through every frame.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 6. Checkerboard Layout - Image Right, Text Left -->
+    <section class="checkerboard-section">
+        <div class="checkerboard-row reverse">
+            <div class="checkerboard-image">
+                <img src="https://via.placeholder.com/800x600/3a3a3a/ffffff?text=Documentary+Impact" alt="Documentary Impact">
+            </div>
+            <div class="checkerboard-content">
+                <h3 class="checkerboard-heading">Documentary Impact</h3>
+                <p class="checkerboard-text">
+                    Real stories deserve authentic representation. Our documentary approach 
+                    captures genuine moments and emotions, creating powerful narratives that 
+                    resonate with viewers on a deeper level.
+                </p>
+                <p class="checkerboard-text">
+                    Whether it's capturing your company culture, showcasing your team, or 
+                    documenting your brand's journey, we bring a cinematic quality to every shot 
+                    while maintaining the raw authenticity that makes documentary work so compelling.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Additional Section 1: Statistics Bar -->
+    <section class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">150+</div>
+                <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">20+</div>
+                <div class="stat-label">Awards Won</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">10+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Additional Section 2: Process Timeline -->
+    <section class="process-section">
+        <h2 class="section-title">Our Process</h2>
+        <div class="process-timeline">
+            <div class="process-step">
+                <div class="process-number">01</div>
+                <div class="process-content">
+                    <h3 class="process-heading">Discovery & Consultation</h3>
+                    <p class="process-text">
+                        We begin by understanding your brand, vision, and goals. Through detailed 
+                        consultation, we identify the narrative you want to tell and the audience 
+                        you want to reach.
+                    </p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="process-number">02</div>
+                <div class="process-content">
+                    <h3 class="process-heading">Creative Planning</h3>
+                    <p class="process-text">
+                        Our team develops a comprehensive creative strategy, including mood boards, 
+                        shot lists, and location scouting to ensure every detail aligns with your vision.
+                    </p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="process-number">03</div>
+                <div class="process-content">
+                    <h3 class="process-heading">Production & Capture</h3>
+                    <p class="process-text">
+                        On shoot day, we bring our technical expertise and creative vision to life, 
+                        capturing stunning imagery that exceeds expectations while staying true to 
+                        your brand's essence.
+                    </p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="process-number">04</div>
+                <div class="process-content">
+                    <h3 class="process-heading">Post-Production & Delivery</h3>
+                    <p class="process-text">
+                        We meticulously edit and refine each image to perfection, ensuring color 
+                        consistency, optimal composition, and a cohesive final product that's ready 
+                        for immediate use across all your marketing channels.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Additional Section 3: Video Showcase -->
+    <section class="video-section">
+        <div class="video-play-button"></div>
+    </section>
+    
+    <!-- Additional Section 4: Testimonials -->
+    <section class="testimonials-section">
+        <h2 class="section-title">What Our Clients Say</h2>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <p class="testimonial-quote">
+                    XC Photography transformed our brand imagery. Their cinematic approach and 
+                    attention to detail resulted in stunning visuals that truly capture our 
+                    company's spirit. Absolutely exceptional work.
+                </p>
+                <div class="testimonial-author">Sarah Mitchell</div>
+                <div class="testimonial-role">Creative Director, Urban Brands Co.</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Additional Section 5: Brand Partners -->
+    <section class="partners-section">
+        <h2 class="section-title">Trusted By Leading Brands</h2>
+        <div class="partners-grid">
+            <div class="partner-logo">
+                <img src="https://via.placeholder.com/120x60/cccccc/666666?text=Brand+1" alt="Partner 1">
+            </div>
+            <div class="partner-logo">
+                <img src="https://via.placeholder.com/120x60/cccccc/666666?text=Brand+2" alt="Partner 2">
+            </div>
+            <div class="partner-logo">
+                <img src="https://via.placeholder.com/120x60/cccccc/666666?text=Brand+3" alt="Partner 3">
+            </div>
+            <div class="partner-logo">
+                <img src="https://via.placeholder.com/120x60/cccccc/666666?text=Brand+4" alt="Partner 4">
+            </div>
+            <div class="partner-logo">
+                <img src="https://via.placeholder.com/120x60/cccccc/666666?text=Brand+5" alt="Partner 5">
+            </div>
+        </div>
+    </section>
+    
+    <!-- JavaScript for interactive features -->
+    <script src="homepage-sections.js"></script>
 </body>
 </html>
