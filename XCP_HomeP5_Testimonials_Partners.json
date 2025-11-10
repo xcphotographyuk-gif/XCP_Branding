@@ -1,0 +1,207 @@
+{
+  "version": "2.0",
+  "title": "XC Photography Homepage - Part 5: Testimonials & Partners",
+  "type": "page",
+  "content": [
+    {
+      "id": "testimonials-section",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 900
+        },
+        "background_background": "classic",
+        "background_color": "#f5f5f5",
+        "padding": {
+          "unit": "px",
+          "top": 80,
+          "bottom": 80
+        }
+      },
+      "elements": [
+        {
+          "id": "testimonials-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "testimonials-title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "What Our Clients Say",
+                "align": "center",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "testimonial-1",
+              "elType": "widget",
+              "widgetType": "testimonial",
+              "settings": {
+                "testimonial_content": "XC Photography transformed our brand imagery. Their cinematic approach and attention to detail resulted in stunning visuals that truly capture our company's spirit. Absolutely exceptional work.",
+                "testimonial_name": "Sarah Mitchell",
+                "testimonial_job": "Creative Director, Urban Brands Co.",
+                "testimonial_alignment": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "partners-section",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "padding": {
+          "unit": "px",
+          "top": 60,
+          "bottom": 30
+        }
+      },
+      "elements": [
+        {
+          "id": "partners-title-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "partners-title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Trusted By Leading Brands",
+                "align": "center",
+                "header_size": "h2"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "partners-logos",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "padding": {
+          "unit": "px",
+          "bottom": 60
+        }
+      },
+      "elements": [
+        {
+          "id": "partner-col-1",
+          "elType": "column",
+          "settings": {
+            "_column_size": 20
+          },
+          "elements": [
+            {
+              "id": "partner-logo-1",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "assets/images/logo-partner-1.png"
+                },
+                "align": "center"
+              }
+            }
+          ]
+        },
+        {
+          "id": "partner-col-2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 20
+          },
+          "elements": [
+            {
+              "id": "partner-logo-2",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "assets/images/logo-partner-2.png"
+                },
+                "align": "center"
+              }
+            }
+          ]
+        },
+        {
+          "id": "partner-col-3",
+          "elType": "column",
+          "settings": {
+            "_column_size": 20
+          },
+          "elements": [
+            {
+              "id": "partner-logo-3",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "assets/images/logo-partner-3.png"
+                },
+                "align": "center"
+              }
+            }
+          ]
+        },
+        {
+          "id": "partner-col-4",
+          "elType": "column",
+          "settings": {
+            "_column_size": 20
+          },
+          "elements": [
+            {
+              "id": "partner-logo-4",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "assets/images/logo-partner-4.png"
+                },
+                "align": "center"
+              }
+            }
+          ]
+        },
+        {
+          "id": "partner-col-5",
+          "elType": "column",
+          "settings": {
+            "_column_size": 20
+          },
+          "elements": [
+            {
+              "id": "partner-logo-5",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "assets/images/logo-partner-5.png"
+                },
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
