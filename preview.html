@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XC Photography Homepage - Template Preview</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #1a1a1a;
+        }
+        
+        /* Hero Section */
+        .hero-section {
+            position: relative;
+            height: 100vh;
+            background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.7) 100%), 
+                        url('https://via.placeholder.com/1920x1080/1a1a1a/ffffff?text=Cinematic+Background');
+            background-size: cover;
+            background-position: center center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .hero-content {
+            max-width: 1000px;
+            z-index: 2;
+        }
+        
+        .hero-heading {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 56px;
+            font-weight: 700;
+            color: #ffffff;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+        
+        .hero-subheading {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 24px;
+            font-weight: 300;
+            color: #f0f0f0;
+            line-height: 1.5;
+            margin-bottom: 40px;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 18px 45px;
+            border-radius: 3px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background-color: #d4af37;
+            color: #ffffff;
+            border: none;
+            box-shadow: 0 4px 15px rgba(212,175,55,0.4);
+        }
+        
+        .btn-primary:hover {
+            background-color: #b8941f;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212,175,55,0.6);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+        }
+        
+        .btn-secondary:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+        
+        /* Gallery Section */
+        .gallery-section {
+            background-color: #fafafa;
+            padding: 80px 20px;
+        }
+        
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 42px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #1a1a1a;
+        }
+        
+        .gallery-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .gallery-item {
+            text-align: center;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+            display: block;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        .gallery-caption {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 15px;
+            margin-bottom: 30px;
+            color: #1a1a1a;
+        }
+        
+        /* Placeholder Section */
+        .placeholder-section {
+            background-color: #ffffff;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .placeholder-heading {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+        
+        .placeholder-text {
+            font-size: 18px;
+            color: #666666;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-heading {
+                font-size: 32px;
+            }
+            
+            .hero-subheading {
+                font-size: 16px;
+            }
+            
+            .section-title {
+                font-size: 28px;
+            }
+            
+            .placeholder-heading {
+                font-size: 24px;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+        
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .hero-heading {
+                font-size: 42px;
+            }
+            
+            .hero-subheading {
+                font-size: 20px;
+            }
+            
+            .section-title {
+                font-size: 36px;
+            }
+            
+            .placeholder-heading {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-heading">Branding &amp; Documentary Photography That Demands Attention</h1>
+            <h2 class="hero-subheading">Iconic Imagery for Iconic Brands with an Edge</h2>
+            <div class="cta-buttons">
+                <a href="#consultation" class="btn btn-primary">Book Your Free Consultation</a>
+                <a href="#portfolio" class="btn btn-secondary">View Portfolio</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <h2 class="section-title">Our Work</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/600x800/2a2a2a/ffffff?text=Striking+Stories" alt="Striking Stories">
+                <h3 class="gallery-caption">Striking Stories</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/600x700/3a3a3a/ffffff?text=Embracing+Individuality" alt="Embracing Individuality">
+                <h3 class="gallery-caption">Embracing Individuality</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/600x900/1a1a1a/ffffff?text=Timeless+Beauty" alt="Timeless Beauty">
+                <h3 class="gallery-caption">Timeless Beauty</h3>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Placeholder Section -->
+    <section class="placeholder-section">
+        <h2 class="placeholder-heading">Additional Content Section</h2>
+        <p class="placeholder-text">
+            This is a placeholder section for additional content. You can add testimonials, 
+            services, team information, or any other relevant content here.
+        </p>
+    </section>
+</body>
+</html>
