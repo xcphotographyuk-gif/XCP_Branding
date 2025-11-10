@@ -1,3 +1,218 @@
 {
-  "your_json_key": "your_json_value"
+  "version": "2.0",
+  "title": "XC Photography - Top Hero Section",
+  "type": "section",
+  "description": "Visually striking hero banner with impactful text and single call-to-action button, optimized for responsive design with strong typography",
+  "section": {
+    "id": "top-hero-section",
+    "elType": "section",
+    "settings": {
+      "layout": "full_width",
+      "gap": "no",
+      "height": "min-height",
+      "custom_height": {
+        "unit": "vh",
+        "size": 100
+      },
+      "background_background": "classic",
+      "background_image": {
+        "url": "https://via.placeholder.com/1920x1080/1a1a1a/ffffff?text=Cinematic+Hero+Background",
+        "id": "",
+        "alt": "Cinematic hero background showcasing XC Photography's dramatic style"
+      },
+      "background_position": "center center",
+      "background_size": "cover",
+      "background_attachment": "scroll",
+      "background_overlay_background": "gradient",
+      "background_overlay_color": "rgba(0,0,0,0.4)",
+      "background_overlay_color_b": "rgba(0,0,0,0.7)",
+      "background_overlay_gradient_angle": {
+        "unit": "deg",
+        "size": 180
+      },
+      "padding": {
+        "top": "0",
+        "right": "20",
+        "bottom": "0",
+        "left": "20",
+        "unit": "px",
+        "isLinked": false
+      }
+    },
+    "elements": [
+      {
+        "id": "hero-column",
+        "elType": "column",
+        "settings": {
+          "width": "100",
+          "_column_size": 100,
+          "content_position": "middle",
+          "content_width": "full"
+        },
+        "elements": [
+          {
+            "id": "hero-heading",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Branding & Documentary Photography That Demands Attention",
+              "align": "center",
+              "align_tablet": "center",
+              "align_mobile": "center",
+              "header_size": "h1",
+              "title_color": "#ffffff",
+              "typography_typography": "custom",
+              "typography_font_family": "Montserrat",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 56,
+                "sizes": {
+                  "desktop": 56,
+                  "tablet": 42,
+                  "mobile": 32
+                }
+              },
+              "typography_font_weight": "700",
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.2
+              },
+              "typography_letter_spacing": {
+                "unit": "px",
+                "size": 0
+              },
+              "text_shadow_text_shadow_type": "yes",
+              "text_shadow_text_shadow": {
+                "horizontal": 0,
+                "vertical": 2,
+                "blur": 10,
+                "color": "rgba(0,0,0,0.5)"
+              },
+              "margin": {
+                "top": "0",
+                "right": "0",
+                "bottom": "30",
+                "left": "0",
+                "unit": "px"
+              },
+              "padding": {
+                "top": "0",
+                "right": "40",
+                "bottom": "0",
+                "left": "40",
+                "unit": "px"
+              }
+            }
+          },
+          {
+            "id": "hero-subheading",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Iconic Imagery for Iconic Brands with an Edge",
+              "align": "center",
+              "align_tablet": "center",
+              "align_mobile": "center",
+              "header_size": "h2",
+              "title_color": "#f0f0f0",
+              "typography_typography": "custom",
+              "typography_font_family": "Open Sans",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 24,
+                "sizes": {
+                  "desktop": 24,
+                  "tablet": 20,
+                  "mobile": 16
+                }
+              },
+              "typography_font_weight": "300",
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.5
+              },
+              "margin": {
+                "top": "0",
+                "right": "0",
+                "bottom": "40",
+                "left": "0",
+                "unit": "px"
+              },
+              "padding": {
+                "top": "0",
+                "right": "40",
+                "bottom": "0",
+                "left": "40",
+                "unit": "px"
+              }
+            }
+          },
+          {
+            "id": "hero-cta-button",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "Book Your Free Consultation",
+              "link": {
+                "url": "#contact",
+                "is_external": false,
+                "nofollow": false
+              },
+              "align": "center",
+              "align_tablet": "center",
+              "align_mobile": "center",
+              "button_type": "primary",
+              "size": "lg",
+              "button_text_color": "#ffffff",
+              "background_color": "#d4af37",
+              "button_background_hover_color": "#b8941f",
+              "button_text_hover_color": "#ffffff",
+              "typography_typography": "custom",
+              "typography_font_family": "Montserrat",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 18,
+                "sizes": {
+                  "desktop": 18,
+                  "tablet": 16,
+                  "mobile": 16
+                }
+              },
+              "typography_font_weight": "600",
+              "typography_letter_spacing": {
+                "unit": "px",
+                "size": 0.5
+              },
+              "border_radius": {
+                "unit": "px",
+                "top": 3,
+                "right": 3,
+                "bottom": 3,
+                "left": 3,
+                "isLinked": true
+              },
+              "button_box_shadow_box_shadow_type": "yes",
+              "button_box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 4,
+                "blur": 15,
+                "spread": 0,
+                "color": "rgba(212,175,55,0.4)"
+              },
+              "button_box_shadow_box_shadow_position": "outline",
+              "hover_animation": "grow",
+              "padding": {
+                "top": "18",
+                "right": "45",
+                "bottom": "18",
+                "left": "45",
+                "unit": "px",
+                "isLinked": false
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
 }
