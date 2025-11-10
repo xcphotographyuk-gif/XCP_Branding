@@ -1,23 +1,33 @@
 {
-  "version": "2.0",
+  "version": "0.4",
   "title": "XC Photography Homepage - Part 1: Hero & Gallery Bar",
   "type": "page",
   "content": [
     {
       "id": "hero-section",
-      "elType": "section",
       "settings": {
         "layout": "full_width",
-        "gap": "no",
-        "height": "min-height",
-        "custom_height": {
+        "structure": "10",
+        "min_height": {
           "unit": "vh",
-          "size": 75
+          "size": "75",
+          "sizes": []
+        },
+        "content_position": "middle",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
         },
         "background_background": "classic",
         "background_image": {
-          "url": "assets/images/hero-woman-hair.jpg",
-          "id": ""
+          "url": "[uc_local]assets/images/hero-woman-hair.jpg",
+          "id": "",
+          "source": "library",
+          "size": ""
         },
         "background_position": "center center",
         "background_attachment": "scroll",
@@ -34,48 +44,53 @@
       "elements": [
         {
           "id": "hero-column",
-          "elType": "column",
           "settings": {
-            "_column_size": 100,
-            "content_position": "middle"
+            "_column_size": "100",
+            "content_position": "middle",
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": true
+            }
           },
           "elements": [
             {
               "id": "hero-heading",
-              "elType": "widget",
-              "widgetType": "heading",
               "settings": {
                 "title": "Branding & Documentary Photography That Demands Attention",
                 "align": "center",
                 "header_size": "h1"
-              }
+              },
+              "elType": "widget",
+              "widgetType": "heading"
             },
             {
               "id": "hero-subheading",
-              "elType": "widget",
-              "widgetType": "heading",
               "settings": {
                 "title": "Iconic Imagery for Iconic Brands with an Edge",
                 "align": "center",
                 "header_size": "h2"
-              }
+              },
+              "elType": "widget",
+              "widgetType": "heading"
             },
             {
               "id": "hero-button-1",
-              "elType": "widget",
-              "widgetType": "button",
               "settings": {
                 "text": "Book Your Free Consultation",
                 "link": {
                   "url": "#consultation"
                 },
                 "align": "center"
-              }
+              },
+              "elType": "widget",
+              "widgetType": "button"
             },
             {
               "id": "hero-button-2",
-              "elType": "widget",
-              "widgetType": "button",
               "settings": {
                 "text": "View Portfolio",
                 "link": {
@@ -83,7 +98,9 @@
                 },
                 "align": "center",
                 "button_type": "default"
-              }
+              },
+              "elType": "widget",
+              "widgetType": "button"
             }
           ]
         }
@@ -91,127 +108,146 @@
     },
     {
       "id": "gallery-bar-section",
-      "elType": "section",
       "settings": {
         "layout": "full_width",
-        "gap": "no",
+        "structure": "25",
         "background_background": "classic",
-        "background_color": "#2a2a2a"
+        "background_color": "#2a2a2a",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        }
       },
       "elements": [
         {
           "id": "gallery-col-1",
-          "elType": "column",
           "settings": {
-            "_column_size": 25,
+            "_column_size": "25",
             "background_background": "classic",
             "background_image": {
-              "url": "assets/images/gallery-1.jpg"
+              "url": "[uc_local]assets/images/gallery-1.jpg",
+              "id": "",
+              "source": "library",
+              "size": ""
             },
             "background_size": "cover",
             "background_position": "center center",
             "min_height": {
               "unit": "px",
-              "size": 400
+              "size": "400",
+              "sizes": []
             }
           },
           "elements": [
             {
               "id": "gallery-heading-1",
-              "elType": "widget",
-              "widgetType": "heading",
               "settings": {
                 "title": "Urban Edge",
                 "align": "left",
                 "header_size": "h3"
-              }
+              },
+              "elType": "widget",
+              "widgetType": "heading"
             }
           ]
         },
         {
           "id": "gallery-col-2",
-          "elType": "column",
           "settings": {
-            "_column_size": 25,
+            "_column_size": "25",
             "background_background": "classic",
             "background_image": {
-              "url": "assets/images/gallery-2.jpg"
+              "url": "[uc_local]assets/images/gallery-2.jpg",
+              "id": "",
+              "source": "library",
+              "size": ""
             },
             "background_size": "cover",
             "background_position": "center center",
             "min_height": {
               "unit": "px",
-              "size": 400
+              "size": "400",
+              "sizes": []
             }
           },
           "elements": [
             {
               "id": "gallery-heading-2",
-              "elType": "widget",
-              "widgetType": "heading",
               "settings": {
                 "title": "Raw Emotion",
                 "align": "left",
                 "header_size": "h3"
-              }
+              },
+              "elType": "widget",
+              "widgetType": "heading"
             }
           ]
         },
         {
           "id": "gallery-col-3",
-          "elType": "column",
           "settings": {
-            "_column_size": 25,
+            "_column_size": "25",
             "background_background": "classic",
             "background_image": {
-              "url": "assets/images/gallery-3.jpg"
+              "url": "[uc_local]assets/images/gallery-3.jpg",
+              "id": "",
+              "source": "library",
+              "size": ""
             },
             "background_size": "cover",
             "background_position": "center center",
             "min_height": {
               "unit": "px",
-              "size": 400
+              "size": "400",
+              "sizes": []
             }
           },
           "elements": [
             {
               "id": "gallery-heading-3",
-              "elType": "widget",
-              "widgetType": "heading",
               "settings": {
                 "title": "Bold Stories",
                 "align": "left",
                 "header_size": "h3"
-              }
+              },
+              "elType": "widget",
+              "widgetType": "heading"
             }
           ]
         },
         {
           "id": "gallery-col-4",
-          "elType": "column",
           "settings": {
-            "_column_size": 25,
+            "_column_size": "25",
             "background_background": "classic",
             "background_image": {
-              "url": "assets/images/gallery-4.jpg"
+              "url": "[uc_local]assets/images/gallery-4.jpg",
+              "id": "",
+              "source": "library",
+              "size": ""
             },
             "background_size": "cover",
             "background_position": "center center",
             "min_height": {
               "unit": "px",
-              "size": 400
+              "size": "400",
+              "sizes": []
             }
           },
           "elements": [
             {
               "id": "gallery-heading-4",
-              "elType": "widget",
-              "widgetType": "heading",
               "settings": {
                 "title": "Timeless Moments",
                 "align": "left",
                 "header_size": "h3"
-              }
+              },
+              "elType": "widget",
+              "widgetType": "heading"
             }
           ]
         }
