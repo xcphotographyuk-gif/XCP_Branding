@@ -1,0 +1,516 @@
+{
+  "version": "0.4",
+  "title": "XC Photography Homepage Partial",
+  "type": "page",
+  "content": [
+    {
+      "id": "hero-section",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_image": {
+          "url": "https://via.placeholder.com/1920x1080/1a1a1a/ffffff?text=Hero+Background",
+          "id": ""
+        },
+        "background_position": "center center",
+        "background_size": "cover",
+        "background_overlay_background": "classic",
+        "background_overlay_color": "rgba(0,0,0,0.5)",
+        "background_overlay_opacity": {
+          "unit": "px",
+          "size": 0.5
+        },
+        "layout": "full_width",
+        "content_width": {
+          "unit": "px",
+          "size": 1140
+        },
+        "height": "min-height",
+        "custom_height": {
+          "unit": "vh",
+          "size": 100
+        },
+        "column_position": "middle",
+        "padding": {
+          "unit": "px",
+          "top": "100",
+          "right": "0",
+          "bottom": "100",
+          "left": "0"
+        }
+      },
+      "elements": [
+        {
+          "id": "hero-column",
+          "elType": "column",
+          "settings": {
+            "content_position": "middle",
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "hero-h1",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Capturing Your Story",
+                "header_size": "h1",
+                "align": "center",
+                "align_tablet": "center",
+                "align_mobile": "center",
+                "typography_typography": "custom",
+                "typography_font_family": "Raleway",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 72
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "typography_font_weight": "700",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.2
+                },
+                "text_color": "#ffffff",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "20",
+                  "left": "0"
+                }
+              }
+            },
+            {
+              "id": "hero-h2",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Professional Photography That Tells Your Unique Story",
+                "header_size": "h2",
+                "align": "center",
+                "align_tablet": "center",
+                "align_mobile": "center",
+                "typography_typography": "custom",
+                "typography_font_family": "Raleway",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 28
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 22
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4
+                },
+                "text_color": "#ffffff",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "30",
+                  "left": "0"
+                }
+              }
+            },
+            {
+              "id": "hero-subheading",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align: center; font-size: 18px; line-height: 1.6; color: #e0e0e0;\">From intimate portraits to grand events, we create timeless imagery that captures emotion, elegance, and authenticity.</p>",
+                "align": "center",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "auto",
+                  "bottom": "40",
+                  "left": "auto"
+                },
+                "_padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "20",
+                  "bottom": "0",
+                  "left": "20"
+                }
+              }
+            },
+            {
+              "id": "hero-cta-container",
+              "elType": "section",
+              "settings": {
+                "layout": "boxed",
+                "content_width": {
+                  "unit": "px",
+                  "size": 600
+                },
+                "gap": "default"
+              },
+              "elements": [
+                {
+                  "id": "hero-cta-column",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 100,
+                    "_inline_size": null
+                  },
+                  "elements": [
+                    {
+                      "id": "hero-cta-1",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Book Your Free Consultation",
+                        "align": "center",
+                        "align_tablet": "center",
+                        "align_mobile": "center",
+                        "button_type": "primary",
+                        "link": {
+                          "url": "#contact",
+                          "is_external": false,
+                          "nofollow": false
+                        },
+                        "size": "md",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Raleway",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 16
+                        },
+                        "typography_font_weight": "600",
+                        "button_background_color": "#d4af37",
+                        "button_text_color": "#1a1a1a",
+                        "hover_background_color": "#c29d2f",
+                        "hover_color": "#ffffff",
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "4",
+                          "right": "4",
+                          "bottom": "4",
+                          "left": "4"
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "10",
+                          "bottom": "20",
+                          "left": "10"
+                        },
+                        "_padding": {
+                          "unit": "px",
+                          "top": "15",
+                          "right": "30",
+                          "bottom": "15",
+                          "left": "30"
+                        }
+                      }
+                    },
+                    {
+                      "id": "hero-cta-2",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "View Portfolio",
+                        "align": "center",
+                        "align_tablet": "center",
+                        "align_mobile": "center",
+                        "button_type": "secondary",
+                        "link": {
+                          "url": "#portfolio",
+                          "is_external": false,
+                          "nofollow": false
+                        },
+                        "size": "md",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Raleway",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 16
+                        },
+                        "typography_font_weight": "600",
+                        "button_background_color": "transparent",
+                        "button_text_color": "#ffffff",
+                        "hover_background_color": "rgba(255,255,255,0.1)",
+                        "hover_color": "#d4af37",
+                        "border_border": "solid",
+                        "border_width": {
+                          "unit": "px",
+                          "top": "2",
+                          "right": "2",
+                          "bottom": "2",
+                          "left": "2"
+                        },
+                        "border_color": "#ffffff",
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "4",
+                          "right": "4",
+                          "bottom": "4",
+                          "left": "4"
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "10",
+                          "bottom": "0",
+                          "left": "10"
+                        },
+                        "_padding": {
+                          "unit": "px",
+                          "top": "15",
+                          "right": "30",
+                          "bottom": "15",
+                          "left": "30"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "intro-narrative",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#f8f8f8",
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1140
+        },
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20"
+        }
+      },
+      "elements": [
+        {
+          "id": "intro-column",
+          "elType": "column",
+          "settings": {
+            "content_position": "top",
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "intro-text-box",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div style=\"max-width: 800px; margin: 0 auto; padding: 40px; background: #ffffff; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-radius: 8px;\">\n<p style=\"font-family: 'Raleway', sans-serif; font-size: 20px; font-weight: 400; line-height: 1.8; color: #333333; text-align: center; margin: 0;\">\nAt <strong>XC Photography</strong>, we believe every moment tells a story worth preserving. Our approach blends artistic vision with technical excellence, ensuring that each photograph is not just an image, but a timeless piece of art. Whether it's the joy of a wedding, the warmth of a family gathering, or the power of a personal portrait, we are dedicated to capturing the essence of your most cherished memories with elegance and authenticity.\n</p>\n</div>",
+                "align": "center",
+                "typography_typography": "custom",
+                "typography_font_family": "Raleway",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 20
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 18
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 16
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.8
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "masonry-gallery",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1140
+        },
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20"
+        }
+      },
+      "elements": [
+        {
+          "id": "gallery-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "gallery-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Our Portfolio",
+                "header_size": "h2",
+                "align": "center",
+                "align_tablet": "center",
+                "align_mobile": "center",
+                "typography_typography": "custom",
+                "typography_font_family": "Raleway",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 28
+                },
+                "typography_font_weight": "600",
+                "text_color": "#1a1a1a",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "50",
+                  "left": "0"
+                }
+              }
+            },
+            {
+              "id": "masonry-gallery-widget",
+              "elType": "widget",
+              "widgetType": "gallery",
+              "settings": {
+                "gallery": [
+                  {
+                    "id": 1,
+                    "url": "https://via.placeholder.com/600x400/2c3e50/ffffff?text=Wedding+Photography",
+                    "alt": "Wedding Photography"
+                  },
+                  {
+                    "id": 2,
+                    "url": "https://via.placeholder.com/600x600/34495e/ffffff?text=Portrait+Session",
+                    "alt": "Portrait Session"
+                  },
+                  {
+                    "id": 3,
+                    "url": "https://via.placeholder.com/600x400/7f8c8d/ffffff?text=Event+Coverage",
+                    "alt": "Event Coverage"
+                  },
+                  {
+                    "id": 4,
+                    "url": "https://via.placeholder.com/600x600/95a5a6/ffffff?text=Family+Moments",
+                    "alt": "Family Moments"
+                  },
+                  {
+                    "id": 5,
+                    "url": "https://via.placeholder.com/600x400/bdc3c7/ffffff?text=Corporate+Events",
+                    "alt": "Corporate Events"
+                  },
+                  {
+                    "id": 6,
+                    "url": "https://via.placeholder.com/600x600/ecf0f1/333333?text=Nature+Shots",
+                    "alt": "Nature Shots"
+                  },
+                  {
+                    "id": 7,
+                    "url": "https://via.placeholder.com/600x400/3498db/ffffff?text=Studio+Portraits",
+                    "alt": "Studio Portraits"
+                  },
+                  {
+                    "id": 8,
+                    "url": "https://via.placeholder.com/600x600/2980b9/ffffff?text=Lifestyle+Photography",
+                    "alt": "Lifestyle Photography"
+                  },
+                  {
+                    "id": 9,
+                    "url": "https://via.placeholder.com/600x400/1abc9c/ffffff?text=Creative+Sessions",
+                    "alt": "Creative Sessions"
+                  }
+                ],
+                "gallery_layout": "masonry",
+                "columns": 3,
+                "columns_tablet": 2,
+                "columns_mobile": 1,
+                "image_size": "medium_large",
+                "gap": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "link_to": "file",
+                "overlay_background": "classic",
+                "overlay_opacity": {
+                  "unit": "px",
+                  "size": 0.7
+                },
+                "overlay_color": "rgba(0,0,0,0.7)",
+                "content_hover_animation": "fade-in",
+                "image_hover_animation": "zoom-in",
+                "content_sequential_animation": "yes",
+                "content_animation_duration": 500,
+                "show_title": "yes",
+                "title_tag": "h3",
+                "title_typography_typography": "custom",
+                "title_typography_font_family": "Raleway",
+                "title_typography_font_size": {
+                  "unit": "px",
+                  "size": 18
+                },
+                "title_typography_font_weight": "600",
+                "title_color": "#ffffff",
+                "gallery_rand": "no"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {
+    "post_status": "publish",
+    "template": "elementor_canvas",
+    "custom_css": ""
+  },
+  "metadata": {
+    "author": "XC Photography",
+    "description": "Partial Elementor layout for XC Photography homepage including Hero Section, Bold Intro Narrative, and Masonry Gallery",
+    "created": "2025-11-10",
+    "elementor_version": "3.16.0",
+    "wordpress_version": "6.4"
+  }
+}
