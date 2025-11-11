@@ -476,4 +476,298 @@ This document lists all 12 Elementor JSON templates organized by page with impor
 
 ---
 
-**Your complete, production-ready website is ready to go live.**
+## Shop Page (6 Templates)
+
+### Import Order:
+1. `XCP_Shop_P1_Hero_Categories.json`
+2. `XCP_Shop_P2_FineArt.json`
+3. `XCP_Shop_P3_WallArt.json`
+4. `XCP_Shop_P4_Merchandise.json`
+5. `XCP_Shop_P5_GiftSets.json`
+6. `XCP_Shop_P6_HotelDuVin.json`
+
+### Template Details:
+
+#### 1. XCP_Shop_P1_Hero_Categories.json
+**Contains:**
+- **Hero Section**: 
+  - Headline: "Bring Your Story Home"
+  - Subhead: "From museum-quality fine art prints to everyday treasures, each piece is crafted to tell your story with timeless elegance."
+  - CTA: "Explore the Collection"
+- **Categories Grid**: 4 shop categories (2×2 grid, responsive)
+  - Category 1: "Fine Art Prints" - Museum-quality prints with certificates
+  - Category 2: "Wall Art" - Cinematic wall décor
+  - Category 3: "Merchandise & Gifts" - Mugs, apparel, blankets
+  - Category 4: "Gift Sets" - Curated collections
+
+**Features:** Full-width hero, category cards with images and descriptions
+
+---
+
+#### 2. XCP_Shop_P2_FineArt.json
+**Contains:**
+- **Fine Art Introduction**: 
+  - Overview of museum-quality giclée prints
+  - Note about The Print Space printing
+- **Print Sizes Grid**: 4 sizes (2×2 grid)
+  - A3+ (329×483mm) - £375
+  - A2 (420×594mm) - £720
+  - A1 (594×841mm) - £1,200
+  - A0 (841×1189mm) - £1,425
+- Each size includes: image, description, price, features list, enquiry button
+
+**Features:** Premium pricing display, certificate of authenticity, framed and ready to hang
+
+---
+
+#### 3. XCP_Shop_P3_WallArt.json
+**Contains:**
+- **Wall Art Introduction**: Cinematic imagery overview
+- **Showcase Section**: Full-width parallax section
+- **Sizes Grid**: 3 sizes (3-column grid)
+  - A4 - From £95
+  - A3 - From £250
+  - A3+ - From £290
+- **CTA Section**: Custom size requests
+
+**Features:** Cinematic presentation, flexible sizing options
+
+---
+
+#### 4. XCP_Shop_P4_Merchandise.json
+**Contains:**
+- **Merchandise Introduction**: Everyday luxury overview
+- **Product Grid**: 3 categories (3-column grid)
+  - Signature Mugs
+  - Premium Apparel
+  - Luxury Blankets
+- **Additional Note**: Other items available (tote bags, phone cases, notebooks)
+
+**Features:** Quality production by Gelato and Printful
+
+---
+
+#### 5. XCP_Shop_P5_GiftSets.json
+**Contains:**
+- **Gift Sets Introduction**: Curated collections overview
+- **Sets Grid**: 4 gift sets (2×2 grid)
+  - Collector's Mug Set (4 mugs)
+  - Artisan Stationery Set (notepads, cards, accessories)
+  - Winter Warmth Collection (gloves, hat, scarf)
+  - Bespoke Gift Set (fully customizable)
+
+**Features:** Thoughtful packaging, perfect for gifting
+
+---
+
+#### 6. XCP_Shop_P6_HotelDuVin.json
+**Contains:**
+- **Exclusive Hero**: Premium positioning for discerning collectors
+- **Introduction**: Limited edition exclusives description
+- **Collection Grid**: 
+  - Signature Fine Art Prints (limited to 25 editions, hand-framed)
+  - The Signature Monograph (collector's edition coffee table book)
+  - Artisan Postcards (12-piece collection)
+  - Luxury Umbrella (wooden handle, premium materials)
+  - Signature Sunglasses (polarized lenses, handcrafted acetate)
+- **Private Viewing CTA**: Exclusive appointment-only access
+
+**Features:** Luxury positioning, higher caliber client focus, limited availability
+
+---
+
+## Extended Services (3 Templates)
+
+### Import Order:
+1. `XCP_Services_P2_PopUpPortraits.json`
+2. `XCP_Services_P3_Workshops.json`
+3. `XCP_Services_P4_Retreats.json`
+
+### Template Details:
+
+#### 1. XCP_Services_P2_PopUpPortraits.json
+**Contains:**
+- **Hero Section**: Pop-Up Portrait Sessions introduction
+- **What Are Pop-Ups**: 20-30 minute streamlined sessions
+- **Session Details**: 2-column layout
+  - What's Included: 10+ edited images, usage rights, online gallery
+  - Perfect For: Professional headshots, social media, dating profiles, etc.
+- **CTA**: Reserve your spot / View available sessions
+
+**Features:** Accessible portrait option, lower commitment, professional results
+
+---
+
+#### 2. XCP_Services_P3_Workshops.json
+**Contains:**
+- **Hero Section**: Photography Workshops overview
+- **Three Workshop Types**: Alternating layouts
+  - City Walk Street Photography (4-hour walking workshop)
+  - Music Photography Masterclass (half-day + live venue)
+  - Studio Photography Intensive (full-day intensive)
+- Each includes: What you'll learn, format details, booking CTA
+- **Final CTA**: View workshop calendar
+
+**Features:** Group or 1:1 options, hands-on learning, expert-led
+
+---
+
+#### 3. XCP_Services_P4_Retreats.json
+**Contains:**
+- **Hero Section**: Photography Retreats introduction
+- **Two Retreat Types**: Alternating layouts
+  - Business Elevation & Storytelling Collaboration (3-5 days, 8-12 participants)
+  - Photography Mastery Retreat (3-4 days, 6-10 participants, photography-focused)
+- Each includes: Full details, what's included, luxury accommodation
+- **Testimonial**: Client transformation story
+- **CTA**: Join priority list
+
+**Features:** Multi-day immersive experiences, limited groups, transformative
+
+---
+
+## Blog Page (1 Template)
+
+### Import Order:
+1. `XCP_Blog_P1_Hero_Posts.json`
+
+### Template Details:
+
+#### 1. XCP_Blog_P1_Hero_Posts.json
+**Contains:**
+- **Hero Section**: 
+  - Headline: "Stories, Insights & Inspiration"
+  - Subhead: Exploring visual storytelling
+- **Featured Post**: Large 2-column layout with image and content
+- **Latest Posts Grid**: 3-column grid of recent blog posts
+  - Each post includes: category, title, excerpt, read time
+- **Load More CTA**: Dynamic blog loading
+
+**Features:** Template ready for WordPress blog posts, category filtering potential
+
+---
+
+## Privacy & Cookies Policy (1 Template)
+
+### Import Order:
+1. `XCP_Privacy_P1_Policy.json`
+
+### Template Details:
+
+#### 1. XCP_Privacy_P1_Policy.json
+**Contains:**
+- **Hero Section**: Privacy & Cookies Policy title with last updated date
+- **9 Policy Sections**:
+  1. Information We Collect
+  2. How We Use Your Information
+  3. Cookies & Tracking Technologies
+  4. Data Security
+  5. Third-Party Services
+  6. Your Rights
+  7. Data Retention
+  8. Changes to This Policy
+  9. Contact Us
+- **Cookie Consent Section**: Manage preferences CTA
+
+**Features:** Comprehensive GDPR-compliant policy, cookie management, legal compliance
+
+---
+
+## Complete Site Structure Summary
+
+### Total Templates: 23
+
+**Homepage:** 6 templates  
+**About:** 2 templates  
+**Services:** 4 templates (includes packages + extended services)  
+**Portfolio:** 2 templates  
+**Contact:** 1 template  
+**Shop:** 6 templates  
+**Blog:** 1 template  
+**Privacy:** 1 template  
+
+---
+
+## Updated Import Instructions
+
+### Create Shop Page:
+1. **Pages → Add New** → Title: "Shop"
+2. **Edit with Elementor** → Add templates:
+   - XCP_Shop_P1_Hero_Categories
+   - XCP_Shop_P2_FineArt
+   - XCP_Shop_P3_WallArt
+   - XCP_Shop_P4_Merchandise
+   - XCP_Shop_P5_GiftSets
+   - XCP_Shop_P6_HotelDuVin
+3. **Publish**
+
+### Update Services Page:
+1. Open existing Services page in Elementor
+2. Add after XCP_Services_P1_Packages:
+   - XCP_Services_P2_PopUpPortraits
+   - XCP_Services_P3_Workshops
+   - XCP_Services_P4_Retreats
+3. **Update**
+
+### Create Blog Page:
+1. **Pages → Add New** → Title: "Blog" or "Stories"
+2. **Edit with Elementor** → Add template:
+   - XCP_Blog_P1_Hero_Posts
+3. Configure for dynamic blog posts
+4. **Publish**
+
+### Create Privacy Policy Page:
+1. **Pages → Add New** → Title: "Privacy Policy"
+2. **Edit with Elementor** → Add template:
+   - XCP_Privacy_P1_Policy
+3. Update [Date], [Email], [Phone], [Address] placeholders
+4. **Publish**
+5. Link from footer and cookie banner
+
+---
+
+## Complete File List (Updated)
+
+### Elementor JSON Templates (23):
+**Homepage (6):**
+- `XCP_HomeP1_Hero_Gallery_FINAL.json`
+- `XCP_HomeP2_Parallax_Text_FINAL.json`
+- `XCP_HomeP3_Checkerboard_FINAL.json`
+- `XCP_HomeP4_Stats_Process_FINAL.json`
+- `XCP_HomeP5_Testimonials_CTA_FINAL.json`
+- `XCP_ContactForm_Section.json`
+
+**About (2):**
+- `XCP_About_P1_Hero_Story.json`
+- `XCP_About_P2_Process_CTA.json`
+
+**Services (4):**
+- `XCP_Services_P1_Packages.json`
+- `XCP_Services_P2_PopUpPortraits.json`
+- `XCP_Services_P3_Workshops.json`
+- `XCP_Services_P4_Retreats.json`
+
+**Portfolio (2):**
+- `XCP_Portfolio_P1_Hero_Filter.json`
+- `XCP_Portfolio_P2_Gallery_CTA.json`
+
+**Contact (1):**
+- `XCP_Contact_P1_Complete.json`
+
+**Shop (6):**
+- `XCP_Shop_P1_Hero_Categories.json`
+- `XCP_Shop_P2_FineArt.json`
+- `XCP_Shop_P3_WallArt.json`
+- `XCP_Shop_P4_Merchandise.json`
+- `XCP_Shop_P5_GiftSets.json`
+- `XCP_Shop_P6_HotelDuVin.json`
+
+**Blog (1):**
+- `XCP_Blog_P1_Hero_Posts.json`
+
+**Privacy (1):**
+- `XCP_Privacy_P1_Policy.json`
+
+---
+
+**Your complete, production-ready website with shop, extended services, blog, and legal pages is ready to go live.**
