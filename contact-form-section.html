@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XC Photography - Contact Form Section</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .contact-form-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px;
+            background-color: #ffffff;
+        }
+        
+        .contact-form-title {
+            text-align: center;
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+        
+        .contact-form-subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 50px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .contact-form {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .form-row.full-width {
+            flex-direction: column;
+        }
+        
+        .form-field {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-field.full {
+            width: 100%;
+        }
+        
+        label {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+        
+        label.required::after {
+            content: " *";
+            color: #d4af37;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            font-size: 16px;
+            font-family: inherit;
+            transition: border-color 0.3s ease;
+        }
+        
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #d4af37;
+        }
+        
+        textarea {
+            resize: vertical;
+        }
+        
+        .submit-button {
+            display: block;
+            margin: 40px auto 0;
+            padding: 18px 50px;
+            background-color: #d4af37;
+            color: #ffffff;
+            border: none;
+            border-radius: 3px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(212,175,55,0.4);
+        }
+        
+        .submit-button:hover {
+            background-color: #b8941f;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212,175,55,0.6);
+        }
+        
+        @media (max-width: 768px) {
+            .contact-form-title {
+                font-size: 32px;
+            }
+            
+            .form-row {
+                flex-direction: column;
+            }
+            
+            .contact-form-section {
+                padding: 60px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="contact-form-section">
+        <h2 class="contact-form-title">Let's Create Something Extraordinary</h2>
+        <p class="contact-form-subtitle">Tell us about your vision and we'll bring it to life through stunning photography.</p>
+        
+        <form class="contact-form" action="#" method="POST">
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="company_name" class="required">Company Name</label>
+                    <input type="text" id="company_name" name="company_name" placeholder="Your Company or Personal Name" required>
+                </div>
+                <div class="form-field">
+                    <label for="email" class="required">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="type_of_photoshoot" class="required">Type of Photoshoot</label>
+                    <select id="type_of_photoshoot" name="type_of_photoshoot" required>
+                        <option value="">Select a type...</option>
+                        <option value="branding">Branding Photography</option>
+                        <option value="documentary">Documentary Photography</option>
+                        <option value="portrait">Portrait Photography</option>
+                        <option value="event">Event Photography</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="budget">Budget</label>
+                    <input type="text" id="budget" name="budget" placeholder="Your estimated budget">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="preferred_date">Preferred Date</label>
+                    <input type="text" id="preferred_date" name="preferred_date" placeholder="When would you like to shoot?">
+                </div>
+                <div class="form-field">
+                    <label for="preferred_time">Preferred Time</label>
+                    <input type="text" id="preferred_time" name="preferred_time" placeholder="Preferred time of day">
+                </div>
+            </div>
+            
+            <div class="form-row full-width">
+                <div class="form-field full">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location" placeholder="Shoot location (studio, on-location, etc.)">
+                </div>
+            </div>
+            
+            <div class="form-row full-width">
+                <div class="form-field full">
+                    <label for="ideal_audience">Your Ideal Audience</label>
+                    <textarea id="ideal_audience" name="ideal_audience" rows="3" placeholder="What type of clientele are you hoping to engage with your brand?"></textarea>
+                </div>
+            </div>
+            
+            <div class="form-row full-width">
+                <div class="form-field full">
+                    <label for="brand_vision">Brand Vision</label>
+                    <textarea id="brand_vision" name="brand_vision" rows="4" placeholder="Do you have a vision for your brand? What story or message would you like to convey to your audience?"></textarea>
+                </div>
+            </div>
+            
+            <div class="form-row full-width">
+                <div class="form-field full">
+                    <label for="first_impressions">First Impressions</label>
+                    <textarea id="first_impressions" name="first_impressions" rows="3" placeholder="What initial impression do you hope to leave with your audience?"></textarea>
+                </div>
+            </div>
+            
+            <div class="form-row full-width">
+                <div class="form-field full">
+                    <label for="inspiration">Inspiration</label>
+                    <textarea id="inspiration" name="inspiration" rows="3" placeholder="Do you have any sources or references that inspire your brand's vision and style?"></textarea>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="last_photoshoot">Your Last Photoshoot</label>
+                    <input type="text" id="last_photoshoot" name="last_photoshoot" placeholder="When was your last professional photoshoot?">
+                </div>
+                <div class="form-field">
+                    <label for="industry_admiration">Who You Admire in Your Industry</label>
+                    <input type="text" id="industry_admiration" name="industry_admiration" placeholder="Brands or people you admire">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="hair_makeup_interest">Hair & Makeup Interest</label>
+                    <select id="hair_makeup_interest" name="hair_makeup_interest">
+                        <option value="">Select...</option>
+                        <option value="yes">Yes, I'm interested</option>
+                        <option value="no">No, not needed</option>
+                        <option value="own">I'll arrange my own</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="preferred_event">Preferred Event</label>
+                    <input type="text" id="preferred_event" name="preferred_event" placeholder="Specific event or occasion">
+                </div>
+            </div>
+            
+            <div class="form-row full-width">
+                <div class="form-field full">
+                    <label for="requirements">Requirements</label>
+                    <textarea id="requirements" name="requirements" rows="3" placeholder="Any specific requirements or must-haves for your shoot?"></textarea>
+                </div>
+            </div>
+            
+            <div class="form-row full-width">
+                <div class="form-field full">
+                    <label for="message" class="required">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell us more about your project..." required></textarea>
+                </div>
+            </div>
+            
+            <div class="form-row full-width">
+                <div class="form-field full">
+                    <label for="additional_notes">Additional Notes</label>
+                    <textarea id="additional_notes" name="additional_notes" rows="3" placeholder="Anything else you'd like us to know?"></textarea>
+                </div>
+            </div>
+            
+            <button type="submit" class="submit-button">Send Inquiry</button>
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,206 @@
+{
+  "version": "0.4",
+  "title": "About - Hero & Story",
+  "type": "section",
+  "content": [
+    {
+      "id": "about_hero",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "min_height": {"unit": "vh", "size": 70},
+        "background_background": "classic",
+        "background_image": {"url": "[uc_local]assets/images/about/hero-partnership.jpg"},
+        "background_position": "center center",
+        "background_size": "cover",
+        "background_overlay_background": "classic",
+        "background_overlay_color": "rgba(0,0,0,0.4)",
+        "content_position": "middle",
+        "padding": {"unit": "px", "top": 100, "right": 20, "bottom": 100, "left": 20},
+        "_title": "About Hero"
+      },
+      "elements": [
+        {
+          "id": "about_hero_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 100},
+            "width_tablet": {"unit": "%", "size": 100},
+            "width_mobile": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "about_hero_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "The Story Behind Your Story",
+                "header_size": "h1",
+                "align": "center",
+                "align_tablet": "center",
+                "align_mobile": "center",
+                "title_color": "#FFFFFF",
+                "typography_font_size": {"unit": "px", "size": 56},
+                "typography_font_size_tablet": {"unit": "px", "size": 42},
+                "typography_font_size_mobile": {"unit": "px", "size": 32}
+              }
+            },
+            {
+              "id": "about_hero_subhead",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #FFFFFF; font-size: 20px; max-width: 700px; margin: 20px auto;'>Partnership, not just photography. Your vision, elevated through imagery that truly reflects who you are and resonates with the audience you're meant to reach.</p>",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "about_values",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {"unit": "px", "size": 1200},
+        "padding": {"unit": "px", "top": 80, "right": 20, "bottom": 80, "left": 20},
+        "_title": "Core Values"
+      },
+      "elements": [
+        {
+          "id": "about_values_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "about_values_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Built on Partnership, Driven by Your Success",
+                "header_size": "h2",
+                "align": "center",
+                "typography_font_size": {"unit": "px", "size": 42},
+                "typography_font_size_mobile": {"unit": "px", "size": 28}
+              }
+            },
+            {
+              "id": "about_values_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; font-size: 18px; max-width: 800px; margin: 30px auto; line-height: 1.8;'>Every brand has a story worth telling. Your journey, your values, your unique approach—these aren't just details, they're what set you apart. The challenge? Making sure your audience sees it, feels it, and connects with it.</p><p style='text-align: center; font-size: 18px; max-width: 800px; margin: 30px auto; line-height: 1.8;'>That's where imagery becomes more than decoration. It becomes your most powerful tool for authentic connection.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "about_approach",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "background_background": "classic",
+        "background_color": "#F8F8F8",
+        "padding": {"unit": "px", "top": 80, "right": 20, "bottom": 80, "left": 20},
+        "_title": "Approach - 3 Pillars"
+      },
+      "elements": [
+        {
+          "id": "approach_col1",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 33.33},
+            "width_tablet": {"unit": "%", "size": 100},
+            "width_mobile": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "approach_1_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Authenticity First",
+                "header_size": "h3",
+                "align": "center",
+                "typography_font_size": {"unit": "px", "size": 28}
+              }
+            },
+            {
+              "id": "approach_1_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; padding: 0 20px;'>Your brand's truth matters. Imagery that feels forced or inauthentic? Your audience spots it instantly. We focus on capturing what makes you genuinely different—the real story that resonates.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "approach_col2",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 33.33},
+            "width_tablet": {"unit": "%", "size": 100},
+            "width_mobile": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "approach_2_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Strategic Connection",
+                "header_size": "h3",
+                "align": "center",
+                "typography_font_size": {"unit": "px", "size": 28}
+              }
+            },
+            {
+              "id": "approach_2_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; padding: 0 20px;'>Beautiful isn't enough. Your imagery needs to speak directly to your ideal audience—their values, their aspirations, their needs. Every visual choice is intentional, designed to create the connection you're seeking.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "approach_col3",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 33.33},
+            "width_tablet": {"unit": "%", "size": 100},
+            "width_mobile": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "approach_3_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Tangible Results",
+                "header_size": "h3",
+                "align": "center",
+                "typography_font_size": {"unit": "px", "size": 28}
+              }
+            },
+            {
+              "id": "approach_3_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; padding: 0 20px;'>This isn't about art for art's sake. It's about imagery that performs—that elevates your brand presence, attracts your ideal clients, and supports your business goals. Partnership focused on your success.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

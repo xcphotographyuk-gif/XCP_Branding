@@ -1,0 +1,232 @@
+{
+  "version": "0.4",
+  "title": "XC Photography - Contact Form Section",
+  "type": "page",
+  "content": [
+    {
+      "id": "contact-form-section",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1200,
+          "sizes": []
+        },
+        "structure": "10",
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "contact-form-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "contact-form-title",
+              "settings": {
+                "title": "Let's Create Something Extraordinary",
+                "align": "center",
+                "header_size": "h2"
+              },
+              "elType": "widget",
+              "widgetType": "heading"
+            },
+            {
+              "id": "contact-form-subtitle",
+              "settings": {
+                "editor": "<p style=\"text-align: center;\">Tell us about your vision and we'll bring it to life through stunning photography.</p>",
+                "align": "center"
+              },
+              "elType": "widget",
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "contact-form-widget",
+              "settings": {
+                "form_name": "XC Photography Contact Form",
+                "form_fields": [
+                  {
+                    "field_type": "text",
+                    "field_label": "Company Name",
+                    "field_id": "company_name",
+                    "required": "yes",
+                    "placeholder": "Your Company or Personal Name",
+                    "width": "50"
+                  },
+                  {
+                    "field_type": "email",
+                    "field_label": "Email",
+                    "field_id": "email",
+                    "required": "yes",
+                    "placeholder": "your@email.com",
+                    "width": "50"
+                  },
+                  {
+                    "field_type": "select",
+                    "field_label": "Type of Photoshoot",
+                    "field_id": "type_of_photoshoot",
+                    "required": "yes",
+                    "field_options": "Branding Photography\nDocumentary Photography\nPortrait Photography\nEvent Photography\nOther",
+                    "width": "50"
+                  },
+                  {
+                    "field_type": "text",
+                    "field_label": "Budget",
+                    "field_id": "budget",
+                    "required": "no",
+                    "placeholder": "Your estimated budget",
+                    "width": "50"
+                  },
+                  {
+                    "field_type": "text",
+                    "field_label": "Preferred Date",
+                    "field_id": "preferred_date",
+                    "required": "no",
+                    "placeholder": "When would you like to shoot?",
+                    "width": "50"
+                  },
+                  {
+                    "field_type": "text",
+                    "field_label": "Preferred Time",
+                    "field_id": "preferred_time",
+                    "required": "no",
+                    "placeholder": "Preferred time of day",
+                    "width": "50"
+                  },
+                  {
+                    "field_type": "text",
+                    "field_label": "Location",
+                    "field_id": "location",
+                    "required": "no",
+                    "placeholder": "Shoot location (studio, on-location, etc.)",
+                    "width": "100"
+                  },
+                  {
+                    "field_type": "textarea",
+                    "field_label": "Your Ideal Audience",
+                    "field_id": "ideal_audience",
+                    "required": "no",
+                    "placeholder": "What type of clientele are you hoping to engage with your brand?",
+                    "width": "100",
+                    "rows": 3
+                  },
+                  {
+                    "field_type": "textarea",
+                    "field_label": "Brand Vision",
+                    "field_id": "brand_vision",
+                    "required": "no",
+                    "placeholder": "Do you have a vision for your brand? What story or message would you like to convey to your audience?",
+                    "width": "100",
+                    "rows": 4
+                  },
+                  {
+                    "field_type": "textarea",
+                    "field_label": "First Impressions",
+                    "field_id": "first_impressions",
+                    "required": "no",
+                    "placeholder": "What initial impression do you hope to leave with your audience?",
+                    "width": "100",
+                    "rows": 3
+                  },
+                  {
+                    "field_type": "textarea",
+                    "field_label": "Inspiration",
+                    "field_id": "inspiration",
+                    "required": "no",
+                    "placeholder": "Do you have any sources or references that inspire your brand's vision and style?",
+                    "width": "100",
+                    "rows": 3
+                  },
+                  {
+                    "field_type": "text",
+                    "field_label": "Your Last Photoshoot",
+                    "field_id": "last_photoshoot",
+                    "required": "no",
+                    "placeholder": "When was your last professional photoshoot?",
+                    "width": "50"
+                  },
+                  {
+                    "field_type": "text",
+                    "field_label": "Who You Admire in Your Industry",
+                    "field_id": "industry_admiration",
+                    "required": "no",
+                    "placeholder": "Brands or people you admire",
+                    "width": "50"
+                  },
+                  {
+                    "field_type": "select",
+                    "field_label": "Hair & Makeup Interest",
+                    "field_id": "hair_makeup_interest",
+                    "required": "no",
+                    "field_options": "Yes, I'm interested\nNo, not needed\nI'll arrange my own",
+                    "width": "50"
+                  },
+                  {
+                    "field_type": "text",
+                    "field_label": "Preferred Event",
+                    "field_id": "preferred_event",
+                    "required": "no",
+                    "placeholder": "Specific event or occasion",
+                    "width": "50"
+                  },
+                  {
+                    "field_type": "textarea",
+                    "field_label": "Requirements",
+                    "field_id": "requirements",
+                    "required": "no",
+                    "placeholder": "Any specific requirements or must-haves for your shoot?",
+                    "width": "100",
+                    "rows": 3
+                  },
+                  {
+                    "field_type": "textarea",
+                    "field_label": "Message",
+                    "field_id": "message",
+                    "required": "yes",
+                    "placeholder": "Tell us more about your project...",
+                    "width": "100",
+                    "rows": 5
+                  },
+                  {
+                    "field_type": "textarea",
+                    "field_label": "Additional Notes",
+                    "field_id": "additional_notes",
+                    "required": "no",
+                    "placeholder": "Anything else you'd like us to know?",
+                    "width": "100",
+                    "rows": 3
+                  }
+                ],
+                "button_text": "Send Inquiry",
+                "button_align": "center"
+              },
+              "elType": "widget",
+              "widgetType": "form"
+            }
+          ],
+          "isInner": false
+        }
+      ]
+    }
+  ]
+}
