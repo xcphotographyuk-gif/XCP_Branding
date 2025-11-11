@@ -5,11 +5,12 @@
   "content": [
     {
       "id": "contact-form-section",
+      "elType": "section",
       "settings": {
         "layout": "boxed",
         "content_width": {
           "unit": "px",
-          "size": "1200",
+          "size": 1200,
           "sizes": []
         },
         "structure": "10",
@@ -27,8 +28,9 @@
       "elements": [
         {
           "id": "contact-form-column",
+          "elType": "column",
           "settings": {
-            "_column_size": "100",
+            "_column_size": 100,
             "padding": {
               "unit": "px",
               "top": "0",
@@ -221,7 +223,8 @@
               "elType": "widget",
               "widgetType": "form"
             }
-          ]
+          ],
+          "isInner": false
         }
       ]
     }
