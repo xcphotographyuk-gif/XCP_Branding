@@ -64,6 +64,36 @@
               "id": "contact-form-widget",
               "settings": {
                 "form_name": "XC Photography Contact Form",
+                "field_label_color": "#1a1a1a",
+                "field_text_color": "#1a1a1a",
+                "field_background_color": "#f5f5f5",
+                "field_border_color": "#cccccc",
+                "field_border_width": {
+                  "unit": "px",
+                  "size": 1
+                },
+                "field_border_radius": {
+                  "unit": "px",
+                  "size": 4
+                },
+                "field_padding": {
+                  "unit": "px",
+                  "top": "15",
+                  "right": "15",
+                  "bottom": "15",
+                  "left": "15"
+                },
+                "field_focus_border_color": "#1a1a1a",
+                "button_text_color": "#ffffff",
+                "button_background_color": "#1a1a1a",
+                "button_hover_background_color": "#333333",
+                "button_padding": {
+                  "unit": "px",
+                  "top": "15",
+                  "right": "40",
+                  "bottom": "15",
+                  "left": "40"
+                },
                 "form_fields": [
                   {
                     "field_type": "text",
