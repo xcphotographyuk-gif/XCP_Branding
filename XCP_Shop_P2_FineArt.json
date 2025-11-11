@@ -41,7 +41,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; color: #666666; font-size: 20px; max-width: 800px; margin: 20px auto 40px; line-height: 1.7;'>Museum-quality giclée prints on archival paper, professionally framed and mounted. Each piece is a limited edition work of art, delivered with a certificate of authenticity and ready to transform your space.</p><p style='text-align: center; color: #888888; font-size: 16px; font-style: italic; margin-top: 30px;'>Printed by The Print Space, London's premier fine art printing specialists.</p>",
+                "editor": "<p style='text-align: center; color: #666666; font-size: 20px; max-width: 800px; margin: 20px auto 40px; line-height: 1.7;'>Hand-crafted fine art prints featuring the acclaimed City Spirit Collection. Each piece is created through meticulous long exposure techniques, extensive layering, and individual frame curation—a labor-intensive artistic process resulting in museum-quality works. Professionally framed, mounted, and delivered with a certificate of authenticity.</p><p style='text-align: center; color: #888888; font-size: 16px; font-style: italic; margin-top: 30px;'>Printed by The Print Space, London's premier fine art printing specialists.</p>",
                 "align": "center"
               }
             }
