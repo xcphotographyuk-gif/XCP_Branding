@@ -1,0 +1,341 @@
+{
+  "version": "0.4",
+  "title": "Services - Photography Retreats",
+  "type": "section",
+  "content": [
+    {
+      "id": "retreats_hero",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "min_height": {"unit": "vh", "size": 70},
+        "background_background": "classic",
+        "background_image": {"url": "[uc_local]assets/images/services/retreats-hero.jpg"},
+        "background_position": "center center",
+        "background_size": "cover",
+        "background_overlay_background": "classic",
+        "background_overlay_color": "rgba(0,0,0,0.5)",
+        "content_position": "middle",
+        "padding": {"unit": "px", "top": 100, "right": 20, "bottom": 100, "left": 20},
+        "_title": "Retreats Hero"
+      },
+      "elements": [
+        {
+          "id": "retreats_hero_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "retreats_hero_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Photography Retreats",
+                "header_size": "h1",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_font_size": {"unit": "px", "size": 58},
+                "typography_font_size_tablet": {"unit": "px", "size": 44"},
+                "typography_font_size_mobile": {"unit": "px", "size": 34"}
+              }
+            },
+            {
+              "id": "retreats_hero_subhead",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #FFFFFF; font-size: 24px; max-width: 850px; margin: 25px auto; line-height: 1.6;'>Immersive multi-day experiences where photography meets transformation. Disconnect from the everyday and reconnect with your creative vision.</p>",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "retreats_intro",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {"unit": "px", "size": 1100},
+        "padding": {"unit": "px", "top": 80, "right": 20, "bottom": 50, "left": 20},
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "_title": "Retreats Introduction"
+      },
+      "elements": [
+        {
+          "id": "retreats_intro_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "retreats_intro_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 18px; max-width: 900px; margin: 0 auto; line-height: 1.8;'>These aren't just photography trips—they're transformative experiences designed to deepen your artistry, refine your vision, and reconnect you with why you fell in love with photography in the first place. Limited to intimate groups for maximum impact.</p>",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "retreat_business",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "padding": {"unit": "px", "top": 50, "right": 20, "bottom": 50, "left": 20},
+        "background_background": "classic",
+        "background_color": "#F8F8F8",
+        "_title": "Business Elevation Retreat"
+      },
+      "elements": [
+        {
+          "id": "business_img_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 45},
+            "width_tablet": {"unit": "%", "size": 100},
+            "width_mobile": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "business_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "[uc_local]assets/images/services/retreat-business.jpg"},
+                "image_size": "large",
+                "object_fit": "cover",
+                "height": {"unit": "px", "size": 550}
+              }
+            }
+          ]
+        },
+        {
+          "id": "business_content_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 55},
+            "width_tablet": {"unit": "%", "size": 100},
+            "width_mobile": {"unit": "%", "size": 100},
+            "content_position": "middle",
+            "padding": {"unit": "px", "top": 40, "right": 60, "bottom": 40, "left": 60}
+          },
+          "elements": [
+            {
+              "id": "business_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Business Elevation & Storytelling Collaboration",
+                "header_size": "h3",
+                "typography_font_size": {"unit": "px", "size": 36},
+                "typography_font_size_mobile": {"unit": "px", "size": 28}
+              }
+            },
+            {
+              "id": "business_description",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size: 17px; line-height: 1.8; margin: 20px 0; color: #666666;'>A transformative multi-day retreat blending photography mastery with business strategy and creative collaboration. Designed for photographers ready to elevate their practice and build meaningful connections with fellow creatives.</p><p style='font-size: 16px; line-height: 1.7; margin: 25px 0 15px; color: #1A1A1A;'><strong>What's Included:</strong></p><ul style='font-size: 16px; line-height: 1.8; margin-left: 20px; color: #666666;'><li>3-5 day immersive experience at inspiring location</li><li>Advanced photography techniques and creative exercises</li><li>Business strategy sessions for photographers</li><li>Brand storytelling and client connection workshops</li><li>Portfolio review and constructive feedback</li><li>Collaborative shooting opportunities</li><li>Networking with like-minded creatives</li><li>Gourmet meals and luxury accommodation</li><li>Post-retreat support and community access</li></ul><p style='font-size: 16px; margin-top: 25px; color: #888888;'><strong>Duration:</strong> 3-5 days | Limited to 8-12 participants</p>"
+              }
+            },
+            {
+              "id": "business_cta",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Learn More",
+                "link": {"url": "#contact"},
+                "size": "md",
+                "button_type": "primary",
+                "typography_font_size": {"unit": "px", "size": 16"},
+                "margin": {"unit": "px", "top": 25}
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "retreat_photography",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "padding": {"unit": "px", "top": 50, "right": 20, "bottom": 80, "left": 20},
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "_title": "Photography-Only Retreat"
+      },
+      "elements": [
+        {
+          "id": "photo_content_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 55},
+            "width_tablet": {"unit": "%", "size": 100},
+            "width_mobile": {"unit": "%", "size": 100},
+            "content_position": "middle",
+            "padding": {"unit": "px", "top": 40, "right": 60, "bottom": 40, "left": 60}
+          },
+          "elements": [
+            {
+              "id": "photo_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Photography Mastery Retreat",
+                "header_size": "h3",
+                "typography_font_size": {"unit": "px", "size": 36},
+                "typography_font_size_mobile": {"unit": "px", "size": 28}
+              }
+            },
+            {
+              "id": "photo_description",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size: 17px; line-height: 1.8; margin: 20px 0; color: #666666;'>Pure photography immersion. Designed for those who want to focus exclusively on refining their craft, developing their unique style, and creating a body of work that truly represents their vision.</p><p style='font-size: 16px; line-height: 1.7; margin: 25px 0 15px; color: #1A1A1A;'><strong>What's Included:</strong></p><ul style='font-size: 16px; line-height: 1.8; margin-left: 20px; color: #666666;'><li>3-4 day photography-focused experience</li><li>Intensive editing workshops (Lightroom/Photoshop)</li><li>Advanced techniques for your genre of choice</li><li>Finding and developing your personal style</li><li>Composition and creative vision exercises</li><li>Daily shooting sessions in stunning locations</li><li>One-on-one mentorship and portfolio guidance</li><li>Post-processing masterclass</li><li>Meals and boutique accommodation included</li><li>Lifetime access to retreat learning materials</li></ul><p style='font-size: 16px; margin-top: 25px; color: #888888;'><strong>Duration:</strong> 3-4 days | Limited to 6-10 participants</p>"
+              }
+            },
+            {
+              "id": "photo_cta",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Join the Waitlist",
+                "link": {"url": "#contact"},
+                "size": "md",
+                "button_type": "primary",
+                "typography_font_size": {"unit": "px", "size": 16"},
+                "margin": {"unit": "px", "top": 25}
+              }
+            }
+          ]
+        },
+        {
+          "id": "photo_img_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 45},
+            "width_tablet": {"unit": "%", "size": 100},
+            "width_mobile": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "photo_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "[uc_local]assets/images/services/retreat-photography.jpg"},
+                "image_size": "large",
+                "object_fit": "cover",
+                "height": {"unit": "px", "size": 550}
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "retreats_testimonial",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "padding": {"unit": "px", "top": 70, "right": 20, "bottom": 70, "left": 20},
+        "background_background": "classic",
+        "background_color": "#F8F8F8",
+        "_title": "Retreat Testimonial"
+      },
+      "elements": [
+        {
+          "id": "testimonial_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "testimonial_quote",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<blockquote style='text-align: center; font-size: 22px; line-height: 1.7; max-width: 850px; margin: 0 auto; color: #1A1A1A; font-style: italic; border-left: none; padding: 0;'>\"This retreat didn't just improve my photography—it transformed how I see the world. I came home with not just better images, but a renewed sense of purpose and a clear vision for my work. Absolutely life-changing.\"</blockquote><p style='text-align: center; color: #888888; font-size: 16px; margin-top: 30px;'><strong>— Emily Richardson</strong><br>Professional Photographer, London</p>",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "retreats_cta",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "padding": {"unit": "px", "top": 70, "right": 20, "bottom": 80, "left": 20},
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "_title": "Retreats CTA"
+      },
+      "elements": [
+        {
+          "id": "retreats_cta_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "retreats_cta_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Ready for Transformation?",
+                "header_size": "h3",
+                "align": "center",
+                "title_color": "#1A1A1A",
+                "typography_font_size": {"unit": "px", "size": 40},
+                "typography_font_size_mobile": {"unit": "px", "size": 30}
+              }
+            },
+            {
+              "id": "retreats_cta_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 18px; max-width: 750px; margin: 25px auto 40px; line-height: 1.7;'>Photography retreats are announced annually with limited spaces. Join our priority list to be the first to know about upcoming dates and exclusive early-bird pricing.</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "retreats_cta_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Join the Priority List",
+                "align": "center",
+                "button_type": "primary",
+                "size": "lg",
+                "background_color": "#D4AF37",
+                "color": "#000000",
+                "typography_font_size": {"unit": "px", "size": 18},
+                "padding": {"unit": "px", "top": 16, "right": 40, "bottom": 16, "left": 40},
+                "border_radius": {"unit": "px", "size": 4}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
