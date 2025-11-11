@@ -215,10 +215,22 @@
                     "placeholder": "Anything else you'd like us to know?",
                     "width": "100",
                     "rows": 3
+                  },
+                  {
+                    "field_type": "recaptcha_v3",
+                    "field_label": "",
+                    "field_id": "recaptcha",
+                    "required": "yes",
+                    "width": "100"
                   }
                 ],
                 "button_text": "Send Inquiry",
-                "button_align": "center"
+                "button_align": "center",
+                "recaptcha": "yes",
+                "recaptcha_site_key": "[YOUR_RECAPTCHA_SITE_KEY]",
+                "recaptcha_secret_key": "[YOUR_RECAPTCHA_SECRET_KEY]",
+                "recaptcha_version": "v3",
+                "recaptcha_badge": "inline"
               },
               "elType": "widget",
               "widgetType": "form"
