@@ -16,11 +16,12 @@ function createCard(p){
   const picture = document.createElement('picture');
   const webp = document.createElement('source');
   webp.type = 'image/webp';
-  webp.srcset = p.imageWebp;
+  webp.srcset = p.srcset ? p.srcset.map(s => s.replace(/\.jpg/g, '.webp')).join(', ') : p.imageWebp;
   const img = document.createElement('img');
   img.loading = 'lazy';
   img.alt = p.alt || p.title;
   img.src = p.image;
+  if(p.srcset) img.srcset = p.srcset.join(', ');
   picture.appendChild(webp);
   picture.appendChild(img);
 
@@ -45,10 +46,11 @@ function openLightbox(p){
   LBPIC.innerHTML = '';
   const webp = document.createElement('source');
   webp.type = 'image/webp';
-  webp.srcset = p.imageWebp || p.image;
+  webp.srcset = p.srcset ? p.srcset.map(s => s.replace(/\.jpg/g, '.webp')).join(', ') : (p.imageWebp || p.image);
   const img = document.createElement('img');
   img.src = p.image;
   img.alt = p.alt || p.title;
+  if(p.srcset) img.srcset = p.srcset.join(', ');
   LBPIC.appendChild(webp);
   LBPIC.appendChild(img);
   LBTITLE.textContent = p.title + ' (' + p.year + ')';
