@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — XC Photography</title>
+  <link rel="stylesheet" href="/assets/css/portfolio.css">
+</head>
+<body>
+
+  <header class="site-header wrap">
+    <nav class="site-nav">
+      <strong>XC Photography</strong>
+      <a href="/">Home</a>
+      <a href="/portfolio.html">Portfolio</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <h1>Portfolio</h1>
+    <p class="lead">Explore our collection of branding and documentary photography.</p>
+    <div class="gallery" id="gallery"></div>
+  </main>
+
+  <aside class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <div class="lightbox-content">
+      <picture id="lightbox-picture"></picture>
+      <div>
+        <h2 id="lightbox-title"></h2>
+        <p id="lightbox-desc"></p>
+        <a id="lightbox-link" href="#">View project details →</a>
+      </div>
+    </div>
+  </aside>
+
+  <script src="/assets/js/portfolio.js"></script>
+</body>
+</html>
