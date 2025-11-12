@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — XC Photography</title>
+  <link rel="stylesheet" href="/assets/css/portfolio.css">
+  <style>
+    form {max-width:600px; margin-top:24px;}
+    label {display:block; margin-top:12px; font-weight:600;}
+    input, textarea {width:100%; padding:10px; margin-top:4px; border:1px solid #ccc; border-radius:4px; font-family:inherit;}
+    button {margin-top:16px; padding:12px 24px; background:#111; color:#fff; border:0; border-radius:4px; cursor:pointer;}
+    button:hover {background:#333;}
+  </style>
+</head>
+<body>
+
+  <header class="site-header wrap">
+    <nav class="site-nav">
+      <strong>XC Photography</strong>
+      <a href="/">Home</a>
+      <a href="/portfolio.html">Portfolio</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <h1>Contact Us</h1>
+    <p class="lead">Interested in working together? Get in touch.</p>
+    
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <label for="name">Your Name</label>
+      <input type="text" name="name" id="name" required>
+      
+      <label for="email">Your Email</label>
+      <input type="email" name="email" id="email" required>
+      
+      <label for="message">Message</label>
+      <textarea name="message" id="message" rows="6" required></textarea>
+      
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+</body>
+</html>
