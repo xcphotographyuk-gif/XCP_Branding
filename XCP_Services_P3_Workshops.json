@@ -46,7 +46,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; color: #FFFFFF; font-size: 22px; max-width: 800px; margin: 20px auto; line-height: 1.6;'>Master the art of visual storytelling. From street photography to studio techniques, elevate your craft with hands-on, expert-led workshops designed for passionate photographers.</p>",
+                "editor": "<p style='text-align: center; color: #FFFFFF; font-size: 22px; max-width: 800px; margin: 20px auto; line-height: 1.6;'>Master the art of visual storytelling. Intensive, hands-on workshops from £1,500 tailored to your goals. From street photography to studio mastery—elevate your craft with expert guidance.</p>",
                 "align": "center"
               }
             }
