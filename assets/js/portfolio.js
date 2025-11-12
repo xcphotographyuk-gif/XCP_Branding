@@ -16,7 +16,7 @@ function createCard(p){
   const picture = document.createElement('picture');
   const webp = document.createElement('source');
   webp.type = 'image/webp';
-  webp.srcset = p.srcset ? p.srcset.map(s => s.replace(/\.jpg/g, '.webp')).join(', ') : p.imageWebp;
+  webp.srcset = p.srcset ? p.srcset.map(s => s.replace(/\.(jpg|jpeg)$/gi, '.webp')).join(', ') : p.imageWebp;
   const img = document.createElement('img');
   img.loading = 'lazy';
   img.alt = p.alt || p.title;
@@ -46,7 +46,7 @@ function openLightbox(p){
   LBPIC.innerHTML = '';
   const webp = document.createElement('source');
   webp.type = 'image/webp';
-  webp.srcset = p.srcset ? p.srcset.map(s => s.replace(/\.jpg/g, '.webp')).join(', ') : (p.imageWebp || p.image);
+  webp.srcset = p.srcset ? p.srcset.map(s => s.replace(/\.(jpg|jpeg)$/gi, '.webp')).join(', ') : (p.imageWebp || p.image);
   const img = document.createElement('img');
   img.src = p.image;
   img.alt = p.alt || p.title;
@@ -68,6 +68,14 @@ function closeLightbox(){
 
 LBCLOSE.addEventListener('click', closeLightbox);
 LIGHTBOX.addEventListener('click', (e)=>{ if(e.target === LIGHTBOX) closeLightbox(); });
-window.addEventListener('keydown',(e)=>{ if(e.key === 'Escape' && LIGHTBOX.getAttribute('aria-hidden') === 'false') closeLightbox(); });
+window.addEventListener('keydown',(e)=>{ 
+  if(e.key === 'Escape' && LIGHTBOX.getAttribute('aria-hidden') === 'false') closeLightbox(); 
+});
 
-fetch('/data/projects.json').then(r=>r.json()).then(renderGallery).catch(err=>{ console.error('Failed to load gallery data',err); GALLERY_EL.innerHTML = '<p>Failed to load portfolio data.</p>' });
+fetch('/data/projects.json')
+  .then(r=>r.json())
+  .then(renderGallery)
+  .catch(err=>{ 
+    console.error('Failed to load gallery data',err); 
+    GALLERY_EL.innerHTML = '<p>Failed to load portfolio data.</p>' 
+  });
