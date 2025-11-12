@@ -1,0 +1,164 @@
+{
+  "version": "0.4",
+  "title": "XCP Terms & Conditions",
+  "type": "page",
+  "content": [
+    {
+      "id": "terms_hero",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "min_height": {"unit": "vh", "size": 40},
+        "background_background": "classic",
+        "background_color": "#1a1a1a",
+        "content_position": "middle",
+        "padding": {"unit": "px", "top": 80, "right": 20, "bottom": 80, "left": 20}
+      },
+      "elements": [
+        {
+          "id": "terms_hero_col",
+          "elType": "column",
+          "settings": {"_column_size": 100},
+          "elements": [
+            {
+              "id": "terms_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Terms & Conditions",
+                "header_size": "h1",
+                "align": "center",
+                "color": "#ffffff"
+              }
+            },
+            {
+              "id": "terms_updated",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #aaa;'>Last Updated: November 2025</p>",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "terms_content",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {"unit": "px", "size": 900},
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "padding": {"unit": "px", "top": 80, "right": 40, "bottom": 80, "left": 40}
+      },
+      "elements": [
+        {
+          "id": "terms_content_col",
+          "elType": "column",
+          "settings": {"_column_size": 100},
+          "elements": [
+            {
+              "id": "terms_intro",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='margin-bottom: 30px;'>Welcome to XC Photography. By engaging our services or purchasing products from our website, you agree to comply with and be bound by the following terms and conditions. Please review these terms carefully.</p>"
+              }
+            },
+            {
+              "id": "terms_services",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<h2 style='margin-top: 40px; margin-bottom: 20px;'>1. Photography Services</h2><h3 style='margin-top: 25px; margin-bottom: 15px;'>1.1 Booking & Deposits</h3><ul style='line-height: 1.8; margin-bottom: 20px;'><li>All bookings require a non-refundable deposit of 30% of the total session fee</li><li>Remaining balance is due on or before the session date</li><li>Bookings are confirmed only upon receipt of deposit</li><li>Session dates can be rescheduled with 48 hours notice</li></ul><h3 style='margin-top: 25px; margin-bottom: 15px;'>1.2 Cancellation Policy</h3><ul style='line-height: 1.8; margin-bottom: 20px;'><li>Free cancellation: 7+ days before session (deposit refunded minus processing fee)</li><li>50% refund: 48-72 hours before session</li><li>No refund: Less than 48 hours notice or no-show</li><li>Rescheduling (free): Up to 48 hours before session, once per booking</li></ul><h3 style='margin-top: 25px; margin-bottom: 15px;'>1.3 Session Details</h3><ul style='line-height: 1.8; margin-bottom: 20px;'><li>Session times are approximate and may vary based on conditions</li><li>Weather-related cancellations: Full rescheduling at no charge</li><li>Client late arrival: Session time may be shortened accordingly</li><li>Photographer reserves right to reschedule due to illness or emergency</li></ul>"
+              }
+            },
+            {
+              "id": "terms_deliverables",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<h2 style='margin-top: 40px; margin-bottom: 20px;'>2. Image Delivery & Usage Rights</h2><h3 style='margin-top: 25px; margin-bottom: 15px;'>2.1 Delivery Timeline</h3><ul style='line-height: 1.8; margin-bottom: 20px;'><li>Digital galleries: Delivered within 14-21 business days</li><li>Edited final images: Within 21-28 business days</li><li>Rush delivery: Available for additional fee (48-72 hour turnaround)</li></ul><h3 style='margin-top: 25px; margin-bottom: 15px;'>2.2 Copyright & Usage</h3><ul style='line-height: 1.8; margin-bottom: 20px;'><li>All images remain the copyright of XC Photography</li><li>Clients receive personal usage rights for purchased images</li><li>Commercial usage requires separate licensing agreement</li><li>Clients may not resell, redistribute, or alter images without permission</li><li>Photographer retains right to use images for portfolio, marketing, and exhibitions</li></ul><h3 style='margin-top: 25px; margin-bottom: 15px;'>2.3 Image Selection</h3><ul style='line-height: 1.8; margin-bottom: 20px;'><li>Photographer provides edited selection from session</li><li>Full unedited gallery available for additional fee</li><li>Additional editing/retouching available at hourly rate</li></ul>"
+              }
+            },
+            {
+              "id": "terms_prints",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<h2 style='margin-top: 40px; margin-bottom: 20px;'>3. Print Orders & Product Sales</h2><h3 style='margin-top: 25px; margin-bottom: 15px;'>3.1 Fine Art Prints</h3><ul style='line-height: 1.8; margin-bottom: 20px;'><li>Production time: 7-10 business days for standard prints</li><li>Hotel du Vin Exclusives: 10-14 business days (limited edition)</li><li>All prints include certificate of authenticity</li><li>Prints arrive framed, mounted, and ready to hang</li><li>Frame options: Black, white, or natural wood with optional mount</li></ul><h3 style='margin-top: 25px; margin-bottom: 15px;'>3.2 Shipping & Delivery</h3><ul style='line-height: 1.8; margin-bottom: 20px;'><li>UK delivery: 2-5 business days after production</li><li>International shipping: 7-14 business days</li><li>All shipments fully insured and tracked</li><li>Signature required for deliveries over £500</li></ul><h3 style='margin-top: 25px; margin-bottom: 15px;'>3.3 Returns & Refunds</h3><ul style='line-height: 1.8; margin-bottom: 20px;'><li>Damaged items: Full refund or replacement within 7 days of delivery</li><li>Quality issues: Contact us within 14 days for resolution</li><li>Change of mind: Not applicable to custom/made-to-order prints</li><li>Merchandise (mugs, apparel): 14-day return window if unused</li></ul>"
+              }
+            },
+            {
+              "id": "terms_workshops",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<h2 style='margin-top: 40px; margin-bottom: 20px;'>4. Workshops & Educational Services</h2><h3 style='margin-top: 25px; margin-bottom: 15px;'>4.1 Workshop Bookings</h3><ul style='line-height: 1.8; margin-bottom: 20px;'><li>Minimum participants: Group workshops require 4+ attendees</li><li>Maximum capacity: Limited to ensure quality instruction</li><li>Cancellation by organizer: Full refund if minimum not met</li><li>Materials: All necessary equipment provided unless specified</li></ul><h3 style='margin-top: 25px; margin-bottom: 15px;'>4.2 Cancellation Policy</h3><ul style='line-height: 1.8; margin-bottom: 20px;'><li>Full refund: 14+ days before workshop</li><li>50% refund: 7-13 days before workshop</li><li>No refund: Less than 7 days before workshop</li><li>Transfer to another attendee: Allowed up to 48 hours before</li></ul>"
+              }
+            },
+            {
+              "id": "terms_retreats",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<h2 style='margin-top: 40px; margin-bottom: 20px;'>5. Photography Retreats</h2><h3 style='margin-top: 25px; margin-bottom: 15px;'>5.1 Retreat Bookings</h3><ul style='line-height: 1.8; margin-bottom: 20px;'><li>Deposit: 50% required to secure booking</li><li>Final payment: Due 60 days before retreat start date</li><li>Accommodation & meals included as specified in retreat details</li><li>Travel to/from retreat location is participant's responsibility</li></ul><h3 style='margin-top: 25px; margin-bottom: 15px;'>5.2 Cancellation Policy</h3><ul style='line-height: 1.8; margin-bottom: 20px;'><li>90+ days: Full refund minus 10% admin fee</li><li>60-89 days: 50% refund</li><li>30-59 days: 25% refund</li><li>Less than 30 days: No refund</li><li>Travel insurance strongly recommended</li></ul>"
+              }
+            },
+            {
+              "id": "terms_liability",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<h2 style='margin-top: 40px; margin-bottom: 20px;'>6. Liability & Indemnification</h2><ul style='line-height: 1.8; margin-bottom: 20px;'><li>XC Photography maintains comprehensive liability insurance</li><li>Clients participate in location shoots at own risk</li><li>Photographer not liable for injury, loss, or damage during sessions</li><li>Equipment damage: Client responsible for damage to photographer's equipment caused by client negligence</li><li>Model release: Clients grant permission for portfolio/marketing use unless explicitly declined in writing</li></ul>"
+              }
+            },
+            {
+              "id": "terms_payment",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<h2 style='margin-top: 40px; margin-bottom: 20px;'>7. Payment Terms</h2><ul style='line-height: 1.8; margin-bottom: 20px;'><li>Accepted payments: Card, bank transfer, PayPal</li><li>All prices in GBP (£) unless otherwise stated</li><li>Prices subject to change; locked in at time of booking</li><li>Late payment: 5% surcharge after 14 days overdue</li><li>Payment plans available for packages over £1,000 (contact for details)</li></ul>"
+              }
+            },
+            {
+              "id": "terms_website",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<h2 style='margin-top: 40px; margin-bottom: 20px;'>8. Website Use & E-Commerce</h2><ul style='line-height: 1.8; margin-bottom: 20px;'><li>Users must be 18+ to make purchases</li><li>Account security is user's responsibility</li><li>Unauthorized use of site may result in legal action</li><li>Product images are representative; actual products may vary slightly</li><li>We reserve right to refuse or cancel orders at our discretion</li></ul>"
+              }
+            },
+            {
+              "id": "terms_privacy",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<h2 style='margin-top: 40px; margin-bottom: 20px;'>9. Privacy & Data Protection</h2><p style='margin-bottom: 20px;'>Your privacy is important to us. Please review our <a href='/privacy-policy'>Privacy Policy</a> for detailed information on how we collect, use, and protect your personal data in compliance with GDPR.</p>"
+              }
+            },
+            {
+              "id": "terms_changes",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<h2 style='margin-top: 40px; margin-bottom: 20px;'>10. Amendments</h2><p style='margin-bottom: 20px;'>XC Photography reserves the right to modify these terms at any time. Updated terms will be posted on this page with revision date. Continued use of services constitutes acceptance of modified terms.</p>"
+              }
+            },
+            {
+              "id": "terms_contact",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<h2 style='margin-top: 40px; margin-bottom: 20px;'>Questions?</h2><p style='margin-bottom: 30px;'>If you have any questions about these Terms & Conditions, please contact us:</p><p><strong>Email:</strong> <a href='mailto:info@xcphotography.co'>info@xcphotography.co</a><br><strong>Website:</strong> <a href='https://www.xcphotography.co'>www.xcphotography.co</a></p><p style='margin-top: 40px; padding-top: 30px; border-top: 1px solid #ddd; color: #888;'><em>By using our services or making a purchase, you acknowledge that you have read, understood, and agree to be bound by these Terms & Conditions.</em></p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
