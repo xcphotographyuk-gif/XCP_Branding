@@ -1,0 +1,390 @@
+{
+  "version": "0.4",
+  "title": "XCP Music Post Template",
+  "type": "page",
+  "content": [
+    {
+      "id": "music-hero-section",
+      "elType": "section",
+      "settings": {
+        "_title": "Hero Image Section",
+        "layout": "full_width",
+        "content_width": "full",
+        "min_height": {"unit": "vh", "size": 60},
+        "background_background": "classic",
+        "background_image": {"url": "[uc_local]assets/images/music-hero-placeholder.jpg"},
+        "background_size": "cover",
+        "background_position": "center center",
+        "background_repeat": "no-repeat",
+        "background_overlay_background": "classic",
+        "background_overlay_color": "rgba(0,0,0,0.4)",
+        "padding": {"unit": "px", "top": "120", "right": "20", "bottom": "80", "left": "20", "isLinked": false},
+        "content_position": "bottom",
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "flex_justify_content": "flex-end"
+      },
+      "elements": [
+        {
+          "id": "hero-content-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "content_width": {"unit": "%", "size": 90}
+          },
+          "elements": [
+            {
+              "id": "post-category",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='color: #FFD700; text-transform: uppercase; letter-spacing: 2px; font-size: 14px; margin-bottom: 10px;'>MUSIC</p>",
+                "align": "left"
+              }
+            },
+            {
+              "id": "post-title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Artist Name: Event/Tour Title at Venue",
+                "header_size": "h1",
+                "align": "left",
+                "typography_typography": "custom",
+                "typography_font_size": {"unit": "px", "size": 48},
+                "typography_font_size_tablet": {"unit": "px", "size": 36},
+                "typography_font_size_mobile": {"unit": "px", "size": 28},
+                "typography_font_weight": "700",
+                "typography_line_height": {"unit": "em", "size": 1.2},
+                "color": "#FFFFFF",
+                "text_shadow_text_shadow_type": "yes",
+                "text_shadow_text_shadow": {"horizontal": 2, "vertical": 2, "blur": 8, "color": "rgba(0,0,0,0.5)"}
+              }
+            },
+            {
+              "id": "post-date-location",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='color: #FFFFFF; font-size: 18px; margin-top: 10px;'>Date • Venue, City</p>",
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "article-content-section",
+      "elType": "section",
+      "settings": {
+        "_title": "Article Content Section",
+        "layout": "boxed",
+        "content_width": {"unit": "px", "size": 900},
+        "gap": "default",
+        "padding": {"unit": "px", "top": "80", "right": "20", "bottom": "60", "left": "20", "isLinked": false},
+        "background_background": "classic",
+        "background_color": "#FFFFFF"
+      },
+      "elements": [
+        {
+          "id": "content-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "article-intro",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size: 20px; line-height: 1.6; color: #333; font-style: italic; margin-bottom: 30px;'>Opening paragraph or lead-in text that captures the essence of the show. This should be engaging and draw the reader in.</p>",
+                "align": "left"
+              }
+            },
+            {
+              "id": "article-body",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Paste your concert review or press release content here. This section should include:</p>\n\n<p>• Details about the performance and atmosphere<br>\n• Information about the opening acts<br>\n• Highlights from the main performance<br>\n• Notable moments or special features<br>\n• Overall impression and recommendation</p>\n\n<p>Use proper paragraph breaks to make the content easy to read. Each paragraph should focus on a specific aspect of the show.</p>\n\n<p>Include quotes, anecdotes, or specific details that bring the experience to life for readers who weren't there.</p>",
+                "align": "left",
+                "typography_typography": "custom",
+                "typography_font_size": {"unit": "px", "size": 18},
+                "typography_line_height": {"unit": "em", "size": 1.8},
+                "text_color": "#333333"
+              }
+            },
+            {
+              "id": "article-byline",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='margin-top: 40px; padding-top: 20px; border-top: 2px solid #eee; font-style: italic; color: #666;'><strong>Words:</strong> Author Name<br><strong>Images:</strong> Xavier Clarke</p>",
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gallery-heading-section",
+      "elType": "section",
+      "settings": {
+        "_title": "Gallery Heading",
+        "layout": "boxed",
+        "content_width": {"unit": "px", "size": 1200},
+        "padding": {"unit": "px", "top": "60", "right": "20", "bottom": "20", "left": "20", "isLinked": false},
+        "background_background": "classic",
+        "background_color": "#F5F5F5"
+      },
+      "elements": [
+        {
+          "id": "gallery-heading-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "gallery-title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Artist Name Gallery",
+                "header_size": "h2",
+                "align": "center",
+                "typography_typography": "custom",
+                "typography_font_size": {"unit": "px", "size": 36},
+                "typography_font_size_mobile": {"unit": "px", "size": 28},
+                "typography_font_weight": "700",
+                "color": "#1a1a1a"
+              }
+            },
+            {
+              "id": "gallery-subtitle",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; font-size: 16px; color: #666; margin-top: 10px;'>Event Name, Venue Name</p>\n<p style='text-align: center; font-size: 14px; color: #999; margin-top: 5px;'>All images by ©Xavier Clarke, XC PHOTOGRAPHY</p>",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "photo-gallery-section",
+      "elType": "section",
+      "settings": {
+        "_title": "Photo Gallery",
+        "layout": "boxed",
+        "content_width": {"unit": "px", "size": 1200},
+        "gap": "default",
+        "padding": {"unit": "px", "top": "40", "right": "20", "bottom": "80", "left": "20", "isLinked": false},
+        "background_background": "classic",
+        "background_color": "#F5F5F5"
+      },
+      "elements": [
+        {
+          "id": "gallery-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "image-gallery",
+              "elType": "widget",
+              "widgetType": "gallery",
+              "settings": {
+                "gallery": [
+                  {"id": 1, "url": "[uc_local]assets/images/gallery/music-1.jpg"},
+                  {"id": 2, "url": "[uc_local]assets/images/gallery/music-2.jpg"},
+                  {"id": 3, "url": "[uc_local]assets/images/gallery/music-3.jpg"},
+                  {"id": 4, "url": "[uc_local]assets/images/gallery/music-4.jpg"},
+                  {"id": 5, "url": "[uc_local]assets/images/gallery/music-5.jpg"},
+                  {"id": 6, "url": "[uc_local]assets/images/gallery/music-6.jpg"},
+                  {"id": 7, "url": "[uc_local]assets/images/gallery/music-7.jpg"},
+                  {"id": 8, "url": "[uc_local]assets/images/gallery/music-8.jpg"},
+                  {"id": 9, "url": "[uc_local]assets/images/gallery/music-9.jpg"},
+                  {"id": 10, "url": "[uc_local]assets/images/gallery/music-10.jpg"},
+                  {"id": 11, "url": "[uc_local]assets/images/gallery/music-11.jpg"},
+                  {"id": 12, "url": "[uc_local]assets/images/gallery/music-12.jpg"}
+                ],
+                "gallery_layout": "grid",
+                "columns": 3,
+                "columns_tablet": 2,
+                "columns_mobile": 1,
+                "image_size": "large",
+                "gap": {"unit": "px", "size": 15},
+                "gallery_link": "file",
+                "open_lightbox": "yes",
+                "aspect_ratio": "3:2"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tour-info-section",
+      "elType": "section",
+      "settings": {
+        "_title": "Tour Schedule Section",
+        "layout": "boxed",
+        "content_width": {"unit": "px", "size": 900},
+        "padding": {"unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20", "isLinked": false},
+        "background_background": "classic",
+        "background_color": "#FFFFFF"
+      },
+      "elements": [
+        {
+          "id": "tour-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "tour-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Tour Schedule",
+                "header_size": "h3",
+                "align": "center",
+                "typography_typography": "custom",
+                "typography_font_size": {"unit": "px", "size": 32},
+                "typography_font_size_mobile": {"unit": "px", "size": 24},
+                "color": "#1a1a1a"
+              }
+            },
+            {
+              "id": "tour-dates",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div style='margin-top: 30px;'>\n<p style='margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #eee;'><strong>March 17th</strong> - Cambridge, Cambridge Junction</p>\n<p style='margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #eee;'><strong>March 18th</strong> - Birmingham, O2 Institute 2</p>\n<p style='margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #eee;'><strong>March 19th</strong> - Liverpool, O2 Academy</p>\n<p style='margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #eee;'><strong>March 31st</strong> - Brighton, Concorde 2</p>\n<p style='margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #eee;'><strong>April 1st</strong> - Southampton, Engine Rooms</p>\n<p style='margin-bottom: 0;'><em>Add or remove tour dates as needed</em></p>\n</div>",
+                "align": "left",
+                "typography_typography": "custom",
+                "typography_font_size": {"unit": "px", "size": 16},
+                "typography_line_height": {"unit": "em", "size": 1.6}
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "artist-info-section",
+      "elType": "section",
+      "settings": {
+        "_title": "Artist Information Section",
+        "layout": "boxed",
+        "content_width": {"unit": "px", "size": 900},
+        "padding": {"unit": "px", "top": "60", "right": "20", "bottom": "80", "left": "20", "isLinked": false},
+        "background_background": "classic",
+        "background_color": "#F9F9F9"
+      },
+      "elements": [
+        {
+          "id": "artist-info-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "artist-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "About the Artist",
+                "header_size": "h3",
+                "align": "left",
+                "typography_typography": "custom",
+                "typography_font_size": {"unit": "px", "size": 28},
+                "typography_font_size_mobile": {"unit": "px", "size": 22},
+                "color": "#1a1a1a"
+              }
+            },
+            {
+              "id": "artist-bio",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Add artist biography, background information, and relevant details here. This section provides context about the performer(s) for readers who may not be familiar with them.</p>\n\n<p>Include information such as:</p>\n<ul>\n<li>Artist history and formation</li>\n<li>Notable achievements or albums</li>\n<li>Musical style and influences</li>\n<li>Links to official websites or social media</li>\n</ul>",
+                "align": "left",
+                "typography_typography": "custom",
+                "typography_font_size": {"unit": "px", "size": 16},
+                "typography_line_height": {"unit": "em", "size": 1.8}
+              }
+            },
+            {
+              "id": "artist-links",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='margin-top: 30px;'><strong>Find out more and visit:</strong><br>\n<a href='#' style='color: #0066cc;'>Artist Official Website</a> | <a href='#' style='color: #0066cc;'>Tour Dates</a></p>",
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "supporting-act-section",
+      "elType": "section",
+      "settings": {
+        "_title": "Supporting Act Section (Optional)",
+        "layout": "boxed",
+        "content_width": {"unit": "px", "size": 900},
+        "padding": {"unit": "px", "top": "60", "right": "20", "bottom": "80", "left": "20", "isLinked": false},
+        "background_background": "classic",
+        "background_color": "#FFFFFF"
+      },
+      "elements": [
+        {
+          "id": "support-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "support-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Supporting Act Name",
+                "header_size": "h3",
+                "align": "left",
+                "typography_typography": "custom",
+                "typography_font_size": {"unit": "px", "size": 28},
+                "typography_font_size_mobile": {"unit": "px", "size": 22},
+                "color": "#1a1a1a"
+              }
+            },
+            {
+              "id": "support-info",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Information about the opening/supporting act. Include details about their performance, upcoming releases, and where to find more information.</p>\n\n<p><strong>Preview:</strong> <a href='#' style='color: #0066cc;'>Link to music/video</a><br>\n<strong>Tour Dates:</strong> <a href='#' style='color: #0066cc;'>Official tour schedule</a></p>",
+                "align": "left",
+                "typography_typography": "custom",
+                "typography_font_size": {"unit": "px", "size": 16},
+                "typography_line_height": {"unit": "em", "size": 1.8}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
