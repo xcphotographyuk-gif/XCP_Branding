@@ -3,9 +3,11 @@ Complete Website & Marketing System for XC Photography
 
 ## 🚀 START HERE - BRAND NEW? FEELING OVERWHELMED?
 
-**OPEN THIS FILE FIRST:** `QUICK_START_PRIORITY_CHECKLIST.md`
+**NEED TO KNOW WHAT TO UPLOAD?** → `FILES_TO_UPLOAD_CHECKLIST.md` ⭐ **Every file listed with checkboxes**
 
-This tells you exactly what to do first, in order, without overwhelm.
+**NEED AN ACTION PLAN?** → `QUICK_START_PRIORITY_CHECKLIST.md` ⭐ **What to do first, step-by-step**
+
+**WANT THE BIG PICTURE?** → `GETTING_STARTED.md` ⭐ **5-minute overview**
 
 ---
 
@@ -62,6 +64,8 @@ Upload your complete website to www.xcphotography.co:
 
 ## 📂 Quick File Reference
 
+**📋 Complete Checklist:** `FILES_TO_UPLOAD_CHECKLIST.md` ⭐ **Every file + checkboxes**
+
 ### Website Templates (Upload to WordPress):
 - `XCP_HomeP1_Hero_Gallery_FINAL.json`
 - `XCP_HomeP2_Parallax_Text_FINAL.json`
@@ -69,9 +73,12 @@ Upload your complete website to www.xcphotography.co:
 - `XCP_HomeP4_Stats_Process_FINAL.json`
 - `XCP_HomeP5_Testimonials_CTA_FINAL.json`
 - `XCP_ContactForm_Section.json`
-- `XCP_About_P1_Hero_Story.json`
+- `XCP_About_P1_Hero_Story.json` + `XCP_About_P2_Process_CTA.json`
 - `XCP_Services_P1_Packages.json`
-- `XCP_Portfolio_P1_Hero_Filter.json`
+- `XCP_Portfolio_P1_Hero_Filter.json` + `XCP_Portfolio_P2_Gallery_CTA.json`
+- `XCP_Contact_P1_Complete.json`
+
+**See FILES_TO_UPLOAD_CHECKLIST.md for upload order and instructions.**
 
 ### Ready-to-Publish Blog Posts:
 1. `BLOG_10_Brand_Photo_Prep_Tips.md` - Publish first (client-focused)
@@ -96,6 +103,12 @@ Upload your complete website to www.xcphotography.co:
 ## 🎓 How to Use This Repository
 
 ### If You're Brand New:
+1. Open `FILES_TO_UPLOAD_CHECKLIST.md` - See every file you need
+2. Open `QUICK_START_PRIORITY_CHECKLIST.md` - Get your action plan
+3. Follow the checklist in order
+4. Don't skip ahead - one phase at a time
+
+### If Website Is Your Priority:
 1. Open `QUICK_START_PRIORITY_CHECKLIST.md`
 2. Follow the checklist in order
 3. Don't skip ahead - one phase at a time
