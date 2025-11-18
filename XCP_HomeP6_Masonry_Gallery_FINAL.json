@@ -1,0 +1,112 @@
+{
+  "version": "0.4",
+  "title": "XCP Home Part 6 - Masonry Gallery",
+  "type": "page",
+  "content": [
+    {
+      "id": "masonry-gallery-section",
+      "elType": "section",
+      "settings": {
+        "_title": "Visual Impact in Action",
+        "layout": "full_width",
+        "content_width": "full",
+        "background_background": "classic",
+        "background_color": "#FAFAFA",
+        "padding": {"unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20", "isLinked": false}
+      },
+      "elements": [
+        {
+          "id": "gallery-header",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "content_width": "full"
+          },
+          "elements": [
+            {
+              "id": "gallery-title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Visual Impact in Action",
+                "header_size": "h2",
+                "align": "center",
+                "typography_typography": "custom",
+                "typography_font_size": {"unit": "px", "size": 42},
+                "typography_font_size_tablet": {"unit": "px", "size": 36},
+                "typography_font_size_mobile": {"unit": "px", "size": 28},
+                "color": "#1A1A1A",
+                "margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0", "isLinked": false}
+              }
+            },
+            {
+              "id": "gallery-description",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "Every frame tells a story. See how strategic imagery transforms brands and creates connections that drive real results for clients actively seeking impactful visual storytelling.",
+                "align": "center",
+                "typography_typography": "custom",
+                "typography_font_size": {"unit": "px", "size": 18},
+                "typography_font_size_mobile": {"unit": "px", "size": 16},
+                "color": "#666666",
+                "width": {"unit": "%", "size": 70},
+                "width_tablet": {"unit": "%", "size": 85},
+                "width_mobile": {"unit": "%", "size": 100},
+                "_margin": {"unit": "px", "top": "0", "right": "auto", "bottom": "40", "left": "auto", "isLinked": false}
+              }
+            }
+          ]
+        },
+        {
+          "id": "masonry-gallery-container",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "content_width": "full"
+          },
+          "elements": [
+            {
+              "id": "masonry-gallery-widget",
+              "elType": "widget",
+              "widgetType": "gallery",
+              "settings": {
+                "gallery": [
+                  {"id": 1, "url": "[uc_local]assets/images/gallery/image-01.jpg"},
+                  {"id": 2, "url": "[uc_local]assets/images/gallery/image-02.jpg"},
+                  {"id": 3, "url": "[uc_local]assets/images/gallery/image-03.jpg"},
+                  {"id": 4, "url": "[uc_local]assets/images/gallery/image-04.jpg"},
+                  {"id": 5, "url": "[uc_local]assets/images/gallery/image-05.jpg"},
+                  {"id": 6, "url": "[uc_local]assets/images/gallery/image-06.jpg"},
+                  {"id": 7, "url": "[uc_local]assets/images/gallery/image-07.jpg"},
+                  {"id": 8, "url": "[uc_local]assets/images/gallery/image-08.jpg"},
+                  {"id": 9, "url": "[uc_local]assets/images/gallery/image-09.jpg"},
+                  {"id": 10, "url": "[uc_local]assets/images/gallery/image-10.jpg"},
+                  {"id": 11, "url": "[uc_local]assets/images/gallery/image-11.jpg"},
+                  {"id": 12, "url": "[uc_local]assets/images/gallery/image-12.jpg"},
+                  {"id": 13, "url": "[uc_local]assets/images/gallery/image-13.jpg"},
+                  {"id": 14, "url": "[uc_local]assets/images/gallery/image-14.jpg"},
+                  {"id": 15, "url": "[uc_local]assets/images/gallery/image-15.jpg"}
+                ],
+                "gallery_layout": "masonry",
+                "columns": 4,
+                "columns_tablet": 3,
+                "columns_mobile": 2,
+                "image_gap": {"unit": "px", "size": 15},
+                "image_gap_tablet": {"unit": "px", "size": 10},
+                "image_gap_mobile": {"unit": "px", "size": 8},
+                "gallery_hover": "opacity",
+                "content_hover_animation": "fade-in",
+                "image_hover_animation": "grow",
+                "image_size": "medium_large",
+                "link_to": "file",
+                "open_lightbox": "yes",
+                "aspect_ratio": "16:9"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
