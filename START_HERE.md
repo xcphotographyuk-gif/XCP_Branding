@@ -25,21 +25,23 @@
 
 Your site needs to convert visitors into clients.
 
-📄 **Open this file:** `WEBSITE_READINESS_AUDIT.md`
+📄 **Open this file:** `AUTOMATED_SITE_AUDIT_INSTRUCTIONS.md` ← **USE THIS ONE**
 
-**Do this:**
-- Read Section 1 (First Impressions)
-- Read Section 7 (Booking/Contact Process)
-- Test your contact form (submit inquiry yourself)
-- Test your booking calendar works
+**This file does the audit FOR you with 13 automated tests:**
+- Test contact form (submit yourself)
+- Test booking calendar works
 - Test site on your phone
-- List anything broken
+- Check speed (paste URL into tool)
+- Count testimonials
+- Check HTTPS security
+- And 7 more automated checks
 
-**Fix immediately:**
-- Broken contact form
-- Broken booking calendar
-- Missing phone number
-- Non-working mobile site
+**After audit, it tells you:**
+- ✅ What's working
+- ❌ What's broken (with direct fix instructions)
+- 📄 Which file to use to fix each issue
+
+**No judgment calls needed. Just follow the tests.**
 
 ---
 
@@ -310,10 +312,11 @@ DM to chat or book: [link in bio]
    - Master action plan
    - Links to everything
 
-2. **`WEBSITE_READINESS_AUDIT.md`**
-   - Audit your site
-   - Fix critical issues
-   - Ensure conversion optimization
+2. **`AUTOMATED_SITE_AUDIT_INSTRUCTIONS.md`** ← **USE THIS FOR AUDIT**
+   - 13 automated tests (no judgment needed)
+   - Tells you exactly what's broken
+   - Direct links to fix each issue
+   - Copy/paste templates included
 
 3. **`FOR_PEOPLE_NERVOUS_ABOUT_DIGITAL.md`**
    - In-person networking strategy
@@ -415,6 +418,10 @@ DM to chat or book: [link in bio]
     - Full implementation guide
     - Everything step-by-step
 
+21. **`WEBSITE_READINESS_AUDIT.md`**
+    - Detailed audit checklist (if you prefer manual)
+    - Use AUTOMATED_SITE_AUDIT_INSTRUCTIONS.md instead for faster results
+
 ---
 
 ## YOUR ACTUAL WORKFLOW
@@ -423,7 +430,7 @@ DM to chat or book: [link in bio]
 
 **Files you'll actually use:**
 1. ✅ `START_HERE.md` (this file) - Read today
-2. ✅ `WEBSITE_READINESS_AUDIT.md` - Audit today, fix critical issues
+2. ✅ `AUTOMATED_SITE_AUDIT_INSTRUCTIONS.md` - Audit today with 13 automated tests
 3. ✅ `FOR_PEOPLE_NERVOUS_ABOUT_DIGITAL.md` - Social templates + networking strategy
 4. ✅ `WARM_OUTREACH_TEMPLATES.md` - Email templates after networking
 
@@ -460,7 +467,7 @@ DM to chat or book: [link in bio]
 → `WARM_OUTREACH_TEMPLATES.md` (Warm Email Outreach section)
 
 ### Need to audit your website?
-→ `WEBSITE_READINESS_AUDIT.md` (Complete checklist)
+→ `AUTOMATED_SITE_AUDIT_INSTRUCTIONS.md` (13 automated tests + fix instructions)
 
 ### Need daily action plan?
 → `QUICK_START_BOOKINGS_FIRST.md` (7-day plan)
@@ -500,8 +507,8 @@ DM to chat or book: [link in bio]
 
 ### Monday:
 - [ ] Read this entire file (START_HERE.md)
-- [ ] Audit website (WEBSITE_READINESS_AUDIT.md)
-- [ ] Fix critical website issues
+- [ ] Audit website (AUTOMATED_SITE_AUDIT_INSTRUCTIONS.md)
+- [ ] Fix critical website issues (follow file instructions)
 - [ ] Write 3 social media posts (save in Notes)
 - [ ] Post first content (behind-the-scenes)
 
@@ -567,7 +574,7 @@ DM to chat or book: [link in bio]
 → `FOR_PEOPLE_NERVOUS_ABOUT_DIGITAL.md` - "Your approach" section
 
 ### "My website isn't converting"
-→ `WEBSITE_READINESS_AUDIT.md` - Fix issues one by one
+→ `AUTOMATED_SITE_AUDIT_INSTRUCTIONS.md` - 13 tests + fixes
 
 ### "I need revenue THIS WEEK"
 → `QUICK_START_BOOKINGS_FIRST.md` - Emergency tactics section
