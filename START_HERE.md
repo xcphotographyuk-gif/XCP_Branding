@@ -12,8 +12,11 @@
 ✅ You have booking form + CTAs on your site  
 ✅ You want to network and send people to your website  
 ✅ You need revenue from bookings ASAP  
+✅ You want ready-to-use templates (not starting from scratch)
 
 **This guide tells you exactly what to do, step by step.**
+
+**Note:** All templates have content already written. You just add your photos, insert affiliate links where marked, and replace placeholder text ([Name], [Your Phone], etc.).
 
 ---
 
@@ -339,54 +342,76 @@ DM to chat or book: [link in bio]
 
 ---
 
-### PRIORITY 3 - PASSIVE INCOME (Month 2+):
+### PRIORITY 3 - VISUAL MARKETING (Week 1-2):
 
-6. **`FREE_TOOLS_REVENUE_PLAN.md`**
+6. **`ADOBE_EXPRESS_DESIGN_PROMPTS.md`** ← **NEW - Brochure/catalogue creation**
+   - 6 Adobe Express prompts (copy/paste ready)
+   - Sales brochure, product catalogue, pricing guide
+   - Image placeholder guidance + narrative text included
+   - Takes 15-30 min to create each document
+
+7. **`INSTAGRAM_CAROUSEL_TEMPLATES.md`** ← **NEW - Social content**
+   - 10 ready-to-use carousel topics
+   - Slide-by-slide content + design guidance
+   - Build Your Tribe methodology
+   - Service outline cards for Instagram
+
+8. **`EXPANDED_UK_DROPSHIPPING_OPTIONS.md`** ← **NEW - 8+ suppliers**
+   - Beyond Printful/Prodigi/Inkthreadable
+   - Fine art specialists (Loxley Colour, Printed.com)
+   - Gifts & clothing (Contrado, SPOD, Teemill)
+   - Quality comparison + pricing
+
+---
+
+### PRIORITY 4 - PASSIVE INCOME (Month 2+):
+
+9. **`FREE_TOOLS_REVENUE_PLAN.md`**
    - £0 investment implementation
    - Free tools only
    - Manual affiliate links
 
-7. **`AMAZON_AFFILIATE_INTEGRATION_DETAILED.md`**
-   - How to add Amazon affiliate links
-   - Manual vs automated options
-   - UK-specific setup
+10. **`AMAZON_AFFILIATE_INTEGRATION_DETAILED.md`**
+    - How to add Amazon affiliate links
+    - Manual vs automated options
+    - UK-specific setup
 
-8. **`WOOCOMMERCE_INTEGRATION_GUIDE.md`**
-   - E-commerce shop setup
-   - UK dropshipping suppliers
-   - Product ideas
+11. **`WOOCOMMERCE_INTEGRATION_GUIDE.md`**
+    - E-commerce shop setup
+    - UK dropshipping suppliers
+    - Product ideas
 
 ---
 
 ### BLOG POSTS (Ready to Publish - Month 2+):
 
-9. **`BLOG_10_Brand_Photo_Prep_Tips.md`**
-   - Publish first (client conversion focus)
-   - Use as lead magnet PDF
+12. **`BLOG_10_Brand_Photo_Prep_Tips.md`**
+    - Publish first (client conversion focus)
+    - Use as lead magnet PDF
 
-10. **`BLOG_M43_Music_Photography_Gear.md`**
+13. **`BLOG_M43_Music_Photography_Gear.md`**
     - High-ticket affiliate products
     - Music photography niche
 
-11. **`BLOG_10_Photography_Essentials.md`**
+14. **`BLOG_10_Photography_Essentials.md`**
     - Gear recommendations
     - Affiliate links
 
-12. **`BLOG_Budget_Photography_Upgrades.md`**
+15. **`BLOG_Budget_Photography_Upgrades.md`**
     - 5 upgrades under £200
 
-13. **`BLOG_Home_Studio_Setup.md`**
+16. **`BLOG_Home_Studio_Setup.md`**
     - Studio gear guide
 
 ---
 
 ### MARKETING MATERIALS (Reference as Needed):
 
-14. **`SERVICES_BROCHURE_DESIGN.md`**
+17. **`SERVICES_BROCHURE_DESIGN.md`**
     - Print brochure design
     - When you need printed materials
 
-15. **`DIGITAL_MARKETING_MATERIALS.md`**
+18. **`DIGITAL_MARKETING_MATERIALS.md`**
     - Email templates
     - Social media templates
     - Ad copy
@@ -395,30 +420,30 @@ DM to chat or book: [link in bio]
 
 ### GIFT GUIDES & TEMPLATES (Month 3+):
 
-16. **`GIFT_GUIDE_01_Ultimate_Photography_Gifts.md`**
+19. **`GIFT_GUIDE_01_Ultimate_Photography_Gifts.md`**
     - 30+ product recommendations
     - Seasonal SEO content
 
-17. **`ORGANIC_BLOG_POST_TEMPLATES.md`**
+20. **`ORGANIC_BLOG_POST_TEMPLATES.md`**
     - Story-based content ideas
     - 20+ post templates
 
-18. **`BLOG_POST_TEMPLATE.md`**
+21. **`BLOG_POST_TEMPLATE.md`**
     - Reusable blog structure
 
 ---
 
 ### STRATEGY GUIDES (Reference):
 
-19. **`REVENUE_GENERATION_MASTER_PLAN.md`**
+22. **`REVENUE_GENERATION_MASTER_PLAN.md`**
     - Overall revenue strategy
     - Multiple income streams
 
-20. **`COMPLETE_IMPLEMENTATION_CHECKLIST.md`**
+23. **`COMPLETE_IMPLEMENTATION_CHECKLIST.md`**
     - Full implementation guide
     - Everything step-by-step
 
-21. **`WEBSITE_READINESS_AUDIT.md`**
+24. **`WEBSITE_READINESS_AUDIT.md`**
     - Detailed audit checklist (if you prefer manual)
     - Use AUTOMATED_SITE_AUDIT_INSTRUCTIONS.md instead for faster results
 
@@ -434,7 +459,11 @@ DM to chat or book: [link in bio]
 3. ✅ `FOR_PEOPLE_NERVOUS_ABOUT_DIGITAL.md` - Social templates + networking strategy
 4. ✅ `WARM_OUTREACH_TEMPLATES.md` - Email templates after networking
 
-**That's it. 4 files. Don't read the others yet.**
+**Optional (if you want visual marketing materials):**
+5. ⭐ `ADOBE_EXPRESS_DESIGN_PROMPTS.md` - Create brochure/catalogue (30 min)
+6. ⭐ `INSTAGRAM_CAROUSEL_TEMPLATES.md` - Create carousels (engaging content)
+
+**That's it. 4-6 files maximum. Don't read the others yet.**
 
 ---
 
@@ -455,6 +484,8 @@ DM to chat or book: [link in bio]
 - `BLOG_10_Brand_Photo_Prep_Tips.md` - Publish first blog post
 - `AMAZON_AFFILIATE_INTEGRATION_DETAILED.md` - Add affiliate links
 - `FREE_TOOLS_REVENUE_PLAN.md` - Set up passive income
+- `WOOCOMMERCE_INTEGRATION_GUIDE.md` - Set up shop
+- `EXPANDED_UK_DROPSHIPPING_OPTIONS.md` - Choose 2-3 suppliers beyond Printful
 
 ---
 
@@ -462,6 +493,7 @@ DM to chat or book: [link in bio]
 
 ### Need to know what to post on social media?
 → `FOR_PEOPLE_NERVOUS_ABOUT_DIGITAL.md` (Content Templates section)
+→ `INSTAGRAM_CAROUSEL_TEMPLATES.md` (10 carousel topics with slide-by-slide content)
 
 ### Need email templates after networking?
 → `WARM_OUTREACH_TEMPLATES.md` (Warm Email Outreach section)
@@ -469,8 +501,14 @@ DM to chat or book: [link in bio]
 ### Need to audit your website?
 → `AUTOMATED_SITE_AUDIT_INSTRUCTIONS.md` (13 automated tests + fix instructions)
 
+### Need to create brochure or catalogue?
+→ `ADOBE_EXPRESS_DESIGN_PROMPTS.md` (6 prompts, copy/paste into Adobe Express)
+
 ### Need daily action plan?
 → `QUICK_START_BOOKINGS_FIRST.md` (7-day plan)
+
+### Need to set up shop with quality dropshipping?
+→ `EXPANDED_UK_DROPSHIPPING_OPTIONS.md` (8+ UK suppliers for fine art, gifts, clothing)
 
 ### Need to set up blog/affiliate/shop?
 → Wait until Month 2, then use:
