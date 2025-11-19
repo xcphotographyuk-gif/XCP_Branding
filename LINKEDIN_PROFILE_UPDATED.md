@@ -17,9 +17,9 @@ Brand & Documentary Photographer | Brighton-Based | Serving UK & International C
 ```
 Every frame is an invitation into your story.
 
-I'm Xavier, a commercial branding and documentary photographer dedicated to transforming the ordinary into the extraordinary. Whether you're an understated brand finding your voice or a bold one commanding attention, your narrative deserves to be seen—and felt.
+I'm Xavier, a commercial branding and documentary photographer dedicated to transforming the ordinary into the extraordinary. Whether you're an understated brand finding your voice or a bold one commanding attention, your narrative deserves to be seen, and felt.
 
-My work captures the full spectrum: quiet, everyday moments that reveal authenticity, and the electrifying energy of live performance that celebrates craft, culture, and rebellion. From behind-the-scenes intimacy to dynamic imagery that stops the scroll, I create visuals that don't just document—they inspire, engage, and convert.
+My work captures the full spectrum: quiet, everyday moments that reveal authenticity, and the electrifying energy of live performance that celebrates craft, culture, and rebellion. From behind-the-scenes intimacy to dynamic imagery that stops the scroll, I create visuals that don't just document, they inspire, engage, and convert.
 
 📸 WHAT I DO:
 • Brand Photography (headshots, team culture, office environments)
@@ -36,7 +36,7 @@ My work captures the full spectrum: quiet, everyday moments that reveal authenti
 • Companies that value authenticity over perfection
 
 💡 WHY IT MATTERS:
-Quality imagery isn't a luxury—it's a strategic statement about who you are. In a crowded market, your visuals speak before you do. They build trust, establish credibility, and create the emotional connection that turns browsers into buyers.
+Quality imagery isn't a luxury, it's a strategic statement about who you are. In a crowded market, your visuals speak before you do. They build trust, establish credibility, and create the emotional connection that turns browsers into buyers.
 
 With 15+ years of experience across commercial branding and documentary photography, I understand how to craft visuals that elevate your brand identity while staying true to your authentic self. From transforming everyday details to capturing electrifying moments that command attention, I work with you to build a visual story that stands out.
 
