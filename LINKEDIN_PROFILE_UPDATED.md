@@ -12,44 +12,40 @@ Brand & Documentary Photographer | Brighton-Based | Serving UK & International C
 
 ---
 
-## ABOUT SECTION (Updated - Your Voice + Broader Reach)
+## ABOUT SECTION (Client-Benefit Focused with AIDA Structure)
 
 ```
-Every frame is an invitation into your story.
+Your brand deserves more than stock photos and staged smiles.
 
-I'm Xavier, a commercial branding and documentary photographer dedicated to transforming the ordinary into the extraordinary. Whether you're an understated brand finding your voice or a bold one commanding attention, your narrative deserves to be seen, and felt.
+Think about the last time an image stopped your scroll. Not because it was perfect, but because it felt real. That's what your customers are craving. That's what builds trust before they ever reach out.
 
-My work captures the full spectrum: quiet, everyday moments that reveal authenticity, and the electrifying energy of live performance that celebrates craft, culture, and rebellion. From behind-the-scenes intimacy to dynamic imagery that stops the scroll, I create visuals that don't just document, they inspire, engage, and convert.
+Whether your team needs authentic brand imagery that reflects your culture, or your workspace walls are crying out for fine art that tells your story, professional photography isn't just about looking good. It's about being remembered.
 
-📸 WHAT I DO:
-• Brand Photography (headshots, team culture, office environments)
-• Documentary-Style Business Photography
-• Live Performance & Event Coverage
-• Corporate Portraits & Professional Headshots
-• Product & Lifestyle Photography
+📸 SERVICES THAT ELEVATE YOUR BRAND:
+• Brand Photography Sessions (from £1,495) - headshots, team culture, office environments that capture who you really are
+• Documentary-Style Business Photography - behind-the-scenes storytelling that connects with your audience
+• Live Event & Performance Coverage - authentic moments from conferences, launches, and corporate events
+• Professional Headshots & Portraits - confidence-building imagery for individuals and teams
+• Workshops, Retreats & Photography Courses - learn to see your brand through a new lens
+• Fine Art & Wall Art for Your Space - museum-quality prints that transform offices, hotels, and homes into branded experiences
 
-🎯 WHO I WORK WITH:
-• Growing businesses needing cohesive brand imagery
-• Established brands refreshing their visual identity
-• Entrepreneurs ready to own their narrative
-• Creative professionals & performers
-• Companies that value authenticity over perfection
+🎯 YOUR RESULTS:
+• Stand out in crowded newsfeeds with imagery that stops the scroll
+• Build trust with authentic visuals that reflect your real culture
+• Create 6-12 months of social content from a single session
+• Transform bland office walls into conversation-starting brand statements
+• Own your visual narrative instead of relying on generic stock photos
 
-💡 WHY IT MATTERS:
-Quality imagery isn't a luxury, it's a strategic statement about who you are. In a crowded market, your visuals speak before you do. They build trust, establish credibility, and create the emotional connection that turns browsers into buyers.
+💡 THE ROI OF REAL IMAGERY:
+When potential clients land on your website or LinkedIn, your visuals speak first. Generic photos say "we're like everyone else." Authentic brand photography says "we're worth paying attention to." The difference shows in engagement rates, conversion rates, and how long people stay on your pages.
 
-With 15+ years of experience across commercial branding and documentary photography, I understand how to craft visuals that elevate your brand identity while staying true to your authentic self. From transforming everyday details to capturing electrifying moments that command attention, I work with you to build a visual story that stands out.
+Fine art for your workspace isn't decoration. It's identity. It tells clients, employees, and partners what you value the moment they walk through the door. From corporate offices to hotel collections, curated imagery shapes how people feel about your space.
 
-📍 LOCATION & REACH:
-Based in Brighton, UK | Available for UK-wide and international projects
+Serving clients across the UK and internationally from Brighton. Available for on-location shoots, multi-day projects, and custom commissions.
 
-🌐 PORTFOLIO: www.xcphotography.co
-📧 CONTACT: [Your email]
-📞 PHONE: [Your number]
+🌐 PORTFOLIO & BOOKING: www.xcphotography.co/services
 
-Ready to elevate your brand through authentic storytelling? Let's capture the moments that matter and turn your vision into unforgettable reality.
-
-👉 Book a free discovery call: www.xcphotography.co/services
+Ready to see what authentic visual storytelling could do for your brand? Book your free discovery call and let's explore how the right imagery can transform your business presence, both online and in your physical space.
 ```
 
 ---
@@ -69,24 +65,29 @@ Ready to elevate your brand through authentic storytelling? Let's capture the mo
 **List these clearly:**
 
 1. **Brand Photography Sessions**
-   - Starting at £800
+   - From £1,495
    - Half-day or full-day options
-   - Includes: Planning call, on-location shoot, 50+ edited images
+   - Includes: Discovery call, on-location shoot, professional editing, 50+ images ready for web and print
 
 2. **Documentary Business Photography**
-   - Starting at £1,200
-   - Capture authentic behind-the-scenes moments
-   - Perfect for: Company culture, process documentation, storytelling content
+   - From £1,495
+   - Authentic behind-the-scenes storytelling
+   - Perfect for: Company culture, process documentation, social content creation
 
-3. **Event & Performance Photography**
-   - Starting at £600
-   - Live coverage of corporate events, performances, conferences
-   - Quick turnaround for social media use
+3. **Workshops, Retreats & Photography Courses**
+   - Custom pricing based on group size and duration
+   - Learn visual storytelling for your business
+   - On-location or multi-day intensive options
 
-4. **Professional Headshots & Portraits**
-   - Starting at £300
-   - Individual or team sessions
-   - On-location or studio
+4. **Event & Performance Photography**
+   - Pop-ups and events: Lower per-person rates available
+   - 1-2-1 Workshop Sessions: £1,495
+   - Live coverage with quick turnaround for immediate social use
+
+5. **Fine Art & Wall Art**
+   - Museum-quality prints for offices, hotels, and curated spaces
+   - Limited editions and custom commissions
+   - Transform your environment with imagery that reflects your brand identity
 
 ---
 
