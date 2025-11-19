@@ -14,11 +14,19 @@
 - **Accent Gold:** #F59E0B (for CTAs)
 
 ### Typography:
-- **Headlines:** Bold, sans-serif (Montserrat Bold, Inter Bold)
-- **Body:** Clean sans-serif (Inter, Open Sans)
-- **Accent:** Modern serif for quotes (Playfair Display)
+- **ALL TEXT:** Raleway (use throughout all templates)
+- **Headlines:** Raleway Bold or Raleway ExtraBold
+- **Body:** Raleway Regular or Raleway Medium
+- **Accent:** Raleway SemiBold for emphasis
 
-### Photography Style:
+### ⚠️ IMPORTANT: Image Handling
+**DO NOT use Adobe Express AI-generated images**
+- Leave image placeholders BLANK
+- Upload YOUR OWN photography only
+- Each template includes image suggestions below
+- Use your authentic documentary/branding work
+
+### Photography Style (For Your Images):
 - High contrast
 - Authentic moments
 - Bold composition
@@ -31,6 +39,15 @@
 
 ### Design A: "Behind the Lens"
 **Layout:** Photo placeholder (70%) + Text overlay (30%)
+
+**Image Suggestion:**
+```
+📸 Upload one of YOUR photos showing:
+- You photographing a client (behind-the-scenes)
+- Close-up of your camera in action
+- Your workspace/editing setup
+- Candid moment during a brand photoshoot
+```
 
 **Text Suggestions:**
 ```
@@ -47,7 +64,9 @@ SUBTEXT:
 
 **Design Notes:**
 - Dark overlay on bottom 30% of image
-- White text for readability
+- White text for readability (Raleway Bold)
+- Logo watermark top right corner
+- Leave image area BLANK until you upload your photo
 - Logo watermark top right corner
 - Keep image area clear for YOUR photos
 
@@ -55,6 +74,16 @@ SUBTEXT:
 
 ### Design B: "Client Results"
 **Layout:** Split screen - Before/After OR process shot
+
+**Image Suggestion:**
+```
+📸 Upload two of YOUR photos:
+LEFT: Client's previous photos OR prep shot
+RIGHT: Your final branded photography
+- OR: Show client's business transformation
+- OR: Before/during photoshoot process
+- Examples: Restaurant interior before/after styling
+```
 
 **Text Suggestions:**
 ```
@@ -76,6 +105,8 @@ FOOTER:
 - Teal accent bar separating sections
 - Clean, modern layout
 - High contrast for social media feeds
+- Raleway Bold for headlines
+- Leave image areas BLANK until you upload
 
 ---
 
