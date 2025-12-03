@@ -1,0 +1,115 @@
+{
+  "version": "0.4",
+  "title": "XCP 404 - Page Not Found",
+  "type": "page",
+  "content": [
+    {
+      "id": "error_404_section",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "min_height": {"unit": "vh", "size": 90},
+        "background_background": "gradient",
+        "background_color": "#1a1a1a",
+        "background_color_b": "#0a0a0a",
+        "background_gradient_type": "linear",
+        "background_gradient_angle": {"unit": "deg", "size": 135},
+        "content_position": "middle",
+        "padding": {"unit": "%", "top": 5, "right": 5, "bottom": 5, "left": 5}
+      },
+      "elements": [
+        {
+          "id": "error_404_col",
+          "elType": "column",
+          "settings": {"_column_size": 100},
+          "elements": [
+            {
+              "id": "error_404_number",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "404",
+                "header_size": "h1",
+                "align": "center",
+                "color": "#00ff88",
+                "typography_font_size": {"unit": "px", "size": 120},
+                "typography_font_weight": "700"
+              }
+            },
+            {
+              "id": "error_404_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Oops! This Page Took an Unexpected Detour",
+                "header_size": "h2",
+                "align": "center",
+                "color": "#ffffff",
+                "typography_font_size": {"unit": "px", "size": 36}
+              }
+            },
+            {
+              "id": "error_404_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; font-size: 1.2rem; max-width: 600px; margin: 20px auto; color: #aaaaaa;'>Like a perfect shot that got away, the page you're looking for seems to have vanished. But don't worry—there's plenty more to explore.</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "error_404_search",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div style='max-width: 500px; margin: 40px auto;'><form role='search' method='get' action='/' style='display: flex; gap: 10px;'><input type='search' placeholder='Search for images, services, or shop...' name='s' style='flex: 1; padding: 15px 20px; border: 2px solid #333; background: rgba(255,255,255,0.05); color: #fff; border-radius: 4px; font-size: 16px;' /><button type='submit' style='padding: 15px 30px; background: #00ff88; color: #000; border: none; border-radius: 4px; font-weight: 600; cursor: pointer;'>Search</button></form></div>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "error_404_divider",
+              "elType": "widget",
+              "widgetType": "divider",
+              "settings": {
+                "color": "#333333",
+                "width": {"unit": "%", "size": 50},
+                "align": "center",
+                "gap": {"unit": "px", "size": 40}
+              }
+            },
+            {
+              "id": "error_404_helpful_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Looking for Something Specific?",
+                "header_size": "h3",
+                "align": "center",
+                "color": "#ffffff",
+                "typography_font_size": {"unit": "px", "size": 24}
+              }
+            },
+            {
+              "id": "error_404_links",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div style='max-width: 800px; margin: 30px auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;'><div style='background: rgba(255,255,255,0.05); padding: 30px; border-radius: 8px; text-align: center; border: 2px solid #333; transition: all 0.3s;'><div style='font-size: 40px; margin-bottom: 15px;'>🏠</div><h4 style='color: #00ff88; margin-bottom: 10px;'>Home</h4><p style='color: #aaa; font-size: 14px; margin-bottom: 15px;'>Start from the beginning</p><a href='/' style='color: #00ff88; text-decoration: none; font-weight: 600;'>Go Home →</a></div><div style='background: rgba(255,255,255,0.05); padding: 30px; border-radius: 8px; text-align: center; border: 2px solid #333;'><div style='font-size: 40px; margin-bottom: 15px;'>📸</div><h4 style='color: #00ff88; margin-bottom: 10px;'>Portfolio</h4><p style='color: #aaa; font-size: 14px; margin-bottom: 15px;'>Explore our work</p><a href='/portfolio' style='color: #00ff88; text-decoration: none; font-weight: 600;'>View Gallery →</a></div><div style='background: rgba(255,255,255,0.05); padding: 30px; border-radius: 8px; text-align: center; border: 2px solid #333;'><div style='font-size: 40px; margin-bottom: 15px;'>🛍️</div><h4 style='color: #00ff88; margin-bottom: 10px;'>Shop</h4><p style='color: #aaa; font-size: 14px; margin-bottom: 15px;'>Browse prints & gifts</p><a href='/shop' style='color: #00ff88; text-decoration: none; font-weight: 600;'>Shop Now →</a></div><div style='background: rgba(255,255,255,0.05); padding: 30px; border-radius: 8px; text-align: center; border: 2px solid #333;'><div style='font-size: 40px; margin-bottom: 15px;'>💼</div><h4 style='color: #00ff88; margin-bottom: 10px;'>Services</h4><p style='color: #aaa; font-size: 14px; margin-bottom: 15px;'>Book a session</p><a href='/services' style='color: #00ff88; text-decoration: none; font-weight: 600;'>Learn More →</a></div></div>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "error_404_contact_section",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div style='max-width: 600px; margin: 50px auto; padding: 40px; background: rgba(0,255,136,0.1); border-radius: 8px; border: 2px solid rgba(0,255,136,0.3);'><h3 style='text-align: center; color: #00ff88; margin-bottom: 15px;'>Still Can't Find What You Need?</h3><p style='text-align: center; color: #ccc; margin-bottom: 25px;'>I'm here to help. Reach out and I'll point you in the right direction.</p><div style='text-align: center;'><a href='/contact' style='display: inline-block; padding: 15px 40px; background: #00ff88; color: #000; text-decoration: none; border-radius: 4px; font-weight: 600; margin-right: 15px;'>Contact Us</a><a href='mailto:info@xcphotography.co' style='display: inline-block; padding: 15px 40px; background: transparent; color: #00ff88; text-decoration: none; border-radius: 4px; border: 2px solid #00ff88; font-weight: 600;'>Email Directly</a></div></div>",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

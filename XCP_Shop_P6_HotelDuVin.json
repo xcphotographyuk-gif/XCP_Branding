@@ -1,0 +1,469 @@
+{
+  "version": "0.4",
+  "title": "Shop - Hotel du Vin Exclusives",
+  "type": "section",
+  "content": [
+    {
+      "id": "hdv_hero",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "min_height": {"unit": "vh", "size": 70},
+        "background_background": "classic",
+        "background_image": {"url": "[uc_local]assets/images/shop/hdv-hero.jpg"},
+        "background_position": "center center",
+        "background_size": "cover",
+        "background_overlay_background": "classic",
+        "background_overlay_color": "rgba(0,0,0,0.5)",
+        "content_position": "middle",
+        "padding": {"unit": "px", "top": 100, "right": 20, "bottom": 100, "left": 20},
+        "_title": "Hotel du Vin Hero"
+      },
+      "elements": [
+        {
+          "id": "hdv_hero_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "hdv_hero_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Hotel du Vin Exclusives",
+                "header_size": "h1",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_font_size": {"unit": "px", "size": 62},
+                "typography_font_size_tablet": {"unit": "px", "size": 46},
+                "typography_font_size_mobile": {"unit": "px", "size": 36}
+              }
+            },
+            {
+              "id": "hdv_hero_subhead",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #FFFFFF; font-size: 24px; max-width: 850px; margin: 25px auto; line-height: 1.6; font-style: italic;'>A distinguished collection for the discerning collector. Limited edition pieces that embody timeless elegance and uncompromising quality.</p>",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hdv_intro",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {"unit": "px", "size": 1100},
+        "padding": {"unit": "px", "top": 80, "right": 20, "bottom": 60, "left": 20},
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "_title": "HDV Introduction"
+      },
+      "elements": [
+        {
+          "id": "hdv_intro_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "hdv_intro_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #444444; font-size: 19px; max-width: 900px; margin: 0 auto; line-height: 1.8;'>Curated exclusively for Hotel du Vin and the most discerning clients, this collection represents the pinnacle of photographic artistry. Each piece is a testament to craftsmanship, created with meticulous attention to detail and presented with the sophistication you expect.</p><p style='text-align: center; color: #888888; font-size: 16px; margin-top: 35px; font-style: italic;'>Available in limited quantities. Inquire for private viewings.</p>",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hdv_collection",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "padding": {"unit": "px", "top": 60, "right": 20, "bottom": 80, "left": 20},
+        "background_background": "classic",
+        "background_color": "#F5F5F5",
+        "_title": "HDV Collection"
+      },
+      "elements": [
+        {
+          "id": "hdv_prints",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 50},
+            "width_tablet": {"unit": "%", "size": 100},
+            "width_mobile": {"unit": "%", "size": 100},
+            "padding": {"unit": "px", "top": 35, "right": 35, "bottom": 35, "left": 35}
+          },
+          "elements": [
+            {
+              "id": "hdv_prints_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "[uc_local]assets/images/shop/hdv-prints.jpg"},
+                "image_size": "large",
+                "hover_animation": "grow"
+              }
+            },
+            {
+              "id": "hdv_prints_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Signature Fine Art Prints",
+                "header_size": "h3",
+                "align": "center",
+                "title_color": "#1A1A1A",
+                "typography_font_size": {"unit": "px", "size": 34},
+                "margin": {"unit": "px", "top": 30}
+              }
+            },
+            {
+              "id": "hdv_prints_desc",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 17px; line-height: 1.7; margin: 18px auto 25px;'>Museum-quality giclée prints on archival Hahnemühle paper, hand-framed with conservation-grade materials. Each print is numbered, signed, and accompanied by a certificate of authenticity from The Print Space.</p><p style='text-align: center; color: #888888; font-size: 15px; font-style: italic;'>Limited to 25 editions per image</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "hdv_prints_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Private Enquiry",
+                "align": "center",
+                "button_type": "default",
+                "size": "md",
+                "background_color": "#1A1A1A",
+                "color": "#FFFFFF",
+                "typography_font_size": {"unit": "px", "size": 16},
+                "padding": {"unit": "px", "top": 14, "right": 40, "bottom": 14, "left": 40},
+                "border_radius": {"unit": "px", "size": 2},
+                "margin": {"unit": "px", "top": 20}
+              }
+            }
+          ]
+        },
+        {
+          "id": "hdv_book",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 50},
+            "width_tablet": {"unit": "%", "size": 100},
+            "width_mobile": {"unit": "%", "size": 100},
+            "padding": {"unit": "px", "top": 35, "right": 35, "bottom": 35, "left": 35}
+          },
+          "elements": [
+            {
+              "id": "hdv_book_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "[uc_local]assets/images/shop/hdv-book.jpg"},
+                "image_size": "large",
+                "hover_animation": "grow"
+              }
+            },
+            {
+              "id": "hdv_book_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "The Signature Monograph",
+                "header_size": "h3",
+                "align": "center",
+                "title_color": "#1A1A1A",
+                "typography_font_size": {"unit": "px", "size": 34},
+                "margin": {"unit": "px", "top": 30}
+              }
+            },
+            {
+              "id": "hdv_book_desc",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 17px; line-height: 1.7; margin: 18px auto 25px;'>A collector's edition coffee table book showcasing the finest works. Bound in Italian leather with gold foil detailing, printed on premium art paper. A visual journey through cinematic storytelling.</p><p style='text-align: center; color: #888888; font-size: 15px; font-style: italic;'>Hardcover | 180 pages | Collector's Edition</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "hdv_book_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Reserve Your Copy",
+                "align": "center",
+                "button_type": "default",
+                "size": "md",
+                "background_color": "#1A1A1A",
+                "color": "#FFFFFF",
+                "typography_font_size": {"unit": "px", "size": 16},
+                "padding": {"unit": "px", "top": 14, "right": 40, "bottom": 14, "left": 40},
+                "border_radius": {"unit": "px", "size": 2},
+                "margin": {"unit": "px", "top": 20}
+              }
+            }
+          ]
+        },
+        {
+          "id": "hdv_postcards",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 33.33},
+            "width_tablet": {"unit": "%", "size": 50},
+            "width_mobile": {"unit": "%", "size": 100},
+            "padding": {"unit": "px", "top": 35, "right": 30, "bottom": 35, "left": 30}
+          },
+          "elements": [
+            {
+              "id": "hdv_postcards_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "[uc_local]assets/images/shop/hdv-postcards.jpg"},
+                "image_size": "medium",
+                "hover_animation": "grow"
+              }
+            },
+            {
+              "id": "hdv_postcards_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Artisan Postcards",
+                "header_size": "h4",
+                "align": "center",
+                "title_color": "#1A1A1A",
+                "typography_font_size": {"unit": "px", "size": 26},
+                "margin": {"unit": "px", "top": 25}
+              }
+            },
+            {
+              "id": "hdv_postcards_desc",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 15px; line-height: 1.6; margin: 15px auto;'>Exquisite postcards printed on heavyweight cotton paper. A curated collection of 12 iconic images, perfect for collectors or as elegant correspondence.</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "hdv_postcards_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "View Collection",
+                "align": "center",
+                "button_type": "default",
+                "size": "sm",
+                "background_color": "#1A1A1A",
+                "color": "#FFFFFF",
+                "typography_font_size": {"unit": "px", "size": 14},
+                "padding": {"unit": "px", "top": 10, "right": 28, "bottom": 10, "left": 28},
+                "border_radius": {"unit": "px", "size": 2},
+                "margin": {"unit": "px", "top": 18}
+              }
+            }
+          ]
+        },
+        {
+          "id": "hdv_umbrella",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 33.33},
+            "width_tablet": {"unit": "%", "size": 50},
+            "width_mobile": {"unit": "%", "size": 100},
+            "padding": {"unit": "px", "top": 35, "right": 30, "bottom": 35, "left": 30}
+          },
+          "elements": [
+            {
+              "id": "hdv_umbrella_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "[uc_local]assets/images/shop/hdv-umbrella.jpg"},
+                "image_size": "medium",
+                "hover_animation": "grow"
+              }
+            },
+            {
+              "id": "hdv_umbrella_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Luxury Umbrella",
+                "header_size": "h4",
+                "align": "center",
+                "title_color": "#1A1A1A",
+                "typography_font_size": {"unit": "px", "size": 26},
+                "margin": {"unit": "px", "top": 25}
+              }
+            },
+            {
+              "id": "hdv_umbrella_desc",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 15px; line-height: 1.6; margin: 15px auto;'>Crafted with precision. A full-size umbrella with wooden handle, steel frame, and subtle signature branding. Sophistication for every season.</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "hdv_umbrella_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Enquire",
+                "align": "center",
+                "button_type": "default",
+                "size": "sm",
+                "background_color": "#1A1A1A",
+                "color": "#FFFFFF",
+                "typography_font_size": {"unit": "px", "size": 14},
+                "padding": {"unit": "px", "top": 10, "right": 28, "bottom": 10, "left": 28},
+                "border_radius": {"unit": "px", "size": 2},
+                "margin": {"unit": "px", "top": 18}
+              }
+            }
+          ]
+        },
+        {
+          "id": "hdv_sunglasses",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 33.33},
+            "width_tablet": {"unit": "%", "size": 50},
+            "width_mobile": {"unit": "%", "size": 100},
+            "padding": {"unit": "px", "top": 35, "right": 30, "bottom": 35, "left": 30}
+          },
+          "elements": [
+            {
+              "id": "hdv_sunglasses_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "[uc_local]assets/images/shop/hdv-sunglasses.jpg"},
+                "image_size": "medium",
+                "hover_animation": "grow"
+              }
+            },
+            {
+              "id": "hdv_sunglasses_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Signature Sunglasses",
+                "header_size": "h4",
+                "align": "center",
+                "title_color": "#1A1A1A",
+                "typography_font_size": {"unit": "px", "size": 26},
+                "margin": {"unit": "px", "top": 25}
+              }
+            },
+            {
+              "id": "hdv_sunglasses_desc",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 15px; line-height: 1.6; margin: 15px auto;'>Timeless design meets modern craftsmanship. Premium polarized lenses with handcrafted acetate frames. An essential accessory for the discerning eye.</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "hdv_sunglasses_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Discover More",
+                "align": "center",
+                "button_type": "default",
+                "size": "sm",
+                "background_color": "#1A1A1A",
+                "color": "#FFFFFF",
+                "typography_font_size": {"unit": "px", "size": 14},
+                "padding": {"unit": "px", "top": 10, "right": 28, "bottom": 10, "left": 28},
+                "border_radius": {"unit": "px", "size": 2},
+                "margin": {"unit": "px", "top": 18}
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hdv_cta",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {"unit": "px", "size": 1000},
+        "padding": {"unit": "px", "top": 70, "right": 20, "bottom": 80, "left": 20},
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "_title": "HDV CTA"
+      },
+      "elements": [
+        {
+          "id": "hdv_cta_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "hdv_cta_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Experience the Collection",
+                "header_size": "h3",
+                "align": "center",
+                "title_color": "#1A1A1A",
+                "typography_font_size": {"unit": "px", "size": 38},
+                "typography_font_size_mobile": {"unit": "px", "size": 28}
+              }
+            },
+            {
+              "id": "hdv_cta_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 18px; max-width: 750px; margin: 25px auto 40px; line-height: 1.7;'>These exclusive pieces are available by private appointment only. Contact us to arrange a viewing or to discuss bespoke commissions tailored to your vision.</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "hdv_cta_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Schedule Private Viewing",
+                "align": "center",
+                "button_type": "primary",
+                "size": "lg",
+                "background_color": "#D4AF37",
+                "color": "#000000",
+                "typography_font_size": {"unit": "px", "size": 18},
+                "padding": {"unit": "px", "top": 18, "right": 45, "bottom": 18, "left": 45},
+                "border_radius": {"unit": "px", "size": 2}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

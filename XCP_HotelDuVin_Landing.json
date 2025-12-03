@@ -1,0 +1,516 @@
+{
+  "version": "0.4",
+  "title": "Hotel du Vin - Exclusive Collection Landing",
+  "type": "section",
+  "content": [
+    {
+      "id": "hdv_landing_hero",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "min_height": {"unit": "vh", "size": 75},
+        "background_background": "classic",
+        "background_image": {"url": "[uc_local]assets/images/shop/hdv-landing-hero.jpg"},
+        "background_position": "center center",
+        "background_size": "cover",
+        "background_overlay_background": "classic",
+        "background_overlay_color": "rgba(0,0,0,0.55)",
+        "content_position": "middle",
+        "padding": {"unit": "px", "top": 120, "right": 20, "bottom": 120, "left": 20},
+        "_title": "HDV Landing Hero"
+      },
+      "elements": [
+        {
+          "id": "hdv_landing_hero_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "hdv_landing_logo",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #D4AF37; font-size: 16px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 20px;'>Exclusive Collection</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "hdv_landing_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Hotel du Vin Collection",
+                "header_size": "h1",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_font_size": {"unit": "px", "size": 64},
+                "typography_font_size_tablet": {"unit": "px", "size": 48},
+                "typography_font_size_mobile": {"unit": "px", "size": 36}
+              }
+            },
+            {
+              "id": "hdv_landing_subhead",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #FFFFFF; font-size: 24px; max-width: 850px; margin: 30px auto; line-height: 1.6; font-style: italic;'>A distinguished collection for the discerning collector. Limited edition pieces that embody timeless elegance.</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "hdv_landing_cta",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "View the Collection",
+                "align": "center",
+                "button_type": "primary",
+                "size": "lg",
+                "background_color": "#D4AF37",
+                "color": "#000000",
+                "typography_font_size": {"unit": "px", "size": 18},
+                "padding": {"unit": "px", "top": 18, "right": 45, "bottom": 18, "left": 45},
+                "border_radius": {"unit": "px", "size": 2},
+                "margin": {"unit": "px", "top": 30}
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hdv_landing_intro",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {"unit": "px", "size": 1000},
+        "padding": {"unit": "px", "top": 90, "right": 20, "bottom": 70, "left": 20},
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "_title": "HDV Introduction"
+      },
+      "elements": [
+        {
+          "id": "hdv_landing_intro_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "hdv_landing_intro_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Curated Exclusively for Hotel du Vin",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#1A1A1A",
+                "typography_font_size": {"unit": "px", "size": 42},
+                "typography_font_size_mobile": {"unit": "px", "size": 30}
+              }
+            },
+            {
+              "id": "hdv_landing_intro_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 19px; max-width: 900px; margin: 30px auto; line-height: 1.8;'>This exclusive collection represents the pinnacle of photographic artistry—meticulously curated pieces available only through Hotel du Vin and select private showings. Each work is a testament to craftsmanship, created with unwavering attention to detail and presented with the sophistication you expect.</p><p style='text-align: center; color: #888888; font-size: 16px; margin-top: 40px; font-style: italic;'>Limited quantities available. Private viewings by appointment.</p>",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hdv_landing_collections",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "padding": {"unit": "px", "top": 70, "right": 20, "bottom": 90, "left": 20},
+        "background_background": "classic",
+        "background_color": "#F5F5F5",
+        "_title": "HDV Collections"
+      },
+      "elements": [
+        {
+          "id": "hdv_prints_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 50},
+            "width_tablet": {"unit": "%", "size": 100},
+            "width_mobile": {"unit": "%", "size": 100},
+            "padding": {"unit": "px", "top": 40, "right": 40, "bottom": 40, "left": 40}
+          },
+          "elements": [
+            {
+              "id": "hdv_prints_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "[uc_local]assets/images/shop/hdv-prints-showcase.jpg"},
+                "image_size": "large",
+                "hover_animation": "grow"
+              }
+            },
+            {
+              "id": "hdv_prints_label",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; color: #D4AF37; margin: 30px 0 15px;'>Limited Edition</p>"
+              }
+            },
+            {
+              "id": "hdv_prints_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Signature Fine Art Prints",
+                "header_size": "h3",
+                "align": "center",
+                "title_color": "#1A1A1A",
+                "typography_font_size": {"unit": "px", "size": 32}
+              }
+            },
+            {
+              "id": "hdv_prints_desc",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 17px; line-height: 1.7; margin: 20px auto;'>Giclée prints on archival Hahnemühle paper, hand-framed with conservation-grade materials. Numbered, signed, and certified—limited to 25 editions per image.</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "hdv_prints_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "View Prints",
+                "align": "center",
+                "button_type": "default",
+                "size": "md",
+                "background_color": "#1A1A1A",
+                "color": "#FFFFFF",
+                "typography_font_size": {"unit": "px", "size": 16},
+                "padding": {"unit": "px", "top": 14, "right": 40, "bottom": 14, "left": 40},
+                "border_radius": {"unit": "px", "size": 2},
+                "margin": {"unit": "px", "top": 25}
+              }
+            }
+          ]
+        },
+        {
+          "id": "hdv_book_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 50},
+            "width_tablet": {"unit": "%", "size": 100},
+            "width_mobile": {"unit": "%", "size": 100},
+            "padding": {"unit": "px", "top": 40, "right": 40, "bottom": 40, "left": 40}
+          },
+          "elements": [
+            {
+              "id": "hdv_book_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "[uc_local]assets/images/shop/hdv-book-showcase.jpg"},
+                "image_size": "large",
+                "hover_animation": "grow"
+              }
+            },
+            {
+              "id": "hdv_book_label",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; color: #D4AF37; margin: 30px 0 15px;'>Collector's Edition</p>"
+              }
+            },
+            {
+              "id": "hdv_book_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "The Signature Monograph",
+                "header_size": "h3",
+                "align": "center",
+                "title_color": "#1A1A1A",
+                "typography_font_size": {"unit": "px", "size": 32}
+              }
+            },
+            {
+              "id": "hdv_book_desc",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 17px; line-height: 1.7; margin: 20px auto;'>Italian leather bound with gold foil detailing. 180 pages of the finest works, printed on premium art paper—a visual journey through cinematic storytelling.</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "hdv_book_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Reserve Your Copy",
+                "align": "center",
+                "button_type": "default",
+                "size": "md",
+                "background_color": "#1A1A1A",
+                "color": "#FFFFFF",
+                "typography_font_size": {"unit": "px", "size": 16},
+                "padding": {"unit": "px", "top": 14, "right": 40, "bottom": 14, "left": 40},
+                "border_radius": {"unit": "px", "size": 2},
+                "margin": {"unit": "px", "top": 25}
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hdv_landing_accessories",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "padding": {"unit": "px", "top": 70, "right": 20, "bottom": 80, "left": 20},
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "_title": "HDV Accessories"
+      },
+      "elements": [
+        {
+          "id": "hdv_acc_heading_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "hdv_acc_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Exclusive Accessories",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#1A1A1A",
+                "typography_font_size": {"unit": "px", "size": 40},
+                "margin": {"unit": "px", "bottom": 50}
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hdv_landing_acc_grid",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "padding": {"unit": "px", "top": 0, "right": 20, "bottom": 80, "left": 20},
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "_title": "Accessories Grid"
+      },
+      "elements": [
+        {
+          "id": "hdv_postcards_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 33.33},
+            "width_tablet": {"unit": "%", "size": 50},
+            "width_mobile": {"unit": "%", "size": 100},
+            "padding": {"unit": "px", "top": 25, "right": 25, "bottom": 25, "left": 25}
+          },
+          "elements": [
+            {
+              "id": "hdv_postcards_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "[uc_local]assets/images/shop/hdv-postcards.jpg"},
+                "image_size": "medium",
+                "hover_animation": "grow"
+              }
+            },
+            {
+              "id": "hdv_postcards_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Artisan Postcards",
+                "header_size": "h4",
+                "align": "center",
+                "title_color": "#1A1A1A",
+                "typography_font_size": {"unit": "px", "size": 24},
+                "margin": {"unit": "px", "top": 20}
+              }
+            },
+            {
+              "id": "hdv_postcards_desc",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 15px; line-height: 1.6; margin: 12px auto;'>12-piece collection on heavyweight cotton paper.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "hdv_umbrella_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 33.33},
+            "width_tablet": {"unit": "%", "size": 50},
+            "width_mobile": {"unit": "%", "size": 100},
+            "padding": {"unit": "px", "top": 25, "right": 25, "bottom": 25, "left": 25}
+          },
+          "elements": [
+            {
+              "id": "hdv_umbrella_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "[uc_local]assets/images/shop/hdv-umbrella.jpg"},
+                "image_size": "medium",
+                "hover_animation": "grow"
+              }
+            },
+            {
+              "id": "hdv_umbrella_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Luxury Umbrella",
+                "header_size": "h4",
+                "align": "center",
+                "title_color": "#1A1A1A",
+                "typography_font_size": {"unit": "px", "size": 24},
+                "margin": {"unit": "px", "top": 20}
+              }
+            },
+            {
+              "id": "hdv_umbrella_desc",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 15px; line-height: 1.6; margin: 12px auto;'>Wooden handle, steel frame, signature branding.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "hdv_sunglasses_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 33.33},
+            "width_tablet": {"unit": "%", "size": 50},
+            "width_mobile": {"unit": "%", "size": 100},
+            "padding": {"unit": "px", "top": 25, "right": 25, "bottom": 25, "left": 25}
+          },
+          "elements": [
+            {
+              "id": "hdv_sunglasses_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "[uc_local]assets/images/shop/hdv-sunglasses.jpg"},
+                "image_size": "medium",
+                "hover_animation": "grow"
+              }
+            },
+            {
+              "id": "hdv_sunglasses_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Signature Sunglasses",
+                "header_size": "h4",
+                "align": "center",
+                "title_color": "#1A1A1A",
+                "typography_font_size": {"unit": "px", "size": 24},
+                "margin": {"unit": "px", "top": 20}
+              }
+            },
+            {
+              "id": "hdv_sunglasses_desc",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 15px; line-height: 1.6; margin: 12px auto;'>Polarized lenses, handcrafted acetate frames.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hdv_landing_cta_final",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {"unit": "px", "size": 950},
+        "padding": {"unit": "px", "top": 80, "right": 20, "bottom": 90, "left": 20},
+        "background_background": "classic",
+        "background_color": "#F5F5F5",
+        "_title": "Final CTA"
+      },
+      "elements": [
+        {
+          "id": "hdv_landing_cta_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "hdv_landing_cta_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Schedule a Private Viewing",
+                "header_size": "h3",
+                "align": "center",
+                "title_color": "#1A1A1A",
+                "typography_font_size": {"unit": "px", "size": 38},
+                "typography_font_size_mobile": {"unit": "px", "size": 28}
+              }
+            },
+            {
+              "id": "hdv_landing_cta_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 18px; max-width: 750px; margin: 25px auto 40px; line-height: 1.7;'>These exclusive pieces are available by private appointment only. Contact us to arrange a viewing or discuss bespoke commissions tailored to your vision.</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "hdv_landing_cta_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Request Private Viewing",
+                "align": "center",
+                "button_type": "primary",
+                "size": "lg",
+                "background_color": "#D4AF37",
+                "color": "#000000",
+                "typography_font_size": {"unit": "px", "size": 18},
+                "padding": {"unit": "px", "top": 18, "right": 45, "bottom": 18, "left": 45},
+                "border_radius": {"unit": "px", "size": 2}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
