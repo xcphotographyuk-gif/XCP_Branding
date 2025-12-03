@@ -26,12 +26,14 @@ Generate:
 4. 10-15 relevant keywords including trending hashtags (without # symbol)
 5. Suggested posting time or content tips
 6. Location if identifiable (use location tags format)
+7. A creative post idea/story angle based on the image content (2-3 sentences suggesting how to use this image in a post or campaign)
 
 Style guidelines:
 - Use conversational, friendly tone
 - Include 1-2 tasteful emojis where appropriate
 - Keep hashtags relevant and mix popular + niche tags
 - Consider engagement hooks (questions, calls to action)
+- For post ideas, suggest storytelling angles, content series, or audience engagement strategies
 
 Please format your response as JSON:
 {
@@ -40,7 +42,8 @@ Please format your response as JSON:
   "headline": "shareable description",
   "keywords": "keyword1, keyword2, hashtag1, hashtag2",
   "instructions": "posting suggestions",
-  "location": "location tag if applicable"
+  "location": "location tag if applicable",
+  "postIdea": "creative suggestion for how to use this image in a post or campaign"
 }
 
 Photographer credit: XC Photography (@xcphotography)]],

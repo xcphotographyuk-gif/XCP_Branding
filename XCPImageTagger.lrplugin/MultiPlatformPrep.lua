@@ -130,10 +130,25 @@ local function generateInstagramContent(photo, metadata, prefs, options)
     
     table.insert(captionParts, "\n\n" .. table.concat(hashtags, " "))
     
+    -- Generate optional post idea based on style and content
+    local postIdeas = {
+        portrait = "💡 Post Idea: Share the story behind this portrait session - what inspired the look, the connection with your subject, or use it to kick off a 'Faces of [Location]' series that celebrates the people in your community.",
+        event = "💡 Post Idea: Create a carousel post showing the energy of the event - pair this with behind-the-scenes shots or use it to highlight upcoming events you'll be covering.",
+        branding = "💡 Post Idea: Feature this as a client spotlight or case study - share the brief, the creative process, and the final result to demonstrate your brand photography approach.",
+        documentary = "💡 Post Idea: Tell the story behind this moment - what led up to it, what happened next. Consider starting a 'Day in the Life' or documentary series.",
+        landscape = "💡 Post Idea: Share the journey to capture this shot - the early morning wake-up, the weather conditions, or pair it with a travel/adventure narrative that inspires others to explore.",
+        product = "💡 Post Idea: Create a before/after showcase or share your lighting setup. Consider a 'Product Photography Tips' series to educate and attract potential clients.",
+        street = "💡 Post Idea: Share the story of this moment - what caught your eye, the human element, or use it to start a 'Streets of [City]' series exploring urban life.",
+        general = "💡 Post Idea: Share what inspired you to capture this image, the techniques used, or ask your followers what story they see in this photograph to boost engagement.",
+    }
+    
+    local postIdea = postIdeas[style] or postIdeas.general
+    
     return {
         caption = table.concat(captionParts),
         title = string.format("%s | %s", style:gsub("^%l", string.upper), photographerCredit),
         platform = "Instagram",
+        postIdea = postIdea,
     }
 end
 
@@ -602,6 +617,9 @@ local function multiPlatformPrep()
                         if instagramContent then
                             instructionsText = instructionsText .. "--- INSTAGRAM ---\n"
                             instructionsText = instructionsText .. instagramContent.caption .. "\n\n"
+                            if instagramContent.postIdea then
+                                instructionsText = instructionsText .. instagramContent.postIdea .. "\n\n"
+                            end
                         end
                         
                         if websiteContent then
@@ -626,6 +644,8 @@ local function multiPlatformPrep()
                             photo:setPropertyForPlugin(_PLUGIN, 'xcpInstagramReady', 'yes')
                             photo:setPropertyForPlugin(_PLUGIN, 'xcpInstagramCaption', 
                                 instagramContent and instagramContent.caption or '')
+                            photo:setPropertyForPlugin(_PLUGIN, 'xcpInstagramPostIdea', 
+                                instagramContent and instagramContent.postIdea or '')
                         end
                         
                         if props.prepareWebsite then

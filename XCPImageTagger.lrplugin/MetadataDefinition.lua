@@ -86,6 +86,13 @@ return {
             version = 1,
         },
         {
+            id = 'xcpInstagramPostIdea',
+            title = "Instagram Post Idea",
+            dataType = 'string',
+            searchable = false,
+            version = 1,
+        },
+        {
             id = 'xcpWebsiteAltText',
             title = "Website Alt Text",
             dataType = 'string',
@@ -124,5 +131,5 @@ return {
         },
     },
     
-    schemaVersion = 2,
+    schemaVersion = 3,
 }

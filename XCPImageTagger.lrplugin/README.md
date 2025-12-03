@@ -5,7 +5,7 @@ A professional Lightroom Classic plugin for **XC Photography** that prepares ima
 ## 🎯 Key Features
 
 ### Platform-First Workflow
-- **Instagram/Social Media** - Engaging captions with hashtags and emojis
+- **Instagram/Social Media** - Engaging captions with hashtags, emojis, and **optional post ideas** to help you get started
 - **Website/Portfolio** - SEO-optimized titles and professional descriptions
 - **Print Shop** - Elegant gallery-worthy titles for fine art sales
 
@@ -70,6 +70,8 @@ After preparation, all platform content is stored in the **IPTC Instructions** f
 --- INSTAGRAM ---
 [Instagram caption with hashtags]
 
+💡 Post Idea: [Creative suggestion for how to use this image]
+
 --- WEBSITE ---
 Title: [SEO title]
 [Website description]
@@ -133,6 +135,7 @@ The plugin adds these custom metadata fields (viewable in Library Metadata panel
 | Field | Description |
 |-------|-------------|
 | Instagram Ready | Preparation status for Instagram |
+| Instagram Post Idea | Creative post/campaign suggestion based on image content |
 | Website Ready | Preparation status for Website |
 | Print Shop Ready | Preparation status for Print Sales |
 | Photography Style | Detected style (Portrait, Event, etc.) |
