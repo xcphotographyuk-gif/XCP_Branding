@@ -46,6 +46,34 @@ return {
             browsable = true,
             version = 1,
         },
+        {
+            id = 'xcpStockReady',
+            title = "Stock Photography Ready",
+            dataType = 'enum',
+            values = {
+                { value = 'no', title = 'Not Prepared' },
+                { value = 'pending', title = 'Pending Review' },
+                { value = 'yes', title = 'Ready to Submit' },
+            },
+            searchable = true,
+            browsable = true,
+            version = 1,
+        },
+        {
+            id = 'xcpStockPlatform',
+            title = "Stock Platform",
+            dataType = 'enum',
+            values = {
+                { value = 'alamy', title = 'Alamy' },
+                { value = 'shutterstock', title = 'Shutterstock' },
+                { value = 'getty', title = 'Getty Images' },
+                { value = 'adobe', title = 'Adobe Stock' },
+                { value = 'general', title = 'Multi-Platform' },
+            },
+            searchable = true,
+            browsable = true,
+            version = 1,
+        },
         
         -- Photography style classification
         {
@@ -106,6 +134,21 @@ return {
             searchable = false,
             version = 1,
         },
+        {
+            id = 'xcpStockKeywords',
+            title = "Stock Keywords (SEO)",
+            dataType = 'string',
+            searchable = false,
+            version = 1,
+        },
+        {
+            id = 'xcpStockKeywordCount',
+            title = "Stock Keyword Count",
+            dataType = 'string',
+            searchable = true,
+            browsable = true,
+            version = 1,
+        },
         
         -- Processing metadata
         {
@@ -131,5 +174,5 @@ return {
         },
     },
     
-    schemaVersion = 3,
+    schemaVersion = 4,
 }

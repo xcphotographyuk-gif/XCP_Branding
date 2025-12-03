@@ -8,9 +8,23 @@ A professional Lightroom Classic plugin for **XC Photography** that prepares ima
 - **Instagram/Social Media** - Engaging captions with hashtags, emojis, and **optional post ideas** to help you get started
 - **Website/Portfolio** - SEO-optimized titles and professional descriptions
 - **Print Shop** - Elegant gallery-worthy titles for fine art sales
+- **Stock Photography (Alamy, Shutterstock, Getty, Adobe Stock)** - Extensive keyword generation (25-50 keywords) using **Clemencey Wright SEO methodology**
+
+### Batch Context Feature
+- **Describe your image set** with context like "This shoot was a corporate headshot session" or "These images are for sale as fine art prints"
+- Context is used to generate more relevant and descriptive metadata across all platforms
+- Especially powerful for stock photography where detailed descriptions improve discoverability
+
+### SEO Tagging (Clemencey Wright Methodology)
+Professional SEO tagging based on Clemencey Wright's methodology:
+- **Hierarchical keywords** - broad to specific (who, what, where, when, why, how)
+- **Conceptual & emotional keywords** - not just literal descriptions
+- **Buyer-intent focused** - think like someone searching for this image
+- **Natural language variations** - synonyms and related terms
+- **Platform-optimized** - 25-50 keywords optimal for stock platforms
 
 ### Multi-Platform Preparation
-- Prepare images for **up to 3 platforms at once**
+- Prepare images for **multiple platforms at once**
 - All platform-specific content stored in IPTC Instructions field
 - Easy copy/paste workflow for each destination
 
@@ -79,6 +93,18 @@ Title: [SEO title]
 --- PRINT SHOP ---
 Title: [Gallery title]
 [Print description]
+
+--- STOCK PHOTOGRAPHY (ALAMY) ---
+Title: [Descriptive stock title]
+
+Description:
+[Detailed description with use cases]
+
+Keywords (35):
+portrait, person, face, headshot, professional, UK, United Kingdom, Britain...
+
+Notes: Optimized for Alamy (Clemencey Wright SEO methodology). 35 keywords generated.
+SEO Methodology: Clemencey Wright
 ```
 
 You can view this in:
@@ -138,6 +164,10 @@ The plugin adds these custom metadata fields (viewable in Library Metadata panel
 | Instagram Post Idea | Creative post/campaign suggestion based on image content |
 | Website Ready | Preparation status for Website |
 | Print Shop Ready | Preparation status for Print Sales |
+| Stock Photography Ready | Preparation status for Stock submission |
+| Stock Platform | Target platform (Alamy, Shutterstock, Getty, Adobe Stock) |
+| Stock Keywords (SEO) | Generated keywords using Clemencey Wright methodology |
+| Stock Keyword Count | Number of keywords generated (target: 25-50) |
 | Photography Style | Detected style (Portrait, Event, etc.) |
 | Client/Project Name | Optional client identifier |
 | Last Prepared Date | When content was generated |
@@ -172,6 +202,7 @@ XCPImageTagger.lrplugin/
 ├── PrepareForWebsite.lua       # Website preparation
 ├── PrepareForPrint.lua         # Print shop preparation
 ├── MultiPlatformPrep.lua       # Multi-platform workflow
+├── SEOTaggingEngine.lua        # Clemencey Wright SEO keyword generation
 ├── PrivacyContentMatcher.lua   # Privacy-first content generation
 ├── LargeImageHandler.lua       # Large file support
 ├── PromptPresets.lua           # AI prompt templates

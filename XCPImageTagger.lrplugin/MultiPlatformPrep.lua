@@ -25,6 +25,7 @@ local LrColor = import 'LrColor'
 require 'Logger'
 local PrivacyContentMatcher = require 'PrivacyContentMatcher'
 local LargeImageHandler = require 'LargeImageHandler'
+local SEOTaggingEngine = require 'SEOTaggingEngine'
 
 -- ============================================================================
 -- IPTC FIELD MAPPING
@@ -268,6 +269,78 @@ local function generatePrintContent(photo, metadata, prefs, options)
 end
 
 -- ============================================================================
+-- STOCK PHOTOGRAPHY CONTENT GENERATOR (Alamy, Shutterstock, Getty, etc.)
+-- Uses SEOTaggingEngine based on Clemencey Wright methodology
+-- ============================================================================
+
+local function generateStockContent(photo, metadata, prefs, options)
+    local style = metadata.style or 'portrait'
+    local location = metadata.location or ''
+    local photographerCredit = prefs.photographerCredit or 'XC Photography'
+    local batchContext = options.batchContext or ''
+    local stockPlatform = options.stockPlatform or 'alamy'
+    local modelRelease = options.modelRelease or 'none'
+    local propertyRelease = options.propertyRelease or 'none'
+    
+    -- Use SEO Tagging Engine for professional keyword generation
+    local seoOptions = {
+        batchContext = batchContext,
+        location = location,
+        photographerCredit = photographerCredit,
+    }
+    
+    -- Generate SEO-optimized title using Clemencey Wright methodology
+    local title = SEOTaggingEngine.generateTitle(style, seoOptions)
+    
+    -- Generate comprehensive description
+    local caption = SEOTaggingEngine.generateDescription(style, seoOptions)
+    
+    -- Generate extensive keywords (following Clemencey Wright's hierarchical approach)
+    local keywords = SEOTaggingEngine.generateKeywords(style, seoOptions)
+    
+    -- Optimize keywords for the specific platform
+    local optimizedKeywords, trimmedCount = SEOTaggingEngine.optimizeKeywords(keywords, stockPlatform)
+    
+    -- Build release info
+    local releaseInfo = ""
+    if modelRelease == 'yes' then
+        releaseInfo = "Model release available. "
+    elseif modelRelease == 'no' then
+        releaseInfo = "No model release - editorial use only. "
+    end
+    
+    if propertyRelease == 'yes' then
+        releaseInfo = releaseInfo .. "Property release available."
+    elseif propertyRelease == 'no' then
+        releaseInfo = releaseInfo .. "No property release - editorial use only."
+    end
+    
+    -- Platform-specific notes with keyword count
+    local recommendation = SEOTaggingEngine.getKeywordRecommendation(stockPlatform)
+    local platformNotes = {
+        alamy = string.format("Optimized for Alamy (Clemencey Wright SEO methodology). %d keywords generated (recommended: %d-%d). %s", 
+            #optimizedKeywords, recommendation.min, recommendation.max, releaseInfo),
+        shutterstock = string.format("Optimized for Shutterstock. %d keywords. %s", #optimizedKeywords, releaseInfo),
+        getty = string.format("Optimized for Getty Images. %d keywords. %s", #optimizedKeywords, releaseInfo),
+        adobe = string.format("Optimized for Adobe Stock. %d keywords. %s", #optimizedKeywords, releaseInfo),
+        general = string.format("Multi-platform SEO optimized. %d keywords. %s", #optimizedKeywords, releaseInfo),
+    }
+    
+    return {
+        caption = caption,
+        title = title,
+        keywords = table.concat(optimizedKeywords, ", "),
+        keywordList = optimizedKeywords,
+        keywordCount = #optimizedKeywords,
+        platform = "Stock (" .. (stockPlatform:gsub("^%l", string.upper)) .. ")",
+        instructions = platformNotes[stockPlatform] or platformNotes.general,
+        modelRelease = modelRelease,
+        propertyRelease = propertyRelease,
+        seoMethodology = "Clemencey Wright",
+    }
+end
+
+-- ============================================================================
 -- MAIN MULTI-PLATFORM DIALOG
 -- ============================================================================
 
@@ -294,8 +367,13 @@ local function multiPlatformPrep()
         props.prepareInstagram = true
         props.prepareWebsite = true
         props.preparePrint = false
+        props.prepareStock = false
         props.privacyMode = true
         props.brandVoice = prefs.brandVoice or 'professional'
+        
+        -- Batch context - describes the set of images
+        props.batchContext = ''
+        props.batchContextType = 'none'
         
         -- IPTC Creator info
         props.creator = prefs.photographerCredit or 'XC Photography'
@@ -307,6 +385,11 @@ local function multiPlatformPrep()
         props.isLimitedEdition = true
         props.editionSize = '25'
         props.seriesName = ''
+        
+        -- Stock options
+        props.stockPlatform = 'alamy'
+        props.modelRelease = 'none'
+        props.propertyRelease = 'none'
         
         local contents = viewFactory:column {
             spacing = viewFactory:control_spacing(),
@@ -327,7 +410,7 @@ local function multiPlatformPrep()
             
             -- Platform Selection
             viewFactory:group_box {
-                title = "Select Platforms (up to 3)",
+                title = "Select Platforms",
                 fill_horizontal = 1,
                 
                 viewFactory:column {
@@ -338,7 +421,7 @@ local function multiPlatformPrep()
                         title = "📱 Instagram / Social Media",
                     },
                     viewFactory:static_text {
-                        title = "    Engaging captions with hashtags and emojis",
+                        title = "    Engaging captions with hashtags, emojis, and post ideas",
                         font = "<system/small>",
                     },
                     
@@ -358,6 +441,119 @@ local function multiPlatformPrep()
                     viewFactory:static_text {
                         title = "    Elegant gallery-worthy titles and collector descriptions",
                         font = "<system/small>",
+                    },
+                    
+                    viewFactory:checkbox {
+                        value = LrView.bind 'prepareStock',
+                        title = "📷 Stock Photography (Alamy, Shutterstock, Getty)",
+                    },
+                    viewFactory:static_text {
+                        title = "    Extensive keywords (25-50), detailed descriptions for maximum discoverability",
+                        font = "<system/small>",
+                    },
+                },
+            },
+            
+            viewFactory:separator { fill_horizontal = 1 },
+            
+            -- Batch Context - describe what these images are about
+            viewFactory:group_box {
+                title = "Batch Context (Optional - helps generate better descriptions)",
+                fill_horizontal = 1,
+                
+                viewFactory:column {
+                    spacing = viewFactory:control_spacing(),
+                    
+                    viewFactory:static_text {
+                        title = "Describe what these images are about. This context will be used in all generated content.",
+                        wrap = true,
+                        width_in_chars = 55,
+                        font = "<system/small>",
+                    },
+                    
+                    viewFactory:row {
+                        viewFactory:static_text {
+                            title = "Context Type:",
+                            width = 100,
+                        },
+                        viewFactory:popup_menu {
+                            value = LrView.bind 'batchContextType',
+                            items = {
+                                { title = 'None', value = 'none' },
+                                { title = 'This shoot was...', value = 'shoot' },
+                                { title = 'These images are for sale as...', value = 'sale' },
+                                { title = 'Event/Location:', value = 'event' },
+                                { title = 'Client project:', value = 'client' },
+                                { title = 'Custom description:', value = 'custom' },
+                            },
+                        },
+                    },
+                    
+                    viewFactory:edit_field {
+                        value = LrView.bind 'batchContext',
+                        width_in_chars = 50,
+                        height_in_lines = 2,
+                        placeholder_string = "e.g., 'a corporate headshot session for ABC Company' or 'fine art landscapes from the Lake District'",
+                    },
+                },
+            },
+            
+            viewFactory:separator { fill_horizontal = 1 },
+            
+            -- Stock Options (shown when stock is selected)
+            viewFactory:group_box {
+                title = "Stock Photography Options",
+                fill_horizontal = 1,
+                visible = LrView.bind 'prepareStock',
+                
+                viewFactory:column {
+                    spacing = viewFactory:control_spacing(),
+                    
+                    viewFactory:row {
+                        viewFactory:static_text {
+                            title = "Primary Platform:",
+                            width = 120,
+                        },
+                        viewFactory:popup_menu {
+                            value = LrView.bind 'stockPlatform',
+                            items = {
+                                { title = 'Alamy', value = 'alamy' },
+                                { title = 'Shutterstock', value = 'shutterstock' },
+                                { title = 'Getty Images', value = 'getty' },
+                                { title = 'Adobe Stock', value = 'adobe' },
+                                { title = 'General (all platforms)', value = 'general' },
+                            },
+                        },
+                    },
+                    
+                    viewFactory:row {
+                        viewFactory:static_text {
+                            title = "Model Release:",
+                            width = 120,
+                        },
+                        viewFactory:popup_menu {
+                            value = LrView.bind 'modelRelease',
+                            items = {
+                                { title = 'Not Applicable', value = 'none' },
+                                { title = 'Yes - Available', value = 'yes' },
+                                { title = 'No - Editorial Only', value = 'no' },
+                            },
+                        },
+                    },
+                    
+                    viewFactory:row {
+                        viewFactory:static_text {
+                            title = "Property Release:",
+                            width = 120,
+                        },
+                        viewFactory:popup_menu {
+                            value = LrView.bind 'propertyRelease',
+                            items = {
+                                { title = 'Not Applicable', value = 'none' },
+                                { title = 'Yes - Available', value = 'yes' },
+                                { title = 'No - Editorial Only', value = 'no' },
+                            },
+                        },
                     },
                 },
             },
@@ -510,7 +706,7 @@ local function multiPlatformPrep()
         
         if result == 'ok' then
             -- Validate at least one platform selected
-            if not props.prepareInstagram and not props.prepareWebsite and not props.preparePrint then
+            if not props.prepareInstagram and not props.prepareWebsite and not props.preparePrint and not props.prepareStock then
                 LrDialogs.message("No Platforms Selected", "Please select at least one platform.", "warning")
                 return
             end
@@ -525,7 +721,8 @@ local function multiPlatformPrep()
             local errorCount = 0
             local platformCount = (props.prepareInstagram and 1 or 0) + 
                                   (props.prepareWebsite and 1 or 0) + 
-                                  (props.preparePrint and 1 or 0)
+                                  (props.preparePrint and 1 or 0) +
+                                  (props.prepareStock and 1 or 0)
             
             catalog:withWriteAccessDo("Multi-Platform Preparation", function()
                 for i, photo in ipairs(selectedPhotos) do
@@ -550,14 +747,33 @@ local function multiPlatformPrep()
                             keywords = contentResult.keywords,
                         }
                         
+                        -- Build batch context string from type and description
+                        local fullBatchContext = ''
+                        if props.batchContextType ~= 'none' and props.batchContext ~= '' then
+                            local contextPrefixes = {
+                                shoot = 'This shoot was ',
+                                sale = 'These images are for sale as ',
+                                event = 'Event/Location: ',
+                                client = 'Client project: ',
+                                custom = '',
+                            }
+                            fullBatchContext = (contextPrefixes[props.batchContextType] or '') .. props.batchContext
+                        elseif props.batchContext ~= '' then
+                            fullBatchContext = props.batchContext
+                        end
+                        
                         local options = {
                             isLimitedEdition = props.isLimitedEdition,
                             editionSize = props.editionSize,
                             seriesName = props.seriesName,
+                            batchContext = fullBatchContext,
+                            stockPlatform = props.stockPlatform,
+                            modelRelease = props.modelRelease,
+                            propertyRelease = props.propertyRelease,
                         }
                         
                         -- Generate content for each selected platform
-                        local instagramContent, websiteContent, printContent
+                        local instagramContent, websiteContent, printContent, stockContent
                         
                         if props.prepareInstagram then
                             instagramContent = generateInstagramContent(photo, metadata, prefs, options)
@@ -571,12 +787,17 @@ local function multiPlatformPrep()
                             printContent = generatePrintContent(photo, metadata, prefs, options)
                         end
                         
+                        if props.prepareStock then
+                            stockContent = generateStockContent(photo, metadata, prefs, options)
+                        end
+                        
                         -- ============================================
                         -- SET IPTC FIELDS
                         -- ============================================
                         
-                        -- Use website content as primary IPTC data (most SEO-friendly)
-                        local primaryContent = websiteContent or instagramContent or printContent
+                        -- Use stock content as primary if available (most keyword-rich)
+                        -- Otherwise use website content (most SEO-friendly)
+                        local primaryContent = stockContent or websiteContent or instagramContent or printContent
                         
                         -- Basic fields
                         if primaryContent then
@@ -614,6 +835,11 @@ local function multiPlatformPrep()
                         -- Instructions field - store all platform content
                         local instructionsText = "=== PLATFORM-SPECIFIC CONTENT ===\n\n"
                         
+                        -- Add batch context if provided
+                        if fullBatchContext ~= '' then
+                            instructionsText = instructionsText .. "📋 BATCH CONTEXT: " .. fullBatchContext .. "\n\n"
+                        end
+                        
                         if instagramContent then
                             instructionsText = instructionsText .. "--- INSTAGRAM ---\n"
                             instructionsText = instructionsText .. instagramContent.caption .. "\n\n"
@@ -632,6 +858,15 @@ local function multiPlatformPrep()
                             instructionsText = instructionsText .. "--- PRINT SHOP ---\n"
                             instructionsText = instructionsText .. "Title: " .. printContent.title .. "\n"
                             instructionsText = instructionsText .. printContent.caption .. "\n\n"
+                        end
+                        
+                        if stockContent then
+                            instructionsText = instructionsText .. "--- STOCK PHOTOGRAPHY (" .. (props.stockPlatform:upper()) .. ") ---\n"
+                            instructionsText = instructionsText .. "Title: " .. stockContent.title .. "\n\n"
+                            instructionsText = instructionsText .. "Description:\n" .. stockContent.caption .. "\n\n"
+                            instructionsText = instructionsText .. "Keywords (" .. stockContent.keywordCount .. "):\n" .. stockContent.keywords .. "\n\n"
+                            instructionsText = instructionsText .. "Notes: " .. stockContent.instructions .. "\n"
+                            instructionsText = instructionsText .. "SEO Methodology: Clemencey Wright\n\n"
                         end
                         
                         photo:setRawMetadata('instructions', instructionsText)
@@ -658,6 +893,15 @@ local function multiPlatformPrep()
                             photo:setPropertyForPlugin(_PLUGIN, 'xcpPrintReady', 'yes')
                             photo:setPropertyForPlugin(_PLUGIN, 'xcpPrintDescription', 
                                 printContent and printContent.caption or '')
+                        end
+                        
+                        if props.prepareStock then
+                            photo:setPropertyForPlugin(_PLUGIN, 'xcpStockReady', 'yes')
+                            photo:setPropertyForPlugin(_PLUGIN, 'xcpStockPlatform', props.stockPlatform)
+                            photo:setPropertyForPlugin(_PLUGIN, 'xcpStockKeywords', 
+                                stockContent and stockContent.keywords or '')
+                            photo:setPropertyForPlugin(_PLUGIN, 'xcpStockKeywordCount', 
+                                stockContent and tostring(stockContent.keywordCount) or '0')
                         end
                         
                         photo:setPropertyForPlugin(_PLUGIN, 'xcpPhotoStyle', metadata.style)
@@ -696,6 +940,13 @@ local function multiPlatformPrep()
                             end
                         end
                         
+                        -- Add stock keywords (SEO optimized)
+                        if props.prepareStock and stockContent and stockContent.keywordList then
+                            for _, kw in ipairs(stockContent.keywordList) do
+                                table.insert(allKeywords, kw)
+                            end
+                        end
+                        
                         -- Add keywords to photo
                         for _, kwName in ipairs(allKeywords) do
                             if kwName and kwName ~= '' then
@@ -722,6 +973,9 @@ local function multiPlatformPrep()
             if props.prepareInstagram then table.insert(platformList, "Instagram") end
             if props.prepareWebsite then table.insert(platformList, "Website") end
             if props.preparePrint then table.insert(platformList, "Print Shop") end
+            if props.prepareStock then 
+                table.insert(platformList, "Stock Photography (" .. props.stockPlatform:gsub("^%l", string.upper) .. ")")
+            end
             
             local message = string.format(
                 "Successfully prepared %d photo(s) for:\n• %s", 
@@ -735,6 +989,10 @@ local function multiPlatformPrep()
             
             message = message .. "\n\n📋 All platform-specific content is stored in the 'Instructions' IPTC field."
             message = message .. "\nYou can copy/paste the appropriate text for each platform."
+            
+            if props.prepareStock then
+                message = message .. "\n\n📷 Stock keywords generated using Clemencey Wright SEO methodology."
+            end
             
             if props.privacyMode then
                 message = message .. "\n\n🔒 Privacy Mode: No image data was sent externally."
