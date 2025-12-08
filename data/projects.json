@@ -1,0 +1,107 @@
+[
+  {
+    "id": "project-001",
+    "title": "Coastal Sunrise",
+    "slug": "coastal-sunrise",
+    "year": 2024,
+    "category": "Landscape",
+    "description": "Long-exposure sunrise on the north shore.",
+    "image": "/images/portfolio/coastal-sunrise-800.jpg",
+    "imageWebp": "/images/portfolio/coastal-sunrise-800.webp",
+    "srcset": [
+      "/images/portfolio/coastal-sunrise-400.jpg 400w",
+      "/images/portfolio/coastal-sunrise-800.jpg 800w",
+      "/images/portfolio/coastal-sunrise-1200.jpg 1200w"
+    ],
+    "alt": "Sun rising over a calm coastal scene with rocks in the foreground",
+    "tags": ["sunrise","coast","long exposure"],
+    "projectUrl": "/portfolio/coastal-sunrise.html"
+  },
+  {
+    "id": "project-002",
+    "title": "City Nights",
+    "slug": "city-nights",
+    "year": 2023,
+    "category": "Urban",
+    "description": "Nighttime street photography with neon highlights.",
+    "image": "/images/portfolio/city-nights-800.jpg",
+    "imageWebp": "/images/portfolio/city-nights-800.webp",
+    "srcset": [
+      "/images/portfolio/city-nights-400.jpg 400w",
+      "/images/portfolio/city-nights-800.jpg 800w"
+    ],
+    "alt": "Neon signs reflecting in wet pavement at night",
+    "tags": ["night","street","neon"],
+    "projectUrl": "/portfolio/city-nights.html"
+  },
+  {
+    "id": "project-003",
+    "title": "Portrait — Anna",
+    "slug": "portrait-anna",
+    "year": 2024,
+    "category": "Portrait",
+    "description": "Studio portrait using natural light modifiers.",
+    "image": "/images/portfolio/portrait-anna-800.jpg",
+    "imageWebp": "/images/portfolio/portrait-anna-800.webp",
+    "srcset": [
+      "/images/portfolio/portrait-anna-400.jpg 400w",
+      "/images/portfolio/portrait-anna-800.jpg 800w",
+      "/images/portfolio/portrait-anna-1600.jpg 1600w"
+    ],
+    "alt": "Close-up studio portrait of a woman looking to the side",
+    "tags": ["portrait","studio"],
+    "projectUrl": "/portfolio/portrait-anna.html"
+  },
+  {
+    "id": "project-004",
+    "title": "Forest Mist",
+    "slug": "forest-mist",
+    "year": 2022,
+    "category": "Landscape",
+    "description": "Early morning mist in an ancient woodland.",
+    "image": "/images/portfolio/forest-mist-800.jpg",
+    "imageWebp": "/images/portfolio/forest-mist-800.webp",
+    "srcset": [
+      "/images/portfolio/forest-mist-400.jpg 400w",
+      "/images/portfolio/forest-mist-800.jpg 800w"
+    ],
+    "alt": "Sunlight filtering through mist in a forest",
+    "tags": ["forest","mist","landscape"],
+    "projectUrl": "/portfolio/forest-mist.html"
+  },
+  {
+    "id": "project-005",
+    "title": "Industrial Lines",
+    "slug": "industrial-lines",
+    "year": 2021,
+    "category": "Abstract",
+    "description": "Geometry and leading lines in abandoned architecture.",
+    "image": "/images/portfolio/industrial-lines-800.jpg",
+    "imageWebp": "/images/portfolio/industrial-lines-800.webp",
+    "srcset": [
+      "/images/portfolio/industrial-lines-400.jpg 400w",
+      "/images/portfolio/industrial-lines-800.jpg 800w"
+    ],
+    "alt": "Abstract architectural detail with strong lines",
+    "tags": ["architecture","abstract"],
+    "projectUrl": "/portfolio/industrial-lines.html"
+  },
+  {
+    "id": "project-006",
+    "title": "Sea Stack",
+    "slug": "sea-stack",
+    "year": 2024,
+    "category": "Landscape",
+    "description": "Dramatic sea stack under stormy skies.",
+    "image": "/images/portfolio/sea-stack-800.jpg",
+    "imageWebp": "/images/portfolio/sea-stack-800.webp",
+    "srcset": [
+      "/images/portfolio/sea-stack-400.jpg 400w",
+      "/images/portfolio/sea-stack-800.jpg 800w",
+      "/images/portfolio/sea-stack-1400.jpg 1400w"
+    ],
+    "alt": "Sea stack silhouette against dark clouds",
+    "tags": ["sea","landscape","storm"],
+    "projectUrl": "/portfolio/sea-stack.html"
+  }
+]

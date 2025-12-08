@@ -56,3 +56,19 @@ This repository contains the Elementor homepage layout template for XC Photograp
 ## Documentation
 
 For detailed installation instructions, customization options, and best practices, please refer to [TEMPLATE_DOCUMENTATION.md](TEMPLATE_DOCUMENTATION.md).
+
+## Added: Portfolio page & data
+
+A new portfolio page and JSON data file have been added in this branch to provide a fully functional gallery that can be extended. Files added:
+- data/projects.json (sample items)
+- portfolio.html
+- contact.html
+- assets/css/portfolio.css
+- assets/js/portfolio.js
+
+How to preview locally:
+- Serve the repo root with a static server (e.g., `npx http-server` or `python -m http.server`) and visit http://localhost:8080/portfolio.html
+
+Notes for maintainers:
+- Replace image placeholders under /images/portfolio/ with optimized JPEG/WebP files and update paths in data/projects.json.
+- If your site uses an include/header system, update navigation to link to /portfolio.html and /contact.html.
