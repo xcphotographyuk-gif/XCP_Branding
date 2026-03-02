@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XC Photography Homepage Sections - Code Templates</title>
+    <style>
+        /* Minimal structural styles only - global fonts/colors handled by site */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            line-height: 1.6;
+        }
+        
+        /* Section spacing */
+        section {
+            position: relative;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Hero Section */
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        
+        .hero-content {
+            max-width: 1000px;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        
+        /* Gallery Bar - 4 text boxes */
+        .gallery-bar-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0;
+        }
+        
+        .gallery-bar-item {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+        }
+        
+        .gallery-bar-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .gallery-bar-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: flex-end;
+            padding: 30px;
+        }
+        
+        /* Parallax Section */
+        .parallax-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+        }
+        
+        .cta-banner {
+            max-width: 800px;
+            padding: 60px 40px;
+            text-align: center;
+        }
+        
+        /* Masonry Gallery */
+        .masonry-section {
+            padding: 80px 20px;
+        }
+        
+        .masonry-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-auto-rows: 250px;
+            gap: 15px;
+        }
+        
+        .masonry-item {
+            overflow: hidden;
+        }
+        
+        .masonry-item:nth-child(1),
+        .masonry-item:nth-child(4),
+        .masonry-item:nth-child(7) {
+            grid-row: span 2;
+        }
+        
+        .masonry-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* Text Block */
+        .text-block {
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .text-block-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .text-block-content {
+            margin-bottom: 20px;
+        }
+        
+        /* Checkerboard Layout */
+        .checkerboard-row {
+            display: flex;
+            align-items: stretch;
+        }
+        
+        .checkerboard-row.reverse {
+            flex-direction: row-reverse;
+        }
+        
+        .checkerboard-image,
+        .checkerboard-content {
+            flex: 1;
+        }
+        
+        .checkerboard-image {
+            min-height: 500px;
+        }
+        
+        .checkerboard-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .checkerboard-content {
+            padding: 60px;
+        }
+        
+        /* Stats Section */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        
+        /* Process Timeline */
+        .process-section {
+            padding: 80px 20px;
+        }
+        
+        .process-step {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .process-number {
+            min-width: 80px;
+            flex-shrink: 0;
+        }
+        
+        .process-content {
+            flex: 1;
+        }
+        
+        /* Video Section */
+        .video-section {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        /* Testimonials */
+        .testimonials-section {
+            padding: 80px 20px;
+        }
+        
+        .testimonial {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 40px;
+        }
+        
+        /* Partners */
+        .partners-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 40px;
+            align-items: center;
+            padding: 60px 20px;
+        }
+        
+        .partner-logo {
+            text-align: center;
+        }
+        
+        .partner-logo img {
+            max-width: 120px;
+            height: auto;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .gallery-bar-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .gallery-bar-item {
+                height: 300px;
+            }
+            
+            .masonry-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .masonry-item:nth-child(n) {
+                grid-row: span 1;
+            }
+            
+            .checkerboard-row,
+            .checkerboard-row.reverse {
+                flex-direction: column;
+            }
+            
+            .checkerboard-image {
+                min-height: 300px;
+            }
+            
+            .checkerboard-content {
+                padding: 40px 30px;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .process-step {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .partners-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+            }
+        }
+        
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .gallery-bar-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .partners-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ===== 1. HERO SECTION ===== -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Branding &amp; Documentary Photography That Demands Attention</h1>
+            <h2>Iconic Imagery for Iconic Brands with an Edge</h2>
+            <div class="cta-buttons">
+                <a href="#consultation" class="btn btn-primary">Book Your Free Consultation</a>
+                <a href="#portfolio" class="btn btn-secondary">View Portfolio</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ===== 2. BAR WITH 4 TEXT BOXES (GALLERY) ===== -->
+    <section class="gallery-bar">
+        <div class="gallery-bar-grid">
+            <div class="gallery-bar-item">
+                <img src="https://via.placeholder.com/600x800/2a2a2a/ffffff?text=Urban+Edge" alt="Urban Edge">
+                <div class="gallery-bar-overlay">
+                    <div class="gallery-bar-text">Urban Edge</div>
+                </div>
+            </div>
+            <div class="gallery-bar-item">
+                <img src="https://via.placeholder.com/600x800/3a3a3a/ffffff?text=Raw+Emotion" alt="Raw Emotion">
+                <div class="gallery-bar-overlay">
+                    <div class="gallery-bar-text">Raw Emotion</div>
+                </div>
+            </div>
+            <div class="gallery-bar-item">
+                <img src="https://via.placeholder.com/600x800/1a1a1a/ffffff?text=Bold+Stories" alt="Bold Stories">
+                <div class="gallery-bar-overlay">
+                    <div class="gallery-bar-text">Bold Stories</div>
+                </div>
+            </div>
+            <div class="gallery-bar-item">
+                <img src="https://via.placeholder.com/600x800/4a4a4a/ffffff?text=Timeless+Moments" alt="Timeless Moments">
+                <div class="gallery-bar-overlay">
+                    <div class="gallery-bar-text">Timeless Moments</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ===== 3. PARALLAX TRANSITION SECTION ===== -->
+    <section class="parallax-section">
+        <div class="cta-banner">
+            <h2>Capture Your Brand's Essence</h2>
+            <p>
+                Every image tells a story. Let's create something extraordinary together 
+                that resonates with your audience and elevates your brand to new heights.
+            </p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Start Your Journey</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ===== 4. MASONRY GALLERY ===== -->
+    <section class="masonry-section">
+        <div class="container">
+            <h2>Our Portfolio</h2>
+            <div class="masonry-grid">
+                <div class="masonry-item">
+                    <img src="https://via.placeholder.com/600x800/2a2a2a/ffffff?text=1" alt="Portfolio 1">
+                </div>
+                <div class="masonry-item">
+                    <img src="https://via.placeholder.com/600x400/3a3a3a/ffffff?text=2" alt="Portfolio 2">
+                </div>
+                <div class="masonry-item">
+                    <img src="https://via.placeholder.com/600x400/1a1a1a/ffffff?text=3" alt="Portfolio 3">
+                </div>
+                <div class="masonry-item">
+                    <img src="https://via.placeholder.com/600x800/4a4a4a/ffffff?text=4" alt="Portfolio 4">
+                </div>
+                <div class="masonry-item">
+                    <img src="https://via.placeholder.com/600x400/5a5a5a/ffffff?text=5" alt="Portfolio 5">
+                </div>
+                <div class="masonry-item">
+                    <img src="https://via.placeholder.com/600x400/2a2a2a/ffffff?text=6" alt="Portfolio 6">
+                </div>
+                <div class="masonry-item">
+                    <img src="https://via.placeholder.com/600x800/3a3a3a/ffffff?text=7" alt="Portfolio 7">
+                </div>
+                <div class="masonry-item">
+                    <img src="https://via.placeholder.com/600x400/1a1a1a/ffffff?text=8" alt="Portfolio 8">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ===== 5. BLOCKS OF CONTENT (TEXT FOCUS) ===== -->
+    <section class="text-block">
+        <div class="text-block-container">
+            <h2>The Art of Visual Storytelling</h2>
+            <p class="text-block-content">
+                At XC Photography, we believe that every brand has a unique story waiting to be told. 
+                Our approach combines technical excellence with creative vision to produce imagery 
+                that doesn't just capture moments—it creates them.
+            </p>
+            <p class="text-block-content">
+                From bold branding campaigns to intimate documentary work, we bring an edge to every project. 
+                Our photography demands attention, challenges conventions, and leaves a lasting impression.
+            </p>
+            <p class="text-block-content">
+                We work with brands that aren't afraid to stand out, that value authenticity over perfection, 
+                and that understand the power of imagery in shaping perceptions.
+            </p>
+        </div>
+    </section>
+    
+    <!-- ===== 6. CHECKERBOARD LAYOUT - Image Left, Text Right ===== -->
+    <section class="checkerboard-section">
+        <div class="checkerboard-row">
+            <div class="checkerboard-image">
+                <img src="https://via.placeholder.com/800x600/2a2a2a/ffffff?text=Branding" alt="Branding Excellence">
+            </div>
+            <div class="checkerboard-content">
+                <h3>Branding Excellence</h3>
+                <p>
+                    Your brand deserves imagery that stands out in a crowded marketplace. 
+                    We create powerful visual identities that capture the essence of who you are.
+                </p>
+                <p>
+                    Our branding photography goes beyond simple product shots. We craft narratives 
+                    that connect emotionally with your target audience.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ===== 6. CHECKERBOARD LAYOUT - Image Right, Text Left ===== -->
+    <section class="checkerboard-section">
+        <div class="checkerboard-row reverse">
+            <div class="checkerboard-image">
+                <img src="https://via.placeholder.com/800x600/3a3a3a/ffffff?text=Documentary" alt="Documentary Impact">
+            </div>
+            <div class="checkerboard-content">
+                <h3>Documentary Impact</h3>
+                <p>
+                    Real stories deserve authentic representation. Our documentary approach 
+                    captures genuine moments and emotions, creating powerful narratives.
+                </p>
+                <p>
+                    Whether showcasing your team or documenting your brand's journey, we bring 
+                    cinematic quality while maintaining raw authenticity.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ===== ADDITIONAL SECTION 1: STATISTICS BAR ===== -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">150+</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">20+</div>
+                    <div class="stat-label">Awards Won</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ===== ADDITIONAL SECTION 2: PROCESS TIMELINE ===== -->
+    <section class="process-section">
+        <div class="container">
+            <h2>Our Process</h2>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="process-number">01</div>
+                    <div class="process-content">
+                        <h3>Discovery &amp; Consultation</h3>
+                        <p>
+                            We begin by understanding your brand, vision, and goals. Through detailed 
+                            consultation, we identify the narrative you want to tell.
+                        </p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">02</div>
+                    <div class="process-content">
+                        <h3>Creative Planning</h3>
+                        <p>
+                            Our team develops a comprehensive creative strategy, including mood boards, 
+                            shot lists, and location scouting.
+                        </p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">03</div>
+                    <div class="process-content">
+                        <h3>Production &amp; Capture</h3>
+                        <p>
+                            On shoot day, we bring our technical expertise and creative vision to life, 
+                            capturing stunning imagery that exceeds expectations.
+                        </p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">04</div>
+                    <div class="process-content">
+                        <h3>Post-Production &amp; Delivery</h3>
+                        <p>
+                            We meticulously edit and refine each image to perfection, ensuring a cohesive 
+                            final product ready for immediate use.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ===== ADDITIONAL SECTION 3: VIDEO SHOWCASE ===== -->
+    <section class="video-section">
+        <div class="video-play-button">
+            <!-- Video player trigger - integrate with your platform -->
+        </div>
+    </section>
+    
+    <!-- ===== ADDITIONAL SECTION 4: TESTIMONIALS ===== -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial">
+                <blockquote>
+                    XC Photography transformed our brand imagery. Their cinematic approach and 
+                    attention to detail resulted in stunning visuals that truly capture our 
+                    company's spirit. Absolutely exceptional work.
+                </blockquote>
+                <p class="testimonial-author">Sarah Mitchell</p>
+                <p class="testimonial-role">Creative Director, Urban Brands Co.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ===== ADDITIONAL SECTION 5: BRAND PARTNERS ===== -->
+    <section class="partners-section">
+        <div class="container">
+            <h2>Trusted By Leading Brands</h2>
+            <div class="partners-grid">
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/120x60/cccccc/666666?text=Brand+1" alt="Partner 1">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/120x60/cccccc/666666?text=Brand+2" alt="Partner 2">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/120x60/cccccc/666666?text=Brand+3" alt="Partner 3">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/120x60/cccccc/666666?text=Brand+4" alt="Partner 4">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/120x60/cccccc/666666?text=Brand+5" alt="Partner 5">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

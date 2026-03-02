@@ -1,0 +1,113 @@
+{
+  "version": "0.4",
+  "title": "XCP Portfolio - Full Gallery & CTA",
+  "type": "page",
+  "content": [
+    {
+      "id": "portfolio_full_gallery",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "padding": {"unit": "px", "top": 0, "right": 0, "bottom": 80, "left": 0},
+        "background_background": "classic",
+        "background_color": "#f8f8f8"
+      },
+      "elements": [
+        {
+          "id": "gallery_col",
+          "elType": "column",
+          "settings": {"_column_size": 100, "padding": {"unit": "px", "top": 0, "right": 0, "bottom": 0, "left": 0}},
+          "elements": [
+            {
+              "id": "masonry_gallery",
+              "elType": "widget",
+              "widgetType": "gallery",
+              "settings": {
+                "gallery": [
+                  {"id": "", "url": "[uc_local]assets/images/gallery-1.jpg"},
+                  {"id": "", "url": "[uc_local]assets/images/gallery-2.jpg"},
+                  {"id": "", "url": "[uc_local]assets/images/gallery-3.jpg"},
+                  {"id": "", "url": "[uc_local]assets/images/gallery-4.jpg"},
+                  {"id": "", "url": "[uc_local]assets/images/gallery-5.jpg"},
+                  {"id": "", "url": "[uc_local]assets/images/gallery-6.jpg"},
+                  {"id": "", "url": "[uc_local]assets/images/gallery-7.jpg"},
+                  {"id": "", "url": "[uc_local]assets/images/gallery-8.jpg"},
+                  {"id": "", "url": "[uc_local]assets/images/gallery-9.jpg"},
+                  {"id": "", "url": "[uc_local]assets/images/gallery-10.jpg"},
+                  {"id": "", "url": "[uc_local]assets/images/gallery-11.jpg"},
+                  {"id": "", "url": "[uc_local]assets/images/gallery-12.jpg"},
+                  {"id": "", "url": "[uc_local]assets/images/gallery-13.jpg"},
+                  {"id": "", "url": "[uc_local]assets/images/gallery-14.jpg"},
+                  {"id": "", "url": "[uc_local]assets/images/gallery-15.jpg"}
+                ],
+                "columns": 4,
+                "columns_tablet": 2,
+                "columns_mobile": 1,
+                "gap": {"unit": "px", "size": 10},
+                "gallery_layout": "masonry",
+                "link_to": "file",
+                "overlay_background": "yes",
+                "image_hover_animation": "zoom",
+                "lazyload": "yes"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "portfolio_cta",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "min_height": {"unit": "px", "size": 400},
+        "background_background": "gradient",
+        "background_color": "#1a1a1a",
+        "background_color_b": "#2d2d2d",
+        "content_position": "middle",
+        "padding": {"unit": "px", "top": 80, "right": 20, "bottom": 80, "left": 20}
+      },
+      "elements": [
+        {
+          "id": "cta_col",
+          "elType": "column",
+          "settings": {"_column_size": 100},
+          "elements": [
+            {
+              "id": "cta_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Ready to Create Your Story?",
+                "header_size": "h2",
+                "align": "center",
+                "color": "#ffffff"
+              }
+            },
+            {
+              "id": "cta_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; font-size: 1.2rem; max-width: 700px; margin: 20px auto; color: #e0e0e0;'>Your brand has a story worth telling. Your audience is waiting to connect. Let's create imagery that resonates, converts, and elevates your presence.</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "cta_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Start Your Journey",
+                "link": {"url": "/contact"},
+                "align": "center",
+                "size": "lg",
+                "button_type": "primary"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

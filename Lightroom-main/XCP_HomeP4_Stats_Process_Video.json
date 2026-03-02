@@ -1,0 +1,462 @@
+{
+  "version": "2.0",
+  "title": "XC Photography Homepage - Part 4: Stats, Process & Video",
+  "type": "page",
+  "content": [
+    {
+      "id": "stats-section",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "background_background": "classic",
+        "background_color": "#1a1a1a",
+        "padding": {
+          "unit": "px",
+          "top": 60,
+          "bottom": 60
+        }
+      },
+      "elements": [
+        {
+          "id": "stats-col-1",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25
+          },
+          "elements": [
+            {
+              "id": "stat-number-1",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "500+",
+                "align": "center",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "stat-label-1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Projects Completed</p>",
+                "align": "center"
+              }
+            }
+          ]
+        },
+        {
+          "id": "stats-col-2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25
+          },
+          "elements": [
+            {
+              "id": "stat-number-2",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "150+",
+                "align": "center",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "stat-label-2",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Happy Clients</p>",
+                "align": "center"
+              }
+            }
+          ]
+        },
+        {
+          "id": "stats-col-3",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25
+          },
+          "elements": [
+            {
+              "id": "stat-number-3",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "20+",
+                "align": "center",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "stat-label-3",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Awards Won</p>",
+                "align": "center"
+              }
+            }
+          ]
+        },
+        {
+          "id": "stats-col-4",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25
+          },
+          "elements": [
+            {
+              "id": "stat-number-4",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "10+",
+                "align": "center",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "stat-label-4",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Years Experience</p>",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "process-section",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1000
+        },
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "padding": {
+          "unit": "px",
+          "top": 80,
+          "bottom": 40
+        }
+      },
+      "elements": [
+        {
+          "id": "process-title-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "process-title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Our Process",
+                "align": "center",
+                "header_size": "h2"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "process-step-1",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1000
+        },
+        "background_background": "classic",
+        "background_color": "#ffffff"
+      },
+      "elements": [
+        {
+          "id": "process-1-col-1",
+          "elType": "column",
+          "settings": {
+            "_column_size": 20
+          },
+          "elements": [
+            {
+              "id": "process-number-1",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "01",
+                "header_size": "h1"
+              }
+            }
+          ]
+        },
+        {
+          "id": "process-1-col-2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 80
+          },
+          "elements": [
+            {
+              "id": "process-heading-1",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Discovery & Consultation",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "process-text-1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>We begin by understanding your brand, vision, and goals. Through detailed consultation, we identify the narrative you want to tell and the audience you want to reach.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "process-step-2",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1000
+        },
+        "background_background": "classic",
+        "background_color": "#ffffff"
+      },
+      "elements": [
+        {
+          "id": "process-2-col-1",
+          "elType": "column",
+          "settings": {
+            "_column_size": 20
+          },
+          "elements": [
+            {
+              "id": "process-number-2",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "02",
+                "header_size": "h1"
+              }
+            }
+          ]
+        },
+        {
+          "id": "process-2-col-2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 80
+          },
+          "elements": [
+            {
+              "id": "process-heading-2",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Creative Planning",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "process-text-2",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Our team develops a comprehensive creative strategy, including mood boards, shot lists, and location scouting to ensure every detail aligns with your vision.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "process-step-3",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1000
+        },
+        "background_background": "classic",
+        "background_color": "#ffffff"
+      },
+      "elements": [
+        {
+          "id": "process-3-col-1",
+          "elType": "column",
+          "settings": {
+            "_column_size": 20
+          },
+          "elements": [
+            {
+              "id": "process-number-3",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "03",
+                "header_size": "h1"
+              }
+            }
+          ]
+        },
+        {
+          "id": "process-3-col-2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 80
+          },
+          "elements": [
+            {
+              "id": "process-heading-3",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Production & Capture",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "process-text-3",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>On shoot day, we bring our technical expertise and creative vision to life, capturing stunning imagery that exceeds expectations while staying true to your brand's essence.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "process-step-4",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1000
+        },
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "padding": {
+          "unit": "px",
+          "bottom": 80
+        }
+      },
+      "elements": [
+        {
+          "id": "process-4-col-1",
+          "elType": "column",
+          "settings": {
+            "_column_size": 20
+          },
+          "elements": [
+            {
+              "id": "process-number-4",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "04",
+                "header_size": "h1"
+              }
+            }
+          ]
+        },
+        {
+          "id": "process-4-col-2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 80
+          },
+          "elements": [
+            {
+              "id": "process-heading-4",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Post-Production & Delivery",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "process-text-4",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>We meticulously edit and refine each image to perfection, ensuring color consistency, optimal composition, and a cohesive final product that's ready for immediate use across all your marketing channels.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "video-section",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "height": "min-height",
+        "custom_height": {
+          "unit": "vh",
+          "size": 80
+        },
+        "background_background": "classic",
+        "background_image": {
+          "url": "assets/images/video-background.jpg"
+        },
+        "background_position": "center center",
+        "background_attachment": "fixed",
+        "background_repeat": "no-repeat",
+        "background_size": "cover",
+        "background_overlay_background": "gradient",
+        "background_overlay_color": "rgba(0,0,0,0.3)",
+        "background_overlay_color_b": "rgba(0,0,0,0.6)",
+        "background_overlay_gradient_angle": {
+          "unit": "deg",
+          "size": 180
+        }
+      },
+      "elements": [
+        {
+          "id": "video-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "content_position": "middle"
+          },
+          "elements": [
+            {
+              "id": "video-icon",
+              "elType": "widget",
+              "widgetType": "icon",
+              "settings": {
+                "icon": "fa fa-play-circle",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

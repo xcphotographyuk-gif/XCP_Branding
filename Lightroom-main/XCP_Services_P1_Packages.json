@@ -1,0 +1,351 @@
+{
+  "version": "0.4",
+  "title": "Services - Hero & Overview",
+  "type": "section",
+  "content": [
+    {
+      "id": "services_hero",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "min_height": {"unit": "vh", "size": 70},
+        "background_background": "classic",
+        "background_image": {"url": "[uc_local]assets/images/services/hero-services.jpg"},
+        "background_position": "center center",
+        "background_size": "cover",
+        "background_overlay_background": "classic",
+        "background_overlay_color": "rgba(0,0,0,0.5)",
+        "content_position": "middle",
+        "padding": {"unit": "px", "top": 100, "right": 20, "bottom": 100, "left": 20},
+        "_title": "Services Hero"
+      },
+      "elements": [
+        {
+          "id": "services_hero_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "services_hero_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Imagery That Elevates Your Brand",
+                "header_size": "h1",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_font_size": {"unit": "px", "size": 56},
+                "typography_font_size_tablet": {"unit": "px", "size": 42},
+                "typography_font_size_mobile": {"unit": "px", "size": 32}
+              }
+            },
+            {
+              "id": "services_hero_subhead",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #FFFFFF; font-size: 20px; max-width: 700px; margin: 20px auto;'>Strategic photography packages designed around one goal: helping you connect with the audience you're meant to reach.</p>",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "services_intro",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {"unit": "px", "size": 1200},
+        "padding": {"unit": "px", "top": 80, "right": 20, "bottom": 40, "left": 20},
+        "_title": "Services Intro"
+      },
+      "elements": [
+        {
+          "id": "services_intro_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "services_intro_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Investment in Your Brand's Future",
+                "header_size": "h2",
+                "align": "center",
+                "typography_font_size": {"unit": "px", "size": 42},
+                "typography_font_size_mobile": {"unit": "px", "size": 28}
+              }
+            },
+            {
+              "id": "services_intro_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; font-size: 18px; max-width: 800px; margin: 30px auto; line-height: 1.8;'>This isn't about buying photos—it's about investing in how your brand shows up in the world. Every package is designed to deliver imagery that works as hard as you do, elevating every touchpoint where your audience encounters your brand.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "service_package_1",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "padding": {"unit": "px", "top": 40, "right": 20, "bottom": 40, "left": 20},
+        "_title": "Brand Foundation Package"
+      },
+      "elements": [
+        {
+          "id": "pkg1_img_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 40},
+            "width_tablet": {"unit": "%", "size": 100},
+            "width_mobile": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "pkg1_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "[uc_local]assets/images/services/package-foundation.jpg"},
+                "image_size": "large",
+                "object_fit": "cover",
+                "height": {"unit": "px", "size": 500}
+              }
+            }
+          ]
+        },
+        {
+          "id": "pkg1_content_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 60},
+            "width_tablet": {"unit": "%", "size": 100},
+            "width_mobile": {"unit": "%", "size": 100},
+            "content_position": "middle",
+            "padding": {"unit": "px", "top": 40, "right": 60, "bottom": 40, "left": 60}
+          },
+          "elements": [
+            {
+              "id": "pkg1_label",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size: 14px; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-bottom: 10px;'>Perfect for New Brands</p>"
+              }
+            },
+            {
+              "id": "pkg1_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Brand Foundation",
+                "header_size": "h3",
+                "typography_font_size": {"unit": "px", "size": 36}
+              }
+            },
+            {
+              "id": "pkg1_description",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size: 18px; line-height: 1.8; margin: 20px 0;'>Essential imagery to establish your professional presence. Perfect for launching your brand or refreshing your visual identity.</p><p style='font-size: 16px; line-height: 1.6; margin: 20px 0;'><strong>What's Included:</strong></p><ul style='font-size: 16px; line-height: 1.8; margin-left: 20px;'><li>2-hour strategic photography session</li><li>Pre-session brand discovery consultation</li><li>20+ professionally edited images</li><li>Web & print ready formats</li><li>Commercial usage rights</li></ul><p style='font-size: 16px; margin-top: 20px;'><strong>Ideal For:</strong> Entrepreneurs, startups, solopreneurs establishing their visual identity</p>"
+              }
+            },
+            {
+              "id": "pkg1_cta",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Discuss This Package",
+                "link": {"url": "#contact"},
+                "size": "md",
+                "typography_font_size": {"unit": "px", "size": 16}
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "service_package_2",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "background_background": "classic",
+        "background_color": "#F8F8F8",
+        "padding": {"unit": "px", "top": 40, "right": 20, "bottom": 40, "left": 20},
+        "_title": "Brand Elevation Package"
+      },
+      "elements": [
+        {
+          "id": "pkg2_content_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 60},
+            "width_tablet": {"unit": "%", "size": 100},
+            "width_mobile": {"unit": "%", "size": 100},
+            "content_position": "middle",
+            "padding": {"unit": "px", "top": 40, "right": 60, "bottom": 40, "left": 60}
+          },
+          "elements": [
+            {
+              "id": "pkg2_label",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size: 14px; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-bottom: 10px;'>Most Popular</p>"
+              }
+            },
+            {
+              "id": "pkg2_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Brand Elevation",
+                "header_size": "h3",
+                "typography_font_size": {"unit": "px", "size": 36}
+              }
+            },
+            {
+              "id": "pkg2_description",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size: 18px; line-height: 1.8; margin: 20px 0;'>Comprehensive imagery collection designed to elevate your brand across all platforms and marketing materials.</p><p style='font-size: 16px; line-height: 1.6; margin: 20px 0;'><strong>What's Included:</strong></p><ul style='font-size: 16px; line-height: 1.8; margin-left: 20px;'><li>Full-day strategic photography session</li><li>In-depth brand strategy consultation</li><li>50+ professionally edited images</li><li>Multiple locations/setups</li><li>Headshots, lifestyle, environmental portraits</li><li>Web, print & social media ready formats</li><li>Full commercial usage rights</li><li>6-month support for usage questions</li></ul><p style='font-size: 16px; margin-top: 20px;'><strong>Ideal For:</strong> Established businesses scaling their brand presence</p>"
+              }
+            },
+            {
+              "id": "pkg2_cta",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Elevate Your Brand",
+                "link": {"url": "#contact"},
+                "size": "md",
+                "button_type": "primary",
+                "typography_font_size": {"unit": "px", "size": 16}
+              }
+            }
+          ]
+        },
+        {
+          "id": "pkg2_img_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 40},
+            "width_tablet": {"unit": "%", "size": 100},
+            "width_mobile": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "pkg2_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "[uc_local]assets/images/services/package-elevation.jpg"},
+                "image_size": "large",
+                "object_fit": "cover",
+                "height": {"unit": "px", "size": 500}
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "service_package_3",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "padding": {"unit": "px", "top": 40, "right": 20, "bottom": 80, "left": 20},
+        "_title": "Brand Transformation Package"
+      },
+      "elements": [
+        {
+          "id": "pkg3_img_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 40},
+            "width_tablet": {"unit": "%", "size": 100},
+            "width_mobile": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "pkg3_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "[uc_local]assets/images/services/package-transformation.jpg"},
+                "image_size": "large",
+                "object_fit": "cover",
+                "height": {"unit": "px", "size": 500}
+              }
+            }
+          ]
+        },
+        {
+          "id": "pkg3_content_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 60},
+            "width_tablet": {"unit": "%", "size": 100},
+            "width_mobile": {"unit": "%", "size": 100},
+            "content_position": "middle",
+            "padding": {"unit": "px", "top": 40, "right": 60, "bottom": 40, "left": 60}
+          },
+          "elements": [
+            {
+              "id": "pkg3_label",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size: 14px; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-bottom: 10px;'>Premium Experience</p>"
+              }
+            },
+            {
+              "id": "pkg3_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Brand Transformation",
+                "header_size": "h3",
+                "typography_font_size": {"unit": "px", "size": 36}
+              }
+            },
+            {
+              "id": "pkg3_description",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size: 18px; line-height: 1.8; margin: 20px 0;'>Complete visual rebrand or extensive content library creation. A true partnership investment in your brand's future.</p><p style='font-size: 16px; line-height: 1.6; margin: 20px 0;'><strong>What's Included:</strong></p><ul style='font-size: 16px; line-height: 1.8; margin-left: 20px;'><li>Multi-day strategic photography project</li><li>Comprehensive brand strategy sessions</li><li>100+ professionally edited images</li><li>Multiple locations, concepts, & setups</li><li>Team headshots, environmental, lifestyle, product</li><li>Behind-the-scenes content capture</li><li>All formats optimized for every platform</li><li>Full commercial usage rights</li><li>12-month ongoing support & consulting</li><li>Quarterly refresh sessions available</li></ul><p style='font-size: 16px; margin-top: 20px;'><strong>Ideal For:</strong> Organizations ready for comprehensive brand transformation</p>"
+              }
+            },
+            {
+              "id": "pkg3_cta",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Transform Your Brand",
+                "link": {"url": "#contact"},
+                "size": "md",
+                "typography_font_size": {"unit": "px", "size": 16}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "version": "0.4",
+  "title": "XCP Contact Page - Complete",
+  "type": "page",
+  "content": [
+    {
+      "id": "contact_hero",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "min_height": {"unit": "vh", "size": 60},
+        "background_background": "classic",
+        "background_image": {"url": "[uc_local]assets/images/contact-hero.jpg"},
+        "background_position": "center center",
+        "background_size": "cover",
+        "background_overlay_background": "classic",
+        "background_overlay_color": "rgba(0,0,0,0.5)",
+        "content_position": "middle",
+        "padding": {"unit": "%", "top": 8, "right": 5, "bottom": 8, "left": 5}
+      },
+      "elements": [
+        {
+          "id": "contact_hero_col",
+          "elType": "column",
+          "settings": {"_column_size": 100},
+          "elements": [
+            {
+              "id": "contact_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Let's Bring Your Vision to Life",
+                "header_size": "h1",
+                "align": "center",
+                "color": "#ffffff"
+              }
+            },
+            {
+              "id": "contact_subtitle",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; font-size: 1.3rem; max-width: 700px; margin: 0 auto; color: #ffffff;'>Your story deserves to be told with intention, authenticity, and visual impact. Let's start the conversation.</p>",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contact_form_section",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "structure": "20",
+        "padding": {"unit": "px", "top": 80, "right": 20, "bottom": 80, "left": 20}
+      },
+      "elements": [
+        {
+          "id": "form_col",
+          "elType": "column",
+          "settings": {"_column_size": 60},
+          "elements": [
+            {
+              "id": "form_intro",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Tell Us About Your Vision",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "contact_form",
+              "elType": "widget",
+              "widgetType": "form",
+              "settings": {
+                "form_fields": [
+                  {"field_type": "text", "required": "true", "placeholder": "Your Name", "width": "50"},
+                  {"field_type": "email", "required": "true", "placeholder": "Email Address", "width": "50"},
+                  {"field_type": "text", "required": "false", "placeholder": "Company Name", "width": "50"},
+                  {"field_type": "tel", "required": "false", "placeholder": "Phone Number", "width": "50"},
+                  {"field_type": "select", "required": "true", "placeholder": "Type of Photoshoot", "field_options": "Brand Photography\nDocumentary Storytelling\nCorporate Portraits\nEvent Coverage\nEditorial Work\nNot Sure Yet", "width": "100"},
+                  {"field_type": "select", "required": "false", "placeholder": "Budget Range", "field_options": "Under £2,000\n£2,000 - £5,000\n£5,000 - £10,000\n£10,000+\nPrefer to Discuss", "width": "50"},
+                  {"field_type": "date", "required": "false", "placeholder": "Preferred Date", "width": "50"},
+                  {"field_type": "textarea", "required": "true", "placeholder": "Tell us about your brand vision, ideal audience, and what you hope to achieve with your imagery", "rows": 6, "width": "100"}
+                ],
+                "button_text": "Schedule Discovery Call",
+                "button_size": "lg",
+                "button_align": "left"
+              }
+            }
+          ]
+        },
+        {
+          "id": "info_col",
+          "elType": "column",
+          "settings": {"_column_size": 40},
+          "elements": [
+            {
+              "id": "contact_info_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Get In Touch",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "contact_details",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p><strong>Email:</strong><br>hello@xcphotography.uk</p><p><strong>Phone:</strong><br>+44 (0) 1234 567890</p><p><strong>Office Hours:</strong><br>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: By Appointment<br>Sunday: Closed</p>"
+              }
+            },
+            {
+              "id": "response_time",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div style='background: #f8f8f8; padding: 20px; margin-top: 30px; border-left: 4px solid #000;'><p style='margin: 0; font-size: 0.95rem;'><strong>What to Expect:</strong> We'll respond to your inquiry within 24 hours with next steps for your discovery call—a no-pressure conversation to understand your vision and how we can bring it to life.</p></div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contact_final_cta",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "background_background": "classic",
+        "background_color": "#1a1a1a",
+        "padding": {"unit": "px", "top": 60, "right": 20, "bottom": 60, "left": 20}
+      },
+      "elements": [
+        {
+          "id": "final_cta_col",
+          "elType": "column",
+          "settings": {"_column_size": 100},
+          "elements": [
+            {
+              "id": "final_cta_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<h3 style='text-align: center; color: #ffffff; margin-bottom: 10px;'>Your Audience Is Waiting</h3><p style='text-align: center; color: #e0e0e0; font-size: 1.1rem; max-width: 600px; margin: 0 auto;'>Every day without authentic, strategic imagery is a day your ideal clients connect with someone else. Let's change that.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

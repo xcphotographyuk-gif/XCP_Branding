@@ -1,0 +1,335 @@
+{
+  "version": "0.4",
+  "title": "XCP Home Part 4 - Stats, Process & Masonry",
+  "type": "page",
+  "content": [
+    {
+      "id": "stats-section",
+      "elType": "section",
+      "settings": {
+        "_title": "Statistics Section",
+        "layout": "boxed",
+        "background_background": "classic",
+        "background_color": "#F8F8F8",
+        "padding": {"unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20"}
+      },
+      "elements": [
+        {
+          "id": "stat-1",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_column_size_tablet": 50,
+            "_column_size_mobile": 100,
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "stat-1-number",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "500+",
+                "header_size": "h3",
+                "typography_font_size": {"unit": "px", "size": 48},
+                "color": "#000000"
+              }
+            },
+            {
+              "id": "stat-1-label",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size: 18px;'>Brands Elevated</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "stat-2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_column_size_tablet": 50,
+            "_column_size_mobile": 100,
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "stat-2-number",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "150+",
+                "header_size": "h3",
+                "typography_font_size": {"unit": "px", "size": 48},
+                "color": "#000000"
+              }
+            },
+            {
+              "id": "stat-2-label",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size: 18px;'>Ideal Audiences Reached</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "stat-3",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_column_size_tablet": 50,
+            "_column_size_mobile": 100,
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "stat-3-number",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "20+",
+                "header_size": "h3",
+                "typography_font_size": {"unit": "px", "size": 48},
+                "color": "#000000"
+              }
+            },
+            {
+              "id": "stat-3-label",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size: 18px;'>Industry Awards Won</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "stat-4",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_column_size_tablet": 50,
+            "_column_size_mobile": 100,
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "stat-4-number",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "10+",
+                "header_size": "h3",
+                "typography_font_size": {"unit": "px", "size": 48},
+                "color": "#000000"
+              }
+            },
+            {
+              "id": "stat-4-label",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size: 18px;'>Years of Visual Excellence</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "process-section",
+      "elType": "section",
+      "settings": {
+        "_title": "Process Timeline",
+        "layout": "boxed",
+        "padding": {"unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20"}
+      },
+      "elements": [
+        {
+          "id": "process-header",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "process-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "From Vision to Visual Impact: Here's How It Works",
+                "header_size": "h2",
+                "align": "center",
+                "typography_font_size": {"unit": "px", "size": 42}
+              }
+            }
+          ]
+        },
+        {
+          "id": "process-step-1",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_column_size_mobile": 100,
+            "padding": {"unit": "px", "top": "40", "right": "30", "bottom": "40", "left": "30"}
+          },
+          "elements": [
+            {
+              "id": "step-1-number",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "01",
+                "header_size": "h3",
+                "typography_font_size": {"unit": "px", "size": 72},
+                "color": "#CCCCCC"
+              }
+            },
+            {
+              "id": "step-1-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Discover Your Story",
+                "header_size": "h3",
+                "typography_font_size": {"unit": "px", "size": 28}
+              }
+            },
+            {
+              "id": "step-1-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size: 16px; line-height: 1.8;'>Your vision matters. This conversation is all about understanding what makes your brand unique, who you want to reach, and the impression you want to leave. No two brands tell the same story—yours deserves an approach designed specifically for you.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "process-step-2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_column_size_mobile": 100,
+            "padding": {"unit": "px", "top": "40", "right": "30", "bottom": "40", "left": "30"}
+          },
+          "elements": [
+            {
+              "id": "step-2-number",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "02",
+                "header_size": "h3",
+                "typography_font_size": {"unit": "px", "size": 72},
+                "color": "#CCCCCC"
+              }
+            },
+            {
+              "id": "step-2-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Design Your Experience",
+                "header_size": "h3",
+                "typography_font_size": {"unit": "px", "size": 28}
+              }
+            },
+            {
+              "id": "step-2-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size: 16px; line-height: 1.8;'>Every detail is crafted with your audience in mind. From concept to location, styling to mood, the planning ensures your final imagery doesn't just look stunning—it resonates deeply with the people you're meant to serve.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "process-step-3",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_column_size_mobile": 100,
+            "padding": {"unit": "px", "top": "40", "right": "30", "bottom": "40", "left": "30"}
+          },
+          "elements": [
+            {
+              "id": "step-3-number",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "03",
+                "header_size": "h3",
+                "typography_font_size": {"unit": "px", "size": 72},
+                "color": "#CCCCCC"
+              }
+            },
+            {
+              "id": "step-3-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Capture What Matters",
+                "header_size": "h3",
+                "typography_font_size": {"unit": "px", "size": 28}
+              }
+            },
+            {
+              "id": "step-3-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size: 16px; line-height: 1.8;'>This is where your story comes to life. Whether it's the energy of your brand, the authenticity of your team, or the emotion behind your mission, every shot is intentional and crafted to create the connection your audience craves.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "process-step-4",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_column_size_mobile": 100,
+            "padding": {"unit": "px", "top": "40", "right": "30", "bottom": "40", "left": "30"}
+          },
+          "elements": [
+            {
+              "id": "step-4-number",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "04",
+                "header_size": "h3",
+                "typography_font_size": {"unit": "px", "size": 72},
+                "color": "#CCCCCC"
+              }
+            },
+            {
+              "id": "step-4-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Deliver Results That Perform",
+                "header_size": "h3",
+                "typography_font_size": {"unit": "px", "size": 28}
+              }
+            },
+            {
+              "id": "step-4-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size: 16px; line-height: 1.8;'>Polished, professional, and ready to elevate your brand across every platform. Your final imagery isn't just beautiful—it's strategic, designed to stop the scroll, build trust, and drive the engagement that grows your business.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

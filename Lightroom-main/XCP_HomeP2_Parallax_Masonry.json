@@ -1,0 +1,165 @@
+{
+  "version": "2.0",
+  "title": "XC Photography Homepage - Part 2: Parallax & Masonry",
+  "type": "page",
+  "content": [
+    {
+      "id": "parallax-section",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "height": "min-height",
+        "custom_height": {
+          "unit": "vh",
+          "size": 100
+        },
+        "background_background": "classic",
+        "background_image": {
+          "url": "assets/images/parallax-triumph-bike.jpg"
+        },
+        "background_position": "center center",
+        "background_attachment": "fixed",
+        "background_repeat": "no-repeat",
+        "background_size": "cover",
+        "background_overlay_background": "gradient",
+        "background_overlay_color": "rgba(0,0,0,0.5)",
+        "background_overlay_color_b": "rgba(0,0,0,0.7)",
+        "background_overlay_gradient_angle": {
+          "unit": "deg",
+          "size": 180
+        }
+      },
+      "elements": [
+        {
+          "id": "parallax-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "content_position": "middle"
+          },
+          "elements": [
+            {
+              "id": "cta-banner-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Capture Your Brand's Essence",
+                "align": "center",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "cta-banner-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Every image tells a story. Let's create something extraordinary together that resonates with your audience and elevates your brand to new heights.</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "cta-banner-button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Start Your Journey",
+                "link": {
+                  "url": "#contact"
+                },
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "masonry-gallery-section",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1200
+        },
+        "background_background": "classic",
+        "background_color": "#fafafa",
+        "padding": {
+          "unit": "px",
+          "top": 80,
+          "bottom": 80
+        }
+      },
+      "elements": [
+        {
+          "id": "masonry-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "masonry-title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Our Portfolio",
+                "align": "center",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "masonry-gallery",
+              "elType": "widget",
+              "widgetType": "gallery",
+              "settings": {
+                "gallery": [
+                  {
+                    "url": "assets/images/masonry-1.jpg",
+                    "id": ""
+                  },
+                  {
+                    "url": "assets/images/masonry-2.jpg",
+                    "id": ""
+                  },
+                  {
+                    "url": "assets/images/masonry-3.jpg",
+                    "id": ""
+                  },
+                  {
+                    "url": "assets/images/masonry-4.jpg",
+                    "id": ""
+                  },
+                  {
+                    "url": "assets/images/masonry-5.jpg",
+                    "id": ""
+                  },
+                  {
+                    "url": "assets/images/masonry-6.jpg",
+                    "id": ""
+                  },
+                  {
+                    "url": "assets/images/masonry-7.jpg",
+                    "id": ""
+                  },
+                  {
+                    "url": "assets/images/masonry-8.jpg",
+                    "id": ""
+                  }
+                ],
+                "gallery_layout": "masonry",
+                "columns": 3,
+                "columns_tablet": 2,
+                "columns_mobile": 1,
+                "gap": {
+                  "unit": "px",
+                  "size": 15
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

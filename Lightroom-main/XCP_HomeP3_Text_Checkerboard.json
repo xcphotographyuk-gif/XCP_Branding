@@ -1,0 +1,187 @@
+{
+  "version": "2.0",
+  "title": "XC Photography Homepage - Part 3: Text Block & Checkerboard",
+  "type": "page",
+  "content": [
+    {
+      "id": "text-block-section",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 900
+        },
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "padding": {
+          "unit": "px",
+          "top": 80,
+          "bottom": 80
+        }
+      },
+      "elements": [
+        {
+          "id": "text-block-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "text-block-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "The Art of Visual Storytelling",
+                "align": "center",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "text-block-content",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>At XC Photography, we believe that every brand has a unique story waiting to be told. Our approach combines technical excellence with creative vision to produce imagery that doesn't just capture moments—it creates them.</p><p>From bold branding campaigns to intimate documentary work, we bring an edge to every project. Our photography demands attention, challenges conventions, and leaves a lasting impression that resonates with your audience long after they've scrolled past.</p><p>We work with brands that aren't afraid to stand out, that value authenticity over perfection, and that understand the power of imagery in shaping perceptions and driving engagement.</p>",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "checkerboard-section-1",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "no",
+        "background_background": "classic",
+        "background_color": "#f5f5f5"
+      },
+      "elements": [
+        {
+          "id": "checkerboard-1-col-1",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "background_background": "classic",
+            "background_image": {
+              "url": "assets/images/checkerboard-branding.jpg"
+            },
+            "background_size": "cover",
+            "background_position": "center center",
+            "min_height": {
+              "unit": "px",
+              "size": 500
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "checkerboard-1-col-2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "content_position": "middle",
+            "padding": {
+              "unit": "px",
+              "top": 60,
+              "right": 60,
+              "bottom": 60,
+              "left": 60
+            },
+            "background_background": "classic",
+            "background_color": "#ffffff"
+          },
+          "elements": [
+            {
+              "id": "checkerboard-1-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Branding Excellence",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "checkerboard-1-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Your brand deserves imagery that stands out in a crowded marketplace. We create powerful visual identities that capture the essence of who you are and what you stand for.</p><p>Our branding photography goes beyond simple product shots. We craft narratives that connect emotionally with your target audience, building trust and recognition through every frame.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "checkerboard-section-2",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "no",
+        "background_background": "classic",
+        "background_color": "#f5f5f5"
+      },
+      "elements": [
+        {
+          "id": "checkerboard-2-col-1",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "content_position": "middle",
+            "padding": {
+              "unit": "px",
+              "top": 60,
+              "right": 60,
+              "bottom": 60,
+              "left": 60
+            },
+            "background_background": "classic",
+            "background_color": "#ffffff"
+          },
+          "elements": [
+            {
+              "id": "checkerboard-2-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Documentary Impact",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "checkerboard-2-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Real stories deserve authentic representation. Our documentary approach captures genuine moments and emotions, creating powerful narratives that resonate with viewers on a deeper level.</p><p>Whether it's capturing your company culture, showcasing your team, or documenting your brand's journey, we bring a cinematic quality to every shot while maintaining the raw authenticity that makes documentary work so compelling.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "checkerboard-2-col-2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "background_background": "classic",
+            "background_image": {
+              "url": "assets/images/checkerboard-documentary.jpg"
+            },
+            "background_size": "cover",
+            "background_position": "center center",
+            "min_height": {
+              "unit": "px",
+              "size": 500
+            }
+          },
+          "elements": []
+        }
+      ]
+    }
+  ]
+}
