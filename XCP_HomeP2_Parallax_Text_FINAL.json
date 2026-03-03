@@ -90,10 +90,11 @@
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
-                "title": "Why Your Visual Story Matters More Than Ever",
+                "title": "Good Photographs Are Easy. The Right Photograph Is Something Else.",
                 "header_size": "h2",
                 "align": "center",
-                "typography_font_size": {"unit": "px", "size": 42}
+                "typography_font_size": {"unit": "px", "size": 40},
+                "typography_font_size_mobile": {"unit": "px", "size": 28}
               }
             },
             {
@@ -101,7 +102,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<div style='max-width: 900px; margin: 0 auto; font-size: 18px; line-height: 1.8;'><p><strong>Your audience is searching for something real.</strong></p><p>In a world saturated with generic imagery, your ideal clients crave authenticity. They want to see the real you—the passion, the purpose, the story behind your brand. When your visuals capture that truth, everything changes.</p><p>The right imagery doesn't just showcase what you do. It reveals who you are, creating an instant connection with the people you're meant to serve. It builds trust before a single word is spoken. It positions you not as just another option, but as the only choice for those who truly get what you're about.</p><p><strong>Your story has power. Your audience is waiting to feel it.</strong></p></div>"
+                "editor": "<div style='max-width: 860px; margin: 0 auto; font-size: 18px; line-height: 1.9;'><p>Anyone with a decent camera and a good eye can make a photograph that looks fine. That's not what this is.</p><p>What I do starts well before the shoot — in a real conversation about who you are, who you're trying to reach, and what it is about you that will make those specific people stop mid-scroll and actually pay attention. Not your elevator pitch. The actual thing.</p><p>Then the technical side — 15+ years of knowing exactly what to do with light, timing, and composition — becomes the delivery mechanism for that understanding. The camera is just the tool. The work is everything that happens before and around it.</p><p><strong>The result is imagery with intent behind it.</strong> Images that show the personality of the person, the place, or the thing — not a polished performance of them. Images that resonate with the right people because they were made with those people in mind.</p></div>"
               }
             }
           ]

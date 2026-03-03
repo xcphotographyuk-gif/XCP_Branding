@@ -80,7 +80,7 @@
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
-                "title": "Built on Partnership, Driven by Your Success",
+                "title": "I Start With Understanding. The Camera Comes Second.",
                 "header_size": "h2",
                 "align": "center",
                 "typography_font_size": {"unit": "px", "size": 42},
@@ -92,7 +92,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; font-size: 18px; max-width: 800px; margin: 30px auto; line-height: 1.8;'>Every brand has a story worth telling. Your journey, your values, your unique approach—these aren't just details, they're what set you apart. The challenge? Making sure your audience sees it, feels it, and connects with it.</p><p style='text-align: center; font-size: 18px; max-width: 800px; margin: 30px auto; line-height: 1.8;'>That's where imagery becomes more than decoration. It becomes your most powerful tool for authentic connection.</p>"
+                "editor": "<p style='text-align: center; font-size: 18px; max-width: 860px; margin: 30px auto; line-height: 1.9;'>Before I shoot anything, I need to know three things: who you actually are, who you want to reach, and what it is about you that will make those people stop and pay attention.</p><p style='text-align: center; font-size: 18px; max-width: 860px; margin: 30px auto; line-height: 1.9;'>That's not a casual chat over coffee. That's the whole job. Everything else — the light, the timing, the location, the moment I decide to press the shutter — flows from that understanding.</p><p style='text-align: center; font-size: 18px; max-width: 860px; margin: 30px auto; line-height: 1.9;'>Technically, I've spent 15+ years making the craft invisible. I've trained seriously in brand photography, including as a mentee of <a href='https://thephotographersmentor.com' target='_blank' rel='noopener' style='color: inherit; border-bottom: 1px solid #d4af37;'>Jeff Brown</a> — one of the most respected educators working in this space. The technical side is the foundation. What I bring beyond it is the ability to see what makes you genuinely you — and find the precise moment, light, and angle where that becomes an image someone can't scroll past.</p>"
               }
             }
           ]
@@ -124,7 +124,7 @@
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
-                "title": "Authenticity First",
+                "title": "Intent Over Instinct",
                 "header_size": "h3",
                 "align": "center",
                 "typography_font_size": {"unit": "px", "size": 28}
@@ -135,7 +135,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; padding: 0 20px;'>Your brand's truth matters. Imagery that feels forced or inauthentic? Your audience spots it instantly. We focus on capturing what makes you genuinely different—the real story that resonates.</p>"
+                "editor": "<p style='text-align: center; padding: 0 30px; line-height: 1.8;'>Every image I make is deliberate. I don't walk into a shoot hoping good moments happen — I prepare for them. The brief, the location, the light, the sequence of the day — all of it considered so that when the real moments arrive, I'm already in exactly the right place to catch them.</p>"
               }
             }
           ]
@@ -154,7 +154,7 @@
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
-                "title": "Strategic Connection",
+                "title": "Understand Before You Create",
                 "header_size": "h3",
                 "align": "center",
                 "typography_font_size": {"unit": "px", "size": 28}
@@ -165,7 +165,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; padding: 0 20px;'>Beautiful isn't enough. Your imagery needs to speak directly to your ideal audience—their values, their aspirations, their needs. Every visual choice is intentional, designed to create the connection you're seeking.</p>"
+                "editor": "<p style='text-align: center; padding: 0 30px; line-height: 1.8;'>I spend more time in conversation before a shoot than most photographers spend on the entire session. Who are you? Who are you speaking to? What do they care about? What makes them trust someone? The image that resonates with a London agency is a different thing entirely to the one that resonates with an independent Brighton founder — and knowing which you need changes everything.</p>"
               }
             }
           ]
@@ -184,7 +184,7 @@
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
-                "title": "Tangible Results",
+                "title": "Personality Over Perfection",
                 "header_size": "h3",
                 "align": "center",
                 "typography_font_size": {"unit": "px", "size": 28}
@@ -195,7 +195,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; padding: 0 20px;'>This isn't about art for art's sake. It's about imagery that performs—that elevates your brand presence, attracts your ideal clients, and supports your business goals. Partnership focused on your success.</p>"
+                "editor": "<p style='text-align: center; padding: 0 30px; line-height: 1.8;'>A technically flawless image that misses who you actually are is worthless. The image that's slightly imperfect but makes you feel unmistakably like yourself — and makes your ideal client think <em>that's exactly who I want to work with</em> — that's the one we're making. Every time. That's the only measure that matters.</p>"
               }
             }
           ]

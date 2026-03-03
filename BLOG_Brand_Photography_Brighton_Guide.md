@@ -209,6 +209,4 @@ Or browse the portfolio to see recent brand photography work: **[View Portfolio 
 
 ---
 
-*Xavier Clarke is a Brighton-based brand and documentary photographer with over 15 years of experience and 500+ brands elevated. XC Photography serves clients across Brighton, Sussex, the UK, and internationally.*
-
-*Starting from £1,495 · Free discovery call · Commercial usage rights included*
+*Xavier Clarke is a brand and documentary photographer working in London and Brighton, and across the UK. He shoots with intent — starting every brief with a conversation about who you are, who you want to reach, and what will make those specific people stop scrolling. Trained under Jeff Brown, one of the most respected educators in brand photography. 15+ years experience. 500+ brands elevated. Starting from £1,495.*

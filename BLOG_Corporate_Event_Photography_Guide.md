@@ -237,4 +237,4 @@ If you're planning a corporate event in Brighton, Sussex, or anywhere across the
 
 **[Get in Touch About Your Event →](/contact)**
 
-*Xavier Clarke is a Brighton-based brand and documentary photographer covering corporate events across the UK and internationally. Starting from £X for half-day coverage — enquire for a tailored quote.*
+*Xavier Clarke is a brand and documentary photographer working in London and Brighton, and across the UK. He shoots with intent — every brief starts with understanding who you are, who you're trying to reach, and what will make them stop. Trained under Jeff Brown. 15+ years experience covering events from intimate roundtables to large-scale conferences.*

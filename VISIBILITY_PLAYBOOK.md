@@ -41,31 +41,33 @@ Your best brand photography work. Full width, full quality. This is the first im
 Brand & Documentary Photographer | London & Brighton | Authentic Visual Stories for Ambitious Businesses | XC Photography
 ```
 
-**About section (AIDA structure — existing version in LINKEDIN_PROFILE_UPDATED.md is strong, add London explicitly):**
+**About section (Xavier's voice — intent, understanding, personality — matches LINKEDIN_PROFILE_UPDATED.md):**
 ```
-Your brand deserves more than stock photos and staged smiles.
+Your brand deserves more than stock photos and staged smiles. But it also deserves more than a photographer who shows up, fires off some frames, and hands you a folder of images you're not sure what to do with.
 
-Think about the last time an image stopped your scroll. Not because it was perfect, but because it felt real. That's what your clients are craving. That's what builds trust before they ever reach out.
+Before I pick up a camera, I need to understand three things: who you actually are, who you're trying to reach, and what it is about you that will make those people stop and pay attention. Not your elevator pitch. The actual thing.
 
-I work with ambitious businesses in London, Brighton, and across the UK to create visual stories that actually do something — that reflect who you are, speak to who you want to reach, and make the gap between "good enough" and "outstanding" impossible to ignore.
+That conversation shapes every decision I make — the location, the light, the timing, the moments I chase and the ones I let go. I've spent 15+ years making the technical side of photography invisible — it's automatic, and it needs to be. I've trained seriously in brand photography, including as a mentee of Jeff Brown, one of the most respected educators in the field. But technique alone doesn't make the image. Understanding does.
 
-📸 WHAT I CREATE:
-• Brand Photography Sessions (from £1,495) — the real you, captured with intention
-• Documentary Business Photography — behind-the-scenes that builds genuine connection
-• Corporate Portraits & Team Photography — confidence-building imagery for individuals and teams
-• Event & Performance Coverage — the energy of your moments, preserved
-• Workshops & 1-2-1 Mentoring — learn to see your brand through a new lens
-• Fine Art & Wall Art — museum-quality prints that transform your spaces
+What I'm actually creating — every time — is a photograph with intent behind it. One that shows the personality of the person, place, or thing — not a performance of it. An image that makes your ideal client stop mid-scroll and think: that's exactly who I want to work with.
 
-🎯 WHAT CHANGES:
+📸 WHAT THIS LOOKS LIKE IN PRACTICE:
+• Brand Photography Sessions (from £1,495) — your real self, captured with purpose
+• Documentary Business Photography — authentic storytelling, not staged scenarios
+• Corporate Portraits & Team Photography — images that say something, not just show something
+• Event & Performance Coverage — the real moments, preserved properly
+• Workshops & 1-2-1 Mentoring — helping others see their brand through a sharper lens
+• Fine Art & Wall Art — imagery that transforms the spaces where your clients meet you
+
+🎯 WHAT CHANGES FOR YOUR BUSINESS:
 • Your ideal clients find you — and arrive already trusting you
-• Your visual presence matches the quality of what you actually deliver
-• One session creates 6-12 months of content across every platform
-• You stop apologising for your website
+• Your visual presence finally matches the quality of what you actually deliver
+• One well-planned session creates 6–12 months of content across every platform
+• You stop sending people to your website with a quiet apology attached
 
 📍 London & Brighton. UK-wide. Internationally for the right projects.
 
-Ready to close the gap between who you are and how you appear? Book a free 20-minute discovery call.
+Ready to talk about what your brand actually needs? Book a free 20-minute discovery call — no pitch, just a real conversation about whether this is the right fit.
 🌐 xcphotography.co
 ```
 
