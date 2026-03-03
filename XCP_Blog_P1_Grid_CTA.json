@@ -316,7 +316,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; color: rgba(255,255,255,0.75); font-size: 16px; max-width: 560px; margin: 16px auto;'>Practical advice, creative inspiration, and early access to availability \u2014 straight to your inbox. No fluff, no spam.</p>"
+                "editor": "<p style='text-align: center; color: rgba(255,255,255,0.75); font-size: 16px; max-width: 560px; margin: 16px auto;'>Practical advice, creative inspiration, and early access to availability, straight to your inbox. No fluff, no spam.</p>"
               }
             },
             {

@@ -1,20 +1,30 @@
 {
   "version": "0.4",
-  "title": "XCP Contact — Form + Info Panel — EMAIL FALLBACK — Section 2 of 4",
-  "_comment": "FALLBACK FORM: Routes enquiries via Elementor email notification only. Use this if Overture webhook is not yet configured, or as a backup when Overture is unavailable. Swap for XCP_Contact_P2_Form_Overture.json once Overture is active. The field set and UX are identical to the Overture version — zero disruption to visitors.",
+  "title": "XCP Contact: Form + Info Panel: EMAIL FALLBACK: Section 2 of 4",
+  "_comment": "FALLBACK FORM: Routes enquiries via Elementor email notification only. Use this if Overture webhook is not yet configured, or as a backup when Overture is unavailable. Swap for XCP_Contact_P2_Form_Overture.json once Overture is active. The field set and UX are identical to the Overture version, zero disruption to visitors.",
   "type": "section",
   "content": [
     {
       "id": "contact_form_fallback",
       "elType": "section",
       "settings": {
-        "_title": "Contact Form — Email Fallback",
+        "_title": "Contact Form: Email Fallback",
         "layout": "boxed",
-        "content_width": {"unit": "px", "size": 1200},
+        "content_width": {
+          "unit": "px",
+          "size": 1200
+        },
         "structure": "20",
         "background_background": "classic",
         "background_color": "#ffffff",
-        "padding": {"unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20", "isLinked": false},
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20",
+          "isLinked": false
+        },
         "gap": "wide"
       },
       "elements": [
@@ -25,7 +35,14 @@
             "_column_size": 60,
             "_column_size_tablet": 100,
             "_column_size_mobile": 100,
-            "padding": {"unit": "px", "top": "0", "right": "40", "bottom": "0", "left": "0", "isLinked": false}
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "40",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            }
           },
           "elements": [
             {
@@ -43,8 +60,14 @@
               "settings": {
                 "title": "Tell Me About Your Vision",
                 "header_size": "h2",
-                "typography_font_size": {"unit": "px", "size": 34},
-                "typography_font_size_mobile": {"unit": "px", "size": 26}
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 34
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 26
+                }
               }
             },
             {
@@ -60,7 +83,7 @@
               "elType": "widget",
               "widgetType": "form",
               "settings": {
-                "form_name": "XCP Contact — Email Fallback",
+                "form_name": "XCP Contact: Email Fallback",
                 "form_fields": [
                   {
                     "field_type": "text",
@@ -91,7 +114,7 @@
                     "field_label": "Type of Project",
                     "field_id": "project_type",
                     "required": "yes",
-                    "field_options": "Brand Photography Session\nDocumentary Business Storytelling\nCorporate Portraits & Headshots\nEvent & Performance Coverage\nEditorial Work\nFine Art Commission\nWorkshop or Photography Course\nNot Sure Yet — Let's Talk",
+                    "field_options": "Brand Photography Session\nDocumentary Business Storytelling\nCorporate Portraits & Headshots\nEvent & Performance Coverage\nEditorial Work\nFine Art Commission\nWorkshop or Photography Course\nNot Sure Yet, Let's Talk",
                     "width": "50"
                   },
                   {
@@ -121,23 +144,45 @@
                     "required_message": "Please confirm you have read and agree to the Privacy Policy before submitting."
                   }
                 ],
-                "submit_actions": ["email"],
+                "submit_actions": [
+                  "email"
+                ],
                 "email_to": "hello@xcphotography.co.uk",
-                "email_subject": "New Enquiry from xcphotography.co — {field_id:project_type}",
+                "email_subject": "New Enquiry from xcphotography.co: {field_id:project_type}",
                 "email_content": "Name: {field_id:name}\nEmail: {field_id:email}\nPhone: {field_id:phone}\nProject Type: {field_id:project_type}\nPreferred Date: {field_id:preferred_date}\n\nMessage:\n{field_id:message}",
                 "button_text": "Send My Enquiry",
                 "button_size": "lg",
                 "button_align": "left",
                 "button_background_color": "#1a1a1a",
                 "button_text_color": "#ffffff",
-                "button_border_radius": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true},
-                "button_padding": {"unit": "px", "top": "16", "right": "40", "bottom": "16", "left": "40", "isLinked": false},
+                "button_border_radius": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "button_padding": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "40",
+                  "bottom": "16",
+                  "left": "40",
+                  "isLinked": false
+                },
                 "typography_font_family": "Montserrat",
-                "typography_font_size": {"unit": "px", "size": 13},
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13
+                },
                 "typography_font_weight": "600",
                 "typography_text_transform": "uppercase",
-                "typography_letter_spacing": {"unit": "px", "size": 1.5},
-                "success_message": "Thank you — your enquiry is on its way. I'll be in touch within 24 hours to arrange a discovery call.",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 1.5
+                },
+                "success_message": "Thank you. Your enquiry is on its way. I'll be in touch within 24 hours to arrange a discovery call.",
                 "error_message": "Something went wrong. Please email me directly at hello@xcphotography.co.uk or call +44 (0) 7XXX XXXXXX."
               }
             }
@@ -152,7 +197,14 @@
             "_column_size_mobile": 100,
             "background_background": "classic",
             "background_color": "#f8f8f8",
-            "padding": {"unit": "px", "top": "50", "right": "40", "bottom": "50", "left": "40", "isLinked": false}
+            "padding": {
+              "unit": "px",
+              "top": "50",
+              "right": "40",
+              "bottom": "50",
+              "left": "40",
+              "isLinked": false
+            }
           },
           "elements": [
             {
@@ -162,7 +214,10 @@
               "settings": {
                 "title": "What to Expect",
                 "header_size": "h3",
-                "typography_font_size": {"unit": "px", "size": 26}
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 26
+                }
               }
             },
             {
@@ -170,7 +225,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<ol style='padding-left:20px;font-size:15px;line-height:1.9;color:#444;margin-top:16px;'><li style='margin-bottom:14px;'><strong>You send your enquiry</strong> — this form takes less than 3 minutes.</li><li style='margin-bottom:14px;'><strong>I respond within 24 hours</strong> — usually much sooner — with a few questions if I need them.</li><li style='margin-bottom:14px;'><strong>We have a free discovery call</strong> — 20 minutes, no pressure, just honest conversation.</li><li style='margin-bottom:14px;'><strong>I put together a tailored proposal</strong> — specific to your brand and goals, not a generic price list.</li><li><strong>We create something worth remembering.</strong></li></ol>"
+                "editor": "<ol style='padding-left:20px;font-size:15px;line-height:1.9;color:#444;margin-top:16px;'><li style='margin-bottom:14px;'><strong>You send your enquiry</strong>. This form takes less than 3 minutes.</li><li style='margin-bottom:14px;'><strong>I respond within 24 hours</strong>, usually much sooner, with a few questions if I need them.</li><li style='margin-bottom:14px;'><strong>We have a free discovery call</strong>. 20 minutes, no pressure, just honest conversation.</li><li style='margin-bottom:14px;'><strong>I put together a tailored proposal</strong>, specific to your brand and goals, not a generic price list.</li><li><strong>We create something worth remembering.</strong></li></ol>"
               }
             },
             {
@@ -180,7 +235,10 @@
               "settings": {
                 "style": "solid",
                 "color": "#dddddd",
-                "gap": {"unit": "px", "size": 28}
+                "gap": {
+                  "unit": "px",
+                  "size": 28
+                }
               }
             },
             {
@@ -190,7 +248,10 @@
               "settings": {
                 "title": "Direct Contact",
                 "header_size": "h4",
-                "typography_font_size": {"unit": "px", "size": 18}
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 18
+                }
               }
             },
             {

@@ -46,7 +46,7 @@
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
-                "title": "Imagery That Elevates Your Brand",
+                "title": "Brand Photography in Brighton and Across the UK",
                 "header_size": "h1",
                 "align": "center",
                 "title_color": "#FFFFFF",
@@ -69,7 +69,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; color: #FFFFFF; font-size: 20px; max-width: 700px; margin: 20px auto;'>Strategic photography packages designed around one goal: helping you connect with the audience you're meant to reach.</p>",
+                "editor": "<p style='text-align: center; color: #FFFFFF; font-size: 20px; max-width: 700px; margin: 20px auto;'>Strategic photography packages built on a decade of active visual work, designed to help the right brands show up in a way that commands genuine attention.</p>",
                 "align": "center"
               }
             }
@@ -111,7 +111,7 @@
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
-                "title": "Investment in Your Brand's Future",
+                "title": "What You're Actually Getting",
                 "header_size": "h2",
                 "align": "center",
                 "typography_font_size": {
@@ -129,7 +129,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; font-size: 18px; max-width: 800px; margin: 30px auto; line-height: 1.8;'>This isn't about buying photos\u2014it's about investing in how your brand shows up in the world. Every package is designed to deliver imagery that works as hard as you do, elevating every touchpoint where your audience encounters your brand.</p>"
+                "editor": "<p style='text-align: center; font-size: 18px; max-width: 800px; margin: 30px auto; line-height: 1.8;'>You're not buying photographs. You're getting a process that starts long before the camera comes out, and imagery that reflects who you actually are when it does. Every package is built around getting that part right first.</p>"
               }
             }
           ]

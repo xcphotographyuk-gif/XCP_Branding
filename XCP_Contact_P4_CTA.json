@@ -1,6 +1,6 @@
 {
   "version": "0.4",
-  "title": "XCP Contact — Closing CTA — Section 4 of 4",
+  "title": "XCP Contact: Closing CTA: Section 4 of 4",
   "type": "section",
   "content": [
     {
@@ -9,16 +9,29 @@
       "settings": {
         "_title": "Closing CTA",
         "layout": "boxed",
-        "content_width": {"unit": "px", "size": 900},
+        "content_width": {
+          "unit": "px",
+          "size": 900
+        },
         "background_background": "classic",
         "background_color": "#1a1a1a",
-        "padding": {"unit": "px", "top": "70", "right": "20", "bottom": "70", "left": "20", "isLinked": false}
+        "padding": {
+          "unit": "px",
+          "top": "70",
+          "right": "20",
+          "bottom": "70",
+          "left": "20",
+          "isLinked": false
+        }
       },
       "elements": [
         {
           "id": "final_cta_col",
           "elType": "column",
-          "settings": {"_column_size": 100, "text_align": "center"},
+          "settings": {
+            "_column_size": 100,
+            "text_align": "center"
+          },
           "elements": [
             {
               "id": "final_cta_heading",
@@ -29,8 +42,14 @@
                 "header_size": "h3",
                 "align": "center",
                 "color": "#ffffff",
-                "typography_font_size": {"unit": "px", "size": 36},
-                "typography_font_size_mobile": {"unit": "px", "size": 26}
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 26
+                }
               }
             },
             {

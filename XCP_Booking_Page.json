@@ -1,6 +1,6 @@
 {
   "version": "0.4",
-  "title": "XCP Booking Page \u2014 Schedule a Discovery Call",
+  "title": "XCP Booking Page: Schedule a Discovery Call",
   "type": "page",
   "content": [
     {
@@ -38,7 +38,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; color: #d4af37; font-family: Montserrat, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px;'>Free \u2014 No Obligation</p>"
+                "editor": "<p style='text-align: center; color: #d4af37; font-family: Montserrat, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px;'>Free, No Obligation</p>"
               }
             },
             {
@@ -112,7 +112,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; color: #1a1a1a; font-family: Montserrat, sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 1px; margin: 0;'>\u2726 Responds within 24 hours &nbsp;&nbsp;|&nbsp;&nbsp; \u2726 5-star rated service &nbsp;&nbsp;|&nbsp;&nbsp; \u2726 500+ brands photographed &nbsp;&nbsp;|&nbsp;&nbsp; \u2726 Based in Brighton, shoots UK-wide</p>"
+                "editor": "<p style='text-align: center; color: #1a1a1a; font-family: Montserrat, sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 1px; margin: 0;'>✦ Responds within 24 hours &nbsp;&nbsp;|&nbsp;&nbsp; ✦ 5-star rated service &nbsp;&nbsp;|&nbsp;&nbsp; ✦ 500+ brands photographed &nbsp;&nbsp;|&nbsp;&nbsp; ✦ Based in Brighton, shoots UK-wide</p>"
               }
             }
           ]
@@ -187,7 +187,7 @@
               "elType": "widget",
               "widgetType": "html",
               "settings": {
-                "html": "<!-- Overture / Calendly booking calendar embed -->\n<!-- Replace the src URL below with your Overture or Calendly embed URL -->\n<!-- Overture embed: Overture Admin \u2192 Booking Pages \u2192 Embed Code -->\n<!-- Calendly embed: calendly.com/[your-username]/discovery-call -->\n<div style=\"min-width:320px; height:700px;\">\n  <iframe\n    src=\"https://calendly.com/xcphotographyuk/discovery-call\"\n    width=\"100%\"\n    height=\"700\"\n    title=\"Book a Discovery Call with XC Photography\"\n    loading=\"lazy\"\n    sandbox=\"allow-forms allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox\"\n    allow=\"payment; geolocation\"\n    style=\"border: none; border-radius: 4px;\"\n  ></iframe>\n</div>",
+                "html": "<!-- Overture / Calendly booking calendar embed -->\n<!-- Replace the src URL below with your Overture or Calendly embed URL -->\n<!-- Overture embed: Overture Admin → Booking Pages → Embed Code -->\n<!-- Calendly embed: calendly.com/[your-username]/discovery-call -->\n<div style=\"min-width:320px; height:700px;\">\n  <iframe\n    src=\"https://calendly.com/xcphotographyuk/discovery-call\"\n    width=\"100%\"\n    height=\"700\"\n    title=\"Book a Discovery Call with XC Photography\"\n    loading=\"lazy\"\n    sandbox=\"allow-forms allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox\"\n    allow=\"payment; geolocation\"\n    style=\"border: none; border-radius: 4px;\"\n  ></iframe>\n</div>",
                 "_element_custom_width": "100"
               }
             }
@@ -222,7 +222,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<ul style='list-style: none; padding: 0; margin: 0 0 30px;'><li style='padding: 10px 0; border-bottom: 1px solid #e8e8e8; font-size: 16px; line-height: 1.6;'>\ud83c\udfaf &nbsp;<strong>We learn about your brand</strong> \u2014 your goals, your audience, and the story you want to tell.</li><li style='padding: 10px 0; border-bottom: 1px solid #e8e8e8; font-size: 16px; line-height: 1.6;'>\ud83d\udcf8 &nbsp;<strong>We explore your vision</strong> \u2014 the look, feel, and emotional impact you're aiming for.</li><li style='padding: 10px 0; border-bottom: 1px solid #e8e8e8; font-size: 16px; line-height: 1.6;'>\ud83d\udca1 &nbsp;<strong>We share ideas</strong> \u2014 concepts, locations, and approaches that fit your brand perfectly.</li><li style='padding: 10px 0; border-bottom: 1px solid #e8e8e8; font-size: 16px; line-height: 1.6;'>\u2705 &nbsp;<strong>We assess fit</strong> \u2014 because the best work happens when photographer and client are genuinely aligned.</li><li style='padding: 10px 0; font-size: 16px; line-height: 1.6;'>\ud83d\udccb &nbsp;<strong>Next steps</strong> \u2014 if it's a great fit, we'll outline a tailored proposal. No pressure either way.</li></ul>"
+                "editor": "<ul style='list-style: none; padding: 0; margin: 0 0 30px;'><li style='padding: 10px 0; border-bottom: 1px solid #e8e8e8; font-size: 16px; line-height: 1.6;'>🎯 &nbsp;<strong>We learn about your brand</strong>: your goals, your audience, and the story you want to tell.</li><li style='padding: 10px 0; border-bottom: 1px solid #e8e8e8; font-size: 16px; line-height: 1.6;'>📸 &nbsp;<strong>We explore your vision</strong>: the look, feel, and emotional impact you're aiming for.</li><li style='padding: 10px 0; border-bottom: 1px solid #e8e8e8; font-size: 16px; line-height: 1.6;'>💡 &nbsp;<strong>We share ideas</strong>: concepts, locations, and approaches that fit your brand perfectly.</li><li style='padding: 10px 0; border-bottom: 1px solid #e8e8e8; font-size: 16px; line-height: 1.6;'>✅ &nbsp;<strong>We assess fit</strong>, because the best work happens when photographer and client are genuinely aligned.</li><li style='padding: 10px 0; font-size: 16px; line-height: 1.6;'>📋 &nbsp;<strong>Next steps</strong>: if it's a great fit, we'll outline a tailored proposal. No pressure either way.</li></ul>"
               }
             },
             {
@@ -230,7 +230,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<div style='background: #1a1a1a; color: #ffffff; padding: 24px; border-left: 4px solid #d4af37; margin-bottom: 30px;'><p style='margin: 0 0 6px; font-family: Montserrat, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #d4af37;'>The Details</p><p style='margin: 0; font-size: 15px; line-height: 1.7;'>\ud83d\udcc5 <strong>30 minutes</strong> via Zoom or phone<br>\ud83d\udccd Available UK-wide<br>\ud83c\udf81 <strong>Completely free</strong> \u2014 no obligation<br>\u23f1 Response within 24 hours of booking</p></div>"
+                "editor": "<div style='background: #1a1a1a; color: #ffffff; padding: 24px; border-left: 4px solid #d4af37; margin-bottom: 30px;'><p style='margin: 0 0 6px; font-family: Montserrat, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #d4af37;'>The Details</p><p style='margin: 0; font-size: 15px; line-height: 1.7;'>📅 <strong>30 minutes</strong> via Zoom or phone<br>📍 Available UK-wide<br>🎁 <strong>Completely free</strong>, no obligation<br>⏱ Response within 24 hours of booking</p></div>"
               }
             },
             {
@@ -238,7 +238,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='font-size: 15px; color: #555; line-height: 1.7;'>Prefer to reach out by email first? <a href='/contact' style='color: #1a1a1a; font-weight: 600; text-decoration: underline;'>Use the contact form \u2192</a></p>"
+                "editor": "<p style='font-size: 15px; color: #555; line-height: 1.7;'>Prefer to reach out by email first? <a href='/contact' style='color: #1a1a1a; font-weight: 600; text-decoration: underline;'>Use the contact form →</a></p>"
               }
             }
           ]
@@ -298,7 +298,7 @@
                 "tabs": [
                   {
                     "tab_title": "Do I need to prepare anything before the call?",
-                    "tab_content": "Not at all \u2014 just show up as you are. If you have a few thoughts about your brand or some visual references you love, feel free to share them, but it's absolutely not required. The conversation will naturally surface everything we need."
+                    "tab_content": "Not at all. Just show up as you are. If you have a few thoughts about your brand or some visual references you love, feel free to share them, but it's absolutely not required. The conversation will naturally surface everything we need."
                   },
                   {
                     "tab_title": "How quickly will I get a proposal after the call?",
@@ -306,11 +306,11 @@
                   },
                   {
                     "tab_title": "What if I'm not ready to book but want to learn more?",
-                    "tab_content": "That's completely fine. The discovery call is exactly the right place to start \u2014 there's no expectation to commit on the day. Many of our best client relationships began with a relaxed exploratory conversation months before the shoot."
+                    "tab_content": "That's completely fine. The discovery call is exactly the right place to start. There's no expectation to commit on the day. Many of our best client relationships began with a relaxed exploratory conversation months before the shoot."
                   },
                   {
                     "tab_title": "Do you work with clients outside Brighton?",
-                    "tab_content": "Yes \u2014 XC Photography shoots across the UK. We travel for the right brief. Travel costs for locations more than 50 miles from Brighton are outlined transparently in your proposal."
+                    "tab_content": "Yes, XC Photography shoots across the UK. We travel for the right brief. Travel costs for locations more than 50 miles from Brighton are outlined transparently in your proposal."
                   },
                   {
                     "tab_title": "What if I need to reschedule?",
@@ -361,7 +361,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<h3 style='text-align: center; color: #ffffff; font-family: Montserrat, sans-serif; font-size: 32px; font-weight: 700; margin-bottom: 16px;'>Your Brand Deserves to Be Seen</h3><p style='text-align: center; color: #e0e0e0; font-size: 18px; max-width: 600px; margin: 0 auto 32px; line-height: 1.7;'>Every iconic brand started with a single conversation. Book yours today \u2014 and let's build something that stops the scroll.</p>"
+                "editor": "<h3 style='text-align: center; color: #ffffff; font-family: Montserrat, sans-serif; font-size: 32px; font-weight: 700; margin-bottom: 16px;'>Your Brand Deserves to Be Seen</h3><p style='text-align: center; color: #e0e0e0; font-size: 18px; max-width: 600px; margin: 0 auto 32px; line-height: 1.7;'>Every iconic brand started with a single conversation. Book yours today and let's build something that worth looking at.</p>"
               }
             },
             {

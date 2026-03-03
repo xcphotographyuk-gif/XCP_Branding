@@ -68,7 +68,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; font-size: 24px; line-height: 1.6;'>Powerful Imagery That Connects Your Brand with the Audience You're Meant to Reach</p>",
+                "editor": "<p style='text-align: center; font-size: 24px; line-height: 1.6;'>Brand and documentary photography, Brighton. The kind that actually looks like you.</p>",
                 "align": "center",
                 "text_color": "#FFFFFF"
               }
@@ -352,7 +352,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p>Visuals that elevate your brand and resonate with your ideal audience.</p>",
+                "editor": "<p>Visuals that elevate your brand and connect with the people who matter to your business.</p>",
                 "text_color": "#FFFFFF"
               }
             }

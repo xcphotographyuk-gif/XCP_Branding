@@ -135,7 +135,7 @@
                     "field_type": "select",
                     "required": "false",
                     "placeholder": "Budget Range",
-                    "field_options": "Under \u00a32,000\n\u00a32,000 - \u00a35,000\n\u00a35,000 - \u00a310,000\n\u00a310,000+\nPrefer to Discuss",
+                    "field_options": "Under £2,000\n£2,000 - £5,000\n£5,000 - £10,000\n£10,000+\nPrefer to Discuss",
                     "width": "50"
                   },
                   {
@@ -195,7 +195,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='font-size: 16px; line-height: 1.8;'><strong>Email:</strong><br><a href='mailto:xavier@xcphotography.co.uk' style='color: #000000;'>xavier@xcphotography.co.uk</a></p><p style='font-size: 16px; line-height: 1.8;'><strong>Based in:</strong><br>Brighton, UK</p><p style='font-size: 16px; line-height: 1.8;'><strong>Office Hours:</strong><br>Monday \u2013 Friday: 10:30 \u2013 16:00<br>Weekends &amp; Bank Holidays: 11:00 \u2013 14:00</p>"
+                "editor": "<p style='font-size: 16px; line-height: 1.8;'><strong>Email:</strong><br><a href='mailto:xavier@xcphotography.co.uk' style='color: #000000;'>xavier@xcphotography.co.uk</a></p><p style='font-size: 16px; line-height: 1.8;'><strong>Based in:</strong><br>Brighton, UK</p><p style='font-size: 16px; line-height: 1.8;'><strong>Office Hours:</strong><br>Monday – Friday: 10:30 – 16:00<br>Weekends &amp; Bank Holidays: 11:00 – 14:00</p>"
               }
             },
             {
@@ -203,7 +203,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<div style='background: #f8f8f8; padding: 20px; margin-top: 30px; border-left: 4px solid #000;'><p style='margin: 0; font-size: 0.95rem;'><strong>What to Expect:</strong> We'll respond to your inquiry within 24 hours with next steps for your discovery call\u2014a no-pressure conversation to understand your vision and how we can bring it to life.</p></div>"
+                "editor": "<div style='background: #f8f8f8; padding: 20px; margin-top: 30px; border-left: 4px solid #000;'><p style='margin: 0; font-size: 0.95rem;'><strong>What to Expect:</strong> We'll respond to your inquiry within 24 hours with next steps for your discovery call, a no-pressure conversation to understand your vision and how we can bring it to life.</p></div>"
               }
             }
           ]

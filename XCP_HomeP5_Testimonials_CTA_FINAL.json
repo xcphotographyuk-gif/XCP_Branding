@@ -47,7 +47,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<blockquote style='max-width: 800px; margin: 40px auto; font-size: 22px; line-height: 1.8; font-style: italic;'><p>\"The imagery didn't just showcase our brand\u2014it transformed how our audience sees us. We went from being overlooked to becoming the first choice in our industry. The connection is immediate, the trust is instant.\"</p><footer style='font-style: normal; margin-top: 20px; font-size: 18px;'><strong>\u2014 Sarah Mitchell</strong><br><em>Creative Director, Urban Brands Co.</em></footer></blockquote>"
+                "editor": "<blockquote style='max-width: 800px; margin: 40px auto; font-size: 22px; line-height: 1.8; font-style: italic;'><p>\"The imagery didn't just showcase our brand. It transformed how our audience sees us. We went from being overlooked to becoming the first choice in our industry. The connection is immediate, the trust is instant.\"</p><footer style='font-style: normal; margin-top: 20px; font-size: 18px;'><strong>Sarah Mitchell</strong><br><em>Creative Director, Urban Brands Co.</em></footer></blockquote>"
               }
             }
           ]
@@ -302,7 +302,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; font-size: 20px; line-height: 1.8; color: #FFFFFF; max-width: 700px; margin: 0 auto;'>Share your vision below, and let's craft imagery that resonates with the audience you're meant to reach. Your story deserves to be seen\u2014and felt.</p>",
+                "editor": "<p style='text-align: center; font-size: 20px; line-height: 1.8; color: #FFFFFF; max-width: 700px; margin: 0 auto;'>Share your vision below, and let's craft imagery that reflects exactly who you are and commands the attention of the right people. Your story deserves to be seen and felt.</p>",
                 "text_color": "#FFFFFF"
               }
             },

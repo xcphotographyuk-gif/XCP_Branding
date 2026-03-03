@@ -54,7 +54,7 @@
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
-                "title": "The Story Behind Your Story",
+                "title": "Who Takes Your Photographs Matters",
                 "header_size": "h1",
                 "align": "center",
                 "align_tablet": "center",
@@ -79,7 +79,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; color: #FFFFFF; font-size: 20px; max-width: 700px; margin: 20px auto;'>Partnership, not just photography. Your vision, elevated through imagery that truly reflects who you are and resonates with the audience you're meant to reach.</p>",
+                "editor": "<p style='text-align: center; color: #FFFFFF; font-size: 20px; max-width: 700px; margin: 20px auto;'>Partnership, not just photography. Your vision, elevated through imagery that truly reflects who you are and connects with the people who were always meant to find you.</p>",
                 "align": "center"
               }
             }
@@ -139,7 +139,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; font-size: 18px; max-width: 860px; margin: 30px auto; line-height: 1.9;'>Before I shoot anything, I need to know three things: who you actually are, who you want to reach, and what it is about you that will make those people stop and pay attention.</p><p style='text-align: center; font-size: 18px; max-width: 860px; margin: 30px auto; line-height: 1.9;'>That's not a casual chat over coffee. That's the whole job. Everything else \u2014 the light, the timing, the location, the moment I decide to press the shutter \u2014 flows from that understanding.</p><p style='text-align: center; font-size: 18px; max-width: 860px; margin: 30px auto; line-height: 1.9;'>Technically, I've spent 15+ years making the craft invisible. I've trained seriously in brand photography, including as a mentee of <a href='https://thephotographersmentor.com' target='_blank' rel='noopener' style='color: inherit; border-bottom: 1px solid #d4af37;'>Jeff Brown</a> \u2014 one of the most respected educators working in this space. The technical side is the foundation. What I bring beyond it is the ability to see what makes you genuinely you \u2014 and find the precise moment, light, and angle where that becomes an image someone can't scroll past.</p>"
+                "editor": "<p style='text-align: center; font-size: 18px; max-width: 860px; margin: 30px auto; line-height: 1.9;'>Before I shoot anything, I need to know three things: who you actually are, who you want to reach, and what it is about you that will make those people stop and pay attention.</p><p style='text-align: center; font-size: 18px; max-width: 860px; margin: 30px auto; line-height: 1.9;'>That's not a casual chat over coffee. That's the whole job. Everything else, the light, the timing, the location, the moment I decide to press the shutter, all flow from that understanding.</p><p style='text-align: center; font-size: 18px; max-width: 860px; margin: 30px auto; line-height: 1.9;'>Technically, I've spent 15+ years making the craft invisible. I've trained seriously in brand photography, including as a mentee of <a href='https://thephotographersmentor.com' target='_blank' rel='noopener' style='color: inherit; border-bottom: 1px solid #d4af37;'>Jeff Brown</a>, one of the most respected educators working in this space. The technical side is the foundation. What I bring beyond it is the ability to see what makes you genuinely you, and find the precise moment, light, and angle where that becomes an image someone can't scroll past.</p>"
               }
             }
           ]
@@ -200,7 +200,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; padding: 0 30px; line-height: 1.8;'>Every image I make is deliberate. I don't walk into a shoot hoping good moments happen \u2014 I prepare for them. The brief, the location, the light, the sequence of the day \u2014 all of it considered so that when the real moments arrive, I'm already in exactly the right place to catch them.</p>"
+                "editor": "<p style='text-align: center; padding: 0 30px; line-height: 1.8;'>Every image I make is deliberate. I don't walk into a shoot hoping good moments happen. I prepare for them. The brief, the location, the light, the sequence of the day, all of it considered so that when the real moments arrive, I'm already in exactly the right place to catch them.</p>"
               }
             }
           ]
@@ -242,7 +242,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; padding: 0 30px; line-height: 1.8;'>I spend more time in conversation before a shoot than most photographers spend on the entire session. Who are you? Who are you speaking to? What do they care about? What makes them trust someone? The image that resonates with a London agency is a different thing entirely to the one that resonates with an independent Brighton founder \u2014 and knowing which you need changes everything.</p>"
+                "editor": "<p style='text-align: center; padding: 0 30px; line-height: 1.8;'>I spend more time in conversation before a shoot than most photographers spend on the entire session. Who are you? Who are you speaking to? What do they care about? What makes them trust someone? The image that resonates with a London agency is a different thing entirely to the one that resonates with an independent Brighton founder, and knowing which you need changes everything.</p>"
               }
             }
           ]
@@ -284,7 +284,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; padding: 0 30px; line-height: 1.8;'>A technically flawless image that misses who you actually are is worthless. The image that's slightly imperfect but makes you feel unmistakably like yourself \u2014 and makes your ideal client think <em>that's exactly who I want to work with</em> \u2014 that's the one we're making. Every time. That's the only measure that matters.</p>"
+                "editor": "<p style='text-align: center; padding: 0 30px; line-height: 1.8;'>A technically flawless image that misses who you actually are is worthless. The image that's slightly imperfect but makes you feel unmistakably like yourself, and makes your ideal client think <em>that's exactly who I want to work with</em>. That's the one we're making. Every time. That's the only measure that matters.</p>"
               }
             }
           ]
@@ -388,7 +388,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='color: #FFFFFF; font-size: 16px; line-height: 1.8; text-align: center; margin-top: 12px;'>The Brighton Spirit Collection \u2014 exhibited at the bar of the Hotel du Vin Brighton, one of the city\u2019s most celebrated luxury venues.</p>"
+                "editor": "<p style='color: #FFFFFF; font-size: 16px; line-height: 1.8; text-align: center; margin-top: 12px;'>The Brighton Spirit Collection, exhibited at the bar of the Hotel du Vin Brighton, one of the city’s most celebrated luxury venues.</p>"
               }
             }
           ]
@@ -446,7 +446,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='color: #FFFFFF; font-size: 16px; line-height: 1.8; text-align: center; margin-top: 12px;'>From open mic nights to headline acts \u2014 pit access for artists including Skunk Anansie, the Beach Boys, and Gomez at The Concorde 2, Brighton. No flash, no control, three songs. Pure craft.</p>"
+                "editor": "<p style='color: #FFFFFF; font-size: 16px; line-height: 1.8; text-align: center; margin-top: 12px;'>From open mic nights to headline acts, with pit access for artists including Skunk Anansie, the Beach Boys, and Gomez at The Concorde 2, Brighton. No flash, no control, three songs. Pure craft.</p>"
               }
             }
           ]
@@ -504,7 +504,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='color: #FFFFFF; font-size: 16px; line-height: 1.8; text-align: center; margin-top: 12px;'>Organisations including Slack City invest in having their live events documented \u2014 for posterity, prosperity, and presence. Real stories, told with clarity and intent.</p>"
+                "editor": "<p style='color: #FFFFFF; font-size: 16px; line-height: 1.8; text-align: center; margin-top: 12px;'>Organisations including Slack City invest in having their live events documented, for posterity, prosperity, and presence. Real stories, told with clarity and intent.</p>"
               }
             }
           ]
