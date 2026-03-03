@@ -163,7 +163,7 @@
                 "title": "Explore",
                 "header_size": "h5",
                 "color": "#FFFFFF",
-                "typography_font_family": "Montserrat",
+                "typography_font_family": "Raleway",
                 "typography_font_size": {
                   "unit": "px",
                   "size": 13
@@ -211,7 +211,7 @@
                 "title": "Services",
                 "header_size": "h5",
                 "color": "#FFFFFF",
-                "typography_font_family": "Montserrat",
+                "typography_font_family": "Raleway",
                 "typography_font_size": {
                   "unit": "px",
                   "size": 13
@@ -259,7 +259,7 @@
                 "title": "Get in Touch",
                 "header_size": "h5",
                 "color": "#FFFFFF",
-                "typography_font_family": "Montserrat",
+                "typography_font_family": "Raleway",
                 "typography_font_size": {
                   "unit": "px",
                   "size": 13
@@ -315,7 +315,7 @@
                   "left": "22",
                   "isLinked": false
                 },
-                "typography_font_family": "Montserrat",
+                "typography_font_family": "Raleway",
                 "typography_font_size": {
                   "unit": "px",
                   "size": 12

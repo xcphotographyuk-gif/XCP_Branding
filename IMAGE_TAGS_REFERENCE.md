@@ -1,287 +1,447 @@
-# Image Tags Reference
-## XCP Photography — Broad Category Sets for Lightroom, SmugMug, and Web Alt Text
-
-Use these sets immediately for batch tagging across categories. Refined per-image sets
-will follow once the Elementor site is live and the portfolio is structured.
+# XCP Photography — Image Keywording and DAM Reference
 
 ---
 
-## How to Use This Document
+## The Foundation: Why Keywords Come First
 
-**Lightroom:** Select all images in a category, open Metadata panel, paste the relevant
-tag set into the Keywords field. Lightroom applies to all selected images. Add
-individual tags afterwards for specific shots.
+Search engines cannot see images. They can only read the words attached to them.
 
-**SmugMug:** Gallery > Edit > Keywords field. Paste the category set, comma-separated.
+An image of Skunk Anansie at Concorde 2 Brighton is, to a search engine, meaningless
+pixels until words describe it. The most striking photograph in the library is invisible
+online without keywords. This is true whether the image lives on the website, in
+Lightroom, on SmugMug, on Alamy, or anywhere else.
 
-**WordPress / WooCommerce image alt text:** Use the "Per-Image Alt Text Format" template
-at the bottom of each category — fill in the blanks, copy, paste into the Alt Text field
-in the media library.
+The standard that runs through every keyword decision here is three words:
 
----
+**Relevant. Accurate. Consistent.**
 
-## Category 1: Brand Photography
+- **Relevant** — use the words people actually type when searching, not photography
+  jargon or internal shorthand
+- **Accurate** — only describe what is genuinely in the image, never keyword-stuff
+  with terms that do not apply
+- **Consistent** — the same subject always gets the same keyword, every time,
+  across every platform
 
-### Broad tags (apply to every image in the category)
-
-```
-brand photographer brighton, brand photography brighton, brand photography sussex,
-commercial photographer brighton, personal brand photography, business photography brighton,
-brand photographer uk, professional brand photos, brand imagery, brand portrait,
-XC Photography, xcphotography, documentary brand photography, authentic brand photography,
-brand headshot brighton, business headshot, corporate photography brighton,
-professional photography brighton, brand storytelling photography
-```
-
-### Alt text format
-```
-Brand photography session by XC Photography Brighton — [brief description e.g. "founder portrait in natural light"]
-```
-
-### Example alt texts
-```
-Brand photography session by XC Photography Brighton — founder portrait in studio window light
-Brand photography session by XC Photography Brighton — product lifestyle shot on location
-Brand photography session by XC Photography Brighton — team headshots for Brighton agency
-```
+Without consistency, the same image filed under "headshot", "portrait", "head shot",
+and "head photograph" becomes unfindable by anyone searching for any of those terms.
 
 ---
 
-## Category 2: Portraits and Headshots
+## The Three Layers of Keywording
 
-### Broad tags
+Every image gets keywords applied in three layers, from specific to general.
+This is how search works — people search at different levels of specificity.
 
-```
-portrait photographer brighton, headshot photographer brighton, professional headshot brighton,
-corporate headshot sussex, business portrait brighton, linkedin headshot brighton,
-personal brand portrait, authentic portrait photography, portrait photography uk,
-headshot photography brighton, professional portrait brighton, natural light portrait,
-executive portrait, founder portrait, creative portrait brighton, XC Photography portrait
-```
+### Layer 1: Specific (What is literally in this image)
 
-### Alt text format
-```
-Professional portrait by XC Photography Brighton — [subject/context description]
-```
+The exact, precise content of this particular image.
 
-### Example alt texts
-```
-Professional portrait by XC Photography Brighton — creative director natural light headshot
-Professional portrait by XC Photography Brighton — business founder environmental portrait
-Professional portrait by XC Photography Brighton — LinkedIn profile headshot Brighton
-```
+Examples:
+- `Concorde 2 Brighton` (not just "music venue")
+- `Skunk Anansie` (not just "rock band")
+- `Hotel du Vin Brighton` (not just "hotel")
+- `Millennium Bridge London` (not just "bridge")
+- `brand portrait woman natural light` (not just "portrait")
 
----
+### Layer 2: Mid-level (Category and context)
 
-## Category 3: Music and Live Performance
+What type of image this is, and what it is for.
 
-### Broad tags
+Examples:
+- `live music photography`
+- `brand photography Brighton`
+- `documentary street photography`
+- `professional headshot`
+- `event coverage`
+- `fine art print`
 
-```
-music photographer brighton, live music photography brighton, concert photographer brighton,
-gig photographer sussex, music photography uk, live performance photography,
-concert photography brighton, venue photography brighton, editorial music photography,
-pit photography, front of house photography, band photography brighton,
-Concorde 2 photography, Brighton music scene, live event photography brighton,
-XC Photography music, documentary music photography
-```
+### Layer 3: General (Broad searchable terms)
 
-### Alt text format
-```
-Live music photography by XC Photography — [venue/artist/context]
-```
+The widest terms that still accurately apply. These catch searches from people
+who do not yet know the specific subject.
 
-### Example alt texts
-```
-Live music photography by XC Photography — headline act at Concorde 2 Brighton
-Live music photography by XC Photography — pit photography no flash three song rule
-Live music photography by XC Photography — artist performance under stage lighting
-```
+Examples:
+- `photographer Brighton`
+- `photography Sussex`
+- `XC Photography`
+- `UK photography`
+- `documentary photography`
 
 ---
 
-## Category 4: City Spirit / Street and Urban
+## Where Keywords Live (The Four Fields)
 
-### Broad tags
+Keywords are not just website tags. They live in four places, and all four matter.
 
-```
-city spirit photography, street photography brighton, urban photography uk,
-documentary street photography, architectural photography brighton,
-city photography brighton, fine art street photography, urban landscape photography,
-street portrait uk, city documentary photography, UK street photography,
-Millennium Bridge photography, Brighton street photography, European photography,
-XC Photography city spirit, fine art photography uk, documentary photography brighton
-```
+### 1. IPTC Metadata (embedded in the file itself)
 
-### Alt text format
-```
-City Spirit documentary photography by XC Photography — [location and subject]
-```
+This travels with the image wherever it goes. Set this in Lightroom before export.
+It is the most important field because it cannot be lost.
 
-### Example alt texts
-```
-City Spirit documentary photography by XC Photography — Millennium Bridge London long exposure
-City Spirit documentary photography by XC Photography — Brighton seafront street portrait
-City Spirit documentary photography by XC Photography — urban architecture natural light
-```
+**IPTC fields to fill for every image:**
 
----
-
-## Category 5: Documentary and Events
-
-### Broad tags
-
-```
-documentary photographer brighton, event photographer brighton, event photography sussex,
-documentary photography uk, business event photographer, conference photographer brighton,
-community documentary photography, corporate event photography, reportage photography,
-event coverage brighton, live event photographer sussex, documentary storytelling,
-authentic event photography, XC Photography events, Sussex event photographer,
-business conference photographer, networking event photography
-```
-
-### Alt text format
-```
-Documentary event photography by XC Photography — [event type and location]
-```
-
-### Example alt texts
-```
-Documentary event photography by XC Photography — business networking event Brighton
-Documentary event photography by XC Photography — community event coverage Sussex
-Documentary event photography by XC Photography — Sussex Business Show conference photography
-```
-
----
-
-## Category 6: Fine Art and Prints
-
-### Broad tags
-
-```
-fine art photography prints, photography prints for sale, fine art prints brighton,
-limited edition photography prints, wall art photography, photographic prints uk,
-fine art photographer brighton, Hotel du Vin Brighton photography, gallery photography brighton,
-Brighton Spirit Collection, exhibition photography, collectible photography prints,
-art photography brighton, fine art wall art, documentary fine art photography,
-XC Photography prints, photographic wall art uk
-```
-
-### Alt text format
-```
-Fine art photography print by XC Photography Brighton — [image description and edition info]
-```
-
-### Example alt texts
-```
-Fine art photography print by XC Photography Brighton — Brighton Spirit Collection limited edition
-Fine art photography print by XC Photography Brighton — Millennium Bridge long exposure
-Fine art photography print by XC Photography Brighton — urban documentary series
-```
-
----
-
-## Google / SEO Priority Tags
-
-These are the highest-value search terms. Make sure they appear in at least one
-tag set per gallery on SmugMug and as keyword metadata in Lightroom.
-
-| Priority | Tag | Rationale |
+| Field | What to put in it | Example |
 |---|---|---|
-| 1 | brand photographer brighton | Primary commercial service, local |
-| 2 | brand photography brighton | Product/service keyword variant |
-| 3 | photographer brighton | Broad local anchor |
-| 4 | documentary photographer brighton | Specialist differentiator |
-| 5 | headshot photographer brighton | High-intent commercial term |
-| 6 | music photographer brighton | Specialist niche, low competition |
-| 7 | brand photography sussex | Regional variant |
-| 8 | professional photographer brighton | Broad commercial |
-| 9 | XC Photography | Brand name, always include |
-| 10 | xcphotography | Exact URL/handle match |
+| Title | One clear, descriptive sentence | `Brand photography session, Brighton — founder portrait` |
+| Description / Caption | 2-3 sentences describing the image specifically | `Brand portrait of a female founder photographed in natural window light during a brand photography session in Brighton. Photographed by XC Photography.` |
+| Keywords | Comma-separated keyword list (see category sets below) | `brand photography Brighton, professional portrait, natural light photography...` |
+| Creator | Your name | `Xavier Clarke` |
+| Credit | Your business name | `XC Photography` |
+| Copyright | Copyright line | `Copyright XC Photography xcphotography.co.uk` |
+| Location | City/country where shot | `Brighton, East Sussex, England` |
+| Source | Platform/usage context | `xcphotography.co.uk` |
+
+**Setting IPTC in Lightroom:**
+Library module > select image(s) > Metadata panel (right side) > choose "IPTC"
+from the dropdown. Fill every field above. Use Lightroom Metadata Presets
+(Metadata > Edit Metadata Presets) to auto-fill Creator, Credit, and Copyright
+on every image at import — so those three never need typing again.
+
+### 2. Filename (before export)
+
+Filenames are read by search engines. `IMG_4521.jpg` tells Google nothing.
+`brand-photography-brighton-founder-portrait-xc-photography.jpg` is a search signal.
+
+**Filename convention (descriptive, consistent, lower case, hyphens):**
+
+```
+[category]-[subject]-[location]-[detail]-xc-photography.jpg
+```
+
+Examples:
+```
+brand-photography-brighton-founder-portrait-xc-photography.jpg
+live-music-concorde2-brighton-skunk-anansie-xc-photography.jpg
+street-photography-millennium-bridge-london-xc-photography.jpg
+documentary-event-slack-city-brighton-xc-photography.jpg
+fine-art-print-hotel-du-vin-brighton-xc-photography.jpg
+```
+
+Set this as the export filename in Lightroom:
+File Naming > Edit > use tokens: `{custom_text}-xc-photography` and rename
+before export, or batch rename using Library > Rename Photos.
+
+### 3. Alt Text (on the website and SmugMug)
+
+Alt text is what screen readers read and what Google indexes for image search.
+Every image on every page must have unique alt text. Empty alt text is a failure
+on both accessibility and SEO.
+
+**Format:**
+```
+[Descriptive subject], [XC Photography], [location if relevant]
+```
+
+**Rules:**
+- Never start with "photo of" or "image of" — Google ignores those words
+- Never leave blank
+- Never use the filename as alt text
+- Keep under 125 characters
+- Include Brighton or Sussex on at least half of all website images
+
+**Examples:**
+```
+Brand portrait session, XC Photography Brighton — founder in natural window light
+Live music photography at Concorde 2 Brighton — headline act in stage lighting
+City Spirit documentary photography, Millennium Bridge London — long exposure at dusk
+Fine art photography print, Hotel du Vin Brighton — Brighton Spirit Collection
+```
+
+### 4. Page/Gallery Title and Description (SmugMug, website, Lightroom collections)
+
+The words surrounding an image on a page also contribute to how it is found.
+Gallery titles, page headings, and captions all feed into search ranking.
+
+Use the same language that is in the IPTC keywords — consistency across all four
+fields is what makes the keyword strategy work.
 
 ---
 
-## Lightroom Quick-Apply Presets (Keyword Sets)
+## Controlled Vocabulary: The Master Keyword List
 
-These are formatted ready to paste into Lightroom's Keyword Set editor
-(Metadata > Keyword Set > Edit Set).
+A controlled vocabulary means you always use the same word for the same thing.
+Never switch between "headshot" and "head shot", between "Brighton" and "Brighton,
+East Sussex", between "Concorde 2" and "Concorde2".
 
-**Keyword Set: XCP Brand**
+The list below is the controlled vocabulary for XCP Photography.
+Use these exact terms, every time.
+
+### People and subjects
 ```
-brand photographer brighton | brand photography | personal brand photography | brand portrait | headshot brighton | professional portrait | XC Photography | brand storytelling | authentic photography | business photography brighton
+founder portrait
+business portrait
+brand portrait
+executive portrait
+creative portrait
+female founder
+male founder
+team photograph
+professional headshot
+LinkedIn headshot
 ```
 
-**Keyword Set: XCP Music**
+### Services (what the photography is for)
 ```
-music photographer brighton | live music photography | concert photographer | gig photography brighton | Concorde 2 | pit photography | editorial music photography | performance photography | Brighton music | documentary music
+brand photography
+brand photographer
+personal brand photography
+documentary photography
+documentary photographer
+live music photography
+music photographer
+street photography
+fine art photography
+event photography
+event photographer
+corporate photography
 ```
 
-**Keyword Set: XCP City Spirit**
+### Locations (always spell in full, consistently)
 ```
-city spirit photography | street photography | urban photography | documentary photography | fine art photography | Millennium Bridge | Brighton street | city portrait | XC Photography | UK documentary photography
+Brighton
+Brighton East Sussex
+Brighton UK
+Sussex
+East Sussex
+London
+UK
+England
+Concorde 2 Brighton
+Hotel du Vin Brighton
+Millennium Bridge London
 ```
 
-**Keyword Set: XCP Events**
+### Quality and style descriptors (use sparingly, only when accurate)
 ```
-event photographer brighton | documentary events | conference photography | community photography | business events sussex | event coverage | reportage photographer | authentic events | XC Photography events | Sussex events
+natural light photography
+available light photography
+no flash photography
+candid photography
+editorial photography
+cinematic photography
+black and white photography
+colour photography
+long exposure photography
+```
+
+### Business and brand terms (for SEO relevance)
+```
+XC Photography
+xcphotography
+xcphotography.co.uk
+brand imagery
+brand identity photography
+visual storytelling
 ```
 
 ---
 
-## SmugMug Gallery Keywords (Ready to Paste)
+## Category Keyword Sets (Ready to Apply in Batches)
 
-Copy these directly into SmugMug Gallery > Edit > Keywords for each gallery.
+Select all images in a category in Lightroom, apply the relevant set as a
+batch, then add specific Layer 1 keywords to individual images afterwards.
 
-**Brand Photography gallery:**
-```
-brand photographer brighton, brand photography brighton, personal brand photography, business photography brighton, headshot brighton, professional portrait brighton, brand storytelling, authentic brand photography, XC Photography, documentary brand photography
-```
+### Brand Photography
 
-**Music and Live gallery:**
+**Batch keywords (apply to all images in category):**
 ```
-music photographer brighton, live music photography brighton, concert photography, gig photography brighton, Concorde 2 Brighton, pit photography, performance photography, editorial music photography, Brighton music scene, XC Photography music
-```
-
-**City Spirit gallery:**
-```
-city spirit photography, street photography brighton, urban photography, documentary photography brighton, fine art photography, Millennium Bridge photography, UK street photography, Brighton photography, XC Photography, documentary fine art
+brand photography Brighton, brand photographer Brighton, brand photography Sussex,
+personal brand photography, commercial photography Brighton, brand portrait Brighton,
+professional photography Brighton, brand imagery, visual storytelling Brighton,
+XC Photography, xcphotography, brand photographer UK, business photography Brighton,
+professional headshot Brighton, brand photographer, brand photography UK
 ```
 
-**Documentary and Events gallery:**
-```
-event photographer brighton, documentary photographer brighton, corporate events sussex, conference photography, community documentary, event coverage brighton, reportage photography, authentic events, XC Photography, Sussex business photographer
-```
-
-**Prints gallery:**
-```
-fine art prints brighton, photography prints for sale, wall art photography, Brighton Spirit Collection, Hotel du Vin Brighton, limited edition prints, photographic prints uk, fine art wall art, XC Photography prints, collectible photography
-```
+**Then add per image (Layer 1 specifics):**
+- Client business sector (e.g. `hospitality photography`, `creative agency photography`)
+- Specific location if on location (e.g. `Brighton seafront`, `London studio`)
+- Subject gender/role if relevant and accurate
+- Style note (e.g. `natural light portrait`, `environmental portrait`)
 
 ---
 
-## Alt Text Rules (Accessibility and SEO)
+### Portraits and Headshots
 
-1. Every image on the website needs a unique alt text — no duplicates, no empty fields.
-2. Format: `[What it is] by XC Photography [location if relevant] — [specific description]`
-3. Keep under 125 characters where possible.
-4. Never use "photo of" or "image of" — start with what the subject IS.
-5. Include "Brighton" or "Sussex" on at least 60% of images for local SEO value.
-6. On portfolio pages, the alt text is a major SEO signal — treat it as copy, not an afterthought.
+**Batch keywords:**
+```
+portrait photographer Brighton, headshot photographer Brighton, professional headshot
+Brighton, corporate headshot Sussex, business portrait Brighton, LinkedIn headshot
+Brighton, personal brand portrait, natural light portrait, XC Photography portrait,
+portrait photography Brighton, professional portrait Brighton, headshot photography UK
+```
 
-**Good:** `Brand portrait session by XC Photography Brighton — founder in natural window light`
-**Bad:** `photo-001.jpg` or `Brand photo` or `` (empty)
+**Per image additions:**
+- Subject context: `founder portrait`, `creative professional portrait`, `team headshot`
+- Location: `Brighton studio`, `on location Brighton`, `natural light window`
 
 ---
 
-## Phase 2 Tags (After Elementor Site Is Live)
+### Live Music and Performance
 
-Once the site is live and the portfolio is structured, a second pass will produce:
+**Batch keywords:**
+```
+music photographer Brighton, live music photography Brighton, concert photography
+Brighton, gig photographer Sussex, performance photography UK, editorial music
+photography, pit photography, no flash photography, available light photography,
+XC Photography music, Brighton music scene, live music photographer UK
+```
 
-- Per-image refined alt texts for every portfolio image
-- Location-specific tags where images were shot on location
-- Client-sector tags (hospitality, music, cannabis brands, medical, creative agency)
-- Seasonal tags for content scheduling
-- Platform-specific optimised captions for Instagram, LinkedIn, and Behance
+**Per image additions:**
+- Venue name: `Concorde 2 Brighton`
+- Artist name if known and correct: `Skunk Anansie`, `Beach Boys`, `Gomez`
+- Style: `concert photography`, `stage lighting photography`, `front of house photography`
 
-These will be built against the live gallery structure so every tag maps cleanly
-to the right page, image, and audience intent.
+---
+
+### City Spirit and Street
+
+**Batch keywords:**
+```
+street photography Brighton, city spirit photography, documentary photography Brighton,
+urban photography UK, fine art street photography, city documentary photography,
+XC Photography city spirit, UK street photography, documentary photographer Brighton
+```
+
+**Per image additions:**
+- Specific location: `Millennium Bridge London`, `Brighton seafront`, `Brighton Lanes`
+- Country/city if not Brighton: `Paris street photography`, `Barcelona photography`
+- Style: `long exposure photography`, `black and white street photography`
+
+---
+
+### Documentary and Events
+
+**Batch keywords:**
+```
+documentary photographer Brighton, event photographer Brighton, event photography Sussex,
+documentary photography UK, business event photography Brighton, conference photographer,
+community photography Brighton, corporate event photographer Sussex, reportage photography,
+XC Photography events, Sussex event photographer, Sussex Business Show photography
+```
+
+**Per image additions:**
+- Event name where known: `Sussex Business Show`, `Slack City Brighton`
+- Event type: `networking event photography`, `conference photography`, `workshop photography`
+
+---
+
+### Fine Art and Prints
+
+**Batch keywords:**
+```
+fine art photography prints UK, photography prints for sale, fine art prints Brighton,
+limited edition photography prints, wall art photography, photographic prints UK,
+XC Photography prints, Brighton Spirit Collection, Hotel du Vin Brighton photography,
+gallery photography Brighton, exhibition photography, collectible photography
+```
+
+**Per image additions:**
+- Edition details if limited: `limited edition print`, `edition of 25`
+- Series name: `Brighton Spirit Collection`, `City Spirit series`, `Millennium series`
+- Subject of print: `Brighton seafront print`, `Millennium Bridge London print`
+
+---
+
+## Lightroom Workflow: Step by Step
+
+This is the sequence for every image that leaves Lightroom, whether for the website,
+SmugMug, social media, or a client delivery.
+
+**1. At import:**
+- Apply a metadata preset that auto-fills: Creator, Credit, Copyright, Source
+- Set up once in Metadata > Edit Metadata Presets, apply at every import
+
+**2. During cull and edit:**
+- Star-rate and colour-label images before keywording — only keyword selects, not rejects
+- No point keywording images that will never be used
+
+**3. Before export — IPTC:**
+- Add Title (one sentence, descriptive)
+- Add Description/Caption (2-3 sentences, specific)
+- Add Keywords using the relevant category batch set, then Layer 1 specifics
+
+**4. Rename before export:**
+- Use the filename convention: `category-subject-location-detail-xc-photography.jpg`
+- Lightroom: File > Export > File Naming > choose or create naming template
+
+**5. Export settings for web:**
+- Format: JPEG
+- Quality: 80-85 (not 100 — unnecessarily large)
+- Colour space: sRGB (not Adobe RGB — browsers cannot display it correctly)
+- Resize: longest edge 2000px for portfolio/gallery, 1200px for thumbnails
+- Sharpen for screen: Standard
+
+**6. After export — website alt text:**
+- Open WordPress media library
+- Find the uploaded image
+- Add alt text following the format in this document
+- Add caption if the image appears with a caption on the front end
+
+---
+
+## SmugMug Keywording (Per Gallery)
+
+SmugMug galleries are indexed by Google. Treat them as SEO pages, not just image stores.
+
+For every gallery:
+- **Gallery title:** descriptive + location. `Brand Photography Brighton | XC Photography`
+- **Gallery description:** 2-3 sentences using the same language as the keyword sets.
+  Include `Brighton`, `Sussex` or `UK` naturally in the first sentence.
+- **Keywords field:** paste the relevant batch set from this document
+
+For every individual image in SmugMug:
+- **Caption:** the IPTC Description field (copy across from Lightroom)
+- **Keywords:** the IPTC Keywords (SmugMug reads these from the file automatically
+  if "Read metadata from files" is enabled in SmugMug settings)
+
+Enable SmugMug metadata sync: Account > Settings > Privacy and Sharing >
+"Allow SmugMug to read metadata from your photos" — ON.
+
+---
+
+## What Not to Do
+
+Based on common keywording mistakes that make images invisible:
+
+- **Do not use the same keyword list on every image.** A keyword that applies to
+  everything is specific to nothing. Batch keywords set the category baseline;
+  individual images need their own Layer 1 specifics on top.
+
+- **Do not keyword-stuff.** Adding irrelevant terms (e.g. adding `London` to a
+  Brighton image because London gets more searches) damages credibility with search
+  algorithms and is flagged by stock library review systems.
+
+- **Do not ignore IPTC.** Website tags and SmugMug keywords help. But IPTC metadata
+  travels with the file forever. It is the most durable form of keywording and the
+  one that matters most if images are ever licensed, syndicated, or re-uploaded anywhere.
+
+- **Do not leave alt text empty.** Every blank alt text field is a missed SEO
+  opportunity and an accessibility failure. Screen reader users cannot understand
+  the page without it.
+
+- **Do not use inconsistent spelling.** Pick one form and use it always. `Concorde 2`
+  not `Concorde2` or `The Concorde`. `Hotel du Vin` not `Hotel Du Vin` or `HDV`.
+
+---
+
+## Resources
+
+**Keywording education for photographers** — search for keywording courses,
+stock library guides, and metadata training designed for independent creatives.
+The Individual Creatives level of specialist keywording platforms typically runs
+around £96/year and covers toolkits for Alamy and Getty, online courses, and
+live community sessions. Worth exploring once the Elementor site is live and
+stock library submission begins.
+
+---
+
+## Phase 2 (After Elementor Site Is Live)
+
+Once the site is live and galleries are structured, the following will be built:
+
+- Per-image alt text written for every image in the live portfolio
+- IPTC keyword presets set up directly in Lightroom for each category
+- Stock library keyword sets for Alamy (built against actual stock library requirements)
+- Client-sector specific vocabulary additions (hospitality, music, medical cannabis,
+  creative agencies) mapped against actual search volume data
+- SmugMug gallery keyword audit aligned to the live gallery structure

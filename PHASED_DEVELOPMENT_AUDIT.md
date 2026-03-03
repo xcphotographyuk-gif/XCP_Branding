@@ -241,7 +241,7 @@ The following requirements are standard for a premium photography portfolio targ
 | Before/after transformation showcase | ❌ | Not present in any template; add to Services or Portfolio page |
 | Video background or showreel section | ⚠️ | `XCP_HomeP4_Stats_Process_Video.json` draft exists but is the non-FINAL version |
 | Mobile-first responsive layout | ✅ | All FINAL templates include responsive breakpoint settings |
-| Consistent brand typography (Montserrat + Open Sans) | ✅ | Defined in TEMPLATE_DOCUMENTATION.md; must be set in Elementor Global Settings |
+| Consistent brand typography (Raleway + Open Sans) | ✅ | Defined in TEMPLATE_DOCUMENTATION.md; must be set in Elementor Global Settings |
 | Brand colour palette applied | ⚠️ | Colours defined in docs; must be set in Elementor Global Styles (not per-widget) |
 
 #### Content & Conversion Requirements

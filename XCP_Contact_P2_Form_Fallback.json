@@ -50,7 +50,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:#888;font-weight:600;font-family:Montserrat,sans-serif;margin-bottom:10px;'>Start the Conversation</p>"
+                "editor": "<p style='font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:#888;font-weight:600;font-family:Raleway,sans-serif;margin-bottom:10px;'>Start the Conversation</p>"
               }
             },
             {
@@ -171,7 +171,7 @@
                   "left": "40",
                   "isLinked": false
                 },
-                "typography_font_family": "Montserrat",
+                "typography_font_family": "Raleway",
                 "typography_font_size": {
                   "unit": "px",
                   "size": 13

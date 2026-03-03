@@ -122,7 +122,7 @@
                   "unit": "px",
                   "size": 36
                 },
-                "typography_font_family": "Montserrat",
+                "typography_font_family": "Raleway",
                 "typography_font_size": {
                   "unit": "px",
                   "size": 13
@@ -204,7 +204,7 @@
                   "left": "22",
                   "isLinked": false
                 },
-                "typography_font_family": "Montserrat",
+                "typography_font_family": "Raleway",
                 "typography_font_size": {
                   "unit": "px",
                   "size": 12

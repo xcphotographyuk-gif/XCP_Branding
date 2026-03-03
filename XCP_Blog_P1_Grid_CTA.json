@@ -57,7 +57,7 @@
                 "header_size": "h1",
                 "align": "center",
                 "color": "#FFFFFF",
-                "typography_font_family": "Montserrat",
+                "typography_font_family": "Raleway",
                 "typography_font_size": {
                   "unit": "px",
                   "size": 52
@@ -446,7 +446,7 @@
                   "isLinked": true
                 },
                 "border_color": "#1a1a1a",
-                "typography_font_family": "Montserrat",
+                "typography_font_family": "Raleway",
                 "typography_font_size": {
                   "unit": "px",
                   "size": 13

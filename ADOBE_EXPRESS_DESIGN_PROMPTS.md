@@ -555,7 +555,7 @@ Reply "SPRING" to claim your spot
 - Optional: Light gray #F3F4F6 for backgrounds
 
 ### Fonts:
-- Headlines: Montserrat Bold or similar sans-serif
+- Headlines: Raleway Bold or similar sans-serif
 - Body: Open Sans Regular or similar
 - Keep it clean and modern
 

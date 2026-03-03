@@ -77,8 +77,8 @@ Once Elementor Pro is activated:
    - Text: `#333333`
    - Accent: `#000000`
 3. **Elementor > Settings > Typography** — set default fonts:
-   - Primary font: Playfair Display (or your chosen heading font)
-   - Secondary font: Lato (or your chosen body font)
+   - Primary font: Raleway (or your chosen heading font)
+   - Secondary font: Raleway (or your chosen body font)
 4. **Elementor > Theme Builder** — this is where Header and Footer templates are imported
 
 ---
@@ -241,9 +241,9 @@ third-party font load issues.
 
 | Role | Font | Weight |
 |---|---|---|
-| Headings | Playfair Display | 400, 700 |
-| Body | Lato | 300, 400, 700 |
-| Labels / caps | Lato | 400 (letter-spacing applied via Elementor) |
+| Headings | Raleway | 400, 700 |
+| Body | Raleway | 300, 400, 700 |
+| Labels / caps | Raleway | 400 (letter-spacing applied via Elementor) |
 
 **To load these in WordPress:**
 Install the plugin **OMGF (Optimize My Google Fonts)** — it downloads the fonts to
@@ -254,7 +254,7 @@ Or add to your theme's `functions.php`:
 function xcp_enqueue_fonts() {
     wp_enqueue_style(
         'xcp-fonts',
-        'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap',
+        'https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400;700&display=swap',
         array(),
         null
     );

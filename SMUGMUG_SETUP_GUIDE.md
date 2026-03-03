@@ -79,13 +79,13 @@ These values come directly from the Elementor templates. Use them in all SmugMug
 --xcp-light:  #f8f8f8;
 
 /* Typography — match with Google Fonts import */
-font-family: 'Playfair Display', Georgia, serif;     /* headings */
-font-family: 'Lato', 'Helvetica Neue', sans-serif;   /* body */
+font-family: 'Raleway', Raleway, sans-serif;     /* headings */
+font-family: 'Raleway', sans-serif;   /* body */
 ```
 
 **Google Fonts import for SmugMug custom CSS:**
 ```css
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400;700&display=swap');
 ```
 
 Add this to SmugMug Customizer > Advanced > Custom CSS.
@@ -98,18 +98,18 @@ Paste this into **Customizer > Advanced > Custom CSS**. It applies brand colours
 typography across all your SmugMug pages.
 
 ```css
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400;700&display=swap');
 
 /* Global body */
 body {
-  font-family: 'Lato', 'Helvetica Neue', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #333333;
   background-color: #000000;
 }
 
 /* Headings */
 h1, h2, h3, h4 {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Raleway', Raleway, sans-serif;
   color: #ffffff;
   font-weight: 400;
   letter-spacing: 0.02em;
@@ -117,20 +117,20 @@ h1, h2, h3, h4 {
 
 /* Navigation */
 .sm-nav { background-color: #000000; border-bottom: 1px solid #E8E4DC; }
-.sm-nav a { color: #ffffff; font-family: 'Lato', sans-serif; text-transform: uppercase;
+.sm-nav a { color: #ffffff; font-family: 'Raleway', sans-serif; text-transform: uppercase;
   letter-spacing: 0.12em; font-size: 12px; }
 .sm-nav a:hover { color: #E8E4DC; }
 
 /* Gallery titles */
-.sm-gallery-title { color: #ffffff; font-family: 'Playfair Display', serif; }
-.sm-gallery-description { color: #cccccc; font-family: 'Lato', sans-serif;
+.sm-gallery-title { color: #ffffff; font-family: 'Raleway', serif; }
+.sm-gallery-description { color: #cccccc; font-family: 'Raleway', sans-serif;
   line-height: 1.8; }
 
 /* Buy buttons (SmugMug native) */
 .sm-buy-btn, .sm-add-to-cart {
   background-color: #E8E4DC !important;
   color: #000000 !important;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   border: none;
@@ -152,9 +152,9 @@ This creates a branded strip linking back to the main site.
 ```html
 <div style="background:#000000; border-bottom:1px solid #E8E4DC; padding:16px 40px;
   display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;
-  font-family:'Lato','Helvetica Neue',sans-serif;">
+  font-family:'Raleway','Helvetica Neue',sans-serif;">
 
-  <div style="color:#ffffff; font-family:'Playfair Display',Georgia,serif;
+  <div style="color:#ffffff; font-family:'Raleway',Georgia,serif;
     font-size:22px; letter-spacing:0.08em;">
     XC Photography
   </div>
@@ -184,12 +184,12 @@ Use on your SmugMug homepage or About custom page.
 
 ```html
 <section style="background:#000000; color:#ffffff; padding:80px 40px;
-  font-family:'Lato','Helvetica Neue',sans-serif; max-width:900px; margin:0 auto;">
+  font-family:'Raleway','Helvetica Neue',sans-serif; max-width:900px; margin:0 auto;">
 
   <p style="color:#E8E4DC; font-size:12px; text-transform:uppercase;
     letter-spacing:0.15em; margin-bottom:16px;">Brand and Documentary Photographer</p>
 
-  <h2 style="font-family:'Playfair Display',Georgia,serif; font-size:36px;
+  <h2 style="font-family:'Raleway',Georgia,serif; font-size:36px;
     font-weight:400; line-height:1.3; color:#ffffff; margin:0 0 32px;">
     Who Takes Your Photographs Matters
   </h2>
@@ -229,10 +229,10 @@ directly to your WooCommerce shop. No SmugMug commission.
 
 ```html
 <div style="background:#111111; border:1px solid #333333; padding:40px;
-  font-family:'Lato','Helvetica Neue',sans-serif; max-width:860px; margin:40px auto;
+  font-family:'Raleway','Helvetica Neue',sans-serif; max-width:860px; margin:40px auto;
   border-radius:4px;">
 
-  <h3 style="font-family:'Playfair Display',Georgia,serif; font-size:24px;
+  <h3 style="font-family:'Raleway',Georgia,serif; font-size:24px;
     font-weight:400; color:#ffffff; margin:0 0 8px;">Book a Session</h3>
 
   <p style="color:#888888; font-size:14px; margin:0 0 40px; letter-spacing:0.05em;">
@@ -335,12 +335,12 @@ Edit the title, label, and description per category.
 
 ```html
 <div style="background:#000000; padding:60px 40px 20px; max-width:900px; margin:0 auto;
-  font-family:'Lato','Helvetica Neue',sans-serif; text-align:center;">
+  font-family:'Raleway','Helvetica Neue',sans-serif; text-align:center;">
 
   <p style="color:#E8E4DC; font-size:11px; text-transform:uppercase;
     letter-spacing:0.2em; margin-bottom:16px;">XC Photography</p>
 
-  <h1 style="font-family:'Playfair Display',Georgia,serif; font-size:40px;
+  <h1 style="font-family:'Raleway',Georgia,serif; font-size:40px;
     font-weight:400; color:#ffffff; line-height:1.3; margin:0 0 20px;">
     Brand Photography
   </h1>
@@ -364,10 +364,10 @@ Add at the bottom of every Custom Page.
 
 ```html
 <footer style="background:#000000; border-top:1px solid #1a1a1a;
-  padding:40px; text-align:center; font-family:'Lato','Helvetica Neue',sans-serif;
+  padding:40px; text-align:center; font-family:'Raleway','Helvetica Neue',sans-serif;
   margin-top:80px;">
 
-  <p style="font-family:'Playfair Display',Georgia,serif; font-size:18px;
+  <p style="font-family:'Raleway',Georgia,serif; font-size:18px;
     color:#ffffff; margin:0 0 8px; letter-spacing:0.04em;">XC Photography</p>
 
   <p style="color:#555555; font-size:13px; margin:0 0 24px;">

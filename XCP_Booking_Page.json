@@ -38,7 +38,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; color: #E8E4DC; font-family: Montserrat, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px;'>Free, No Obligation</p>"
+                "editor": "<p style='text-align: center; color: #E8E4DC; font-family: Raleway, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px;'>Free, No Obligation</p>"
               }
             },
             {
@@ -50,7 +50,7 @@
                 "header_size": "h1",
                 "align": "center",
                 "title_color": "#ffffff",
-                "typography_font_family": "Montserrat",
+                "typography_font_family": "Raleway",
                 "typography_font_size": {
                   "unit": "px",
                   "size": 52
@@ -112,7 +112,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; color: #1a1a1a; font-family: Montserrat, sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 1px; margin: 0;'>✦ Responds within 24 hours &nbsp;&nbsp;|&nbsp;&nbsp; ✦ 5-star rated service &nbsp;&nbsp;|&nbsp;&nbsp; ✦ 500+ brands photographed &nbsp;&nbsp;|&nbsp;&nbsp; ✦ Based in Brighton, shoots UK-wide</p>"
+                "editor": "<p style='text-align: center; color: #1a1a1a; font-family: Raleway, sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 1px; margin: 0;'>✦ Responds within 24 hours &nbsp;&nbsp;|&nbsp;&nbsp; ✦ 5-star rated service &nbsp;&nbsp;|&nbsp;&nbsp; ✦ 500+ brands photographed &nbsp;&nbsp;|&nbsp;&nbsp; ✦ Based in Brighton, shoots UK-wide</p>"
               }
             }
           ]
@@ -174,7 +174,7 @@
               "settings": {
                 "title": "Choose a Time That Works for You",
                 "header_size": "h2",
-                "typography_font_family": "Montserrat",
+                "typography_font_family": "Raleway",
                 "typography_font_size": {
                   "unit": "px",
                   "size": 30
@@ -209,7 +209,7 @@
               "settings": {
                 "title": "What Happens on the Call?",
                 "header_size": "h3",
-                "typography_font_family": "Montserrat",
+                "typography_font_family": "Raleway",
                 "typography_font_size": {
                   "unit": "px",
                   "size": 22
@@ -230,7 +230,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<div style='background: #1a1a1a; color: #ffffff; padding: 24px; border-left: 4px solid #E8E4DC; margin-bottom: 30px;'><p style='margin: 0 0 6px; font-family: Montserrat, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #E8E4DC;'>The Details</p><p style='margin: 0; font-size: 15px; line-height: 1.7;'>📅 <strong>30 minutes</strong> via Zoom or phone<br>📍 Available UK-wide<br>🎁 <strong>Completely free</strong>, no obligation<br>⏱ Response within 24 hours of booking</p></div>"
+                "editor": "<div style='background: #1a1a1a; color: #ffffff; padding: 24px; border-left: 4px solid #E8E4DC; margin-bottom: 30px;'><p style='margin: 0 0 6px; font-family: Raleway, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #E8E4DC;'>The Details</p><p style='margin: 0; font-size: 15px; line-height: 1.7;'>📅 <strong>30 minutes</strong> via Zoom or phone<br>📍 Available UK-wide<br>🎁 <strong>Completely free</strong>, no obligation<br>⏱ Response within 24 hours of booking</p></div>"
               }
             },
             {
@@ -282,7 +282,7 @@
                 "title": "Frequently Asked Questions",
                 "header_size": "h2",
                 "align": "center",
-                "typography_font_family": "Montserrat",
+                "typography_font_family": "Raleway",
                 "typography_font_size": {
                   "unit": "px",
                   "size": 36
@@ -319,7 +319,7 @@
                 ],
                 "active_item": 1,
                 "title_html_tag": "h4",
-                "title_typography_font_family": "Montserrat",
+                "title_typography_font_family": "Raleway",
                 "title_typography_font_weight": "600",
                 "title_typography_font_size": {
                   "unit": "px",
@@ -361,7 +361,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<h3 style='text-align: center; color: #ffffff; font-family: Montserrat, sans-serif; font-size: 32px; font-weight: 700; margin-bottom: 16px;'>Your Brand Deserves to Be Seen</h3><p style='text-align: center; color: #e0e0e0; font-size: 18px; max-width: 600px; margin: 0 auto 32px; line-height: 1.7;'>Every iconic brand started with a single conversation. Book yours today and let's build something that worth looking at.</p>"
+                "editor": "<h3 style='text-align: center; color: #ffffff; font-family: Raleway, sans-serif; font-size: 32px; font-weight: 700; margin-bottom: 16px;'>Your Brand Deserves to Be Seen</h3><p style='text-align: center; color: #e0e0e0; font-size: 18px; max-width: 600px; margin: 0 auto 32px; line-height: 1.7;'>Every iconic brand started with a single conversation. Book yours today and let's build something that worth looking at.</p>"
               }
             },
             {
@@ -407,7 +407,7 @@
                   "left": "40",
                   "isLinked": false
                 },
-                "typography_font_family": "Montserrat",
+                "typography_font_family": "Raleway",
                 "typography_font_size": {
                   "unit": "px",
                   "size": 14

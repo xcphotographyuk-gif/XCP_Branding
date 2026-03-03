@@ -128,6 +128,6 @@ All pages optimized for:
 - Staged imports to avoid file size issues
 - Consistent naming: `XCP_[PageName]_[Section].json`
 - Image paths: `[uc_local]assets/images/[page]/` — all placeholder paths must be replaced with real uploaded images
-- Global styles applied via Elementor → Global Settings (typography: Montserrat + Open Sans; colours: #1a1a1a, #d4af37, #ffffff)
+- Global styles applied via Elementor → Global Settings (typography: Raleway + Open Sans; colours: #1a1a1a, #d4af37, #ffffff)
 - Header and footer use Elementor Pro Theme Builder (Templates → Theme Builder → Header / Footer)
 - Contact forms require Overture API webhook and GDPR acceptance field — see `PHASED_DEVELOPMENT_AUDIT.md` Appendix A

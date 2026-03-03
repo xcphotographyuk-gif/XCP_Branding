@@ -45,7 +45,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align:center;color:#E8E4DC;font-size:13px;letter-spacing:3px;text-transform:uppercase;font-weight:600;margin-bottom:16px;font-family:Montserrat,sans-serif;'>Let's Work Together</p>"
+                "editor": "<p style='text-align:center;color:#E8E4DC;font-size:13px;letter-spacing:3px;text-transform:uppercase;font-weight:600;margin-bottom:16px;font-family:Raleway,sans-serif;'>Let's Work Together</p>"
               }
             },
             {
@@ -57,7 +57,7 @@
                 "header_size": "h1",
                 "align": "center",
                 "color": "#ffffff",
-                "typography_font_family": "Montserrat",
+                "typography_font_family": "Raleway",
                 "typography_font_size": {
                   "unit": "px",
                   "size": 52
