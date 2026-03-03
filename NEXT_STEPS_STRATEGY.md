@@ -2,30 +2,90 @@
 ## Audit Confirmation + Prioritised Action Plan
 
 **Prepared:** March 2026  
-**Status:** Repository audit complete — all template files, GDPR forms, and booking integration done  
+**Last Updated:** March 2026 — Homepage confirmed live  
+**Status:** Homepage LIVE at xcphotography.co with real photography and full content  
 **Website:** www.xcphotography.co  
+
+---
+
+## 🔴 IMMEDIATE FIXES NEEDED (WordPress Elementor — 10 Minutes)
+
+The homepage is live. The following **four typos** were found in the live content and must be corrected directly in WordPress Elementor. These cannot be fixed from the repository — you need to edit them on the live page.
+
+| Location | Current (wrong) | Correct |
+|----------|----------------|---------|
+| Homepage — gallery bar (3rd box) | **"Timless beuty"** | **"Timeless Beauty"** |
+| Homepage — features section | **"Personalised Colloboration"** | **"Personalised Collaboration"** |
+| Homepage — features section | **"Narative-Led Content"** | **"Narrative-Led Content"** |
+| Footer — Quick Links | **"The XC-PHOTOGRAPHY Porfolio"** | **"The XC-PHOTOGRAPHY Portfolio"** |
+
+**How to fix in Elementor:**
+1. Log in at **xcphotography.co/wp-admin**
+2. Edit the Homepage with Elementor
+3. Click the gallery bar's 3rd box → change "Timless beuty" → "Timeless Beauty"
+4. Find the features/stats section → fix "Colloboration" → "Collaboration" and "Narative" → "Narrative"
+5. Update → Done
+6. Go to **Appearance → Theme Builder → Footer** → edit footer → fix "Porfolio" → "Portfolio" → Update
+
+---
+
+## ✍️ GRAMMAR & SPELL CHECK — WORKS DIRECTLY IN ELEMENTOR (No AI needed)
+
+Install **one** of these and it will catch errors as you type inside Elementor — no copy-paste, no conversion:
+
+| Tool | How to get it | Works in Elementor? |
+|------|--------------|-------------------|
+| **Grammarly** (recommended) | grammarly.com → install browser extension (Chrome/Edge/Firefox) | ✅ Yes — underlines errors in red/yellow as you type in any text field |
+| **Browser spell check** | Already built into Chrome & Edge — right-click any underlined word for suggestions | ✅ Yes — catches basic spelling, free, zero setup |
+
+**Grammarly setup (2 minutes, free tier is enough):**
+1. Go to grammarly.com → sign up free → install browser extension
+2. That's it — open Elementor, start typing, it checks automatically
+3. Right-click any underlined word → pick the correct spelling
+
+**No AI queries. No copying text. No converting. Just type and it tells you on-screen.**
+
+The free Grammarly tier covers spelling and basic grammar — sufficient for website copy. The paid tier adds tone and style suggestions, which are not needed here.
 
 ---
 
 ## ✅ AUDIT CONFIRMED: WHAT HAS BEEN COMPLETED
 
-Everything in this repository that can be done outside of WordPress is **done**.
+### Homepage ✅ LIVE at xcphotography.co
+
+| Section | Content Confirmed Live |
+|---------|----------------------|
+| Hero | "Your Story Deserves to Be Seen" — woman with swooshing hair + bike images ✅ |
+| Gallery bar | 4 boxes: Striking Stories, Embrace Individuality, Timeless Beauty*, Unseen Confidence ✅ |
+| Services strip | Brand Photography, Documentary Stories, Portraits, Event Coverage ✅ |
+| Parallax + text | "Your Authentic Story. Their Undivided Attention." ✅ |
+| Why Visual Story section | Full narrative content ✅ |
+| Features section | Exceptional Image Quality, Personalised Collaboration*, Narrative-Led Content* ✅ |
+| Checkerboard sections | "Elevate Your Brand Beyond the Expected" + "Tell Stories That Resonate" ✅ |
+| 4-step process | Discover → Design → Capture → Deliver ✅ |
+| "Making Every Frame, A Statement" | Full paragraph ✅ |
+| Contact form | Name, Email, Company, Project Details, Date/Time, "How did you hear?" ✅ |
+| Social icons | Behance, LinkedIn, WhatsApp, Facebook, Instagram ✅ |
+| Footer | Opening hours, Quick Links, Newsletter signup, Copyright ✅ |
+
+*Contains typo — see Immediate Fixes section above.
 
 ### Phase 1 — Foundation Templates ✅ COMPLETE
 
 | Deliverable | File | Status |
 |------------|------|--------|
-| Homepage — Hero & Gallery | `XCP_HomeP1_Hero_Gallery_FINAL.json` | ✅ Ready to import |
-| Homepage — Parallax & Text | `XCP_HomeP2_Parallax_Text_FINAL.json` | ✅ Ready to import |
-| Homepage — Checkerboard | `XCP_HomeP3_Checkerboard_FINAL.json` | ✅ Ready to import |
-| Homepage — Stats & Process | `XCP_HomeP4_Stats_Process_FINAL.json` | ✅ Ready to import |
-| Homepage — Testimonials & CTA | `XCP_HomeP5_Testimonials_CTA_FINAL.json` | ✅ Ready to import |
-| About Page (2-part) | `XCP_About_P1_Hero_Story.json` + `XCP_About_P2_Process_CTA.json` | ✅ Ready to import |
-| Services Page | `XCP_Services_P1_Packages.json` | ✅ Ready to import (pricing TBC) |
-| Portfolio Page (2-part) | `XCP_Portfolio_P1_Hero_Filter.json` + `XCP_Portfolio_P2_Gallery_CTA.json` | ✅ Ready to import |
-| Contact Page | `XCP_Contact_P1_Complete.json` | ✅ Ready to import |
-| Sticky Header | `XCP_Header_Navigation.json` | ✅ Ready to import |
-| Footer | `XCP_Footer.json` | ✅ Ready to import |
+| Homepage — Hero & Gallery | `XCP_HomeP1_Hero_Gallery_FINAL.json` | ✅ LIVE |
+| Homepage — Parallax & Text | `XCP_HomeP2_Parallax_Text_FINAL.json` | ✅ LIVE |
+| Homepage — Checkerboard | `XCP_HomeP3_Checkerboard_FINAL.json` | ✅ LIVE |
+| Homepage — Stats & Process | `XCP_HomeP4_Stats_Process_FINAL.json` | ✅ LIVE |
+| Homepage — Testimonials & CTA | `XCP_HomeP5_Testimonials_CTA_FINAL.json` | ✅ LIVE |
+| Contact Form (homepage) | `XCP_ContactForm_Section.json` | ✅ LIVE |
+| Sticky Header | `XCP_Header_Navigation.json` | ✅ LIVE |
+| Footer | `XCP_Footer.json` | ✅ LIVE |
+| About Page (2-part) | `XCP_About_P1_Hero_Story.json` + `XCP_About_P2_Process_CTA.json` | ⚠️ Template ready — confirm live |
+| Services Page | `XCP_Services_P1_Packages.json` | ⚠️ Template ready — confirm live + pricing |
+| Portfolio Page (2-part) | `XCP_Portfolio_P1_Hero_Filter.json` + `XCP_Portfolio_P2_Gallery_CTA.json` | ⚠️ Template ready — confirm live + images |
+| Contact Page | `XCP_Contact_P1_Complete.json` | ⚠️ Template ready — confirm live |
 
 ### Phase 2 — Contact Flow & Booking ✅ COMPLETE
 
@@ -54,148 +114,41 @@ Everything in this repository that can be done outside of WordPress is **done**.
 
 ---
 
-## 🚀 FINAL STRATEGY: HOW TO GET THE BEST RESULTS
+## 🚀 CURRENT STRATEGY: WHAT TO DO NOW
 
-The following is your single, prioritised action plan. Work through it in exact order — **do not skip ahead**. Each phase builds on the one before.
+The homepage is live. **The priority order has shifted.** Work through this updated plan.
 
 ---
 
-## WEEK 1 — GET THE SITE LIVE (8–10 Hours)
+## 🔴 TODAY — QUICK WINS (Under 1 Hour Total)
 
-**Goal:** xcphotography.co is live, professional, and ready to convert visitors into booked calls.
+### Step 1: Fix the 4 Typos (10 minutes)
+See the **Immediate Fixes** table at the top of this document. Fix directly in WordPress Elementor.
 
-### Step 1: Upload Templates to WordPress (Day 1 — 3 hours)
+---
 
-Log in at **www.xcphotography.co/wp-admin**
+### Step 2: Complete the Remaining Pages (if not already live)
 
-**Import in this order:**
+Confirm whether About, Services, Portfolio, and Contact pages are live at:
+- xcphotography.co/about
+- xcphotography.co/services
+- xcphotography.co/portfolio
+- xcphotography.co/contact
+
+If any are not live yet, import the relevant template and publish:
 
 ```
-1. XCP_Header_Navigation.json     → Templates → Theme Builder → Header
-2. XCP_Footer.json                → Templates → Theme Builder → Footer
-3. XCP_HomeP1_Hero_Gallery_FINAL.json       → Templates → Saved Templates → Import
-4. XCP_HomeP2_Parallax_Text_FINAL.json      → Templates → Saved Templates → Import
-5. XCP_HomeP3_Checkerboard_FINAL.json       → Templates → Saved Templates → Import
-6. XCP_HomeP4_Stats_Process_FINAL.json      → Templates → Saved Templates → Import
-7. XCP_HomeP5_Testimonials_CTA_FINAL.json   → Templates → Saved Templates → Import
-8. XCP_ContactForm_Section.json             → Templates → Saved Templates → Import
-9. XCP_About_P1_Hero_Story.json             → Templates → Saved Templates → Import
-10. XCP_About_P2_Process_CTA.json           → Templates → Saved Templates → Import
-11. XCP_Services_P1_Packages.json           → Templates → Saved Templates → Import
-12. XCP_Portfolio_P1_Hero_Filter.json       → Templates → Saved Templates → Import
-13. XCP_Portfolio_P2_Gallery_CTA.json       → Templates → Saved Templates → Import
-14. XCP_Contact_P1_Complete.json            → Templates → Saved Templates → Import
-15. XCP_Booking_Page.json                   → Templates → Saved Templates → Import
-16. XCP_Blog_P1_Grid_CTA.json               → Templates → Saved Templates → Import
+XCP_About_P1_Hero_Story.json + XCP_About_P2_Process_CTA.json   → About page
+XCP_Services_P1_Packages.json                                   → Services page
+XCP_Portfolio_P1_Hero_Filter.json + XCP_Portfolio_P2_Gallery_CTA.json → Portfolio page
+XCP_Contact_P1_Complete.json                                    → Contact page
+XCP_Booking_Page.json                                           → Book a Discovery Call page
+XCP_Blog_P1_Grid_CTA.json                                       → Blog/Stories page
 ```
 
-**Build pages using imported templates:**
-- Pages → Add New → "Home" → Edit with Elementor → Insert sections 3–8 in order
-- Pages → Add New → "About" → Insert About P1 + P2
-- Pages → Add New → "Services" → Insert Services P1
-- Pages → Add New → "Portfolio" → Insert Portfolio P1 + P2
-- Pages → Add New → "Contact" → Insert Contact P1
-- Pages → Add New → "Book a Discovery Call" → Insert Booking Page
-- Pages → Add New → "Blog" → Insert Blog P1
+**Import:** Templates → Saved Templates → Import → then Pages → Add New → Edit with Elementor → insert template → Publish.
 
 ---
-
-### Step 2: Add Your Photography (Day 1–2 — 4 hours)
-
-**Every placeholder image URL (`[uc_local]assets/images/...`) must be replaced.** See `PHASED_DEVELOPMENT_AUDIT.md` Part 6 for the full image manifest.
-
-**Critical images to prepare (compress before upload — target <500KB for heroes):**
-
-| Image | Recommended Size | Page |
-|-------|-----------------|------|
-| Hero background | 1920×1080px | Homepage |
-| Gallery images (4) | 800×600px each | Homepage |
-| Parallax background | 1920×1200px | Homepage |
-| Checkerboard images (2) | 800×900px each | Homepage |
-| About hero | 1920×1080px | About |
-| Photographer portrait | 800×1000px | About |
-| Portfolio images (15–20) | 1200×900px each | Portfolio |
-| Services hero | 1920×1080px | Services |
-| Contact hero | 1920×1080px | Contact |
-| Logo (white version) | 300×80px, PNG transparent | Header |
-| Logo (standard) | 300×80px, PNG transparent | Footer |
-
-**Free compression tool:** tinypng.com (drag & drop, compresses 60–80%)
-
----
-
-### Step 3: Connect Booking Calendar (Day 2 — 30 min)
-
-**Option A — Overture (preferred, if account active):**
-1. Log into your Overture account
-2. Go to: Booking → Embed → Copy embed code
-3. In WordPress: Edit Booking Page → find the HTML/embed widget → paste your Overture embed code
-4. Update "Book a Call" button in Header to link to `/book-a-discovery-call`
-
-**Option B — Calendly (free fallback):**
-1. Sign up at calendly.com (free)
-2. Create "30-Minute Discovery Call" event type
-3. Go to: Share → Embed → copy the iframe code
-4. Paste into Booking Page HTML widget (replace placeholder iframe)
-
----
-
-### Step 4: Configure Contact Form (Day 2 — 30 min)
-
-**In WordPress → Elementor Pro → Form → Actions After Submit:**
-1. Add action: **Email** → set recipient to your business email
-2. The Overture webhook is already configured in the template — you just need to confirm the Overture API endpoint URL is correct for your account:  
-   `POST https://api.overture.studio/v1/enquiries`
-3. Test: submit the contact form yourself and verify:
-   - You receive an email notification ✅
-   - Lead appears in Overture CRM ✅
-
----
-
-### Step 5: GDPR Compliance (Day 3 — 1 hour)
-
-Both contact forms already have the GDPR consent checkbox. Complete compliance requires:
-
-1. **Create Privacy Policy page:**
-   - WordPress → Pages → Add New → "Privacy Policy"
-   - Use the WordPress built-in generator: Settings → Privacy → Use this page
-   - Add sections for: data collected, how it's used, Overture as data processor, contact method
-   - Publish and link from footer (already has a "Privacy Policy" link placeholder)
-
-2. **Install CookieYes (free):**
-   - WordPress → Plugins → Add New → search "CookieYes"
-   - Install → Activate
-   - Follow setup wizard (5 min)
-   - This adds the cookie consent banner required under UK GDPR
-
----
-
-### Step 6: Confirm Services Pricing (Day 3 — 30 min)
-
-Open `XCP_Services_P1_Packages.json` in WordPress (edit with Elementor) and update all pricing to your current rates. The template has package structures — just update the numbers.
-
-**Your current packages should be set to reflect your actual pricing tiers.** Refer to `SERVICES_BROCHURE_FINAL.md` for the recommended package structure.
-
----
-
-### Step 7: Final QA & Go Live (Day 4 — 2 hours)
-
-Work through this checklist before going live:
-
-- [ ] Visit every page — does it load correctly?
-- [ ] Click every navigation link — does it go to the right page?
-- [ ] Submit contact form — does email arrive? Does Overture receive it?
-- [ ] Click "Book a Call" — does booking calendar load?
-- [ ] Check site on your phone (iOS + Android if possible)
-- [ ] Verify HTTPS padlock shows in browser bar
-- [ ] Check that logo appears in header (not a broken image)
-- [ ] Check that footer links work (Privacy Policy, social icons)
-
-**You're live.** 🚀
-
----
-
-## WEEK 2 — SOCIAL PROOF & SEO (5–8 Hours)
 
 **Goal:** Site converts at premium level. Real testimonials, real logos, SEO foundations.
 
