@@ -78,7 +78,7 @@ The practical translation: **do not wait to feel ready. Do the task. The feeling
 
 ### You Do Not Need to Be Everywhere
 
-One of the most common mistakes when starting out without a safety net is trying to do everything at once — every social platform, every content format, every revenue stream — because it feels like more effort should equal more result.
+One of the most common mistakes when converting an existing portfolio into consistent commercial revenue is trying to do everything at once — every social platform, every content format, every revenue stream — because it feels like more effort should equal more result.
 
 It does not. It equals exhaustion and nothing working well.
 
@@ -166,9 +166,9 @@ That is a four-day working week. The fifth day — admin — is lighter than the
 
 ### What Year 1 Looks Like vs Year 2
 
-**Year 1** is about proving the model works and building the pipeline.
+**Year 1** is about converting an existing portfolio into a reliable pipeline.
 
-In Year 1 you are finding your clients through networking. You are building your portfolio with each shoot. You are collecting testimonials. You are learning which types of clients you work best with. As your reputation builds, individual project values increase — clients who come via referral or inbound tend to have larger briefs and less price sensitivity than first-contact networking clients.
+In Year 1 you are activating the network around your credentials and building the referral engine. The portfolio already exists — BBC, Amazon, AWS, Hotel du Vin, Malmaison, The Ivy, Norman Cook, Eddie Izzard, The Beach Boys, Goldie, Norman Jay OBE, The Royal Pavilion Brighton, and more. The testimonials already exist. The task now is making sure the right people know you are available, at what level, and at what rate. Clients who come via referral or inbound tend to have larger briefs and less price sensitivity than first-contact networking clients — and referrals accelerate faster when there are already known names in the portfolio.
 
 Year 1 revenue for a photographer at this price point running this program: **£60,000–£150,000**, depending on volume and how quickly average session values climb. Four sessions per month at the £1,495 floor is £71,000 per year. Four sessions per month at the £3,500 Month-6 average is £168,000 per year. The realistic figure sits between those two as the average rises across the year.
 
@@ -199,7 +199,7 @@ It is worth naming this, because the image people carry of "a photographer" is o
 - Someone who delivers what they promised, on time, to a professional standard
 - Someone who treats their work like a business, not a hobby — which means following up, invoicing promptly, responding to enquiries, and turning up prepared
 
-Xavier already has evidence for every item on that second list. The credentials — Hotel du Vin, Concorde 2, Skunk Anansie, Slack City — are not luck. They are evidence of someone who showed up prepared and delivered to a professional standard, repeatedly.
+Xavier already has evidence for every item on that second list. The credentials — Norman Cook, BBC, Amazon, AWS, Hotel du Vin, Malmaison, The Ivy, i360, Eddie Izzard, Woody Cook, The Beach Boys, Dean Chalkley, Norman Jay OBE, Goldie, The Royal Pavilion Brighton, Gamerspot, and more — are not luck. They are evidence of someone who showed up prepared and delivered to a professional standard, repeatedly, across commercial, hospitality, music, broadcast, and cultural sectors.
 
 The gap between where he is now and a consistent £15,000–£30,000/month is not skill. It is pipeline — which is built by attending events, following up, and repeating. The gap between £30,000/month and £60,000/month is client quality and brief size, which grows as reputation compounds.
 
@@ -327,7 +327,7 @@ Three posts per week, same days each week:
 
 | Task | Time | Done? |
 |---|---|---|
-| Message one past client (Hotel du Vin, Concorde 2, Slack City, or Sussex Business Show) asking for a short written testimonial | 10 min | ☐ |
+| Message one past client (Norman Cook, BBC, Hotel du Vin, Malmaison, The Ivy, or any of the portfolio names) asking for a short written testimonial | 10 min | ☐ |
 | When it arrives, add it to the testimonials section of your website | 15 min | ☐ |
 | Share it as a social post | 5 min | ☐ |
 
@@ -500,7 +500,7 @@ Neither program requires you to be a natural salesperson. Neither requires you t
 
 They require you to show up in person, follow up in writing, and respond quickly when someone reaches out.
 
-You can take photographs. The evidence for that is Hotel du Vin, Concorde 2, and Skunk Anansie.
+You can take photographs. The evidence for that is Norman Cook, the BBC, Amazon, Hotel du Vin, Eddie Izzard, Goldie, The Beach Boys, and more.
 
 The only question is whether you will do the showing up.
 
