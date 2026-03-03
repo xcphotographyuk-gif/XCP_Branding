@@ -50,7 +50,7 @@ Here is the honest version of the first 90 days financially:
 
 **Days 1–14:** You are planting. No revenue yet. Every hour is investment, not income.
 
-**Days 15–30:** Your first booking is possible. One conversation at one networking event, followed up with one email, is enough to generate £800. That is not guaranteed — but it is genuinely possible in this window.
+**Days 15–30:** Your first booking is possible. One conversation at one networking event, followed up with one email, is enough to generate £1,495. That is not guaranteed — but it is genuinely possible in this window.
 
 **Days 30–60:** If you have attended 4–6 events and sent 30–40 follow-up emails, you should have had at least 2–3 discovery calls. At least one of those converts to a booking.
 
@@ -117,8 +117,8 @@ You are directing, not just documenting. You are telling people where to stand, 
 **After the shoot:**
 You sit with the images. You cull first — delete the technical failures, the blinks, the transitional frames — down to your best 60–80. Then you edit: colour, contrast, crop, consistency. For a Brand Foundation session, this takes 3–4 hours. You deliver the final gallery via a private online link. The client sees their business the way a professional camera sees it, often for the first time. That reaction — when someone says *"that's actually what we look like"* — is what makes this work worth doing.
 
-**Total time for one Brand Foundation session:** roughly 6–8 hours including travel, shoot, and edit.
-**Income from one Brand Foundation session:** £800.
+**Total time for one session:** roughly 6–8 hours including travel, shoot, and edit.
+**Income from one session:** £1,495 minimum. Larger briefs — extended hours, multiple locations, lighting rigs, outfit changes — scale from there.
 
 That is not a bad hourly rate. And it gets faster with practice.
 
@@ -126,7 +126,7 @@ That is not a bad hourly rate. And it gets faster with practice.
 
 ### A Week With Two Clients Booked
 
-This is what Month 2 or 3 looks like for a photographer who is running the program consistently.
+This is what Month 2 or 3 looks like for a photographer who is running the program consistently. Sessions at this stage are coming in at the £1,495 floor — straightforward briefs, first-time clients, building the relationship. As those clients return and refer others with larger briefs, the per-session average climbs.
 
 | Day | What actually happens |
 |---|---|
@@ -137,7 +137,7 @@ This is what Month 2 or 3 looks like for a photographer who is running the progr
 | Friday | Edit Thursday's shoot. Deliver Tuesday's gallery. Send follow-up email to both clients asking for testimonials. Check in on any live enquiries. |
 | Weekend | Nothing required. You are not "on." |
 
-**Income that week: £1,600 (two Brand Foundation sessions).**
+**Income that week: £2,990–£7,000 (two sessions at £1,495–£3,500 each, depending on brief complexity).**
 **Hours worked: roughly 20, spread across five days.**
 **What it felt like:** busy but not frantic. You were in control of your own schedule. You worked in the morning when you had energy. You edited in the afternoon. You were not commuting. You were not in meetings. You were making things.
 
@@ -145,11 +145,12 @@ This is what Month 2 or 3 looks like for a photographer who is running the progr
 
 ### A Month With Four Clients
 
-This is what Month 3–4 looks like when the networking and follow-up is working.
+This is what Month 3–6 looks like when the networking and follow-up is working. By Month 6, the average session value is around £3,500 — reflecting the natural growth of briefs as clients come in with more complex requirements: extended shoot time, multiple looks, location changes, larger image deliveries.
 
-Four bookings in a month at Brand Foundation level: **£3,200.**
-Two Brand Foundation, one Brand Elevation: **£3,400.**
-One Brand Elevation, one Brand Transformation: **£5,300.**
+Four sessions in a month at the Month 1–2 floor rate: **£5,980.**
+Four sessions in a month at the Month 6 average: **£14,000.**
+A month with two standard sessions and one larger full-day brand project: **£12,000–£18,000.**
+A month anchored by a single high-spec brand project with lighting, multiple outfits, and full-day access: **£6,000–£20,000+ from one client.**
 
 A month with four clients is not an exceptional month. It is a normal month for a photographer who attends two networking events a week, follows up consistently, and responds quickly to enquiries.
 
@@ -167,15 +168,15 @@ That is a four-day working week. The fifth day — admin — is lighter than the
 
 **Year 1** is about proving the model works and building the pipeline.
 
-In Year 1 you are finding your clients through networking. You are building your portfolio with each shoot. You are collecting testimonials. You are learning which types of clients you work best with. You are probably undercharging slightly at the start because you are still building confidence — and then you correct that as the evidence of your quality accumulates.
+In Year 1 you are finding your clients through networking. You are building your portfolio with each shoot. You are collecting testimonials. You are learning which types of clients you work best with. As your reputation builds, individual project values increase — clients who come via referral or inbound tend to have larger briefs and less price sensitivity than first-contact networking clients.
 
-Year 1 revenue for a photographer who follows this program: **£12,000–£30,000**, depending on how many sessions they book and at what tier.
+Year 1 revenue for a photographer at this price point running this program: **£60,000–£150,000**, depending on volume and how quickly average session values climb. Four sessions per month at the £1,495 floor is £71,000 per year. Four sessions per month at the £3,500 Month-6 average is £168,000 per year. The realistic figure sits between those two as the average rises across the year.
 
 **Year 2** is about running the business rather than building it.
 
-In Year 2, referrals replace most of your networking. Past clients come back for update sessions. Your blog posts are ranking in search and generating enquiries you did not have to chase. You have a base rate you charge confidently. You can be more selective about the work you take on.
+In Year 2, referrals replace most of your networking. Past clients come back for update sessions. Your blog posts are ranking in search and generating enquiries you did not have to chase. You have a base rate you charge confidently. You can be more selective about the work you take on. Larger retainer relationships — brands who book quarterly or annually — become possible once you have the track record to justify them.
 
-Year 2 revenue for the same photographer: **£30,000–£60,000+**, depending on specialism and location.
+Year 2 monthly income for the same photographer: **£10,000–£25,000/month**, building toward the 18-month target of **£30,000–£60,000/month** as high-value clients and repeat briefs compound.
 
 The difference between Year 1 and Year 2 is not talent. It is consistency in Year 1. Every photographer who built a sustainable business went through a Year 1 that felt slow and uncertain. The ones who kept going — kept attending events, kept following up, kept delivering good work — crossed into Year 2 and found it significantly easier.
 
@@ -200,7 +201,7 @@ It is worth naming this, because the image people carry of "a photographer" is o
 
 Xavier already has evidence for every item on that second list. The credentials — Hotel du Vin, Concorde 2, Skunk Anansie, Slack City — are not luck. They are evidence of someone who showed up prepared and delivered to a professional standard, repeatedly.
 
-The gap between where he is now and a consistent £3,000–£5,000/month is not skill. It is pipeline — which is built by attending events, following up, and repeating.
+The gap between where he is now and a consistent £15,000–£30,000/month is not skill. It is pipeline — which is built by attending events, following up, and repeating. The gap between £30,000/month and £60,000/month is client quality and brief size, which grows as reputation compounds.
 
 ---
 
@@ -395,11 +396,12 @@ Spend one hour reviewing these numbers:
 
 | Month | Where you should be |
 |---|---|
-| Month 1 | 1–2 bookings. First revenue. Pattern establishing. |
-| Month 2 | 2–4 bookings. Referrals starting. Blog posts getting indexed. |
-| Month 3 | Consistent pipeline. £2,000–£5,000/month realistic. |
-| Month 6 | Regular clients, repeat bookings, word of mouth working. |
-| Month 12 | Multiple revenue streams active. Photography income supplemented by blog/shop/affiliate. |
+| Month 1 | 1–2 bookings. First revenue at £1,495/session. Pattern establishing. |
+| Month 2 | 2–4 bookings. Referrals starting. Blog posts getting indexed. £3,000–£8,000/month. |
+| Month 3 | Consistent pipeline. Sessions growing in complexity. £6,000–£15,000/month realistic. |
+| Month 6 | Average session value ~£3,500. Regular clients, repeat bookings, word of mouth working. £14,000–£25,000/month. |
+| Month 12 | High-value retainer clients and larger briefs. £20,000–£40,000/month. |
+| Month 18 | Established reputation. Inbound enquiries. Target: **£30,000–£60,000/month**. |
 
 ---
 
@@ -483,9 +485,10 @@ Everything else in the Lite Program is about increasing the chance of being cont
 |---|---|
 | Week 1–2 | Planting. No bookings yet. |
 | Week 3–4 | First enquiry possible. First discovery call. |
-| Week 5–6 | First booking likely. £800 minimum. |
-| Week 8–10 | Second and third bookings. Pattern forming. |
-| Month 3 | £1,600–£3,500/month if consistent. |
+| Week 5–6 | First booking likely. £1,495 minimum. |
+| Week 8–10 | Second and third bookings. Pattern forming. £3,000–£6,000/month. |
+| Month 3 | £6,000–£12,000/month if consistent. Sessions growing in scope. |
+| Month 6 | Average session ~£3,500. £10,000–£20,000/month achievable on 3–4 sessions. |
 
 The Lite Program gets you there in 8–10 weeks instead of 4–6 weeks. That is the only difference between doing it fully and doing the minimum. The destination is the same. The pace is different.
 
