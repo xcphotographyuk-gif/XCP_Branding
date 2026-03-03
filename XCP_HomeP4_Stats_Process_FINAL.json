@@ -11,7 +11,13 @@
         "layout": "boxed",
         "background_background": "classic",
         "background_color": "#F8F8F8",
-        "padding": {"unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20"}
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20"
+        }
       },
       "elements": [
         {
@@ -31,7 +37,10 @@
               "settings": {
                 "title": "500+",
                 "header_size": "h3",
-                "typography_font_size": {"unit": "px", "size": 48},
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
                 "color": "#000000"
               }
             },
@@ -62,7 +71,10 @@
               "settings": {
                 "title": "150+",
                 "header_size": "h3",
-                "typography_font_size": {"unit": "px", "size": 48},
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
                 "color": "#000000"
               }
             },
@@ -93,7 +105,10 @@
               "settings": {
                 "title": "20+",
                 "header_size": "h3",
-                "typography_font_size": {"unit": "px", "size": 48},
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
                 "color": "#000000"
               }
             },
@@ -124,7 +139,10 @@
               "settings": {
                 "title": "10+",
                 "header_size": "h3",
-                "typography_font_size": {"unit": "px", "size": 48},
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
                 "color": "#000000"
               }
             },
@@ -141,12 +159,171 @@
       ]
     },
     {
+      "id": "three-pillars-section",
+      "elType": "section",
+      "settings": {
+        "_title": "Three Pillars of the XCP Approach",
+        "layout": "boxed",
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "pillar-1",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100,
+            "padding": {
+              "unit": "px",
+              "top": "20",
+              "right": "30",
+              "bottom": "20",
+              "left": "30",
+              "isLinked": false
+            },
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "pillar-1-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Exceptional Image Quality",
+                "header_size": "h3",
+                "align": "center",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 22
+                },
+                "color": "#000000"
+              }
+            },
+            {
+              "id": "pillar-1-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size: 16px; line-height: 1.8; text-align: center;'>Timeless, captivating images that elevate your authority and share your brand's story with the audience you are meant to reach.</p>",
+                "text_color": "#333333"
+              }
+            }
+          ]
+        },
+        {
+          "id": "pillar-2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100,
+            "padding": {
+              "unit": "px",
+              "top": "20",
+              "right": "30",
+              "bottom": "20",
+              "left": "30",
+              "isLinked": false
+            },
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "pillar-2-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Personalised Collaboration",
+                "header_size": "h3",
+                "align": "center",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 22
+                },
+                "color": "#000000"
+              }
+            },
+            {
+              "id": "pillar-2-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size: 16px; line-height: 1.8; text-align: center;'>A dedicated partnership built from concept to final delivery. Every project is shaped around what makes you unique \u2014 your story, your audience, your vision.</p>",
+                "text_color": "#333333"
+              }
+            }
+          ]
+        },
+        {
+          "id": "pillar-3",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100,
+            "padding": {
+              "unit": "px",
+              "top": "20",
+              "right": "30",
+              "bottom": "20",
+              "left": "30",
+              "isLinked": false
+            },
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "pillar-3-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Narrative-Led Content",
+                "header_size": "h3",
+                "align": "center",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 22
+                },
+                "color": "#000000"
+              }
+            },
+            {
+              "id": "pillar-3-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size: 16px; line-height: 1.8; text-align: center;'>Over 15 years of experience delivering bold visual stories through masterful photography \u2014 imagery that does not just look good, it says something.</p>",
+                "text_color": "#333333"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "process-section",
       "elType": "section",
       "settings": {
         "_title": "Process Timeline",
         "layout": "boxed",
-        "padding": {"unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20"}
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20"
+        }
       },
       "elements": [
         {
@@ -164,7 +341,10 @@
                 "title": "From Vision to Visual Impact: Here's How It Works",
                 "header_size": "h2",
                 "align": "center",
-                "typography_font_size": {"unit": "px", "size": 42}
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 42
+                }
               }
             }
           ]
@@ -175,7 +355,13 @@
           "settings": {
             "_column_size": 50,
             "_column_size_mobile": 100,
-            "padding": {"unit": "px", "top": "40", "right": "30", "bottom": "40", "left": "30"}
+            "padding": {
+              "unit": "px",
+              "top": "40",
+              "right": "30",
+              "bottom": "40",
+              "left": "30"
+            }
           },
           "elements": [
             {
@@ -185,7 +371,10 @@
               "settings": {
                 "title": "01",
                 "header_size": "h3",
-                "typography_font_size": {"unit": "px", "size": 72},
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 72
+                },
                 "color": "#CCCCCC"
               }
             },
@@ -196,7 +385,10 @@
               "settings": {
                 "title": "Discover Your Story",
                 "header_size": "h3",
-                "typography_font_size": {"unit": "px", "size": 28}
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 28
+                }
               }
             },
             {
@@ -204,7 +396,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='font-size: 16px; line-height: 1.8;'>Your vision matters. This conversation is all about understanding what makes your brand unique, who you want to reach, and the impression you want to leave. No two brands tell the same story—yours deserves an approach designed specifically for you.</p>"
+                "editor": "<p style='font-size: 16px; line-height: 1.8;'>Your vision matters. This conversation is all about understanding what makes your brand unique, who you want to reach, and the impression you want to leave. No two brands tell the same story\u2014yours deserves an approach designed specifically for you.</p>"
               }
             }
           ]
@@ -215,7 +407,13 @@
           "settings": {
             "_column_size": 50,
             "_column_size_mobile": 100,
-            "padding": {"unit": "px", "top": "40", "right": "30", "bottom": "40", "left": "30"}
+            "padding": {
+              "unit": "px",
+              "top": "40",
+              "right": "30",
+              "bottom": "40",
+              "left": "30"
+            }
           },
           "elements": [
             {
@@ -225,7 +423,10 @@
               "settings": {
                 "title": "02",
                 "header_size": "h3",
-                "typography_font_size": {"unit": "px", "size": 72},
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 72
+                },
                 "color": "#CCCCCC"
               }
             },
@@ -236,7 +437,10 @@
               "settings": {
                 "title": "Design Your Experience",
                 "header_size": "h3",
-                "typography_font_size": {"unit": "px", "size": 28}
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 28
+                }
               }
             },
             {
@@ -244,7 +448,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='font-size: 16px; line-height: 1.8;'>Every detail is crafted with your audience in mind. From concept to location, styling to mood, the planning ensures your final imagery doesn't just look stunning—it resonates deeply with the people you're meant to serve.</p>"
+                "editor": "<p style='font-size: 16px; line-height: 1.8;'>Every detail is crafted with your audience in mind. From concept to location, styling to mood, the planning ensures your final imagery doesn't just look stunning\u2014it resonates deeply with the people you're meant to serve.</p>"
               }
             }
           ]
@@ -255,7 +459,13 @@
           "settings": {
             "_column_size": 50,
             "_column_size_mobile": 100,
-            "padding": {"unit": "px", "top": "40", "right": "30", "bottom": "40", "left": "30"}
+            "padding": {
+              "unit": "px",
+              "top": "40",
+              "right": "30",
+              "bottom": "40",
+              "left": "30"
+            }
           },
           "elements": [
             {
@@ -265,7 +475,10 @@
               "settings": {
                 "title": "03",
                 "header_size": "h3",
-                "typography_font_size": {"unit": "px", "size": 72},
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 72
+                },
                 "color": "#CCCCCC"
               }
             },
@@ -276,7 +489,10 @@
               "settings": {
                 "title": "Capture What Matters",
                 "header_size": "h3",
-                "typography_font_size": {"unit": "px", "size": 28}
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 28
+                }
               }
             },
             {
@@ -295,7 +511,13 @@
           "settings": {
             "_column_size": 50,
             "_column_size_mobile": 100,
-            "padding": {"unit": "px", "top": "40", "right": "30", "bottom": "40", "left": "30"}
+            "padding": {
+              "unit": "px",
+              "top": "40",
+              "right": "30",
+              "bottom": "40",
+              "left": "30"
+            }
           },
           "elements": [
             {
@@ -305,7 +527,10 @@
               "settings": {
                 "title": "04",
                 "header_size": "h3",
-                "typography_font_size": {"unit": "px", "size": 72},
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 72
+                },
                 "color": "#CCCCCC"
               }
             },
@@ -316,7 +541,10 @@
               "settings": {
                 "title": "Deliver Results That Perform",
                 "header_size": "h3",
-                "typography_font_size": {"unit": "px", "size": 28}
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 28
+                }
               }
             },
             {
@@ -324,7 +552,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='font-size: 16px; line-height: 1.8;'>Polished, professional, and ready to elevate your brand across every platform. Your final imagery isn't just beautiful—it's strategic, designed to stop the scroll, build trust, and drive the engagement that grows your business.</p>"
+                "editor": "<p style='font-size: 16px; line-height: 1.8;'>Polished, professional, and ready to elevate your brand across every platform. Your final imagery isn't just beautiful\u2014it's strategic, designed to stop the scroll, build trust, and drive the engagement that grows your business.</p>"
               }
             }
           ]
