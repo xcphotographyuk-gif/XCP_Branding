@@ -38,7 +38,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; color: #d4af37; font-family: Montserrat, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px;'>Free, No Obligation</p>"
+                "editor": "<p style='text-align: center; color: #E8E4DC; font-family: Montserrat, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px;'>Free, No Obligation</p>"
               }
             },
             {
@@ -89,7 +89,7 @@
           "size": 1100
         },
         "background_background": "classic",
-        "background_color": "#d4af37",
+        "background_color": "#E8E4DC",
         "padding": {
           "unit": "px",
           "top": "20",
@@ -230,7 +230,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<div style='background: #1a1a1a; color: #ffffff; padding: 24px; border-left: 4px solid #d4af37; margin-bottom: 30px;'><p style='margin: 0 0 6px; font-family: Montserrat, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #d4af37;'>The Details</p><p style='margin: 0; font-size: 15px; line-height: 1.7;'>📅 <strong>30 minutes</strong> via Zoom or phone<br>📍 Available UK-wide<br>🎁 <strong>Completely free</strong>, no obligation<br>⏱ Response within 24 hours of booking</p></div>"
+                "editor": "<div style='background: #1a1a1a; color: #ffffff; padding: 24px; border-left: 4px solid #E8E4DC; margin-bottom: 30px;'><p style='margin: 0 0 6px; font-family: Montserrat, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #E8E4DC;'>The Details</p><p style='margin: 0; font-size: 15px; line-height: 1.7;'>📅 <strong>30 minutes</strong> via Zoom or phone<br>📍 Available UK-wide<br>🎁 <strong>Completely free</strong>, no obligation<br>⏱ Response within 24 hours of booking</p></div>"
               }
             },
             {
@@ -386,10 +386,10 @@
                   "left": "2",
                   "isLinked": true
                 },
-                "border_color": "#d4af37",
+                "border_color": "#E8E4DC",
                 "color": "#1a1a1a",
-                "background_color": "#d4af37",
-                "hover_color": "#d4af37",
+                "background_color": "#E8E4DC",
+                "hover_color": "#E8E4DC",
                 "button_background_hover_color": "transparent",
                 "border_radius": {
                   "unit": "px",

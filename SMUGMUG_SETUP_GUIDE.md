@@ -73,7 +73,7 @@ These values come directly from the Elementor templates. Use them in all SmugMug
 ```css
 /* XCP Brand Palette */
 --xcp-black:  #000000;
---xcp-gold:   #d4af37;
+--xcp-platinum: #E8E4DC;  /* warm platinum / white gold — accent */
 --xcp-white:  #ffffff;
 --xcp-grey:   #333333;
 --xcp-light:  #f8f8f8;
@@ -116,10 +116,10 @@ h1, h2, h3, h4 {
 }
 
 /* Navigation */
-.sm-nav { background-color: #000000; border-bottom: 1px solid #d4af37; }
+.sm-nav { background-color: #000000; border-bottom: 1px solid #E8E4DC; }
 .sm-nav a { color: #ffffff; font-family: 'Lato', sans-serif; text-transform: uppercase;
   letter-spacing: 0.12em; font-size: 12px; }
-.sm-nav a:hover { color: #d4af37; }
+.sm-nav a:hover { color: #E8E4DC; }
 
 /* Gallery titles */
 .sm-gallery-title { color: #ffffff; font-family: 'Playfair Display', serif; }
@@ -128,7 +128,7 @@ h1, h2, h3, h4 {
 
 /* Buy buttons (SmugMug native) */
 .sm-buy-btn, .sm-add-to-cart {
-  background-color: #d4af37 !important;
+  background-color: #E8E4DC !important;
   color: #000000 !important;
   font-family: 'Lato', sans-serif;
   text-transform: uppercase;
@@ -136,7 +136,7 @@ h1, h2, h3, h4 {
   border: none;
   padding: 12px 28px;
 }
-.sm-buy-btn:hover { background-color: #b8942e !important; }
+.sm-buy-btn:hover { background-color: #C8C4B8 !important; }
 
 /* Custom page content */
 .sm-custom-page { background-color: #000000; color: #ffffff; }
@@ -150,7 +150,7 @@ Paste into a SmugMug Custom Page or at the top of any page using the HTML widget
 This creates a branded strip linking back to the main site.
 
 ```html
-<div style="background:#000000; border-bottom:1px solid #d4af37; padding:16px 40px;
+<div style="background:#000000; border-bottom:1px solid #E8E4DC; padding:16px 40px;
   display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;
   font-family:'Lato','Helvetica Neue',sans-serif;">
 
@@ -170,7 +170,7 @@ This creates a branded strip linking back to the main site.
       style="color:#cccccc; text-decoration:none; font-size:12px;
       text-transform:uppercase; letter-spacing:0.12em;">Services</a>
     <a href="https://xcphotography.co.uk/contact" target="_blank"
-      style="color:#d4af37; text-decoration:none; font-size:12px;
+      style="color:#E8E4DC; text-decoration:none; font-size:12px;
       text-transform:uppercase; letter-spacing:0.12em; font-weight:700;">Book a Session</a>
   </nav>
 </div>
@@ -186,7 +186,7 @@ Use on your SmugMug homepage or About custom page.
 <section style="background:#000000; color:#ffffff; padding:80px 40px;
   font-family:'Lato','Helvetica Neue',sans-serif; max-width:900px; margin:0 auto;">
 
-  <p style="color:#d4af37; font-size:12px; text-transform:uppercase;
+  <p style="color:#E8E4DC; font-size:12px; text-transform:uppercase;
     letter-spacing:0.15em; margin-bottom:16px;">Brand and Documentary Photographer</p>
 
   <h2 style="font-family:'Playfair Display',Georgia,serif; font-size:36px;
@@ -212,7 +212,7 @@ Use on your SmugMug homepage or About custom page.
   </p>
 
   <a href="https://xcphotography.co.uk/about" target="_blank"
-    style="display:inline-block; background:#d4af37; color:#000000;
+    style="display:inline-block; background:#E8E4DC; color:#000000;
     padding:14px 32px; font-size:13px; text-transform:uppercase;
     letter-spacing:0.12em; text-decoration:none; font-weight:700;">
     Full Story
@@ -244,7 +244,7 @@ directly to your WooCommerce shop. No SmugMug commission.
     <div style="display:flex; justify-content:space-between; align-items:flex-start;
       flex-wrap:wrap; gap:16px;">
       <div>
-        <p style="color:#d4af37; font-size:11px; text-transform:uppercase;
+        <p style="color:#E8E4DC; font-size:11px; text-transform:uppercase;
           letter-spacing:0.15em; margin:0 0 6px;">Brand Foundation</p>
         <p style="color:#ffffff; font-size:18px; font-weight:700; margin:0 0 8px;">
           2-Hour Session &nbsp;|&nbsp; 20+ Images</p>
@@ -257,7 +257,7 @@ directly to your WooCommerce shop. No SmugMug commission.
         <p style="color:#ffffff; font-size:24px; font-weight:700; margin:0 0 12px;">
           £800</p>
         <a href="https://xcphotography.co.uk/shop/brand-foundation" target="_blank"
-          style="display:inline-block; background:#d4af37; color:#000000;
+          style="display:inline-block; background:#E8E4DC; color:#000000;
           padding:12px 24px; font-size:12px; text-transform:uppercase;
           letter-spacing:0.1em; text-decoration:none; font-weight:700;">
           Book Now
@@ -271,7 +271,7 @@ directly to your WooCommerce shop. No SmugMug commission.
     <div style="display:flex; justify-content:space-between; align-items:flex-start;
       flex-wrap:wrap; gap:16px;">
       <div>
-        <p style="color:#d4af37; font-size:11px; text-transform:uppercase;
+        <p style="color:#E8E4DC; font-size:11px; text-transform:uppercase;
           letter-spacing:0.15em; margin:0 0 6px;">Brand Elevation</p>
         <p style="color:#ffffff; font-size:18px; font-weight:700; margin:0 0 8px;">
           Half Day &nbsp;|&nbsp; 50+ Images</p>
@@ -284,7 +284,7 @@ directly to your WooCommerce shop. No SmugMug commission.
         <p style="color:#ffffff; font-size:24px; font-weight:700; margin:0 0 12px;">
           £1,800</p>
         <a href="https://xcphotography.co.uk/shop/brand-elevation" target="_blank"
-          style="display:inline-block; background:#d4af37; color:#000000;
+          style="display:inline-block; background:#E8E4DC; color:#000000;
           padding:12px 24px; font-size:12px; text-transform:uppercase;
           letter-spacing:0.1em; text-decoration:none; font-weight:700;">
           Book Now
@@ -298,7 +298,7 @@ directly to your WooCommerce shop. No SmugMug commission.
     <div style="display:flex; justify-content:space-between; align-items:flex-start;
       flex-wrap:wrap; gap:16px;">
       <div>
-        <p style="color:#d4af37; font-size:11px; text-transform:uppercase;
+        <p style="color:#E8E4DC; font-size:11px; text-transform:uppercase;
           letter-spacing:0.15em; margin:0 0 6px;">Brand Transformation</p>
         <p style="color:#ffffff; font-size:18px; font-weight:700; margin:0 0 8px;">
           Full Day+ &nbsp;|&nbsp; 100+ Images</p>
@@ -311,7 +311,7 @@ directly to your WooCommerce shop. No SmugMug commission.
         <p style="color:#ffffff; font-size:24px; font-weight:700; margin:0 0 12px;">
           £3,500</p>
         <a href="https://xcphotography.co.uk/shop/brand-transformation" target="_blank"
-          style="display:inline-block; background:#d4af37; color:#000000;
+          style="display:inline-block; background:#E8E4DC; color:#000000;
           padding:12px 24px; font-size:12px; text-transform:uppercase;
           letter-spacing:0.1em; text-decoration:none; font-weight:700;">
           Book Now
@@ -337,7 +337,7 @@ Edit the title, label, and description per category.
 <div style="background:#000000; padding:60px 40px 20px; max-width:900px; margin:0 auto;
   font-family:'Lato','Helvetica Neue',sans-serif; text-align:center;">
 
-  <p style="color:#d4af37; font-size:11px; text-transform:uppercase;
+  <p style="color:#E8E4DC; font-size:11px; text-transform:uppercase;
     letter-spacing:0.2em; margin-bottom:16px;">XC Photography</p>
 
   <h1 style="font-family:'Playfair Display',Georgia,serif; font-size:40px;
@@ -386,7 +386,7 @@ Add at the bottom of every Custom Page.
       style="color:#888888; text-decoration:none; font-size:12px;
       text-transform:uppercase; letter-spacing:0.1em;">Services</a>
     <a href="https://xcphotography.co.uk/contact" target="_blank"
-      style="color:#d4af37; text-decoration:none; font-size:12px;
+      style="color:#E8E4DC; text-decoration:none; font-size:12px;
       text-transform:uppercase; letter-spacing:0.1em; font-weight:700;">Book</a>
   </div>
 

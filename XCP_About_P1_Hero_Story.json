@@ -139,7 +139,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; font-size: 18px; max-width: 860px; margin: 30px auto; line-height: 1.9;'>Before I shoot anything, I need to know three things: who you actually are, who you want to reach, and what it is about you that will make those people stop and pay attention.</p><p style='text-align: center; font-size: 18px; max-width: 860px; margin: 30px auto; line-height: 1.9;'>That's not a casual chat over coffee. That's the whole job. Everything else, the light, the timing, the location, the moment I decide to press the shutter, all flow from that understanding.</p><p style='text-align: center; font-size: 18px; max-width: 860px; margin: 30px auto; line-height: 1.9;'>Technically, I've spent 15+ years making the craft invisible. I've trained seriously in brand photography, including as a mentee of <a href='https://thephotographersmentor.com' target='_blank' rel='noopener' style='color: inherit; border-bottom: 1px solid #d4af37;'>Jeff Brown</a>, one of the most respected educators working in this space. The technical side is the foundation. What I bring beyond it is the ability to see what makes you genuinely you, and find the precise moment, light, and angle where that becomes an image someone can't scroll past.</p>"
+                "editor": "<p style='text-align: center; font-size: 18px; max-width: 860px; margin: 30px auto; line-height: 1.9;'>Before I shoot anything, I need to know three things: who you actually are, who you want to reach, and what it is about you that will make those people stop and pay attention.</p><p style='text-align: center; font-size: 18px; max-width: 860px; margin: 30px auto; line-height: 1.9;'>That's not a casual chat over coffee. That's the whole job. Everything else, the light, the timing, the location, the moment I decide to press the shutter, all flow from that understanding.</p><p style='text-align: center; font-size: 18px; max-width: 860px; margin: 30px auto; line-height: 1.9;'>Technically, I've spent 15+ years making the craft invisible. I've trained seriously in brand photography, including as a mentee of <a href='https://thephotographersmentor.com' target='_blank' rel='noopener' style='color: inherit; border-bottom: 1px solid #E8E4DC;'>Jeff Brown</a>, one of the most respected educators working in this space. The technical side is the foundation. What I bring beyond it is the ability to see what makes you genuinely you, and find the precise moment, light, and angle where that becomes an image someone can't scroll past.</p>"
               }
             }
           ]
@@ -429,7 +429,7 @@
                 "title": "Music Photography",
                 "header_size": "h4",
                 "align": "center",
-                "color": "#d4af37",
+                "color": "#E8E4DC",
                 "typography_font_size": {
                   "unit": "px",
                   "size": 14
@@ -487,7 +487,7 @@
                 "title": "Community Documentary",
                 "header_size": "h4",
                 "align": "center",
-                "color": "#d4af37",
+                "color": "#E8E4DC",
                 "typography_font_size": {
                   "unit": "px",
                   "size": 14
@@ -545,7 +545,7 @@
                 "title": "A Decade of Visual Work",
                 "header_size": "h4",
                 "align": "center",
-                "color": "#d4af37",
+                "color": "#E8E4DC",
                 "typography_font_size": {
                   "unit": "px",
                   "size": 14

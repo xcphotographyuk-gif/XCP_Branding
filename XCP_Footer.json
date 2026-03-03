@@ -89,7 +89,7 @@
                     },
                     "item_icon_color": "custom",
                     "item_icon_primary_color": "#FFFFFF",
-                    "item_icon_secondary_color": "#d4af37"
+                    "item_icon_secondary_color": "#E8E4DC"
                   },
                   {
                     "social_icon": {
@@ -103,7 +103,7 @@
                     },
                     "item_icon_color": "custom",
                     "item_icon_primary_color": "#FFFFFF",
-                    "item_icon_secondary_color": "#d4af37"
+                    "item_icon_secondary_color": "#E8E4DC"
                   },
                   {
                     "social_icon": {
@@ -117,7 +117,7 @@
                     },
                     "item_icon_color": "custom",
                     "item_icon_primary_color": "#FFFFFF",
-                    "item_icon_secondary_color": "#d4af37"
+                    "item_icon_secondary_color": "#E8E4DC"
                   }
                 ],
                 "shape": "circle",
@@ -277,7 +277,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<div style='margin-top: 16px;'><p style='color: #aaaaaa; font-size: 14px; margin-bottom: 10px;'><a href='mailto:hello@xcphotography.co.uk' style='color: #d4af37; text-decoration: none;'>hello@xcphotography.co.uk</a></p><p style='color: #aaaaaa; font-size: 14px; margin-bottom: 10px;'><a href='tel:+441234567890' style='color: #aaaaaa; text-decoration: none;'>+44 (0) 1234 567890</a></p><p style='color: #aaaaaa; font-size: 14px; margin-bottom: 0;'>Mon\u2013Fri: 9:00 AM \u2013 6:00 PM<br>Sat: By Appointment</p></div>"
+                "editor": "<div style='margin-top: 16px;'><p style='color: #aaaaaa; font-size: 14px; margin-bottom: 10px;'><a href='mailto:hello@xcphotography.co.uk' style='color: #E8E4DC; text-decoration: none;'>hello@xcphotography.co.uk</a></p><p style='color: #aaaaaa; font-size: 14px; margin-bottom: 10px;'><a href='tel:+441234567890' style='color: #aaaaaa; text-decoration: none;'>+44 (0) 1234 567890</a></p><p style='color: #aaaaaa; font-size: 14px; margin-bottom: 0;'>Mon\u2013Fri: 9:00 AM \u2013 6:00 PM<br>Sat: By Appointment</p></div>"
               }
             },
             {
@@ -302,11 +302,11 @@
                   "left": "1",
                   "isLinked": true
                 },
-                "border_color": "#d4af37",
-                "color": "#d4af37",
+                "border_color": "#E8E4DC",
+                "color": "#E8E4DC",
                 "background_color": "transparent",
                 "hover_color": "#000000",
-                "button_background_hover_color": "#d4af37",
+                "button_background_hover_color": "#E8E4DC",
                 "padding": {
                   "unit": "px",
                   "top": "10",

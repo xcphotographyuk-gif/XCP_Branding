@@ -134,8 +134,8 @@
                   "size": 1.5
                 },
                 "color_menu_item": "#FFFFFF",
-                "color_menu_item_hover": "#d4af37",
-                "color_menu_item_active": "#d4af37",
+                "color_menu_item_hover": "#E8E4DC",
+                "color_menu_item_active": "#E8E4DC",
                 "toggle_align": "center"
               }
             }
@@ -183,11 +183,11 @@
                   "left": "1",
                   "isLinked": true
                 },
-                "border_color": "#d4af37",
-                "color": "#d4af37",
+                "border_color": "#E8E4DC",
+                "color": "#E8E4DC",
                 "background_color": "transparent",
                 "hover_color": "#000000",
-                "button_background_hover_color": "#d4af37",
+                "button_background_hover_color": "#E8E4DC",
                 "border_radius": {
                   "unit": "px",
                   "top": "0",
@@ -229,7 +229,7 @@
                 "layout": "dropdown",
                 "toggle_align": "right",
                 "color_menu_item": "#FFFFFF",
-                "color_menu_item_hover": "#d4af37",
+                "color_menu_item_hover": "#E8E4DC",
                 "toggle_icon_color": "#FFFFFF",
                 "hide_desktop": "hidden-desktop",
                 "hide_tablet": "",
