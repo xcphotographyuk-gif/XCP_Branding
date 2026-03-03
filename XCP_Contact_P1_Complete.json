@@ -27,7 +27,8 @@
           "right": 5,
           "bottom": 8,
           "left": 5
-        }
+        },
+        "_title": "Contact Hero"
       },
       "elements": [
         {
@@ -73,7 +74,8 @@
           "right": 20,
           "bottom": 80,
           "left": 20
-        }
+        },
+        "_title": "Contact Form & Info"
       },
       "elements": [
         {
@@ -193,7 +195,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p><strong>Email:</strong><br>hello@xcphotography.uk</p><p><strong>Phone:</strong><br>+44 (0) 1234 567890</p><p><strong>Office Hours:</strong><br>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: By Appointment<br>Sunday: Closed</p>"
+                "editor": "<p style='font-size: 16px; line-height: 1.8;'><strong>Email:</strong><br><a href='mailto:xavier@xcphotography.co.uk' style='color: #000000;'>xavier@xcphotography.co.uk</a></p><p style='font-size: 16px; line-height: 1.8;'><strong>Based in:</strong><br>Brighton, UK</p><p style='font-size: 16px; line-height: 1.8;'><strong>Office Hours:</strong><br>Monday \u2013 Friday: 10:30 \u2013 16:00<br>Weekends &amp; Bank Holidays: 11:00 \u2013 14:00</p>"
               }
             },
             {
@@ -221,7 +223,8 @@
           "right": 20,
           "bottom": 60,
           "left": 20
-        }
+        },
+        "_title": "Contact CTA"
       },
       "elements": [
         {
