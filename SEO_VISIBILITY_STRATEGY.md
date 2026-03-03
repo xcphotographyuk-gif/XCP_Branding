@@ -4,8 +4,9 @@
 **Photographer:** Xavier Clarke  
 **Business:** XC Photography  
 **Base:** Brighton, East Sussex  
-**Coverage:** UK-wide & International  
-**Goal:** Rank #1 for brand and documentary photography searches across Brighton, Sussex, South East England, and nationally for specialist niches
+**Primary Markets:** Brighton & London  
+**Coverage:** UK-wide & International (conflict-free)  
+**Goal:** Rank #1 for brand and documentary photography searches in London and Brighton — the two highest-value markets — while building UK-wide authority for specialist niches. London clients invest at the level this work deserves. Brighton is home base. The rest of the UK and international work is available where it fits.
 
 ---
 
@@ -21,16 +22,21 @@ This document is the complete blueprint.
 
 ### 1.1 Primary Keywords (Highest Priority — Target in Homepage & Services)
 
+> **Strategy note:** London keywords have 5–10× the search volume of Brighton equivalents and attract clients with significantly higher investment capacity. Both markets are equally targeted. Brighton gives authenticity; London gives revenue.
+
 | Keyword | Monthly Searches (UK est.) | Competition | Target Page |
 |---------|---------------------------|-------------|-------------|
+| brand photographer London | 2,400 | High | Homepage, Services, dedicated blog |
+| brand photography London | 1,900 | High | Homepage, Services |
+| corporate photographer London | 1,600 | High | Services, Portfolio |
 | brand photographer Brighton | 390 | Low | Homepage, Services |
 | brand photography Brighton | 320 | Low | Homepage, Services |
 | brand photographer UK | 1,200 | Medium | Homepage, Services |
 | documentary photographer UK | 480 | Low | Services, Blog |
 | corporate photographer Brighton | 210 | Low | Services, Portfolio |
 | business photographer Brighton | 170 | Low | Services, Portfolio |
+| professional photographer London | 2,200 | High | Homepage |
 | brand photography packages UK | 140 | Low | Services |
-| professional photographer Brighton | 880 | Medium | Homepage, Portfolio |
 
 ### 1.2 Secondary Keywords (Niche Authority — Target in Services + Blog)
 
@@ -38,14 +44,16 @@ This document is the complete blueprint.
 |---------|---------------------------|-------------|-------------|
 | documentary business photography | 260 | Low | Blog, Services |
 | brand photography for businesses | 590 | Medium | Services, Blog |
+| personal brand photography London | 1,100 | Medium | Services, Blog |
 | personal brand photography UK | 720 | Medium | Services |
+| headshot photographer London | 1,800 | Medium | Services, Portfolio |
 | headshot photographer Brighton | 480 | Low | Services, Portfolio |
+| corporate headshots London | 1,400 | Medium | Services, Portfolio |
 | corporate headshots Brighton | 320 | Low | Services, Portfolio |
+| event photographer London | 2,900 | High | Services |
 | event photographer Brighton | 590 | Low | Services |
-| corporate event photographer Sussex | 140 | Very Low | Services, Blog |
 | brand photographer Sussex | 170 | Very Low | Homepage, Services |
-| brand photography London | 2,400 | High | Homepage (secondary mention) |
-| commercial photographer Brighton | 210 | Low | Services |
+| commercial photographer London | 880 | Medium | Services |
 | fine art photography prints UK | 390 | Medium | Services |
 
 ### 1.3 Long-Tail Keywords (Blog Content — High Conversion Intent)
@@ -66,16 +74,19 @@ This document is the complete blueprint.
 
 | Keyword | Priority |
 |---------|---------|
+| brand photographer London | ⭐⭐⭐⭐⭐ |
+| corporate photographer London | ⭐⭐⭐⭐⭐ |
 | brand photographer Brighton | ⭐⭐⭐⭐⭐ |
+| headshot photographer London | ⭐⭐⭐⭐⭐ |
+| documentary photographer London | ⭐⭐⭐⭐ |
 | brand photographer Hove | ⭐⭐⭐⭐ |
 | brand photographer Sussex | ⭐⭐⭐⭐ |
-| photographer Brighton business | ⭐⭐⭐⭐ |
-| brand photographer Worthing | ⭐⭐⭐ |
-| brand photographer Eastbourne | ⭐⭐⭐ |
-| photographer Surrey branding | ⭐⭐⭐ |
-| brand photographer London (day trips) | ⭐⭐⭐ |
-| brand photographer Kent | ⭐⭐ |
-| photographer Gatwick area | ⭐⭐ |
+| personal brand photographer London | ⭐⭐⭐⭐ |
+| event photographer London | ⭐⭐⭐⭐ |
+| photographer Brighton business | ⭐⭐⭐ |
+| brand photographer South East England | ⭐⭐⭐ |
+| brand photographer Worthing | ⭐⭐ |
+| brand photographer Eastbourne | ⭐⭐ |
 
 ---
 
