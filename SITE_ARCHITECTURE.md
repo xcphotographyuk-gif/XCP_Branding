@@ -114,7 +114,7 @@ All pages optimized for:
 6. ✅ Blog/Stories Page — Template created (`XCP_Blog_P1_Grid_CTA.json`); 5 blog posts written and ready to publish
 7. ✅ Header/Navigation — Template created (`XCP_Header_Navigation.json`); configure Elementor Pro Theme Builder
 8. ✅ Footer — Template created (`XCP_Footer.json`); update contact details and social URLs before importing
-9. ❌ Booking Page — Not yet created; required for Overture calendar embed
+9. ✅ Booking Page — Template created (`XCP_Booking_Page.json`); hero, Overture/Calendly embed placeholder, FAQ accordion, closing CTA; update embed URL with your Overture or Calendly link before import
 10. ❌ Privacy Policy — Required for GDPR; create via WordPress → Pages
 11. ❌ Terms & Conditions — Recommended; create via WordPress → Pages
 

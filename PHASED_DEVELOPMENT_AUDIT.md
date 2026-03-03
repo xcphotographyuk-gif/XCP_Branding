@@ -83,8 +83,8 @@
 | File | Title | Status | Notes |
 |------|-------|--------|-------|
 | `header.json` | Site Header | ❌ | Exists as a single-line JSON stub only — not an importable Elementor template |
-| `XCP_Header_Navigation.json` | Elementor Header | ❌ | **Missing** — no Elementor Pro header template for sticky navigation |
-| `XCP_Footer.json` | Elementor Footer | ❌ | **Missing** — no footer template; footer content (legal links, socials, contact) is not implemented |
+| `XCP_Header_Navigation.json` | Elementor Header | ✅ | Sticky header with logo, horizontal nav (desktop), hamburger dropdown (mobile/tablet), gold "Book a Call" CTA button |
+| `XCP_Footer.json` | Elementor Footer | ✅ | 4-column footer: brand/tagline/socials, quick links, services links, contact info; legal bar with Privacy Policy link |
 
 ---
 
@@ -92,7 +92,7 @@
 
 | File | Title | Status | Notes |
 |------|-------|--------|-------|
-| `XCP_Blog_P1_Grid_CTA.json` | Blog/Stories Page | ❌ | **Missing** — Blog/Stories page is documented in SITE_ARCHITECTURE.md but no Elementor template exists |
+| `XCP_Blog_P1_Grid_CTA.json` | Blog/Stories Page | ✅ | Blog/Stories page grid + intro hero + CTA; ready for WordPress import |
 
 ---
 
@@ -191,7 +191,7 @@ Content-Type: application/json
 | Homepage hero CTA | Links to `#contact-form` | Add option to also link to Overture booking widget |
 | Services page CTA | Not wired to booking | Add embedded Overture/Calendly calendar or booking button |
 | Contact page | Form only | Add booking calendar embed alongside contact form |
-| Standalone booking page | ❌ Not created | Create `XCP_Booking_Page.json` with embedded calendar |
+| Standalone booking page | ✅ Created | `XCP_Booking_Page.json` — hero, calendar embed, FAQ, CTA |
 
 ---
 
@@ -223,7 +223,7 @@ Content-Type: application/json
 | Blog/Stories | ❌ No template | ✅ 5 blog posts written | — | ❌ Not in JSON | — |
 | Header/Nav | ❌ Stub only | ❌ Not Elementor format | — | — | — |
 | Footer | ❌ Missing | ❌ Not created | — | — | — |
-| Booking Page | ❌ Missing | ❌ Not created | ❌ No calendar | — | ❌ Missing consent |
+| Booking Page | ✅ Created | ✅ Template created | ✅ Calendar embed placeholder | — | ⚠️ GDPR covered by form |
 | Privacy Policy | ❌ Missing | ❌ Not created | — | — | — |
 
 ---
@@ -285,8 +285,8 @@ The following requirements are standard for a premium photography portfolio targ
 |------|--------------|---------|
 | Import all 5 FINAL homepage sections | `XCP_HomeP1-5_*_FINAL.json` | Critical |
 | Replace all `[uc_local]` placeholder image URLs with real photography | All JSON files + WordPress Media Library | Critical |
-| Create and configure Elementor header | `XCP_Header_Navigation.json` (new) | Critical |
-| Create and configure Elementor footer | `XCP_Footer.json` (new) | Critical |
+| Create and configure Elementor header | `XCP_Header_Navigation.json` ✅ created | Critical |
+| Create and configure Elementor footer | `XCP_Footer.json` ✅ created | Critical |
 | Build Contact page | `XCP_Contact_P1_Complete.json` | Critical |
 | Build About page | `XCP_About_P1_Hero_Story.json` + `XCP_About_P2_Process_CTA.json` | Critical |
 | Build Services page | `XCP_Services_P1_Packages.json` | Critical |
@@ -312,7 +312,7 @@ The following requirements are standard for a premium photography portfolio targ
 | Configure Overture automated follow-up email sequence | Overture admin panel | High |
 | Create Privacy Policy page | New WordPress page (use generator + customise) | Critical (GDPR) |
 | Install cookie consent plugin | WordPress plugin (CookieYes recommended) | High (GDPR) |
-| Create standalone Booking page | `XCP_Booking_Page.json` (new) | Medium |
+| Create standalone Booking page | `XCP_Booking_Page.json` ✅ created | Medium |
 
 **Deliverable:** Enquiries captured in Overture CRM; GDPR compliant forms; automated follow-up active.
 
@@ -323,7 +323,7 @@ The following requirements are standard for a premium photography portfolio targ
 
 | Task | File / Action | Priority |
 |------|--------------|---------|
-| Build Blog/Stories page template | `XCP_Blog_P1_Grid_CTA.json` (new) | High |
+| Build Blog/Stories page template | `XCP_Blog_P1_Grid_CTA.json` ✅ created | High |
 | Publish all 5 blog posts | `BLOG_*.md` → WordPress editor | High |
 | Replace placeholder testimonials with real client quotes | Edit testimonial sections in all templates | High |
 | Replace placeholder partner logos | Edit partner logo sections in `XCP_HomeP5_Testimonials_CTA_FINAL.json` | Medium |
@@ -379,12 +379,18 @@ XCP_Contact_P1_Complete.json    ← Add GDPR field; configure Overture webhook; 
 XCP_Services_P1_Packages.json   ← Confirm pricing; add booking CTA buttons
 ```
 
-### Files Requiring Creation
+### Files Created (All Complete)
 ```
-XCP_Header_Navigation.json  ← Elementor sticky header with logo + navigation
-XCP_Footer.json             ← Footer with contact info, social links, legal page links
-XCP_Blog_P1_Grid_CTA.json   ← Blog/Stories page grid + CTA
-XCP_Booking_Page.json       ← Standalone booking page with Overture calendar embed
+XCP_Header_Navigation.json  ✅ Elementor sticky header with logo + navigation
+XCP_Footer.json             ✅ Footer with contact info, social links, legal page links
+XCP_Blog_P1_Grid_CTA.json   ✅ Blog/Stories page grid + CTA
+XCP_Booking_Page.json       ✅ Standalone booking page with Overture/Calendly calendar embed, FAQ
+```
+
+### Forms Updated (GDPR + Webhook)
+```
+XCP_ContactForm_Section.json    ✅ GDPR acceptance field added; Overture webhook action added
+XCP_Contact_P1_Complete.json    ✅ GDPR acceptance field added; Overture webhook action added
 ```
 
 ### Files to Archive (Superseded by FINAL Versions)
@@ -464,8 +470,8 @@ All `[uc_local]` image path references across the FINAL templates. These files m
 | # | Item | Template/File | Effort |
 |---|------|--------------|--------|
 | 1 | Add GDPR consent to all contact forms | `XCP_ContactForm_Section.json`, `XCP_Contact_P1_Complete.json` | 30 min |
-| 2 | Create Elementor header template | `XCP_Header_Navigation.json` (new) | 2 hours |
-| 3 | Create Elementor footer template | `XCP_Footer.json` (new) | 1 hour |
+| 2 | Create Elementor header template | `XCP_Header_Navigation.json` ✅ created | ✅ Done |
+| 3 | Create Elementor footer template | `XCP_Footer.json` ✅ created | ✅ Done |
 | 4 | Replace all placeholder image URLs with real photos | All FINAL JSON files + WordPress | 4–6 hours |
 | 5 | Test contact form → email delivery | Elementor Pro form settings | 30 min |
 | 6 | Verify site loads over HTTPS | Hosting control panel | 15 min |
@@ -481,7 +487,7 @@ All `[uc_local]` image path references across the FINAL templates. These files m
 | 11 | Add real client/partner logos | Edit partner logo sections | 30 min |
 | 12 | Confirm and publish pricing on Services page | `XCP_Services_P1_Packages.json` | 1 hour |
 | 13 | Add Overture booking calendar embed to Contact page | Edit contact template | 2 hours |
-| 14 | Create standalone Booking page | `XCP_Booking_Page.json` (new) | 2 hours |
+| 14 | Create standalone Booking page | `XCP_Booking_Page.json` ✅ created | ✅ Done |
 | 15 | Publish 5 blog posts | WordPress editor | 3 hours |
 
 ---

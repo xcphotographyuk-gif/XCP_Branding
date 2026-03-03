@@ -8,21 +8,34 @@
       "elType": "section",
       "settings": {
         "layout": "full_width",
-        "min_height": {"unit": "vh", "size": 60},
+        "min_height": {
+          "unit": "vh",
+          "size": 60
+        },
         "background_background": "classic",
-        "background_image": {"url": "[uc_local]assets/images/contact-hero.jpg"},
+        "background_image": {
+          "url": "[uc_local]assets/images/contact-hero.jpg"
+        },
         "background_position": "center center",
         "background_size": "cover",
         "background_overlay_background": "classic",
         "background_overlay_color": "rgba(0,0,0,0.5)",
         "content_position": "middle",
-        "padding": {"unit": "%", "top": 8, "right": 5, "bottom": 8, "left": 5}
+        "padding": {
+          "unit": "%",
+          "top": 8,
+          "right": 5,
+          "bottom": 8,
+          "left": 5
+        }
       },
       "elements": [
         {
           "id": "contact_hero_col",
           "elType": "column",
-          "settings": {"_column_size": 100},
+          "settings": {
+            "_column_size": 100
+          },
           "elements": [
             {
               "id": "contact_title",
@@ -54,13 +67,21 @@
       "settings": {
         "layout": "boxed",
         "structure": "20",
-        "padding": {"unit": "px", "top": 80, "right": 20, "bottom": 80, "left": 20}
+        "padding": {
+          "unit": "px",
+          "top": 80,
+          "right": 20,
+          "bottom": 80,
+          "left": 20
+        }
       },
       "elements": [
         {
           "id": "form_col",
           "elType": "column",
-          "settings": {"_column_size": 60},
+          "settings": {
+            "_column_size": 60
+          },
           "elements": [
             {
               "id": "form_intro",
@@ -77,18 +98,76 @@
               "widgetType": "form",
               "settings": {
                 "form_fields": [
-                  {"field_type": "text", "required": "true", "placeholder": "Your Name", "width": "50"},
-                  {"field_type": "email", "required": "true", "placeholder": "Email Address", "width": "50"},
-                  {"field_type": "text", "required": "false", "placeholder": "Company Name", "width": "50"},
-                  {"field_type": "tel", "required": "false", "placeholder": "Phone Number", "width": "50"},
-                  {"field_type": "select", "required": "true", "placeholder": "Type of Photoshoot", "field_options": "Brand Photography\nDocumentary Storytelling\nCorporate Portraits\nEvent Coverage\nEditorial Work\nNot Sure Yet", "width": "100"},
-                  {"field_type": "select", "required": "false", "placeholder": "Budget Range", "field_options": "Under £2,000\n£2,000 - £5,000\n£5,000 - £10,000\n£10,000+\nPrefer to Discuss", "width": "50"},
-                  {"field_type": "date", "required": "false", "placeholder": "Preferred Date", "width": "50"},
-                  {"field_type": "textarea", "required": "true", "placeholder": "Tell us about your brand vision, ideal audience, and what you hope to achieve with your imagery", "rows": 6, "width": "100"}
+                  {
+                    "field_type": "text",
+                    "required": "true",
+                    "placeholder": "Your Name",
+                    "width": "50"
+                  },
+                  {
+                    "field_type": "email",
+                    "required": "true",
+                    "placeholder": "Email Address",
+                    "width": "50"
+                  },
+                  {
+                    "field_type": "text",
+                    "required": "false",
+                    "placeholder": "Company Name",
+                    "width": "50"
+                  },
+                  {
+                    "field_type": "tel",
+                    "required": "false",
+                    "placeholder": "Phone Number",
+                    "width": "50"
+                  },
+                  {
+                    "field_type": "select",
+                    "required": "true",
+                    "placeholder": "Type of Photoshoot",
+                    "field_options": "Brand Photography\nDocumentary Storytelling\nCorporate Portraits\nEvent Coverage\nEditorial Work\nNot Sure Yet",
+                    "width": "100"
+                  },
+                  {
+                    "field_type": "select",
+                    "required": "false",
+                    "placeholder": "Budget Range",
+                    "field_options": "Under \u00a32,000\n\u00a32,000 - \u00a35,000\n\u00a35,000 - \u00a310,000\n\u00a310,000+\nPrefer to Discuss",
+                    "width": "50"
+                  },
+                  {
+                    "field_type": "date",
+                    "required": "false",
+                    "placeholder": "Preferred Date",
+                    "width": "50"
+                  },
+                  {
+                    "field_type": "textarea",
+                    "required": "true",
+                    "placeholder": "Tell us about your brand vision, ideal audience, and what you hope to achieve with your imagery",
+                    "rows": 6,
+                    "width": "100"
+                  },
+                  {
+                    "field_type": "acceptance",
+                    "field_label": "I have read and agree to the <a href='/privacy-policy' target='_blank' rel='noopener noreferrer'>Privacy Policy</a> and consent to XC Photography contacting me about my enquiry.",
+                    "required": "yes",
+                    "field_id": "gdpr_consent",
+                    "width": "100",
+                    "custom_messages": "yes",
+                    "required_message": "Please confirm you have read our Privacy Policy before submitting."
+                  }
                 ],
                 "button_text": "Schedule Discovery Call",
                 "button_size": "lg",
-                "button_align": "left"
+                "button_align": "left",
+                "submit_actions": [
+                  "email",
+                  "webhook"
+                ],
+                "webhook": "https://api.overture.studio/v1/enquiries",
+                "webhook_advanced_data": "yes"
               }
             }
           ]
@@ -96,7 +175,9 @@
         {
           "id": "info_col",
           "elType": "column",
-          "settings": {"_column_size": 40},
+          "settings": {
+            "_column_size": 40
+          },
           "elements": [
             {
               "id": "contact_info_heading",
@@ -120,7 +201,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<div style='background: #f8f8f8; padding: 20px; margin-top: 30px; border-left: 4px solid #000;'><p style='margin: 0; font-size: 0.95rem;'><strong>What to Expect:</strong> We'll respond to your inquiry within 24 hours with next steps for your discovery call—a no-pressure conversation to understand your vision and how we can bring it to life.</p></div>"
+                "editor": "<div style='background: #f8f8f8; padding: 20px; margin-top: 30px; border-left: 4px solid #000;'><p style='margin: 0; font-size: 0.95rem;'><strong>What to Expect:</strong> We'll respond to your inquiry within 24 hours with next steps for your discovery call\u2014a no-pressure conversation to understand your vision and how we can bring it to life.</p></div>"
               }
             }
           ]
@@ -134,13 +215,21 @@
         "layout": "boxed",
         "background_background": "classic",
         "background_color": "#1a1a1a",
-        "padding": {"unit": "px", "top": 60, "right": 20, "bottom": 60, "left": 20}
+        "padding": {
+          "unit": "px",
+          "top": 60,
+          "right": 20,
+          "bottom": 60,
+          "left": 20
+        }
       },
       "elements": [
         {
           "id": "final_cta_col",
           "elType": "column",
-          "settings": {"_column_size": 100},
+          "settings": {
+            "_column_size": 100
+          },
           "elements": [
             {
               "id": "final_cta_text",

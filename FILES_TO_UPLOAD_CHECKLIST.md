@@ -99,16 +99,41 @@
 
 ### Contact Page:
 - [ ] **XCP_Contact_P1_Complete.json**
-  - Complete contact page
+  - Complete contact page (includes GDPR consent field ✅)
   - Upload to templates
 
 **After uploading:**
 - Pages → Add New → Title: "Contact"
 - Edit with Elementor
 - Insert template
-- Configure contact form
-- Add Calendly link
+- Configure contact form email settings in Elementor Pro → Form → Actions After Submit
+- Configure Overture API key in WordPress → Elementor → Integrations (webhook already set in template ✅)
 - Publish
+
+---
+
+### Global Templates (Elementor Pro Theme Builder):
+- [ ] **XCP_Header_Navigation.json**
+  - Sticky header with logo, navigation, "Book a Call" CTA button
+  - Upload via: Templates → Theme Builder → Header → Add New → Import
+  - Set display conditions: Entire Site
+  - Replace `[uc_local]XCP_Logo_White.png` with your uploaded logo
+
+- [ ] **XCP_Footer.json**
+  - Footer with brand info, quick links, services, contact details, social icons, legal bar
+  - Upload via: Templates → Theme Builder → Footer → Add New → Import
+  - Set display conditions: Entire Site
+  - Update social media URLs and contact details
+
+---
+
+### Booking Page:
+- [ ] **XCP_Booking_Page.json**
+  - Standalone booking page with discovery call calendar embed
+  - Upload via: Templates → Saved Templates → Import Templates
+  - Pages → Add New → Title: "Book a Discovery Call"
+  - **Replace the Calendly iframe URL** in the HTML widget with your actual Overture or Calendly embed URL
+  - Publish and link from Header "Book a Call" button
 
 ---
 

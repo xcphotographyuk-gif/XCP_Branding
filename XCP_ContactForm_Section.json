@@ -215,10 +215,25 @@
                     "placeholder": "Anything else you'd like us to know?",
                     "width": "100",
                     "rows": 3
+                  },
+                  {
+                    "field_type": "acceptance",
+                    "field_label": "I have read and agree to the <a href='/privacy-policy' target='_blank' rel='noopener noreferrer'>Privacy Policy</a> and consent to XC Photography contacting me about my enquiry.",
+                    "required": "yes",
+                    "field_id": "gdpr_consent",
+                    "width": "100",
+                    "custom_messages": "yes",
+                    "required_message": "Please confirm you have read our Privacy Policy before submitting."
                   }
                 ],
                 "button_text": "Send Inquiry",
-                "button_align": "center"
+                "button_align": "center",
+                "submit_actions": [
+                  "email",
+                  "webhook"
+                ],
+                "webhook": "https://api.overture.studio/v1/enquiries",
+                "webhook_advanced_data": "yes"
               },
               "elType": "widget",
               "widgetType": "form"

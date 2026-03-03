@@ -1,0 +1,428 @@
+{
+  "version": "0.4",
+  "title": "XCP Booking Page \u2014 Schedule a Discovery Call",
+  "type": "page",
+  "content": [
+    {
+      "id": "booking_hero",
+      "elType": "section",
+      "settings": {
+        "_title": "Booking Hero",
+        "layout": "full_width",
+        "min_height": {
+          "unit": "vh",
+          "size": 50
+        },
+        "background_background": "classic",
+        "background_color": "#1a1a1a",
+        "content_position": "middle",
+        "padding": {
+          "unit": "px",
+          "top": "100",
+          "right": "20",
+          "bottom": "80",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "booking_hero_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "booking_hero_tag",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #d4af37; font-family: Montserrat, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px;'>Free \u2014 No Obligation</p>"
+              }
+            },
+            {
+              "id": "booking_hero_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Book Your Discovery Call",
+                "header_size": "h1",
+                "align": "center",
+                "title_color": "#ffffff",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 52
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 38
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 28
+                },
+                "typography_font_weight": "700"
+              }
+            },
+            {
+              "id": "booking_hero_sub",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #e0e0e0; font-size: 20px; max-width: 680px; margin: 24px auto 0; line-height: 1.7;'>A relaxed 30-minute conversation to understand your brand, your goals, and whether we're the right fit for each other. No pressure. No obligation.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "booking_trust_bar",
+      "elType": "section",
+      "settings": {
+        "_title": "Trust Bar",
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1100
+        },
+        "background_background": "classic",
+        "background_color": "#d4af37",
+        "padding": {
+          "unit": "px",
+          "top": "20",
+          "right": "20",
+          "bottom": "20",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "booking_trust_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "booking_trust_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #1a1a1a; font-family: Montserrat, sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 1px; margin: 0;'>\u2726 Responds within 24 hours &nbsp;&nbsp;|&nbsp;&nbsp; \u2726 5-star rated service &nbsp;&nbsp;|&nbsp;&nbsp; \u2726 500+ brands photographed &nbsp;&nbsp;|&nbsp;&nbsp; \u2726 Based in Brighton, shoots UK-wide</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "booking_main",
+      "elType": "section",
+      "settings": {
+        "_title": "Booking Calendar & Info",
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1200
+        },
+        "structure": "20",
+        "background_background": "classic",
+        "background_color": "#f8f8f8",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "booking_calendar_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 60,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "40",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            },
+            "padding_tablet": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "40",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "booking_calendar_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Choose a Time That Works for You",
+                "header_size": "h2",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 30
+                },
+                "typography_font_weight": "700"
+              }
+            },
+            {
+              "id": "booking_calendar_embed",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<!-- Overture / Calendly booking calendar embed -->\n<!-- Replace the src URL below with your Overture or Calendly embed URL -->\n<!-- Overture embed: Overture Admin \u2192 Booking Pages \u2192 Embed Code -->\n<!-- Calendly embed: calendly.com/[your-username]/discovery-call -->\n<div style=\"min-width:320px; height:700px;\">\n  <iframe\n    src=\"https://calendly.com/xcphotographyuk/discovery-call\"\n    width=\"100%\"\n    height=\"700\"\n    title=\"Book a Discovery Call with XC Photography\"\n    loading=\"lazy\"\n    sandbox=\"allow-forms allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox\"\n    allow=\"payment; geolocation\"\n    style=\"border: none; border-radius: 4px;\"\n  ></iframe>\n</div>",
+                "_element_custom_width": "100"
+              }
+            }
+          ]
+        },
+        {
+          "id": "booking_info_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 40,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "booking_what_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "What Happens on the Call?",
+                "header_size": "h3",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 22
+                },
+                "typography_font_weight": "700"
+              }
+            },
+            {
+              "id": "booking_what_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<ul style='list-style: none; padding: 0; margin: 0 0 30px;'><li style='padding: 10px 0; border-bottom: 1px solid #e8e8e8; font-size: 16px; line-height: 1.6;'>\ud83c\udfaf &nbsp;<strong>We learn about your brand</strong> \u2014 your goals, your audience, and the story you want to tell.</li><li style='padding: 10px 0; border-bottom: 1px solid #e8e8e8; font-size: 16px; line-height: 1.6;'>\ud83d\udcf8 &nbsp;<strong>We explore your vision</strong> \u2014 the look, feel, and emotional impact you're aiming for.</li><li style='padding: 10px 0; border-bottom: 1px solid #e8e8e8; font-size: 16px; line-height: 1.6;'>\ud83d\udca1 &nbsp;<strong>We share ideas</strong> \u2014 concepts, locations, and approaches that fit your brand perfectly.</li><li style='padding: 10px 0; border-bottom: 1px solid #e8e8e8; font-size: 16px; line-height: 1.6;'>\u2705 &nbsp;<strong>We assess fit</strong> \u2014 because the best work happens when photographer and client are genuinely aligned.</li><li style='padding: 10px 0; font-size: 16px; line-height: 1.6;'>\ud83d\udccb &nbsp;<strong>Next steps</strong> \u2014 if it's a great fit, we'll outline a tailored proposal. No pressure either way.</li></ul>"
+              }
+            },
+            {
+              "id": "booking_duration_box",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div style='background: #1a1a1a; color: #ffffff; padding: 24px; border-left: 4px solid #d4af37; margin-bottom: 30px;'><p style='margin: 0 0 6px; font-family: Montserrat, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #d4af37;'>The Details</p><p style='margin: 0; font-size: 15px; line-height: 1.7;'>\ud83d\udcc5 <strong>30 minutes</strong> via Zoom or phone<br>\ud83d\udccd Available UK-wide<br>\ud83c\udf81 <strong>Completely free</strong> \u2014 no obligation<br>\u23f1 Response within 24 hours of booking</p></div>"
+              }
+            },
+            {
+              "id": "booking_prefer_form",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size: 15px; color: #555; line-height: 1.7;'>Prefer to reach out by email first? <a href='/contact' style='color: #1a1a1a; font-weight: 600; text-decoration: underline;'>Use the contact form \u2192</a></p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "booking_faq",
+      "elType": "section",
+      "settings": {
+        "_title": "Booking FAQ",
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 900
+        },
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "faq_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "faq_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Frequently Asked Questions",
+                "header_size": "h2",
+                "align": "center",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "typography_font_weight": "700"
+              }
+            },
+            {
+              "id": "faq_accordion",
+              "elType": "widget",
+              "widgetType": "accordion",
+              "settings": {
+                "tabs": [
+                  {
+                    "tab_title": "Do I need to prepare anything before the call?",
+                    "tab_content": "Not at all \u2014 just show up as you are. If you have a few thoughts about your brand or some visual references you love, feel free to share them, but it's absolutely not required. The conversation will naturally surface everything we need."
+                  },
+                  {
+                    "tab_title": "How quickly will I get a proposal after the call?",
+                    "tab_content": "If we're a great fit, you'll receive a tailored proposal within 48 hours of your discovery call. It will include a recommended package, an outline of what we'll create together, and investment details."
+                  },
+                  {
+                    "tab_title": "What if I'm not ready to book but want to learn more?",
+                    "tab_content": "That's completely fine. The discovery call is exactly the right place to start \u2014 there's no expectation to commit on the day. Many of our best client relationships began with a relaxed exploratory conversation months before the shoot."
+                  },
+                  {
+                    "tab_title": "Do you work with clients outside Brighton?",
+                    "tab_content": "Yes \u2014 XC Photography shoots across the UK. We travel for the right brief. Travel costs for locations more than 50 miles from Brighton are outlined transparently in your proposal."
+                  },
+                  {
+                    "tab_title": "What if I need to reschedule?",
+                    "tab_content": "No problem at all. Use the reschedule link in your booking confirmation email, or email hello@xcphotography.uk and we'll sort it within the hour."
+                  }
+                ],
+                "active_item": 1,
+                "title_html_tag": "h4",
+                "title_typography_font_family": "Montserrat",
+                "title_typography_font_weight": "600",
+                "title_typography_font_size": {
+                  "unit": "px",
+                  "size": 17
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "booking_cta_footer",
+      "elType": "section",
+      "settings": {
+        "_title": "Closing CTA",
+        "layout": "full_width",
+        "background_background": "classic",
+        "background_color": "#1a1a1a",
+        "padding": {
+          "unit": "px",
+          "top": "70",
+          "right": "20",
+          "bottom": "70",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "booking_cta_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "booking_cta_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<h3 style='text-align: center; color: #ffffff; font-family: Montserrat, sans-serif; font-size: 32px; font-weight: 700; margin-bottom: 16px;'>Your Brand Deserves to Be Seen</h3><p style='text-align: center; color: #e0e0e0; font-size: 18px; max-width: 600px; margin: 0 auto 32px; line-height: 1.7;'>Every iconic brand started with a single conversation. Book yours today \u2014 and let's build something that stops the scroll.</p>"
+              }
+            },
+            {
+              "id": "booking_cta_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Book Your Free Discovery Call",
+                "link": {
+                  "url": "#booking_main",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "center",
+                "size": "lg",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "2",
+                  "right": "2",
+                  "bottom": "2",
+                  "left": "2",
+                  "isLinked": true
+                },
+                "border_color": "#d4af37",
+                "color": "#1a1a1a",
+                "background_color": "#d4af37",
+                "hover_color": "#d4af37",
+                "button_background_hover_color": "transparent",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "18",
+                  "right": "40",
+                  "bottom": "18",
+                  "left": "40",
+                  "isLinked": false
+                },
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14
+                },
+                "typography_font_weight": "700",
+                "typography_text_transform": "uppercase",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 1.5
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
