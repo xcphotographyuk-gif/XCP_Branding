@@ -1,0 +1,475 @@
+{
+  "version": "0.4",
+  "title": "XCP Coming Soon Page — Full Template",
+  "_comment": "COMING SOON PAGE: Standalone page template for use before site launch or for specific upcoming service announcements. Includes hero, email sign-up form (Overture webhook), and downloadable services guide link. Palette: #000000 bg, #FFFFFF headings, #E8E4DC accent. Font: Raleway. To use: import into Elementor > Pages > Add New > Import Template. Set page template to 'Elementor Canvas' (no header/footer) or keep header/footer depending on context.",
+  "type": "page",
+  "content": [
+
+    {
+      "id": "cs_hero_section",
+      "elType": "section",
+      "settings": {
+        "_title": "Coming Soon Hero",
+        "layout": "full_width",
+        "background_background": "classic",
+        "background_color": "#000000",
+        "padding": {
+          "unit": "px",
+          "top": "120",
+          "right": "40",
+          "bottom": "80",
+          "left": "40",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "60",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "cs_hero_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "align": "center"
+          },
+          "elements": [
+            {
+              "id": "cs_logo_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-family:Raleway,sans-serif;font-size:11px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#E8E4DC;margin-bottom:40px;'>XC Photography</p>"
+              }
+            },
+            {
+              "id": "cs_eyebrow",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-family:Raleway,sans-serif;font-size:12px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#E8E4DC;margin-bottom:20px;'>Something Is Coming</p>"
+              }
+            },
+            {
+              "id": "cs_hero_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Brand Photography That Tells the Truth About Your Business.",
+                "header_size": "h1",
+                "align": "center",
+                "typography_font_family": "Raleway",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 56
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 40
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 30
+                },
+                "typography_font_weight": "800",
+                "title_color": "#FFFFFF",
+                "max_width": {
+                  "unit": "px",
+                  "size": 820
+                },
+                "max_width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                }
+              }
+            },
+            {
+              "id": "cs_hero_subtext",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-family:Raleway,sans-serif;font-size:18px;font-weight:300;line-height:1.75;color:#cccccc;max-width:600px;margin:24px auto 0;text-align:center;'>XC Photography is launching a new website and expanded services shortly. Leave your details below and be first to know — plus receive a free copy of the XC Photography Services &amp; Workshops Guide.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "cs_signup_section",
+      "elType": "section",
+      "settings": {
+        "_title": "Sign-Up Form",
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 680
+        },
+        "background_background": "classic",
+        "background_color": "#111111",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "40",
+          "bottom": "80",
+          "left": "40",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "60",
+          "right": "20",
+          "bottom": "60",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "cs_signup_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "cs_form_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Stay in the Loop",
+                "header_size": "h2",
+                "align": "center",
+                "typography_font_family": "Raleway",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 30
+                },
+                "typography_font_weight": "700",
+                "title_color": "#FFFFFF"
+              }
+            },
+            {
+              "id": "cs_form_subtext",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-family:Raleway,sans-serif;font-size:15px;font-weight:300;line-height:1.7;color:#aaaaaa;text-align:center;margin:12px 0 32px;'>Sign up for early access, workshop announcements, and availability updates. One email when it matters. Never spam.</p>"
+              }
+            },
+            {
+              "id": "cs_signup_form_widget",
+              "elType": "widget",
+              "widgetType": "form",
+              "settings": {
+                "form_name": "XCP Coming Soon Sign-Up",
+                "_comment": "This form routes to Overture via webhook. The page_source hidden field is auto-populated with the current page URL — in Elementor, set Default Value of this field to the 'Current URL' dynamic tag. The form also triggers a confirmation email with a link to download XCP_Lead_Magnet_Services_Guide.pdf.",
+                "form_fields": [
+                  {
+                    "field_type": "text",
+                    "field_label": "Your Name",
+                    "field_id": "name",
+                    "required": "yes",
+                    "placeholder": "First name",
+                    "width": "50"
+                  },
+                  {
+                    "field_type": "email",
+                    "field_label": "Email Address",
+                    "field_id": "email",
+                    "required": "yes",
+                    "placeholder": "hello@yourbusiness.co.uk",
+                    "width": "50"
+                  },
+                  {
+                    "field_type": "hidden",
+                    "field_label": "Page Source",
+                    "field_id": "page_source",
+                    "required": "no",
+                    "default_value": "[xcp_page_url]",
+                    "width": "100",
+                    "_comment": "Set Default Value to 'Current URL' dynamic tag in Elementor. Tags the Overture contact with the coming soon page URL."
+                  },
+                  {
+                    "field_type": "hidden",
+                    "field_label": "Lead Source Tag",
+                    "field_id": "lead_tag",
+                    "required": "no",
+                    "default_value": "coming-soon-signup",
+                    "width": "100",
+                    "_comment": "Static tag sent to Overture to identify this as a coming-soon page lead. Enables segmented follow-up."
+                  },
+                  {
+                    "field_type": "acceptance",
+                    "field_label": "Yes — send me the free XC Photography Services &amp; Workshops Guide and keep me updated on the launch.",
+                    "field_id": "marketing_optin",
+                    "required": "yes",
+                    "width": "100",
+                    "custom_messages": "yes",
+                    "required_message": "Please tick this box to receive your guide and updates."
+                  },
+                  {
+                    "field_type": "acceptance",
+                    "field_label": "I have read and agree to the <a href='/privacy-policy' target='_blank' style='color:#E8E4DC;text-decoration:underline;'>Privacy Policy</a>.",
+                    "field_id": "gdpr_consent",
+                    "required": "yes",
+                    "width": "100",
+                    "custom_messages": "yes",
+                    "required_message": "Please confirm you have read and agree to the Privacy Policy."
+                  }
+                ],
+                "submit_actions": [
+                  "email",
+                  "webhook"
+                ],
+                "webhook": "https://api.overture.studio/v1/enquiries",
+                "webhook_advanced_data": "yes",
+                "webhook_tags": "source:coming-soon,signup:pre-launch",
+                "button_text": "Get My Free Guide",
+                "button_size": "lg",
+                "button_align": "stretch",
+                "button_background_color": "#E8E4DC",
+                "button_text_color": "#000000",
+                "button_border_radius": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "button_padding": {
+                  "unit": "px",
+                  "top": "18",
+                  "right": "40",
+                  "bottom": "18",
+                  "left": "40",
+                  "isLinked": false
+                },
+                "typography_font_family": "Raleway",
+                "success_message": "You're on the list. Check your inbox — your copy of the XC Photography Services &amp; Workshops Guide is on its way. See you on the other side.",
+                "error_message": "Something went wrong. Please email hello@xcphotography.co.uk directly and we'll sort it."
+              }
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "cs_download_section",
+      "elType": "section",
+      "settings": {
+        "_title": "Download Teaser",
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 680
+        },
+        "background_background": "classic",
+        "background_color": "#0a0a0a",
+        "border_border": "solid",
+        "border_color": "#1f1f1f",
+        "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        },
+        "padding": {
+          "unit": "px",
+          "top": "60",
+          "right": "40",
+          "bottom": "60",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "cs_download_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "cs_download_eyebrow",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-family:Raleway,sans-serif;font-size:11px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#E8E4DC;text-align:center;margin-bottom:16px;'>Free Download</p>"
+              }
+            },
+            {
+              "id": "cs_download_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "The XC Photography Services & Workshops Guide",
+                "header_size": "h3",
+                "align": "center",
+                "typography_font_family": "Raleway",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 24
+                },
+                "typography_font_weight": "700",
+                "title_color": "#FFFFFF"
+              }
+            },
+            {
+              "id": "cs_download_body",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-family:Raleway,sans-serif;font-size:14px;font-weight:300;line-height:1.8;color:#888888;text-align:center;margin:16px auto 0;max-width:520px;'>A plain-English outline of every service and workshop on offer — session types, what's included, how pricing works, and how to book. Designed to be saved, shared, and referred back to.</p><ul style='font-family:Raleway,sans-serif;font-size:14px;color:#888;line-height:2;list-style:none;padding:20px 0 0;text-align:center;margin:0;'><li>✦ Commercial sessions from £1,495</li><li>✦ Documentary storytelling commissions</li><li>✦ Corporate portrait &amp; headshot packages</li><li>✦ Half-day and full-day workshops (Brighton &amp; London)</li><li>✦ One-to-one mentorship</li><li>✦ Online webinars</li></ul>"
+              }
+            },
+            {
+              "id": "cs_download_note",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-family:Raleway,sans-serif;font-size:13px;color:#555;text-align:center;margin-top:28px;'><em>Sign up above to receive your copy. No account required. No commitment.</em></p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "cs_credentials_section",
+      "elType": "section",
+      "settings": {
+        "_title": "Credentials Strip",
+        "layout": "full_width",
+        "background_background": "classic",
+        "background_color": "#000000",
+        "border_border": "solid",
+        "border_color": "#1a1a1a",
+        "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "0",
+          "bottom": "1",
+          "left": "0",
+          "isLinked": false
+        },
+        "padding": {
+          "unit": "px",
+          "top": "50",
+          "right": "40",
+          "bottom": "50",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "cs_cred_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "cs_cred_eyebrow",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-family:Raleway,sans-serif;font-size:11px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#555;text-align:center;margin-bottom:20px;'>Portfolio includes work with</p>"
+              }
+            },
+            {
+              "id": "cs_cred_names",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-family:Raleway,sans-serif;font-size:15px;font-weight:300;color:#666666;text-align:center;line-height:2.2;letter-spacing:0.5px;'>Norman Cook &nbsp;·&nbsp; BBC &nbsp;·&nbsp; Amazon &nbsp;·&nbsp; AWS &nbsp;·&nbsp; Hotel du Vin &nbsp;·&nbsp; Malmaison &nbsp;·&nbsp; The Ivy &nbsp;·&nbsp; i360 &nbsp;·&nbsp; The Royal Pavilion Brighton<br>Eddie Izzard &nbsp;·&nbsp; Woody Cook &nbsp;·&nbsp; The Beach Boys &nbsp;·&nbsp; Goldie &nbsp;·&nbsp; Norman Jay OBE &nbsp;·&nbsp; Dean Chalkley &nbsp;·&nbsp; Gamerspot</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "cs_footer_section",
+      "elType": "section",
+      "settings": {
+        "_title": "Minimal Footer",
+        "layout": "full_width",
+        "background_background": "classic",
+        "background_color": "#000000",
+        "padding": {
+          "unit": "px",
+          "top": "40",
+          "right": "40",
+          "bottom": "40",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "cs_footer_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "cs_footer_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-family:Raleway,sans-serif;font-size:13px;font-weight:300;color:#444;text-align:center;line-height:1.8;'>XC Photography &nbsp;·&nbsp; Xavier Clarke &nbsp;·&nbsp; Brighton &amp; London &nbsp;·&nbsp; <a href='mailto:hello@xcphotography.co.uk' style='color:#555;text-decoration:none;'>hello@xcphotography.co.uk</a><br><a href='/privacy-policy' style='color:#444;text-decoration:none;'>Privacy Policy</a> &nbsp;·&nbsp; <a href='/contact' style='color:#444;text-decoration:none;'>Contact</a></p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+
+  ],
+
+  "_implementation_notes": {
+    "page_setup": [
+      "Create new WordPress page titled 'Coming Soon' (slug: /coming-soon)",
+      "Set Elementor page template to 'Elementor Canvas' (removes header and footer for a standalone experience) — OR keep the standard template if you want the site header/footer visible",
+      "Import this JSON via Elementor > My Templates > Import, then apply to the page"
+    ],
+    "hidden_field_dynamic_tag": [
+      "In Elementor form widget, click the 'page_source' field row",
+      "In the Default Value field, click the dynamic tag icon (the grid icon)",
+      "Select 'Current URL'",
+      "This automatically populates the field with the URL of the page the form is on, which Overture receives as a tagged field"
+    ],
+    "lead_magnet_delivery": [
+      "Upload XCP_Lead_Magnet_Services_Guide.pdf (converted from XCP_Lead_Magnet_Services_Guide.md) to WordPress Media Library",
+      "Copy the file URL (e.g. https://xcphotography.co/wp-content/uploads/xcp-services-guide.pdf)",
+      "In Overture, create an automation: trigger = new contact with tag 'coming-soon-signup' → action = send email with the PDF download link",
+      "Alternatively, use Elementor Form > Email action: set the confirmation email body to include the download link — this works without Overture automation and sends immediately on form submission"
+    ],
+    "overture_tags": [
+      "The webhook sends tags: source:coming-soon, signup:pre-launch",
+      "The page_source field sends the exact URL",
+      "In Overture, create a segment: tag = coming-soon-signup for pre-launch email sequence"
+    ],
+    "pdf_conversion": [
+      "Convert XCP_Lead_Magnet_Services_Guide.md to PDF using: Pandoc (command line), Markdown to PDF VS Code extension, or paste into Google Docs and export",
+      "Recommended filename: xcp-photography-services-guide.pdf",
+      "Add the XCP logo/header image to the PDF before uploading if possible"
+    ]
+  }
+}

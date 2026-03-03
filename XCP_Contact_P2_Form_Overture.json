@@ -135,6 +135,22 @@
                     "width": "100"
                   },
                   {
+                    "field_type": "hidden",
+                    "field_label": "Page Source",
+                    "field_id": "page_source",
+                    "required": "no",
+                    "default_value": "[xcp_page_url]",
+                    "width": "100",
+                    "_comment": "Auto-populated with the URL of the page where the form was submitted. Elementor dynamic: set Default Value to 'Current URL' in widget settings. Maps to Overture tag 'page:value'."
+                  },
+                  {
+                    "field_type": "acceptance",
+                    "field_label": "Yes, I'd like to receive XC Photography updates \u2014 occasional news about availability, workshops, and editorial projects. No spam, unsubscribe any time.",
+                    "field_id": "email_marketing_optin",
+                    "required": "no",
+                    "width": "100"
+                  },
+                  {
                     "field_type": "acceptance",
                     "field_label": "I have read and agree to the <a href='/privacy-policy' target='_blank' style='color:#1a1a1a;text-decoration:underline;'>Privacy Policy</a> and consent to XC Photography contacting me about my enquiry.",
                     "field_id": "gdpr_consent",
@@ -172,7 +188,9 @@
                   "isLinked": false
                 },
                 "success_message": "Thank you. Your enquiry is on its way. I'll be in touch within 24 hours to arrange a discovery call.",
-                "error_message": "Something went wrong. Please email me directly at hello@xcphotography.co.uk or call +44 (0) 7XXX XXXXXX."
+                "error_message": "Something went wrong. Please email me directly at hello@xcphotography.co.uk or call +44 (0) 7XXX XXXXXX.",
+                "webhook_tags": "source:contact-form,page:[xcp_page_url]",
+                "_comment_webhook": "Overture receives: all field values (webhook_advanced_data:yes) + tags (page source, form source). In Elementor, set the page_source hidden field Default Value to 'Current URL' (dynamic tag). Overture maps page_source to a contact tag automatically."
               }
             }
           ]
@@ -248,7 +266,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='font-size:15px;line-height:1.8;color:#444;margin-top:12px;'><strong>Xavier Clarke</strong><br>XC Photography<br><br><a href='mailto:hello@xcphotography.co.uk' style='color:#1a1a1a;text-decoration:none;border-bottom:1px solid #E8E4DC;'>hello@xcphotography.co.uk</a><br><a href='tel:+441234567890' style='color:#1a1a1a;text-decoration:none;'>+44 (0) 1234 567890</a><br><br>Brighton-based · UK & International<br>Mon–Fri 9am–6pm · Sat by appointment</p>"
+                "editor": "<p style='font-size:15px;line-height:1.8;color:#444;margin-top:12px;'><strong>Xavier Clarke</strong><br>XC Photography<br><br><a href='mailto:hello@xcphotography.co.uk' style='color:#1a1a1a;text-decoration:none;border-bottom:1px solid #E8E4DC;'>hello@xcphotography.co.uk</a><br><a href='tel:+441234567890' style='color:#1a1a1a;text-decoration:none;'>+44 (0) 1234 567890</a><br><br>Brighton-based \u00b7 UK & International<br>Mon\u2013Fri 9am\u20136pm \u00b7 Sat by appointment</p>"
               }
             },
             {
