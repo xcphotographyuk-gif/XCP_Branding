@@ -1,0 +1,217 @@
+{
+  "version": "0.4",
+  "title": "XCP Contact — Form + Info Panel — EMAIL FALLBACK — Section 2 of 4",
+  "_comment": "FALLBACK FORM: Routes enquiries via Elementor email notification only. Use this if Overture webhook is not yet configured, or as a backup when Overture is unavailable. Swap for XCP_Contact_P2_Form_Overture.json once Overture is active. The field set and UX are identical to the Overture version — zero disruption to visitors.",
+  "type": "section",
+  "content": [
+    {
+      "id": "contact_form_fallback",
+      "elType": "section",
+      "settings": {
+        "_title": "Contact Form — Email Fallback",
+        "layout": "boxed",
+        "content_width": {"unit": "px", "size": 1200},
+        "structure": "20",
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "padding": {"unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20", "isLinked": false},
+        "gap": "wide"
+      },
+      "elements": [
+        {
+          "id": "form_col_fallback",
+          "elType": "column",
+          "settings": {
+            "_column_size": 60,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100,
+            "padding": {"unit": "px", "top": "0", "right": "40", "bottom": "0", "left": "0", "isLinked": false}
+          },
+          "elements": [
+            {
+              "id": "form_eyebrow_fb",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:#888;font-weight:600;font-family:Montserrat,sans-serif;margin-bottom:10px;'>Start the Conversation</p>"
+              }
+            },
+            {
+              "id": "form_heading_fb",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Tell Me About Your Vision",
+                "header_size": "h2",
+                "typography_font_size": {"unit": "px", "size": 34},
+                "typography_font_size_mobile": {"unit": "px", "size": 26}
+              }
+            },
+            {
+              "id": "form_intro_fb",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size:16px;line-height:1.7;color:#555;margin:12px 0 28px;'>No scripts, no pressure. Just an honest conversation about what you need and whether I'm the right fit to deliver it. I aim to respond within 24 hours.</p>"
+              }
+            },
+            {
+              "id": "contact_form_widget_fallback",
+              "elType": "widget",
+              "widgetType": "form",
+              "settings": {
+                "form_name": "XCP Contact — Email Fallback",
+                "form_fields": [
+                  {
+                    "field_type": "text",
+                    "field_label": "Your Name",
+                    "field_id": "name",
+                    "required": "yes",
+                    "placeholder": "First and last name",
+                    "width": "50"
+                  },
+                  {
+                    "field_type": "email",
+                    "field_label": "Email Address",
+                    "field_id": "email",
+                    "required": "yes",
+                    "placeholder": "hello@yourbrand.co.uk",
+                    "width": "50"
+                  },
+                  {
+                    "field_type": "tel",
+                    "field_label": "Phone Number",
+                    "field_id": "phone",
+                    "required": "no",
+                    "placeholder": "+44 (0) 7XXX XXXXXX",
+                    "width": "50"
+                  },
+                  {
+                    "field_type": "select",
+                    "field_label": "Type of Project",
+                    "field_id": "project_type",
+                    "required": "yes",
+                    "field_options": "Brand Photography Session\nDocumentary Business Storytelling\nCorporate Portraits & Headshots\nEvent & Performance Coverage\nEditorial Work\nFine Art Commission\nWorkshop or Photography Course\nNot Sure Yet — Let's Talk",
+                    "width": "50"
+                  },
+                  {
+                    "field_type": "date",
+                    "field_label": "Preferred Date (if known)",
+                    "field_id": "preferred_date",
+                    "required": "no",
+                    "placeholder": "Approximate date",
+                    "width": "100"
+                  },
+                  {
+                    "field_type": "textarea",
+                    "field_label": "Tell Me About Your Brand & Vision",
+                    "field_id": "message",
+                    "required": "yes",
+                    "placeholder": "What does your brand stand for? Who is your ideal client? What do you hope authentic photography will do for your business? The more you share, the better I can prepare.",
+                    "rows": 6,
+                    "width": "100"
+                  },
+                  {
+                    "field_type": "acceptance",
+                    "field_label": "I have read and agree to the <a href='/privacy-policy' target='_blank' style='color:#1a1a1a;text-decoration:underline;'>Privacy Policy</a> and consent to XC Photography contacting me about my enquiry.",
+                    "field_id": "gdpr_consent",
+                    "required": "yes",
+                    "width": "100",
+                    "custom_messages": "yes",
+                    "required_message": "Please confirm you have read and agree to the Privacy Policy before submitting."
+                  }
+                ],
+                "submit_actions": ["email"],
+                "email_to": "hello@xcphotography.co.uk",
+                "email_subject": "New Enquiry from xcphotography.co — {field_id:project_type}",
+                "email_content": "Name: {field_id:name}\nEmail: {field_id:email}\nPhone: {field_id:phone}\nProject Type: {field_id:project_type}\nPreferred Date: {field_id:preferred_date}\n\nMessage:\n{field_id:message}",
+                "button_text": "Send My Enquiry",
+                "button_size": "lg",
+                "button_align": "left",
+                "button_background_color": "#1a1a1a",
+                "button_text_color": "#ffffff",
+                "button_border_radius": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true},
+                "button_padding": {"unit": "px", "top": "16", "right": "40", "bottom": "16", "left": "40", "isLinked": false},
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {"unit": "px", "size": 13},
+                "typography_font_weight": "600",
+                "typography_text_transform": "uppercase",
+                "typography_letter_spacing": {"unit": "px", "size": 1.5},
+                "success_message": "Thank you — your enquiry is on its way. I'll be in touch within 24 hours to arrange a discovery call.",
+                "error_message": "Something went wrong. Please email me directly at hello@xcphotography.co.uk or call +44 (0) 7XXX XXXXXX."
+              }
+            }
+          ]
+        },
+        {
+          "id": "info_col_fallback",
+          "elType": "column",
+          "settings": {
+            "_column_size": 40,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100,
+            "background_background": "classic",
+            "background_color": "#f8f8f8",
+            "padding": {"unit": "px", "top": "50", "right": "40", "bottom": "50", "left": "40", "isLinked": false}
+          },
+          "elements": [
+            {
+              "id": "info_heading_fb",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "What to Expect",
+                "header_size": "h3",
+                "typography_font_size": {"unit": "px", "size": 26}
+              }
+            },
+            {
+              "id": "info_steps_fb",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<ol style='padding-left:20px;font-size:15px;line-height:1.9;color:#444;margin-top:16px;'><li style='margin-bottom:14px;'><strong>You send your enquiry</strong> — this form takes less than 3 minutes.</li><li style='margin-bottom:14px;'><strong>I respond within 24 hours</strong> — usually much sooner — with a few questions if I need them.</li><li style='margin-bottom:14px;'><strong>We have a free discovery call</strong> — 20 minutes, no pressure, just honest conversation.</li><li style='margin-bottom:14px;'><strong>I put together a tailored proposal</strong> — specific to your brand and goals, not a generic price list.</li><li><strong>We create something worth remembering.</strong></li></ol>"
+              }
+            },
+            {
+              "id": "info_divider_fb",
+              "elType": "widget",
+              "widgetType": "divider",
+              "settings": {
+                "style": "solid",
+                "color": "#dddddd",
+                "gap": {"unit": "px", "size": 28}
+              }
+            },
+            {
+              "id": "info_contact_fb",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Direct Contact",
+                "header_size": "h4",
+                "typography_font_size": {"unit": "px", "size": 18}
+              }
+            },
+            {
+              "id": "info_details_fb",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size:15px;line-height:1.8;color:#444;margin-top:12px;'><strong>Xavier Clarke</strong><br>XC Photography<br><br><a href='mailto:hello@xcphotography.co.uk' style='color:#1a1a1a;text-decoration:none;border-bottom:1px solid #d4af37;'>hello@xcphotography.co.uk</a><br><a href='tel:+441234567890' style='color:#1a1a1a;text-decoration:none;'>+44 (0) 1234 567890</a><br><br>Brighton-based · UK &amp; International<br>Mon–Fri 9am–6pm · Sat by appointment</p>"
+              }
+            },
+            {
+              "id": "info_note_fb",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div style='background:#fff;border-left:3px solid #d4af37;padding:14px 18px;margin-top:24px;font-size:14px;line-height:1.7;color:#555;'><strong>Not ready to enquire?</strong><br>That's fine. <a href='/portfolio' style='color:#1a1a1a;text-decoration:underline;'>Browse the portfolio</a> first, or <a href='/stories' style='color:#1a1a1a;text-decoration:underline;'>read the blog</a> to see how I think about brand photography.</div>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
