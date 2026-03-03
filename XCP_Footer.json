@@ -277,7 +277,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<div style='margin-top: 16px;'><p style='color: #aaaaaa; font-size: 14px; margin-bottom: 10px;'><a href='mailto:hello@xcphotography.co.uk' style='color: #d4af37; text-decoration: none;'>hello@xcphotography.co.uk</a></p><p style='color: #aaaaaa; font-size: 14px; margin-bottom: 10px;'><a href='tel:+441234567890' style='color: #aaaaaa; text-decoration: none;'>+44 (0) 1234 567890</a></p><p style='color: #aaaaaa; font-size: 14px; margin-bottom: 0;'>Mon–Fri: 9:00 AM – 6:00 PM<br>Sat: By Appointment</p></div>"
+                "editor": "<div style='margin-top: 16px;'><p style='color: #aaaaaa; font-size: 14px; margin-bottom: 10px;'><a href='mailto:hello@xcphotography.co.uk' style='color: #d4af37; text-decoration: none;'>hello@xcphotography.co.uk</a></p><p style='color: #aaaaaa; font-size: 14px; margin-bottom: 10px;'><a href='tel:+441234567890' style='color: #aaaaaa; text-decoration: none;'>+44 (0) 1234 567890</a></p><p style='color: #aaaaaa; font-size: 14px; margin-bottom: 0;'>Mon\u2013Fri: 9:00 AM \u2013 6:00 PM<br>Sat: By Appointment</p></div>"
               }
             },
             {
@@ -379,7 +379,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='color: #666666; font-size: 13px; margin: 0;'>&copy; 2025 XC Photography. All rights reserved. Registered in England &amp; Wales.</p>"
+                "editor": "<p style='color: #666666; font-size: 13px; margin: 0;'>&copy; 2026 XC Photography. All rights reserved. Registered in England &amp; Wales.</p>"
               }
             }
           ]
