@@ -1,6 +1,6 @@
 # Between the Frames — Video & Vlog Strategy
 ## XC Photography's Show Concept, Content Plan & YouTube System
-### Inspired by Adorama's "Coffee with Creators" Format
+### XCP: Coffee with Creators
 
 ---
 
@@ -17,7 +17,7 @@
 
 ## WHY THIS WORKS FOR XC PHOTOGRAPHY
 
-Adorama's "Coffee with Creators" proved a model: a working photographer hosting honest, casual conversations with other photographers and visual creators builds enormous authority, community, and discoverability — without selling anything.
+A working photographer hosting honest, casual conversations with other photographers and visual creators builds enormous authority, community, and discoverability — without selling anything.
 
 The show isn't advertising. The show *is* the brand.
 
@@ -34,16 +34,16 @@ For Xavier Clarke, "Between the Frames" does several things simultaneously:
 
 ## SHOW FORMAT — EPISODE STRUCTURE
 
-### The Adorama Coffee with Creators Template (Adapted)
+### The Coffee with Creators Format
 
-Adorama's format: Seth Miranda, relaxed coffeehouse conversation, ~60 minutes, live audience Q&A, Wednesday 11am ET, broadcast from their event space, then distributed as podcast.
+The format: relaxed conversation, ~60 minutes, live audience Q&A, broadcast then distributed as podcast.
 
 **"Between the Frames" adaptation:**
 
-| Element | Adorama Model | XC Photography Version |
+| Element | Reference Model | XC Photography Version |
 |---------|-------------|----------------------|
 | Length | ~60 minutes | 35-50 minutes (tighter for YouTube watch time) |
-| Setting | Adorama Event Space, NYC | Rotating: studio session, coffee shop, location |
+| Setting | Fixed studio space | Rotating: studio session, coffee shop, location |
 | Host style | Casual, conversational | Xavier's natural voice — direct, warm, curious |
 | Live broadcast | Wednesday 11am ET | Thursday 12pm UK — LinkedIn Live + YouTube Live |
 | Guest type | Photographers, creators | Brand owners, photographers, marketing pros, creative directors |
@@ -65,7 +65,7 @@ Guest does NOT read a bio. Xavier gives it in his own words, from genuine knowle
 **[05:00–15:00] The origin story**  
 How did they get here? Not a CV — the actual story. The turn that mattered. The failure that changed things. The unexpected moment.
 
-*Adorama's formula: the guest's creative journey, told honestly. The bits that didn't work matter more than the bits that did.*
+*The formula: the guest's creative journey, told honestly. The bits that didn't work matter more than the bits that did.*
 
 **[15:00–30:00] The work — deep dive**  
 One project, one area of expertise, one thing they've built or discovered that's genuinely interesting. Xavier has done the research. This is not "tell me about your work" — it's "I noticed you changed how you approach [X] — talk me through that decision."
@@ -77,7 +77,7 @@ For creative directors: what they look for, what bad photography costs, what goo
 **[30:00–40:00] The honest bit**  
 What's actually hard about this. What they got wrong. What they'd do differently. What the industry gets wrong that they've stopped pretending is fine.
 
-*This is the section that drives shares. Adorama guests' most-clipped moments are always the moments of honest discomfort.*
+*This is the section that drives shares. The most-clipped moments are always the moments of honest discomfort.*
 
 **[40:00–47:00] Audience Q&A**  
 Live questions from LinkedIn/YouTube. Xavier reads them, edits for clarity, credits the asker.
@@ -135,7 +135,7 @@ Brand strategists, marketing professionals, art directors, web designers, social
 
 ### Minimum Viable Setup (Launch Phase)
 
-The goal at launch is **consistency over quality**. Adorama's Coffee with Creators started simply. The production values improved with the audience, not before it.
+The goal at launch is **consistency over quality**. Start simply. Production values improve with the audience, not before it.
 
 **Equipment:**
 - Camera: Any mirrorless or DSLR Xavier already owns (this is not a gear problem)
@@ -157,7 +157,7 @@ The goal at launch is **consistency over quality**. Adorama's Coffee with Creato
 
 ## CONTENT RECYCLING — ONE EPISODE, 12 PIECES OF CONTENT
 
-This is the Adorama model's real superpower. One 45-minute episode generates:
+This is the format's real superpower. One 45-minute episode generates:
 
 | # | Content Piece | Platform | Time to Produce |
 |---|-------------|---------|----------------|
@@ -182,7 +182,7 @@ This is the Adorama model's real superpower. One 45-minute episode generates:
 
 ## BEHIND-THE-SCENES VLOG CONTENT
 
-Alongside the main interview show, a lighter BTS vlog format runs on YouTube and Instagram. This is the "day in the life" content that Adorama's channel also produces between interview episodes.
+Alongside the main interview show, a lighter BTS vlog format runs on YouTube and Instagram — the "day in the life" content that sits between interview episodes.
 
 ### XC Photography Vlog Series Concepts
 
@@ -284,7 +284,7 @@ Clean, consistent template. Xavier on left, guest on right, episode title in bol
 - Share guest's episode with them so they share it to their own network
 
 ### Post-launch cadence
-- One new episode every Thursday (non-negotiable — Adorama's consistency is what built their audience)
+- One new episode every Thursday (non-negotiable — consistency is what builds an audience)
 - Weekly LinkedIn post drawing on the episode content
 - Monthly LinkedIn Live (live version of a shorter episode, building to the main channel)
 - Quarterly review: which episodes performed best? Why? Do more of that.
@@ -299,7 +299,7 @@ The audio-only version of the show, stripped from the YouTube recording. Publish
 - Reaches audiences who consume while driving, exercising, commuting (London commuters = huge audience)
 - Podcast listeners are statistically more engaged and more likely to convert
 - RSS feeds distribute automatically to Spotify, Apple, Google Podcasts, Amazon Music
-- Jeff Brown has a significant podcast presence — this is a core channel for photographer authority building
+- Podcast appearances are a core channel for photographer authority building
 
 **Setup:** Export audio track from video edit → upload to Buzzsprout or Podbean (from £7/month) → auto-distributes to all platforms.
 

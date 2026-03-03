@@ -146,4 +146,4 @@ Or if you'd rather see the work first:
 
 ---
 
-*Xavier Clarke is a brand and documentary photographer working in London and Brighton, and across the UK. Every image starts with understanding who you are, who you're speaking to, and what will make those specific people stop and pay attention. Trained under Jeff Brown. 15+ years experience. Brand photography sessions from £1,495. Free discovery call available.*
+*Xavier Clarke is a brand and documentary photographer working in London and Brighton, and across the UK. Every image starts with understanding who you are, who you're speaking to, and what will make those specific people stop and pay attention. Formally trained in brand photography. 15+ years experience. Brand photography sessions from £1,495. Free discovery call available.*

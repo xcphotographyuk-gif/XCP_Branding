@@ -19,7 +19,7 @@ Your brand deserves more than stock photos and staged smiles. But it also deserv
 
 Before I pick up a camera, I need to understand three things: who you actually are, who you're trying to reach, and what it is about you that will make those people stop and pay attention. Not your elevator pitch. The actual thing.
 
-That conversation shapes every decision I make — the location, the light, the timing, the moments I chase and the ones I let go. I've spent 15+ years making the technical side of photography invisible — it's automatic, and it needs to be. I've trained seriously in the discipline of brand photography, including as a mentee of Jeff Brown, one of the most respected educators in the field. But technique alone doesn't make the image. Understanding does.
+That conversation shapes every decision I make — the location, the light, the timing, the moments I chase and the ones I let go. I've spent 15+ years making the technical side of photography invisible — it's automatic, and it needs to be. I've trained seriously in the discipline of brand photography, with formal rigour behind every decision I make. But technique alone doesn't make the image. Understanding does.
 
 What I'm actually creating — every time — is a photograph with intent behind it. One that shows the personality of the person, place, or thing — not a performance of it. An image that makes your ideal client stop mid-scroll and think: that's exactly who I want to work with.
 

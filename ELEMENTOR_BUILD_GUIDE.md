@@ -384,11 +384,6 @@ Replace with the actual number in:
 - `XCP_Contact_P1_Complete.json` or the contact page in Elementor
 - `XCP_Footer.json` or the footer in Elementor
 
-### 8.6 Jeff Brown / Photographers Mentor Link
-
-About P1 contains a link to `https://thephotographersmentor.com` (Jeff Brown's site).
-This is intentional — it is a credibility reference. Leave as-is or remove if preferred.
-
 ---
 
 ## Part 9: Colour Palette (Reference)

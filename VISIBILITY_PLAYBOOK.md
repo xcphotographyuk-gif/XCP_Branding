@@ -1,14 +1,14 @@
 # XC Photography — Visibility Playbook
-## Jeff Brown-Inspired System for Becoming the Most Visible Brand & Documentary Photographer in the UK
+## XCP Visibility System: Becoming the Most Visible Brand & Documentary Photographer in the UK
 
-**Reference:** Jeff Brown's LinkedIn authority-building approach, adapted for Xavier Clarke's Brighton/London positioning  
+
 **Core principle:** Value-first, story-led, consistently present — build the audience that brings the clients
 
 ---
 
 ## THE MINDSET SHIFT
 
-Jeff Brown's core insight, and the one that makes everything else work: **stop selling photography, start selling transformation.**
+The insight that makes everything else work: **stop selling photography, start selling transformation.**
 
 Your clients don't actually want photographs. They want:
 - To be taken seriously by their ideal clients
@@ -18,13 +18,13 @@ Your clients don't actually want photographs. They want:
 
 Every piece of content you create, every platform you show up on, every conversation you have — it's answering that need. Not "here are my photos." But "here's what the right photos do to a business like yours."
 
-That shift — from photographer to transformation provider — is what separates the visible photographers from the invisible ones. Jeff Brown built his entire reputation around it. This playbook does the same for Xavier Clarke.
+That shift — from photographer to transformation provider — is what separates the visible photographers from the invisible ones. This playbook builds Xavier Clarke's visibility around it.
 
 ---
 
 ## PART 1 — THE LINKEDIN ENGINE
 
-Jeff Brown's most documented claim: LinkedIn is the single highest-ROI platform for brand photographers targeting business clients. His system, adapted here:
+LinkedIn is the single highest-ROI platform for brand photographers targeting business clients. The system:
 
 ### 1.1 Profile as a Landing Page
 
@@ -47,7 +47,7 @@ Your brand deserves more than stock photos and staged smiles. But it also deserv
 
 Before I pick up a camera, I need to understand three things: who you actually are, who you're trying to reach, and what it is about you that will make those people stop and pay attention. Not your elevator pitch. The actual thing.
 
-That conversation shapes every decision I make — the location, the light, the timing, the moments I chase and the ones I let go. I've spent 15+ years making the technical side of photography invisible — it's automatic, and it needs to be. I've trained seriously in brand photography, including as a mentee of Jeff Brown, one of the most respected educators in the field. But technique alone doesn't make the image. Understanding does.
+That conversation shapes every decision I make — the location, the light, the timing, the moments I chase and the ones I let go. I've spent 15+ years making the technical side of photography invisible — it's automatic, and it needs to be. I've trained seriously in brand photography, with formal discipline behind every decision I make. But technique alone doesn't make the image. Understanding does.
 
 What I'm actually creating — every time — is a photograph with intent behind it. One that shows the personality of the person, place, or thing — not a performance of it. An image that makes your ideal client stop mid-scroll and think: that's exactly who I want to work with.
 
@@ -86,7 +86,7 @@ Ready to talk about what your brand actually needs? Book a free 20-minute discov
 
 ### 1.2 The 40-Minute Daily LinkedIn System
 
-Jeff Brown's prescription: 40-60 minutes per day, split as follows. This is the system — not occasional posting, but consistent daily presence.
+40-60 minutes per day, split as follows. This is the system — not occasional posting, but consistent daily presence.
 
 **10 minutes — engage first:**
 Before you post anything, go and genuinely engage with 5-10 posts in your feed. Real comments (3+ sentences, adding value or a genuine perspective). Not "great post!" — substantive responses that show you've actually read what was written. This primes the algorithm and builds relationships before you ask for anything.
@@ -104,7 +104,7 @@ Send 3-5 personalised connection requests to ideal clients (marketing directors,
 
 ### 1.3 Content Pillars — What to Post
 
-Five content pillars, rotate through them. Never more than one "selling" post per week. Jeff Brown's rule: 80% education/inspiration/story, 20% offers.
+Five content pillars, rotate through them. Never more than one "selling" post per week. The rule: 80% education/inspiration/story, 20% offers.
 
 **Pillar 1 — BEFORE/AFTER TRANSFORMATION (highest engagement)**
 Show what a brand looked like before a photography session (describe it, or use with-permission before screenshots) and after. The story is the transformation, not the photography. Caption focus: what changed for the business, not how the photos look.
@@ -172,7 +172,7 @@ Topics:
 
 ### 1.4 LinkedIn Newsletter
 
-Jeff Brown runs a LinkedIn Newsletter as a core visibility tool. Posts go to followers; newsletters get delivered to subscriber inboxes — much higher reach per piece.
+A LinkedIn Newsletter is a core visibility tool. Posts go to followers; newsletters get delivered to subscriber inboxes — much higher reach per piece.
 
 **Suggested newsletter name:** "The Visual Business" or "Between the Frames" (ties to the video show name)
 
@@ -192,7 +192,7 @@ Jeff Brown runs a LinkedIn Newsletter as a core visibility tool. Posts go to fol
 
 ### 1.5 LinkedIn Lives
 
-Jeff Brown uses LinkedIn Lives for real-time authority building. Host a monthly LinkedIn Live.
+LinkedIn Lives build real-time authority. Host a monthly LinkedIn Live.
 
 **Format options:**
 - Solo: "Brand Photography Q&A" — answer audience questions live
@@ -292,9 +292,9 @@ Brand photography has high visual search volume on Pinterest. Unlike Instagram, 
 
 ---
 
-## PART 3 — AUTHORITY POSITIONING (JEFF BROWN'S DIFFERENTIATOR)
+## PART 3 — AUTHORITY POSITIONING
 
-Jeff Brown became visible not by being the best photographer in Scotland but by becoming the most *educational* brand photographer on LinkedIn. His book, podcast appearances, and consistent teaching content made him the go-to reference point for business clients who'd decided they needed brand photography.
+Visibility comes not from being the best photographer in any city but from becoming the most *educational* brand photographer on LinkedIn. A book, podcast appearances, and consistent teaching content make you the go-to reference point for business clients who've decided they need brand photography.
 
 The equivalent for Xavier Clarke:
 

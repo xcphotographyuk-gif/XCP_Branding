@@ -1,12 +1,12 @@
 # Workshops & Events Strategy
 ## XC Photography — In-Person, Online, 1-2-1, and Group Formats
-### Inspired by Adorama's Events Model | Brighton & London Primary Venues
+### XCP Workshops and Events Strategy | Brighton & London Primary Venues
 
 ---
 
 ## OVERVIEW
 
-Adorama runs one of the most successful photographer education event programmes in the world — from free weekly live shows (Coffee with Creators) to paid in-person workshops in their New York event space, to online webinars and on-demand content. The model works because it creates community, authority, and revenue simultaneously.
+The most effective photographer education programmes combine free live content with paid in-person workshops and online webinars. The model works because it creates community, authority, and revenue simultaneously.
 
 **XC Photography's equivalent:** A structured education and events programme operating across Brighton and London, with online delivery for UK-wide and international reach. Four formats. One coherent brand. Every event reinforces the message that Xavier Clarke is *the* documentary brand photographer to learn from and hire.
 
@@ -129,7 +129,7 @@ A premium London-based retreat (held at a hired London venue or central London s
 - 12:30pm — Lunch
 - 1:30pm — Location 1: urban / commercial shoot
 - 4:00pm — Image review, critique, feedback
-- 6:00pm — Evening: dinner together (group dynamic builds here — Adorama's model shows social time is essential)
+- 6:00pm — Evening: dinner together (group dynamic builds here — social time is essential)
 
 *Day 2:*
 - 9:00am — Review previous day's work
@@ -144,7 +144,7 @@ A premium London-based retreat (held at a hired London venue or central London s
 
 ## PART 2 — ONLINE WORKSHOPS & WEBINARS
 
-Adorama's online model: free live webinars building the audience; paid courses generating recurring revenue.
+The model: free live webinars build the audience; paid courses generate recurring revenue.
 
 ### Format E — Free Monthly Webinar (Audience Builder)
 
@@ -232,7 +232,7 @@ Run the content as a live cohort first (paid live online workshop × 3 iteration
 
 ## PART 3 — 1-2-1 MENTORING
 
-Adorama's events model includes individual sessions. For XC Photography this means two formats:
+The events model includes individual sessions. For XC Photography this means two formats:
 
 ### Format H — Business Photography Mentoring (1-2-1, for photographers)
 
@@ -346,20 +346,20 @@ List in-person events for discoverability beyond existing audience. Eventbrite S
 
 ---
 
-## APPENDIX — ADORAMA EVENTS: WHAT TO BORROW VS. WHAT TO ADAPT
+## APPENDIX — EVENTS MODEL: WHAT WORKS VS. WHAT TO ADAPT
 
-| Adorama Approach | XC Photography Adaptation |
+| Proven Approach | XC Photography Adaptation |
 |-----------------|--------------------------|
 | Free weekly show (Coffee with Creators) | Free monthly webinar "The Visual Business" + "Between the Frames" weekly show |
 | Event space (fixed NYC location) | Rotating Brighton + London venues (flexibility is a feature, not a bug) |
 | Professional guests from photography world | Mix of photographers, business owners, brand strategists (broader appeal) |
 | Paid in-person workshops | Same format, dual-city delivery |
-| Community (Adorama Learning Center) | XC Photography alumni community (private LinkedIn group or Slack) |
+| Community platform | XC Photography alumni community (private LinkedIn group or Slack) |
 | Free YouTube content as top of funnel | Same — free webinars + Between the Frames as traffic driver |
 | Paid on-demand courses | Visual Storytelling for Business self-paced course |
-| Partnership with gear brands (Adorama's model) | Partnership with complementary service providers (brand designers, web developers, marketers) |
+| Partnerships | Partnership with complementary service providers (brand designers, web developers, marketers) |
 
-**What Adorama does that doesn't apply here:**  
+**What doesn't apply here:**  
 - Retail tie-ins (not relevant — XC Photography isn't a retailer)
 - Fixed venue with same week/time for years (valuable for them; rotating venues are more dynamic and city-spanning for XC Photography)
 - Global scope (Brighton + London is the sweet spot; global is aspirational not operational)

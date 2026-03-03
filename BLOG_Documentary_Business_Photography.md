@@ -164,4 +164,4 @@ And if you're ready to talk about what documentary photography could do for your
 
 ---
 
-*Xavier Clarke is a brand and documentary photographer working in London and Brighton, and across the UK. He shoots with intent — starting every brief with a real conversation about who you are, who you're trying to reach, and what it is about you that will make those people stop and pay attention. Trained under Jeff Brown. 15+ years experience. Starting from £1,495.*
+*Xavier Clarke is a brand and documentary photographer working in London and Brighton, and across the UK. He shoots with intent — starting every brief with a real conversation about who you are, who you're trying to reach, and what it is about you that will make those people stop and pay attention. Formally trained in brand photography. 15+ years experience. Starting from £1,495.*
