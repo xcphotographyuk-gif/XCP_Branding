@@ -1,6 +1,19 @@
 # XCP_Branding
 Complete Website & Marketing System for XC Photography
 
+---
+
+## ⚡ QUICK ACCESS — START HERE
+
+| What you need | Direct link |
+|---|---|
+| 📋 **Import instructions** (how to use the files, in order) | **[JSON_IMPORT_INDEX.md](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/JSON_IMPORT_INDEX.md)** |
+| 📁 **All JSON files** (browse & download every template) | **[Browse JSON files on GitHub](https://github.com/xcphotographyuk-gif/XCP_Branding/tree/copilot/audit-website-structure#-quick-file-reference)** |
+
+> **How to use:** Open the import instructions link above → it lists every JSON file page-by-page with a direct "Open" link next to each one → click the file → click the **Raw** button → save as `.json` → import into Elementor.
+
+---
+
 ## 🚀 START HERE
 
 **→ [XCP_MASTER_PLAN.md](XCP_MASTER_PLAN.md) ⭐ THE COMPLETE PLAN — everything in order, step by step, from first login to £30k/month**
