@@ -1,8 +1,23 @@
 # XCP Photography — Elementor Import Guide
 ## Every page. Every section. In order. One file at a time.
 
+**← [Back to Start: README](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/README.md) · [Master Action Plan](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_MASTER_PLAN.md) (this is Step 5)**
+
 Import each file below using **Elementor → folder icon (bottom-left) → Import Template → Insert**.
 Work top to bottom within each page. Finish one page before starting the next.
+
+---
+
+## Page order — jump to any section
+
+1. [🏠 Home Page](#-home-page) — 7 files
+2. [👤 About Page](#-about-page) — 4 files
+3. [🎯 Services Page](#-services-page) — 3 files
+4. [📷 Portfolio Page](#-portfolio-page) — 2 files
+5. [📬 Contact Page](#-contact-page) — 3 files
+6. [📖 Blog / Stories Page](#-blog--stories-page) — 3 files
+7. [📅 Booking Page](#-booking-page) — 3 files
+8. [🌐 Global: Header & Footer](#-global-elements--header--footer)
 
 ---
 
@@ -18,6 +33,8 @@ Work top to bottom within each page. Finish one page before starting the next.
 | 6 | Process Timeline | `XCP_Home_S4b_Process.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Home_S4b_Process.json) |
 | 7 | Testimonials + Partners + CTA | `XCP_HomeP5_Testimonials_CTA_FINAL.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_HomeP5_Testimonials_CTA_FINAL.json) |
 
+✅ **Home page complete — [→ Next: About Page](#-about-page)**
+
 ---
 
 ## 👤 ABOUT PAGE
@@ -29,6 +46,8 @@ Work top to bottom within each page. Finish one page before starting the next.
 | 3 | The Experience + Steps 1 & 2 | `XCP_About_S3_Experience_Steps12.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_About_S3_Experience_Steps12.json) |
 | 4 | Steps 3 & 4 + CTA | `XCP_About_S4_Steps34_CTA.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_About_S4_Steps34_CTA.json) |
 
+✅ **About page complete — [→ Next: Services Page](#-services-page)**
+
 ---
 
 ## 🎯 SERVICES PAGE
@@ -39,6 +58,8 @@ Work top to bottom within each page. Finish one page before starting the next.
 | 2 | Brand Foundation + Elevation | `XCP_Services_S2_Foundation_Elevation.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Services_S2_Foundation_Elevation.json) |
 | 3 | Transformation + Bespoke Enquiry | `XCP_Services_S3_Transformation_Bespoke.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Services_S3_Transformation_Bespoke.json) |
 
+✅ **Services page complete — [→ Next: Portfolio Page](#-portfolio-page)**
+
 ---
 
 ## 📷 PORTFOLIO PAGE
@@ -47,6 +68,8 @@ Work top to bottom within each page. Finish one page before starting the next.
 |---|---|---|---|
 | 1 | Hero + Filter Bar + Gallery | `XCP_Portfolio_P1_Hero_Filter.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Portfolio_P1_Hero_Filter.json) |
 | 2 | Extended Gallery + CTA | `XCP_Portfolio_P2_Gallery_CTA.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Portfolio_P2_Gallery_CTA.json) |
+
+✅ **Portfolio page complete — [→ Next: Contact Page](#-contact-page)**
 
 ---
 
@@ -60,6 +83,8 @@ Work top to bottom within each page. Finish one page before starting the next.
 
 > No Overture plugin yet? Use [`XCP_Contact_P2_Form_Fallback.json`](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Contact_P2_Form_Fallback.json) for section 2 — swap it when Overture is connected.
 
+✅ **Contact page complete — [→ Next: Blog / Stories Page](#-blog--stories-page)**
+
 ---
 
 ## 📖 BLOG / STORIES PAGE
@@ -70,6 +95,8 @@ Work top to bottom within each page. Finish one page before starting the next.
 | 2 | Posts Grid + Category Filter | `XCP_Blog_S2_Grid_Filter.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Blog_S2_Grid_Filter.json) |
 | 3 | Newsletter Signup + Final CTA | `XCP_Blog_S3_Newsletter_CTA.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Blog_S3_Newsletter_CTA.json) |
 
+✅ **Blog page complete — [→ Next: Booking Page](#-booking-page)**
+
 ---
 
 ## 📅 BOOKING PAGE
@@ -79,6 +106,8 @@ Work top to bottom within each page. Finish one page before starting the next.
 | 1 | Hero + Trust Bar | `XCP_Booking_S1_Hero_Trust.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Booking_S1_Hero_Trust.json) |
 | 2 | Booking Calendar + FAQ | `XCP_Booking_S2_Calendar_FAQ.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Booking_S2_Calendar_FAQ.json) |
 | 3 | Closing CTA | `XCP_Booking_S3_CTA.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Booking_S3_CTA.json) |
+
+✅ **Booking page complete — [→ Next: Global Header & Footer](#-global-elements--header--footer)**
 
 ---
 
@@ -91,6 +120,8 @@ Then assign via **Theme Builder → All Pages**.
 |---|---|---|
 | Header (sticky nav) | `XCP_Header_Navigation.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Header_Navigation.json) |
 | Footer (full 4-column) | `XCP_Footer.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Footer.json) |
+
+✅ **Global elements done — all templates imported!**
 
 ---
 
@@ -111,3 +142,7 @@ Then assign via **Theme Builder → All Pages**.
 - **Contact details** — replace any dummy phone/email with your real ones
 - **Prices** — £1,495 floor showing correctly on Services and wherever pricing appears
 - **Images** — placeholders will show; add yours from the `images/` folder in this repo
+
+---
+
+🎉 **All imports complete — [→ Return to Master Action Plan (Step 6: Add Images)](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_MASTER_PLAN.md)**

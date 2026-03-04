@@ -152,6 +152,8 @@ These are global — they appear on every page. Import them before any page temp
 
 ### STEP 5 — Import all page templates (~90 minutes)
 
+> 📋 **Full import index with direct download links:** see [`JSON_IMPORT_INDEX.md`](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/JSON_IMPORT_INDEX.md) — every file, every page, in order.
+
 **The method is the same for every section:**
 1. Open the page in Elementor (Pages list → hover → Edit with Elementor)
 2. Click the grey folder icon at the bottom of the canvas, or click **+** → Templates
@@ -161,26 +163,34 @@ These are global — they appear on every page. Import them before any page temp
 
 **Home page — import in this exact order:**
 
+> ⚠️ The original Part 1 file has been split into two smaller files so Elementor can handle it. Import S1a first, then S1b.
+
 | # | File |
 |---|---|
-| 1 | `XCP_HomeP1_Hero_Gallery_FINAL.json` |
-| 2 | `XCP_HomeP2_Parallax_Text_FINAL.json` |
-| 3 | `XCP_HomeP3_Checkerboard_FINAL.json` |
-| 4 | `XCP_HomeP4_Stats_Process_FINAL.json` |
-| 5 | `XCP_HomeP5_Testimonials_CTA_FINAL.json` |
+| 1 | `XCP_Home_S1a_Hero_Concepts.json` |
+| 2 | `XCP_Home_S1b_Gallery.json` |
+| 3 | `XCP_HomeP2_Parallax_Text_FINAL.json` |
+| 4 | `XCP_HomeP3_Checkerboard_FINAL.json` |
+| 5 | `XCP_Home_S4a_Stats_Pillars.json` |
+| 6 | `XCP_Home_S4b_Process.json` |
+| 7 | `XCP_HomeP5_Testimonials_CTA_FINAL.json` |
 
 **About page:**
 
 | # | File |
 |---|---|
-| 1 | `XCP_About_P1_Hero_Story.json` |
-| 2 | `XCP_About_P2_Process_CTA.json` |
+| 1 | `XCP_About_S1_Hero_Values.json` |
+| 2 | `XCP_About_S2_Pillars_Credentials.json` |
+| 3 | `XCP_About_S3_Experience_Steps12.json` |
+| 4 | `XCP_About_S4_Steps34_CTA.json` |
 
 **Services page:**
 
 | # | File |
 |---|---|
-| 1 | `XCP_Services_P1_Packages.json` |
+| 1 | `XCP_Services_S1_Hero_Intro.json` |
+| 2 | `XCP_Services_S2_Foundation_Elevation.json` |
+| 3 | `XCP_Services_S3_Transformation_Bespoke.json` |
 
 **Portfolio page:**
 
@@ -193,7 +203,9 @@ These are global — they appear on every page. Import them before any page temp
 
 | # | File |
 |---|---|
-| 1 | `XCP_Blog_P1_Grid_CTA.json` |
+| 1 | `XCP_Blog_S1_Hero_Featured.json` |
+| 2 | `XCP_Blog_S2_Grid_Filter.json` |
+| 3 | `XCP_Blog_S3_Newsletter_CTA.json` |
 
 **Contact page — choose one version:**
 
@@ -219,7 +231,9 @@ These are global — they appear on every page. Import them before any page temp
 
 | # | File |
 |---|---|
-| 1 | `XCP_Booking_Page.json` |
+| 1 | `XCP_Booking_S1_Hero_Trust.json` |
+| 2 | `XCP_Booking_S2_Calendar_FAQ.json` |
+| 3 | `XCP_Booking_S3_CTA.json` |
 
 **✓ Done when:** Every page has its sections imported. You can preview each page and see the layout.
 
@@ -835,26 +849,39 @@ London corporate sessions: £3,000–£8,000 per day. Add a few each month and t
 
 ## Elementor templates — import directly to WordPress
 
+> For the full ordered import guide with direct download links, see [`JSON_IMPORT_INDEX.md`](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/JSON_IMPORT_INDEX.md).
+
 | File | What it builds | When |
 |---|---|---|
 | `XCP_Header_Navigation.json` | Site header and nav | Step 4 — import first |
 | `XCP_Footer.json` | Site footer | Step 4 — import first |
-| `XCP_HomeP1_Hero_Gallery_FINAL.json` | Homepage hero + gallery bar | Step 5 |
+| `XCP_Home_S1a_Hero_Concepts.json` | Homepage hero + concept boxes | Step 5 |
+| `XCP_Home_S1b_Gallery.json` | Homepage 4-box gallery bar | Step 5 |
 | `XCP_HomeP2_Parallax_Text_FINAL.json` | Homepage parallax panel | Step 5 |
 | `XCP_HomeP3_Checkerboard_FINAL.json` | Homepage checkerboard strip | Step 5 |
-| `XCP_HomeP4_Stats_Process_FINAL.json` | Homepage stats + process | Step 5 |
+| `XCP_Home_S4a_Stats_Pillars.json` | Homepage stats + three pillars | Step 5 |
+| `XCP_Home_S4b_Process.json` | Homepage process timeline | Step 5 |
 | `XCP_HomeP5_Testimonials_CTA_FINAL.json` | Homepage testimonials + CTA | Step 5 |
-| `XCP_About_P1_Hero_Story.json` | About page hero + story | Step 5 |
-| `XCP_About_P2_Process_CTA.json` | About page process + CTA | Step 5 |
-| `XCP_Services_P1_Packages.json` | Services page + pricing | Step 5 |
+| `XCP_About_S1_Hero_Values.json` | About hero + core values | Step 5 |
+| `XCP_About_S2_Pillars_Credentials.json` | About pillars + credentials | Step 5 |
+| `XCP_About_S3_Experience_Steps12.json` | About experience + steps 1–2 | Step 5 |
+| `XCP_About_S4_Steps34_CTA.json` | About steps 3–4 + CTA | Step 5 |
+| `XCP_Services_S1_Hero_Intro.json` | Services hero + intro | Step 5 |
+| `XCP_Services_S2_Foundation_Elevation.json` | Services Foundation + Elevation packages | Step 5 |
+| `XCP_Services_S3_Transformation_Bespoke.json` | Services Transformation + Bespoke | Step 5 |
 | `XCP_Portfolio_P1_Hero_Filter.json` | Portfolio hero + filter tabs | Step 5 |
 | `XCP_Portfolio_P2_Gallery_CTA.json` | Portfolio extended gallery | Step 5 |
-| `XCP_Blog_P1_Grid_CTA.json` | Blog listing page | Step 5 |
-| `XCP_Contact_P1_Complete.json` | Contact page — all-in-one | Step 5 |
+| `XCP_Blog_S1_Hero_Featured.json` | Blog hero + featured post | Step 5 |
+| `XCP_Blog_S2_Grid_Filter.json` | Blog posts grid + filter | Step 5 |
+| `XCP_Blog_S3_Newsletter_CTA.json` | Blog newsletter + final CTA | Step 5 |
+| `XCP_Contact_P1_Hero.json` | Contact hero | Step 5 |
 | `XCP_Contact_P2_Form_Overture.json` | Contact form → Overture | Step 5 |
 | `XCP_Contact_P2_Form_Fallback.json` | Contact form → email only | Step 5 |
+| `XCP_Contact_P4_CTA.json` | Contact closing CTA | Step 5 |
+| `XCP_Booking_S1_Hero_Trust.json` | Booking hero + trust bar | Step 5 |
+| `XCP_Booking_S2_Calendar_FAQ.json` | Booking calendar + FAQ | Step 5 |
+| `XCP_Booking_S3_CTA.json` | Booking closing CTA | Step 5 |
 | `XCP_Coming_Soon_Page.json` | Coming soon + sign-up | Step 14 |
-| `XCP_Booking_Page.json` | Booking / enquiry page | Step 5 |
 
 ## Blog posts — upload to WordPress
 
