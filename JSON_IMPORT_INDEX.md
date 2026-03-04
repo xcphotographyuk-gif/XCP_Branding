@@ -10,12 +10,13 @@ Work top to bottom within each page. Finish one page before starting the next.
 
 | # | Section | File | Link |
 |---|---|---|---|
-| 1 | Hero + Gallery | `XCP_HomeP1_Hero_Gallery_FINAL.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_HomeP1_Hero_Gallery_FINAL.json) |
-| 2 | Parallax + Text | `XCP_HomeP2_Parallax_Text_FINAL.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_HomeP2_Parallax_Text_FINAL.json) |
-| 3 | Checkerboard (2 panels) | `XCP_HomeP3_Checkerboard_FINAL.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_HomeP3_Checkerboard_FINAL.json) |
-| 4 | Stats + Three Pillars | `XCP_Home_S4a_Stats_Pillars.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Home_S4a_Stats_Pillars.json) |
-| 5 | Process Timeline | `XCP_Home_S4b_Process.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Home_S4b_Process.json) |
-| 6 | Testimonials + Partners + CTA | `XCP_HomeP5_Testimonials_CTA_FINAL.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_HomeP5_Testimonials_CTA_FINAL.json) |
+| 1 | Hero + Brand Story Concept Boxes | `XCP_Home_S1a_Hero_Concepts.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Home_S1a_Hero_Concepts.json) |
+| 2 | 4-Box Gallery Bar | `XCP_Home_S1b_Gallery.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Home_S1b_Gallery.json) |
+| 3 | Parallax + Text | `XCP_HomeP2_Parallax_Text_FINAL.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_HomeP2_Parallax_Text_FINAL.json) |
+| 4 | Checkerboard (2 panels) | `XCP_HomeP3_Checkerboard_FINAL.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_HomeP3_Checkerboard_FINAL.json) |
+| 5 | Stats + Three Pillars | `XCP_Home_S4a_Stats_Pillars.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Home_S4a_Stats_Pillars.json) |
+| 6 | Process Timeline | `XCP_Home_S4b_Process.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Home_S4b_Process.json) |
+| 7 | Testimonials + Partners + CTA | `XCP_HomeP5_Testimonials_CTA_FINAL.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_HomeP5_Testimonials_CTA_FINAL.json) |
 
 ---
 
