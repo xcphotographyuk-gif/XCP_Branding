@@ -520,7 +520,7 @@ Stock income compounds. It's slow at first (£50–£200/month year one) but by 
 | `VISIBILITY_PLAYBOOK.md` | LinkedIn engine, social media system |
 | `WARM_OUTREACH_TEMPLATES.md` | Every outreach email you'll need |
 | `WORKSHOPS_EVENTS_STRATEGY.md` | Workshop formats, pricing, venues |
-| `SMUGMUG_SETUP_GUIDE.md` | Print sales setup |
+| `SMUGMUG_SETUP_GUIDE.md` | **Phase 2 only** — portfolio display and client gallery delivery (after main site is fully live and generating bookings) |
 | `WOOCOMMERCE_INTEGRATION_GUIDE.md` | WooCommerce and Prodigi setup |
 | `AMAZON_AFFILIATE_INTEGRATION_DETAILED.md` | Affiliate income setup |
 | `FREE_TOOLS_REVENUE_PLAN.md` | Full passive income stack |

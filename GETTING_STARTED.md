@@ -25,25 +25,27 @@
 ## 📋 THE 3-PHASE PLAN
 
 ### PHASE 1: WEBSITE (THIS WEEK)
-**File:** `WEBSITE_IMPLEMENTATION_GUIDE.md`  
+**Files:**
+- `ELEMENTOR_BUILD_GUIDE.md` ⭐ **Primary guide — plugin setup, import order, per-page instructions**
+- `WEBSITE_IMPLEMENTATION_GUIDE.md` — supplementary step-by-step walkthrough
+
 **Time:** 8-12 hours  
 **Goal:** Professional website live at www.xcphotography.co  
 
-**What to Upload:**
-- XCP_HomeP1_Hero_Gallery_FINAL.json
-- XCP_HomeP2_Parallax_Text_FINAL.json
-- XCP_HomeP3_Checkerboard_FINAL.json
-- XCP_HomeP4_Stats_Process_FINAL.json
-- XCP_HomeP5_Testimonials_CTA_FINAL.json
-- XCP_ContactForm_Section.json
-- (Plus: About, Services, Portfolio pages)
+**What to Import (in this order):**
+- XCP_Header_Navigation.json + XCP_Footer.json (global elements first)
+- XCP_HomeP1_Hero_Gallery_FINAL.json → HomeP2 → HomeP3 → HomeP4 → HomeP5
+- XCP_About_P1_Hero_Story.json + XCP_About_P2_Process_CTA.json
+- XCP_Services_P1_Packages.json
+- XCP_Portfolio_P1_Hero_Filter.json + XCP_Portfolio_P2_Gallery_CTA.json
+- XCP_Contact_P1_Complete.json + XCP_ContactForm_Section.json
 
 ---
 
 ### PHASE 2: GET CLIENTS (WEEK 2+)
 **Files:** `FOR_PEOPLE_NERVOUS_ABOUT_DIGITAL.md` + `SOCIAL_MEDIA_IMPLEMENTATION.md`  
 **Time:** 10-12 hours/week  
-**Goal:** £2,400-£10,500/month in bookings  
+**Goal:** Sessions booked at £1,495+
 
 **What to Do:**
 - Network in person (your strength!)
@@ -117,10 +119,10 @@
 ## ⏱️ TIMELINE
 
 **Week 1:** Website live  
-**Week 2-4:** First clients booked (£800-£3,500/week)  
+**Week 2-4:** First clients booked (£1,495+ per session)  
 **Month 2:** Blog live + passive income starting  
-**Month 3:** £4,000-£15,000/month (multiple streams)  
-**Month 6:** £5,000-£20,000/month  
+**Month 3:** £4,485–£8,970+/month (sessions + passive streams)  
+**Month 6:** £10,000–£20,000+/month  
 
 ---
 

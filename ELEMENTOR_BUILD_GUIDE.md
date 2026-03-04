@@ -420,9 +420,9 @@ Work through this after all templates are imported.
 - [ ] Upload `XCP_Logo_White.png` to Media Library and assign to footer logo widget
 
 ### WooCommerce
-- [ ] Create Brand Foundation product (`/shop/brand-foundation`) — £800
-- [ ] Create Brand Elevation product (`/shop/brand-elevation`) — £1,800
-- [ ] Create Brand Transformation product (`/shop/brand-transformation`) — £3,500
+- [ ] Create Brand Foundation product (`/shop/brand-foundation`) — £1,495
+- [ ] Create Brand Elevation product (`/shop/brand-elevation`) — £2,500
+- [ ] Create Brand Transformation product (`/shop/brand-transformation`) — £4,500
 - [ ] Connect Stripe as payment gateway (WooCommerce > Settings > Payments)
 - [ ] Disable PayPal (leave unconfigured)
 - [ ] Set shop currency to GBP (WooCommerce > Settings > General)

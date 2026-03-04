@@ -3,14 +3,12 @@ Complete Website & Marketing System for XC Photography
 
 ## 🚀 START HERE
 
-**AUDIT CONFIRMED — ALL TEMPLATES COMPLETE.**  
-**→ `NEXT_STEPS_STRATEGY.md` ⭐ READ THIS FIRST — confirmed audit + final action plan**
+**→ `GETTING_STARTED.md` ⭐ READ THIS FIRST — everything you need, in order**
 
-**NEED TO KNOW WHAT TO UPLOAD?** → `FILES_TO_UPLOAD_CHECKLIST.md` ⭐ **Every file listed with checkboxes**
+Everything else in this repository flows from that one file. Start there and it will point you to the right guide for each step.
 
-**NEED AN ACTION PLAN?** → `QUICK_START_PRIORITY_CHECKLIST.md` ⭐ **What to do first, step-by-step**
-
-**WANT THE BIG PICTURE?** → `GETTING_STARTED.md` ⭐ **5-minute overview**
+**Phase 1 (WordPress + Elementor site):** `ELEMENTOR_BUILD_GUIDE.md` is the authoritative build reference — plugin requirements, import order, per-page instructions, and troubleshooting.  
+**Phase 2 (SmugMug):** Deferred — `SMUGMUG_SETUP_GUIDE.md` — only after the main site is fully live and generating bookings.
 
 ---
 
@@ -50,7 +48,7 @@ Upload your complete website to www.xcphotography.co:
 - `SOCIAL_MEDIA_IMPLEMENTATION.md` - LinkedIn, Instagram, Facebook
 
 **Time:** 10-12 hours/week  
-**Result:** 2-5 consultation calls/week, £800-£3,500/week in bookings
+**Result:** 2-5 consultation calls/week — sessions from £1,495
 
 ---
 
@@ -150,7 +148,7 @@ Upload your complete website to www.xcphotography.co:
 
 ### Month 1 - Active Client Acquisition:
 - **Investment:** 10-12 hours/week
-- **Result:** £2,400-£10,500 (3-6 bookings)
+- **Result:** £4,485–£8,970+ (3–6 bookings at £1,495+)
 
 ### Month 2 - Add Passive Income:
 - **Investment:** 15-20 hours/week (active + setup)
