@@ -12,13 +12,21 @@
         "content_width": "full",
         "gap": "no",
         "background_background": "classic",
-        "background_color": "rgba(0,0,0,0.92)",
+        "background_color": "#000000",
         "padding": {
           "unit": "px",
           "top": "18",
           "right": "40",
           "bottom": "18",
           "left": "40",
+          "isLinked": false
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "14",
+          "right": "24",
+          "bottom": "14",
+          "left": "24",
           "isLinked": false
         },
         "padding_mobile": {
@@ -29,6 +37,16 @@
           "left": "20",
           "isLinked": false
         },
+        "border_border": "solid",
+        "border_width": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "1",
+          "left": "0",
+          "isLinked": false
+        },
+        "border_color": "rgba(232,228,220,0.15)",
         "sticky": "yes",
         "sticky_on": ["desktop", "tablet", "mobile"],
         "sticky_offset": 0,
@@ -40,7 +58,7 @@
           "elType": "column",
           "settings": {
             "_column_size": 25,
-            "_column_size_tablet": 50,
+            "_column_size_tablet": 70,
             "_column_size_mobile": 70,
             "vertical_align": "middle",
             "padding": {
@@ -117,7 +135,8 @@
                 "menu": "primary",
                 "layout": "horizontal",
                 "align_items": "center",
-                "pointer": "none",
+                "pointer": "underline",
+                "animation_duration": "300ms",
                 "item_gap": {
                   "unit": "px",
                   "size": 36
@@ -136,6 +155,8 @@
                 "color_menu_item": "#FFFFFF",
                 "color_menu_item_hover": "#E8E4DC",
                 "color_menu_item_active": "#E8E4DC",
+                "pointer_color_hover": "#E8E4DC",
+                "pointer_color_active": "#E8E4DC",
                 "toggle_align": "center"
               }
             }
@@ -146,7 +167,7 @@
           "elType": "column",
           "settings": {
             "_column_size": 20,
-            "_column_size_tablet": 50,
+            "_column_size_tablet": 30,
             "_column_size_mobile": 30,
             "vertical_align": "middle",
             "text_align": "right",
@@ -217,7 +238,7 @@
                 },
                 "hide_desktop": "",
                 "hide_tablet": "",
-                "hide_mobile": ""
+                "hide_mobile": "hidden-mobile"
               }
             },
             {
@@ -231,6 +252,15 @@
                 "color_menu_item": "#FFFFFF",
                 "color_menu_item_hover": "#E8E4DC",
                 "toggle_icon_color": "#FFFFFF",
+                "dropdown_bg_color": "#000000",
+                "dropdown_padding": {
+                  "unit": "px",
+                  "top": "20",
+                  "right": "24",
+                  "bottom": "20",
+                  "left": "24",
+                  "isLinked": false
+                },
                 "hide_desktop": "hidden-desktop",
                 "hide_tablet": "",
                 "hide_mobile": ""

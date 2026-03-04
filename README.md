@@ -8,7 +8,6 @@ Complete Website & Marketing System for XC Photography
 | What you need | Direct link |
 |---|---|
 | 📋 **Import instructions** — every file, every page, in order | **[→ Open JSON_IMPORT_INDEX.md](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/JSON_IMPORT_INDEX.md)** |
-| 📁 **Browse all JSON files** — every Elementor template in the repo | **[→ Browse all files in this repo](https://github.com/xcphotographyuk-gif/XCP_Branding/tree/copilot/audit-website-structure)** |
 
 > **How to use:** Click **Import instructions** above → every JSON file is listed page-by-page with a direct link → click the file → hit the **Raw** button → save as `.json` → import into Elementor.
 
