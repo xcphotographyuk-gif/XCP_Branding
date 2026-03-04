@@ -9,7 +9,7 @@ Search engines cannot see images. They can only read the words attached to them.
 An image of Skunk Anansie at Concorde 2 Brighton is, to a search engine, meaningless
 pixels until words describe it. The most striking photograph in the library is invisible
 online without keywords. This is true whether the image lives on the website, in
-Lightroom, on SmugMug, on Alamy, or anywhere else.
+Lightroom, on SmugMug galleries, on Alamy, or anywhere else.
 
 The standard that runs through every keyword decision here is three words:
 
@@ -121,7 +121,7 @@ Set this as the export filename in Lightroom:
 File Naming > Edit > use tokens: `{custom_text}-xc-photography` and rename
 before export, or batch rename using Library > Rename Photos.
 
-### 3. Alt Text (on the website and SmugMug)
+### 3. Alt Text (on the website and SmugMug galleries)
 
 Alt text is what screen readers read and what Google indexes for image search.
 Every image on every page must have unique alt text. Empty alt text is a failure
@@ -147,7 +147,7 @@ City Spirit documentary photography, Millennium Bridge London — long exposure 
 Fine art photography print, Hotel du Vin Brighton — Brighton Spirit Collection
 ```
 
-### 4. Page/Gallery Title and Description (SmugMug, website, Lightroom collections)
+### 4. Page/Gallery Title and Description (SmugMug galleries, website, Lightroom collections)
 
 The words surrounding an image on a page also contribute to how it is found.
 Gallery titles, page headings, and captions all feed into search ranking.
@@ -345,7 +345,7 @@ gallery photography Brighton, exhibition photography, collectible photography
 ## Lightroom Workflow: Step by Step
 
 This is the sequence for every image that leaves Lightroom, whether for the website,
-SmugMug, social media, or a client delivery.
+SmugMug galleries, social media, or a client delivery.
 
 **1. At import:**
 - Apply a metadata preset that auto-fills: Creator, Credit, Copyright, Source

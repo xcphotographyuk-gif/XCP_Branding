@@ -6,63 +6,35 @@
 ## Overview: What SmugMug Is Good For
 
 SmugMug is a professional photo hosting and portfolio platform. For XCP Photography it
-serves three specific purposes:
+serves two specific purposes:
 
 1. **Portfolio display** — high-resolution galleries that load fast and look sharp on any screen
 2. **Client gallery delivery** — password-protected galleries for delivering work to clients
-3. **Print sales** — selling physical prints directly from gallery pages
 
-It works alongside xcphotography.co.uk, not instead of it. Think of it as the gallery
-engine that feeds traffic back to the main site for bookings and brand photography services.
+**All print sales, shop sales, and digital downloads go through WooCommerce on xcphotography.co.**
+SmugMug is not a commerce channel. It is a gallery and delivery platform only.
 
----
-
-## Selling Strategy: No PayPal Required
-
-You have two clean routes for selling on SmugMug without using PayPal.
-
-### Option A: SmugMug Native Print Sales (Recommended for prints)
-
-SmugMug's built-in commerce uses **Stripe** as the payment processor. PayPal is optional
-and can simply be left disabled. Clients pay by card through Stripe.
-
-**How to enable Stripe only:**
-1. SmugMug Account > Selling > Payment Settings
-2. Connect your Stripe account
-3. Do NOT connect PayPal (leave it blank)
-4. Done. Clients see card payment only.
-
-SmugMug handles fulfilment through their partner labs (Bay Photo, WHCC, Miller's Lab).
-You set your own markup on top of lab cost prices.
-
-**Best for:** Fine art prints, canvas, framed prints, cards. Physical product sales.
-
-**SmugMug's cut:** They take a percentage of the markup you set. You keep everything above
-their base lab price. Set your prices in Gallery Manager > Selling > Price Lists.
+It works alongside xcphotography.co.uk, not instead of it. SmugMug galleries are optimised
+for display and delivery; they link back to the main site for all purchasing.
 
 ---
 
-### Option B: WooCommerce Redirect (Recommended for sessions and digital products)
+## Commerce Strategy: WooCommerce Only
 
-For booking sessions, digital downloads, and anything that lives in your WooCommerce shop,
-use custom HTML buy buttons inside SmugMug pages that send the customer directly to your
-WooCommerce product page.
+All transactions — prints, digital downloads, gift vouchers, sessions, workshops — go through
+WooCommerce on xcphotography.co. This means:
 
-**No SmugMug commission. No PayPal. Payment goes straight through your WooCommerce gateway
-(Stripe or whatever you have set up).**
+- **One payment gateway** (Stripe) configured in one place
+- **One order management system** for everything
+- **Full margin** — no third-party commerce cut
+- **One customer record** per buyer across all products
 
-Use this for:
-- Brand photography session bookings
-- Digital image downloads sold as WooCommerce products
-- Gift vouchers
-- Anything you want full margin on
+SmugMug galleries link to WooCommerce product pages using the HTML buy buttons in this guide.
+SmugMug's native print commerce (Option A in the old setup) is not used.
 
----
-
-### Option C: Combined (Best overall approach)
-
-- Physical prints: SmugMug native commerce (Stripe, lab fulfilment handled for you)
-- Sessions and digital: WooCommerce redirect buttons in HTML blocks
+**The WooCommerce print product catalogue is in `SHOP_PRODUCTS_CSV_WOOCOMMERCE.csv`.
+Full setup: `WOOCOMMERCE_INTEGRATION_GUIDE.md`.
+Fast-track import: `WOOCOMMERCE_PRODUCT_IMPORT_FAST_TRACK.md`.**
 
 ---
 
@@ -126,7 +98,7 @@ h1, h2, h3, h4 {
 .sm-gallery-description { color: #cccccc; font-family: 'Raleway', sans-serif;
   line-height: 1.8; }
 
-/* Buy buttons (SmugMug native) */
+/* WooCommerce redirect buy buttons (custom HTML, styled to match) */
 .sm-buy-btn, .sm-add-to-cart {
   background-color: #E8E4DC !important;
   color: #000000 !important;
@@ -402,34 +374,30 @@ Add at the bottom of every Custom Page.
 
 Set up these pages in your SmugMug site:
 
-| Page | Content | Sells |
+| Page | Content | Action |
 |---|---|---|
-| **Home** | Header + Bio panel + featured gallery previews | Links to booking |
+| **Home** | Header + Bio panel + featured gallery previews | Links to main site booking |
 | **Brand Photography** | Category intro + gallery + WooCommerce buy buttons | Sessions via WooCommerce |
-| **Music and Live** | Category intro + gallery | No direct sell (portfolio) |
-| **City Spirit** | Category intro + gallery + print buy option | Prints via SmugMug native |
+| **Music and Live** | Category intro + gallery | Portfolio only — links to main site |
+| **City Spirit** | Category intro + gallery | Portfolio only — links to main site |
 | **Documentary** | Category intro + gallery | Links to main site |
-| **Prints** | Gallery with SmugMug print commerce enabled | Prints via SmugMug/Stripe |
+| **Prints** | Gallery with WooCommerce buy buttons | Prints via WooCommerce |
 | **Book a Session** | Buy buttons block + footer | Sessions via WooCommerce |
+
+**All "Buy" buttons in SmugMug link to WooCommerce product pages on xcphotography.co.**
+Do not enable SmugMug native print commerce — that route is not used.
 
 ---
 
-## Setting Up Print Prices (SmugMug Native Commerce)
+## Setting Up WooCommerce Buy Buttons in SmugMug
 
-1. Go to **Account > Selling > Price Lists**
-2. Create a price list called "XCP Standard"
-3. Set your prices per product. Example markups:
+For every gallery or page where you want visitors to be able to buy prints:
 
-| Product | Lab Cost (approx) | Your Price | Your Profit |
-|---|---|---|---|
-| 8x10 Print | £4 | £35 | £31 |
-| 12x16 Print | £8 | £65 | £57 |
-| 16x20 Print | £14 | £95 | £81 |
-| 20x30 Canvas | £28 | £145 | £117 |
-| A2 Framed | £35 | £185 | £150 |
+1. Find the WooCommerce product URL for the relevant print (from `SHOP_PRODUCTS_CSV_WOOCOMMERCE.csv`)
+2. Use the HTML buy button block in this guide (HTML Block 3) and update the `href` to the WooCommerce product URL
+3. The customer clicks → goes to xcphotography.co/shop/[product] → pays via Stripe in WooCommerce → you get the full margin
 
-4. Assign the price list to each gallery where you want print sales enabled
-5. Under Payment: connect Stripe only. Do not add PayPal.
+No commission to SmugMug. No separate payment gateway to manage. All orders in one place.
 
 ---
 
@@ -463,14 +431,13 @@ Fill in for every gallery you create:
 
 ## Quick Setup Checklist
 
-- [ ] Choose SmugMug plan (Power or Portfolio recommended for commerce)
-- [ ] Connect Stripe account in Selling > Payment
-- [ ] Disable / do not connect PayPal
+- [ ] Choose SmugMug plan (Portfolio recommended — no commerce features needed)
 - [ ] Add custom CSS from this guide to Customizer > Advanced
-- [ ] Create 4-6 main galleries (Brand, Music, City Spirit, Documentary, Prints)
+- [ ] Create 5 main galleries (Brand, Music, City Spirit, Documentary, Prints)
 - [ ] Add HTML Block 1 (header strip) to each Custom Page
 - [ ] Add gallery category intro HTML to each gallery description
-- [ ] Set up Price List for print sales
+- [ ] Add WooCommerce buy button links (HTML Block 3) to Prints and Brand pages
 - [ ] Set up custom domain (gallery.xcphotography.co.uk)
 - [ ] Add SmugMug gallery link to main site Portfolio page
 - [ ] Fill in SEO title, description, keywords for every gallery
+- [ ] **Do NOT** enable SmugMug native print commerce — all sales go through WooCommerce

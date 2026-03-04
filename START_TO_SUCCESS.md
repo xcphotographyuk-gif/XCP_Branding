@@ -239,21 +239,25 @@ Services carousel: `INSTAGRAM_CAROUSEL_SERVICES_SHOWCASE.md`
 
 ---
 
-### WEEK 3–4 — Activate the SmugMug print revenue stream
+### WEEK 2–3 — Activate WooCommerce print sales (one afternoon)
 
-This generates passive revenue alongside client sessions. Set it up once, it runs indefinitely.
+All print and shop sales go through WooCommerce on xcphotography.co. This means one payment gateway (Stripe), one order system, and no commission to a third party. Set it up once and it runs indefinitely.
 
-Full setup guide: `SMUGMUG_SETUP_GUIDE.md`
+**Full setup guide:** `WOOCOMMERCE_INTEGRATION_GUIDE.md`  
+**Product import:** `WOOCOMMERCE_PRODUCT_IMPORT_FAST_TRACK.md`  
+**Ready-made product list:** `SHOP_PRODUCTS_CSV_WOOCOMMERCE.csv`
 
 **The short version:**
-1. Sign up at SmugMug (Portfolio plan, ~£12/month)
-2. Connect Stripe as payment processor (not PayPal — leave that blank)
-3. Upload your 20 best images to a public gallery
-4. Set print prices: SmugMug lab cost + your markup (aim for 2–3× lab cost)
-5. Enable print sales on those galleries
-6. Add a "Buy Prints" link from your website portfolio page
+1. Install WooCommerce plugin (WordPress → Plugins → Add New → WooCommerce)
+2. Connect Stripe as payment gateway (WooCommerce → Settings → Payments → Stripe)
+3. Import products from `SHOP_PRODUCTS_CSV_WOOCOMMERCE.csv` (WooCommerce → Products → Import)
+4. Connect Prodigi for print fulfilment: prodigi.com → connect WooCommerce store → map products to Prodigi print SKUs
+5. Add a "Shop" or "Prints" link to your site navigation
+6. On the Portfolio page, add a "Buy a print" button under your best images, linking to the relevant WooCommerce product
 
-SmugMug handles printing, fulfilment, and shipping. You receive your markup. No studio, no packing, no postage.
+**Prodigi handles printing, fulfilment, and UK delivery. You receive the margin between your sale price and Prodigi's cost. No studio, no packing, no postage.**
+
+SmugMug is used for portfolio display and client gallery delivery only — not for selling. From any SmugMug gallery page, the "Buy Print" button links directly to the WooCommerce product page.
 
 ---
 
@@ -334,15 +338,18 @@ Product CSV for WooCommerce: `SHOP_PRODUCTS_CSV_WOOCOMMERCE.csv`
 
 ---
 
-### PRINT SHOP EXPANSION
+### PRINT SHOP EXPANSION (Month 3 onwards)
 
-Once SmugMug is running, expand the print offering:
+WooCommerce is already running. Expand the print product range by adding more sizes, formats, and limited edition runs directly in WooCommerce:
 
-**Prodigi** — UK print-on-demand with faster delivery than US-based labs:
-1. prodigi.com → connect to your WooCommerce shop
-2. Upload your best 10–15 images as products
-3. Set products live with prices, descriptions, and keywords
-4. Shares traffic between SmugMug and direct WooCommerce sales
+**Add products in WooCommerce → Products → Add New, or import via CSV:**
+- Fine art prints (A3, A2, A1)
+- Canvas prints
+- Framed editions
+- Limited edition numbered prints (set stock quantity to your edition size — WooCommerce marks as sold out automatically)
+- Gift vouchers (WooCommerce → Extensions → Gift Cards, or use a simple variable product)
+
+**Prodigi SKU mapping:** For each new product size, map it to the corresponding Prodigi product SKU inside the Prodigi WooCommerce plugin. Prodigi then handles printing and shipping automatically when an order comes in.
 
 Full WooCommerce setup: `WOOCOMMERCE_INTEGRATION_GUIDE.md`  
 Product import guide: `WOOCOMMERCE_PRODUCT_IMPORT_FAST_TRACK.md`
@@ -365,7 +372,7 @@ Product import guide: `WOOCOMMERCE_PRODUCT_IMPORT_FAST_TRACK.md`
 | Brand photography sessions | £15,000–£25,000 | 10–17 sessions/month at £1,495 minimum |
 | Workshop income | £5,000–£10,000 | 2 half-day workshops + 1 full-day per month |
 | 1-2-1 mentoring | £3,000–£6,000 | 6–12 hours/month at £500/hour |
-| Print sales (SmugMug + WooCommerce) | £1,500–£3,000 | Compounds as portfolio grows |
+| Print sales (WooCommerce + Prodigi) | £1,500–£3,000 | Compounds as product range grows |
 | Affiliate income | £300–£800 | Grows with blog traffic |
 | Stock photography (Alamy, Adobe Stock) | £500–£2,000 | Back catalogue generating ongoing royalties |
 | **Total** | **£25,300–£46,800** | Then add London premium sessions |
