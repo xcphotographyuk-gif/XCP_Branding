@@ -5,6 +5,24 @@ Use this document alongside your WordPress Elementor pages. Work through one pag
 
 ---
 
+## 👉 START HERE — First file to import
+
+**Homepage Section 1 — Hero + Gallery:**
+
+➡️ **[Download `XCP_HomeP1_Hero_Gallery_FINAL.json`](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_HomeP1_Hero_Gallery_FINAL.json)**
+
+1. Click the link above
+2. Click **Raw** (top-right of the page)
+3. Right-click anywhere → **Save As** → save as `XCP_HomeP1_Hero_Gallery_FINAL.json`
+4. In WordPress: open your Home page → **Edit with Elementor**
+5. Click the **folder icon** (bottom-left panel) → **Import Template**
+6. Select the file → **Insert**
+7. Add your hero image, then come back here for the next file
+
+Once Section 1 is in, continue with the full list below — top to bottom, one at a time.
+
+---
+
 ## How to import a JSON file into Elementor
 
 **On the page you are editing:**
