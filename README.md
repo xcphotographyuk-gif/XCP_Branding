@@ -3,6 +3,8 @@ Complete Website & Marketing System for XC Photography
 
 ## 🚀 START HERE
 
+**→ `JSON_IMPORT_INDEX.md` ⭐ IMPORTING TEMPLATES NOW? — every Elementor JSON file, page by page, with direct links and import steps**
+
 **→ `XCP_MASTER_PLAN.md` ⭐ THE COMPLETE PLAN — everything in order, step by step, from first login to £30k/month**
 
 That single file contains every action you need to take, in the right sequence, with enough detail to do each step without opening any other file. Work through it at your own pace — some days you'll do three steps, some days one. Just always pick up at the next step.
@@ -68,6 +70,8 @@ Upload your complete website to www.xcphotography.co:
 ---
 
 ## 📂 Quick File Reference
+
+**📋 JSON Import Index:** `JSON_IMPORT_INDEX.md` ⭐ **Every Elementor template file — direct links, page by page**
 
 **📋 Complete Checklist:** `FILES_TO_UPLOAD_CHECKLIST.md` ⭐ **Every file + checkboxes**
 
