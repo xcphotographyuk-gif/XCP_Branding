@@ -3,11 +3,15 @@ Complete Website & Marketing System for XC Photography
 
 ## 🚀 START HERE
 
-**→ `GETTING_STARTED.md` ⭐ READ THIS FIRST — everything you need, in order**
+**→ `XCP_MASTER_PLAN.md` ⭐ THE COMPLETE PLAN — everything in order, step by step, from first login to £30k/month**
 
-Everything else in this repository flows from that one file. Start there and it will point you to the right guide for each step.
+That single file contains every action you need to take, in the right sequence, with enough detail to do each step without opening any other file. Work through it at your own pace — some days you'll do three steps, some days one. Just always pick up at the next step.
 
-**Phase 1 (WordPress + Elementor site):** `ELEMENTOR_BUILD_GUIDE.md` is the authoritative build reference — plugin requirements, import order, per-page instructions, and troubleshooting.  
+**Also in this repository:**
+- `XCP_BRAND_STATIONERY_TEMPLATES.md` ⭐ — Complete Adobe Express content for business card, letterhead, email signature, proposal cover, LinkedIn banner, Instagram assets
+- `images/` — Desktop image folders, one per section of the site, each with a README telling you exactly which image to put where
+- `ELEMENTOR_BUILD_GUIDE.md` — Full technical Elementor reference (when something doesn't work, check here)
+
 **Phase 2 (SmugMug):** Deferred — `SMUGMUG_SETUP_GUIDE.md` — only after the main site is fully live and generating bookings.
 
 ---
