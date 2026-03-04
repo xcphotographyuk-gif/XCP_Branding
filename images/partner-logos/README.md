@@ -15,6 +15,8 @@ White-on-transparent PNG logos of clients and partners. Used in the homepage cre
 | `malmaison-white.png` | Malmaison |
 | `i360-white.png` | i360 |
 | `gamerspot-white.png` | Gamerspot |
+| `spandau-ballet-white.png` | Spandau Ballet |
+| `the-stranglers-white.png` | The Stranglers (Hugh Cornwell) |
 
 ## Rules:
 - White logo, transparent background — PNG only

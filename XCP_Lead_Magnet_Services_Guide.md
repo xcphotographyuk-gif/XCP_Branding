@@ -13,7 +13,7 @@
 
 XC Photography specialises in brand and documentary photography for businesses, individuals, and cultural organisations. The work spans corporate commissions, hospitality, music and performance, editorial, and fine art.
 
-Past clients include Norman Cook, the BBC, Amazon, AWS, Hotel du Vin, Malmaison, The Ivy, i360, The Royal Pavilion Brighton, Eddie Izzard, Woody Cook, The Beach Boys, Goldie, Norman Jay OBE, Dean Chalkley, and Gamerspot.
+Past clients include Norman Cook (Fatboy Slim), the BBC, Amazon, AWS, Hotel du Vin, Malmaison, The Ivy, i360, The Royal Pavilion Brighton, Eddie Izzard, Woody Cook, The Beach Boys, Goldie, Norman Jay OBE, Dean Chalkley, Hugh Cornwell (The Stranglers), Steve Norman (Spandau Ballet), and Gamerspot.
 
 The work is not generic. It is made for clients who want images that reflect something real about who they are — not a corporate brochure version.
 

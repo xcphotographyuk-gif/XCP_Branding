@@ -15,7 +15,7 @@ Your clients don't want a folder of JPEGs. They want to stop feeling embarrassed
 
 Your positioning: premium, documentary, edge. The "seedy side of luxury." Not generic corporate, not sanitised and safe. Brands and individuals who live at the luxury end but aren't the polished, boring version of it. Music. Hospitality. Nightlife. Creative industries. Cannabis. Advocacy. Anything that needs to look world-class without looking like everyone else.
 
-You already have the portfolio to prove it. Norman Cook. Amazon. Hotel du Vin. The BBC. The Ivy. The Royal Pavilion. i360. Eddie Izzard. Goldie. Norman Jay OBE. Dean Chalkley. The Beach Boys. That is not a new photographer trying to find clients. That is an established photographer relaunching with clarity.
+You already have the portfolio to prove it. Norman Cook. Amazon. Hotel du Vin. The BBC. The Ivy. The Royal Pavilion. i360. Eddie Izzard. Goldie. Norman Jay OBE. Dean Chalkley. The Beach Boys. Hugh Cornwell (The Stranglers). Steve Norman (Spandau Ballet). That is not a new photographer trying to find clients. That is an established photographer relaunching with clarity.
 
 Now. In order.
 

@@ -4,6 +4,22 @@
 
 ---
 
+## BRAND POSITIONING NOTE — READ BEFORE SETTING PRICES
+
+XCP Photography is a premium brand. The minimum 1-to-1 session rate is £1,495 and it scales up from there.
+
+Workshop and retreat per-person prices are lower than the session rate because they are group events — but the **group revenue floor must match or exceed a standard session**. A half-day workshop of 8 people at £295/person = £2,360 gross. That is above the session floor. Never price a workshop so low that a full group generates less than £1,495.
+
+**Marketing language always reflects the premium position:**
+- Never describe workshops as "affordable" or "accessible"
+- Use: "invest in your visual language", "limited places", "by application"
+- Group sizes are kept deliberately small (max 8–12) — this is a positioning choice, not a capacity constraint
+- Retreat language is aspirational: intimate, immersive, curated
+
+When any selling asset (brochure, landing page, email, social post) is created for workshops or retreats, it must feel consistent with a photographer whose individual session rate starts at £1,495 — not like a generic training course.
+
+---
+
 ## OVERVIEW
 
 The most effective photographer education programmes combine free live content with paid in-person workshops and online webinars. The model works because it creates community, authority, and revenue simultaneously.
