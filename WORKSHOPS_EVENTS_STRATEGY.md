@@ -344,21 +344,24 @@ List in-person events for discoverability beyond existing audience. Eventbrite S
 
 | Format | Brighton | London | Online |
 |--------|---------|--------|--------|
-| Half-day workshop (4hr, group) | £295/person | £395/person | £195/person |
-| Full-day masterclass (8hr, group) | £595/person | £795/person | — |
-| Retreat (2-day, group) | £995/person | £1,795/person (premium venue) | — |
+| Half-day workshop (4hr, group) — all hospitality included | £595/person | £795/person | £195/person |
+| Full-day masterclass (8hr, group) — all hospitality included | £895/person | £1,195/person | — |
+| Retreat (2-day, group) — 4-star+ accommodation + all meals included | £1,795/person | £2,495/person (premium venue) | — |
 | Corporate team (half-day, bespoke) | From £1,495 | From £1,995 | From £995 |
 | Corporate team (full-day, bespoke) | From £2,495 | From £3,495 | From £1,495 |
-| 1-2-1 photographer mentoring (2hr) | £395 | £395 | £295 |
-| Visual Brand Audit (business owner) | £495 | £495 | £395 |
+| 1-2-1 photographer mentoring (2hr) | £495 | £595 | £395 |
+| Visual Brand Audit (business owner) | £595 | £695 | £495 |
 | Free monthly webinar | Free | — | Free |
-| Paid live online (4hr, group) | — | — | £195/person |
-| On-demand course (self-paced) | — | — | £297 |
+| Paid live online (3hr, group) | — | — | £145/person |
+| On-demand course (self-paced) | — | — | £397 |
 
 **Notes:**
+- All in-person workshop prices are inclusive of hospitality: arrival refreshments, lunch at a curated partner venue (4-star+ standard), afternoon refreshments, and dinner for full-day formats. Nothing below 4-star will be recommended or sourced for participants.
+- Where overnight accommodation is relevant, 4-star minimum properties are sourced via preferred partners (Hotel du Vin / Malmaison are the benchmark). Accommodation costs are passed to participants at the partner rate.
 - London in-person prices are higher to account for venue hire and to position correctly for the London market (price signals quality in London more than anywhere)
 - Group minimum 4 participants for in-person workshops (cancel/reschedule if below minimum, with 2 weeks' notice)
 - Corporate bespoke pricing is the anchor for the business case — position as "less than the cost of a bad brand photography session and a wasted day of your team's time"
+- **Never present hospitality as a line-item selling point ("lunch included!"). The framing is: *Your day is curated end to end.* The price reflects a complete, considered experience.**
 
 ---
 

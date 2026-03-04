@@ -5,6 +5,33 @@
 
 ---
 
+## HOSPITALITY & PARTNER INCLUSIONS
+
+XCP Photography workshops are curated experiences, not training courses. The price reflects a full day (or half day) of immersive, expert-led photography — and everything that surrounds it.
+
+### Standard inclusions for all in-person workshops
+- **Arrival refreshments** — coffee, tea, pastries on arrival
+- **Lunch** — at a curated partner venue or catered on-location (minimum 4-star quality; no chain restaurants)
+- **Afternoon refreshments** — during review sessions
+- **Full-day workshops:** dinner at a partner restaurant before the day concludes (or drinks at a curated bar/venue)
+
+### Accommodation (multi-day and retreat formats)
+Where overnight stays are part of the experience:
+- Minimum **4-star** hotel or boutique property — sourced via preferred partners at negotiated rates
+- Costs passed to participants at the partner rate (not marked up)
+- Nothing below 4-star will be recommended or endorsed
+- Xavier's own preferred properties: Hotel du Vin Brighton / Malmaison Brighton are the benchmark standard
+
+### Preferred partner philosophy
+Partners are selected for **character and quality**, not just star count. A boutique property with genuine personality at 4-star level is always preferred over a generic 5-star chain. XCP Photography's brand positioning is "the seedy side of luxury" — that means edge and atmosphere alongside quality; never bland corporate comfort.
+
+Partners currently include Hotel du Vin and Malmaison (both existing XCP portfolio clients). Further hospitality partners to be identified and approached once the first workshops have run.
+
+### What this means for pricing
+In-person workshop prices include all hospitality listed above. There are no hidden extras. Participants know exactly what they are paying for and what they will receive. The price should never be presented as "including lunch" — that framing is too transactional. The framing is: *"Your day is curated end to end."*
+
+---
+
 ## IN-PERSON WORKSHOPS
 
 ---
@@ -21,9 +48,9 @@ This is not a standard photo walk. It is a moving classroom with one of the UK's
 |---------|--------|
 | Duration | Full day (approx. 9am–6pm including bus travel) |
 | Group size | Maximum 10 |
-| Price | £595 per person / £995 per couple |
+| Price | £895 per person / £1,595 per couple |
 | Location | London — Monopoly board route (start: Liverpool Street or Marylebone area) |
-| Includes | Routemaster hire, route map, shot list for each location, on-bus reviews, printed contact sheet from the day |
+| Includes | Routemaster hire, route map, shot list for each location, on-bus reviews, printed contact sheet from the day, arrival refreshments, lunch at a curated London venue, afternoon refreshments on the bus |
 | Frequency | Quarterly (seasonal light: spring and autumn particularly strong) |
 
 **What participants leave with:**
@@ -41,7 +68,7 @@ This is not a standard photo walk. It is a moving classroom with one of the UK's
 *"Ten stops. One bus. Every London you've never photographed."*
 
 **Revenue:**  
-10 participants × £595 = £5,950 gross. After Routemaster hire (~£1,500), venue/admin (~£200): net ~£4,250.
+10 participants × £895 = £8,950 gross. After Routemaster hire (~£1,500), catering (~£800), admin (~£200): net ~£6,200.
 
 ---
 
@@ -57,9 +84,9 @@ Ideally includes a short guided tour inside the Duke of York's (to be arranged i
 |---------|--------|
 | Duration | Half-day walk (4 hours) + optional evening gig or screening |
 | Group size | Maximum 8 |
-| Price | £295 per person |
+| Price | £595 per person |
 | Location | Brighton — meeting point: Duke of York's Picturehouse, Preston Circus |
-| Includes | Route map with location notes, historical context cards, post-walk online gallery of all participants' images |
+| Includes | Route map with location notes, historical context cards, post-walk online gallery of all participants' images, arrival coffee, lunch at a curated Brighton restaurant (4-star+ standard), afternoon refreshments |
 | Frequency | Monthly (spring–autumn); bi-monthly in winter |
 
 **Route outline:**
@@ -79,7 +106,7 @@ Ideally includes a short guided tour inside the Duke of York's (to be arranged i
 *"Every corner has a story. Bring a camera."*
 
 **Revenue:**  
-8 participants × £295 = £2,360 gross. Net after route/admin: ~£1,900.
+8 participants × £595 = £4,760 gross. After catering (~£500), admin (~£150): net ~£3,900.
 
 ---
 
@@ -97,9 +124,10 @@ The car element: exploring options including Brighton's classic car scene — th
 |---------|--------|
 | Duration | Full day (approx. 8:30am–6:30pm with travel) |
 | Group size | Maximum 8 |
-| Price | £495 per person |
+| Price | £895 per person |
 | Location | East Sussex circuit — Bluebell Railway / Shoreham Airport / Brighton |
-| Transport | Participants make own way between locations OR minibus hire as premium option |
+| Transport | Private minibus hire included — participants are collected and returned |
+| Includes | Private minibus, Bluebell Railway admission, arrival refreshments, packed gourmet lunch on location (or sit-down at partner pub/restaurant en route), afternoon refreshments, end-of-day drink in Brighton |
 | Frequency | Quarterly (spring and autumn for Bluebell Railway; autumn for Car Run edition) |
 
 **What participants leave with:**
@@ -116,7 +144,7 @@ The car element: exploring options including Brighton's classic car scene — th
 *"Three worlds. One day. No two images the same."*
 
 **Revenue:**  
-8 participants × £495 = £3,960 gross. After Bluebell Railway admission (~£200 group), transport (~£200), admin: net ~£3,200.
+8 participants × £895 = £7,160 gross. After Bluebell Railway admission (~£200), minibus hire (~£400), catering (~£600), admin: net ~£5,600.
 
 ---
 
@@ -133,9 +161,9 @@ Afternoon: studio pop-up — Xavier sets up a portable two-light studio setup at
 |---------|--------|
 | Duration | Full day (approx. 9am–6pm) |
 | Group size | Maximum 8 |
-| Price | £395 per person |
+| Price | £795 per person |
 | Location | Brighton — seafront and pop-up studio (venue TBC — Mod-friendly pub or gallery) |
-| Includes | Street shoot in the morning, studio session in the afternoon, lighting setup breakdown |
+| Includes | Street shoot in the morning, studio session in the afternoon, lighting setup breakdown, arrival breakfast or coffee, sit-down lunch at a curated Brighton venue, afternoon refreshments, end-of-day drinks at the studio venue |
 | Frequency | Twice yearly — aligned to Brighton Mods Weekender dates |
 
 **What participants leave with:**
@@ -147,7 +175,7 @@ Afternoon: studio pop-up — Xavier sets up a portable two-light studio setup at
 *"From the seafront to the studio. One day. Two very different kinds of light."*
 
 **Revenue:**  
-8 participants × £395 = £3,160 gross. After venue hire (~£200), admin: net ~£2,600.
+8 participants × £795 = £6,360 gross. After venue hire (~£400), catering/drinks (~£600), admin: net ~£5,000.
 
 ---
 
@@ -169,9 +197,11 @@ Above + Rembrandt/loop/split lighting patterns, multi-light setups, gels and cre
 |---------|--------|
 | Duration | Half-day (4hr) or Full-day (8hr) |
 | Group size | Maximum 6 (studio space constraint — intentional) |
-| Price (half-day) | £395 per person |
-| Price (full-day) | £695 per person |
+| Price (half-day) | £695 per person |
+| Price (full-day) | £1,195 per person |
 | Location | Brighton studio space (day hire) or Xavier's home studio setup |
+| Includes (half-day) | Arrival refreshments, light lunch or grazing board, printed lighting pattern reference sheet (laminated) |
+| Includes (full-day) | Above + afternoon refreshments, dinner at a curated Brighton restaurant after the session |
 | Frequency | Monthly (half-day); bi-monthly (full-day) |
 
 **What participants leave with:**
@@ -183,9 +213,9 @@ Above + Rembrandt/loop/split lighting patterns, multi-light setups, gels and cre
 *"Light is not luck. It is a skill. Learn it in a day."*
 
 **Revenue (half-day):**  
-6 × £395 = £2,370 gross. After studio hire (~£300): net ~£1,900.  
+6 × £695 = £4,170 gross. After studio hire (~£300), catering (~£250): net ~£3,400.  
 **Revenue (full-day):**  
-6 × £695 = £4,170 gross. After studio hire (~£500): net ~£3,400.
+6 × £1,195 = £7,170 gross. After studio hire (~£500), catering + dinner (~£600): net ~£5,800.
 
 ---
 
@@ -201,8 +231,9 @@ Evening: the gig itself — participants attend as audience/shooters for the hea
 |---------|--------|
 | Duration | Full day + evening (approx. 10am–11pm) |
 | Group size | Maximum 6 (pit access is restricted — this is a premium constraint, not a price point) |
-| Price | £795 per person |
+| Price | £1,495 per person |
 | Location | Brighton — venue TBC (Concorde 2 ideal) |
+| Includes | Full-day masterclass, pit access during support act, gig ticket for headline act, arrival refreshments, lunch, pre-gig dinner at a curated Brighton restaurant |
 | Frequency | Quarterly (dependent on suitable gig calendar) |
 | Status | **Future — plan for Q3 2026 once site is live and first workshops are running** |
 
@@ -215,7 +246,7 @@ Evening: the gig itself — participants attend as audience/shooters for the hea
 *"Six places. One night. Real music. Real pit access."*
 
 **Revenue:**  
-6 × £795 = £4,770 gross. After venue negotiation, gig tickets, admin: net TBC.
+6 × £1,495 = £8,970 gross. After venue negotiation, gig tickets, dinner, admin (~£2,000): net ~£6,500+.
 
 **Note:** Do not sell or advertise this workshop until the main site is live, first workshops have run, and a venue partnership is in place. This is a marquee event — it needs social proof behind it before it goes public.
 
