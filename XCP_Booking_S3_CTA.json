@@ -1,0 +1,100 @@
+{
+  "version": "0.4",
+  "title": "Booking \u2013 Closing CTA",
+  "type": "section",
+  "content": [
+    {
+      "id": "booking_cta_footer",
+      "elType": "section",
+      "settings": {
+        "_title": "Closing CTA",
+        "layout": "full_width",
+        "background_background": "classic",
+        "background_color": "#1a1a1a",
+        "padding": {
+          "unit": "px",
+          "top": "70",
+          "right": "20",
+          "bottom": "70",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "booking_cta_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "booking_cta_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<h3 style='text-align: center; color: #ffffff; font-family: Raleway, sans-serif; font-size: 32px; font-weight: 700; margin-bottom: 16px;'>Your Brand Deserves to Be Seen</h3><p style='text-align: center; color: #e0e0e0; font-size: 18px; max-width: 600px; margin: 0 auto 32px; line-height: 1.7;'>Every iconic brand started with a single conversation. Book yours today and let's build something that worth looking at.</p>"
+              }
+            },
+            {
+              "id": "booking_cta_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Book Your Free Discovery Call",
+                "link": {
+                  "url": "#booking_main",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "center",
+                "size": "lg",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "2",
+                  "right": "2",
+                  "bottom": "2",
+                  "left": "2",
+                  "isLinked": true
+                },
+                "border_color": "#E8E4DC",
+                "color": "#1a1a1a",
+                "background_color": "#E8E4DC",
+                "hover_color": "#E8E4DC",
+                "button_background_hover_color": "transparent",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "18",
+                  "right": "40",
+                  "bottom": "18",
+                  "left": "40",
+                  "isLinked": false
+                },
+                "typography_font_family": "Raleway",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14
+                },
+                "typography_font_weight": "700",
+                "typography_text_transform": "uppercase",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 1.5
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

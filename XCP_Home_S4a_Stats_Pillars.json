@@ -1,0 +1,315 @@
+{
+  "version": "0.4",
+  "title": "Home \u2013 Stats & Three Pillars",
+  "type": "section",
+  "content": [
+    {
+      "id": "stats-section",
+      "elType": "section",
+      "settings": {
+        "_title": "Statistics Section",
+        "layout": "boxed",
+        "background_background": "classic",
+        "background_color": "#F8F8F8",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20"
+        }
+      },
+      "elements": [
+        {
+          "id": "stat-1",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_column_size_tablet": 50,
+            "_column_size_mobile": 100,
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "stat-1-number",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "500+",
+                "header_size": "h3",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "color": "#000000"
+              }
+            },
+            {
+              "id": "stat-1-label",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size: 18px;'>Brands Elevated</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "stat-2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_column_size_tablet": 50,
+            "_column_size_mobile": 100,
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "stat-2-number",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "150+",
+                "header_size": "h3",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "color": "#000000"
+              }
+            },
+            {
+              "id": "stat-2-label",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size: 18px;'>Ideal Audiences Reached</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "stat-3",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_column_size_tablet": 50,
+            "_column_size_mobile": 100,
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "stat-3-number",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "20+",
+                "header_size": "h3",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "color": "#000000"
+              }
+            },
+            {
+              "id": "stat-3-label",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size: 18px;'>Industry Awards Won</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "stat-4",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_column_size_tablet": 50,
+            "_column_size_mobile": 100,
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "stat-4-number",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "10+",
+                "header_size": "h3",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "color": "#000000"
+              }
+            },
+            {
+              "id": "stat-4-label",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size: 18px;'>Years of Visual Excellence</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "three-pillars-section",
+      "elType": "section",
+      "settings": {
+        "_title": "Three Pillars of the XCP Approach",
+        "layout": "boxed",
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "pillar-1",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100,
+            "padding": {
+              "unit": "px",
+              "top": "20",
+              "right": "30",
+              "bottom": "20",
+              "left": "30",
+              "isLinked": false
+            },
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "pillar-1-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Exceptional Image Quality",
+                "header_size": "h3",
+                "align": "center",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 22
+                },
+                "color": "#000000"
+              }
+            },
+            {
+              "id": "pillar-1-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size: 16px; line-height: 1.8; text-align: center;'>Timeless, captivating images that elevate your authority and share your brand's story with the people who matter to your business.</p>",
+                "text_color": "#333333"
+              }
+            }
+          ]
+        },
+        {
+          "id": "pillar-2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100,
+            "padding": {
+              "unit": "px",
+              "top": "20",
+              "right": "30",
+              "bottom": "20",
+              "left": "30",
+              "isLinked": false
+            },
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "pillar-2-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Personalised Collaboration",
+                "header_size": "h3",
+                "align": "center",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 22
+                },
+                "color": "#000000"
+              }
+            },
+            {
+              "id": "pillar-2-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size: 16px; line-height: 1.8; text-align: center;'>A dedicated partnership built from concept to final delivery. Every project is shaped around what makes you unique: your story, your audience, your vision.</p>",
+                "text_color": "#333333"
+              }
+            }
+          ]
+        },
+        {
+          "id": "pillar-3",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100,
+            "padding": {
+              "unit": "px",
+              "top": "20",
+              "right": "30",
+              "bottom": "20",
+              "left": "30",
+              "isLinked": false
+            },
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "pillar-3-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Narrative-Led Content",
+                "header_size": "h3",
+                "align": "center",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 22
+                },
+                "color": "#000000"
+              }
+            },
+            {
+              "id": "pillar-3-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size: 16px; line-height: 1.8; text-align: center;'>A decade of active visual work, from gallery exhibitions and headline music photography to brand work across the UK and Europe. Imagery that does not just look good, it says something.</p>",
+                "text_color": "#333333"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

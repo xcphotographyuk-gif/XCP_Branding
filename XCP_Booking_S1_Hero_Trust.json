@@ -1,0 +1,123 @@
+{
+  "version": "0.4",
+  "title": "Booking \u2013 Hero & Trust Bar",
+  "type": "section",
+  "content": [
+    {
+      "id": "booking_hero",
+      "elType": "section",
+      "settings": {
+        "_title": "Booking Hero",
+        "layout": "full_width",
+        "min_height": {
+          "unit": "vh",
+          "size": 50
+        },
+        "background_background": "classic",
+        "background_color": "#1a1a1a",
+        "content_position": "middle",
+        "padding": {
+          "unit": "px",
+          "top": "100",
+          "right": "20",
+          "bottom": "80",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "booking_hero_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "booking_hero_tag",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #E8E4DC; font-family: Raleway, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px;'>Free, No Obligation</p>"
+              }
+            },
+            {
+              "id": "booking_hero_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Book Your Discovery Call",
+                "header_size": "h1",
+                "align": "center",
+                "title_color": "#ffffff",
+                "typography_font_family": "Raleway",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 52
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 38
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 28
+                },
+                "typography_font_weight": "700"
+              }
+            },
+            {
+              "id": "booking_hero_sub",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #e0e0e0; font-size: 20px; max-width: 680px; margin: 24px auto 0; line-height: 1.7;'>A relaxed 30-minute conversation to understand your brand, your goals, and whether we're the right fit for each other. No pressure. No obligation.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "booking_trust_bar",
+      "elType": "section",
+      "settings": {
+        "_title": "Trust Bar",
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1100
+        },
+        "background_background": "classic",
+        "background_color": "#E8E4DC",
+        "padding": {
+          "unit": "px",
+          "top": "20",
+          "right": "20",
+          "bottom": "20",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "booking_trust_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "booking_trust_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #1a1a1a; font-family: Raleway, sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 1px; margin: 0;'>\u2726 Responds within 24 hours &nbsp;&nbsp;|&nbsp;&nbsp; \u2726 5-star rated service &nbsp;&nbsp;|&nbsp;&nbsp; \u2726 500+ brands photographed &nbsp;&nbsp;|&nbsp;&nbsp; \u2726 Based in Brighton, shoots UK-wide</p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
