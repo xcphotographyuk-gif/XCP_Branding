@@ -1,6 +1,8 @@
 # XCP Photography — Master Action Plan
 ## Everything in order. One step at a time.
 
+**← [Back to Start: README](README.md) · Step 5 opens [JSON Import Index](JSON_IMPORT_INDEX.md)**
+
 **Target:** £30,000–£60,000 per month within 18 months.
 **Floor:** £1,495 per session — never lower.
 **Phase 1:** WordPress + Elementor. SmugMug is Phase 2 — only after the main site is fully live.

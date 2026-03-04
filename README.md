@@ -3,11 +3,11 @@ Complete Website & Marketing System for XC Photography
 
 ## 🚀 START HERE
 
-**→ `JSON_IMPORT_INDEX.md` ⭐ IMPORTING TEMPLATES NOW? — every Elementor JSON file, page by page, with direct links and import steps**
+**→ [XCP_MASTER_PLAN.md](XCP_MASTER_PLAN.md) ⭐ THE COMPLETE PLAN — everything in order, step by step, from first login to £30k/month**
 
-**→ `XCP_MASTER_PLAN.md` ⭐ THE COMPLETE PLAN — everything in order, step by step, from first login to £30k/month**
+**→ [JSON_IMPORT_INDEX.md](JSON_IMPORT_INDEX.md) ⭐ IMPORTING TEMPLATES NOW? — every Elementor JSON file, page by page, with direct links and import steps (this is Step 5 of the Master Plan)**
 
-That single file contains every action you need to take, in the right sequence, with enough detail to do each step without opening any other file. Work through it at your own pace — some days you'll do three steps, some days one. Just always pick up at the next step.
+That single master plan file contains every action you need to take, in the right sequence, with enough detail to do each step without opening any other file. Work through it at your own pace — some days you'll do three steps, some days one. Just always pick up at the next step.
 
 **Also in this repository:**
 - `XCP_BRAND_STATIONERY_TEMPLATES.md` ⭐ — Complete Adobe Express content for business card, letterhead, email signature, proposal cover, LinkedIn banner, Instagram assets
@@ -116,11 +116,6 @@ Upload your complete website to www.xcphotography.co:
 2. Open `QUICK_START_PRIORITY_CHECKLIST.md` - Get your action plan
 3. Follow the checklist in order
 4. Don't skip ahead - one phase at a time
-
-### If Website Is Your Priority:
-1. Open `QUICK_START_PRIORITY_CHECKLIST.md`
-2. Follow the checklist in order
-3. Don't skip ahead - one phase at a time
 
 ### If Website Is Your Priority:
 1. Open `WEBSITE_IMPLEMENTATION_GUIDE.md`
