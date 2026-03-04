@@ -257,7 +257,7 @@ All print and shop sales go through WooCommerce on xcphotography.co. This means 
 
 **Prodigi handles printing, fulfilment, and UK delivery. You receive the margin between your sale price and Prodigi's cost. No studio, no packing, no postage.**
 
-SmugMug is used for portfolio display and client gallery delivery only — not for selling. From any SmugMug gallery page, the "Buy Print" button links directly to the WooCommerce product page.
+SmugMug will be used for portfolio display and client gallery delivery in Phase 2 — after the main WordPress/Elementor site is fully functional. It is not needed for the WooCommerce print shop to work.
 
 ---
 

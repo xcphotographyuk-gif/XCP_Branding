@@ -3,6 +3,14 @@
 
 ---
 
+> **⚠ PHASE 2 — DO NOT START UNTIL THE MAIN SITE IS FULLY FUNCTIONAL**
+>
+> SmugMug setup is deferred. The priority is xcphotography.co built in WordPress + Elementor,
+> with WooCommerce handling all sales. Return to this guide only once the main site is live,
+> tested, and generating bookings. SmugMug is an enhancement — not a dependency.
+
+---
+
 ## Overview: What SmugMug Is Good For
 
 SmugMug is a professional photo hosting and portfolio platform. For XCP Photography it
