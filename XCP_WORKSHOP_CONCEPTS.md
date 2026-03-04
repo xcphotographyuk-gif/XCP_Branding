@@ -15,6 +15,7 @@ XCP Photography workshops are curated experiences, not training courses. The pri
 - **Afternoon refreshments** — during review sessions
 - **Full-day workshops:** dinner at a partner restaurant before the day concludes (or drinks at a curated bar/venue)
 - **Post-processing / editing session** — a dedicated editing review at the end of every workshop (in-person or remote via screen share for half-day formats where time allows). Participants work through their own images from the day with Xavier, developing a consistent editing style they can apply independently. This is not a Photoshop tutorial — it is about finding and refining their visual voice.
+- **Camera settings cheat sheet** — a personalised, printed and laminated quick-reference card covering the key camera settings, exposure decisions, and technique reminders relevant to the subject matter of each specific workshop. Participants leave with something they can keep in their camera bag and use immediately on their next shoot.
 
 ### Accommodation (multi-day and retreat formats)
 Where overnight stays are part of the experience:
