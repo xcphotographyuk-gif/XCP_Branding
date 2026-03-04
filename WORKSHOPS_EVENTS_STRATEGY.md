@@ -379,3 +379,26 @@ List in-person events for discoverability beyond existing audience. Eventbrite S
 - Retail tie-ins (not relevant — XC Photography isn't a retailer)
 - Fixed venue with same week/time for years (valuable for them; rotating venues are more dynamic and city-spanning for XC Photography)
 - Global scope (Brighton + London is the sweet spot; global is aspirational not operational)
+
+---
+
+## SPECIFIC NAMED WORKSHOP CONCEPTS
+
+The generic formats above are the structural framework. The named, specific workshops — with full descriptions, pricing rationale, logistics, revenue calculations, and launch sequence — are in:
+
+**→ `XCP_WORKSHOP_CONCEPTS.md`**
+
+Workshops covered there:
+1. London: The Monopoly Run (Routemaster bus)
+2. Brighton: Sound & Celluloid (Music & Movies walk)
+3. Brighton: Trains, Planes & Automobiles (Bluebell Railway + Shoreham Airport + coast)
+4. Brighton: Mods Weekender (street + studio)
+5. Studio Lighting Masterclass (half-day and full-day in-person)
+6. Live Performance + Gig (future — Q3 2026)
+7. Online: Strobes vs Continuous (free webinar)
+8. Online: How to Start with Studio Lighting (live workshop)
+9. Online: Using Light Modifiers (live workshop)
+10. Online: The Inverse Square Law (on-demand tutorial)
+11. Online: Studio Lighting for Portrait Photographers (full course, passive income)
+12. Online: How to Photograph Live Music (live workshop)
+13. Online: Documentary Photography for Business (business owner funnel workshop)
