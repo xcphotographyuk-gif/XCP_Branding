@@ -14,6 +14,7 @@ XCP Photography workshops are curated experiences, not training courses. The pri
 - **Lunch** — at a curated partner venue or catered on-location (minimum 4-star quality; no chain restaurants)
 - **Afternoon refreshments** — during review sessions
 - **Full-day workshops:** dinner at a partner restaurant before the day concludes (or drinks at a curated bar/venue)
+- **Post-processing / editing session** — a dedicated editing review at the end of every workshop (in-person or remote via screen share for half-day formats where time allows). Participants work through their own images from the day with Xavier, developing a consistent editing style they can apply independently. This is not a Photoshop tutorial — it is about finding and refining their visual voice.
 
 ### Accommodation (multi-day and retreat formats)
 Where overnight stays are part of the experience:
@@ -50,7 +51,7 @@ This is not a standard photo walk. It is a moving classroom with one of the UK's
 | Group size | Maximum 10 |
 | Price | £895 per person / £1,595 per couple |
 | Location | London — Monopoly board route (start: Liverpool Street or Marylebone area) |
-| Includes | Routemaster hire, route map, shot list for each location, on-bus reviews, printed contact sheet from the day, arrival refreshments, lunch at a curated London venue, afternoon refreshments on the bus |
+| Includes | Routemaster hire, route map, shot list for each location, on-bus reviews, printed contact sheet from the day, arrival refreshments, lunch at a curated London venue, afternoon refreshments on the bus, post-processing editing session |
 | Frequency | Quarterly (seasonal light: spring and autumn particularly strong) |
 
 **What participants leave with:**
@@ -58,6 +59,7 @@ This is not a standard photo walk. It is a moving classroom with one of the UK's
 - Ability to read a location and find a picture in under 60 seconds
 - Understanding of available light across interior/exterior/transit environments
 - A shared set of images from the bus and the streets — every participant gets a full contact sheet from the day
+- A personal editing style — developed during the post-processing session using their own images from the day
 
 **Logistics notes:**
 - Routemaster hire: heritage vehicle hire companies operate in London — typically £600–£900/half day, £1,200–£1,800/full day. Source via Heritage Routemaster Hire or similar.
@@ -86,7 +88,7 @@ Ideally includes a short guided tour inside the Duke of York's (to be arranged i
 | Group size | Maximum 8 |
 | Price | £595 per person |
 | Location | Brighton — meeting point: Duke of York's Picturehouse, Preston Circus |
-| Includes | Route map with location notes, historical context cards, post-walk online gallery of all participants' images, arrival coffee, lunch at a curated Brighton restaurant (4-star+ standard), afternoon refreshments |
+| Includes | Route map with location notes, historical context cards, post-walk online gallery of all participants' images, arrival coffee, lunch at a curated Brighton restaurant (4-star+ standard), afternoon refreshments, post-walk editing session |
 | Frequency | Monthly (spring–autumn); bi-monthly in winter |
 
 **Route outline:**
@@ -101,6 +103,7 @@ Ideally includes a short guided tour inside the Duke of York's (to be arranged i
 - Understanding how to shoot on a walk (composition, quick reactions, available light)
 - Portfolio-quality documentary images of an iconic city
 - Printed postcard from the walk — one image per participant selected and printed same-day (if print lab is in budget)
+- A personal editing style — developed during the post-walk editing session using their own images from the day
 
 **Marketing hook:**  
 *"Every corner has a story. Bring a camera."*
@@ -127,13 +130,14 @@ The car element: exploring options including Brighton's classic car scene — th
 | Price | £895 per person |
 | Location | East Sussex circuit — Bluebell Railway / Shoreham Airport / Brighton |
 | Transport | Private minibus hire included — participants are collected and returned |
-| Includes | Private minibus, Bluebell Railway admission, arrival refreshments, packed gourmet lunch on location (or sit-down at partner pub/restaurant en route), afternoon refreshments, end-of-day drink in Brighton |
+| Includes | Private minibus, Bluebell Railway admission, arrival refreshments, packed gourmet lunch on location (or sit-down at partner pub/restaurant en route), afternoon refreshments, end-of-day drink in Brighton, post-shoot editing session |
 | Frequency | Quarterly (spring and autumn for Bluebell Railway; autumn for Car Run edition) |
 
 **What participants leave with:**
 - Proficiency shooting across three radically different environments in a single day
 - Understanding of motion, depth of field, and light management across open/indoor/transit spaces
 - 200+ images covering heritage, aviation, and coastal documentary
+- A personal editing style — developed during the post-shoot editing session using their own images from the day
 
 **Variations:**
 - **Autumn edition:** Bluebell Railway + Brighton Veteran Car Run + coast (November only)
@@ -163,13 +167,14 @@ Afternoon: studio pop-up — Xavier sets up a portable two-light studio setup at
 | Group size | Maximum 8 |
 | Price | £795 per person |
 | Location | Brighton — seafront and pop-up studio (venue TBC — Mod-friendly pub or gallery) |
-| Includes | Street shoot in the morning, studio session in the afternoon, lighting setup breakdown, arrival breakfast or coffee, sit-down lunch at a curated Brighton venue, afternoon refreshments, end-of-day drinks at the studio venue |
+| Includes | Street shoot in the morning, studio session in the afternoon, lighting setup breakdown, arrival breakfast or coffee, sit-down lunch at a curated Brighton venue, afternoon refreshments, end-of-day drinks at the studio venue, post-workshop editing session |
 | Frequency | Twice yearly — aligned to Brighton Mods Weekender dates |
 
 **What participants leave with:**
 - Ability to move from documentary (uncontrolled) to studio (controlled) environments in the same day
 - Practical studio lighting experience with two-light setup
 - Documentary images from one of the UK's most characterful street events
+- A personal editing style — developed during the post-workshop editing session using their own images from the day
 
 **Marketing hook:**  
 *"From the seafront to the studio. One day. Two very different kinds of light."*
@@ -200,14 +205,15 @@ Above + Rembrandt/loop/split lighting patterns, multi-light setups, gels and cre
 | Price (half-day) | £695 per person |
 | Price (full-day) | £1,195 per person |
 | Location | Brighton studio space (day hire) or Xavier's home studio setup |
-| Includes (half-day) | Arrival refreshments, light lunch or grazing board, printed lighting pattern reference sheet (laminated) |
-| Includes (full-day) | Above + afternoon refreshments, dinner at a curated Brighton restaurant after the session |
+| Includes (half-day) | Arrival refreshments, light lunch or grazing board, printed lighting pattern reference sheet (laminated), post-session editing review |
+| Includes (full-day) | Above + afternoon refreshments, dinner at a curated Brighton restaurant after the session, dedicated post-session editing workshop (Lightroom / Capture One) |
 | Frequency | Monthly (half-day); bi-monthly (full-day) |
 
 **What participants leave with:**
 - Confidence to recreate any lighting setup from a reference image
 - A lighting pattern cheat sheet (printed, laminated)
 - Images shot during the session demonstrating each setup
+- A personal editing style for their studio work — developed during the post-session editing review using images from the day
 
 **Marketing hook:**  
 *"Light is not luck. It is a skill. Learn it in a day."*
@@ -233,7 +239,7 @@ Evening: the gig itself — participants attend as audience/shooters for the hea
 | Group size | Maximum 6 (pit access is restricted — this is a premium constraint, not a price point) |
 | Price | £1,495 per person |
 | Location | Brighton — venue TBC (Concorde 2 ideal) |
-| Includes | Full-day masterclass, pit access during support act, gig ticket for headline act, arrival refreshments, lunch, pre-gig dinner at a curated Brighton restaurant |
+| Includes | Full-day masterclass, pit access during support act, gig ticket for headline act, arrival refreshments, lunch, pre-gig dinner at a curated Brighton restaurant, post-shoot editing session (the following morning or remote within 48 hours) |
 | Frequency | Quarterly (dependent on suitable gig calendar) |
 | Status | **Future — plan for Q3 2026 once site is live and first workshops are running** |
 
@@ -241,6 +247,7 @@ Evening: the gig itself — participants attend as audience/shooters for the hea
 - Real pit access shots from a professional live event
 - Mastery of high-ISO, available light, and fast-moving subjects
 - A career story: "I shot a gig with Xavier Clarke"
+- A personal editing style for live music — developed during the post-shoot editing session using their own images from the night
 
 **Marketing hook:**  
 *"Six places. One night. Real music. Real pit access."*
