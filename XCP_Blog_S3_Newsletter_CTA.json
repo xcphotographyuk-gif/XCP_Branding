@@ -1,7 +1,7 @@
 {
   "version": "0.4",
   "title": "Blog \u2013 Newsletter & Final CTA",
-  "type": "section",
+  "type": "page",
   "content": [
     {
       "id": "blog_newsletter",

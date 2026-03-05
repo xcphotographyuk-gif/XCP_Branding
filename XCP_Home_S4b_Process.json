@@ -1,7 +1,7 @@
 {
   "version": "0.4",
   "title": "Home \u2013 Process Timeline",
-  "type": "section",
+  "type": "page",
   "content": [
     {
       "id": "process-section",

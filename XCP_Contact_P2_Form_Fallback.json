@@ -2,7 +2,7 @@
   "version": "0.4",
   "title": "XCP Contact: Form + Info Panel: EMAIL FALLBACK: Section 2 of 4",
   "_comment": "FALLBACK FORM: Routes enquiries via Elementor email notification only. Use this if Overture webhook is not yet configured, or as a backup when Overture is unavailable. Swap for XCP_Contact_P2_Form_Overture.json once Overture is active. The field set and UX are identical to the Overture version, zero disruption to visitors.",
-  "type": "section",
+  "type": "page",
   "content": [
     {
       "id": "contact_form_fallback",

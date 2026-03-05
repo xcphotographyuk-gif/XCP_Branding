@@ -2,7 +2,7 @@
   "version": "0.4",
   "title": "XCP Contact: Form + Info Panel: OVERTURE VERSION: Section 2 of 4",
   "_comment": "PRIMARY FORM: Routes enquiries to Overture CRM via webhook AND sends email notification. Use this when Overture account is active and webhook URL is confirmed. See PHASED_DEVELOPMENT_AUDIT.md Appendix B for setup steps.",
-  "type": "section",
+  "type": "page",
   "content": [
     {
       "id": "contact_form_overture",

@@ -1,7 +1,7 @@
 {
   "version": "0.4",
   "title": "Services \u2013 Hero & Intro",
-  "type": "section",
+  "type": "page",
   "content": [
     {
       "id": "services_hero",

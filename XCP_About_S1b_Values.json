@@ -1,7 +1,7 @@
 {
   "version": "0.4",
   "title": "About – Core Values",
-  "type": "section",
+  "type": "page",
   "content": [
     {
       "id": "about_values",
