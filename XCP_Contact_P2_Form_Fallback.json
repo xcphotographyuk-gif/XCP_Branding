@@ -16,7 +16,7 @@
         },
         "structure": "20",
         "background_background": "classic",
-        "background_color": "#ffffff",
+        "background_color": "#000000",
         "padding": {
           "unit": "px",
           "top": "80",
@@ -38,7 +38,7 @@
             "padding": {
               "unit": "px",
               "top": "0",
-              "right": "40",
+              "right": "50",
               "bottom": "0",
               "left": "0",
               "isLinked": false
@@ -50,7 +50,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:#888;font-weight:600;font-family:Raleway,sans-serif;margin-bottom:10px;'>Start the Conversation</p>"
+                "editor": "<p style='font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#d4af37;font-weight:600;font-family:Montserrat,sans-serif;margin-bottom:12px;'>Get in Touch</p>"
               }
             },
             {
@@ -67,7 +67,10 @@
                 "typography_font_size_mobile": {
                   "unit": "px",
                   "size": 26
-                }
+                },
+                "title_color": "#ffffff",
+                "typography_font_family": "Montserrat",
+                "typography_font_weight": "700"
               }
             },
             {
@@ -75,7 +78,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='font-size:16px;line-height:1.7;color:#555;margin:12px 0 28px;'>No scripts, no pressure. Just an honest conversation about what you need and whether I'm the right fit to deliver it. I aim to respond within 24 hours.</p>"
+                "editor": "<p style='font-size:16px;line-height:1.7;color:rgba(255,255,255,0.7);margin:12px 0 28px;font-family:\"Open Sans\",sans-serif;'>Send your enquiry and I will respond within 24 hours. No pressure, no scripts — just an honest conversation about your brand and what great photography can do for it.</p>"
               }
             },
             {
@@ -114,7 +117,7 @@
                     "field_label": "Type of Project",
                     "field_id": "name",
                     "required": "yes",
-                    "field_options": "Brand Photography Session\nDocumentary Business Storytelling\nCorporate Portraits & Headshots\nEvent & Performance Coverage\nEditorial Work\nFine Art Commission\nWorkshop or Photography Course\nNot Sure Yet, Let's Talk",
+                    "field_options": "Brand Photography Session\nDocumentary Business Storytelling\nCorporate Portraits & Headshots\nEvent & Performance Coverage\nEditorial Work\nFine Art Commission\nWorkshop or Photography Course\nNot Sure Yet — Let's Talk",
                     "width": "50"
                   },
                   {
@@ -162,14 +165,14 @@
                   },
                   {
                     "field_type": "acceptance",
-                    "field_label": "Yes, I'd like to receive XC Photography updates \u2014 occasional news about availability, workshops, and editorial projects. No spam, unsubscribe any time.",
+                    "field_label": "Yes, I'd like to receive occasional updates from XC Photography — availability, workshops, and editorial news. No spam, unsubscribe any time.",
                     "field_id": "email_marketing_optin",
                     "required": "no",
                     "width": "100"
                   },
                   {
                     "field_type": "acceptance",
-                    "field_label": "I have read and agree to the <a href='/privacy-policy' target='_blank' style='color:#1a1a1a;text-decoration:underline;'>Privacy Policy</a> and consent to XC Photography contacting me about my enquiry.",
+                    "field_label": "I have read and agree to the <a href='/privacy-policy' target='_blank' style='color:#d4af37;text-decoration:underline;'>Privacy Policy</a> and consent to XC Photography contacting me about my enquiry.",
                     "field_id": "gdpr_consent",
                     "required": "yes",
                     "width": "100",
@@ -186,8 +189,8 @@
                 "button_text": "Send My Enquiry",
                 "button_size": "lg",
                 "button_align": "left",
-                "button_background_color": "#1a1a1a",
-                "button_text_color": "#ffffff",
+                "button_background_color": "#d4af37",
+                "button_text_color": "#000000",
                 "button_border_radius": {
                   "unit": "px",
                   "top": "0",
@@ -199,9 +202,9 @@
                 "button_padding": {
                   "unit": "px",
                   "top": "16",
-                  "right": "40",
+                  "right": "48",
                   "bottom": "16",
-                  "left": "40",
+                  "left": "48",
                   "isLinked": false
                 },
                 "typography_font_family": "Raleway",
@@ -215,8 +218,26 @@
                   "unit": "px",
                   "size": 1.5
                 },
-                "success_message": "Thank you. Your enquiry is on its way. I'll be in touch within 24 hours to arrange a discovery call.",
-                "error_message": "Something went wrong. Please email me directly at hello@xcphotography.co.uk or call +44 (0) 7XXX XXXXXX."
+                "success_message": "Thank you. Your enquiry is on its way — I will be in touch within 24 hours.",
+                "error_message": "Something went wrong. Please email me directly at hello@xcphotography.co.uk.",
+                "button_hover_background_color": "#b8962e",
+                "button_typography_font_family": "Montserrat",
+                "button_typography_font_weight": "600",
+                "button_typography_font_size": {
+                  "unit": "px",
+                  "size": 13
+                },
+                "button_typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 1.5
+                },
+                "button_typography_text_transform": "uppercase",
+                "label_color": "#E8E4DC",
+                "label_typography_font_size": {
+                  "unit": "px",
+                  "size": 13
+                },
+                "label_typography_font_weight": "600"
               }
             }
           ]
@@ -229,7 +250,7 @@
             "_column_size_tablet": 100,
             "_column_size_mobile": 100,
             "background_background": "classic",
-            "background_color": "#f8f8f8",
+            "background_color": "#0d0d0d",
             "padding": {
               "unit": "px",
               "top": "50",
@@ -245,12 +266,15 @@
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
-                "title": "What to Expect",
+                "title": "What Happens Next",
                 "header_size": "h3",
                 "typography_font_size": {
                   "unit": "px",
-                  "size": 26
-                }
+                  "size": 24
+                },
+                "title_color": "#ffffff",
+                "typography_font_family": "Montserrat",
+                "typography_font_weight": "700"
               }
             },
             {
@@ -258,7 +282,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<ol style='padding-left:20px;font-size:15px;line-height:1.9;color:#444;margin-top:16px;'><li style='margin-bottom:14px;'><strong>You send your enquiry</strong>. This form takes less than 3 minutes.</li><li style='margin-bottom:14px;'><strong>I respond within 24 hours</strong>, usually much sooner, with a few questions if I need them.</li><li style='margin-bottom:14px;'><strong>We have a free discovery call</strong>. 20 minutes, no pressure, just honest conversation.</li><li style='margin-bottom:14px;'><strong>I put together a tailored proposal</strong>, specific to your brand and goals, not a generic price list.</li><li><strong>We create something worth remembering.</strong></li></ol>"
+                "editor": "<ol style='padding-left:20px;font-size:15px;line-height:1.9;color:rgba(255,255,255,0.7);margin-top:16px;font-family:\"Open Sans\",sans-serif;'><li style='margin-bottom:14px;'><strong style='color:#E8E4DC;'>You send your enquiry.</strong> This form takes less than 3 minutes.</li><li style='margin-bottom:14px;'><strong style='color:#E8E4DC;'>I respond within 24 hours</strong> with any questions I need answered.</li><li style='margin-bottom:14px;'><strong style='color:#E8E4DC;'>I put together a tailored proposal</strong> specific to your brand and goals — not a generic price list.</li><li><strong style='color:#E8E4DC;'>We create something worth remembering.</strong></li></ol>"
               }
             },
             {
@@ -267,7 +291,7 @@
               "widgetType": "divider",
               "settings": {
                 "style": "solid",
-                "color": "#dddddd",
+                "color": "rgba(232,228,220,0.15)",
                 "gap": {
                   "unit": "px",
                   "size": 28
@@ -283,8 +307,11 @@
                 "header_size": "h4",
                 "typography_font_size": {
                   "unit": "px",
-                  "size": 18
-                }
+                  "size": 16
+                },
+                "title_color": "#ffffff",
+                "typography_font_family": "Montserrat",
+                "typography_font_weight": "700"
               }
             },
             {
@@ -292,7 +319,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='font-size:15px;line-height:1.8;color:#444;margin-top:12px;'><strong>Xavier Clarke</strong><br>XC Photography<br><br><a href='mailto:hello@xcphotography.co.uk' style='color:#1a1a1a;text-decoration:none;border-bottom:1px solid #E8E4DC;'>hello@xcphotography.co.uk</a><br><a href='tel:+441234567890' style='color:#1a1a1a;text-decoration:none;'>+44 (0) 1234 567890</a><br><br>London &amp; Brighton \u00b7 UK &amp; International<br>Mon\u2013Fri 9am\u20136pm \u00b7 Sat by appointment</p>"
+                "editor": "<p style='font-size:15px;line-height:1.8;color:rgba(255,255,255,0.7);margin-top:12px;font-family:\"Open Sans\",sans-serif;'><strong style='color:#E8E4DC;'>Xavier Clarke</strong><br>XC Photography<br><br><a href='mailto:hello@xcphotography.co.uk' style='color:#d4af37;text-decoration:none;'>hello@xcphotography.co.uk</a><br><br>Brighton-based &middot; UK &amp; International<br>Mon&ndash;Fri 9am&ndash;6pm &middot; Sat by appointment</p>"
               }
             },
             {
@@ -300,7 +327,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<div style='background:#fff;border-left:3px solid #E8E4DC;padding:14px 18px;margin-top:24px;font-size:14px;line-height:1.7;color:#555;'><strong>Not ready to enquire?</strong><br>That's fine. <a href='/portfolio' style='color:#1a1a1a;text-decoration:underline;'>Browse the portfolio</a> first, or <a href='/stories' style='color:#1a1a1a;text-decoration:underline;'>read the blog</a> to see how I think about brand photography.</div>"
+                "editor": "<div style='border-left:3px solid #d4af37;padding:14px 18px;margin-top:24px;font-size:14px;line-height:1.7;color:rgba(255,255,255,0.6);font-family:\"Open Sans\",sans-serif;'><strong style='color:#E8E4DC;'>Not ready to enquire yet?</strong><br>That&rsquo;s fine. <a href='/portfolio' style='color:#d4af37;text-decoration:none;'>Browse the portfolio</a> first, or <a href='/stories' style='color:#d4af37;text-decoration:none;'>read the blog</a>.</div>"
               }
             }
           ]

@@ -2,131 +2,68 @@
 
 **The single reference for connecting your XCP contact form to Overture.**
 
-> **Short answer to "where do I add the API key?"**
-> In WordPress, open the Contact page in Elementor → click the form widget → **Advanced tab → Custom Headers** → add `Authorization` = `Bearer YOUR_KEY`. **Do not** add it as a hidden form field. Webhook URL: `https://xcphotography.overturehq.com/api/bookings`. That's it — the form will work as expected.
-
 ---
 
-## Prerequisites
+## ✅ Quick Setup (3 steps)
 
-| What you need | Where to find it |
-|---|---|
-| Overture account active | [app.overture.studio](https://app.overture.studio) (or your Overture instance URL) |
-| Your Overture API key | Overture Admin → **Settings → Integrations → API Keys** → copy Bearer token |
-| WordPress + Elementor Pro installed | Must be Elementor Pro (free version has no webhook action) |
-| Contact page imported from JSON | Use `XCP_Contact_P2_Form_Overture.json` — see [JSON_IMPORT_INDEX.md](JSON_IMPORT_INDEX.md) |
+**Step 1 — Import the form JSON**
 
----
+Import `XCP_Contact_P2_Form_Overture.json` on your Contact page. The webhook URL is already set inside: `https://xcphotography.overturehq.com/api/bookings`
 
-## Step 1 — Get Your API Key from Overture
+**Step 2 — Add your API key**
 
-1. Log in to your Overture dashboard
-2. Go to **Settings** (bottom-left cog icon)
-3. Click **Integrations** → **API Keys**
-4. Copy your API Bearer token — it will look like a long alphanumeric string
-
-> **Keep this safe.** Treat it like a password. Do not commit it to GitHub.
-
----
-
-## Step 2 — Add the API Key in Elementor
-
-1. In WordPress admin, go to **Pages → Contact**
-2. Click **Edit with Elementor**
-3. Click on the **form widget** (the enquiry form in Section 2)
-4. In the left panel, click the **Advanced** tab (or **Content → Additional Options** depending on your Elementor Pro version)
-5. Find **Custom Headers** — add one header:
+In WordPress → Pages → Contact → Edit with Elementor:
+1. Click the **form widget**
+2. Go to the **Advanced** tab in the left panel
+3. Find **Custom Headers** and add one entry:
 
 | Header name | Header value |
 |---|---|
-| `Authorization` | `Bearer YOUR_OVERTURE_API_KEY` |
+| `Authorization` | `Bearer [YOUR_OVERTURE_API_KEY]` |
 
-> Replace `YOUR_OVERTURE_API_KEY` with the token you copied in Step 1. Include the word `Bearer` followed by a space before the key.
+> Replace `[YOUR_OVERTURE_API_KEY]` with the token from Overture → Settings → Integrations → API Keys.
+> Keep the word `Bearer` and a space before the key.
+> ⚠️ **Do not** add the API key as a hidden form field — it must be in Custom Headers only.
 
-> ⚠️ **Important:** The API key must be added in **Custom Headers only** — do **not** add it as a hidden form field. A hidden field sends the value as part of the form data visible to the browser, not as a secure HTTP header. If you added a hidden field for the API key, delete it from the form fields list.
+**Step 3 — Save and test**
 
----
-
-## Step 3 — Set the Webhook URL
-
-In the same form widget:
-
-1. Find the **Actions After Submit** area — confirm **Webhook** is listed (it is, in the JSON)
-2. Find the **Webhook URL** field and confirm it is set to:
-
-```
-https://xcphotography.overturehq.com/api/bookings
-```
-
-This is your XCP Overture instance. The endpoint is `/api/bookings` — this is the Overture Booking API `POST` endpoint.
-
-**Method:** `POST` (Elementor's webhook action always uses POST — this matches the Overture API spec.)
+Click **Update** in Elementor. Submit a test enquiry. Check Overture → Bookings — a new Pending booking should appear within seconds.
 
 ---
 
-## Step 4 — Confirm Email Action Still Active
+## Confirmed Settings
 
-While you're in the form settings, confirm the **Actions After Submit** includes both:
-
-- ✅ **Email** — sends you a notification copy
-- ✅ **Webhook** — posts to Overture
-
-Both should already be set in the imported JSON. If email is missing, add it and configure the recipient as `hello@xcphotography.co.uk`.
-
----
-
-## Step 5 — Save & Test
-
-1. Click **Update** in Elementor to save
-2. Open the Contact page in a browser
-3. Fill in the test form with real-looking data and submit
-4. Check your **Overture dashboard → Bookings** — a new Pending booking should appear within seconds
-5. Check your email inbox — the notification copy should also arrive
-
-> If the booking does not appear in Overture, the most common causes are: wrong API key, wrong webhook URL, or the Overture API key lacks Booking write permission. See Troubleshooting below.
+| Setting | Value |
+|---|---|
+| Webhook URL | `https://xcphotography.overturehq.com/api/bookings` |
+| HTTP Method | POST (automatic — Elementor always uses POST) |
+| Authorization location | Form widget → Advanced tab → Custom Headers |
+| Header name | `Authorization` |
+| Header value | `Bearer [YOUR_OVERTURE_API_KEY]` |
+| New booking status | `Pending` (set automatically by Overture) |
 
 ---
 
 ## Field Mapping Reference
 
-The form field IDs in `XCP_Contact_P2_Form_Overture.json` are set to match the Overture Booking API field names exactly. **No transformation required.** What the visitor types goes directly into the correct Overture field.
+Form field IDs in `XCP_Contact_P2_Form_Overture.json` match Overture Booking API field names exactly — no transformation needed.
 
-| Form label shown to visitor | `field_id` in JSON | Overture API field | Resource created |
-|---|---|---|---|
-| Your Name | `promoterName` | `promoterName` | Booking |
-| Type of Project | `name` | `name` (booking title) | Booking |
-| Preferred Shoot Date | `date` | `date` | Booking |
-| County / Region | `venueState` | `venueState` | Booking |
-| Country | `venueCountry` | `venueCountry` | Booking |
-| Brand & Vision message | `message` | `info[]` array note | Booking |
-| Email Address | `email` | Links to Person record | Overture auto-matches / creates |
-| Phone Number | `phone` | Attached to Person record | Overture auto-matches / creates |
-| Source URL (hidden) | `source` | Source tag | Booking |
-
-> **Status:** All bookings created via the API default to `status: "Pending"` in Overture. They appear in your dashboard ready to action.
+| Form label | `field_id` | Overture API field |
+|---|---|---|
+| Your Name | `promoterName` | `promoterName` |
+| Type of Project | `name` | `name` (booking title) |
+| Preferred Shoot Date | `date` | `date` |
+| County / Region | `venueState` | `venueState` |
+| Country | `venueCountry` | `venueCountry` |
+| Brand & Vision | `message` | `info[]` note |
+| Email Address | `email` | Person record (auto-matched) |
+| Phone Number | `phone` | Person record (auto-matched) |
 
 ---
 
-## Address Resource — What It Is & When to Use It
+## Fallback Option
 
-The Overture Address API (`POST /api/addresses`) allows you to record a shoot location address against a Person or booking.
-
-**You do not need Address fields on the contact form.** Here is why:
-
-- At enquiry stage, the exact shoot address is rarely known
-- `venueState` (county/region) and `venueCountry` on the form give enough location context to filter and respond
-- Once you have spoken to the client and confirmed a shoot location, **add the address directly in Overture** against their Person record:
-  - Overture → People → find the person → Add Address
-  - Fields: `line1`, `line2`, `line3`, `city`, `state`, `country`, `zip`
-  - `label`: set to `"Shoot Location"` to distinguish from billing address
-
-This keeps the contact form clean and fast for prospects while giving you full address capability in the CRM post-enquiry.
-
----
-
-## Fallback: No Overture Account Yet?
-
-Import `XCP_Contact_P2_Form_Fallback.json` for Section 2 of the Contact page instead. It is a plain Elementor form that sends enquiries by email only — no API required. All field IDs are identical, so when you connect Overture later you can swap the section without losing any form history.
+If you want to hold off on Overture for now, import `XCP_Contact_P2_Form_Fallback.json` instead — identical layout and styling, sends enquiries by email only, no API required. Field IDs are identical so you can swap to the Overture version at any time with zero disruption.
 
 ---
 
@@ -134,29 +71,12 @@ Import `XCP_Contact_P2_Form_Fallback.json` for Section 2 of the Contact page ins
 
 | Symptom | Likely cause | Fix |
 |---|---|---|
-| No booking appears in Overture | Wrong API key | Re-copy the Bearer token from Overture → Settings → API Keys |
-| No booking appears in Overture | Wrong webhook URL | Confirm the URL matches your Overture instance exactly |
-| 403 error in Elementor logs | API key lacks permission | Check the key has Booking write scope in Overture |
-| 422 error | Required field missing or wrong format | Check `date` field is ISO 8601 (YYYY-MM-DD). The Elementor date picker outputs this format by default |
-| Email notification not received | Email action not configured | Add Email action in form → Additional Options → Actions After Submit |
-| Form submits but shows generic error | Overture API is unreachable | Check Overture service status; confirm your server can make outbound POST requests |
+| No booking in Overture | Wrong API key | Re-copy Bearer token from Overture → Settings → API Keys |
+| No booking in Overture | Wrong webhook URL | Confirm URL: `https://xcphotography.overturehq.com/api/bookings` |
+| 403 error | API key lacks permission | Check key has Booking write scope in Overture |
+| 422 error | Required field missing or wrong format | Check `date` field outputs ISO 8601 (YYYY-MM-DD) |
+| Form submits but shows error | Overture unreachable | Check Overture status; confirm server allows outbound POST |
 
 ---
 
-## Quick Reference Card
-
-```
-Overture API key:   Settings → Integrations → API Keys → copy Bearer token
-Elementor location: Form widget → Advanced tab → Custom Headers
-Header name:        Authorization
-Header value:       Bearer YOUR_OVERTURE_API_KEY
-Webhook URL:        https://xcphotography.overturehq.com/api/bookings
-Method:             POST (automatic)
-New booking status: Pending (automatic)
-Address:            Add in Overture after enquiry — not on the form
-⚠️ API key:         Custom Headers ONLY — never add as a hidden form field
-```
-
----
-
-*Part of the XCP Branding repository. See [JSON_IMPORT_INDEX.md](JSON_IMPORT_INDEX.md) for the full page-by-page import guide.*
+*See [JSON_IMPORT_INDEX.md](JSON_IMPORT_INDEX.md) for the full page-by-page import guide.*
