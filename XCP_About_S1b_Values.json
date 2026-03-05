@@ -1,0 +1,66 @@
+{
+  "version": "0.4",
+  "title": "About – Core Values",
+  "type": "page",
+  "content": [
+    {
+      "id": "about_values",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1200
+        },
+        "padding": {
+          "unit": "px",
+          "top": 80,
+          "right": 20,
+          "bottom": 80,
+          "left": 20
+        },
+        "_title": "Core Values"
+      },
+      "elements": [
+        {
+          "id": "about_values_col",
+          "elType": "column",
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 100
+            }
+          },
+          "elements": [
+            {
+              "id": "about_values_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "I Start With Understanding. The Camera Comes Second.",
+                "header_size": "h2",
+                "align": "center",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 42
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 28
+                }
+              }
+            },
+            {
+              "id": "about_values_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; font-size: 18px; max-width: 860px; margin: 30px auto; line-height: 1.9;'>Before I shoot anything, I need to know three things: who you actually are, who you want to reach, and what it is about you that will make those people stop and pay attention.</p><p style='text-align: center; font-size: 18px; max-width: 860px; margin: 30px auto; line-height: 1.9;'>That's not a casual chat over coffee. That's the whole job. Everything else, the light, the timing, the location, the moment I decide to press the shutter, all flow from that understanding.</p><p style='text-align: center; font-size: 18px; max-width: 860px; margin: 30px auto; line-height: 1.9;'>Technically, I've spent 15+ years making the craft invisible. The technical side is the foundation. What I bring beyond it is the ability to see what makes you genuinely you, and find the precise moment, light, and angle where that becomes an image someone can't scroll past.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

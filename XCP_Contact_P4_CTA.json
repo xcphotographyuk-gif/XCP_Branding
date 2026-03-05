@@ -1,0 +1,120 @@
+{
+  "version": "0.4",
+  "title": "XCP Contact: Closing CTA: Section 4 of 4",
+  "type": "page",
+  "content": [
+    {
+      "id": "contact_final_cta",
+      "elType": "section",
+      "settings": {
+        "_title": "Closing CTA",
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 900
+        },
+        "background_background": "classic",
+        "background_color": "#1a1a1a",
+        "padding": {
+          "unit": "px",
+          "top": "70",
+          "right": "20",
+          "bottom": "70",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "final_cta_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "final_cta_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Your Audience Is Waiting",
+                "header_size": "h3",
+                "align": "center",
+                "color": "#ffffff",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 26
+                }
+              }
+            },
+            {
+              "id": "final_cta_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align:center;color:rgba(255,255,255,0.78);font-size:18px;line-height:1.8;max-width:620px;margin:20px auto;'>Every day without authentic, strategic imagery is a day your ideal clients connect with someone else. I typically respond within 24 hours with next steps for a no-pressure discovery call.</p>"
+              }
+            },
+            {
+              "id": "final_cta_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Book Your Discovery Call",
+                "link": {
+                  "url": "/booking",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "center",
+                "size": "lg",
+                "background_color": "#d4af37",
+                "button_text_color": "#000000",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "18",
+                  "right": "48",
+                  "bottom": "18",
+                  "left": "48",
+                  "isLinked": false
+                },
+                "margin": {
+                  "unit": "px",
+                  "top": "32",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "typography_font_family": "Raleway",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13
+                },
+                "typography_text_transform": "uppercase",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 2
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

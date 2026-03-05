@@ -15,8 +15,11 @@ Your homepage is **100% ready** with professional, SEO-optimized, conversion-foc
 
 ### Import These Files Into Elementor In Order:
 
-1. **XCP_HomeP1_Hero_Gallery_FINAL.json** (7.6 KB)
-   - Hero Section: "Your Story Deserves to Be Seen"
+1. **XCP_Home_S1a_Hero_Concepts.json** (12.7 KB)
+   - Hero Section: "Branding & Documentary Photography That Demands Attention"
+   - Concept Boxes: Striking Stories · Embrace Individuality · Timeless Beauty · Unseen Confidence
+
+1b. **XCP_Home_S1b_Gallery.json**
    - 4-Box Gallery Bar with service categories
    
 2. **XCP_HomeP2_Parallax_Text_FINAL.json** (4.5 KB)
@@ -45,9 +48,11 @@ Your homepage is **100% ready** with professional, SEO-optimized, conversion-foc
 ## 🎨 CONTENT HIGHLIGHTS
 
 ### Hero Section
-**Headline:** "Your Story Deserves to Be Seen"  
-**Subhead:** "Powerful Imagery That Connects Your Brand with the Audience You're Meant to Reach"  
-**CTA:** "Discover Your Visual Story"
+**Headline:** "Branding & Documentary Photography That Demands Attention"  
+**Subhead:** "Iconic Imagery for Iconic Brands with an Edge"  
+**Primary CTA:** "Book a Consultation" (gold button → /booking)  
+**Secondary CTA:** "View Portfolio" (outline → /portfolio)  
+**Layout:** Full-screen (100vh), dark gradient overlay, Montserrat 700 heading
 
 ### Parallax Section
 **Headline:** "Your Authentic Story. Their Undivided Attention."  

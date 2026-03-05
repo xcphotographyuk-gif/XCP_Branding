@@ -1,0 +1,333 @@
+{
+  "version": "0.4",
+  "title": "XCP Contact: Form + Info Panel: OVERTURE VERSION: Section 2 of 4",
+  "_comment": "PRIMARY FORM: Routes enquiries to Overture CRM via webhook (POST /api/bookings) AND sends email notification. Webhook URL: https://xcphotography.overturehq.com/api/bookings. API key: add Authorization header in Elementor form widget → Advanced tab → Custom Headers → Authorization: Bearer [YOUR_OVERTURE_API_KEY]. Do NOT add the API key as a hidden form field. Field IDs match Overture Booking API field names exactly: promoterName, name (booking title), date, venueState, venueCountry, message (→info[]).",
+  "type": "page",
+  "content": [
+    {
+      "id": "contact_form_overture",
+      "elType": "section",
+      "settings": {
+        "_title": "Contact Form: Overture (Primary)",
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1200
+        },
+        "structure": "20",
+        "background_background": "classic",
+        "background_color": "#000000",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20",
+          "isLinked": false
+        },
+        "gap": "wide"
+      },
+      "elements": [
+        {
+          "id": "form_col_overture",
+          "elType": "column",
+          "settings": {
+            "_column_size": 60,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "50",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "form_eyebrow_o",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#d4af37;font-weight:600;font-family:Montserrat,sans-serif;margin-bottom:12px;'>Get in Touch</p>"
+              }
+            },
+            {
+              "id": "form_heading_o",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Tell Me About Your Vision",
+                "header_size": "h2",
+                "title_color": "#ffffff",
+                "typography_font_family": "Montserrat",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 34
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 26
+                }
+              }
+            },
+            {
+              "id": "form_intro_o",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size:16px;line-height:1.7;color:rgba(255,255,255,0.7);margin:12px 0 28px;font-family:\"Open Sans\",sans-serif;'>Send your enquiry and I will respond within 24 hours. No pressure, no scripts — just an honest conversation about your brand and what great photography can do for it.</p>"
+              }
+            },
+            {
+              "id": "contact_form_widget_overture",
+              "elType": "widget",
+              "widgetType": "form",
+              "settings": {
+                "form_name": "XCP Contact: Overture",
+                "form_fields": [
+                  {
+                    "field_type": "text",
+                    "field_label": "Your Name",
+                    "field_id": "promoterName",
+                    "required": "yes",
+                    "placeholder": "First and last name",
+                    "width": "50"
+                  },
+                  {
+                    "field_type": "email",
+                    "field_label": "Email Address",
+                    "field_id": "email",
+                    "required": "yes",
+                    "placeholder": "hello@yourbrand.co.uk",
+                    "width": "50"
+                  },
+                  {
+                    "field_type": "tel",
+                    "field_label": "Phone Number",
+                    "field_id": "phone",
+                    "required": "no",
+                    "placeholder": "+44 (0) 7XXX XXXXXX",
+                    "width": "50"
+                  },
+                  {
+                    "field_type": "select",
+                    "field_label": "Type of Project",
+                    "field_id": "name",
+                    "required": "yes",
+                    "field_options": "Brand Photography Session\nDocumentary Business Storytelling\nCorporate Portraits & Headshots\nEvent & Performance Coverage\nEditorial Work\nFine Art Commission\nWorkshop or Photography Course\nNot Sure Yet — Let's Talk",
+                    "width": "50"
+                  },
+                  {
+                    "field_type": "date",
+                    "field_label": "Preferred Shoot Date (if known)",
+                    "field_id": "date",
+                    "required": "no",
+                    "placeholder": "Approximate date",
+                    "width": "50"
+                  },
+                  {
+                    "field_type": "text",
+                    "field_label": "County / Region",
+                    "field_id": "venueState",
+                    "required": "no",
+                    "placeholder": "e.g. East Sussex, Greater London",
+                    "width": "50"
+                  },
+                  {
+                    "field_type": "select",
+                    "field_label": "Country",
+                    "field_id": "venueCountry",
+                    "required": "no",
+                    "field_options": "United Kingdom\nInternational",
+                    "default_value": "United Kingdom",
+                    "width": "50"
+                  },
+                  {
+                    "field_type": "textarea",
+                    "field_label": "Tell Me About Your Brand & Vision",
+                    "field_id": "message",
+                    "required": "yes",
+                    "placeholder": "What does your brand stand for? Who is your ideal client? What do you hope authentic photography will do for your business? The more you share, the better I can prepare.",
+                    "rows": 6,
+                    "width": "100"
+                  },
+                  {
+                    "field_type": "hidden",
+                    "field_label": "Source URL",
+                    "field_id": "source",
+                    "_comment": "Set Default Value in Elementor to dynamic tag: Current URL",
+                    "required": "no",
+                    "default_value": "[xcp_page_url]",
+                    "width": "100"
+                  },
+                  {
+                    "field_type": "acceptance",
+                    "field_label": "Yes, I'd like to receive occasional updates from XC Photography — availability, workshops, and editorial news. No spam, unsubscribe any time.",
+                    "field_id": "email_marketing_optin",
+                    "required": "no",
+                    "width": "100"
+                  },
+                  {
+                    "field_type": "acceptance",
+                    "field_label": "I have read and agree to the <a href='/privacy-policy' target='_blank' style='color:#d4af37;text-decoration:underline;'>Privacy Policy</a> and consent to XC Photography contacting me about my enquiry.",
+                    "field_id": "gdpr_consent",
+                    "required": "yes",
+                    "width": "100",
+                    "custom_messages": "yes",
+                    "required_message": "Please confirm you have read and agree to the Privacy Policy before submitting."
+                  }
+                ],
+                "submit_actions": [
+                  "email",
+                  "webhook"
+                ],
+                "webhook": "https://xcphotography.overturehq.com/api/bookings",
+                "_comment_setup": "IMPORTANT: Add your Overture API key in Elementor → form widget → Advanced tab → Custom Headers → Authorization: Bearer [YOUR_OVERTURE_API_KEY]. Do NOT add the key as a hidden form field.",
+                "webhook_advanced_data": "yes",
+                "button_text": "Send My Enquiry",
+                "button_size": "lg",
+                "button_align": "left",
+                "button_background_color": "#d4af37",
+                "button_text_color": "#000000",
+                "button_hover_background_color": "#b8962e",
+                "button_border_radius": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "button_padding": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "48",
+                  "bottom": "16",
+                  "left": "48",
+                  "isLinked": false
+                },
+                "button_typography_font_family": "Montserrat",
+                "button_typography_font_weight": "600",
+                "button_typography_font_size": {
+                  "unit": "px",
+                  "size": 13
+                },
+                "button_typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 1.5
+                },
+                "button_typography_text_transform": "uppercase",
+                "success_message": "Thank you. Your enquiry is on its way — I will be in touch within 24 hours.",
+                "error_message": "Something went wrong. Please email me directly at hello@xcphotography.co.uk.",
+                "webhook_tags": "source:contact-form",
+                "label_color": "#E8E4DC",
+                "label_typography_font_size": {
+                  "unit": "px",
+                  "size": 13
+                },
+                "label_typography_font_weight": "600",
+                "label_typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 0.5
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "info_col_overture",
+          "elType": "column",
+          "settings": {
+            "_column_size": 40,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100,
+            "background_background": "classic",
+            "background_color": "#0d0d0d",
+            "padding": {
+              "unit": "px",
+              "top": "50",
+              "right": "40",
+              "bottom": "50",
+              "left": "40",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "info_heading_o",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "What Happens Next",
+                "header_size": "h3",
+                "title_color": "#ffffff",
+                "typography_font_family": "Montserrat",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 24
+                }
+              }
+            },
+            {
+              "id": "info_steps_o",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<ol style='padding-left:20px;font-size:15px;line-height:1.9;color:rgba(255,255,255,0.7);margin-top:16px;font-family:\"Open Sans\",sans-serif;'><li style='margin-bottom:14px;'><strong style='color:#E8E4DC;'>You send your enquiry.</strong> This form takes less than 3 minutes.</li><li style='margin-bottom:14px;'><strong style='color:#E8E4DC;'>I respond within 24 hours</strong> with any questions I need answered.</li><li style='margin-bottom:14px;'><strong style='color:#E8E4DC;'>I put together a tailored proposal</strong> specific to your brand and goals — not a generic price list.</li><li><strong style='color:#E8E4DC;'>We create something worth remembering.</strong></li></ol>"
+              }
+            },
+            {
+              "id": "info_divider_o",
+              "elType": "widget",
+              "widgetType": "divider",
+              "settings": {
+                "style": "solid",
+                "color": "rgba(232,228,220,0.15)",
+                "gap": {
+                  "unit": "px",
+                  "size": 28
+                }
+              }
+            },
+            {
+              "id": "info_contact_o",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Direct Contact",
+                "header_size": "h4",
+                "title_color": "#ffffff",
+                "typography_font_family": "Montserrat",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16
+                }
+              }
+            },
+            {
+              "id": "info_details_o",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size:15px;line-height:1.8;color:rgba(255,255,255,0.7);margin-top:12px;font-family:\"Open Sans\",sans-serif;'><strong style='color:#E8E4DC;'>Xavier Clarke</strong><br>XC Photography<br><br><a href='mailto:hello@xcphotography.co.uk' style='color:#d4af37;text-decoration:none;'>hello@xcphotography.co.uk</a><br><br>Brighton-based &middot; UK &amp; International<br>Mon&ndash;Fri 9am&ndash;6pm &middot; Sat by appointment</p>"
+              }
+            },
+            {
+              "id": "info_note_o",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div style='border-left:3px solid #d4af37;padding:14px 18px;margin-top:24px;font-size:14px;line-height:1.7;color:rgba(255,255,255,0.6);font-family:\"Open Sans\",sans-serif;'><strong style='color:#E8E4DC;'>Not ready to enquire yet?</strong><br>That&rsquo;s fine. <a href='/portfolio' style='color:#d4af37;text-decoration:none;'>Browse the portfolio</a> first, or <a href='/stories' style='color:#d4af37;text-decoration:none;'>read the blog</a>.</div>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

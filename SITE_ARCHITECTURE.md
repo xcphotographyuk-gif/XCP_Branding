@@ -106,12 +106,19 @@ All pages optimized for:
 
 ## Implementation Priority
 
-1. ✅ Homepage - COMPLETE
-2. 🔄 About Page - IN PROGRESS
-3. 🔄 Services Page - IN PROGRESS
-4. 🔄 Portfolio Page - IN PROGRESS
-5. 🔄 Contact Page - IN PROGRESS
-6. 🔄 Blog/Stories Page - IN PROGRESS
+1. ✅ Homepage — Templates complete (`XCP_HomeP1–P5_*_FINAL.json`); placeholder images must be replaced
+2. ✅ About Page — Templates complete (`XCP_About_P1_Hero_Story.json`, `XCP_About_P2_Process_CTA.json`)
+3. ⚠️ Services Page — Template exists (`XCP_Services_P1_Packages.json`); pricing to be confirmed; booking CTA to add
+4. ✅ Portfolio Page — Templates complete (`XCP_Portfolio_P1_Hero_Filter.json`, `XCP_Portfolio_P2_Gallery_CTA.json`); real images needed
+5. ⚠️ Contact Page — Template complete (`XCP_Contact_P1_Complete.json`); GDPR consent field and Overture API webhook required
+6. ✅ Blog/Stories Page — Template created (`XCP_Blog_P1_Grid_CTA.json`); 5 blog posts written and ready to publish
+7. ✅ Header/Navigation — Template created (`XCP_Header_Navigation.json`); configure Elementor Pro Theme Builder
+8. ✅ Footer — Template created (`XCP_Footer.json`); update contact details and social URLs before importing
+9. ✅ Booking Page — Template created (`XCP_Booking_Page.json`); hero, Overture/Calendly embed placeholder, FAQ accordion, closing CTA; update embed URL with your Overture or Calendly link before import
+10. ❌ Privacy Policy — Required for GDPR; create via WordPress → Pages
+11. ❌ Terms & Conditions — Recommended; create via WordPress → Pages
+
+**See `PHASED_DEVELOPMENT_AUDIT.md` for the full gap analysis and phased build roadmap.**
 
 ---
 
@@ -120,5 +127,7 @@ All pages optimized for:
 - All templates use Elementor v0.4 format
 - Staged imports to avoid file size issues
 - Consistent naming: `XCP_[PageName]_[Section].json`
-- Image paths: `[uc_local]assets/images/[page]/`
-- Global styles applied via theme settings
+- Image paths: `[uc_local]assets/images/[page]/` — all placeholder paths must be replaced with real uploaded images
+- Global styles applied via Elementor → Global Settings (typography: Raleway + Open Sans; colours: #1a1a1a, #d4af37, #ffffff)
+- Header and footer use Elementor Pro Theme Builder (Templates → Theme Builder → Header / Footer)
+- Contact forms require Overture API webhook and GDPR acceptance field — see `PHASED_DEVELOPMENT_AUDIT.md` Appendix A
