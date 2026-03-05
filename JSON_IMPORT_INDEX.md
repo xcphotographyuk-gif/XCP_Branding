@@ -10,7 +10,7 @@ Work top to bottom within each page. Finish one page before starting the next.
 
 ## Page order — jump to any section
 
-1. [🏠 Home Page](#-home-page) — 7 files
+1. [🏠 Home Page](#-home-page) — 8 files
 2. [👤 About Page](#-about-page) — 4 files
 3. [🎯 Services Page](#-services-page) — 3 files
 4. [📷 Portfolio Page](#-portfolio-page) — 2 files
@@ -31,7 +31,8 @@ Work top to bottom within each page. Finish one page before starting the next.
 | 4 | Checkerboard (2 panels) | `XCP_HomeP3_Checkerboard_FINAL.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_HomeP3_Checkerboard_FINAL.json) |
 | 5 | Stats + Three Pillars | `XCP_Home_S4a_Stats_Pillars.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Home_S4a_Stats_Pillars.json) |
 | 6 | Process Timeline | `XCP_Home_S4b_Process.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Home_S4b_Process.json) |
-| 7 | Testimonials + Partners + CTA | `XCP_HomeP5_Testimonials_CTA_FINAL.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_HomeP5_Testimonials_CTA_FINAL.json) |
+| 7 | Behind the Lens — Statement + Shoot Images | `XCP_Home_S5a_Shoots_Statement.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Home_S5a_Shoots_Statement.json) |
+| 8 | Final CTA | `XCP_Home_S5b_CTA.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Home_S5b_CTA.json) |
 
 ✅ **Home page complete — [→ Next: About Page](#-about-page)**
 
