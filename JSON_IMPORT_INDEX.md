@@ -11,7 +11,7 @@ Work top to bottom within each page. Finish one page before starting the next.
 ## Page order — jump to any section
 
 1. [🏠 Home Page](#-home-page) — 8 files
-2. [👤 About Page](#-about-page) — 4 files
+2. [👤 About Page](#-about-page) — 5 files
 3. [🎯 Services Page](#-services-page) — 3 files
 4. [📷 Portfolio Page](#-portfolio-page) — 2 files
 5. [📬 Contact Page](#-contact-page) — 3 files
@@ -42,10 +42,11 @@ Work top to bottom within each page. Finish one page before starting the next.
 
 | # | Section | File | Link |
 |---|---|---|---|
-| 1 | Hero + Core Values | `XCP_About_S1_Hero_Values.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_About_S1_Hero_Values.json) |
-| 2 | Three Pillars + Credentials | `XCP_About_S2_Pillars_Credentials.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_About_S2_Pillars_Credentials.json) |
-| 3 | The Experience + Steps 1 & 2 | `XCP_About_S3_Experience_Steps12.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_About_S3_Experience_Steps12.json) |
-| 4 | Steps 3 & 4 + CTA | `XCP_About_S4_Steps34_CTA.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_About_S4_Steps34_CTA.json) |
+| 1 | Hero | `XCP_About_S1a_Hero.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_About_S1a_Hero.json) |
+| 2 | Core Values | `XCP_About_S1b_Values.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_About_S1b_Values.json) |
+| 3 | Three Pillars + Credentials | `XCP_About_S2_Pillars_Credentials.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_About_S2_Pillars_Credentials.json) |
+| 4 | The Experience + Steps 1 & 2 | `XCP_About_S3_Experience_Steps12.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_About_S3_Experience_Steps12.json) |
+| 5 | Steps 3 & 4 + CTA | `XCP_About_S4_Steps34_CTA.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_About_S4_Steps34_CTA.json) |
 
 ✅ **About page complete — [→ Next: Services Page](#-services-page)**
 
