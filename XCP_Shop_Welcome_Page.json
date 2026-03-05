@@ -1,0 +1,500 @@
+{
+  "version": "0.4",
+  "title": "Shop - Welcome & Introduction",
+  "type": "section",
+  "content": [
+    {
+      "id": "shop_welcome_hero",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "min_height": {"unit": "vh", "size": 70},
+        "background_background": "classic",
+        "background_image": {"url": "[uc_local]assets/images/shop/welcome-hero.jpg"},
+        "background_position": "center center",
+        "background_size": "cover",
+        "background_overlay_background": "classic",
+        "background_overlay_color": "rgba(0,0,0,0.45)",
+        "content_position": "middle",
+        "padding": {"unit": "px", "top": 100, "right": 20, "bottom": 100, "left": 20},
+        "_title": "Shop Welcome Hero"
+      },
+      "elements": [
+        {
+          "id": "shop_welcome_hero_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "shop_welcome_hero_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Artwork That Transforms Spaces",
+                "header_size": "h1",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_font_size": {"unit": "px", "size": 56},
+                "typography_font_size_tablet": {"unit": "px", "size": 42},
+                "typography_font_size_mobile": {"unit": "px", "size": 32}
+              }
+            },
+            {
+              "id": "shop_welcome_hero_subhead",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #FFFFFF; font-size: 22px; max-width: 800px; margin: 20px auto; line-height: 1.6;'>Curated collections for interior designers, architects, galleries, and art collectors who understand the power of exceptional imagery.</p>",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shop_intro",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {"unit": "px", "size": 1100},
+        "padding": {"unit": "px", "top": 80, "right": 20, "bottom": 60, "left": 20},
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "_title": "Introduction"
+      },
+      "elements": [
+        {
+          "id": "shop_intro_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "shop_intro_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "The Art of Elevated Environments",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#1A1A1A",
+                "typography_font_size": {"unit": "px", "size": 40},
+                "typography_font_size_mobile": {"unit": "px", "size": 28}
+              }
+            },
+            {
+              "id": "shop_intro_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 18px; max-width: 900px; margin: 30px auto; line-height: 1.8;'>In the hands of a visionary designer or architect, artwork becomes more than decoration—it becomes the defining element that transforms a space into an experience. Our collections offer museum-quality pieces and unique gifts that speak to discerning clients who appreciate craftsmanship, authenticity, and visual impact.</p><p style='text-align: center; color: #666666; font-size: 18px; max-width: 900px; margin: 30px auto; line-height: 1.8;'>Whether you're curating a gallery installation, designing a luxury residence, or sourcing statement pieces for commercial spaces, each work is selected and crafted to elevate environments and captivate audiences.</p>",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shop_collections",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "padding": {"unit": "px", "top": 60, "right": 20, "bottom": 80, "left": 20},
+        "background_background": "classic",
+        "background_color": "#F8F8F8",
+        "_title": "Collections Overview"
+      },
+      "elements": [
+        {
+          "id": "collections_heading_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "collections_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Discover Our Collections",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#1A1A1A",
+                "typography_font_size": {"unit": "px", "size": 42},
+                "typography_font_size_mobile": {"unit": "px", "size": 30},
+                "margin": {"unit": "px", "bottom": 60}
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "collections_grid",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "padding": {"unit": "px", "top": 0, "right": 20, "bottom": 80, "left": 20},
+        "background_background": "classic",
+        "background_color": "#F8F8F8",
+        "_title": "Collections Grid"
+      },
+      "elements": [
+        {
+          "id": "collection_fineart",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 33.33},
+            "width_tablet": {"unit": "%", "size": 50},
+            "width_mobile": {"unit": "%", "size": 100},
+            "padding": {"unit": "px", "top": 20, "right": 20, "bottom": 20, "left": 20}
+          },
+          "elements": [
+            {
+              "id": "collection_fineart_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "[uc_local]assets/images/shop/collection-fineart.jpg"},
+                "image_size": "large",
+                "hover_animation": "grow"
+              }
+            },
+            {
+              "id": "collection_fineart_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Fine Art Prints",
+                "header_size": "h3",
+                "align": "center",
+                "title_color": "#1A1A1A",
+                "typography_font_size": {"unit": "px", "size": 28},
+                "margin": {"unit": "px", "top": 25}
+              }
+            },
+            {
+              "id": "collection_fineart_desc",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 16px; line-height: 1.6; margin: 15px auto;'>Museum-quality limited editions for collectors and curators seeking investment-grade pieces.</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "collection_fineart_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Explore Fine Art",
+                "align": "center",
+                "button_type": "default",
+                "size": "md",
+                "background_color": "#1A1A1A",
+                "color": "#FFFFFF",
+                "typography_font_size": {"unit": "px", "size": 15},
+                "padding": {"unit": "px", "top": 12, "right": 30, "bottom": 12, "left": 30},
+                "border_radius": {"unit": "px", "size": 4},
+                "margin": {"unit": "px", "top": 20}
+              }
+            }
+          ]
+        },
+        {
+          "id": "collection_wallart",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 33.33},
+            "width_tablet": {"unit": "%", "size": 50},
+            "width_mobile": {"unit": "%", "size": 100},
+            "padding": {"unit": "px", "top": 20, "right": 20, "bottom": 20, "left": 20}
+          },
+          "elements": [
+            {
+              "id": "collection_wallart_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "[uc_local]assets/images/shop/collection-wallart.jpg"},
+                "image_size": "large",
+                "hover_animation": "grow"
+              }
+            },
+            {
+              "id": "collection_wallart_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Wall Art",
+                "header_size": "h3",
+                "align": "center",
+                "title_color": "#1A1A1A",
+                "typography_font_size": {"unit": "px", "size": 28},
+                "margin": {"unit": "px", "top": 25}
+              }
+            },
+            {
+              "id": "collection_wallart_desc",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 16px; line-height: 1.6; margin: 15px auto;'>Cinematic pieces perfect for residential and commercial design projects.</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "collection_wallart_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "View Wall Art",
+                "align": "center",
+                "button_type": "default",
+                "size": "md",
+                "background_color": "#1A1A1A",
+                "color": "#FFFFFF",
+                "typography_font_size": {"unit": "px", "size": 15},
+                "padding": {"unit": "px", "top": 12, "right": 30, "bottom": 12, "left": 30},
+                "border_radius": {"unit": "px", "size": 4},
+                "margin": {"unit": "px", "top": 20}
+              }
+            }
+          ]
+        },
+        {
+          "id": "collection_gifts",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 33.33},
+            "width_tablet": {"unit": "%", "size": 50},
+            "width_mobile": {"unit": "%", "size": 100},
+            "padding": {"unit": "px", "top": 20, "right": 20, "bottom": 20, "left": 20}
+          },
+          "elements": [
+            {
+              "id": "collection_gifts_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "[uc_local]assets/images/shop/collection-gifts.jpg"},
+                "image_size": "large",
+                "hover_animation": "grow"
+              }
+            },
+            {
+              "id": "collection_gifts_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Unique Gifts",
+                "header_size": "h3",
+                "align": "center",
+                "title_color": "#1A1A1A",
+                "typography_font_size": {"unit": "px", "size": 28},
+                "margin": {"unit": "px", "top": 25}
+              }
+            },
+            {
+              "id": "collection_gifts_desc",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 16px; line-height: 1.6; margin: 15px auto;'>Discover thoughtfully curated merchandise and gift collections for every occasion.</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "collection_gifts_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Discover Gifts",
+                "align": "center",
+                "button_type": "default",
+                "size": "md",
+                "background_color": "#1A1A1A",
+                "color": "#FFFFFF",
+                "typography_font_size": {"unit": "px", "size": 15},
+                "padding": {"unit": "px", "top": 12, "right": 30, "bottom": 12, "left": 30},
+                "border_radius": {"unit": "px", "size": 4},
+                "margin": {"unit": "px", "top": 20}
+              }
+            }
+          ]
+        },
+        {
+          "id": "collection_blackfriday",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 50},
+            "width_tablet": {"unit": "%", "size": 50},
+            "width_mobile": {"unit": "% ", "size": 100},
+            "padding": {"unit": "px", "top": 20, "right": 20, "bottom": 20, "left": 20}
+          },
+          "elements": [
+            {
+              "id": "collection_blackfriday_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "[uc_local]assets/images/shop/collection-blackfriday.jpg"},
+                "image_size": "large",
+                "hover_animation": "grow"
+              }
+            },
+            {
+              "id": "collection_blackfriday_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Black Friday Collection",
+                "header_size": "h3",
+                "align": "center",
+                "title_color": "#1A1A1A",
+                "typography_font_size": {"unit": "px", "size": 28},
+                "margin": {"unit": "px", "top": 25}
+              }
+            },
+            {
+              "id": "collection_blackfriday_desc",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 16px; line-height: 1.6; margin: 15px auto;'>Exclusive offers on selected pieces and collections for a limited time.</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "collection_blackfriday_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Shop Black Friday",
+                "align": "center",
+                "button_type": "primary",
+                "size": "md",
+                "background_color": "#D4AF37",
+                "color": "#000000",
+                "typography_font_size": {"unit": "px", "size": 15},
+                "padding": {"unit": "px", "top": 12, "right": 30, "bottom": 12, "left": 30},
+                "border_radius": {"unit": "px", "size": 4},
+                "margin": {"unit": "px", "top": 20}
+              }
+            }
+          ]
+        },
+        {
+          "id": "collection_christmas",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 50},
+            "width_tablet": {"unit": "%", "size": 50},
+            "width_mobile": {"unit": "%", "size": 100},
+            "padding": {"unit": "px", "top": 20, "right": 20, "bottom": 20, "left": 20}
+          },
+          "elements": [
+            {
+              "id": "collection_christmas_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "[uc_local]assets/images/shop/collection-christmas.jpg"},
+                "image_size": "large",
+                "hover_animation": "grow"
+              }
+            },
+            {
+              "id": "collection_christmas_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Christmas Collection",
+                "header_size": "h3",
+                "align": "center",
+                "title_color": "#1A1A1A",
+                "typography_font_size": {"unit": "px", "size": 28},
+                "margin": {"unit": "px", "top": 25}
+              }
+            },
+            {
+              "id": "collection_christmas_desc",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 16px; line-height: 1.6; margin: 15px auto;'>Gift sets and seasonal treasures perfect for the discerning art enthusiast.</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "collection_christmas_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Shop Christmas",
+                "align": "center",
+                "button_type": "primary",
+                "size": "md",
+                "background_color": "#D4AF37",
+                "color": "#000000",
+                "typography_font_size": {"unit": "px", "size": 15},
+                "padding": {"unit": "px", "top": 12, "right": 30, "bottom": 12, "left": 30},
+                "border_radius": {"unit": "px", "size": 4},
+                "margin": {"unit": "px", "top": 20}
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shop_woocommerce",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "padding": {"unit": "px", "top": 80, "right": 20, "bottom": 80, "left": 20},
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "_title": "WooCommerce Products Widget"
+      },
+      "elements": [
+        {
+          "id": "woo_widget_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "woo_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Featured Products",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#1A1A1A",
+                "typography_font_size": {"unit": "px", "size": 40},
+                "margin": {"unit": "px", "bottom": 50}
+              }
+            },
+            {
+              "id": "woo_products",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #888888; font-size: 16px; padding: 60px 20px; background: #f5f5f5; border-radius: 8px;'><strong>WooCommerce Products Widget Placeholder</strong><br><br>Replace this text widget with the WooCommerce Products widget from Elementor Pro.<br>Configure to show: Recent Products, Featured Products, or Product Categories.<br>Adjust columns (3-4 recommended), products per page, and sorting options.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
