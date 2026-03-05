@@ -1,7 +1,7 @@
 {
   "version": "0.4",
   "title": "XCP Contact: Form + Info Panel: OVERTURE VERSION: Section 2 of 4",
-  "_comment": "PRIMARY FORM: Routes enquiries to Overture CRM via webhook (POST /api/bookings) AND sends email notification. Field IDs match Overture Booking API field names exactly so webhook data maps without transformation. API key: WordPress Admin → Elementor → Integrations → add Authorization header Bearer [YOUR_OVERTURE_API_KEY]. Webhook URL: [YOUR_OVERTURE_BASE_URL]/api/bookings. Field mapping: promoterName→Booking.promoterName, name→Booking.name (title), date→Booking.date, venueState→Booking.venueState, venueCountry→Booking.venueCountry, message→Booking.info[].",
+  "_comment": "PRIMARY FORM: Routes enquiries to Overture CRM via webhook (POST /api/bookings) AND sends email notification. Field IDs match Overture Booking API field names exactly so webhook data maps without transformation. Webhook URL: https://xcphotography.overturehq.com/api/bookings. API key: add Authorization header in Elementor form Advanced tab → Custom Headers: Authorization: Bearer [YOUR_OVERTURE_API_KEY]. Do NOT add the API key as a hidden form field. Field mapping: promoterName→Booking.promoterName, name→Booking.name (title), date→Booking.date, venueState→Booking.venueState, venueCountry→Booking.venueCountry, message→Booking.info[].",
   "type": "page",
   "content": [
     {
@@ -189,8 +189,8 @@
                   "email",
                   "webhook"
                 ],
-                "webhook": "[YOUR_OVERTURE_BASE_URL]/api/bookings",
-                "_comment_webhook_url": "Replace [YOUR_OVERTURE_BASE_URL] with your Overture instance URL, e.g. https://app.overture.studio. Endpoint: POST /api/bookings. Add Authorization header in Elementor form Advanced settings: Authorization: Bearer [YOUR_OVERTURE_API_KEY]. API key found in Overture Admin → Settings → Integrations → API Keys.",
+                "webhook": "https://xcphotography.overturehq.com/api/bookings",
+                "_comment_webhook_url": "Webhook URL confirmed: https://xcphotography.overturehq.com/api/bookings. Endpoint: POST /api/bookings. Authorization header set in Elementor form Advanced tab → Custom Headers: Authorization: Bearer [YOUR_OVERTURE_API_KEY]. Do NOT add the API key as a hidden form field. API key found in Overture Admin → Settings → Integrations → API Keys.",
                 "webhook_advanced_data": "yes",
                 "button_text": "Send My Enquiry",
                 "button_size": "lg",

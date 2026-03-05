@@ -3,7 +3,7 @@
 **The single reference for connecting your XCP contact form to Overture.**
 
 > **Short answer to "where do I add the API key?"**
-> In WordPress, open the Contact page in Elementor → click the form widget → **Content tab → Additional Options → Custom Headers** → add `Authorization` = `Bearer YOUR_KEY`. That's it. The form will work as expected.
+> In WordPress, open the Contact page in Elementor → click the form widget → **Advanced tab → Custom Headers** → add `Authorization` = `Bearer YOUR_KEY`. **Do not** add it as a hidden form field. Webhook URL: `https://xcphotography.overturehq.com/api/bookings`. That's it — the form will work as expected.
 
 ---
 
@@ -34,9 +34,8 @@
 1. In WordPress admin, go to **Pages → Contact**
 2. Click **Edit with Elementor**
 3. Click on the **form widget** (the enquiry form in Section 2)
-4. In the left panel, click the **Content** tab
-5. Scroll down to **Additional Options**
-6. Find **Custom Headers** — add one header:
+4. In the left panel, click the **Advanced** tab (or **Content → Additional Options** depending on your Elementor Pro version)
+5. Find **Custom Headers** — add one header:
 
 | Header name | Header value |
 |---|---|
@@ -44,20 +43,22 @@
 
 > Replace `YOUR_OVERTURE_API_KEY` with the token you copied in Step 1. Include the word `Bearer` followed by a space before the key.
 
+> ⚠️ **Important:** The API key must be added in **Custom Headers only** — do **not** add it as a hidden form field. A hidden field sends the value as part of the form data visible to the browser, not as a secure HTTP header. If you added a hidden field for the API key, delete it from the form fields list.
+
 ---
 
 ## Step 3 — Set the Webhook URL
 
-In the same form widget, still on the **Content** tab:
+In the same form widget:
 
 1. Find the **Actions After Submit** area — confirm **Webhook** is listed (it is, in the JSON)
-2. Find the **Webhook URL** field and set it to:
+2. Find the **Webhook URL** field and confirm it is set to:
 
 ```
-https://YOUR-OVERTURE-INSTANCE.overture.studio/api/bookings
+https://xcphotography.overturehq.com/api/bookings
 ```
 
-> Replace `YOUR-OVERTURE-INSTANCE` with your actual Overture subdomain or custom domain. The endpoint is always `/api/bookings` — this is the Overture Booking API `POST` endpoint.
+This is your XCP Overture instance. The endpoint is `/api/bookings` — this is the Overture Booking API `POST` endpoint.
 
 **Method:** `POST` (Elementor's webhook action always uses POST — this matches the Overture API spec.)
 
@@ -146,13 +147,14 @@ Import `XCP_Contact_P2_Form_Fallback.json` for Section 2 of the Contact page ins
 
 ```
 Overture API key:   Settings → Integrations → API Keys → copy Bearer token
-Elementor location: Form widget → Content → Additional Options → Custom Headers
+Elementor location: Form widget → Advanced tab → Custom Headers
 Header name:        Authorization
 Header value:       Bearer YOUR_OVERTURE_API_KEY
-Webhook URL:        https://YOUR-OVERTURE-INSTANCE/api/bookings
+Webhook URL:        https://xcphotography.overturehq.com/api/bookings
 Method:             POST (automatic)
 New booking status: Pending (automatic)
 Address:            Add in Overture after enquiry — not on the form
+⚠️ API key:         Custom Headers ONLY — never add as a hidden form field
 ```
 
 ---
