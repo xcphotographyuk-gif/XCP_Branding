@@ -59,6 +59,58 @@
               "settings": {
                 "editor": "<p style='text-align:center;color:rgba(255,255,255,0.78);font-size:18px;line-height:1.8;max-width:620px;margin:20px auto;'>Every day without authentic, strategic imagery is a day your ideal clients connect with someone else. I typically respond within 24 hours with next steps for a no-pressure discovery call.</p>"
               }
+            },
+            {
+              "id": "final_cta_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Book Your Discovery Call",
+                "link": {
+                  "url": "/booking",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "center",
+                "size": "lg",
+                "background_color": "#d4af37",
+                "button_text_color": "#000000",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "18",
+                  "right": "48",
+                  "bottom": "18",
+                  "left": "48",
+                  "isLinked": false
+                },
+                "margin": {
+                  "unit": "px",
+                  "top": "32",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "typography_font_family": "Raleway",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13
+                },
+                "typography_text_transform": "uppercase",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 2
+                }
+              }
             }
           ]
         }

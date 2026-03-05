@@ -1,7 +1,7 @@
 {
   "version": "0.4",
   "title": "XCP Contact: Form + Info Panel: OVERTURE VERSION: Section 2 of 4",
-  "_comment": "PRIMARY FORM: Routes enquiries to Overture CRM via webhook AND sends email notification. Use this when Overture account is active and webhook URL is confirmed. See PHASED_DEVELOPMENT_AUDIT.md Appendix B for setup steps.",
+  "_comment": "PRIMARY FORM: Routes enquiries to Overture CRM via webhook (POST /api/bookings) AND sends email notification. Field IDs match Overture Booking API field names exactly so webhook data maps without transformation. API key: WordPress Admin → Elementor → Integrations → add Authorization header Bearer [YOUR_OVERTURE_API_KEY]. Webhook URL: [YOUR_OVERTURE_BASE_URL]/api/bookings. Field mapping: promoterName→Booking.promoterName, name→Booking.name (title), date→Booking.date, venueState→Booking.venueState, venueCountry→Booking.venueCountry, message→Booking.info[].",
   "type": "page",
   "content": [
     {
@@ -88,7 +88,8 @@
                   {
                     "field_type": "text",
                     "field_label": "Your Name",
-                    "field_id": "name",
+                    "field_id": "promoterName",
+                    "_comment": "Overture Booking API: promoterName — the client making the enquiry.",
                     "required": "yes",
                     "placeholder": "First and last name",
                     "width": "50"
@@ -97,6 +98,7 @@
                     "field_type": "email",
                     "field_label": "Email Address",
                     "field_id": "email",
+                    "_comment": "Overture will use this to create or match a Person record.",
                     "required": "yes",
                     "placeholder": "hello@yourbrand.co.uk",
                     "width": "50"
@@ -105,6 +107,7 @@
                     "field_type": "tel",
                     "field_label": "Phone Number",
                     "field_id": "phone",
+                    "_comment": "Overture will attach this to the Person record.",
                     "required": "no",
                     "placeholder": "+44 (0) 7XXX XXXXXX",
                     "width": "50"
@@ -112,23 +115,45 @@
                   {
                     "field_type": "select",
                     "field_label": "Type of Project",
-                    "field_id": "project_type",
+                    "field_id": "name",
+                    "_comment": "Overture Booking API: name — becomes the booking title in Overture.",
                     "required": "yes",
                     "field_options": "Brand Photography Session\nDocumentary Business Storytelling\nCorporate Portraits & Headshots\nEvent & Performance Coverage\nEditorial Work\nFine Art Commission\nWorkshop or Photography Course\nNot Sure Yet, Let's Talk",
                     "width": "50"
                   },
                   {
                     "field_type": "date",
-                    "field_label": "Preferred Date (if known)",
-                    "field_id": "preferred_date",
+                    "field_label": "Preferred Shoot Date (if known)",
+                    "field_id": "date",
+                    "_comment": "Overture Booking API: date — ISO 8601 date for the booking.",
                     "required": "no",
                     "placeholder": "Approximate date",
-                    "width": "100"
+                    "width": "50"
+                  },
+                  {
+                    "field_type": "text",
+                    "field_label": "County / Region",
+                    "field_id": "venueState",
+                    "_comment": "Overture Booking API: venueState — county or region for the shoot location.",
+                    "required": "no",
+                    "placeholder": "e.g. East Sussex, Greater London",
+                    "width": "50"
+                  },
+                  {
+                    "field_type": "select",
+                    "field_label": "Country",
+                    "field_id": "venueCountry",
+                    "_comment": "Overture Booking API: venueCountry — country for the shoot location.",
+                    "required": "no",
+                    "field_options": "United Kingdom\nInternational",
+                    "default_value": "United Kingdom",
+                    "width": "50"
                   },
                   {
                     "field_type": "textarea",
                     "field_label": "Tell Me About Your Brand & Vision",
                     "field_id": "message",
+                    "_comment": "Overture Booking API: maps into the booking info[] array as a note.",
                     "required": "yes",
                     "placeholder": "What does your brand stand for? Who is your ideal client? What do you hope authentic photography will do for your business? The more you share, the better I can prepare.",
                     "rows": 6,
@@ -136,12 +161,12 @@
                   },
                   {
                     "field_type": "hidden",
-                    "field_label": "Page Source",
-                    "field_id": "page_source",
+                    "field_label": "Source URL",
+                    "field_id": "source",
+                    "_comment": "Overture: page source URL. In Elementor, set Default Value to dynamic tag 'Current URL'.",
                     "required": "no",
                     "default_value": "[xcp_page_url]",
-                    "width": "100",
-                    "_comment": "Auto-populated with the URL of the page where the form was submitted. Elementor dynamic: set Default Value to 'Current URL' in widget settings. Maps to Overture tag 'page:value'."
+                    "width": "100"
                   },
                   {
                     "field_type": "acceptance",
@@ -164,7 +189,8 @@
                   "email",
                   "webhook"
                 ],
-                "webhook": "https://api.overture.studio/v1/enquiries",
+                "webhook": "[YOUR_OVERTURE_BASE_URL]/api/bookings",
+                "_comment_webhook_url": "Replace [YOUR_OVERTURE_BASE_URL] with your Overture instance URL, e.g. https://app.overture.studio. Endpoint: POST /api/bookings. Add Authorization header in Elementor form Advanced settings: Authorization: Bearer [YOUR_OVERTURE_API_KEY]. API key found in Overture Admin → Settings → Integrations → API Keys.",
                 "webhook_advanced_data": "yes",
                 "button_text": "Send My Enquiry",
                 "button_size": "lg",
@@ -189,8 +215,8 @@
                 },
                 "success_message": "Thank you. Your enquiry is on its way. I'll be in touch within 24 hours to arrange a discovery call.",
                 "error_message": "Something went wrong. Please email me directly at hello@xcphotography.co.uk or call +44 (0) 7XXX XXXXXX.",
-                "webhook_tags": "source:contact-form,page:[xcp_page_url]",
-                "_comment_webhook": "Overture receives: all field values (webhook_advanced_data:yes) + tags (page source, form source). In Elementor, set the page_source hidden field Default Value to 'Current URL' (dynamic tag). Overture maps page_source to a contact tag automatically."
+                "webhook_tags": "source:contact-form",
+                "_comment_webhook": "Overture Booking API field mapping: promoterName→Booking.promoterName, name→Booking.name (title), date→Booking.date, venueState→Booking.venueState, venueCountry→Booking.venueCountry, message→Booking.info[], source→Booking source tag. status defaults to 'Pending' in Overture for all new bookings created via API."
               }
             }
           ]

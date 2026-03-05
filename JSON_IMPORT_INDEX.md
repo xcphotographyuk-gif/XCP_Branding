@@ -83,7 +83,37 @@ Work top to bottom within each page. Finish one page before starting the next.
 | 2 | Contact Form | `XCP_Contact_P2_Form_Overture.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Contact_P2_Form_Overture.json) |
 | 3 | Closing CTA | `XCP_Contact_P4_CTA.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Contact_P4_CTA.json) |
 
-> No Overture plugin yet? Use [`XCP_Contact_P2_Form_Fallback.json`](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Contact_P2_Form_Fallback.json) for section 2 — swap it when Overture is connected.
+> No Overture account yet? Use [`XCP_Contact_P2_Form_Fallback.json`](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Contact_P2_Form_Fallback.json) for section 2 — swap it for the Overture version once connected. Field IDs are identical so there is no disruption to live forms.
+
+---
+
+### 🔑 Overture API Setup — Where to Add Your Key
+
+**API key location:** Overture Admin → Settings → Integrations → API Keys → copy your Bearer token.
+
+**In WordPress / Elementor:**
+1. Open the Contact page in Elementor
+2. Click the form widget → **Advanced** tab → **Custom Headers**
+3. Add header: `Authorization` = `Bearer [YOUR_API_KEY]`
+4. Set webhook URL to: `[YOUR_OVERTURE_BASE_URL]/api/bookings`
+
+**Form field → Overture Booking API mapping (exact field names already set in the JSON):**
+
+| Form label | `field_id` in JSON | Overture API field | Resource |
+|---|---|---|---|
+| Your Name | `promoterName` | `promoterName` | Booking |
+| Type of Project | `name` | `name` (booking title) | Booking |
+| Preferred Shoot Date | `date` | `date` | Booking |
+| County / Region | `venueState` | `venueState` | Booking |
+| Country | `venueCountry` | `venueCountry` | Booking |
+| Email Address | `email` | Person record | Overture auto-creates |
+| Phone Number | `phone` | Person record | Overture auto-creates |
+| Brand & Vision message | `message` | `info[]` array | Booking |
+| Source URL (hidden) | `source` | Source tag | Booking |
+
+> All new bookings created via the API default to `status: "Pending"` — they will appear in your Overture dashboard ready to action.
+
+> **Address resource** (`POST /api/addresses`): shoot location address can be added in Overture after the enquiry is received, linked to the Person record created from `email`. No address fields are needed on the contact form.
 
 ✅ **Contact page complete — [→ Next: Blog / Stories Page](#-blog--stories-page)**
 

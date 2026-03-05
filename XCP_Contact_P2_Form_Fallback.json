@@ -1,7 +1,7 @@
 {
   "version": "0.4",
   "title": "XCP Contact: Form + Info Panel: EMAIL FALLBACK: Section 2 of 4",
-  "_comment": "FALLBACK FORM: Routes enquiries via Elementor email notification only. Use this if Overture webhook is not yet configured, or as a backup when Overture is unavailable. Swap for XCP_Contact_P2_Form_Overture.json once Overture is active. The field set and UX are identical to the Overture version, zero disruption to visitors.",
+  "_comment": "FALLBACK FORM: Routes enquiries via Elementor email notification only. Use this if Overture webhook is not yet configured, or as a backup when Overture is unavailable. Swap for XCP_Contact_P2_Form_Overture.json once Overture is active. Field IDs are identical to the Overture version so switching causes zero disruption.",
   "type": "page",
   "content": [
     {
@@ -88,7 +88,7 @@
                   {
                     "field_type": "text",
                     "field_label": "Your Name",
-                    "field_id": "name",
+                    "field_id": "promoterName",
                     "required": "yes",
                     "placeholder": "First and last name",
                     "width": "50"
@@ -112,18 +112,35 @@
                   {
                     "field_type": "select",
                     "field_label": "Type of Project",
-                    "field_id": "project_type",
+                    "field_id": "name",
                     "required": "yes",
                     "field_options": "Brand Photography Session\nDocumentary Business Storytelling\nCorporate Portraits & Headshots\nEvent & Performance Coverage\nEditorial Work\nFine Art Commission\nWorkshop or Photography Course\nNot Sure Yet, Let's Talk",
                     "width": "50"
                   },
                   {
                     "field_type": "date",
-                    "field_label": "Preferred Date (if known)",
-                    "field_id": "preferred_date",
+                    "field_label": "Preferred Shoot Date (if known)",
+                    "field_id": "date",
                     "required": "no",
                     "placeholder": "Approximate date",
-                    "width": "100"
+                    "width": "50"
+                  },
+                  {
+                    "field_type": "text",
+                    "field_label": "County / Region",
+                    "field_id": "venueState",
+                    "required": "no",
+                    "placeholder": "e.g. East Sussex, Greater London",
+                    "width": "50"
+                  },
+                  {
+                    "field_type": "select",
+                    "field_label": "Country",
+                    "field_id": "venueCountry",
+                    "required": "no",
+                    "field_options": "United Kingdom\nInternational",
+                    "default_value": "United Kingdom",
+                    "width": "50"
                   },
                   {
                     "field_type": "textarea",
@@ -136,12 +153,12 @@
                   },
                   {
                     "field_type": "hidden",
-                    "field_label": "Page Source",
-                    "field_id": "page_source",
+                    "field_label": "Source URL",
+                    "field_id": "source",
                     "required": "no",
                     "default_value": "[xcp_page_url]",
                     "width": "100",
-                    "_comment": "Auto-populated with the URL of the page where the form was submitted. In Elementor, set Default Value to 'Current URL' (dynamic tag)."
+                    "_comment": "In Elementor, set Default Value to dynamic tag 'Current URL'."
                   },
                   {
                     "field_type": "acceptance",
@@ -164,8 +181,8 @@
                   "email"
                 ],
                 "email_to": "hello@xcphotography.co.uk",
-                "email_subject": "New Enquiry from xcphotography.co: {field_id:project_type}",
-                "email_content": "Name: {field_id:name}\nEmail: {field_id:email}\nPhone: {field_id:phone}\nProject Type: {field_id:project_type}\nPreferred Date: {field_id:preferred_date}\n\nMessage:\n{field_id:message}",
+                "email_subject": "New Enquiry: {field_id:name} from {field_id:promoterName}",
+                "email_content": "Name: {field_id:promoterName}\nEmail: {field_id:email}\nPhone: {field_id:phone}\nProject Type: {field_id:name}\nPreferred Date: {field_id:date}\nCounty / Region: {field_id:venueState}\nCountry: {field_id:venueCountry}\n\nMessage:\n{field_id:message}\n\nSource: {field_id:source}",
                 "button_text": "Send My Enquiry",
                 "button_size": "lg",
                 "button_align": "left",
