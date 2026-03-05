@@ -8,6 +8,7 @@ Complete Website & Marketing System for XC Photography
 | What you need | Direct link |
 |---|---|
 | 📋 **Import instructions** — every file, every page, in order | **[→ Open JSON_IMPORT_INDEX.md](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/JSON_IMPORT_INDEX.md)** |
+| 🔑 **Overture API key** — where to add it so the contact form works | **[→ Open OVERTURE_SETUP_GUIDE.md](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/OVERTURE_SETUP_GUIDE.md)** |
 
 > **How to use:** Click **Import instructions** above → every JSON file is listed page-by-page with a direct link → click the file → hit the **Raw** button → save as `.json` → import into Elementor.
 
@@ -73,6 +74,7 @@ All templates are split into segments (Elementor has a size limit — large file
 |---|---|
 | Complete action plan (start here) | [XCP_MASTER_PLAN.md](XCP_MASTER_PLAN.md) |
 | Template import guide | [JSON_IMPORT_INDEX.md](JSON_IMPORT_INDEX.md) |
+| **Overture API key setup** (contact form → CRM) | [OVERTURE_SETUP_GUIDE.md](OVERTURE_SETUP_GUIDE.md) |
 | Brand stationery (Adobe Express) | [XCP_BRAND_STATIONERY_TEMPLATES.md](XCP_BRAND_STATIONERY_TEMPLATES.md) |
 | Workshops & events | [XCP_WORKSHOP_CONCEPTS.md](XCP_WORKSHOP_CONCEPTS.md) |
 | How to add images | [HOW_TO_ADD_IMAGES.md](HOW_TO_ADD_IMAGES.md) |
