@@ -341,7 +341,7 @@ email via Elementor's built-in form handler.
 1. Open the Contact page in Elementor
 2. Click the form widget > Edit
 3. Go to "Actions After Submit" > Email
-4. Set "To" field: `hello@xcphotography.co.uk`
+4. Set "To" field: `info@xcphotography.co.uk`
 5. Set subject line: `New Enquiry from xcphotography.co.uk`
 
 For reliable email delivery, install **WP Mail SMTP** and connect it to a transactional
@@ -415,7 +415,7 @@ Work through this after all templates are imported.
 - [ ] Replace every `[uc_local]` image placeholder with a real image from your library
 - [ ] Replace phone number `+441234567890` with your actual number (contact page + footer)
 - [ ] Confirm Calendly link is correct in Booking page
-- [ ] Confirm email address is correct in all contact forms (`hello@xcphotography.co.uk`)
+- [ ] Confirm email address is correct in all contact forms (`info@xcphotography.co.uk`)
 - [ ] Check all social links in footer (Instagram, LinkedIn, Facebook)
 - [ ] Upload `XCP_Logo_White.png` to Media Library and assign to footer logo widget
 

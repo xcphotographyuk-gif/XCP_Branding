@@ -277,7 +277,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<div><p><a href='mailto:hello@xcphotography.co.uk'>hello@xcphotography.co.uk</a></p><p><a href='tel:+441234567890'>+44 (0) 1234 567890</a></p><p>Mon–Fri: 9:00 AM – 6:00 PM<br>Sat: By Appointment</p></div>"
+                "editor": "<div><p><a href='mailto:info@xcphotography.co.uk'>info@xcphotography.co.uk</a></p><p><a href='tel:+441234567890'>+44 (0) 1234 567890</a></p><p>Mon–Fri: 9:00 AM – 6:00 PM<br>Sat: By Appointment</p></div>"
               }
             },
             {

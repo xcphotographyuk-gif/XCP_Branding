@@ -170,7 +170,7 @@
                 "submit_actions": [
                   "email"
                 ],
-                "email_to": "hello@xcphotography.co.uk",
+                "email_to": "info@xcphotography.co.uk",
                 "email_subject": "New Enquiry: {field_id:name} from {field_id:promoterName}",
                 "email_content": "Name: {field_id:promoterName}\nEmail: {field_id:email}\nPhone: {field_id:phone}\nProject Type: {field_id:name}\nPreferred Date: {field_id:date}\nCounty / Region: {field_id:venueState}\nCountry: {field_id:venueCountry}\n\nMessage:\n{field_id:message}\n\nSource: {field_id:source}",
                 "button_text": "Send My Enquiry",
@@ -195,7 +195,7 @@
                   "isLinked": false
                 },
                 "success_message": "Thank you. Your enquiry is on its way. I will be in touch within 24 hours.",
-                "error_message": "Something went wrong. Please email me directly at hello@xcphotography.co.uk.",
+                "error_message": "Something went wrong. Please email me directly at info@xcphotography.co.uk.",
                 "button_hover_background_color": "#b8962e"
               }
             }
@@ -264,7 +264,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p><strong>Xavier Clarke</strong><br>XC Photography<br><br><a href='mailto:hello@xcphotography.co.uk'>hello@xcphotography.co.uk</a><br><br>Brighton-based &middot; UK &amp; International<br>Mon-Fri 9am-6pm &middot; Sat by appointment</p>"
+                "editor": "<p><strong>Xavier Clarke</strong><br>XC Photography<br><br><a href='mailto:info@xcphotography.co.uk'>info@xcphotography.co.uk</a><br><br>Brighton-based &middot; UK &amp; International<br>Mon-Fri 9am-6pm &middot; Sat by appointment</p>"
               }
             },
             {

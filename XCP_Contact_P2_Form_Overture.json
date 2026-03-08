@@ -196,7 +196,7 @@
                   "isLinked": false
                 },
                 "success_message": "Thank you. Your enquiry is on its way. I will be in touch within 24 hours.",
-                "error_message": "Something went wrong. Please email me directly at hello@xcphotography.co.uk."
+                "error_message": "Something went wrong. Please email me directly at info@xcphotography.co.uk."
               }
             }
           ]
@@ -264,7 +264,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p><strong>Xavier Clarke</strong><br>XC Photography<br><br><a href='mailto:hello@xcphotography.co.uk'>hello@xcphotography.co.uk</a><br><br>Brighton-based &middot; UK &amp; International<br>Mon-Fri 9am-6pm &middot; Sat by appointment</p>"
+                "editor": "<p><strong>Xavier Clarke</strong><br>XC Photography<br><br><a href='mailto:info@xcphotography.co.uk'>info@xcphotography.co.uk</a><br><br>Brighton-based &middot; UK &amp; International<br>Mon-Fri 9am-6pm &middot; Sat by appointment</p>"
               }
             },
             {

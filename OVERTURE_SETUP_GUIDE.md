@@ -136,6 +136,10 @@ Form field IDs match Overture Booking API field names exactly.
 
 If you are not ready to connect Overture yet, import `XCP_Contact_P2_Form_Fallback.json` instead. It is identical in layout and styling but sends enquiries by email only, with no API required. Field IDs are identical, so swapping to the Overture version later causes no disruption.
 
+The fallback form sends enquiries to `info@xcphotography.co.uk`. This is already set in the JSON. If that address changes, open the form widget in Elementor, go to Content → Email, and update the To field.
+
+**Why does the form need a working email address?** The fallback form relies entirely on WordPress sending an email. If the To address does not exist, WordPress will still report success on the front end but the email will bounce silently and you will never see the enquiry. Always test with a real submission after import.
+
 ---
 
 ## Troubleshooting
@@ -148,6 +152,7 @@ If you are not ready to connect Overture yet, import `XCP_Contact_P2_Form_Fallba
 | 403 error | Key lacks permission | Check key has Booking write scope in Overture |
 | 422 error | Required field missing or wrong format | Check date field outputs YYYY-MM-DD |
 | Key visible in page HTML | Key is in a form field, not the snippet | Delete that hidden field, use the WPCode snippet |
+| Fallback form submits but no email received | To address does not exist on the server | Confirm the email address in Elementor form → Content → Email → To is `info@xcphotography.co.uk` (or another address that exists). WordPress cannot deliver to a non-existent mailbox. |
 
 ---
 
