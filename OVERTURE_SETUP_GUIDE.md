@@ -17,6 +17,26 @@ The JSON template (`XCP_Contact_P2_Form_Overture.json`) has everything pre-built
 
 ---
 
+## ⚡ Getting "submission failed" right now? Fix it in 30 seconds.
+
+> **If the admin-ajax.php Response tab shows `"errors":{"":""}`, Overture returned a 401 Unauthorized. The two fixes below resolve this 95% of the time. Try them before reading anything else.**
+>
+> **Fix 1 — Confirm the WPCode snippet is Active (10 seconds)**
+> WordPress admin → Code Snippets (WPCode) → find the Overture snippet → the toggle at the top of the page must be **blue (Active)**. If it is grey, click it, then click **Save Snippet**. Test the form again.
+>
+> **Fix 2 — Refresh the API key (30 seconds)**
+> Log in to Overture → **Settings → API** → copy the key shown there. In the WPCode snippet, find the line:
+> ```
+>             $request_args['headers']['Authorization'] = 'Bearer YOUR_OVERTURE_API_KEY';
+> ```
+> Replace `YOUR_OVERTURE_API_KEY` (everything between the single quotes after `Bearer `) with the key you just copied from Overture. Click **Save Snippet**. Test the form again.
+>
+> Both of these produce the same `errors: {"":""}` response in the browser. You cannot tell from the browser which one it is — just do both.
+>
+> If the error persists after both fixes, continue to the full troubleshooting section below.
+
+---
+
 ## Security Note
 
 **Never put your Overture API key in a hidden form field.**
@@ -325,8 +345,10 @@ This is the most important pattern to understand. In Elementor's response JSON, 
 
 **This tells you:**
 - ✅ The form reached WordPress correctly (the payload was valid)
-- ✅ The WPCode PHP snippet fired and added the Authorization header (otherwise you would see no response at all from Overture)
-- ❌ Overture rejected the request — it returned a non-2xx HTTP status (401, 403, or 422)
+- ✅ Elementor's webhook fired and reached Overture (Overture responded — even a 401 counts as a response)
+- ❌ Overture rejected the request and returned a non-2xx HTTP status (most commonly **401 Unauthorized**)
+
+> **Important:** Overture responds with 401 whether or not the WPCode snippet fired. If the snippet is Inactive, the Authorization header is simply missing and Overture still replies — it just rejects the request immediately. You **cannot** tell from `errors: {"":""}` alone whether the snippet ran. Always check both: snippet Active AND API key current.
 
 **The `errors: {"": ""}` response means the issue is entirely between WordPress and Overture.** The browser-side data (cookies, headers, payload) will not tell you more. You need the server-side Overture response, which only appears in the WordPress debug log.
 
