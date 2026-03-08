@@ -401,11 +401,22 @@ The browser Network tab has told you everything it can. The Response body `{"suc
    >
    > ⚠️ **If you opened phpMyAdmin instead of File Manager** — you are in the database browser, not the file browser. `wp-config.php` is a PHP file on the server's disk; it does not appear in phpMyAdmin at all (phpMyAdmin only shows database tables, not files). Close phpMyAdmin and go back to the cPanel dashboard. The tool you need is **File Manager**, found in the **Files** section of cPanel — not in the **Databases** section where phpMyAdmin lives.
 2. Find the line `define( 'WP_DEBUG', false );` and change it to `define( 'WP_DEBUG', true );`
+
+   > ⚠️ **If you cannot find `define( 'WP_DEBUG', false );` in your wp-config.php** — your file may be a minimal wrapper that just loads another config file (it will start with a `require_once` line pointing to something like `wp-config-hosting.php`). This is normal for some hosting setups. In this case, **add the two debug lines as new lines immediately before the very last line of your wp-config.php** — the line that reads `require_once ABSPATH . 'wp-settings.php';`. Your file should then end like this:
+   >
+   > ```
+   > define( 'WP_DEBUG', true );
+   > define( 'WP_DEBUG_LOG', true );
+   > require_once ABSPATH . 'wp-settings.php';
+   > ```
+   >
+   > Do **not** delete any existing lines. Just insert the two `define` lines above the final `require_once`.
+
 3. Add immediately below it: `define( 'WP_DEBUG_LOG', true );`
 4. Submit a test enquiry via the form
 5. In your hosting file manager, navigate to `wp-content/` and download `debug.log` (it only appears after an error has been logged)
 6. Search the file for `overture` or `xcphotography.overturehq` — you will find a line showing the HTTP status Overture returned (401, 403, 422, etc.) and the response body with the specific reason
-7. **Set `WP_DEBUG` back to `false` when done** — never leave debug mode on a live site
+7. **Undo your changes when done** — never leave debug mode on a live site. If you edited the standard `define( 'WP_DEBUG', true );` line, change it back to `false`. If you added two new `define` lines above the final `require_once ABSPATH . 'wp-settings.php';`, delete those two lines entirely and save.
 
 > **What you will likely find:** Given the `errors: {"": ""}` response, the most common cause is a **401 Unauthorized** (WPCode snippet Inactive, or the API key in the snippet is wrong or expired). The second possibility is **422 Unprocessable** (a field value Overture rejected). The debug log will tell you which one and, for 422, will name the specific field.
 
@@ -435,6 +446,7 @@ Work through this checklist in order:
 |---|---|---|
 | I am looking at a list of database tables (`wp_bmmgvw4m5z_options`, `wp_bmmgvw4m5z_posts`, etc.) and cannot find `wp-config.php` | You are in **phpMyAdmin** (the database browser) — wrong tool | Close phpMyAdmin. In cPanel, scroll to the **Files** section (not Databases) and click **File Manager** instead. `wp-config.php` is a file on disk, not a database table. |
 | I can see `wp-admin`, `wp-content`, and `wp-includes` in File Manager but no `wp-config.php` | The left-hand **folder tree** only shows folders — files never appear in the tree | Look at the **very top** of the left folder tree — you will see the root entry (your domain URL, e.g. `xjk.0aa.myftpupload.com`, or `public_html`). **Click on that top-level entry**. The **right-hand file list** will refresh to show the files at that level — `wp-config.php` will be there. It is **not inside** `wp-admin`, `wp-content`, or `wp-includes` — it is at the same level as those folders, visible only in the right-hand file list. |
+| I opened `wp-config.php` but cannot find the line `define( 'WP_DEBUG', false );` anywhere in it | Your hosting uses a minimal wp-config.php that just loads another config file | This is normal for some hosts. See the ⚠️ callout inside step 2 above for exact instructions — in short: add `define( 'WP_DEBUG', true );` and `define( 'WP_DEBUG_LOG', true );` as new lines immediately before the final `require_once ABSPATH . 'wp-settings.php';` line, then save. Do not delete any existing lines. |
 | "Invalid file" on import | Non-standard fields in the JSON | Re-download the file from the repo. The fixed versions no longer contain `_comment` fields that caused this error. |
 | "There was an error" on form submission | Overture may have rejected the request, or the webhook is not configured | First check Overture → Bookings to see if a booking was created anyway (display glitch). If not, check the WPCode snippet is Active and the API key is correct. Enable WP_DEBUG_LOG temporarily to see the server-side Overture response. See "How to see the actual error" above. |
 | You see r.stripe.com rows in the Network tab | Normal — Stripe.js telemetry beacons fire on every page load | Ignore them. They are unrelated to your form or Overture. The Overture webhook is server-side and will not appear in the browser Network tab at all. |
