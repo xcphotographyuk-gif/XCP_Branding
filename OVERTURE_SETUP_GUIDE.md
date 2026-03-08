@@ -271,30 +271,88 @@ When a visitor submits the form, two separate requests happen:
 4. Optional but helpful: click the clear button (🚫 circle icon) to clear existing rows so the list is empty.
 5. Fill in the form and click **Submit**.
 6. In the Network tab you will see a burst of new rows. Find the one that says **admin-ajax.php** and has **Method: POST**. Click it.
-7. Click the **Response** sub-tab (or **Preview**) in the panel that opens on the right.
+7. A side panel opens. You will see a row of sub-tabs along the top: **Headers**, **Payload**, **Preview**, **Response**, **Cookies**, **Timing**. Click **Response** (or **Preview**).
+
+> **You must be on the Response tab — not Headers, Payload, or Cookies.** Those other tabs show supporting data but not the diagnostic answer. Only the Response tab shows what WordPress sent back to the browser.
 
 The response will be a JSON object. Look for a `data` field that contains information about what happened. If the webhook to Overture failed, the error will appear here.
 
+### What each DevTools sub-tab tells you
+
+When you click on the `admin-ajax.php` row, several sub-tabs appear. Each one shows different information:
+
+| Sub-tab | What it shows | Useful for diagnosing Overture? |
+|---|---|---|
+| **Headers** | HTTP metadata: status code, content-type, content-length, server info, cookies sent | Partially — see note below |
+| **Payload** | The form data sent from the browser to WordPress: post_id, form_id, form_fields[] values, action | Confirms the form reached WordPress and which fields were submitted |
+| **Preview** | A formatted view of the JSON response body | ✅ Yes — same as Response but easier to read |
+| **Response** | The raw JSON response body — the actual answer from WordPress/Overture | ✅ Yes — this is the diagnostic data |
+| **Cookies** | Cookies present in the browser during the request | No — browser cookies do not affect the server-side Overture call |
+| **Timing** | How long each phase of the request took | No |
+
+#### Reading the Headers sub-tab
+
+The Headers tab is not the final answer, but it contains one useful clue: **`content-length`**.
+
+- **`content-length: 78`** is a strong indicator of the error response. The body `{"success":false,"data":{"message":"There was an error"}}` is approximately 78 bytes when encoded. If you see this number, the form reached WordPress and WordPress tried to call Overture, but Overture rejected it. Switch to the **Response** tab to confirm and read the exact message.
+- **`content-length: 200+`** or larger suggests a success response or a longer error with more detail.
+- **Status `200 OK`** means WordPress received the form submission. It does **not** mean Overture succeeded — WordPress always returns 200 for AJAX requests, even when the webhook call failed.
+
+#### Reading the Payload sub-tab
+
+The Payload tab shows what the browser sent to WordPress. If you can see a list of `form_fields[]` values (name, email, phone, date, etc.) in the Payload tab, the form is definitely reaching WordPress correctly. The problem is then entirely server-side — in the WPCode snippet or the Overture API response.
+
+#### Reading the Cookies sub-tab
+
+The Cookies tab shows `wordpress_logged_in_*`, `__stripe_mid`, `wp_consent_*` and other browser cookies. These are browser-to-WordPress authentication cookies. They have no effect on the server-side call WordPress makes to Overture. Consent cookies (`wp_consent_statistics=deny`, etc.) do not block the PHP snippet. You do not need to change your cookie consent settings to fix the Overture integration.
+
 ### What each Elementor form response means
 
-| What the admin-ajax.php response shows | What it means | What to do |
+| What the admin-ajax.php Response tab shows | What it means | What to do |
 |---|---|---|
-| `{"success":true,...}` with no booking in Overture | Elementor succeeded but the webhook was not configured | Check that the Webhook action is added in Elementor form → Content → Actions After Submit |
-| `{"success":false,"data":{"message":"There was an error"}}` | Elementor sent the webhook but Overture rejected it | Check the WPCode snippet is Active and the API key is correct; check the webhook URL is exactly `https://xcphotography.overturehq.com/api/bookings` |
-| `{"success":false,"data":{"message":"..."}}` with a specific message | Elementor caught a specific error | Read the message and match to the troubleshooting table below |
-| No admin-ajax.php row appears at all after Submit | The form submission did not fire | Check that Elementor Pro is active and the form is not in draft/preview-only mode |
+| `{"success":true,...}` with a booking in Overture | ✅ Everything worked | Nothing — you are done |
+| `{"success":true,...}` with **no** booking in Overture | Elementor succeeded but the webhook was not configured | Check the Webhook action is added in Elementor form → Content → Actions After Submit |
+| `{"success":false,"data":{"message":"Your submission failed because of an error.","errors":{"":""},"data":[]}}` | **Webhook action failed** — Overture rejected the request with a non-2xx HTTP status | See "What `errors: {"": ""}` means" below — enable WP_DEBUG_LOG to find the exact HTTP status |
+| `{"success":false,"data":{"message":"There was an error"}}` | Older Elementor version — same meaning as above | Same fix as above |
+| `{"success":false,"data":{"message":"..."}}` with a named field in `errors` | A specific form field failed Elementor's server-side validation | Read the field name in the `errors` object and check that field in the form widget |
+| No admin-ajax.php row appears at all after Submit | The form submission did not fire | Check Elementor Pro is active and the form is not in draft/preview-only mode |
+
+### What `"errors": {"": ""}` means
+
+This is the most important pattern to understand. In Elementor's response JSON, the `errors` object maps **field IDs to error messages**. For example, a required field left blank would appear as `{"field_email": "This field is required"}`.
+
+**An empty key with an empty value — `{"": ""}` — is not a field error.** It means a **form action** (in this case the Webhook action that calls Overture) returned a failure. Elementor has no field to blame, so it uses an empty key.
+
+**This tells you:**
+- ✅ The form reached WordPress correctly (the payload was valid)
+- ✅ The WPCode PHP snippet fired and added the Authorization header (otherwise you would see no response at all from Overture)
+- ❌ Overture rejected the request — it returned a non-2xx HTTP status (401, 403, or 422)
+
+**The `errors: {"": ""}` response means the issue is entirely between WordPress and Overture.** The browser-side data (cookies, headers, payload) will not tell you more. You need the server-side Overture response, which only appears in the WordPress debug log.
+
+**Most likely causes in order:**
+
+| Most likely cause | Overture HTTP status | How to confirm |
+|---|---|---|
+| WPCode snippet is **Inactive** — Authorization header never sent | 401 Unauthorized | Check WPCode → snippet toggle is blue/Active |
+| API key in snippet is **wrong, expired, or contains a typo** | 401 Unauthorized | Regenerate key in Overture, paste fresh into snippet |
+| Form Name in Elementor **does not exactly match** the snippet | 401 Unauthorized (header not added) | Check Content tab → Form Name = `XCP Contact: Overture` exactly |
+| Overture rejected a **field value** (wrong format, empty required field) | 422 Unprocessable | Enable WP_DEBUG_LOG — the 422 body names the specific field |
+| Wrong webhook URL | 404 Not Found | Confirm URL = `https://xcphotography.overturehq.com/api/bookings` |
 
 ### Checking the Overture response via WordPress debug log
 
-Because the Overture API call is server-side, the most reliable way to see the exact Overture response (401, 403, 422, etc.) is to enable WordPress debug logging temporarily:
+The browser Network tab has told you everything it can. The Response body `{"success":false,"data":{"message":"Your submission failed because of an error.","errors":{"":""},"data":[]}}` confirms the issue is between WordPress and Overture — not the browser, not the form, not the cookies. To find the exact Overture HTTP status and error body, enable WordPress debug logging:
 
 1. In your hosting file manager or FTP, open `wp-config.php`
 2. Find the line `define( 'WP_DEBUG', false );` and change it to `define( 'WP_DEBUG', true );`
-3. Add below it: `define( 'WP_DEBUG_LOG', true );`
+3. Add immediately below it: `define( 'WP_DEBUG_LOG', true );`
 4. Submit a test enquiry via the form
-5. Download and read `/wp-content/debug.log`
-6. Look for lines mentioning `elementor` or the Overture URL
+5. In your hosting file manager, download `/wp-content/debug.log`
+6. Search the file for `overture` or `xcphotography.overturehq` — you will find a line showing the HTTP status Overture returned (401, 403, 422, etc.) and the response body with the specific reason
 7. **Set `WP_DEBUG` back to `false` when done** — never leave debug mode on a live site
+
+> **What you will likely find:** Given the `errors: {"": ""}` response, the most common cause is a **401 Unauthorized** (WPCode snippet Inactive, or the API key in the snippet is wrong or expired). The second possibility is **422 Unprocessable** (a field value Overture rejected). The debug log will tell you which one and, for 422, will name the specific field.
 
 ### If the Overture booking is not being created
 
@@ -323,11 +381,13 @@ Work through this checklist in order:
 | "Invalid file" on import | Non-standard fields in the JSON | Re-download the file from the repo. The fixed versions no longer contain `_comment` fields that caused this error. |
 | "There was an error" on form submission | Overture may have rejected the request, or the webhook is not configured | First check Overture → Bookings to see if a booking was created anyway (display glitch). If not, check the WPCode snippet is Active and the API key is correct. Enable WP_DEBUG_LOG temporarily to see the server-side Overture response. See "How to see the actual error" above. |
 | You see r.stripe.com rows in the Network tab | Normal — Stripe.js telemetry beacons fire on every page load | Ignore them. They are unrelated to your form or Overture. The Overture webhook is server-side and will not appear in the browser Network tab at all. |
-| You see admin-ajax.php in the Network tab after Submit | Normal — this is the form submission from browser to WordPress | Click the admin-ajax.php POST row and read the Response tab for error detail. |
+| You see admin-ajax.php in the Network tab after Submit | Normal — this is the form submission from browser to WordPress | Click the admin-ajax.php POST row and read the **Response** tab (not Headers, not Cookies) for error detail. |
+| Response tab shows `"errors": {"": ""}` | Webhook action failed — Overture returned a non-2xx HTTP status | Enable WP_DEBUG_LOG (see above) to see whether Overture returned 401, 403, or 422, then fix accordingly |
+| Response tab shows `"errors": {"": ""}` and WPCode snippet is Active | API key in the snippet is wrong or expired | Regenerate API key in Overture → Settings → API, paste the new key into the WPCode snippet, Save Snippet |
 | Elementor shows an error but a booking appeared in Overture | Known Elementor display glitch | The submission worked. Dismiss the error and confirm in Overture. |
 | Form submits but no booking appears in Overture | Snippet not set to Active, or Form Name mismatch | Check the WPCode snippet is **Active**. Check the form widget Form Name is exactly `XCP Contact: Overture`. |
 | Snippet is Active but still no booking | Form Name in Elementor does not match the snippet | Open the form widget in Elementor → Content tab → Form Name field. It must be exactly `XCP Contact: Overture` (capital X, capital C, capital O, colon, space). Any difference and the snippet will not fire. |
-| 401 Unauthorized (visible in WP debug log) | API key wrong, missing, or revoked | Regenerate in Overture, update the WPCode snippet, make sure the snippet is Active |
+| 401 Unauthorized (visible in WP debug log) | API key wrong, missing, revoked, or snippet Inactive | Regenerate in Overture, update the WPCode snippet, make sure the snippet is Active |
 | 403 Forbidden (visible in WP debug log) | Key lacks permission | Regenerate key in Overture with Booking write scope |
 | 404 (visible in WP debug log) | Wrong webhook URL | Confirm exactly: `https://xcphotography.overturehq.com/api/bookings` |
 | 422 Unprocessable (visible in WP debug log) | Required field missing or wrong format | Check date field outputs YYYY-MM-DD. The 422 response body in the debug log lists the specific field name. |
