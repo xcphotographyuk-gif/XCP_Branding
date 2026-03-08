@@ -1,87 +1,45 @@
-# 🔑 Overture CRM — Contact Form Setup Guide
+# Overture CRM: Contact Form Setup Guide
 
 **The single reference for connecting your XCP contact form to Overture.**
 
 ---
 
-## ⚡ Quick Summary
+## Quick Summary
 
-The JSON template (`XCP_Contact_P2_Form_Overture.json`) has **everything pre-built**:
-- ✅ Webhook URL: `https://xcphotography.overturehq.com/api/bookings`
-- ✅ Authorization header structure: pre-set, placeholder only
-- ✅ All field IDs mapped to Overture API field names
+The JSON template (`XCP_Contact_P2_Form_Overture.json`) has everything pre-built:
+- Webhook URL: `https://xcphotography.overturehq.com/api/bookings`
+- All field IDs mapped to Overture API field names exactly
+- Authorization handled via WPCode snippet (see Step 2 below)
 
-**After importing, you do ONE thing: replace `YOUR_OVERTURE_API_KEY` with your actual key.**
+**After importing, you add one WPCode snippet with your API key. Done.**
 
 ---
 
-## 🚨 Security Warning — Read First
+## Security Note
 
 **Never put your Overture API key in a hidden form field.**
 
-Hidden form fields are written into the page's HTML source code. Anyone can right-click → View Source and read the key. The `Authorization` header must be set in **Additional Options → Custom Headers** inside the form widget — not as a form field.
+Hidden form fields are written into the page HTML. Anyone can view the page source and read the key. Use the WPCode snippet method below instead. Your key stays in the WordPress database and never appears in page HTML.
 
-If you have already added an Authorization **hidden field**:
-
-1. **Go to Overture → Settings → Integrations → API Keys → regenerate/revoke that key immediately.** The old key is now public.
-2. Remove that hidden field (see Step 2 below).
-3. Follow Step 3 to set it correctly.
+If you previously added an Authorization hidden field, regenerate your API key in Overture immediately, then delete that hidden field from the form.
 
 ---
 
-## Step 1 — Import the form JSON
+## Step 1: Import the form JSON
 
-Import `XCP_Contact_P2_Form_Overture.json` on your Contact page.
+Import `XCP_Contact_P2_Form_Overture.json` on your Contact page (or any page where you want the form).
 
-The webhook URL is pre-set to `https://xcphotography.overturehq.com/api/bookings` and the Authorization header structure is included — it just needs your real key.
-
----
-
-## Step 2 — Remove any incorrect Authorization hidden field
-
-If your form currently has a hidden field labelled **Authorization**:
-
-1. Open the page in Elementor
-2. Click the form widget
-3. Go to **Content** tab → scroll to **Form Fields**
-4. Find the field with Label: `Authorization` and Type: `Hidden`
-5. Click the **×** (delete) icon on that field row
-6. Click **Update**
-
-> The JSON template does not include an Authorization hidden field. If you re-import fresh, this problem will not exist.
+The webhook URL is pre-set to `https://xcphotography.overturehq.com/api/bookings`.
 
 ---
 
-## Step 3 — Add your API key securely
+## Step 2: Add your API key via WPCode
 
-The API key goes in the form widget's **Custom Headers** — not in a form field. Choose the method that matches your setup.
+This is the confirmed method. It works with all Elementor versions, and because it targets the form by its **name** rather than the page it is on, you can place the form on any page (home, services, booking, etc.) and the Authorization header will be added automatically.
 
-> **Can't find Custom Headers in your Elementor?** This UI only appears in Elementor Pro 3.5 or later. If you do not see it, skip Method A entirely and go straight to **Method B** (WPCode snippet) — it works on all Elementor versions and is equally secure.
-
-### Method A — Elementor Additional Options → Custom Headers (Elementor Pro 3.5+)
-
-This is the simplest method if your Elementor Pro version supports it. The JSON template already includes the Authorization header structure — you just need to enter your key.
-
-1. Open the Contact page in Elementor
-2. Click the **form widget**
-3. In the left panel, go to the **Content** tab
-4. Scroll past the form fields to **Additional Options**
-5. Open **Additional Options** → look for **Custom Headers**
-6. You should see an entry already: `Authorization` / `Bearer YOUR_OVERTURE_API_KEY`
-7. Click **Edit** on that row and change `YOUR_OVERTURE_API_KEY` to your actual key from **Overture → Settings → Integrations → API Keys**
-8. Click **Update**
-
-> ℹ️ If you do not see **Custom Headers** inside Additional Options, your Elementor Pro version is older than 3.5. Use Method B instead.
-
----
-
-### Method B — WPCode snippet (works with all Elementor versions)
-
-This method is reliable and keeps your key out of the database and out of any UI that could be accidentally changed.
-
-1. In WordPress admin, go to **Code Snippets** (or install the free **WPCode** plugin)
-2. Click **Add New Snippet** → choose **PHP Snippet**
-3. Give it a title: `XCP Overture Authorization Header`
+1. In WordPress admin, install the free **WPCode** plugin if you do not have it, or go to **Code Snippets** if you have a snippets plugin already
+2. Click **Add New Snippet** and choose **PHP Snippet**
+3. Title it: `XCP Overture Authorization Header`
 4. Paste this code:
 
 ```php
@@ -98,16 +56,26 @@ add_filter(
 );
 ```
 
-5. Replace `YOUR_OVERTURE_API_KEY` with the token from **Overture → Settings → Integrations → API Keys**
+5. Replace `YOUR_OVERTURE_API_KEY` with your token from **Overture → Settings → Integrations → API Keys**
 6. Set the snippet to **Active** and save
-
-> Your key is stored in the WordPress database (encrypted by WPCode) and never appears in page HTML.
 
 ---
 
-## Step 4 — Test
+## Using the form on any page
 
-Submit a test enquiry on your contact page. Within a few seconds, a new **Pending** booking should appear in **Overture → Bookings**.
+The snippet targets the form by its name (`XCP Contact: Overture`), not by which page it is on. This means:
+
+- Import the form JSON on your Contact page
+- Copy the form section in Elementor and paste it onto any other page (Home, Services, Booking, etc.)
+- No additional setup needed. The snippet picks up any submission from that form, on any page, and adds the Authorization header automatically.
+
+The form name is pre-set in the JSON. Do not change it unless you update the snippet to match.
+
+---
+
+## Step 3: Test
+
+Submit a test enquiry. Within a few seconds a new **Pending** booking should appear in **Overture → Bookings**.
 
 ---
 
@@ -116,35 +84,33 @@ Submit a test enquiry on your contact page. Within a few seconds, a new **Pendin
 | Setting | Value |
 |---|---|
 | Webhook URL | `https://xcphotography.overturehq.com/api/bookings` |
-| HTTP Method | POST (Elementor always uses POST) |
-| Authorization header name | `Authorization` |
-| Authorization header value | `Bearer YOUR_OVERTURE_API_KEY` |
-| Where to set it | Elementor Additional Options → Custom Headers (Method A) OR WPCode snippet (Method B) |
-| Where it must NOT be | A hidden form field |
-| New booking status | `Pending` (set automatically by Overture) |
+| HTTP Method | POST |
+| Authorization | Bearer token via WPCode snippet |
+| Form name (must match snippet) | `XCP Contact: Overture` |
+| New booking status | Pending |
 
 ---
 
 ## Field Mapping Reference
 
-Form field IDs in `XCP_Contact_P2_Form_Overture.json` match Overture Booking API field names exactly — no transformation needed.
+Form field IDs match Overture Booking API field names exactly.
 
-| Form label | `field_id` | Overture API field |
+| Form label | field_id | Overture API field |
 |---|---|---|
-| Your Name | `promoterName` | `promoterName` |
-| Type of Project | `name` | `name` (booking title) |
-| Preferred Shoot Date | `date` | `date` |
-| County / Region | `venueState` | `venueState` |
-| Country | `venueCountry` | `venueCountry` |
-| Brand & Vision | `message` | `info[]` note |
-| Email Address | `email` | Person record (auto-matched) |
-| Phone Number | `phone` | Person record (auto-matched) |
+| Your Name | promoterName | promoterName |
+| Type of Project | name | name (booking title) |
+| Preferred Shoot Date | date | date |
+| County / Region | venueState | venueState |
+| Country | venueCountry | venueCountry |
+| Brand & Vision | message | info[] |
+| Email Address | email | Person record (auto-matched) |
+| Phone Number | phone | Person record (auto-matched) |
 
 ---
 
 ## Fallback Option
 
-If you want to hold off on Overture for now, import `XCP_Contact_P2_Form_Fallback.json` instead — identical layout and styling, sends enquiries by email only, no API required. Field IDs are identical so you can swap to the Overture version at any time with zero disruption.
+If you are not ready to connect Overture yet, import `XCP_Contact_P2_Form_Fallback.json` instead. It is identical in layout and styling but sends enquiries by email only, with no API required. Field IDs are identical, so swapping to the Overture version later causes no disruption.
 
 ---
 
@@ -152,13 +118,11 @@ If you want to hold off on Overture for now, import `XCP_Contact_P2_Form_Fallbac
 
 | Symptom | Likely cause | Fix |
 |---|---|---|
-| 401 / no booking in Overture | API key revoked or wrong | Regenerate key in Overture → Settings → API Keys; update header in Elementor or WPCode snippet |
-| No booking in Overture | Wrong webhook URL | Confirm URL: `https://xcphotography.overturehq.com/api/bookings` |
-| 403 error | API key lacks permission | Check key has Booking write scope in Overture |
-| 422 error | Required field missing or wrong format | Check `date` field outputs ISO 8601 (YYYY-MM-DD) |
-| Form submits but shows error | Overture unreachable | Check Overture status; confirm server allows outbound POST |
-| No Custom Headers option in Elementor | Older Elementor Pro version | Use Method B (WPCode snippet) — works on all versions |
-| Key still showing in page HTML | API key is in a form field, not a header | Delete the Authorization form field; add key via Method A or B above |
+| 401 or no booking in Overture | API key wrong or revoked | Regenerate in Overture, update the WPCode snippet |
+| No booking created | Wrong webhook URL | Confirm: `https://xcphotography.overturehq.com/api/bookings` |
+| 403 error | Key lacks permission | Check key has Booking write scope in Overture |
+| 422 error | Required field missing or wrong format | Check date field outputs YYYY-MM-DD |
+| Key visible in page HTML | Key is in a form field, not the snippet | Delete that hidden field, use the WPCode snippet |
 
 ---
 
