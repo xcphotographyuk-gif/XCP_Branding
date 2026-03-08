@@ -25,11 +25,15 @@ The JSON template (`XCP_Contact_P2_Form_Overture.json`) has everything pre-built
 > WordPress admin → Code Snippets (WPCode) → find the Overture snippet → the toggle at the top of the page must be **blue (Active)**. If it is grey, click it, then click **Save Snippet**. Test the form again.
 >
 > **Fix 2 — Refresh the API key (30 seconds)**
-> Log in to Overture → **Settings → API** → copy the key shown there. In the WPCode snippet, find the line:
+> Log in to Overture → **Settings → API** → copy the key shown there.
+>
+> **If your `wp-config.php` defines `OVERTURE_FORM_KEY`** (you will see a line like `define( 'OVERTURE_FORM_KEY', '…' );` in that file), the snippet reads the key from there automatically. Open wp-config.php in File Manager, confirm the key value between the single quotes exactly matches what Overture shows, and save. The WPCode snippet itself does not need editing.
+>
+> **If you do not have `OVERTURE_FORM_KEY` in wp-config.php**, find this line in the WPCode snippet:
 > ```
->             $request_args['headers']['Authorization'] = 'Bearer YOUR_OVERTURE_API_KEY';
+>             $api_key = defined( 'OVERTURE_FORM_KEY' ) ? OVERTURE_FORM_KEY : 'YOUR_OVERTURE_API_KEY';
 > ```
-> Replace `YOUR_OVERTURE_API_KEY` (everything between the single quotes after `Bearer `) with the key you just copied from Overture. Click **Save Snippet**. Test the form again.
+> Replace `YOUR_OVERTURE_API_KEY` (everything between the single quotes at the end of the line) with the key you just copied from Overture. Click **Save Snippet**. Test the form again.
 >
 > Both of these produce the same `errors: {"":""}` response in the browser. You cannot tell from the browser which one it is — just do both.
 >
@@ -100,7 +104,8 @@ add_filter(
     'elementor_pro/forms/webhooks/request_args',
     function ( $request_args, $record ) {
         if ( 'XCP Contact: Overture' === $record->get_form_settings( 'form_name' ) ) {
-            $request_args['headers']['Authorization'] = 'Bearer YOUR_OVERTURE_API_KEY';
+            $api_key = defined( 'OVERTURE_FORM_KEY' ) ? OVERTURE_FORM_KEY : 'YOUR_OVERTURE_API_KEY';
+            $request_args['headers']['Authorization'] = 'Bearer ' . $api_key;
         }
         return $request_args;
     },
@@ -109,7 +114,7 @@ add_filter(
 );
 ```
 
-6. In the code you just pasted, replace `YOUR_OVERTURE_API_KEY` with your actual token from **Overture → Settings → Integrations → API Keys**
+6. **Set the API key** — the snippet reads `OVERTURE_FORM_KEY` automatically if that constant is defined in your `wp-config.php`. If you can see a line like `define( 'OVERTURE_FORM_KEY', '…' );` in your wp-config.php, no change to the snippet is needed — it will use that value. If you do not have that constant, find the text `YOUR_OVERTURE_API_KEY` in the code you just pasted and replace it with your actual token from **Overture → Settings → Integrations → API Keys**.
 7. At the top of the page, toggle the snippet from **Inactive** to **Active**
 8. Click **Save Snippet**
 
@@ -140,7 +145,11 @@ Before submitting a test enquiry, confirm these four things in WPCode:
 | Insert Method | Auto Insert |
 | Location | Run Everywhere |
 
-The code itself should match the block in Step 2 exactly, with `YOUR_OVERTURE_API_KEY` replaced by your actual key from Overture. No other changes needed.
+The code itself should match the block in Step 2 exactly, with either:
+- `OVERTURE_FORM_KEY` already defined in your `wp-config.php` (the snippet will read the key automatically), or
+- `YOUR_OVERTURE_API_KEY` replaced by your actual key from Overture.
+
+No other changes needed.
 
 If the snippet is set to **Inactive**, the Authorization header is never added and Overture will reject the request silently. Toggle to **Active** and click **Save Snippet** before testing.
 
@@ -457,6 +466,7 @@ Work through this checklist in order:
 | Form submits but no booking appears in Overture | Snippet not set to Active, or Form Name mismatch | Check the WPCode snippet is **Active**. Check the form widget Form Name is exactly `XCP Contact: Overture`. |
 | Snippet is Active but still no booking | Form Name in Elementor does not match the snippet | Open the form widget in Elementor → Content tab → Form Name field. It must be exactly `XCP Contact: Overture` (capital X, capital C, capital O, colon, space). Any difference and the snippet will not fire. |
 | 401 Unauthorized (visible in WP debug log) | API key wrong, missing, revoked, or snippet Inactive | Regenerate in Overture, update the WPCode snippet, make sure the snippet is Active |
+| 401 Unauthorized and `OVERTURE_FORM_KEY` is defined in wp-config.php | The key value in wp-config.php may contain a typo or be outdated | Open wp-config.php in File Manager, copy the value of `OVERTURE_FORM_KEY`, paste it into a plain-text editor and compare it character-by-character against the key shown in Overture → Settings → API. API keys are typically hex strings (digits 0–9 and letters a–f only). Any other character is a sign of a typo. Correct the value in wp-config.php and save. |
 | 403 Forbidden (visible in WP debug log) | Key lacks permission | Regenerate key in Overture with Booking write scope |
 | 404 (visible in WP debug log) | Wrong webhook URL | Confirm exactly: `https://xcphotography.overturehq.com/api/bookings` |
 | 422 Unprocessable (visible in WP debug log) | Required field missing or wrong format | Check date field outputs YYYY-MM-DD. The 422 response body in the debug log lists the specific field name. |
