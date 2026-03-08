@@ -97,7 +97,24 @@ The form name is pre-set in the JSON. Do not change it unless you update the sni
 
 ---
 
-## Step 3: Test
+## Step 3: Check your snippet before testing
+
+Before submitting a test enquiry, confirm these four things in WPCode:
+
+| Check | What it should show |
+|---|---|
+| Code Type | PHP Snippet |
+| Snippet status (top of page) | Active (toggled on, not grey/inactive) |
+| Insert Method | Auto Insert |
+| Location | Run Everywhere |
+
+The code itself should match the block in Step 2 exactly, with `YOUR_OVERTURE_API_KEY` replaced by your actual key from Overture. No other changes needed.
+
+If the snippet is set to **Inactive**, the Authorization header is never added and Overture will reject the request silently. Toggle to **Active** and click **Save Snippet** before testing.
+
+---
+
+## Step 4: Test
 
 Submit a test enquiry. Within a few seconds a new **Pending** booking should appear in **Overture → Bookings**.
 
@@ -147,6 +164,7 @@ The fallback form sends enquiries to `info@xcphotography.co.uk`. This is already
 | Symptom | Likely cause | Fix |
 |---|---|---|
 | "Invalid file" on import | Non-standard fields in the JSON | Re-download the file from the repo. The fixed versions no longer contain `_comment` fields that caused this error. |
+| Form submits but no booking appears in Overture | Snippet not set to Active | In WordPress admin go to Code Snippets, find the Overture snippet, check it is toggled to **Active** and click **Save Snippet**. |
 | 401 or no booking in Overture | API key wrong or revoked | Regenerate in Overture, update the WPCode snippet |
 | No booking created | Wrong webhook URL | Confirm: `https://xcphotography.overturehq.com/api/bookings` |
 | 403 error | Key lacks permission | Check key has Booking write scope in Overture |
