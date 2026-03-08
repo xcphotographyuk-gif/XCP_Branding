@@ -372,7 +372,7 @@ The browser Network tab has told you everything it can. The Response body `{"suc
    >
    > `wp-config.php` is **not** inside `wp-content/`. It sits one level above — in the WordPress root folder. Here is how to get there on GoDaddy:
    >
-   > 1. Go to **godaddy.com** → sign in → click your account name (top right) → **My Products**
+   > 1. Go to **https://www.godaddy.com** → sign in → click your account name (top right) → **My Products**
    > 2. Under **Web Hosting**, click **Manage** next to your hosting plan
    > 3. In the cPanel dashboard, scroll to the **Files** section and click **File Manager**
    > 4. File Manager opens. In the **left-hand folder tree**, click **public_html** (this is your WordPress root)
@@ -380,7 +380,7 @@ The browser Network tab has told you everything it can. The Response body `{"suc
    > 6. Click once on `wp-config.php` to select it, then click **Edit** in the top toolbar (or right-click → Edit)
    > 7. The file opens in a text editor inside your browser — make your changes and click **Save Changes**
    >
-   > ⚠️ If you do **not** see `public_html` in the left tree, look for a folder named after your domain (e.g. `xcphotography.co.uk`) — that is your WordPress root instead.
+   > ⚠️ If you do **not** see `public_html` in the left tree, look for a folder named after your domain (e.g. `yourdomain.co.uk`) — that is your WordPress root instead.
 2. Find the line `define( 'WP_DEBUG', false );` and change it to `define( 'WP_DEBUG', true );`
 3. Add immediately below it: `define( 'WP_DEBUG_LOG', true );`
 4. Submit a test enquiry via the form
