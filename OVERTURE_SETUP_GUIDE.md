@@ -56,6 +56,8 @@ If your form currently has a hidden field labelled **Authorization**:
 
 The API key goes in the form widget's **Custom Headers** — not in a form field. Choose the method that matches your setup.
 
+> **Can't find Custom Headers in your Elementor?** This UI only appears in Elementor Pro 3.5 or later. If you do not see it, skip Method A entirely and go straight to **Method B** (WPCode snippet) — it works on all Elementor versions and is equally secure.
+
 ### Method A — Elementor Additional Options → Custom Headers (Elementor Pro 3.5+)
 
 This is the simplest method if your Elementor Pro version supports it. The JSON template already includes the Authorization header structure — you just need to enter your key.
