@@ -239,41 +239,58 @@ The fallback form sends enquiries to `info@xcphotography.co.uk`. This is already
 
 ## How to see the actual error
 
-The "There was an error" message Elementor shows is generic. It does not tell you what went wrong. To find out what Overture actually replied, use your browser's developer tools while submitting the form.
+The "There was an error" message Elementor shows is generic. It does not tell you what went wrong. To find out what actually happened, use your browser's developer tools while submitting the form.
+
+### How the form submission works (important context)
+
+When a visitor submits the form, two separate requests happen:
+
+1. **Browser → WordPress** — the form data is sent from the browser to your WordPress site as an AJAX request to `admin-ajax.php`. This request **does appear** in your browser's Network tab.
+2. **WordPress → Overture** — WordPress then makes a server-side POST to `https://xcphotography.overturehq.com/api/bookings` with the Authorization header. This request is made by the server, not the browser, so it **does NOT appear** in your browser's Network tab.
+
+**You will never see an `overturehq.com` row in your browser Network tab.** That call happens entirely on the server. What you will see is `admin-ajax.php`.
+
+> **What about `r.stripe.com` rows?**
+> You may see multiple requests to `r.stripe.com` in the Network tab. These are Stripe telemetry beacons. They fire automatically on every page load because Stripe.js is embedded somewhere on the site. They have nothing to do with your form or Overture. Ignore them entirely.
+>
+> Similarly, ignore any `proxytown`, `Imagegen204`, or other third-party tracking rows. The only row that matters for debugging the form is the POST to `admin-ajax.php` that fires when you click Submit.
 
 ### Step-by-step: reading the real error in Chrome or Edge
 
 1. Go to the page containing the form.
 2. Press **F12** (or right-click anywhere on the page and choose **Inspect**). The developer tools panel opens.
 3. Click the **Network** tab at the top of that panel.
-4. In the filter bar inside the Network tab, type `overturehq` to filter down to the Overture API call only.
+4. Optional but helpful: click the clear button (🚫 circle icon) to clear existing rows so the list is empty.
 5. Fill in the form and click **Submit**.
-6. A row containing **overturehq.com** will appear in the Network tab. Click it.
+6. In the Network tab you will see a burst of new rows. Find the one that says **admin-ajax.php** and has **Method: POST**. Click it.
 7. Click the **Response** sub-tab (or **Preview**) in the panel that opens on the right.
 
-You will now see the exact reply Overture sent back. Match it to the table below.
+The response will be a JSON object. Look for a `data` field that contains information about what happened. If the webhook to Overture failed, the error will appear here.
 
-> **Important: ignore any r.stripe.com rows.**
-> You may see requests to `r.stripe.com` in the Network tab. These are Stripe telemetry beacons that fire on every page load regardless of the form. They are completely unrelated to Overture and are not the cause of your error. The only row you care about is the one going to `overturehq.com`.
->
-> If you do not see an `overturehq.com` row at all after submitting, skip to "If no overturehq row appears" below.
+### What each Elementor form response means
 
-### What each response means
+| What the admin-ajax.php response shows | What it means | What to do |
+|---|---|---|
+| `{"success":true,...}` with no booking in Overture | Elementor succeeded but the webhook was not configured | Check that the Webhook action is added in Elementor form → Content → Actions After Submit |
+| `{"success":false,"data":{"message":"There was an error"}}` | Elementor sent the webhook but Overture rejected it | Check the WPCode snippet is Active and the API key is correct; check the webhook URL is exactly `https://xcphotography.overturehq.com/api/bookings` |
+| `{"success":false,"data":{"message":"..."}}` with a specific message | Elementor caught a specific error | Read the message and match to the troubleshooting table below |
+| No admin-ajax.php row appears at all after Submit | The form submission did not fire | Check that Elementor Pro is active and the form is not in draft/preview-only mode |
 
-| Response code | What Overture says | What it means | What to do |
-|---|---|---|---|
-| 200 or 201 | `{"status":"created"}` or similar | Success - but Elementor still showed an error | The booking was created. The "error" is a known display glitch in some Elementor versions. Check Overture → Bookings for the new entry. |
-| 401 Unauthorized | `{"error":"Unauthorized"}` | No Authorization header, or the API key is wrong | Check the WPCode snippet is Active and the key is correct. |
-| 403 Forbidden | `{"error":"Forbidden"}` | Key exists but lacks permission | Regenerate the key in Overture with Booking write access. |
-| 404 Not Found | HTML error page | Webhook URL is wrong | Confirm the webhook URL in Elementor is exactly `https://xcphotography.overturehq.com/api/bookings`. |
-| 422 Unprocessable | `{"errors":{...}}` | A required field is missing or formatted wrongly | The response body lists the specific field. Most common: the date field is blank or not in YYYY-MM-DD format. |
-| No row appears | - | The request was never sent to Overture | See "If no overturehq row appears" below. |
+### Checking the Overture response via WordPress debug log
 
-### If no "overturehq" row appears in the Network tab
+Because the Overture API call is server-side, the most reliable way to see the exact Overture response (401, 403, 422, etc.) is to enable WordPress debug logging temporarily:
 
-This means Elementor is not sending to the webhook at all. The request never left the site. The most common reasons are a Form Name mismatch or the Elementor webhook action not being configured.
+1. In your hosting file manager or FTP, open `wp-config.php`
+2. Find the line `define( 'WP_DEBUG', false );` and change it to `define( 'WP_DEBUG', true );`
+3. Add below it: `define( 'WP_DEBUG_LOG', true );`
+4. Submit a test enquiry via the form
+5. Download and read `/wp-content/debug.log`
+6. Look for lines mentioning `elementor` or the Overture URL
+7. **Set `WP_DEBUG` back to `false` when done** — never leave debug mode on a live site
 
-Check these in order:
+### If the Overture booking is not being created
+
+Work through this checklist in order:
 
 1. **Form Name** - In Elementor, open the form widget → Content tab → Form Name. It must be exactly: `XCP Contact: Overture`
    - Capital X, capital C, capital O
@@ -287,6 +304,8 @@ Check these in order:
 
 4. **Elementor Pro** - The webhook action requires Elementor Pro. If the Webhook option does not appear in Actions After Submit, your site is on the free version of Elementor. Use the fallback form instead.
 
+5. **Check Overture directly** - Log in to Overture and go to Bookings. If a booking appeared with status Pending, the submission worked even if Elementor showed an error message. The error message is a known display glitch in some Elementor versions.
+
 ---
 
 ## Troubleshooting
@@ -294,17 +313,96 @@ Check these in order:
 | Symptom | Likely cause | Fix |
 |---|---|---|
 | "Invalid file" on import | Non-standard fields in the JSON | Re-download the file from the repo. The fixed versions no longer contain `_comment` fields that caused this error. |
-| "There was an error" on form submission | Overture rejected the request (no Authorization header, wrong key, or wrong webhook URL) | Open the browser Network tab, filter by `overturehq`, submit the form, click the overturehq.com row, read the Response tab. See "How to see the actual error" above. |
-| You can only see r.stripe.com in the Network tab | You are looking at the wrong request | `r.stripe.com` is a Stripe beacon unrelated to Overture. Filter the Network tab by `overturehq` to see the Overture call. If no overturehq row appears, the webhook is not firing. |
-| 200 response but Elementor shows an error | Known Elementor display glitch | Check Overture Bookings anyway. The booking may have been created successfully. |
-| Form submits but no booking appears in Overture | Snippet not set to Active | In WordPress admin go to Code Snippets, find the Overture snippet, check it is toggled to **Active** and click **Save Snippet**. |
-| Snippet is Active but no overturehq row in Network tab | Form Name in Elementor does not match the snippet | Open the form widget in Elementor → Content tab → Form Name field. It must be exactly `XCP Contact: Overture` (capital X, capital C, capital O, colon, space). Any difference and the snippet will not fire. |
-| 401 Unauthorized | API key wrong, missing, or revoked | Regenerate in Overture, update the WPCode snippet, make sure the snippet is Active |
-| 403 Forbidden | Key lacks permission | Regenerate key in Overture with Booking write scope |
-| 404 on the overturehq row | Wrong webhook URL | Confirm exactly: `https://xcphotography.overturehq.com/api/bookings` |
-| 422 Unprocessable | Required field missing or wrong format | Check date field outputs YYYY-MM-DD. Check the 422 response body for the specific field name. |
+| "There was an error" on form submission | Overture may have rejected the request, or the webhook is not configured | First check Overture → Bookings to see if a booking was created anyway (display glitch). If not, check the WPCode snippet is Active and the API key is correct. Enable WP_DEBUG_LOG temporarily to see the server-side Overture response. See "How to see the actual error" above. |
+| You see r.stripe.com rows in the Network tab | Normal — Stripe.js telemetry beacons fire on every page load | Ignore them. They are unrelated to your form or Overture. The Overture webhook is server-side and will not appear in the browser Network tab at all. |
+| You see admin-ajax.php in the Network tab after Submit | Normal — this is the form submission from browser to WordPress | Click the admin-ajax.php POST row and read the Response tab for error detail. |
+| Elementor shows an error but a booking appeared in Overture | Known Elementor display glitch | The submission worked. Dismiss the error and confirm in Overture. |
+| Form submits but no booking appears in Overture | Snippet not set to Active, or Form Name mismatch | Check the WPCode snippet is **Active**. Check the form widget Form Name is exactly `XCP Contact: Overture`. |
+| Snippet is Active but still no booking | Form Name in Elementor does not match the snippet | Open the form widget in Elementor → Content tab → Form Name field. It must be exactly `XCP Contact: Overture` (capital X, capital C, capital O, colon, space). Any difference and the snippet will not fire. |
+| 401 Unauthorized (visible in WP debug log) | API key wrong, missing, or revoked | Regenerate in Overture, update the WPCode snippet, make sure the snippet is Active |
+| 403 Forbidden (visible in WP debug log) | Key lacks permission | Regenerate key in Overture with Booking write scope |
+| 404 (visible in WP debug log) | Wrong webhook URL | Confirm exactly: `https://xcphotography.overturehq.com/api/bookings` |
+| 422 Unprocessable (visible in WP debug log) | Required field missing or wrong format | Check date field outputs YYYY-MM-DD. The 422 response body in the debug log lists the specific field name. |
 | Key visible in page HTML | Key is in a form field, not the snippet | Delete that hidden field, use the WPCode snippet |
 | Fallback form submits but no email received | To address does not exist on the server | Confirm the email address in Elementor form → Content → Email → To is `info@xcphotography.co.uk` (or another address that exists). WordPress cannot deliver to a non-existent mailbox. |
+| Browser console or security scanner warns about CSP / unsafe-eval | Stripe.js requires string evaluation to run | Stripe.js (`js.stripe.com`) uses `eval()` internally and will not function without `unsafe-eval` in the site's Content Security Policy. If you are implementing a CSP on the site, your `script-src` directive must include `'unsafe-eval'` and `https://js.stripe.com`. This is a Stripe requirement, not a site code issue. See the CSP note below. |
+| Browser or accessibility scanner warns "form field has no id or name" on the date picker | Flatpickr date picker internal input has no id/name by default | The flagged element (`<input class="numInput cur-year">`) is the year navigation widget inside the calendar popup, not the submitted date field. It does not affect form submissions. Add the JavaScript WPCode snippet in the "Optional: date picker autofill fix" section below to silence the warning. |
+
+---
+
+## Optional: date picker autofill fix
+
+Browsers and accessibility scanners may report:
+
+> *"A form field element has neither an id nor a name attribute. This might prevent the browser from correctly autofilling the form."*
+
+The element flagged is flatpickr's internal year-navigation control:
+
+```html
+<input class="numInput cur-year" type="number" tabindex="-1" aria-label="Year">
+```
+
+This input is generated automatically at runtime by Elementor's date picker (flatpickr). It is **not** the submitted date field — it is a display widget that lets the visitor change the year shown in the calendar pop-up. Its value is never included in the form data sent to Overture. The warning does not affect form submissions or bookings.
+
+To silence the warning, add a second WPCode snippet alongside the PHP snippet from Step 2.
+
+**Title:** `XCP Flatpickr Accessibility Patch`
+
+In WPCode (Code Snippets → Add Snippet), choose **JavaScript Snippet** as the code type and set the location to **Frontend**. Paste this code:
+
+```javascript
+(function () {
+    function patchFlatpickrInputs(root) {
+        (root || document).querySelectorAll('.numInput.cur-year:not([id])').forEach(function (el, i) {
+            el.id   = 'fp-year-' + i;
+            el.name = 'fp-year-' + i;
+        });
+    }
+
+    var observer = new MutationObserver(function (mutations) {
+        mutations.forEach(function (m) {
+            m.addedNodes.forEach(function (node) {
+                if (node.nodeType === 1 && node.classList && node.classList.contains('flatpickr-calendar')) {
+                    patchFlatpickrInputs(node);
+                }
+            });
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        observer.observe(document.body, { childList: true });
+        patchFlatpickrInputs();
+    });
+}());
+```
+
+Set the snippet to **Active** and click **Save Snippet**.
+
+This snippet watches for flatpickr calendar pop-ups (they are injected into the page dynamically when the visitor focuses the date field) and adds a unique `id` and `name` to the year input when it appears. It has no effect on form submissions, styling, or Overture bookings.
+
+---
+
+## Content Security Policy (CSP) note
+
+If you or your hosting provider implement a Content Security Policy on the site, you will see browser console warnings or security-scanner alerts about `unsafe-eval`. This is expected and is caused by **Stripe.js** (`js.stripe.com`), not by any code in this repository or the WPCode snippet.
+
+Stripe.js uses string evaluation (`eval()`) internally for PCI-compliant card tokenisation. You cannot change this — it is part of Stripe's script. The warning is informational; the script will still run unless you have a `script-src` header that explicitly blocks it.
+
+**If you are adding a CSP header to the site** (via `.htaccess`, an Nginx config, or a WordPress plugin), your `script-src` directive must include all of the following for Stripe and Elementor to work:
+
+```
+Content-Security-Policy: script-src 'self' 'unsafe-inline' 'unsafe-eval' https://js.stripe.com https://*.stripe.com https://*.stripe.network;
+```
+
+Notes:
+- `'unsafe-eval'` — required by Stripe.js
+- `'unsafe-inline'` — required by Elementor (it outputs inline `<script>` blocks)
+- `https://js.stripe.com` and `https://*.stripe.com` — Stripe's own domains
+- `https://*.stripe.network` — Stripe's telemetry beacon domain (`r.stripe.com`)
+
+**If you are not implementing a CSP header**, the warning from a security scanner is a recommendation, not an error. The site continues to function normally. You can note the recommendation and choose to implement a CSP in future with the directive above included.
+
+**The WPCode PHP snippet in this guide contains no JavaScript and uses no `eval()` calls.** The CSP issue is entirely from Stripe and Elementor, both third-party tools.
 
 ---
 
