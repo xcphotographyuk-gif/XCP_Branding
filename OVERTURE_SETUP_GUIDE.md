@@ -237,18 +237,66 @@ The fallback form sends enquiries to `info@xcphotography.co.uk`. This is already
 
 ---
 
+## How to see the actual error
+
+The "There was an error" message Elementor shows is generic. It does not tell you what went wrong. To find out what Overture actually replied, use your browser's developer tools while submitting the form.
+
+### Step-by-step: reading the real error in Chrome or Edge
+
+1. Go to the page containing the form.
+2. Press **F12** (or right-click anywhere on the page and choose **Inspect**). The developer tools panel opens.
+3. Click the **Network** tab at the top of that panel.
+4. In the filter bar inside the Network tab, type `bookings` to filter down to the Overture API call.
+5. Fill in the form and click **Submit**.
+6. A row labelled **bookings** will appear in the Network tab. Click it.
+7. Click the **Response** sub-tab (or **Preview**) in the panel that opens on the right.
+
+You will now see the exact reply Overture sent back. Match it to the table below.
+
+### What each response means
+
+| Response code | What Overture says | What it means | What to do |
+|---|---|---|---|
+| 200 or 201 | `{"status":"created"}` or similar | Success - but Elementor still showed an error | The booking was created. The "error" is a known display glitch in some Elementor versions. Check Overture → Bookings for the new entry. |
+| 401 Unauthorized | `{"error":"Unauthorized"}` | No Authorization header, or the API key is wrong | Check the WPCode snippet is Active and the key is correct. |
+| 403 Forbidden | `{"error":"Forbidden"}` | Key exists but lacks permission | Regenerate the key in Overture with Booking write access. |
+| 404 Not Found | HTML error page | Webhook URL is wrong | Confirm the webhook URL in Elementor is exactly `https://xcphotography.overturehq.com/api/bookings`. |
+| 422 Unprocessable | `{"errors":{...}}` | A required field is missing or formatted wrongly | The response body lists the specific field. Most common: the date field is blank or not in YYYY-MM-DD format. |
+| No row appears | - | The snippet did not fire, so the request was never sent to Overture | The Form Name in Elementor does not match the snippet. See below. |
+
+### If no "bookings" row appears in the Network tab
+
+This means the PHP snippet did not add the Authorization header and the request was blocked before it reached Overture, or Elementor is not sending to the webhook at all.
+
+Check these in order:
+
+1. **Form Name** - In Elementor, open the form widget → Content tab → Form Name. It must be exactly: `XCP Contact: Overture`
+   - Capital X, capital C, capital O
+   - A colon, then a space, then Overture with a capital O
+   - No trailing spaces, no quotes
+   - Any difference and the snippet will not fire
+
+2. **Snippet status** - In WordPress admin → Code Snippets (WPCode), find the Overture snippet. The toggle must show **Active** (blue/green, not grey). Click Save Snippet after changing it.
+
+3. **Webhook URL** - In Elementor, open the form widget → Content tab → Actions After Submit → Webhook. The URL must be: `https://xcphotography.overturehq.com/api/bookings`
+
+4. **Elementor Pro** - The webhook action requires Elementor Pro. If the Webhook option does not appear in Actions After Submit, your site is on the free version of Elementor. Use the fallback form instead.
+
+---
+
 ## Troubleshooting
 
 | Symptom | Likely cause | Fix |
 |---|---|---|
 | "Invalid file" on import | Non-standard fields in the JSON | Re-download the file from the repo. The fixed versions no longer contain `_comment` fields that caused this error. |
-| "There was an error" on form submission | Overture rejected the request (no Authorization header, wrong key, or wrong webhook URL) | Work through the checklist in Step 3. Most often the snippet is Inactive, or the Form Name in Elementor does not match the snippet exactly. |
+| "There was an error" on form submission | Overture rejected the request (no Authorization header, wrong key, or wrong webhook URL) | Open the browser Network tab and submit the form to see the real error. See "How to see the actual error" above. |
+| 200 response but Elementor shows an error | Known Elementor display glitch | Check Overture Bookings anyway. The booking may have been created successfully. |
 | Form submits but no booking appears in Overture | Snippet not set to Active | In WordPress admin go to Code Snippets, find the Overture snippet, check it is toggled to **Active** and click **Save Snippet**. |
-| Snippet is Active but Authorization header is still missing | Form Name in Elementor does not match the snippet | Open the form widget in Elementor → Content tab → Form Name field. It must be exactly `XCP Contact: Overture` (capital X, capital C, capital O, colon, space). Any difference and the snippet will not fire. |
-| 401 or no booking in Overture | API key wrong or revoked | Regenerate in Overture, update the WPCode snippet |
-| No booking created | Wrong webhook URL | Confirm: `https://xcphotography.overturehq.com/api/bookings` |
-| 403 error | Key lacks permission | Check key has Booking write scope in Overture |
-| 422 error | Required field missing or wrong format | Check date field outputs YYYY-MM-DD |
+| Snippet is Active but no bookings row in Network tab | Form Name in Elementor does not match the snippet | Open the form widget in Elementor → Content tab → Form Name field. It must be exactly `XCP Contact: Overture` (capital X, capital C, capital O, colon, space). Any difference and the snippet will not fire. |
+| 401 Unauthorized | API key wrong, missing, or revoked | Regenerate in Overture, update the WPCode snippet, make sure the snippet is Active |
+| 403 Forbidden | Key lacks permission | Regenerate key in Overture with Booking write scope |
+| 404 on the bookings row | Wrong webhook URL | Confirm exactly: `https://xcphotography.overturehq.com/api/bookings` |
+| 422 Unprocessable | Required field missing or wrong format | Check date field outputs YYYY-MM-DD. Check the 422 response body for the specific field name. |
 | Key visible in page HTML | Key is in a form field, not the snippet | Delete that hidden field, use the WPCode snippet |
 | Fallback form submits but no email received | To address does not exist on the server | Confirm the email address in Elementor form → Content → Email → To is `info@xcphotography.co.uk` (or another address that exists). WordPress cannot deliver to a non-existent mailbox. |
 
