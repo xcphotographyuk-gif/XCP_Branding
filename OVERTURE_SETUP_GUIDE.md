@@ -393,6 +393,8 @@ The browser Network tab has told you everything it can. The Response body `{"suc
    >
    > ⚠️ If you do **not** see `public_html` in the left tree, look for a folder named after your domain (e.g. `yourdomain.co.uk`) — that is your WordPress root instead.
    >
+   > ⚠️ **If you can see `wp-admin`, `wp-content`, and `wp-includes` folders but no `wp-config.php`** — the **folder tree** (left panel) only ever shows **folders**, never files. `wp-config.php` is a **file**, so it will never appear in the tree itself. Make sure you have clicked on the root folder in the left tree (the one that *contains* `wp-admin`, `wp-content`, `wp-includes`) so that the **right-hand file list** refreshes to show the contents of that folder — `wp-config.php` will appear there.
+   >
    > ⚠️ **If you opened phpMyAdmin instead of File Manager** — you are in the database browser, not the file browser. `wp-config.php` is a PHP file on the server's disk; it does not appear in phpMyAdmin at all (phpMyAdmin only shows database tables, not files). Close phpMyAdmin and go back to the cPanel dashboard. The tool you need is **File Manager**, found in the **Files** section of cPanel — not in the **Databases** section where phpMyAdmin lives.
 2. Find the line `define( 'WP_DEBUG', false );` and change it to `define( 'WP_DEBUG', true );`
 3. Add immediately below it: `define( 'WP_DEBUG_LOG', true );`
@@ -428,6 +430,7 @@ Work through this checklist in order:
 | Symptom | Likely cause | Fix |
 |---|---|---|
 | I am looking at a list of database tables (`wp_bmmgvw4m5z_options`, `wp_bmmgvw4m5z_posts`, etc.) and cannot find `wp-config.php` | You are in **phpMyAdmin** (the database browser) — wrong tool | Close phpMyAdmin. In cPanel, scroll to the **Files** section (not Databases) and click **File Manager** instead. `wp-config.php` is a file on disk, not a database table. |
+| I can see `wp-admin`, `wp-content`, and `wp-includes` in File Manager but no `wp-config.php` | The left-hand **folder tree** only shows folders — files never appear there | Click on the **root folder** entry in the left tree (the one whose contents include `wp-admin`, `wp-content`, `wp-includes`) so the **right-hand file list** refreshes. `wp-config.php` will appear there as a file. |
 | "Invalid file" on import | Non-standard fields in the JSON | Re-download the file from the repo. The fixed versions no longer contain `_comment` fields that caused this error. |
 | "There was an error" on form submission | Overture may have rejected the request, or the webhook is not configured | First check Overture → Bookings to see if a booking was created anyway (display glitch). If not, check the WPCode snippet is Active and the API key is correct. Enable WP_DEBUG_LOG temporarily to see the server-side Overture response. See "How to see the actual error" above. |
 | You see r.stripe.com rows in the Network tab | Normal — Stripe.js telemetry beacons fire on every page load | Ignore them. They are unrelated to your form or Overture. The Overture webhook is server-side and will not appear in the browser Network tab at all. |
