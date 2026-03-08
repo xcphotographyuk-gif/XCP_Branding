@@ -253,7 +253,15 @@ When a visitor submits the form, two separate requests happen:
 > **What about `r.stripe.com` rows?**
 > You may see multiple requests to `r.stripe.com` in the Network tab. These are Stripe telemetry beacons. They fire automatically on every page load because Stripe.js is embedded somewhere on the site. They have nothing to do with your form or Overture. Ignore them entirely.
 >
-> Similarly, ignore any `proxytown`, `Imagegen204`, or other third-party tracking rows. The only row that matters for debugging the form is the POST to `admin-ajax.php` that fires when you click Submit.
+> Similarly, ignore any `proxytown`, `imagegen204`, or other third-party tracking rows. The only row that matters for debugging the form is the POST to `admin-ajax.php` that fires when you click Submit.
+
+> **What about browser extension errors in the Console tab?**
+> If you open the **Console** tab (not the Network tab) you will likely see errors from your browser extensions alongside any real site errors. These are completely separate and unrelated to your form or WordPress. Common examples:
+>
+> - **LastPass:** `Unchecked runtime.lastError: Cannot create item with duplicate id LastPass` / `Cannot create item with duplicate id Add Address` / `No tab with id: …` — these come from `background-redux-new.js`, which is LastPass's own background script. They are a known LastPass extension bug. They appear on every page and mean nothing about your site.
+> - **Grammarly, 1Password, Honey, and other extensions** produce similar console noise.
+>
+> When debugging the form, use the **Network** tab (not the Console tab) and look only at the `admin-ajax.php` row. Ignore everything in the Console that references an extension script (the source column will show an extension URL such as `chrome-extension://…` rather than your site URL).
 
 ### Step-by-step: reading the real error in Chrome or Edge
 
@@ -402,7 +410,7 @@ Notes:
 
 **If you are not implementing a CSP header**, the warning from a security scanner is a recommendation, not an error. The site continues to function normally. You can note the recommendation and choose to implement a CSP in future with the directive above included.
 
-**The WPCode PHP snippet in this guide contains no JavaScript and uses no `eval()` calls.** The CSP issue is entirely from Stripe and Elementor, both third-party tools.
+**The WPCode PHP snippet in Step 2 of this guide uses no `eval()` calls.** The optional JavaScript snippet in the "date picker autofill fix" section also uses no `eval()`. The CSP issue is entirely from Stripe and Elementor, both third-party tools.
 
 ---
 
