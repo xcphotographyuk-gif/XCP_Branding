@@ -9,7 +9,10 @@
       "settings": {
         "_title": "Blog: Photographer Hub - Header",
         "layout": "boxed",
-        "content_width": { "unit": "px", "size": 1200 },
+        "content_width": {
+          "unit": "px",
+          "size": 1200
+        },
         "background_background": "classic",
         "background_color": "#000000",
         "padding": {
@@ -25,7 +28,9 @@
         {
           "id": "blog_s4_phub_col",
           "elType": "column",
-          "settings": { "_column_size": 100 },
+          "settings": {
+            "_column_size": 100
+          },
           "elements": [
             {
               "id": "blog_s4_phub_eyebrow",
@@ -62,7 +67,10 @@
       "settings": {
         "_title": "Blog: Photographer Hub - Category Cards",
         "layout": "boxed",
-        "content_width": { "unit": "px", "size": 1200 },
+        "content_width": {
+          "unit": "px",
+          "size": 1200
+        },
         "background_background": "classic",
         "background_color": "#0d0d0d",
         "padding": {
@@ -99,7 +107,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p>In-depth reviews of cameras, lenses, lighting and accessories. Micro Four Thirds, full-frame, audio and more. I review what I actually own and use on real shoots.</p><p><a href='/stories/category/gear-reviews' style='color:#d4af37;text-decoration:none;'>Read gear reviews</a></p>"
+                "editor": "<p>In-depth reviews of cameras, lenses, lighting and accessories. Micro Four Thirds, full-frame, audio and more. I review what I actually own and use on real shoots.</p><p><a href='/stories/category/gear-reviews'>Read gear reviews</a></p>"
               }
             }
           ]
@@ -127,7 +135,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p>Practical guides on lighting for brand photography, working with clients in real-world locations, editing workflows in Lightroom and Capture One, and everything in between.</p><p><a href='/stories/category/technique' style='color:#d4af37;text-decoration:none;'>Browse technique guides</a></p>"
+                "editor": "<p>Practical guides on lighting for brand photography, working with clients in real-world locations, editing workflows in Lightroom and Capture One, and everything in between.</p><p><a href='/stories/category/technique'>Browse technique guides</a></p>"
               }
             }
           ]
@@ -155,7 +163,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p>Curated lists of the gear and software I recommend with full transparency: Amazon affiliate links, Adobe Creative Cloud, and selected partner brands. If I link to it, I use it.</p><p><a href='/stories/category/affiliate-picks' style='color:#d4af37;text-decoration:none;'>See recommended kit</a></p>"
+                "editor": "<p>Curated lists of the gear and software I recommend with full transparency: Amazon affiliate links, Adobe Creative Cloud, and selected partner brands. If I link to it, I use it.</p><p><a href='/stories/category/affiliate-picks'>See recommended kit</a></p>"
               }
             }
           ]
@@ -168,7 +176,10 @@
       "settings": {
         "_title": "Blog: Photographer Hub - Latest Posts",
         "layout": "boxed",
-        "content_width": { "unit": "px", "size": 1200 },
+        "content_width": {
+          "unit": "px",
+          "size": 1200
+        },
         "background_background": "classic",
         "background_color": "#000000",
         "padding": {
@@ -184,7 +195,9 @@
         {
           "id": "blog_s4_phub_latest_col",
           "elType": "column",
-          "settings": { "_column_size": 100 },
+          "settings": {
+            "_column_size": 100
+          },
           "elements": [
             {
               "id": "blog_s4_phub_latest_head",

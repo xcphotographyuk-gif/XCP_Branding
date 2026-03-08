@@ -137,7 +137,7 @@
                 "align": "center",
                 "size": "lg",
                 "button_text_color": "#ffffff",
-                "background_color": "#d4af37",
+                "background_color": "",
                 "button_background_hover_color": "#b8941f",
                 "typography_typography": "custom",
                 "typography_font_family": "Montserrat",

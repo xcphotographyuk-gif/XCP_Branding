@@ -33,7 +33,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; font-size: 12px; letter-spacing: 4px; text-transform: uppercase; color: #d4af37; margin-bottom: 20px;'>Behind the Lens</p>"
+                "editor": "<p>Behind the Lens</p>"
               }
             },
             {

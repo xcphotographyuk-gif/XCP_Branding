@@ -159,7 +159,7 @@
                   },
                   {
                     "field_type": "acceptance",
-                    "field_label": "I have read and agree to the <a href='/privacy-policy' target='_blank' style='color:#d4af37;text-decoration:underline;'>Privacy Policy</a> and consent to XC Photography contacting me about my enquiry.",
+                    "field_label": "I have read and agree to the <a href='/privacy-policy' target='_blank'>Privacy Policy</a> and consent to XC Photography contacting me about my enquiry.",
                     "field_id": "gdpr_consent",
                     "required": "yes",
                     "width": "100",
@@ -176,7 +176,7 @@
                 "button_text": "Send My Enquiry",
                 "button_size": "lg",
                 "button_align": "left",
-                "button_background_color": "#d4af37",
+                "button_background_color": "",
                 "button_text_color": "#000000",
                 "button_hover_background_color": "#b8962e",
                 "button_border_radius": {
@@ -264,7 +264,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p><strong>Xavier Clarke</strong><br>XC Photography<br><br><a href='mailto:hello@xcphotography.co.uk' style='color:#d4af37;text-decoration:none;'>hello@xcphotography.co.uk</a><br><br>Brighton-based &middot; UK &amp; International<br>Mon-Fri 9am-6pm &middot; Sat by appointment</p>"
+                "editor": "<p><strong>Xavier Clarke</strong><br>XC Photography<br><br><a href='mailto:hello@xcphotography.co.uk'>hello@xcphotography.co.uk</a><br><br>Brighton-based &middot; UK &amp; International<br>Mon-Fri 9am-6pm &middot; Sat by appointment</p>"
               }
             },
             {
@@ -272,7 +272,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<div style='border-left:3px solid #d4af37;padding:14px 18px;margin-top:24px;'><strong>Not ready to enquire yet?</strong><br>That's fine. <a href='/portfolio' style='color:#d4af37;text-decoration:none;'>Browse the portfolio</a> first, or <a href='/stories' style='color:#d4af37;text-decoration:none;'>read the blog</a>.</div>"
+                "editor": "<div><strong>Not ready to enquire yet?</strong><br>That's fine. <a href='/portfolio'>Browse the portfolio</a> first, or <a href='/stories'>read the blog</a>.</div>"
               }
             }
           ]

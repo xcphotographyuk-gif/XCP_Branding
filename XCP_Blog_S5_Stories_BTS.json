@@ -9,7 +9,10 @@
       "settings": {
         "_title": "Blog: Stories and Notes - Header",
         "layout": "boxed",
-        "content_width": { "unit": "px", "size": 1200 },
+        "content_width": {
+          "unit": "px",
+          "size": 1200
+        },
         "background_background": "classic",
         "background_color": "#000000",
         "padding": {
@@ -25,7 +28,9 @@
         {
           "id": "blog_s5_stories_col",
           "elType": "column",
-          "settings": { "_column_size": 100 },
+          "settings": {
+            "_column_size": 100
+          },
           "elements": [
             {
               "id": "blog_s5_stories_eyebrow",
@@ -62,7 +67,10 @@
       "settings": {
         "_title": "Blog: Stories - Sub-categories",
         "layout": "boxed",
-        "content_width": { "unit": "px", "size": 1200 },
+        "content_width": {
+          "unit": "px",
+          "size": 1200
+        },
         "background_background": "classic",
         "background_color": "#0d0d0d",
         "padding": {
@@ -99,7 +107,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p>The stuff that does not make it into a portfolio. The failed attempts, the strange locations, the things I tried that did not work, and occasionally something that worked better than expected. General BTS notes written with client privacy protected.</p><p><a href='/stories/category/behind-the-lens' style='color:#d4af37;text-decoration:none;'>Read behind-the-lens posts</a></p>"
+                "editor": "<p>The stuff that does not make it into a portfolio. The failed attempts, the strange locations, the things I tried that did not work, and occasionally something that worked better than expected. General BTS notes written with client privacy protected.</p><p><a href='/stories/category/behind-the-lens'>Read behind-the-lens posts</a></p>"
               }
             }
           ]
@@ -127,7 +135,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p>Work I do purely for myself, places I explore with a camera, and ongoing personal projects that may or may not ever become anything. Authentic, unfiltered and often unrelated to branding photography entirely.</p><p><a href='/stories/category/personal-projects' style='color:#d4af37;text-decoration:none;'>See personal projects</a></p>"
+                "editor": "<p>Work I do purely for myself, places I explore with a camera, and ongoing personal projects that may or may not ever become anything. Authentic, unfiltered and often unrelated to branding photography entirely.</p><p><a href='/stories/category/personal-projects'>See personal projects</a></p>"
               }
             }
           ]
@@ -140,7 +148,10 @@
       "settings": {
         "_title": "Blog: Stories - Latest Posts",
         "layout": "boxed",
-        "content_width": { "unit": "px", "size": 1200 },
+        "content_width": {
+          "unit": "px",
+          "size": 1200
+        },
         "background_background": "classic",
         "background_color": "#000000",
         "padding": {
@@ -156,7 +167,9 @@
         {
           "id": "blog_s5_stories_latest_col",
           "elType": "column",
-          "settings": { "_column_size": 100 },
+          "settings": {
+            "_column_size": 100
+          },
           "elements": [
             {
               "id": "blog_s5_stories_latest_head",

@@ -73,7 +73,7 @@
                 },
                 "align": "center",
                 "size": "lg",
-                "background_color": "#d4af37",
+                "background_color": "",
                 "button_text_color": "#000000",
                 "border_radius": {
                   "unit": "px",

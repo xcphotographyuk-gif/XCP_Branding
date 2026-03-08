@@ -149,7 +149,7 @@
                   },
                   {
                     "field_type": "acceptance",
-                    "field_label": "I have read and agree to the <a href='/privacy-policy' target='_blank' style='color:#d4af37;text-decoration:underline;'>Privacy Policy</a> and consent to XC Photography contacting me about my enquiry.",
+                    "field_label": "I have read and agree to the <a href='/privacy-policy' target='_blank'>Privacy Policy</a> and consent to XC Photography contacting me about my enquiry.",
                     "field_id": "gdpr_consent",
                     "required": "yes",
                     "width": "100",
@@ -166,7 +166,7 @@
                 "button_text": "Send My Enquiry",
                 "button_size": "lg",
                 "button_align": "center",
-                "button_background_color": "#d4af37",
+                "button_background_color": "",
                 "button_text_color": "#000000",
                 "button_hover_background_color": "#b8962e",
                 "button_border_radius": {

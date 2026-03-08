@@ -9,7 +9,10 @@
       "settings": {
         "_title": "Blog: Music and Shows - Header",
         "layout": "boxed",
-        "content_width": { "unit": "px", "size": 1200 },
+        "content_width": {
+          "unit": "px",
+          "size": 1200
+        },
         "background_background": "classic",
         "background_color": "#000000",
         "padding": {
@@ -25,7 +28,9 @@
         {
           "id": "blog_s6_music_col",
           "elType": "column",
-          "settings": { "_column_size": 100 },
+          "settings": {
+            "_column_size": 100
+          },
           "elements": [
             {
               "id": "blog_s6_music_eyebrow",
@@ -62,7 +67,10 @@
       "settings": {
         "_title": "Blog: Music - Show Reviews",
         "layout": "boxed",
-        "content_width": { "unit": "px", "size": 1200 },
+        "content_width": {
+          "unit": "px",
+          "size": 1200
+        },
         "background_background": "classic",
         "background_color": "#0d0d0d",
         "padding": {
@@ -78,7 +86,9 @@
         {
           "id": "blog_s6_music_reviews_col",
           "elType": "column",
-          "settings": { "_column_size": 100 },
+          "settings": {
+            "_column_size": 100
+          },
           "elements": [
             {
               "id": "blog_s6_reviews_head",
@@ -94,7 +104,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p>Written reviews of shows I have photographed, with images from the pit and the floor. Upcoming shows I am booked to cover will be listed here in advance. Coverage spans genres: rock, electronic, jazz, blues, classical and everything in between.</p><p><a href='/stories/category/show-reviews' style='color:#d4af37;text-decoration:none;'>Browse show reviews</a></p>"
+                "editor": "<p>Written reviews of shows I have photographed, with images from the pit and the floor. Upcoming shows I am booked to cover will be listed here in advance. Coverage spans genres: rock, electronic, jazz, blues, classical and everything in between.</p><p><a href='/stories/category/show-reviews'>Browse show reviews</a></p>"
               }
             },
             {
@@ -115,7 +125,10 @@
       "settings": {
         "_title": "Blog: Music - Podcast and Radio Panels",
         "layout": "boxed",
-        "content_width": { "unit": "px", "size": 1200 },
+        "content_width": {
+          "unit": "px",
+          "size": 1200
+        },
         "background_background": "classic",
         "background_color": "#000000",
         "padding": {
@@ -170,7 +183,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p>I appear as a regular guest on The Portrait Guy podcast hosted by Guy Lloyd. We talk portrait photography, the business side of shooting people, gear, mindset and the things that actually make a difference when you are in front of a client.</p><p>Episode notes, links and my take on the conversations we have are collected here.</p><p><a href='/stories/category/the-portrait-guy' style='color:#d4af37;text-decoration:none;'>Episode notes and links</a></p>"
+                "editor": "<p>I appear as a regular guest on The Portrait Guy podcast hosted by Guy Lloyd. We talk portrait photography, the business side of shooting people, gear, mindset and the things that actually make a difference when you are in front of a client.</p><p>Episode notes, links and my take on the conversations we have are collected here.</p><p><a href='/stories/category/the-portrait-guy'>Episode notes and links</a></p>"
               }
             }
           ]
@@ -216,7 +229,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p>My regular slot on Slack City Radio covers music photography, the Brighton and UK live scene, and the occasional kit tangent. Show notes, playlists and links to listen back are posted here after each broadcast.</p><p><a href='/stories/category/slack-city-radio' style='color:#d4af37;text-decoration:none;'>Show notes and listen back</a></p>"
+                "editor": "<p>My regular slot on Slack City Radio covers music photography, the Brighton and UK live scene, and the occasional kit tangent. Show notes, playlists and links to listen back are posted here after each broadcast.</p><p><a href='/stories/category/slack-city-radio'>Show notes and listen back</a></p>"
               }
             }
           ]
