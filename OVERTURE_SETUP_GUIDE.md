@@ -381,6 +381,8 @@ The browser Network tab has told you everything it can. The Response body `{"suc
    > 7. The file opens in a text editor inside your browser — make your changes and click **Save Changes**
    >
    > ⚠️ If you do **not** see `public_html` in the left tree, look for a folder named after your domain (e.g. `yourdomain.co.uk`) — that is your WordPress root instead.
+   >
+   > ⚠️ **If you opened phpMyAdmin instead of File Manager** — you are in the database browser, not the file browser. `wp-config.php` is a PHP file on the server's disk; it does not appear in phpMyAdmin at all (phpMyAdmin only shows database tables, not files). Close phpMyAdmin and go back to the cPanel dashboard. The tool you need is **File Manager**, found in the **Files** section of cPanel — not in the **Databases** section where phpMyAdmin lives.
 2. Find the line `define( 'WP_DEBUG', false );` and change it to `define( 'WP_DEBUG', true );`
 3. Add immediately below it: `define( 'WP_DEBUG_LOG', true );`
 4. Submit a test enquiry via the form
