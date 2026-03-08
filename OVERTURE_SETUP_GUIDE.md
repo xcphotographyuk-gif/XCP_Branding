@@ -152,16 +152,82 @@ Form field IDs match Overture Booking API field names exactly.
 |---|---|---|
 | Your Name | promoterName | promoterName |
 | Type of Project | name | name (booking title) |
-| Preferred Shoot Date | date | date |
+| Preferred Discovery Call Date | date | date |
 | County / Region | venueState | venueState |
 | Country | venueCountry | venueCountry |
-| Brand & Vision | message | info[] |
+| Tell Me About Your Brand & Vision | message | info[] |
 | Email Address | email | Person record (auto-matched) |
 | Phone Number | phone | Person record (auto-matched) |
 
+**Why "Discovery Call Date" and not "Shoot Date"?**
+
+The form is the first point of contact. The visitor does not know their shoot date yet and the shoot date gets agreed during the discovery call, not before it. Asking for a preferred call date sets the right expectation: enquiry comes in, you book a call, the call confirms the brief and shoot date. The date field (`date`) is sent to Overture as the booking date and you can update it to the actual shoot date after the call.
+
 ---
 
-## Fallback Option
+## Overture Field Configuration
+
+### Booking further information fields: what to set as default
+
+Overture lets you mark booking fields as "default on every booking". **You do not need to tick this for the fields sent by the website form.** The form already populates those fields on submission. Ticking "default on every booking" is only useful for fields you want to appear blank on every new booking you create manually inside Overture.
+
+Recommended defaults for manually-created bookings:
+
+| Field | Default on every booking? | Reason |
+|---|---|---|
+| Message / Brief | No | Sent by form or filled during call |
+| Preferred Date | No | Agreed during discovery call |
+| Type of Photoshoot | No | Sent by form as "Type of Project" |
+| Shoot Location | No | Agreed during discovery call |
+| Further Information | No | Optional, filled as needed |
+| Budget | No | Discussed during call |
+| Hair & Makeup Interest | No | Portrait bookings only |
+| Requirements | No | Filled per booking as needed |
+
+Leave all booking further information fields at their defaults. Only tick "default on every booking" if you find yourself repeatedly adding the same heading to new bookings manually and want it to appear pre-populated.
+
+---
+
+### Calendar events: recommended field groups
+
+The website form creates a booking in Overture. You can then create a calendar event linked to that booking. For the discovery call, create a calendar event using the **Branding photography - Details** group (or create a new group called **Discovery Call**).
+
+Suggested calendar event field groups to set up in Overture (Settings → Calendar Events → Default further information fields):
+
+**Discovery Call** group (create this if it does not exist):
+
+| Heading | Event default | Notes |
+|---|---|---|
+| Call platform | Yes | Zoom / Teams / Phone |
+| Brief summary | Yes | One-line note after the call |
+| Agreed next step | Yes | Shoot date, quote, follow-up |
+
+**Photoshoot** group (already exists, add to it):
+
+| Heading | Event default | Notes |
+|---|---|---|
+| Details | Yes | Already set |
+| Location confirmed | Yes | Address or studio name |
+| Kit required | Yes | Equipment list |
+| Delivery date | Yes | When final files are due |
+
+You do not need to populate every field on every event. These are prompts, not requirements. Add what is useful for that specific booking.
+
+---
+
+### Contact fields: what goes where
+
+Contact fields in Overture (the fields you saw under Contacts → Further Information) are separate from booking fields. They store information about the person, not the booking.
+
+The website form does not write to contact fields directly. When a form submission creates a booking in Overture, Overture auto-matches the email address to an existing contact or creates a new one. The contact record will have the name, email and phone from the form. The booking fields (type of project, location, brief) are stored on the booking, not the contact.
+
+**To add contact-level information** (industry sector, company bio, social links, etc.) after the enquiry comes in, open the contact record in Overture and fill in those fields manually, or send the client a contact update link so they can fill them in themselves.
+
+The contact further information fields (brand vision, ideal audience, industry admiration, etc.) do not need to come from the website form. They are more suited to a pre-shoot questionnaire sent after the discovery call, once the booking is confirmed. Overture can generate a client questionnaire link from the booking page.
+
+---
+
+
 
 If you are not ready to connect Overture yet, import `XCP_Contact_P2_Form_Fallback.json` instead. It is identical in layout and styling but sends enquiries by email only, with no API required. Field IDs are identical, so swapping to the Overture version later causes no disruption.
 
