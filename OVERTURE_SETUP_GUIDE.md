@@ -41,12 +41,27 @@ The webhook URL is pre-set to `https://xcphotography.overturehq.com/api/bookings
 
 ## Step 2: Add your API key via WPCode
 
-This is the confirmed method. It works with all Elementor versions, and because it targets the form by its **name** rather than the page it is on, you can place the form on any page (home, services, booking, etc.) and the Authorization header will be added automatically.
+### What WPCode is (and what it is not)
 
-1. In WordPress admin, install the free **WPCode** plugin if you do not have it, or go to **Code Snippets** if you have a snippets plugin already
-2. Click **Add New Snippet** and choose **PHP Snippet**
-3. Title it: `XCP Overture Authorization Header`
-4. Paste this code:
+WPCode is a **free WordPress plugin**. You install it from inside WordPress like any other plugin. Once installed, it gives you a simple code editor inside your WordPress admin panel, where you paste PHP directly into a text box.
+
+**There is no PHP file to create. No file to zip. No uploading.** It is just copy, paste, save, activate. That is all.
+
+---
+
+### How to do it
+
+**First time only:** Install WPCode
+1. In WordPress admin go to **Plugins → Add New**
+2. Search for **WPCode**
+3. Install and activate the free version
+
+**Then, every time:** Add the snippet
+1. In WordPress admin go to **Code Snippets → Add Snippet** (WPCode adds this menu item)
+2. Hover over **Add Your Custom Code (New Snippet)** and click **Use Snippet**
+3. Choose **PHP Snippet** from the code type options
+4. Give it the title: `XCP Overture Authorization Header`
+5. Copy and paste this entire block into the code editor:
 
 ```php
 add_filter(
@@ -62,8 +77,11 @@ add_filter(
 );
 ```
 
-5. Replace `YOUR_OVERTURE_API_KEY` with your token from **Overture → Settings → Integrations → API Keys**
-6. Set the snippet to **Active** and save
+6. In the code you just pasted, replace `YOUR_OVERTURE_API_KEY` with your actual token from **Overture → Settings → Integrations → API Keys**
+7. At the top of the page, toggle the snippet from **Inactive** to **Active**
+8. Click **Save Snippet**
+
+Done. The code now runs automatically in the background every time someone submits the form. You never have to touch it again unless you need to update the API key.
 
 ---
 

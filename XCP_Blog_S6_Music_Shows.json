@@ -45,7 +45,7 @@
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
-                "title": "Live Music, Reviews and a Bit of Radio",
+                "title": "Pit Passes, Show Notes and Late Night Radio",
                 "header_size": "h2"
               }
             },
@@ -95,7 +95,7 @@
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
-                "title": "Show Reviews and Live Coverage",
+                "title": "Night by Night: Shows, Sets and Pit Coverage",
                 "header_size": "h3"
               }
             },

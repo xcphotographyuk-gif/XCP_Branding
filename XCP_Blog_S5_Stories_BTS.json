@@ -45,7 +45,7 @@
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
-                "title": "What I See, What I Do, What It's Actually Like",
+                "title": "No Filter. No Spin. Just the Real Work.",
                 "header_size": "h2"
               }
             },
@@ -98,7 +98,7 @@
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
-                "title": "Behind the Lens",
+                "title": "From the Pit and the Studio Floor",
                 "header_size": "h3"
               }
             },
@@ -126,7 +126,7 @@
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
-                "title": "Personal Projects",
+                "title": "Off the Clock, Camera in Hand",
                 "header_size": "h3"
               }
             },
@@ -176,7 +176,7 @@
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
-                "title": "Latest Stories and Notes",
+                "title": "Latest: Stories, Notes and Behind-the-Scenes",
                 "header_size": "h3"
               }
             },
