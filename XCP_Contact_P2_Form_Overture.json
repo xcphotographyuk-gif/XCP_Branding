@@ -193,7 +193,7 @@
                     "value": "Bearer YOUR_OVERTURE_API_KEY"
                   }
                 ],
-                "_comment_setup": "AFTER IMPORT: Open this form widget in Elementor → Content tab → Additional Options → Custom Headers. Change 'YOUR_OVERTURE_API_KEY' to your actual Overture API key from Overture → Settings → Integrations → API Keys. The webhook URL above is already set. Do NOT add the API key as a hidden form field — that exposes it in page HTML.",
+                "_comment_setup": "AFTER IMPORT: Replace YOUR_OVERTURE_API_KEY in custom_headers above with your actual key. See OVERTURE_SETUP_GUIDE.md for full instructions.",
                 "button_text": "Send My Enquiry",
                 "button_size": "lg",
                 "button_align": "left",

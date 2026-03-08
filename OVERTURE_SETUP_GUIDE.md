@@ -48,7 +48,7 @@ If your form currently has a hidden field labelled **Authorization**:
 5. Click the **×** (delete) icon on that field row
 6. Click **Update**
 
-> The JSON template does not include an Authorization hidden field. If you re-import fresh, this problem won't exist.
+> The JSON template does not include an Authorization hidden field. If you re-import fresh, this problem will not exist.
 
 ---
 
