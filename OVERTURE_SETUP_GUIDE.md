@@ -364,6 +364,17 @@ This is the most important pattern to understand. In Elementor's response JSON, 
 
 ### Checking the Overture response via WordPress debug log
 
+> ### 🛑 BEFORE YOU START — ARE YOU IN THE RIGHT TOOL?
+>
+> **You need GoDaddy File Manager — NOT phpMyAdmin.**
+>
+> | Tool | What it shows | Where to find it in cPanel |
+> |---|---|---|
+> | **File Manager** ✅ | PHP files on disk — including `wp-config.php` | **Files** section of cPanel |
+> | **phpMyAdmin** ❌ | Database tables only — `wp-config.php` does not exist here | **Databases** section of cPanel |
+>
+> If you are looking at a screen full of database table names (like `wp_bmmgvw4m5z_options`, `wp_bmmgvw4m5z_posts`, etc.) you are in **phpMyAdmin** — close it and go back to the cPanel dashboard. Scroll up to the **Files** section and click **File Manager** instead.
+
 The browser Network tab has told you everything it can. The Response body `{"success":false,"data":{"message":"Your submission failed because of an error.","errors":{"":""},"data":[]}}` confirms the issue is between WordPress and Overture — not the browser, not the form, not the cookies. To find the exact Overture HTTP status and error body, enable WordPress debug logging:
 
 1. Open `wp-config.php` in the GoDaddy File Manager — follow these exact steps:
@@ -416,6 +427,7 @@ Work through this checklist in order:
 
 | Symptom | Likely cause | Fix |
 |---|---|---|
+| I am looking at a list of database tables (`wp_bmmgvw4m5z_options`, `wp_bmmgvw4m5z_posts`, etc.) and cannot find `wp-config.php` | You are in **phpMyAdmin** (the database browser) — wrong tool | Close phpMyAdmin. In cPanel, scroll to the **Files** section (not Databases) and click **File Manager** instead. `wp-config.php` is a file on disk, not a database table. |
 | "Invalid file" on import | Non-standard fields in the JSON | Re-download the file from the repo. The fixed versions no longer contain `_comment` fields that caused this error. |
 | "There was an error" on form submission | Overture may have rejected the request, or the webhook is not configured | First check Overture → Bookings to see if a booking was created anyway (display glitch). If not, check the WPCode snippet is Active and the API key is correct. Enable WP_DEBUG_LOG temporarily to see the server-side Overture response. See "How to see the actual error" above. |
 | You see r.stripe.com rows in the Network tab | Normal — Stripe.js telemetry beacons fire on every page load | Ignore them. They are unrelated to your form or Overture. The Overture webhook is server-side and will not appear in the browser Network tab at all. |
