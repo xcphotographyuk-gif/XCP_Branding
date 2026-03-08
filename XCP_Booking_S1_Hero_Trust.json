@@ -1,6 +1,6 @@
 {
   "version": "0.4",
-  "title": "Booking \u2013 Hero & Trust Bar",
+  "title": "Booking – Hero & Trust Bar",
   "type": "page",
   "content": [
     {
@@ -38,7 +38,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; color: #E8E4DC; font-family: Raleway, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px;'>Free, No Obligation</p>"
+                "editor": "<p>Free, No Obligation</p>"
               }
             },
             {
@@ -71,7 +71,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; color: #e0e0e0; font-size: 20px; max-width: 680px; margin: 24px auto 0; line-height: 1.7;'>A relaxed 30-minute conversation to understand your brand, your goals, and whether we're the right fit for each other. No pressure. No obligation.</p>"
+                "editor": "<p>A relaxed 30-minute conversation to understand your brand, your goals, and whether we're the right fit for each other. No pressure. No obligation.</p>"
               }
             }
           ]
@@ -112,7 +112,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; color: #1a1a1a; font-family: Raleway, sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 1px; margin: 0;'>\u2726 Responds within 24 hours &nbsp;&nbsp;|&nbsp;&nbsp; \u2726 5-star rated service &nbsp;&nbsp;|&nbsp;&nbsp; \u2726 500+ brands photographed &nbsp;&nbsp;|&nbsp;&nbsp; \u2726 Based in Brighton, shoots UK-wide</p>"
+                "editor": "<p>✦ Responds within 24 hours &nbsp;&nbsp;|&nbsp;&nbsp; ✦ 5-star rated service &nbsp;&nbsp;|&nbsp;&nbsp; ✦ 500+ brands photographed &nbsp;&nbsp;|&nbsp;&nbsp; ✦ Based in Brighton, shoots UK-wide</p>"
               }
             }
           ]

@@ -1,6 +1,6 @@
 {
   "version": "0.4",
-  "title": "About \u2013 Experience & Steps 1\u20132",
+  "title": "About – Experience & Steps 1–2",
   "type": "page",
   "content": [
     {
@@ -55,7 +55,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; font-size: 18px; max-width: 800px; margin: 30px auto;'>Collaboration, not transaction. Transparency, not mystery. Here's exactly how we'll work together to create imagery that elevates your brand.</p>"
+                "editor": "<p>Collaboration, not transaction. Transparency, not mystery. Here's exactly how we'll work together to create imagery that elevates your brand.</p>"
               }
             }
           ]

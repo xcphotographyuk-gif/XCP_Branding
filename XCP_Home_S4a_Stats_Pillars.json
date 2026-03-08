@@ -1,6 +1,6 @@
 {
   "version": "0.4",
-  "title": "Home \u2013 Stats & Three Pillars",
+  "title": "Home – Stats & Three Pillars",
   "type": "page",
   "content": [
     {
@@ -49,7 +49,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='font-size: 18px;'>Brands Elevated</p>"
+                "editor": "<p>Brands Elevated</p>"
               }
             }
           ]
@@ -83,7 +83,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='font-size: 18px;'>Ideal Audiences Reached</p>"
+                "editor": "<p>Ideal Audiences Reached</p>"
               }
             }
           ]
@@ -117,7 +117,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='font-size: 18px;'>Industry Awards Won</p>"
+                "editor": "<p>Industry Awards Won</p>"
               }
             }
           ]
@@ -151,7 +151,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='font-size: 18px;'>Years of Visual Excellence</p>"
+                "editor": "<p>Years of Visual Excellence</p>"
               }
             }
           ]
@@ -215,7 +215,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='font-size: 16px; line-height: 1.8; text-align: center;'>Timeless, captivating images that elevate your authority and share your brand's story with the people who matter to your business.</p>",
+                "editor": "<p>Timeless, captivating images that elevate your authority and share your brand's story with the people who matter to your business.</p>",
                 "text_color": "#333333"
               }
             }
@@ -259,7 +259,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='font-size: 16px; line-height: 1.8; text-align: center;'>A dedicated partnership built from concept to final delivery. Every project is shaped around what makes you unique: your story, your audience, your vision.</p>",
+                "editor": "<p>A dedicated partnership built from concept to final delivery. Every project is shaped around what makes you unique: your story, your audience, your vision.</p>",
                 "text_color": "#333333"
               }
             }
@@ -303,7 +303,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='font-size: 16px; line-height: 1.8; text-align: center;'>A decade of active visual work, from gallery exhibitions and headline music photography to brand work across the UK and Europe. Imagery that does not just look good, it says something.</p>",
+                "editor": "<p>A decade of active visual work, from gallery exhibitions and headline music photography to brand work across the UK and Europe. Imagery that does not just look good, it says something.</p>",
                 "text_color": "#333333"
               }
             }

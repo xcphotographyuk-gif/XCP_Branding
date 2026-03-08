@@ -64,7 +64,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; font-size: 20px; line-height: 1.8; max-width: 800px; margin: 0 auto;'>When your visuals truly reflect who you are, the right people feel it. They stop. They read. They reach out.</p><p style='text-align: center; font-size: 20px; line-height: 1.8; max-width: 800px; margin: 20px auto 0;'><strong>Ready to work with a photographer who asks the right questions before picking up the camera?</strong></p>",
+                "editor": "<p>When your visuals truly reflect who you are, the right people feel it. They stop. They read. They reach out.</p><p><strong>Ready to work with a photographer who asks the right questions before picking up the camera?</strong></p>",
                 "text_color": "#FFFFFF"
               }
             },
@@ -133,7 +133,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<div style='max-width: 860px; margin: 0 auto; font-size: 18px; line-height: 1.9;'><p>Anyone with a decent camera and a good eye can make a photograph that looks fine. That's not what this is.</p><p>What I do starts well before the shoot, in a real conversation about who you are, who you're trying to reach, and what it is about you that will make those specific people stop mid-scroll and actually pay attention. Not your elevator pitch. The actual thing.</p><p>Then the technical side. A decade of knowing exactly what to do with light, timing, and composition, becomes the delivery mechanism for that understanding. The camera is just the tool. The work is everything that happens before and around it.</p><p><strong>The result is imagery with intent behind it.</strong> Images that show the personality of the person, the place, or the thing. Not a polished performance of them. Images that resonate with the right people because they were made with those people in mind.</p></div>"
+                "editor": "<div><p>Anyone with a decent camera and a good eye can make a photograph that looks fine. That's not what this is.</p><p>What I do starts well before the shoot, in a real conversation about who you are, who you're trying to reach, and what it is about you that will make those specific people stop mid-scroll and actually pay attention. Not your elevator pitch. The actual thing.</p><p>Then the technical side. A decade of knowing exactly what to do with light, timing, and composition, becomes the delivery mechanism for that understanding. The camera is just the tool. The work is everything that happens before and around it.</p><p><strong>The result is imagery with intent behind it.</strong> Images that show the personality of the person, the place, or the thing. Not a polished performance of them. Images that resonate with the right people because they were made with those people in mind.</p></div>"
               }
             }
           ]

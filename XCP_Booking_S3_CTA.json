@@ -1,6 +1,6 @@
 {
   "version": "0.4",
-  "title": "Booking \u2013 Closing CTA",
+  "title": "Booking – Closing CTA",
   "type": "page",
   "content": [
     {
@@ -33,7 +33,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<h3 style='text-align: center; color: #ffffff; font-family: Raleway, sans-serif; font-size: 32px; font-weight: 700; margin-bottom: 16px;'>Your Brand Deserves to Be Seen</h3><p style='text-align: center; color: #e0e0e0; font-size: 18px; max-width: 600px; margin: 0 auto 32px; line-height: 1.7;'>Every iconic brand started with a single conversation. Book yours today and let's build something that worth looking at.</p>"
+                "editor": "<h3>Your Brand Deserves to Be Seen</h3><p>Every iconic brand started with a single conversation. Book yours today and let's build something that worth looking at.</p>"
               }
             },
             {

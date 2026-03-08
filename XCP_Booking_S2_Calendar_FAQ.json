@@ -1,6 +1,6 @@
 {
   "version": "0.4",
-  "title": "Booking \u2013 Calendar & FAQ",
+  "title": "Booking – Calendar & FAQ",
   "type": "page",
   "content": [
     {
@@ -71,7 +71,7 @@
               "elType": "widget",
               "widgetType": "html",
               "settings": {
-                "html": "<!-- Overture / Calendly booking calendar embed -->\n<!-- Replace the src URL below with your Overture or Calendly embed URL -->\n<!-- Overture embed: Overture Admin \u2192 Booking Pages \u2192 Embed Code -->\n<!-- Calendly embed: calendly.com/[your-username]/discovery-call -->\n<div style=\"min-width:320px; height:700px;\">\n  <iframe\n    src=\"https://calendly.com/xcphotographyuk/discovery-call\"\n    width=\"100%\"\n    height=\"700\"\n    title=\"Book a Discovery Call with XC Photography\"\n    loading=\"lazy\"\n    sandbox=\"allow-forms allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox\"\n    allow=\"payment; geolocation\"\n    style=\"border: none; border-radius: 4px;\"\n  ></iframe>\n</div>",
+                "html": "<!-- Overture / Calendly booking calendar embed -->\n<!-- Replace the src URL below with your Overture or Calendly embed URL -->\n<!-- Overture embed: Overture Admin → Booking Pages → Embed Code -->\n<!-- Calendly embed: calendly.com/[your-username]/discovery-call -->\n<div>\n  <iframe\n    src=\"https://calendly.com/xcphotographyuk/discovery-call\"\n    width=\"100%\"\n    height=\"700\"\n    title=\"Book a Discovery Call with XC Photography\"\n    loading=\"lazy\"\n    sandbox=\"allow-forms allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox\"\n    allow=\"payment; geolocation\"\n  ></iframe>\n</div>",
                 "_element_custom_width": "100"
               }
             }
@@ -106,7 +106,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<ul style='list-style: none; padding: 0; margin: 0 0 30px;'><li style='padding: 10px 0; border-bottom: 1px solid #e8e8e8; font-size: 16px; line-height: 1.6;'>\ud83c\udfaf &nbsp;<strong>We learn about your brand</strong>: your goals, your audience, and the story you want to tell.</li><li style='padding: 10px 0; border-bottom: 1px solid #e8e8e8; font-size: 16px; line-height: 1.6;'>\ud83d\udcf8 &nbsp;<strong>We explore your vision</strong>: the look, feel, and emotional impact you're aiming for.</li><li style='padding: 10px 0; border-bottom: 1px solid #e8e8e8; font-size: 16px; line-height: 1.6;'>\ud83d\udca1 &nbsp;<strong>We share ideas</strong>: concepts, locations, and approaches that fit your brand perfectly.</li><li style='padding: 10px 0; border-bottom: 1px solid #e8e8e8; font-size: 16px; line-height: 1.6;'>\u2705 &nbsp;<strong>We assess fit</strong>, because the best work happens when photographer and client are genuinely aligned.</li><li style='padding: 10px 0; font-size: 16px; line-height: 1.6;'>\ud83d\udccb &nbsp;<strong>Next steps</strong>: if it's a great fit, we'll outline a tailored proposal. No pressure either way.</li></ul>"
+                "editor": "<ul><li>🎯 &nbsp;<strong>We learn about your brand</strong>: your goals, your audience, and the story you want to tell.</li><li>📸 &nbsp;<strong>We explore your vision</strong>: the look, feel, and emotional impact you're aiming for.</li><li>💡 &nbsp;<strong>We share ideas</strong>: concepts, locations, and approaches that fit your brand perfectly.</li><li>✅ &nbsp;<strong>We assess fit</strong>, because the best work happens when photographer and client are genuinely aligned.</li><li>📋 &nbsp;<strong>Next steps</strong>: if it's a great fit, we'll outline a tailored proposal. No pressure either way.</li></ul>"
               }
             },
             {
@@ -114,7 +114,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<div style='background: #1a1a1a; color: #ffffff; padding: 24px; border-left: 4px solid #E8E4DC; margin-bottom: 30px;'><p style='margin: 0 0 6px; font-family: Raleway, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #E8E4DC;'>The Details</p><p style='margin: 0; font-size: 15px; line-height: 1.7;'>\ud83d\udcc5 <strong>30 minutes</strong> via Zoom or phone<br>\ud83d\udccd Available UK-wide<br>\ud83c\udf81 <strong>Completely free</strong>, no obligation<br>\u23f1 Response within 24 hours of booking</p></div>"
+                "editor": "<div><p>The Details</p><p>📅 <strong>30 minutes</strong> via Zoom or phone<br>📍 Available UK-wide<br>🎁 <strong>Completely free</strong>, no obligation<br>⏱ Response within 24 hours of booking</p></div>"
               }
             },
             {
@@ -122,7 +122,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='font-size: 15px; color: #555; line-height: 1.7;'>Prefer to reach out by email first? <a href='/contact' style='color: #1a1a1a; font-weight: 600; text-decoration: underline;'>Use the contact form \u2192</a></p>"
+                "editor": "<p>Prefer to reach out by email first? <a href='/contact'>Use the contact form →</a></p>"
               }
             }
           ]

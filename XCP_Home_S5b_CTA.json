@@ -58,7 +58,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; font-size: 20px; line-height: 1.8; color: rgba(255,255,255,0.80); max-width: 680px; margin: 24px auto 0;'>Share your vision and let's craft imagery that reflects exactly who you are — and commands the attention of the right people.</p>"
+                "editor": "<p>Share your vision and let's craft imagery that reflects exactly who you are — and commands the attention of the right people.</p>"
               }
             },
             {

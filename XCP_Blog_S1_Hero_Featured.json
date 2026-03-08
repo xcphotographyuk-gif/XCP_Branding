@@ -1,6 +1,6 @@
 {
   "version": "0.4",
-  "title": "Blog \u2013 Hero & Featured Post",
+  "title": "Blog – Hero & Featured Post",
   "type": "page",
   "content": [
     {
@@ -45,7 +45,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; color: #E8E4DC; font-size: 13px; letter-spacing: 3px; text-transform: uppercase; font-weight: 600; margin-bottom: 16px;'>Insights &amp; Inspiration</p>"
+                "editor": "<p>Insights &amp; Inspiration</p>"
               }
             },
             {
@@ -78,7 +78,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; color: rgba(255,255,255,0.85); font-size: 18px; line-height: 1.8; max-width: 680px; margin: 20px auto 0;'>Brand photography insights, industry expertise, and creative inspiration for businesses ready to elevate their visual presence.</p>"
+                "editor": "<p>Brand photography insights, industry expertise, and creative inspiration for businesses ready to elevate their visual presence.</p>"
               }
             }
           ]
@@ -137,7 +137,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; font-size: 17px; color: #555555; max-width: 650px; margin: 16px auto 0;'>Practical advice and creative strategies for brands ready to show up authentically.</p>"
+                "editor": "<p>Practical advice and creative strategies for brands ready to show up authentically.</p>"
               }
             }
           ]

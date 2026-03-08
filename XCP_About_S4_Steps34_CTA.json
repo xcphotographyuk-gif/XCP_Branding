@@ -1,6 +1,6 @@
 {
   "version": "0.4",
-  "title": "About \u2013 Steps 3\u20134 & CTA",
+  "title": "About – Steps 3–4 & CTA",
   "type": "page",
   "content": [
     {
@@ -294,7 +294,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; color: #FFFFFF; font-size: 20px; max-width: 700px; margin: 30px auto;'>Ready to see your brand elevated through imagery that truly reflects who you are, and connects with the people worth reaching? Let's talk about your vision.</p>",
+                "editor": "<p>Ready to see your brand elevated through imagery that truly reflects who you are, and connects with the people worth reaching? Let's talk about your vision.</p>",
                 "align": "center"
               }
             },

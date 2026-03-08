@@ -1,6 +1,6 @@
 {
   "version": "0.4",
-  "title": "Services \u2013 Hero & Intro",
+  "title": "Services – Hero & Intro",
   "type": "page",
   "content": [
     {
@@ -69,7 +69,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; color: #FFFFFF; font-size: 20px; max-width: 700px; margin: 20px auto;'>Strategic photography packages built on a decade of active visual work, designed to help the right brands show up in a way that commands genuine attention.</p>",
+                "editor": "<p>Strategic photography packages built on a decade of active visual work, designed to help the right brands show up in a way that commands genuine attention.</p>",
                 "align": "center"
               }
             }
@@ -129,7 +129,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; font-size: 18px; max-width: 800px; margin: 30px auto; line-height: 1.8;'>You're not buying photographs. You're getting a process that starts long before the camera comes out, and imagery that reflects who you actually are when it does. Every package is built around getting that part right first.</p>"
+                "editor": "<p>You're not buying photographs. You're getting a process that starts long before the camera comes out, and imagery that reflects who you actually are when it does. Every package is built around getting that part right first.</p>"
               }
             }
           ]

@@ -79,7 +79,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; color: #FFFFFF; font-size: 20px; max-width: 700px; margin: 20px auto;'>Partnership, not just photography. Your vision, elevated through imagery that truly reflects who you are and connects with the people who were always meant to find you.</p>",
+                "editor": "<p>Partnership, not just photography. Your vision, elevated through imagery that truly reflects who you are and connects with the people who were always meant to find you.</p>",
                 "align": "center"
               }
             }

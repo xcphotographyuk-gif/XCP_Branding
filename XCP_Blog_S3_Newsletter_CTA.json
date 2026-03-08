@@ -1,6 +1,6 @@
 {
   "version": "0.4",
-  "title": "Blog \u2013 Newsletter & Final CTA",
+  "title": "Blog – Newsletter & Final CTA",
   "type": "page",
   "content": [
     {
@@ -57,7 +57,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; color: rgba(255,255,255,0.75); font-size: 16px; max-width: 560px; margin: 16px auto;'>Practical advice, creative inspiration, and early access to availability, straight to your inbox. No fluff, no spam.</p>"
+                "editor": "<p>Practical advice, creative inspiration, and early access to availability, straight to your inbox. No fluff, no spam.</p>"
               }
             },
             {
@@ -98,7 +98,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; color: rgba(255,255,255,0.45); font-size: 12px; margin-top: 12px;'>By subscribing you agree to our <a href='/privacy-policy' style='color: #E8E4DC;'>Privacy Policy</a>. Unsubscribe at any time.</p>"
+                "editor": "<p>By subscribing you agree to our <a href='/privacy-policy'>Privacy Policy</a>. Unsubscribe at any time.</p>"
               }
             }
           ]
@@ -158,7 +158,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; font-size: 17px; color: #555555; max-width: 620px; margin: 20px auto;'>Everything you've read here is possible for your brand. Let's talk about what authentic, strategic imagery could do for your business.</p>"
+                "editor": "<p>Everything you've read here is possible for your brand. Let's talk about what authentic, strategic imagery could do for your business.</p>"
               }
             },
             {

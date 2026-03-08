@@ -45,7 +45,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align:center;color:#E8E4DC;font-size:13px;letter-spacing:3px;text-transform:uppercase;font-weight:600;margin-bottom:16px;font-family:Raleway,sans-serif;'>Let's Work Together</p>"
+                "editor": "<p>Let's Work Together</p>"
               }
             },
             {
@@ -78,7 +78,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align:center;font-size:19px;line-height:1.8;color:rgba(255,255,255,0.88);max-width:680px;margin:20px auto 0;'>Your story deserves to be told with intention, authenticity, and visual impact. I work with businesses across Brighton, across the UK, and internationally. Let's start the conversation.</p>"
+                "editor": "<p>Your story deserves to be told with intention, authenticity, and visual impact. I work with businesses across Brighton, across the UK, and internationally. Let's start the conversation.</p>"
               }
             }
           ]

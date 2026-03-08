@@ -1,6 +1,6 @@
 {
   "version": "0.4",
-  "title": "Services \u2013 Transformation & Bespoke",
+  "title": "Services – Transformation & Bespoke",
   "type": "page",
   "content": [
     {
@@ -85,7 +85,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='font-size: 14px; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-bottom: 10px;'>Premium Experience</p>"
+                "editor": "<p>Premium Experience</p>"
               }
             },
             {
@@ -106,7 +106,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='font-size: 18px; line-height: 1.8; margin: 20px 0;'>Complete visual rebrand or extensive content library creation. A true partnership investment in your brand's future.</p><p style='font-size: 16px; line-height: 1.6; margin: 20px 0;'><strong>What's Included:</strong></p><ul style='font-size: 16px; line-height: 1.8; margin-left: 20px;'><li>Multi-day strategic photography project</li><li>Comprehensive brand strategy sessions</li><li>100+ professionally edited images</li><li>Multiple locations, concepts, & setups</li><li>Team headshots, environmental, lifestyle, product</li><li>Behind-the-scenes content capture</li><li>All formats optimized for every platform</li><li>Full commercial usage rights</li><li>12-month ongoing support & consulting</li><li>Quarterly refresh sessions available</li></ul><p style='font-size: 16px; margin-top: 20px;'><strong>Ideal For:</strong> Organizations ready for comprehensive brand transformation</p>"
+                "editor": "<p>Complete visual rebrand or extensive content library creation. A true partnership investment in your brand's future.</p><p><strong>What's Included:</strong></p><ul><li>Multi-day strategic photography project</li><li>Comprehensive brand strategy sessions</li><li>100+ professionally edited images</li><li>Multiple locations, concepts, & setups</li><li>Team headshots, environmental, lifestyle, product</li><li>Behind-the-scenes content capture</li><li>All formats optimized for every platform</li><li>Full commercial usage rights</li><li>12-month ongoing support & consulting</li><li>Quarterly refresh sessions available</li></ul><p><strong>Ideal For:</strong> Organizations ready for comprehensive brand transformation</p>"
               }
             },
             {
@@ -171,7 +171,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; font-size: 18px; line-height: 1.8; max-width: 720px; margin: 0 auto 40px;'>Your brand has a story. I help you tell it through powerful, authentic, and cinematic imagery. For a detailed discussion about your project, please use the enquiry form below.</p>"
+                "editor": "<p>Your brand has a story. I help you tell it through powerful, authentic, and cinematic imagery. For a detailed discussion about your project, please use the enquiry form below.</p>"
               }
             },
             {

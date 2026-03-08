@@ -67,7 +67,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='color: #aaaaaa; font-size: 15px; line-height: 1.8; margin-top: 20px;'>Premium brand photography for businesses and personal brands that demand visual excellence.</p>",
+                "editor": "<p>Premium brand photography for businesses and personal brands that demand visual excellence.</p>",
                 "text_color": "#aaaaaa"
               }
             },
@@ -181,7 +181,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<ul style='list-style: none; padding: 0; margin: 16px 0 0 0;'><li style='margin-bottom: 12px;'><a href='/' style='color: #aaaaaa; text-decoration: none; font-size: 14px; transition: color 0.2s;'>Home</a></li><li style='margin-bottom: 12px;'><a href='/about' style='color: #aaaaaa; text-decoration: none; font-size: 14px;'>About</a></li><li style='margin-bottom: 12px;'><a href='/services' style='color: #aaaaaa; text-decoration: none; font-size: 14px;'>Services</a></li><li style='margin-bottom: 12px;'><a href='/portfolio' style='color: #aaaaaa; text-decoration: none; font-size: 14px;'>Portfolio</a></li><li style='margin-bottom: 12px;'><a href='/stories' style='color: #aaaaaa; text-decoration: none; font-size: 14px;'>Stories</a></li><li style='margin-bottom: 12px;'><a href='/contact' style='color: #aaaaaa; text-decoration: none; font-size: 14px;'>Contact</a></li></ul>"
+                "editor": "<ul><li><a href='/'>Home</a></li><li><a href='/about'>About</a></li><li><a href='/services'>Services</a></li><li><a href='/portfolio'>Portfolio</a></li><li><a href='/stories'>Stories</a></li><li><a href='/contact'>Contact</a></li></ul>"
               }
             }
           ]
@@ -229,7 +229,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<ul style='list-style: none; padding: 0; margin: 16px 0 0 0;'><li style='margin-bottom: 12px;'><a href='/services' style='color: #aaaaaa; text-decoration: none; font-size: 14px;'>Brand Photography</a></li><li style='margin-bottom: 12px;'><a href='/services' style='color: #aaaaaa; text-decoration: none; font-size: 14px;'>Documentary Storytelling</a></li><li style='margin-bottom: 12px;'><a href='/services' style='color: #aaaaaa; text-decoration: none; font-size: 14px;'>Corporate Portraits</a></li><li style='margin-bottom: 12px;'><a href='/services' style='color: #aaaaaa; text-decoration: none; font-size: 14px;'>Event Coverage</a></li><li style='margin-bottom: 12px;'><a href='/services' style='color: #aaaaaa; text-decoration: none; font-size: 14px;'>Editorial Work</a></li></ul>"
+                "editor": "<ul><li><a href='/services'>Brand Photography</a></li><li><a href='/services'>Documentary Storytelling</a></li><li><a href='/services'>Corporate Portraits</a></li><li><a href='/services'>Event Coverage</a></li><li><a href='/services'>Editorial Work</a></li></ul>"
               }
             }
           ]
@@ -277,7 +277,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<div style='margin-top: 16px;'><p style='color: #aaaaaa; font-size: 14px; margin-bottom: 10px;'><a href='mailto:hello@xcphotography.co.uk' style='color: #E8E4DC; text-decoration: none;'>hello@xcphotography.co.uk</a></p><p style='color: #aaaaaa; font-size: 14px; margin-bottom: 10px;'><a href='tel:+441234567890' style='color: #aaaaaa; text-decoration: none;'>+44 (0) 1234 567890</a></p><p style='color: #aaaaaa; font-size: 14px; margin-bottom: 0;'>Mon\u2013Fri: 9:00 AM \u2013 6:00 PM<br>Sat: By Appointment</p></div>"
+                "editor": "<div><p><a href='mailto:hello@xcphotography.co.uk'>hello@xcphotography.co.uk</a></p><p><a href='tel:+441234567890'>+44 (0) 1234 567890</a></p><p>Mon–Fri: 9:00 AM – 6:00 PM<br>Sat: By Appointment</p></div>"
               }
             },
             {
@@ -379,7 +379,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='color: #666666; font-size: 13px; margin: 0;'>&copy; 2026 XC Photography. All rights reserved. Registered in England &amp; Wales.</p>"
+                "editor": "<p>&copy; 2026 XC Photography. All rights reserved. Registered in England &amp; Wales.</p>"
               }
             }
           ]
@@ -400,7 +400,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='margin: 0; font-size: 13px;'><a href='/privacy-policy' style='color: #666666; text-decoration: none; margin-right: 20px;'>Privacy Policy</a><a href='/terms-and-conditions' style='color: #666666; text-decoration: none; margin-right: 20px;'>Terms &amp; Conditions</a><a href='/cookie-policy' style='color: #666666; text-decoration: none;'>Cookie Policy</a></p>"
+                "editor": "<p><a href='/privacy-policy'>Privacy Policy</a><a href='/terms-and-conditions'>Terms &amp; Conditions</a><a href='/cookie-policy'>Cookie Policy</a></p>"
               }
             }
           ]

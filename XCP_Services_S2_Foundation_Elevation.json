@@ -1,6 +1,6 @@
 {
   "version": "0.4",
-  "title": "Services \u2013 Foundation & Elevation",
+  "title": "Services – Foundation & Elevation",
   "type": "page",
   "content": [
     {
@@ -85,7 +85,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='font-size: 14px; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-bottom: 10px;'>Perfect for New Brands</p>"
+                "editor": "<p>Perfect for New Brands</p>"
               }
             },
             {
@@ -106,7 +106,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='font-size: 18px; line-height: 1.8; margin: 20px 0;'>Essential imagery to establish your professional presence. Perfect for launching your brand or refreshing your visual identity.</p><p style='font-size: 16px; line-height: 1.6; margin: 20px 0;'><strong>What's Included:</strong></p><ul style='font-size: 16px; line-height: 1.8; margin-left: 20px;'><li>2-hour strategic photography session</li><li>Pre-session brand discovery consultation</li><li>20+ professionally edited images</li><li>Web & print ready formats</li><li>Commercial usage rights</li></ul><p style='font-size: 16px; margin-top: 20px;'><strong>Ideal For:</strong> Entrepreneurs, startups, solopreneurs establishing their visual identity</p>"
+                "editor": "<p>Essential imagery to establish your professional presence. Perfect for launching your brand or refreshing your visual identity.</p><p><strong>What's Included:</strong></p><ul><li>2-hour strategic photography session</li><li>Pre-session brand discovery consultation</li><li>20+ professionally edited images</li><li>Web & print ready formats</li><li>Commercial usage rights</li></ul><p><strong>Ideal For:</strong> Entrepreneurs, startups, solopreneurs establishing their visual identity</p>"
               }
             },
             {
@@ -177,7 +177,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='font-size: 14px; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-bottom: 10px;'>Most Popular</p>"
+                "editor": "<p>Most Popular</p>"
               }
             },
             {
@@ -198,7 +198,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='font-size: 18px; line-height: 1.8; margin: 20px 0;'>Comprehensive imagery collection designed to elevate your brand across all platforms and marketing materials.</p><p style='font-size: 16px; line-height: 1.6; margin: 20px 0;'><strong>What's Included:</strong></p><ul style='font-size: 16px; line-height: 1.8; margin-left: 20px;'><li>Full-day strategic photography session</li><li>In-depth brand strategy consultation</li><li>50+ professionally edited images</li><li>Multiple locations/setups</li><li>Headshots, lifestyle, environmental portraits</li><li>Web, print & social media ready formats</li><li>Full commercial usage rights</li><li>6-month support for usage questions</li></ul><p style='font-size: 16px; margin-top: 20px;'><strong>Ideal For:</strong> Established businesses scaling their brand presence</p>"
+                "editor": "<p>Comprehensive imagery collection designed to elevate your brand across all platforms and marketing materials.</p><p><strong>What's Included:</strong></p><ul><li>Full-day strategic photography session</li><li>In-depth brand strategy consultation</li><li>50+ professionally edited images</li><li>Multiple locations/setups</li><li>Headshots, lifestyle, environmental portraits</li><li>Web, print & social media ready formats</li><li>Full commercial usage rights</li><li>6-month support for usage questions</li></ul><p><strong>Ideal For:</strong> Established businesses scaling their brand presence</p>"
               }
             },
             {

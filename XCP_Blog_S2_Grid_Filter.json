@@ -1,6 +1,6 @@
 {
   "version": "0.4",
-  "title": "Blog \u2013 Grid & Category Filter",
+  "title": "Blog – Grid & Category Filter",
   "type": "page",
   "content": [
     {
@@ -114,7 +114,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<div style='display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 24px;'><a href='/stories/category/music-nightlife' style='display: inline-block; padding: 10px 24px; border: 1px solid #1a1a1a; color: #1a1a1a; font-size: 13px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; text-decoration: none;'>Music &amp; Nightlife</a><a href='/stories/category/brand-photography' style='display: inline-block; padding: 10px 24px; border: 1px solid #1a1a1a; color: #1a1a1a; font-size: 13px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; text-decoration: none;'>Brand Photography</a><a href='/stories/category/behind-the-scenes' style='display: inline-block; padding: 10px 24px; border: 1px solid #1a1a1a; color: #1a1a1a; font-size: 13px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; text-decoration: none;'>Behind the Scenes</a><a href='/stories/category/client-stories' style='display: inline-block; padding: 10px 24px; border: 1px solid #1a1a1a; color: #1a1a1a; font-size: 13px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; text-decoration: none;'>Client Stories</a><a href='/stories/category/gear-guides' style='display: inline-block; padding: 10px 24px; border: 1px solid #1a1a1a; color: #1a1a1a; font-size: 13px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; text-decoration: none;'>Gear Guides</a><a href='/stories/category/photography-tips' style='display: inline-block; padding: 10px 24px; border: 1px solid #1a1a1a; color: #1a1a1a; font-size: 13px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; text-decoration: none;'>Photography Tips</a></div>"
+                "editor": "<div><a href='/stories/category/music-nightlife'>Music &amp; Nightlife</a><a href='/stories/category/brand-photography'>Brand Photography</a><a href='/stories/category/behind-the-scenes'>Behind the Scenes</a><a href='/stories/category/client-stories'>Client Stories</a><a href='/stories/category/gear-guides'>Gear Guides</a><a href='/stories/category/photography-tips'>Photography Tips</a></div>"
               }
             }
           ]
