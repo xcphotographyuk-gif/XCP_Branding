@@ -185,8 +185,15 @@
                   "webhook"
                 ],
                 "webhook": "https://xcphotography.overturehq.com/api/bookings",
-                "_comment_setup": "IMPORTANT: Add your Overture API key in Elementor → form widget → Advanced tab → Custom Headers → Authorization: Bearer [YOUR_OVERTURE_API_KEY]. Do NOT add the key as a hidden form field.",
                 "webhook_advanced_data": "yes",
+                "custom_headers": [
+                  {
+                    "_id": "overture_auth",
+                    "key": "Authorization",
+                    "value": "Bearer YOUR_OVERTURE_API_KEY"
+                  }
+                ],
+                "_comment_setup": "AFTER IMPORT: Open this form widget in Elementor → Content tab → Additional Options → Custom Headers. Change 'YOUR_OVERTURE_API_KEY' to your actual Overture API key from Overture → Settings → Integrations → API Keys. The webhook URL above is already set. Do NOT add the API key as a hidden form field — that exposes it in page HTML.",
                 "button_text": "Send My Enquiry",
                 "button_size": "lg",
                 "button_align": "left",
