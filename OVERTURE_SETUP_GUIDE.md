@@ -37,6 +37,18 @@ Do not add `custom_headers` to the JSON manually. Elementor does not support thi
 
 The webhook URL is pre-set to `https://xcphotography.overturehq.com/api/bookings`.
 
+### After import: confirm the Form Name in Elementor
+
+After importing, open the form widget in Elementor (click the form, then click the pencil/edit icon). Go to the **Content** tab. Near the top you will see a field called **Form Name**. It must read exactly:
+
+```
+XCP Contact: Overture
+```
+
+This is not a hidden ID field. It is a plain text field at the top of the Content tab, visible to the editor only. The JSON pre-sets this value, so if you imported the JSON it will already be correct. If you built the form by hand, type it in manually.
+
+**The snippet checks this field name to decide whether to add the Authorization header.** If the name is missing, blank, or spelt differently (including different capitalisation), the snippet will not fire and Overture will return an error on submission.
+
 ---
 
 ## Step 2: Add your API key via WPCode
@@ -93,7 +105,7 @@ The snippet targets the form by its name (`XCP Contact: Overture`), not by which
 - Copy the form section in Elementor and paste it onto any other page (Home, Services, Booking, etc.)
 - No additional setup needed. The snippet picks up any submission from that form, on any page, and adds the Authorization header automatically.
 
-The form name is pre-set in the JSON. Do not change it unless you update the snippet to match.
+The form name is set in the Elementor form widget under **Content → Form Name**. The JSON pre-sets this to `XCP Contact: Overture`. Do not change it unless you also update the snippet to match exactly.
 
 ---
 
@@ -164,7 +176,9 @@ The fallback form sends enquiries to `info@xcphotography.co.uk`. This is already
 | Symptom | Likely cause | Fix |
 |---|---|---|
 | "Invalid file" on import | Non-standard fields in the JSON | Re-download the file from the repo. The fixed versions no longer contain `_comment` fields that caused this error. |
+| "There was an error" on form submission | Overture rejected the request (no Authorization header, wrong key, or wrong webhook URL) | Work through the checklist in Step 3. Most often the snippet is Inactive, or the Form Name in Elementor does not match the snippet exactly. |
 | Form submits but no booking appears in Overture | Snippet not set to Active | In WordPress admin go to Code Snippets, find the Overture snippet, check it is toggled to **Active** and click **Save Snippet**. |
+| Snippet is Active but Authorization header is still missing | Form Name in Elementor does not match the snippet | Open the form widget in Elementor → Content tab → Form Name field. It must be exactly `XCP Contact: Overture` (capital X, capital C, capital O, colon, space). Any difference and the snippet will not fire. |
 | 401 or no booking in Overture | API key wrong or revoked | Regenerate in Overture, update the WPCode snippet |
 | No booking created | Wrong webhook URL | Confirm: `https://xcphotography.overturehq.com/api/bookings` |
 | 403 error | Key lacks permission | Check key has Booking write scope in Overture |
