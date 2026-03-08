@@ -366,8 +366,21 @@ This is the most important pattern to understand. In Elementor's response JSON, 
 
 The browser Network tab has told you everything it can. The Response body `{"success":false,"data":{"message":"Your submission failed because of an error.","errors":{"":""},"data":[]}}` confirms the issue is between WordPress and Overture — not the browser, not the form, not the cookies. To find the exact Overture HTTP status and error body, enable WordPress debug logging:
 
-1. In your hosting file manager or FTP, open `wp-config.php`
-   > **Where is this file?** `wp-config.php` is in the **WordPress root** — the top-level folder of your WordPress install (the same folder that contains `wp-content/`, `wp-admin/`, and `wp-includes/`). It is **not** inside `wp-content/`. In cPanel File Manager, navigate to `public_html/` (or whichever folder WordPress lives in) and you will see `wp-config.php` there alongside the three `wp-` folders.
+1. Open `wp-config.php` in the GoDaddy File Manager — follow these exact steps:
+
+   > **📁 How to find wp-config.php on GoDaddy**
+   >
+   > `wp-config.php` is **not** inside `wp-content/`. It sits one level above — in the WordPress root folder. Here is how to get there on GoDaddy:
+   >
+   > 1. Go to **godaddy.com** → sign in → click your account name (top right) → **My Products**
+   > 2. Under **Web Hosting**, click **Manage** next to your hosting plan
+   > 3. In the cPanel dashboard, scroll to the **Files** section and click **File Manager**
+   > 4. File Manager opens. In the **left-hand folder tree**, click **public_html** (this is your WordPress root)
+   > 5. In the **right-hand file list** you will now see `wp-config.php` sitting alongside the folders `wp-content`, `wp-admin`, and `wp-includes`
+   > 6. Click once on `wp-config.php` to select it, then click **Edit** in the top toolbar (or right-click → Edit)
+   > 7. The file opens in a text editor inside your browser — make your changes and click **Save Changes**
+   >
+   > ⚠️ If you do **not** see `public_html` in the left tree, look for a folder named after your domain (e.g. `xcphotography.co.uk`) — that is your WordPress root instead.
 2. Find the line `define( 'WP_DEBUG', false );` and change it to `define( 'WP_DEBUG', true );`
 3. Add immediately below it: `define( 'WP_DEBUG_LOG', true );`
 4. Submit a test enquiry via the form
