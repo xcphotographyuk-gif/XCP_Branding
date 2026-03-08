@@ -367,10 +367,11 @@ This is the most important pattern to understand. In Elementor's response JSON, 
 The browser Network tab has told you everything it can. The Response body `{"success":false,"data":{"message":"Your submission failed because of an error.","errors":{"":""},"data":[]}}` confirms the issue is between WordPress and Overture — not the browser, not the form, not the cookies. To find the exact Overture HTTP status and error body, enable WordPress debug logging:
 
 1. In your hosting file manager or FTP, open `wp-config.php`
+   > **Where is this file?** `wp-config.php` is in the **WordPress root** — the top-level folder of your WordPress install (the same folder that contains `wp-content/`, `wp-admin/`, and `wp-includes/`). It is **not** inside `wp-content/`. In cPanel File Manager, navigate to `public_html/` (or whichever folder WordPress lives in) and you will see `wp-config.php` there alongside the three `wp-` folders.
 2. Find the line `define( 'WP_DEBUG', false );` and change it to `define( 'WP_DEBUG', true );`
 3. Add immediately below it: `define( 'WP_DEBUG_LOG', true );`
 4. Submit a test enquiry via the form
-5. In your hosting file manager, download `/wp-content/debug.log`
+5. In your hosting file manager, navigate to `wp-content/` and download `debug.log` (it only appears after an error has been logged)
 6. Search the file for `overture` or `xcphotography.overturehq` — you will find a line showing the HTTP status Overture returned (401, 403, 422, etc.) and the response body with the specific reason
 7. **Set `WP_DEBUG` back to `false` when done** — never leave debug mode on a live site
 
