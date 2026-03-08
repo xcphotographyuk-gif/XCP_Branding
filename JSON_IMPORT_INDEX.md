@@ -10,7 +10,7 @@ Work top to bottom within each page. Finish one page before starting the next.
 
 ## Page order — jump to any section
 
-1. [🏠 Home Page](#-home-page) — 8 files
+1. [🏠 Home Page](#-home-page) — 9 files
 2. [👤 About Page](#-about-page) — 5 files
 3. [🎯 Services Page](#-services-page) — 3 files
 4. [📷 Portfolio Page](#-portfolio-page) — 2 files
@@ -33,6 +33,9 @@ Work top to bottom within each page. Finish one page before starting the next.
 | 6 | Process Timeline | `XCP_Home_S4b_Process.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Home_S4b_Process.json) |
 | 7 | Behind the Lens — Statement + Shoot Images | `XCP_Home_S5a_Shoots_Statement.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Home_S5a_Shoots_Statement.json) |
 | 8 | Final CTA | `XCP_Home_S5b_CTA.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Home_S5b_CTA.json) |
+| 9 | Contact Form | `XCP_Home_S6_Contact_Form.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Home_S6_Contact_Form.json) |
+
+> Section 9 uses the same form name (`XCP Contact: Overture`) as the Contact page form. Your WPCode snippet covers both automatically. No per-page setup needed.
 
 ✅ **Home page complete — [→ Next: About Page](#-about-page)**
 

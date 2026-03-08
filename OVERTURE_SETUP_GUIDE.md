@@ -27,7 +27,9 @@ If you previously added an Authorization hidden field, regenerate your API key i
 
 ## Step 1: Import the form JSON
 
-Import `XCP_Contact_P2_Form_Overture.json` on your Contact page (or any page where you want the form).
+Import `XCP_Contact_P2_Form_Overture.json` on your Contact page, or `XCP_Home_S6_Contact_Form.json` on your Home page (or any page where you want the form). You can import on as many pages as you like, in any order.
+
+**The API key is not needed for the import to work.** The import only creates the Elementor layout. The API key is only used when a visitor actually submits the form. Import first, add the key second.
 
 The webhook URL is pre-set to `https://xcphotography.overturehq.com/api/bookings`.
 
@@ -118,6 +120,7 @@ If you are not ready to connect Overture yet, import `XCP_Contact_P2_Form_Fallba
 
 | Symptom | Likely cause | Fix |
 |---|---|---|
+| "Invalid file" on import | Non-standard fields in the JSON | Re-download the file from the repo. The fixed versions no longer contain `_comment` fields that caused this error. |
 | 401 or no booking in Overture | API key wrong or revoked | Regenerate in Overture, update the WPCode snippet |
 | No booking created | Wrong webhook URL | Confirm: `https://xcphotography.overturehq.com/api/bookings` |
 | 403 error | Key lacks permission | Check key has Booking write scope in Overture |

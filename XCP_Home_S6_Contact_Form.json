@@ -1,19 +1,19 @@
 {
   "version": "0.4",
-  "title": "XCP Contact: Form + Info Panel: EMAIL FALLBACK: Section 2 of 4",
+  "title": "XCP Home: Contact Form: Section 6",
   "type": "page",
   "content": [
     {
-      "id": "contact_form_fallback",
+      "id": "home_form_section",
       "elType": "section",
       "settings": {
-        "_title": "Contact Form: Email Fallback",
+        "_title": "Home: Contact Form",
         "layout": "boxed",
         "content_width": {
           "unit": "px",
-          "size": 1200
+          "size": 800
         },
-        "structure": "20",
+        "structure": "10",
         "background_background": "classic",
         "background_color": "#000000",
         "padding": {
@@ -23,29 +23,18 @@
           "bottom": "80",
           "left": "20",
           "isLinked": false
-        },
-        "gap": "wide"
+        }
       },
       "elements": [
         {
-          "id": "form_col_fallback",
+          "id": "home_form_col",
           "elType": "column",
           "settings": {
-            "_column_size": 60,
-            "_column_size_tablet": 100,
-            "_column_size_mobile": 100,
-            "padding": {
-              "unit": "px",
-              "top": "0",
-              "right": "50",
-              "bottom": "0",
-              "left": "0",
-              "isLinked": false
-            }
+            "_column_size": 100
           },
           "elements": [
             {
-              "id": "form_eyebrow_fb",
+              "id": "home_form_eyebrow",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -53,28 +42,29 @@
               }
             },
             {
-              "id": "form_heading_fb",
+              "id": "home_form_heading",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
                 "title": "Tell Me About Your Vision",
-                "header_size": "h2"
+                "header_size": "h2",
+                "align": "center"
               }
             },
             {
-              "id": "form_intro_fb",
+              "id": "home_form_intro",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p>Send your enquiry and I will respond within 24 hours. No pressure, no scripts. Just an honest conversation about your brand and what great photography can do for it.</p>"
+                "editor": "<p>Send your enquiry and I will respond within 24 hours. No pressure, no scripts. Just an honest conversation about your brand.</p>"
               }
             },
             {
-              "id": "contact_form_widget_fallback",
+              "id": "home_form_widget",
               "elType": "widget",
               "widgetType": "form",
               "settings": {
-                "form_name": "XCP Contact: Email Fallback",
+                "form_name": "XCP Contact: Overture",
                 "form_fields": [
                   {
                     "field_type": "text",
@@ -138,8 +128,8 @@
                     "field_label": "Tell Me About Your Brand & Vision",
                     "field_id": "message",
                     "required": "yes",
-                    "placeholder": "What does your brand stand for? Who is your ideal client? What do you hope authentic photography will do for your business? The more you share, the better I can prepare.",
-                    "rows": 6,
+                    "placeholder": "What does your brand stand for? Who is your ideal client? What do you hope authentic photography will do for your business?",
+                    "rows": 5,
                     "width": "100"
                   },
                   {
@@ -168,16 +158,24 @@
                   }
                 ],
                 "submit_actions": [
-                  "email"
+                  "email",
+                  "webhook"
                 ],
-                "email_to": "hello@xcphotography.co.uk",
-                "email_subject": "New Enquiry: {field_id:name} from {field_id:promoterName}",
-                "email_content": "Name: {field_id:promoterName}\nEmail: {field_id:email}\nPhone: {field_id:phone}\nProject Type: {field_id:name}\nPreferred Date: {field_id:date}\nCounty / Region: {field_id:venueState}\nCountry: {field_id:venueCountry}\n\nMessage:\n{field_id:message}\n\nSource: {field_id:source}",
+                "webhook": "https://xcphotography.overturehq.com/api/bookings",
+                "webhook_advanced_data": "yes",
+                "custom_headers": [
+                  {
+                    "_id": "overture_auth",
+                    "key": "Authorization",
+                    "value": "Bearer YOUR_OVERTURE_API_KEY"
+                  }
+                ],
                 "button_text": "Send My Enquiry",
                 "button_size": "lg",
-                "button_align": "left",
+                "button_align": "center",
                 "button_background_color": "#d4af37",
                 "button_text_color": "#000000",
+                "button_hover_background_color": "#b8962e",
                 "button_border_radius": {
                   "unit": "px",
                   "top": "0",
@@ -195,84 +193,7 @@
                   "isLinked": false
                 },
                 "success_message": "Thank you. Your enquiry is on its way. I will be in touch within 24 hours.",
-                "error_message": "Something went wrong. Please email me directly at hello@xcphotography.co.uk.",
-                "button_hover_background_color": "#b8962e"
-              }
-            }
-          ]
-        },
-        {
-          "id": "info_col_fallback",
-          "elType": "column",
-          "settings": {
-            "_column_size": 40,
-            "_column_size_tablet": 100,
-            "_column_size_mobile": 100,
-            "background_background": "classic",
-            "background_color": "#0d0d0d",
-            "padding": {
-              "unit": "px",
-              "top": "50",
-              "right": "40",
-              "bottom": "50",
-              "left": "40",
-              "isLinked": false
-            }
-          },
-          "elements": [
-            {
-              "id": "info_heading_fb",
-              "elType": "widget",
-              "widgetType": "heading",
-              "settings": {
-                "title": "What Happens Next",
-                "header_size": "h3"
-              }
-            },
-            {
-              "id": "info_steps_fb",
-              "elType": "widget",
-              "widgetType": "text-editor",
-              "settings": {
-                "editor": "<ol><li><strong>You send your enquiry.</strong> This form takes less than 3 minutes.</li><li><strong>I respond within 24 hours</strong> with any questions I need answered.</li><li><strong>I put together a tailored proposal</strong> specific to your brand and goals, not a generic price list.</li><li><strong>We create something worth remembering.</strong></li></ol>"
-              }
-            },
-            {
-              "id": "info_divider_fb",
-              "elType": "widget",
-              "widgetType": "divider",
-              "settings": {
-                "style": "solid",
-                "color": "rgba(232,228,220,0.15)",
-                "gap": {
-                  "unit": "px",
-                  "size": 28
-                }
-              }
-            },
-            {
-              "id": "info_contact_fb",
-              "elType": "widget",
-              "widgetType": "heading",
-              "settings": {
-                "title": "Direct Contact",
-                "header_size": "h4"
-              }
-            },
-            {
-              "id": "info_details_fb",
-              "elType": "widget",
-              "widgetType": "text-editor",
-              "settings": {
-                "editor": "<p><strong>Xavier Clarke</strong><br>XC Photography<br><br><a href='mailto:hello@xcphotography.co.uk' style='color:#d4af37;text-decoration:none;'>hello@xcphotography.co.uk</a><br><br>Brighton-based &middot; UK &amp; International<br>Mon-Fri 9am-6pm &middot; Sat by appointment</p>"
-              }
-            },
-            {
-              "id": "info_note_fb",
-              "elType": "widget",
-              "widgetType": "text-editor",
-              "settings": {
-                "editor": "<div style='border-left:3px solid #d4af37;padding:14px 18px;margin-top:24px;'><strong>Not ready to enquire yet?</strong><br>That's fine. <a href='/portfolio' style='color:#d4af37;text-decoration:none;'>Browse the portfolio</a> first, or <a href='/stories' style='color:#d4af37;text-decoration:none;'>read the blog</a>.</div>"
+                "error_message": "Something went wrong. Please email me directly at hello@xcphotography.co.uk."
               }
             }
           ]

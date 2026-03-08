@@ -1,7 +1,6 @@
 {
   "version": "0.4",
   "title": "XCP Contact: Form + Info Panel: OVERTURE VERSION: Section 2 of 4",
-  "_comment": "PRIMARY FORM: Routes enquiries to Overture CRM via webhook (POST /api/bookings) AND sends email notification. Webhook URL: https://xcphotography.overturehq.com/api/bookings. API key: add Authorization header in Elementor form widget → Advanced tab → Custom Headers → Authorization: Bearer [YOUR_OVERTURE_API_KEY]. Do NOT add the API key as a hidden form field. Field IDs match Overture Booking API field names exactly: promoterName, name (booking title), date, venueState, venueCountry, message (→info[]).",
   "type": "page",
   "content": [
     {
@@ -147,7 +146,6 @@
                     "field_type": "hidden",
                     "field_label": "Source URL",
                     "field_id": "source",
-                    "_comment": "Set Default Value in Elementor to dynamic tag: Current URL",
                     "required": "no",
                     "default_value": "[xcp_page_url]",
                     "width": "100"
@@ -182,7 +180,6 @@
                     "value": "Bearer YOUR_OVERTURE_API_KEY"
                   }
                 ],
-                "_comment_setup": "AFTER IMPORT: Replace YOUR_OVERTURE_API_KEY in custom_headers above with your actual key. See OVERTURE_SETUP_GUIDE.md for full instructions.",
                 "button_text": "Send My Enquiry",
                 "button_size": "lg",
                 "button_align": "left",
