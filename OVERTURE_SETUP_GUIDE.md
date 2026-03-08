@@ -246,12 +246,17 @@ The "There was an error" message Elementor shows is generic. It does not tell yo
 1. Go to the page containing the form.
 2. Press **F12** (or right-click anywhere on the page and choose **Inspect**). The developer tools panel opens.
 3. Click the **Network** tab at the top of that panel.
-4. In the filter bar inside the Network tab, type `bookings` to filter down to the Overture API call.
+4. In the filter bar inside the Network tab, type `overturehq` to filter down to the Overture API call only.
 5. Fill in the form and click **Submit**.
-6. A row labelled **bookings** will appear in the Network tab. Click it.
+6. A row containing **overturehq.com** will appear in the Network tab. Click it.
 7. Click the **Response** sub-tab (or **Preview**) in the panel that opens on the right.
 
 You will now see the exact reply Overture sent back. Match it to the table below.
+
+> **Important: ignore any r.stripe.com rows.**
+> You may see requests to `r.stripe.com` in the Network tab. These are Stripe telemetry beacons that fire on every page load regardless of the form. They are completely unrelated to Overture and are not the cause of your error. The only row you care about is the one going to `overturehq.com`.
+>
+> If you do not see an `overturehq.com` row at all after submitting, skip to "If no overturehq row appears" below.
 
 ### What each response means
 
@@ -262,11 +267,11 @@ You will now see the exact reply Overture sent back. Match it to the table below
 | 403 Forbidden | `{"error":"Forbidden"}` | Key exists but lacks permission | Regenerate the key in Overture with Booking write access. |
 | 404 Not Found | HTML error page | Webhook URL is wrong | Confirm the webhook URL in Elementor is exactly `https://xcphotography.overturehq.com/api/bookings`. |
 | 422 Unprocessable | `{"errors":{...}}` | A required field is missing or formatted wrongly | The response body lists the specific field. Most common: the date field is blank or not in YYYY-MM-DD format. |
-| No row appears | - | The snippet did not fire, so the request was never sent to Overture | The Form Name in Elementor does not match the snippet. See below. |
+| No row appears | - | The request was never sent to Overture | See "If no overturehq row appears" below. |
 
-### If no "bookings" row appears in the Network tab
+### If no "overturehq" row appears in the Network tab
 
-This means the PHP snippet did not add the Authorization header and the request was blocked before it reached Overture, or Elementor is not sending to the webhook at all.
+This means Elementor is not sending to the webhook at all. The request never left the site. The most common reasons are a Form Name mismatch or the Elementor webhook action not being configured.
 
 Check these in order:
 
@@ -289,13 +294,14 @@ Check these in order:
 | Symptom | Likely cause | Fix |
 |---|---|---|
 | "Invalid file" on import | Non-standard fields in the JSON | Re-download the file from the repo. The fixed versions no longer contain `_comment` fields that caused this error. |
-| "There was an error" on form submission | Overture rejected the request (no Authorization header, wrong key, or wrong webhook URL) | Open the browser Network tab and submit the form to see the real error. See "How to see the actual error" above. |
+| "There was an error" on form submission | Overture rejected the request (no Authorization header, wrong key, or wrong webhook URL) | Open the browser Network tab, filter by `overturehq`, submit the form, click the overturehq.com row, read the Response tab. See "How to see the actual error" above. |
+| You can only see r.stripe.com in the Network tab | You are looking at the wrong request | `r.stripe.com` is a Stripe beacon unrelated to Overture. Filter the Network tab by `overturehq` to see the Overture call. If no overturehq row appears, the webhook is not firing. |
 | 200 response but Elementor shows an error | Known Elementor display glitch | Check Overture Bookings anyway. The booking may have been created successfully. |
 | Form submits but no booking appears in Overture | Snippet not set to Active | In WordPress admin go to Code Snippets, find the Overture snippet, check it is toggled to **Active** and click **Save Snippet**. |
-| Snippet is Active but no bookings row in Network tab | Form Name in Elementor does not match the snippet | Open the form widget in Elementor → Content tab → Form Name field. It must be exactly `XCP Contact: Overture` (capital X, capital C, capital O, colon, space). Any difference and the snippet will not fire. |
+| Snippet is Active but no overturehq row in Network tab | Form Name in Elementor does not match the snippet | Open the form widget in Elementor → Content tab → Form Name field. It must be exactly `XCP Contact: Overture` (capital X, capital C, capital O, colon, space). Any difference and the snippet will not fire. |
 | 401 Unauthorized | API key wrong, missing, or revoked | Regenerate in Overture, update the WPCode snippet, make sure the snippet is Active |
 | 403 Forbidden | Key lacks permission | Regenerate key in Overture with Booking write scope |
-| 404 on the bookings row | Wrong webhook URL | Confirm exactly: `https://xcphotography.overturehq.com/api/bookings` |
+| 404 on the overturehq row | Wrong webhook URL | Confirm exactly: `https://xcphotography.overturehq.com/api/bookings` |
 | 422 Unprocessable | Required field missing or wrong format | Check date field outputs YYYY-MM-DD. Check the 422 response body for the specific field name. |
 | Key visible in page HTML | Key is in a form field, not the snippet | Delete that hidden field, use the WPCode snippet |
 | Fallback form submits but no email received | To address does not exist on the server | Confirm the email address in Elementor form → Content → Email → To is `info@xcphotography.co.uk` (or another address that exists). WordPress cannot deliver to a non-existent mailbox. |
