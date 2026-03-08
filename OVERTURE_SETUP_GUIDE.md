@@ -9,9 +9,11 @@
 The JSON template (`XCP_Contact_P2_Form_Overture.json`) has everything pre-built:
 - Webhook URL: `https://xcphotography.overturehq.com/api/bookings`
 - All field IDs mapped to Overture API field names exactly
-- Authorization handled via WPCode snippet (see Step 2 below)
+- Authorization added via WPCode snippet after import (see Step 2 below)
 
-**After importing, you add one WPCode snippet with your API key. Done.**
+**The JSON does not contain your API key. Import the file as-is, then add the key via WPCode. Done.**
+
+> **Why is the key not in the JSON?** Elementor does not support importing custom webhook headers via JSON template files. Adding the key to the JSON would cause the import to fail with an "invalid file" error. The WPCode snippet method adds the header server-side, securely, without touching the JSON at all.
 
 ---
 
@@ -29,7 +31,9 @@ If you previously added an Authorization hidden field, regenerate your API key i
 
 Import `XCP_Contact_P2_Form_Overture.json` on your Contact page, or `XCP_Home_S6_Contact_Form.json` on your Home page (or any page where you want the form). You can import on as many pages as you like, in any order.
 
-**The API key is not needed for the import to work.** The import only creates the Elementor layout. The API key is only used when a visitor actually submits the form. Import first, add the key second.
+**The API key is not in the JSON file and is not needed for the import to work.** The import only creates the Elementor layout. The API key is only used when a visitor actually submits the form. Import first, add the key second.
+
+Do not add `custom_headers` to the JSON manually. Elementor does not support this field during template import and will reject the file as invalid. Use the WPCode snippet in Step 2 instead.
 
 The webhook URL is pre-set to `https://xcphotography.overturehq.com/api/bookings`.
 

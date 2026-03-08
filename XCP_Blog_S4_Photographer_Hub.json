@@ -1,0 +1,211 @@
+{
+  "version": "0.4",
+  "title": "Blog - Photographer Hub: Tips, Gear and Affiliates",
+  "type": "page",
+  "content": [
+    {
+      "id": "blog_s4_phub",
+      "elType": "section",
+      "settings": {
+        "_title": "Blog: Photographer Hub - Header",
+        "layout": "boxed",
+        "content_width": { "unit": "px", "size": 1200 },
+        "background_background": "classic",
+        "background_color": "#000000",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "40",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "blog_s4_phub_col",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "blog_s4_phub_eyebrow",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>For Photographers</p>"
+              }
+            },
+            {
+              "id": "blog_s4_phub_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Gear, Technique and the Business of Photography",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "blog_s4_phub_intro",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Honest kit reviews, practical technique guides, affiliate recommendations I actually use myself (Amazon, Adobe, Think Tank, Peak Design and others), and thoughts on running a photography business in the real world. No fluff, no paid placements dressed up as opinion.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blog_s4_phub_cats",
+      "elType": "section",
+      "settings": {
+        "_title": "Blog: Photographer Hub - Category Cards",
+        "layout": "boxed",
+        "content_width": { "unit": "px", "size": 1200 },
+        "background_background": "classic",
+        "background_color": "#0d0d0d",
+        "padding": {
+          "unit": "px",
+          "top": "40",
+          "right": "20",
+          "bottom": "60",
+          "left": "20",
+          "isLinked": false
+        },
+        "gap": "wide"
+      },
+      "elements": [
+        {
+          "id": "blog_s4_cat1_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_column_size_tablet": 50,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "blog_s4_cat1_head",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Gear Reviews",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "blog_s4_cat1_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>In-depth reviews of cameras, lenses, lighting and accessories. Micro Four Thirds, full-frame, audio and more. I review what I actually own and use on real shoots.</p><p><a href='/stories/category/gear-reviews' style='color:#d4af37;text-decoration:none;'>Read gear reviews</a></p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "blog_s4_cat2_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_column_size_tablet": 50,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "blog_s4_cat2_head",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Technique and Tips",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "blog_s4_cat2_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Practical guides on lighting for brand photography, working with clients in real-world locations, editing workflows in Lightroom and Capture One, and everything in between.</p><p><a href='/stories/category/technique' style='color:#d4af37;text-decoration:none;'>Browse technique guides</a></p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "blog_s4_cat3_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "blog_s4_cat3_head",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Affiliate Picks",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "blog_s4_cat3_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Curated lists of the gear and software I recommend with full transparency: Amazon affiliate links, Adobe Creative Cloud, and selected partner brands. If I link to it, I use it.</p><p><a href='/stories/category/affiliate-picks' style='color:#d4af37;text-decoration:none;'>See recommended kit</a></p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blog_s4_phub_latest",
+      "elType": "section",
+      "settings": {
+        "_title": "Blog: Photographer Hub - Latest Posts",
+        "layout": "boxed",
+        "content_width": { "unit": "px", "size": 1200 },
+        "background_background": "classic",
+        "background_color": "#000000",
+        "padding": {
+          "unit": "px",
+          "top": "60",
+          "right": "20",
+          "bottom": "80",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "blog_s4_phub_latest_col",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "blog_s4_phub_latest_head",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Latest from the Photographer Hub",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "blog_s4_phub_latest_note",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Add an Elementor Posts widget here, filtered to the category <strong>For Photographers</strong> (gear-reviews, technique, affiliate-picks), set to show 3 or 6 posts in a grid layout.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

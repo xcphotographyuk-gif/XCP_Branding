@@ -163,13 +163,6 @@
                 ],
                 "webhook": "https://xcphotography.overturehq.com/api/bookings",
                 "webhook_advanced_data": "yes",
-                "custom_headers": [
-                  {
-                    "_id": "overture_auth",
-                    "key": "Authorization",
-                    "value": "Bearer YOUR_OVERTURE_API_KEY"
-                  }
-                ],
                 "button_text": "Send My Enquiry",
                 "button_size": "lg",
                 "button_align": "center",

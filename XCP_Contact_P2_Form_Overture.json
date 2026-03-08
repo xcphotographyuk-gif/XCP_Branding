@@ -173,13 +173,6 @@
                 ],
                 "webhook": "https://xcphotography.overturehq.com/api/bookings",
                 "webhook_advanced_data": "yes",
-                "custom_headers": [
-                  {
-                    "_id": "overture_auth",
-                    "key": "Authorization",
-                    "value": "Bearer YOUR_OVERTURE_API_KEY"
-                  }
-                ],
                 "button_text": "Send My Enquiry",
                 "button_size": "lg",
                 "button_align": "left",
@@ -203,8 +196,7 @@
                   "isLinked": false
                 },
                 "success_message": "Thank you. Your enquiry is on its way. I will be in touch within 24 hours.",
-                "error_message": "Something went wrong. Please email me directly at hello@xcphotography.co.uk.",
-                "webhook_tags": "source:contact-form"
+                "error_message": "Something went wrong. Please email me directly at hello@xcphotography.co.uk."
               }
             }
           ]

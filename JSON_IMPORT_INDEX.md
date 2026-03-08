@@ -6,6 +6,12 @@
 Import each file below using **Elementor → folder icon (bottom-left) → Import Template → Insert**.
 Work top to bottom within each page. Finish one page before starting the next.
 
+> **Contact form import:** If Elementor returns "invalid file" on the contact form JSON, re-download the file from GitHub (click Raw, then Save As). Do not paste the JSON from chat or add any `_comment` or `custom_headers` fields to the file. The API key is intentionally not in the JSON. Add it after import using the WPCode snippet in [OVERTURE_SETUP_GUIDE.md](OVERTURE_SETUP_GUIDE.md).
+
+> **Repo privacy:** To make this GitHub repository private, go to: **GitHub → your repository → Settings → Danger Zone → Change repository visibility → Make private**. This guide cannot change GitHub repository settings.
+
+> **Form on every page:** The WPCode snippet targets the form by its name (`XCP Contact: Overture`). You can import or copy the form section onto any page and it will work automatically. No per-page setup is needed.
+
 ---
 
 ## Page order — jump to any section
@@ -15,7 +21,7 @@ Work top to bottom within each page. Finish one page before starting the next.
 3. [🎯 Services Page](#-services-page) — 3 files
 4. [📷 Portfolio Page](#-portfolio-page) — 2 files
 5. [📬 Contact Page](#-contact-page) — 3 files
-6. [📖 Blog / Stories Page](#-blog--stories-page) — 3 files
+6. [📖 Blog / Stories Page](#-blog--stories-page) — 6 files
 7. [📅 Booking Page](#-booking-page) — 3 files
 8. [🌐 Global: Header & Footer](#-global-elements--header--footer)
 
@@ -124,11 +130,34 @@ Work top to bottom within each page. Finish one page before starting the next.
 
 ## 📖 BLOG / STORIES PAGE
 
+The blog is structured as four distinct content channels, each with its own identity and audience. Import S1-S3 for the main frame, then S4-S6 for the three channel sections.
+
 | # | Section | File | Link |
 |---|---|---|---|
 | 1 | Hero + Featured Post | `XCP_Blog_S1_Hero_Featured.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Blog_S1_Hero_Featured.json) |
 | 2 | Posts Grid + Category Filter | `XCP_Blog_S2_Grid_Filter.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Blog_S2_Grid_Filter.json) |
 | 3 | Newsletter Signup + Final CTA | `XCP_Blog_S3_Newsletter_CTA.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Blog_S3_Newsletter_CTA.json) |
+| 4 | Photographer Hub (gear reviews, technique, affiliate picks) | `XCP_Blog_S4_Photographer_Hub.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Blog_S4_Photographer_Hub.json) |
+| 5 | Stories and Notes (personal, BTS, projects) | `XCP_Blog_S5_Stories_BTS.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Blog_S5_Stories_BTS.json) |
+| 6 | Music and Shows (reviews, The Portrait Guy podcast, Slack City Radio) | `XCP_Blog_S6_Music_Shows.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Blog_S6_Music_Shows.json) |
+
+**WordPress categories to create** (Settings → Posts → Categories, or via the Posts menu):
+
+| Category | Slug | Used in section |
+|---|---|---|
+| For Photographers | `for-photographers` | S4 parent |
+| Gear Reviews | `gear-reviews` | S4 |
+| Technique | `technique` | S4 |
+| Affiliate Picks | `affiliate-picks` | S4 |
+| Stories and Notes | `stories-and-notes` | S5 parent |
+| Behind the Lens | `behind-the-lens` | S5 |
+| Personal Projects | `personal-projects` | S5 |
+| Music and Shows | `music-and-shows` | S6 parent |
+| Show Reviews | `show-reviews` | S6 |
+| The Portrait Guy | `the-portrait-guy` | S6 |
+| Slack City Radio | `slack-city-radio` | S6 |
+
+After importing each section, add an Elementor **Posts** widget inside each section where the placeholder note appears, filtered to the relevant category.
 
 ✅ **Blog page complete — [→ Next: Booking Page](#-booking-page)**
 

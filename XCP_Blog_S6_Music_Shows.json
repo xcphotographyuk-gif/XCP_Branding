@@ -1,0 +1,227 @@
+{
+  "version": "0.4",
+  "title": "Blog - Music and Shows: Reviews, Podcast and Radio",
+  "type": "page",
+  "content": [
+    {
+      "id": "blog_s6_music",
+      "elType": "section",
+      "settings": {
+        "_title": "Blog: Music and Shows - Header",
+        "layout": "boxed",
+        "content_width": { "unit": "px", "size": 1200 },
+        "background_background": "classic",
+        "background_color": "#000000",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "40",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "blog_s6_music_col",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "blog_s6_music_eyebrow",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Music and Shows</p>"
+              }
+            },
+            {
+              "id": "blog_s6_music_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Live Music, Reviews and a Bit of Radio",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "blog_s6_music_intro",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>I photograph live music and cover shows across the UK. This is where those nights get written up. Reviews of shows I have shot, shows I am about to cover, and music I am listening to. It also brings together two regular audio slots I contribute to: The Portrait Guy podcast with Guy Lloyd and my segment on Slack City Radio.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blog_s6_music_reviews",
+      "elType": "section",
+      "settings": {
+        "_title": "Blog: Music - Show Reviews",
+        "layout": "boxed",
+        "content_width": { "unit": "px", "size": 1200 },
+        "background_background": "classic",
+        "background_color": "#0d0d0d",
+        "padding": {
+          "unit": "px",
+          "top": "60",
+          "right": "20",
+          "bottom": "60",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "blog_s6_music_reviews_col",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "blog_s6_reviews_head",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Show Reviews and Live Coverage",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "blog_s6_reviews_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Written reviews of shows I have photographed, with images from the pit and the floor. Upcoming shows I am booked to cover will be listed here in advance. Coverage spans genres: rock, electronic, jazz, blues, classical and everything in between.</p><p><a href='/stories/category/show-reviews' style='color:#d4af37;text-decoration:none;'>Browse show reviews</a></p>"
+              }
+            },
+            {
+              "id": "blog_s6_reviews_posts_note",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p><em>Add an Elementor Posts widget here filtered to the category <strong>Show Reviews</strong>, showing 3 or 6 posts in a grid layout.</em></p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blog_s6_audio_panels",
+      "elType": "section",
+      "settings": {
+        "_title": "Blog: Music - Podcast and Radio Panels",
+        "layout": "boxed",
+        "content_width": { "unit": "px", "size": 1200 },
+        "background_background": "classic",
+        "background_color": "#000000",
+        "padding": {
+          "unit": "px",
+          "top": "60",
+          "right": "20",
+          "bottom": "80",
+          "left": "20",
+          "isLinked": false
+        },
+        "gap": "wide"
+      },
+      "elements": [
+        {
+          "id": "blog_s6_podcast_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100,
+            "background_background": "classic",
+            "background_color": "#0d0d0d",
+            "padding": {
+              "unit": "px",
+              "top": "40",
+              "right": "40",
+              "bottom": "40",
+              "left": "40",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "blog_s6_podcast_eyebrow",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Podcast</p>"
+              }
+            },
+            {
+              "id": "blog_s6_podcast_head",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "The Portrait Guy with Guy Lloyd",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "blog_s6_podcast_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>I appear as a regular guest on The Portrait Guy podcast hosted by Guy Lloyd. We talk portrait photography, the business side of shooting people, gear, mindset and the things that actually make a difference when you are in front of a client.</p><p>Episode notes, links and my take on the conversations we have are collected here.</p><p><a href='/stories/category/the-portrait-guy' style='color:#d4af37;text-decoration:none;'>Episode notes and links</a></p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "blog_s6_radio_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100,
+            "background_background": "classic",
+            "background_color": "#0d0d0d",
+            "padding": {
+              "unit": "px",
+              "top": "40",
+              "right": "40",
+              "bottom": "40",
+              "left": "40",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "blog_s6_radio_eyebrow",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Radio</p>"
+              }
+            },
+            {
+              "id": "blog_s6_radio_head",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Slack City Radio",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "blog_s6_radio_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>My regular slot on Slack City Radio covers music photography, the Brighton and UK live scene, and the occasional kit tangent. Show notes, playlists and links to listen back are posted here after each broadcast.</p><p><a href='/stories/category/slack-city-radio' style='color:#d4af37;text-decoration:none;'>Show notes and listen back</a></p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
