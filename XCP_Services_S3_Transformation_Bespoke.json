@@ -235,8 +235,8 @@
                   "email"
                 ],
                 "email_to": "info@xcphotography.co.uk",
-                "email_subject": "New Bespoke Enquiry: {field_id:name} from {field_id:promoterName}",
-                "email_content": "Name: {field_id:promoterName}\nBusiness: {field_id:businessName}\nEmail: {field_id:email}\nPhone: {field_id:phone}\nService of Interest: {field_id:name}\nPreferred Date: {field_id:date}\nCounty / Region: {field_id:venueState}\nCountry: {field_id:venueCountry}\n\nProject Brief:\n{field_id:message}\n\nSource: {field_id:source}",
+                "email_subject": "New Bespoke Enquiry: [field id=\"name\"] from [field id=\"promoterName\"]",
+                "email_content": "Name: [field id=\"promoterName\"]\nBusiness: [field id=\"businessName\"]\nEmail: [field id=\"email\"]\nPhone: [field id=\"phone\"]\nService of Interest: [field id=\"name\"]\nPreferred Date: [field id=\"date\"]\nCounty / Region: [field id=\"venueState\"]\nCountry: [field id=\"venueCountry\"]\n\nProject Brief:\n[field id=\"message\"]\n\nSource: [field id=\"source\"]",
                 "button_text": "Send My Enquiry",
                 "button_size": "lg",
                 "button_align": "left",

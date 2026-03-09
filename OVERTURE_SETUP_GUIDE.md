@@ -74,6 +74,30 @@ The JSON template (`XCP_Contact_P2_Form_Overture.json`) has everything pre-built
 
 ---
 
+## 📧 Email arriving with `{field_id:name}` placeholders instead of real values?
+
+> **Root cause:** The email notification template inside the form JSON files was using Overture field-mapping syntax (`{field_id:X}`) instead of Elementor's own email token syntax (`[field id="X"]`). Elementor does not recognise the `{field_id:X}` format so it outputs it literally.
+>
+> **Fix:** All six form JSON files in this repository have been corrected. Re-import them from this repository. After re-import, the email notification will show real names, emails, and messages.
+>
+> **If you prefer to fix manually in Elementor** (without re-importing): open the form widget → **Email** tab → edit the Subject and Message body, replacing every `{field_id:X}` token with `[field id="X"]` — e.g.:
+>
+> | Wrong (old) | Correct (new) |
+> |---|---|
+> | `{field_id:promoterName}` | `[field id="promoterName"]` |
+> | `{field_id:email}` | `[field id="email"]` |
+> | `{field_id:phone}` | `[field id="phone"]` |
+> | `{field_id:name}` | `[field id="name"]` |
+> | `{field_id:date}` | `[field id="date"]` |
+> | `{field_id:venueState}` | `[field id="venueState"]` |
+> | `{field_id:venueCountry}` | `[field id="venueCountry"]` |
+> | `{field_id:message}` | `[field id="message"]` |
+> | `{field_id:source}` | `[field id="source"]` |
+>
+> This is an email template fix only. It does not affect Overture bookings or the WPCode PHP snippet.
+
+---
+
 ## Security Note
 
 **Never put your Overture API key in a hidden form field.**
@@ -590,6 +614,7 @@ Work through this checklist in order:
 | `XCP Overture: connection error` in debug log | WordPress cannot reach overturehq.com | Temporary network issue. Test again. If persistent, check hosting firewall is not blocking outbound HTTPS. |
 | You see r.stripe.com rows in the Network tab | Normal — Stripe.js telemetry beacons | Ignore them. Unrelated to your form. |
 | Form submits but no email received | WordPress mail not configured | Install and configure WP Mail SMTP (free). Without it, WordPress uses PHP mail which many hosts block. |
+| Email arrives but the subject or body contains raw tokens like `{field_id:name}` or `{field_id:promoterName}` instead of real values | The email notification template in the form was using Overture field-mapping syntax (`{field_id:X}`) instead of Elementor's email token syntax (`[field id="X"]`) | Re-import the updated form JSON files from this repository (all six `XCP_*Form*.json` files have been corrected). In Elementor, go to the form widget → Email tab and confirm the Subject line and Message body now use `[field id="promoterName"]`-style tokens. If you edited the email template manually in Elementor, update each `{field_id:X}` token to `[field id="X"]` (e.g. `{field_id:email}` → `[field id="email"]`). |
 | 401 Unauthorized and `OVERTURE_FORM_KEY` is defined in wp-config.php | The key value in wp-config.php may contain a typo, or the snippet uses the wrong constant name | Two checks: (1) open wp-config.php in File Manager, copy the value of `OVERTURE_FORM_KEY` and compare it character-by-character against the key shown in Overture → Settings → API; (2) in the WPCode snippet, confirm the api_key line reads `defined( 'OVERTURE_FORM_KEY' ) ? OVERTURE_FORM_KEY : 'YOUR_OVERTURE_API_KEY'` — if you see your actual key value inside `defined( '...' )` that is the wrong pattern and the snippet will never use the constant. |
 | Browser console or security scanner warns about CSP / unsafe-eval | Stripe.js requires string evaluation to run | See the CSP note below. |
 | Browser or accessibility scanner warns "form field has no id or name" on the date picker | Flatpickr date picker internal month and year inputs have no id/name by default | See "Date picker autofill fix" below. |
@@ -713,6 +738,31 @@ No. The forms are essential — they are the primary way clients enquire and boo
 - **Duplicate form field id** — caused by empty `custom_id` values in the old JSON templates. All six form JSON files have been updated with unique field IDs. Re-import them from this repository to fix the warnings permanently. Do not delete the form.
 - **Form field with no id or name** (2 nodes) — caused by flatpickr's internal calendar controls (month and year spinners). These are not submitted form fields. Fix via the WPCode JavaScript snippet described in the "Date picker autofill fix" section below.
 - **Deprecated feature warnings** (`partytown-sandbox-sw.html`, `compat.min.js`) — these come from third-party WordPress and hosting scripts, not from the XCP form templates. They cannot be fixed by removing or changing the enquiry form.
+- **Email arrives with `{field_id:X}` placeholders instead of real values** — caused by the wrong token syntax in the email notification template. All six form JSON files have been corrected. Re-import them and the emails will show real enquiry details.
+
+---
+
+**The email arrived but the body shows placeholders like `{field_id:promoterName}` — why?**
+
+The email notification template inside the form was using `{field_id:X}` tokens, which is the syntax the WPCode PHP snippet uses internally to read Overture fields. That syntax is not understood by Elementor's email system. Elementor's email template tokens use a different format: `[field id="X"]`.
+
+All six form JSON files in this repository have been corrected. To fix this:
+
+1. Re-import the updated form JSON files from this repository (delete the existing form section in Elementor and re-import, or update the Email notification tab manually in each form widget).
+2. In Elementor, open the form widget → **Email** tab. Confirm the Subject line reads `New Enquiry: [field id="name"] from [field id="promoterName"]` and the Message body uses `[field id="X"]` tokens throughout.
+3. Save and test — submit the form and check that the email body shows the actual values typed in by the visitor.
+
+This is a template-only fix — it has no effect on Overture bookings or the WPCode PHP snippet.
+
+---
+
+**The form submitted successfully but nothing arrived in Overture — why?**
+
+There are three things to check in order:
+
+1. **WPCode snippet is Active** — go to WPCode (Code Snippets) and confirm the `XCP Overture Booking` snippet toggle is **blue** (Active). A grey toggle means it will never fire.
+2. **Form Name matches exactly** — in Elementor, open the form widget → **Additional Options** tab → **Form Name** field. It must read exactly `XCP Contact: Overture` (with a capital O and a colon). Any variation (lowercase, different name, missing colon) means the snippet ignores the submission.
+3. **API key is correct** — in Overture → Settings → API, check what the current key is. In the WPCode snippet, find the `$api_key = defined(...)` line and ensure the fallback value (or the `OVERTURE_FORM_KEY` constant in `wp-config.php`) matches exactly. Enable `WP_DEBUG_LOG` in `wp-config.php` and check `wp-content/debug.log` for a line beginning with `XCP Overture:` — it will show the HTTP status code (401 = wrong key, 422 = field validation error, 200/201 = success).
 
 ---
 
