@@ -1,0 +1,58 @@
+{
+  "version": "0.4",
+  "title": "XCP Home S5b - Final CTA",
+  "type": "page",
+  "content": [
+    {
+      "id": "s5b-cta-section",
+      "elType": "section",
+      "settings": {
+        "_title": "Final CTA",
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "s5b-cta-col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "s5b-cta-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Ready to Create Your Visual Impact?",
+                "header_size": "h2",
+                "align": "center"
+              }
+            },
+            {
+              "id": "s5b-cta-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Share your vision and let's craft imagery that reflects exactly who you are — and commands the attention of the right people.</p>"
+              }
+            },
+            {
+              "id": "s5b-cta-button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Start Your Journey",
+                "link": {
+                  "url": "/booking",
+                  "is_external": false
+                },
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

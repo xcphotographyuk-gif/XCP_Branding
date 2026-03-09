@@ -1,0 +1,88 @@
+{
+  "version": "0.4",
+  "title": "Blog – Grid & Category Filter",
+  "type": "page",
+  "content": [
+    {
+      "id": "blog_posts_grid",
+      "elType": "section",
+      "settings": {
+        "_title": "Blog Posts Grid",
+        "layout": "boxed",
+        "structure": "33"
+      },
+      "elements": [
+        {
+          "id": "blog_posts_widget_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "blog_posts_widget",
+              "elType": "widget",
+              "widgetType": "posts",
+              "settings": {
+                "posts_per_page": 6,
+                "show_title": "yes",
+                "show_date": "yes",
+                "show_excerpt": "yes",
+                "show_read_more": "yes",
+                "read_more_text": "Read Article",
+                "show_image": "yes",
+                "image_ratio": "0.5",
+                "meta_data": [
+                  "author",
+                  "date"
+                ],
+                "columns": 3,
+                "columns_tablet": 2,
+                "columns_mobile": 1,
+                "image_size": "medium_large"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blog_categories",
+      "elType": "section",
+      "settings": {
+        "_title": "Category Filter",
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "blog_cat_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "blog_cat_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Browse by Topic",
+                "header_size": "h3",
+                "align": "center"
+              }
+            },
+            {
+              "id": "blog_cat_links",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div><a href='/stories/category/music-nightlife'>Music &amp; Nightlife</a><a href='/stories/category/brand-photography'>Brand Photography</a><a href='/stories/category/behind-the-scenes'>Behind the Scenes</a><a href='/stories/category/client-stories'>Client Stories</a><a href='/stories/category/gear-guides'>Gear Guides</a><a href='/stories/category/photography-tips'>Photography Tips</a></div>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

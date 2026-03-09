@@ -1,0 +1,168 @@
+{
+  "version": "0.4",
+  "title": "About – Experience & Steps 1–2",
+  "type": "page",
+  "content": [
+    {
+      "id": "about_experience",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "_title": "The Experience"
+      },
+      "elements": [
+        {
+          "id": "exp_col",
+          "elType": "column",
+          "settings": {},
+          "elements": [
+            {
+              "id": "exp_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "What Working Together Looks Like",
+                "header_size": "h2",
+                "align": "center"
+              }
+            },
+            {
+              "id": "exp_intro",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Collaboration, not transaction. Transparency, not mystery. Here's exactly how we'll work together to create imagery that elevates your brand.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "about_process_checkerboard_1",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "_title": "Process Step 1"
+      },
+      "elements": [
+        {
+          "id": "proc1_img_col",
+          "elType": "column",
+          "settings": {},
+          "elements": [
+            {
+              "id": "proc1_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "[uc_local]assets/images/about/process-discovery.jpg"
+                },
+                "image_size": "large"
+              }
+            }
+          ]
+        },
+        {
+          "id": "proc1_content_col",
+          "elType": "column",
+          "settings": {
+            "content_position": "middle"
+          },
+          "elements": [
+            {
+              "id": "proc1_number",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "01",
+                "header_size": "div"
+              }
+            },
+            {
+              "id": "proc1_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Discovery Conversation",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "proc1_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Before any camera comes out, we dive deep into your brand story. Who are you really trying to reach? What makes you different? What feeling should your imagery evoke? This isn't a sales call. It's a strategic partnership session where your goals become the blueprint.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "about_process_checkerboard_2",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "_title": "Process Step 2"
+      },
+      "elements": [
+        {
+          "id": "proc2_content_col",
+          "elType": "column",
+          "settings": {
+            "content_position": "middle"
+          },
+          "elements": [
+            {
+              "id": "proc2_number",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "02",
+                "header_size": "div"
+              }
+            },
+            {
+              "id": "proc2_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Strategic Planning",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "proc2_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Together, we map out every detail. Locations that reinforce your brand identity. Styling choices that speak directly to the people you want to reach. Shot lists designed around how you'll actually use the imagery. Everything is intentional, nothing left to chance.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "proc2_img_col",
+          "elType": "column",
+          "settings": {},
+          "elements": [
+            {
+              "id": "proc2_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "[uc_local]assets/images/about/process-planning.jpg"
+                },
+                "image_size": "large"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

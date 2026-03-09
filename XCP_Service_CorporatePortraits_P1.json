@@ -1,0 +1,183 @@
+{
+  "version": "0.4",
+  "title": "XCP Service: Corporate Portraits & Headshots — Sub-page",
+  "type": "page",
+  "content": [
+    {
+      "id": "corp_hero",
+      "elType": "section",
+      "settings": {
+        "_title": "Corporate Portraits Hero",
+        "layout": "full_width",
+        "background_image": {
+          "url": "[uc_local]assets/images/corporate-portraits-hero.jpg"
+        },
+        "content_position": "middle"
+      },
+      "elements": [
+        {
+          "id": "corp_hero_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "corp_eyebrow",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Corporate Portraits & Headshots</p>"
+              }
+            },
+            {
+              "id": "corp_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Professional Portraits That Make the Right First Impression",
+                "header_size": "h1",
+                "align": "center"
+              }
+            },
+            {
+              "id": "corp_subtitle",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Corporate headshots and team portraits for businesses, executives, and professionals. Relaxed, directed, and calibrated to your brand's visual identity — whether that is traditional and authoritative or approachable and modern.</p>"
+              }
+            },
+            {
+              "id": "corp_cta_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Book Corporate Portraits",
+                "link": {
+                  "url": "/contact",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "corp_overview",
+      "elType": "section",
+      "settings": {
+        "_title": "Corporate Portraits Overview",
+        "layout": "boxed",
+        "structure": "20"
+      },
+      "elements": [
+        {
+          "id": "corp_overview_text_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 60,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "corp_overview_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "From Individual Headshots to Full Team Portraits",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "corp_overview_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>The right headshot tells your story before you open your mouth. Whether you need a single director portrait for your website, or a consistent suite of portraits for a team of fifty, XCP Photography delivers portraits that are confident, consistent, and unmistakably you.</p><p>I specialise in making portrait sessions relaxed for non-camera-comfortable subjects — a critical skill that most photographers underestimate. The result is imagery that looks natural rather than forced.</p><ul><li>Individual executive and director portraits</li><li>Team portraits for websites, press releases, and LinkedIn</li><li>On-location at your offices, or in a controlled studio environment</li><li>Consistent background and lighting across all team members</li><li>Express turnaround options available for time-sensitive needs</li><li>Batch session discounts for teams of five or more</li><li>Retouching to professional publication standard</li></ul>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "corp_overview_image_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 40,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "corp_overview_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "[uc_local]assets/images/corporate-portraits-overview.jpg"
+                },
+                "image_size": "large"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "corp_closing_cta",
+      "elType": "section",
+      "settings": {
+        "_title": "Corporate Portraits Closing CTA",
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "corp_closing_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "corp_closing_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Your Team Deserves to Look the Part",
+                "header_size": "h2",
+                "align": "center"
+              }
+            },
+            {
+              "id": "corp_closing_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Tell me how many people you need, where you are based, and your preferred timeline. I will respond within 24 hours with a clear proposal and transparent pricing.</p>"
+              }
+            },
+            {
+              "id": "corp_closing_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Get a Portrait Quote",
+                "link": {
+                  "url": "/contact",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

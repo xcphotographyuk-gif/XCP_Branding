@@ -1,0 +1,381 @@
+{
+  "version": "0.4",
+  "title": "XCP Shop: Product Categories — Section 2 of 3",
+  "type": "page",
+  "content": [
+    {
+      "id": "shop_categories_heading",
+      "elType": "section",
+      "settings": {
+        "_title": "Categories Header",
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "cat_hdr_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "cat_eyebrow",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Browse the Shop</p>"
+              }
+            },
+            {
+              "id": "cat_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Find What You Are Looking For",
+                "header_size": "h2",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shop_cat_prints",
+      "elType": "section",
+      "settings": {
+        "_title": "Prints Category",
+        "layout": "boxed",
+        "structure": "50_50"
+      },
+      "elements": [
+        {
+          "id": "prints_img_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "prints_img",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "[uc_local]assets/images/shop-category-prints.jpg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "prints_text_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "prints_tag",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Fine Art Prints</p>"
+              }
+            },
+            {
+              "id": "prints_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Prints — Framed &amp; Unframed",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "prints_desc",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Photographs from Xavier Clarke's portfolio, printed on archival giclée paper to museum standard. Each print is individually selected for its quality as a standalone image — not a portfolio offcut.</p><p><strong>Sizes available:</strong> A4 · A3 · A2 · A1 · 60×90cm · 90×120cm</p><p><strong>Framed:</strong> Sustainably sourced UK frames in matt white, matt black, or natural oak. Mounted and glazed with UV-protective glass.</p><p><strong>Unframed:</strong> Shipped flat or rolled in protective tube depending on size. Ready to frame to your own specification.</p><p><strong>Limited editions:</strong> Selected images available as signed, numbered limited editions. Edition size noted on each product page.</p>"
+              }
+            },
+            {
+              "id": "prints_cta",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Browse Prints",
+                "link": {
+                  "url": "/shop/prints",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shop_cat_books",
+      "elType": "section",
+      "settings": {
+        "_title": "Books Category",
+        "layout": "boxed",
+        "structure": "50_50"
+      },
+      "elements": [
+        {
+          "id": "books_text_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "books_tag",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Photography Books</p>"
+              }
+            },
+            {
+              "id": "books_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Books &amp; Publications",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "books_desc",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Photobooks, zines, and limited-run publications produced by XC Photography. Each title is a self-contained photographic project — a specific body of work given the format it deserves.</p><p><strong>Hardcover editions:</strong> Lay-flat binding, heavyweight silk art paper, individually signed by Xavier.</p><p><strong>Softcover / zines:</strong> Limited print runs on uncoated stock. Raw, immediate, collectable.</p><p>New titles announced via the newsletter. Subscribe to be notified before general sale.</p>"
+              }
+            },
+            {
+              "id": "books_cta",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Browse Books",
+                "link": {
+                  "url": "/shop/books",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "left"
+              }
+            }
+          ]
+        },
+        {
+          "id": "books_img_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "books_img",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "[uc_local]assets/images/shop-category-books.jpg"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shop_cat_gifts",
+      "elType": "section",
+      "settings": {
+        "_title": "Gifts Category",
+        "layout": "boxed",
+        "structure": "50_50"
+      },
+      "elements": [
+        {
+          "id": "gifts_img_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "gifts_img",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "[uc_local]assets/images/shop-category-gifts.jpg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "gifts_text_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "gifts_tag",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Photography Gifts</p>"
+              }
+            },
+            {
+              "id": "gifts_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Gifts for Photographers &amp; Photography Lovers",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "gifts_desc",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Curated photography gifts — for the photographers in your life or for yourself. Printed products, accessories, and items that reflect the XC Photography aesthetic without compromise.</p><p><strong>Includes:</strong></p><ul><li>Premium blankets featuring XC Photography imagery (polar fleece, 100×150cm and 120×175cm)</li><li>Greeting cards — photographic cards printed on heavyweight stock</li><li>Gift vouchers — redeemable against any product or session booking</li><li>Calendars — annual limited-edition wall calendar featuring 12 portfolio images</li></ul>"
+              }
+            },
+            {
+              "id": "gifts_cta",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Browse Gifts",
+                "link": {
+                  "url": "/shop/gifts",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shop_cat_workshops",
+      "elType": "section",
+      "settings": {
+        "_title": "Workshop Passes Category",
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "workshop_pass_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "wpass_tag",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Workshop Passes &amp; Gift Vouchers</p>"
+              }
+            },
+            {
+              "id": "wpass_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Give the Gift of a Workshop",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "wpass_desc",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Workshop gift passes are available for any XC Photography workshop or online session. The recipient chooses the date and format that suits them. Passes are valid for 12 months from the date of purchase and are fully transferable. Gift-wrapped option available on checkout.</p><p>Alternatively, a general gift voucher in any amount can be purchased and redeemed against any product, print, or session in the shop.</p>"
+              }
+            },
+            {
+              "id": "wpass_cta",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Browse Workshop Passes",
+                "link": {
+                  "url": "/shop/workshop-passes",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shop_cat_woocommerce_note",
+      "elType": "section",
+      "settings": {
+        "_title": "WooCommerce Products Note",
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "woo_note_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "woo_note_divider",
+              "elType": "widget",
+              "widgetType": "divider",
+              "settings": {}
+            },
+            {
+              "id": "woo_note_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p><strong>Import note (remove before publishing):</strong> Add an Elementor <strong>WooCommerce Products</strong> widget below each category button above, filtered by the relevant WooCommerce product category (Prints / Books / Gifts / Workshop Passes). Set columns to 3, show 6 products. The widgets will display live WooCommerce products automatically once stock is added. See SHOP_SETUP_GUIDE.md for WooCommerce setup and PRODUCT_CSV_IMPORT_GUIDE.md for importing the initial product list via CSV.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

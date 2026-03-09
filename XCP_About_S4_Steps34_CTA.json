@@ -1,0 +1,183 @@
+{
+  "version": "0.4",
+  "title": "About – Steps 3–4 & CTA",
+  "type": "page",
+  "content": [
+    {
+      "id": "about_process_checkerboard_3",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "_title": "Process Step 3"
+      },
+      "elements": [
+        {
+          "id": "proc3_img_col",
+          "elType": "column",
+          "settings": {},
+          "elements": [
+            {
+              "id": "proc3_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "[uc_local]assets/images/about/process-shoot.jpg"
+                },
+                "image_size": "large"
+              }
+            }
+          ]
+        },
+        {
+          "id": "proc3_content_col",
+          "elType": "column",
+          "settings": {
+            "content_position": "middle"
+          },
+          "elements": [
+            {
+              "id": "proc3_number",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "03",
+                "header_size": "div"
+              }
+            },
+            {
+              "id": "proc3_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Effortless Experience",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "proc3_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>The shoot itself? Smooth, professional, even enjoyable. You're guided through every moment, so the final imagery captures your authentic essence, not awkward poses or forced smiles. Your confidence shows. Your story shines through.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "about_process_checkerboard_4",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "_title": "Process Step 4"
+      },
+      "elements": [
+        {
+          "id": "proc4_content_col",
+          "elType": "column",
+          "settings": {
+            "content_position": "middle"
+          },
+          "elements": [
+            {
+              "id": "proc4_number",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "04",
+                "header_size": "div"
+              }
+            },
+            {
+              "id": "proc4_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Delivery & Beyond",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "proc4_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>You receive meticulously edited imagery, ready to elevate every touchpoint of your brand. But partnership doesn't end at delivery. Need guidance on usage? Questions about formats? Support is always available, because your success with this imagery matters.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "proc4_img_col",
+          "elType": "column",
+          "settings": {},
+          "elements": [
+            {
+              "id": "proc4_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "[uc_local]assets/images/about/process-delivery.jpg"
+                },
+                "image_size": "large"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "about_cta",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "content_position": "middle",
+        "_title": "About CTA"
+      },
+      "elements": [
+        {
+          "id": "cta_col",
+          "elType": "column",
+          "settings": {},
+          "elements": [
+            {
+              "id": "cta_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Let's Create Your Story Together",
+                "header_size": "h2",
+                "align": "center"
+              }
+            },
+            {
+              "id": "cta_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Ready to see your brand elevated through imagery that truly reflects who you are, and connects with the people worth reaching? Let's talk about your vision.</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "cta_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Start the Conversation",
+                "align": "center",
+                "button_type": "primary",
+                "link": {
+                  "url": "#contact"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

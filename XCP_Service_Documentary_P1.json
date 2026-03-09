@@ -1,0 +1,183 @@
+{
+  "version": "0.4",
+  "title": "XCP Service: Documentary Business Storytelling — Sub-page",
+  "type": "page",
+  "content": [
+    {
+      "id": "doc_hero",
+      "elType": "section",
+      "settings": {
+        "_title": "Documentary Hero",
+        "layout": "full_width",
+        "background_image": {
+          "url": "[uc_local]assets/images/documentary-hero.jpg"
+        },
+        "content_position": "middle"
+      },
+      "elements": [
+        {
+          "id": "doc_hero_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "doc_eyebrow",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Documentary Business Storytelling</p>"
+              }
+            },
+            {
+              "id": "doc_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Your Business, Captured as It Really Is",
+                "header_size": "h1",
+                "align": "center"
+              }
+            },
+            {
+              "id": "doc_subtitle",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Documentary business photography is unposed, candid, and honest. It captures your team at work, your process in motion, and the authentic culture that makes your business worth choosing.</p>"
+              }
+            },
+            {
+              "id": "doc_cta_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Enquire About Documentary Coverage",
+                "link": {
+                  "url": "/contact",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doc_overview",
+      "elType": "section",
+      "settings": {
+        "_title": "Documentary Overview",
+        "layout": "boxed",
+        "structure": "20"
+      },
+      "elements": [
+        {
+          "id": "doc_overview_image_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 40,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "doc_overview_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "[uc_local]assets/images/documentary-overview.jpg"
+                },
+                "image_size": "large"
+              }
+            }
+          ]
+        },
+        {
+          "id": "doc_overview_text_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 60,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "doc_overview_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "What Documentary Business Photography Looks Like",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "doc_overview_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Where brand photography is curated and art-directed, documentary photography follows the reality of your working day. It captures the energy, the detail, the moments of concentration and connection that tell your real story.</p><p>This is particularly powerful for businesses that want to demonstrate authenticity — creative agencies, studios, hospitality businesses, makers, performers, and organisations with a strong culture and community.</p><ul><li>Unposed, candid coverage of your working environment</li><li>Team portraits in context (not forced against a plain background)</li><li>Process and craft documentation</li><li>Events, launches, and behind-the-scenes coverage</li><li>Multi-day projects available for deeper storytelling</li><li>Delivered as a curated library of 60–120 images</li><li>Full commercial licence included</li></ul>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doc_closing_cta",
+      "elType": "section",
+      "settings": {
+        "_title": "Documentary Closing CTA",
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "doc_closing_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "doc_closing_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Ready to Document Your Story?",
+                "header_size": "h2",
+                "align": "center"
+              }
+            },
+            {
+              "id": "doc_closing_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Documentary projects are scoped individually. Tell me about your business and what you want to capture, and I will propose an approach that fits your team, your environment, and your budget.</p>"
+              }
+            },
+            {
+              "id": "doc_closing_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Start the Conversation",
+                "link": {
+                  "url": "/contact",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

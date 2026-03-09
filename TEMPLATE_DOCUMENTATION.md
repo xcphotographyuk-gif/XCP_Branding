@@ -118,7 +118,7 @@ The template is mobile-responsive with breakpoints for:
 ## Design Specifications
 
 ### Typography
-- **Primary Font:** Montserrat (headings, buttons)
+- **Primary Font:** Raleway (headings, buttons)
 - **Secondary Font:** Open Sans (body text, subheadings)
 - **Heading Sizes:**
   - H1: 56px (desktop), 42px (tablet), 32px (mobile)

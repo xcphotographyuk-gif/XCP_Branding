@@ -1,0 +1,220 @@
+{
+  "version": "0.4",
+  "title": "XCP Service: Event & Performance Photography — Sub-page",
+  "type": "page",
+  "content": [
+    {
+      "id": "event_hero",
+      "elType": "section",
+      "settings": {
+        "_title": "Event Photography Hero",
+        "layout": "full_width",
+        "background_image": {
+          "url": "[uc_local]assets/images/event-photography-hero.jpg"
+        },
+        "content_position": "middle"
+      },
+      "elements": [
+        {
+          "id": "event_hero_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "event_eyebrow",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Event & Performance Photography</p>"
+              }
+            },
+            {
+              "id": "event_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Capturing the Energy, the Moment, the Night",
+                "header_size": "h1",
+                "align": "center"
+              }
+            },
+            {
+              "id": "event_subtitle",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Event and performance photography for corporate launches, music events, exhibitions, theatre, and live performance. Fast delivery, professional quality, and coverage that makes your audience feel as though they were there.</p>"
+              }
+            },
+            {
+              "id": "event_cta_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Enquire About Event Coverage",
+                "link": {
+                  "url": "/contact",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "event_overview",
+      "elType": "section",
+      "settings": {
+        "_title": "Event Photography Overview",
+        "layout": "boxed",
+        "structure": "20"
+      },
+      "elements": [
+        {
+          "id": "event_overview_image_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 40,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "event_overview_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "[uc_local]assets/images/event-photography-overview.jpg"
+                },
+                "image_size": "large"
+              }
+            }
+          ]
+        },
+        {
+          "id": "event_overview_text_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 60,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "event_overview_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Events, Launches, Music & Performance",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "event_overview_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Events happen once. The photography of them lasts forever — or fails to capture anything meaningful at all. XCP Photography brings experience in low-light environments, fast-moving subjects, and the instinct to anticipate the decisive moment before it happens.</p><p>From corporate award ceremonies to intimate jazz performances, from brand launch parties to large-scale music festivals, the approach is the same: quiet, unobtrusive, technically prepared, and completely focused on telling the story of the night.</p><ul><li>Corporate events, conferences, and award ceremonies</li><li>Music concerts and live performance</li><li>Theatre, dance, and arts events</li><li>Brand launches, product reveals, and PR events</li><li>Exhibition and gallery opening coverage</li><li>Same-day and next-morning turnaround options for press use</li><li>Full-resolution delivery via private gallery link</li></ul>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "event_music_note",
+      "elType": "section",
+      "settings": {
+        "_title": "Music Photography Note",
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "event_music_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "event_music_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Music Photography — A Specialism, Not a Side Note",
+                "header_size": "h3",
+                "align": "center"
+              }
+            },
+            {
+              "id": "event_music_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Xavier has been photographing live music for over a decade — from small club nights to major festival stages. He understands the rhythm of a performance, the relationship between artist and audience, and the technical demands of working in venue lighting that most photographers find challenging.</p><p>Music photography commissions are available for artists, labels, promoters, and venues.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "event_closing_cta",
+      "elType": "section",
+      "settings": {
+        "_title": "Event Photography Closing CTA",
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "event_closing_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "event_closing_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Tell Me About Your Event",
+                "header_size": "h2",
+                "align": "center"
+              }
+            },
+            {
+              "id": "event_closing_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>The earlier we talk, the better the outcome. Tell me your date, location, and what you need — I will confirm availability and send a proposal within 24 hours.</p>"
+              }
+            },
+            {
+              "id": "event_closing_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Enquire About Your Event",
+                "link": {
+                  "url": "/contact",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

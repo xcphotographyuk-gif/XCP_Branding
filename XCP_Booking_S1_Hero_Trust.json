@@ -1,0 +1,80 @@
+{
+  "version": "0.4",
+  "title": "Booking – Hero & Trust Bar",
+  "type": "page",
+  "content": [
+    {
+      "id": "booking_hero",
+      "elType": "section",
+      "settings": {
+        "_title": "Booking Hero",
+        "layout": "full_width",
+        "content_position": "middle"
+      },
+      "elements": [
+        {
+          "id": "booking_hero_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "booking_hero_tag",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Free, No Obligation</p>"
+              }
+            },
+            {
+              "id": "booking_hero_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Book Your Discovery Call",
+                "header_size": "h1",
+                "align": "center"
+              }
+            },
+            {
+              "id": "booking_hero_sub",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>A relaxed 30-minute conversation to understand your brand, your goals, and whether we're the right fit for each other. No pressure. No obligation.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "booking_trust_bar",
+      "elType": "section",
+      "settings": {
+        "_title": "Trust Bar",
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "booking_trust_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "booking_trust_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>✦ Responds within 24 hours &nbsp;&nbsp;|&nbsp;&nbsp; ✦ 5-star rated service &nbsp;&nbsp;|&nbsp;&nbsp; ✦ 500+ brands photographed &nbsp;&nbsp;|&nbsp;&nbsp; ✦ Based in Brighton, shoots UK-wide</p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
