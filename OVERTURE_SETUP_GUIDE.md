@@ -61,8 +61,8 @@ The JSON template (`XCP_Contact_P2_Form_Overture.json`) has everything pre-built
 >
 > ---
 >
-> **Step 2 — The snippet below is ready to paste. No editing required.**
-> The API key is already filled in. Copy the entire snippet from Step 2 of this guide and paste it into WPCode exactly as shown — do not modify any part of it.
+> **Step 2 — The snippet below has test/placeholder values filled in for structure verification.**
+> The `$api_key` line uses intentionally fake/false values (`NightynighOOOODUdeODc=` as the constant name and a long noise string as the fallback) so Overture will respond 401 — confirming the snippet fires. See the `⚠️ TEST VALUES` comment inside the snippet. For a live deployment: replace `NightynighOOOODUdeODc=` with `OVERTURE_FORM_KEY` and replace the noise string with your real key from Overture → Settings → API.
 >
 > **Key format note:** Web form keys from Overture are typically base64-encoded strings and may include letters, numbers, `+`, `/`, and `=` characters. Older keys may be hex strings (digits 0-9 and letters a-f only). Either way, copy the key exactly as Overture displays it and paste it without modification. Do not add or remove any characters.
 >
@@ -143,7 +143,13 @@ add_action(
         }
 
         // Read the API key — from wp-config.php constant if defined, otherwise from the fallback below.
-        $api_key = defined( 'OVERTURE_FORM_KEY' ) ? OVERTURE_FORM_KEY : 'YOUR_OVERTURE_API_KEY';
+        // ⚠️ TEST VALUES — both keys below are intentional placeholders for structure verification only.
+        // The constant name 'NightynighOOOODUdeODc=' is not a valid PHP identifier, so defined() always
+        // returns false and the snippet will always use the fallback string. The fallback string is also
+        // a test value with deliberate noise/spaces so authentication will fail (401) on purpose.
+        // Replace 'NightynighOOOODUdeODc=' with 'OVERTURE_FORM_KEY' and replace the fallback string
+        // with your real key from Overture → Settings → API before going live.
+        $api_key = defined( 'NightynighOOOODUdeODc=' ) ? OVERTURE_FORM_KEY : 'c0f2fdoityth gkdflhgkvcg k cLIESSTOPFAILINGME0647b5354002da64c4cd54b4c64f8c8fa228kghghjg5676d3dde397d61f318de943e7872dc75d06b5935ea10f';
 
         // Extract submitted field values by field_id.
         $raw    = $record->get_field( [ 'id', 'value' ] );
@@ -221,7 +227,10 @@ add_action(
 );
 ```
 
-6. **Set the API key** — find the line `$api_key = defined( 'OVERTURE_FORM_KEY' ) ? OVERTURE_FORM_KEY : 'YOUR_OVERTURE_API_KEY';` in the code you just pasted. Replace `YOUR_OVERTURE_API_KEY` (the text between the last pair of single quotes) with your actual key from **Overture → Settings → API**. Keep the surrounding single quotes — only replace the text inside them.
+6. **Set the API key** — the snippet currently contains **test/placeholder values** (both the constant name and the fallback key are intentionally fake — see the `⚠️ TEST VALUES` comment). Before going live, find the `$api_key = defined(...)` line and make these two replacements:
+   - Inside `defined( '...' )`: replace `NightynighOOOODUdeODc=` with `OVERTURE_FORM_KEY` (the constant name, always this exact string)
+   - After the `:`: replace the long test string with your actual key from **Overture → Settings → API** (keep the surrounding single quotes)
+   > **For structure testing only:** if you just want to confirm the snippet fires correctly, you can leave the test values as-is — the snippet will run but Overture will return 401 (authentication failed). To see the log entry, make sure `WP_DEBUG` and `WP_DEBUG_LOG` are enabled in `wp-config.php` (see "Checking the Overture response via WordPress debug log" below), then check `wp-content/debug.log` for `XCP Overture: HTTP 401` to confirm the snippet is firing.
 7. At the top of the page, toggle the snippet from **Inactive** to **Active**
 8. Click **Save Snippet**
 
@@ -255,7 +264,7 @@ Before submitting a test enquiry, confirm these four things in WPCode:
 | Insert Method | Auto Insert |
 | Location | Run Everywhere |
 
-The code must contain your actual Overture API key as the fallback value — `YOUR_OVERTURE_API_KEY` replaced with the key shown in Overture → Settings → API — or `OVERTURE_FORM_KEY` must be defined in `wp-config.php`.
+The code currently contains test/placeholder values (see the `⚠️ TEST VALUES` comment in the snippet). For a **live** deployment, the `$api_key` line must have `OVERTURE_FORM_KEY` inside `defined()` and your real key from Overture → Settings → API as the fallback — or `OVERTURE_FORM_KEY` must be defined in `wp-config.php`. For structure-testing only, leaving the test values is fine: the snippet will fire but Overture will return 401. To see the log entry, ensure `WP_DEBUG` and `WP_DEBUG_LOG` are `true` in `wp-config.php`, then check `wp-content/debug.log` for `XCP Overture: HTTP 401`.
 
 **If you previously had an older snippet titled "XCP Overture Authorization Header"** — delete it. It used the wrong hook (`elementor_pro/forms/webhooks/request_args`) and sent data in Elementor's format instead of Overture's expected JSON. The new snippet above replaces it entirely.
 
@@ -667,7 +676,7 @@ Notes:
 
 **Where exactly does my Overture web form key go in the WPCode snippet?**
 
-Your key goes as the **fallback value** on this one line — after the `:`, inside the single quotes:
+Your key goes as the **fallback value** — after the `:`, inside the single quotes. The **correct live** pattern for the `$api_key` line is:
 
 ```
 $api_key = defined( 'OVERTURE_FORM_KEY' ) ? OVERTURE_FORM_KEY : 'YOUR_OVERTURE_API_KEY';
@@ -676,6 +685,8 @@ $api_key = defined( 'OVERTURE_FORM_KEY' ) ? OVERTURE_FORM_KEY : 'YOUR_OVERTURE_A
 Replace only `YOUR_OVERTURE_API_KEY` with your actual key from **Overture → Settings → API**. Keep the surrounding single quotes — do not remove them. Everything else on this line stays exactly as shown.
 
 **Do not** put your key value inside `defined( '...' )` — that part always stays as `'OVERTURE_FORM_KEY'` (the constant name, never the key value).
+
+> **Note on the current snippet in this guide:** The Step 2 snippet currently shows test/placeholder values (`NightynighOOOODUdeODc=` inside `defined()` and a long noise string as the fallback). These are intentional fakes for structure verification — the fallback string position is correct, but both values must be replaced with real ones for live use. See the `⚠️ TEST VALUES` comment in the snippet.
 
 If you would rather not put the key directly in the snippet, add this line to `wp-config.php` before the final `require_once` line and leave `YOUR_OVERTURE_API_KEY` unchanged in the snippet:
 
