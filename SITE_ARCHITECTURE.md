@@ -9,7 +9,9 @@
 | **Primary domain** | `xcphotography.co` |
 | **Redirect** | `xcphotography.co.uk` → `xcphotography.co` (active redirect, future transfer planned) |
 | **Admin URL** | `https://xcphotography.co/wp-admin` |
-| **Contact email** | `info@xcphotography.co.uk` (mailbox hosted at .co.uk; works independently of domain redirect) |
+| **Primary email** | `xavier@xcphotography.co.uk` (Xavier's direct address) |
+| **General enquiries** | `info@xcphotography.co.uk` (mailbox hosted at .co.uk; works independently of domain redirect) |
+| **Backup email** | `xcphotographyuk@gmail.com` (fallback if .co.uk mailbox fails) |
 
 > **Note:** All internal links and Elementor templates should use `xcphotography.co` as the base URL. Legacy references to `xcphotography.co.uk` in older docs still resolve correctly via redirect, but new work should reference `.co`.
 

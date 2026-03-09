@@ -211,4 +211,29 @@ All 34 Elementor JSON template files have been cleaned of inline style overrides
 
 ---
 
+## Form Placeholder Text — Darker Colour (WPCode CSS Snippet)
+
+Elementor's default placeholder text is very light grey. To make it darker across all forms, add a **WPCode CSS snippet** (type: CSS, Location: Site Wide Header).
+
+**Snippet name:** `XCP Form Placeholder Colour`
+
+```css
+/* XCP — darker form placeholder text */
+.elementor-form input::placeholder,
+.elementor-form textarea::placeholder,
+.elementor-form select {
+    color: #6b6b6b;
+    opacity: 1;
+}
+/* Fallback for older browsers */
+.elementor-form input:-ms-input-placeholder,
+.elementor-form textarea:-ms-input-placeholder {
+    color: #6b6b6b;
+}
+```
+
+> Adjust `#6b6b6b` (mid-grey) to taste. `#555555` is darker still; `#888888` is lighter. The `opacity: 1` override is required in Firefox, which reduces placeholder opacity by default. The `select` rule also covers the dropdown default state (before a choice is made).
+
+---
+
 *Last updated: March 2026*

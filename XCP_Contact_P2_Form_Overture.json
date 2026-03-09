@@ -104,6 +104,16 @@
                     "_id": "otxdt82"
                   },
                   {
+                    "field_type": "select",
+                    "field_label": "Preferred Time of Day",
+                    "field_id": "preferred_time",
+                    "required": "no",
+                    "field_options": "Morning (10:30am – 12:00pm)\nAfternoon (12:45pm – 4:00pm)",
+                    "width": "50",
+                    "custom_id": "preferred_time",
+                    "_id": "pto001"
+                  },
+                  {
                     "field_type": "text",
                     "field_label": "County / Region",
                     "field_id": "venueState",
@@ -171,7 +181,7 @@
                 ],
                 "email_to": "info@xcphotography.co.uk",
                 "email_subject": "New Enquiry: [field id=\"name\"] from [field id=\"promoterName\"]",
-                "email_content": "Name: [field id=\"promoterName\"]\nEmail: [field id=\"email\"]\nPhone: [field id=\"phone\"]\nProject Type: [field id=\"name\"]\nPreferred Date: [field id=\"date\"]\nCounty / Region: [field id=\"venueState\"]\nCountry: [field id=\"venueCountry\"]\n\nMessage:\n[field id=\"message\"]\n\nSource: [field id=\"source\"]",
+                "email_content": "Name: [field id=\"promoterName\"]\nEmail: [field id=\"email\"]\nPhone: [field id=\"phone\"]\nProject Type: [field id=\"name\"]\nPreferred Date: [field id=\"date\"]\nPreferred Time: [field id=\"preferred_time\"]\nCounty / Region: [field id=\"venueState\"]\nCountry: [field id=\"venueCountry\"]\n\nMessage:\n[field id=\"message\"]\n\nSource: [field id=\"source\"]",
                 "button_text": "Send My Enquiry",
                 "button_size": "lg",
                 "button_align": "left",
