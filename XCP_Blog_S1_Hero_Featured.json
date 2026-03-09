@@ -1,6 +1,6 @@
 {
   "version": "0.4",
-  "title": "Blog – Hero & Featured Post",
+  "title": "Blog – Hero & Topic Showcase",
   "type": "page",
   "content": [
     {
@@ -27,7 +27,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p>Insights &amp; Inspiration</p>"
+                "editor": "<p>Stories, Insights and Inspiration</p>"
               }
             },
             {
@@ -35,7 +35,7 @@
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
-                "title": "Stories That Inform, Inspire, and Connect",
+                "title": "Real Photography. Real Business. Real Results.",
                 "header_size": "h1",
                 "align": "center"
               }
@@ -45,7 +45,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p>Brand photography insights, industry expertise, and creative inspiration for businesses ready to elevate their visual presence.</p>"
+                "editor": "<p>Brand photography insights, honest kit reviews, music and events coverage, and behind-the-scenes stories from a working photographer. Written for business owners and photographers alike.</p>"
               }
             }
           ]
@@ -53,36 +53,168 @@
       ]
     },
     {
-      "id": "blog_featured",
+      "id": "blog_topic_intro",
       "elType": "section",
       "settings": {
-        "_title": "Featured Post",
+        "_title": "What You Will Find Here",
         "layout": "boxed"
       },
       "elements": [
         {
-          "id": "blog_featured_col",
+          "id": "blog_topic_col",
           "elType": "column",
           "settings": {
-            "_column_size": 100
+            "_column_size": 100,
+            "text_align": "center"
           },
           "elements": [
             {
-              "id": "blog_featured_label",
+              "id": "blog_topic_label",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
-                "title": "Latest from the Blog",
+                "title": "Three Reasons to Read",
                 "header_size": "h2",
                 "align": "center"
               }
             },
             {
-              "id": "blog_featured_sub",
+              "id": "blog_topic_sub",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p>Practical advice and creative strategies for brands ready to show up authentically.</p>"
+                "editor": "<p>Not just a portfolio blog. Practical content for brands and photographers.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blog_topic_cards",
+      "elType": "section",
+      "settings": {
+        "_title": "Topic Cards",
+        "layout": "boxed",
+        "structure": "33"
+      },
+      "elements": [
+        {
+          "id": "blog_card1_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_column_size_tablet": 50,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "blog_card1_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "[uc_local]assets/images/blog-brand-photography.jpg"
+                },
+                "image_size": "medium_large",
+                "caption_source": "none"
+              }
+            },
+            {
+              "id": "blog_card1_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "For Business Owners",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "blog_card1_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>How to brief a photographer, what to expect from a brand shoot, how to get more from your images, and why visual identity matters more than most brands realise.</p><p><a href='/stories/category/brand-photography'>Read brand photography articles</a></p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "blog_card2_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_column_size_tablet": 50,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "blog_card2_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "[uc_local]assets/images/blog-music-events.jpg"
+                },
+                "image_size": "medium_large",
+                "caption_source": "none"
+              }
+            },
+            {
+              "id": "blog_card2_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Music and Events Coverage",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "blog_card2_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Behind-the-scenes stories, artist portraits, and live performance photography from over a decade shooting on stage, backstage, and in the pit. The real world of music photography.</p><p><a href='/stories/category/music-nightlife'>Read music and events articles</a></p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "blog_card3_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "blog_card3_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "[uc_local]assets/images/blog-gear-guides.jpg"
+                },
+                "image_size": "medium_large",
+                "caption_source": "none"
+              }
+            },
+            {
+              "id": "blog_card3_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "For Photographers",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "blog_card3_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Honest gear reviews, lighting technique, Lightroom workflows, and thoughts on running a photography business. Kit I own and use, reviewed without sponsorship or pressure.</p><p><a href='/stories/category/gear-reviews'>Read photographer guides</a></p>"
               }
             }
           ]

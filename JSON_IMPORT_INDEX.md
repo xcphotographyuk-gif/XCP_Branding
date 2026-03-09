@@ -21,7 +21,7 @@ Work top to bottom within each page. Finish one page before starting the next.
 3. [🎯 Services Page](#-services-page) — 3 files
 4. [🔗 Service Sub-pages](#-service-sub-pages-individual-service-landing-pages) — 4 files (optional, for SEO)
 5. [📷 Portfolio Page](#-portfolio-page) — 2 files
-6. [📬 Contact Page](#-contact-page) — 3 files
+6. [📬 Contact Page](#-contact-page) — 4 files
 7. [📖 Blog / Stories Page](#-blog--stories-page) — 6 files
 8. [📅 Booking Page](#-booking-page) — 3 files
 9. [✅ Thank You Page](#-thank-you-page) — 1 file
@@ -98,11 +98,14 @@ Work top to bottom within each page. Finish one page before starting the next.
 | 1 | Hero | `XCP_Contact_P1_Hero.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Contact_P1_Hero.json) |
 | 2 | Contact Form — **Fallback** ✅ Use this first | `XCP_Contact_P2_Form_Fallback.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Contact_P2_Form_Fallback.json) |
 | 2 | Contact Form — **Overture** (swap in when ready) | `XCP_Contact_P2_Form_Overture.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Contact_P2_Form_Overture.json) |
-| 3 | Closing CTA | `XCP_Contact_P4_CTA.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Contact_P4_CTA.json) |
+| 3 | Why Xavier — Trust & Credibility | `XCP_Contact_P3_Trust.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Contact_P3_Trust.json) |
+| 4 | Closing CTA | `XCP_Contact_P4_CTA.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Contact_P4_CTA.json) |
 
 > **Currently active form:** `XCP_Contact_P2_Form_Fallback.json` — sends enquiries directly to **info@xcphotography.co.uk** via WordPress mail. No API key or external service needed. Import this now and your contact page is live immediately.
 >
 > **Upgrading to Overture later:** Once the Overture API connection is confirmed working, replace section 2 with `XCP_Contact_P2_Form_Overture.json`. All field IDs are identical — no disruption to live forms. Full setup steps are in [OVERTURE_SETUP_GUIDE.md](OVERTURE_SETUP_GUIDE.md).
+>
+> **Section 3 image placeholder:** `XCP_Contact_P3_Trust.json` references `assets/images/contact-statement.jpg`. This is a full-width background image for the statement section. Replace via Elementor: click the section, go to Style → Background, and upload your chosen image from the media library. See [HOW_TO_ADD_IMAGES.md](HOW_TO_ADD_IMAGES.md) for the full workflow.
 
 ---
 
@@ -152,12 +155,14 @@ The blog is structured as four distinct content channels, each with its own iden
 
 | # | Section | File | Link |
 |---|---|---|---|
-| 1 | Hero + Featured Post | `XCP_Blog_S1_Hero_Featured.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Blog_S1_Hero_Featured.json) |
+| 1 | Hero + Topic Showcase | `XCP_Blog_S1_Hero_Featured.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Blog_S1_Hero_Featured.json) |
 | 2 | Posts Grid + Category Filter | `XCP_Blog_S2_Grid_Filter.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Blog_S2_Grid_Filter.json) |
 | 3 | Newsletter Signup + Final CTA | `XCP_Blog_S3_Newsletter_CTA.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Blog_S3_Newsletter_CTA.json) |
 | 4 | Photographer Hub (gear reviews, technique, affiliate picks) | `XCP_Blog_S4_Photographer_Hub.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Blog_S4_Photographer_Hub.json) |
 | 5 | Stories and Notes (personal, BTS, projects) | `XCP_Blog_S5_Stories_BTS.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Blog_S5_Stories_BTS.json) |
 | 6 | Music and Shows (reviews, The Portrait Guy podcast, Slack City Radio) | `XCP_Blog_S6_Music_Shows.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Blog_S6_Music_Shows.json) |
+
+> **Section 1 image placeholders:** `XCP_Blog_S1_Hero_Featured.json` now includes three topic card images: `blog-brand-photography.jpg`, `blog-music-events.jpg`, `blog-gear-guides.jpg`. Each references `[uc_local]assets/images/`. Replace via Elementor: click each image widget → Content → Choose Image → upload from media library. Landscape orientation (3:2 ratio) works best for all three. See [HOW_TO_ADD_IMAGES.md](HOW_TO_ADD_IMAGES.md).
 
 **WordPress categories to create** (Settings → Posts → Categories, or via the Posts menu):
 
