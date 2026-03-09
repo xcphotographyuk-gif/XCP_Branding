@@ -178,14 +178,14 @@
                 "submit_actions": [
                   "email"
                 ],
-                "email_to": "info@xcphotography.co.uk",
+                "email_to": "info@xcphotography.co.uk,xavier@xcphotography.co.uk,xcphotographyuk@gmail.com",
                 "email_subject": "New Enquiry: [field id=\"name\"] from [field id=\"promoterName\"]",
                 "email_content": "Name: [field id=\"promoterName\"]\nEmail: [field id=\"email\"]\nPhone: [field id=\"phone\"]\nProject Type: [field id=\"name\"]\nPreferred Date: [field id=\"date\"]\nPreferred Time: [field id=\"preferred_time\"]\nCounty / Region: [field id=\"venueState\"]\nCountry: [field id=\"venueCountry\"]\n\nMessage:\n[field id=\"message\"]\n\nSource: [field id=\"source\"]",
                 "button_text": "Send My Enquiry",
                 "button_size": "lg",
                 "button_align": "center",
                 "success_message": "Thank you. Your enquiry is on its way. I will be in touch within 24 hours.",
-                "error_message": "Something went wrong. Please email me directly at info@xcphotography.co.uk."
+                "error_message": "Something went wrong. Please email me directly at info@xcphotography.co.uk or xavier@xcphotography.co.uk."
               }
             }
           ]
