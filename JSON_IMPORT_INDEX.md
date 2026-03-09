@@ -8,9 +8,13 @@ Work top to bottom within each page. Finish one page before starting the next.
 
 > **Contact form import:** If Elementor returns "invalid file" on the contact form JSON, re-download the file from GitHub (click Raw, then Save As). Do not paste the JSON from chat or add any `_comment` or `custom_headers` fields to the file. The API key is intentionally not in the JSON. Add it after import using the WPCode snippet in [OVERTURE_SETUP_GUIDE.md](OVERTURE_SETUP_GUIDE.md).
 
+> **✅ Can I copy the form to any page?** YES. Right-click the form section in Elementor → Copy → open another page → Paste. Or import any of the form JSONs below. The WPCode Overture snippet fires on all forms named `XCP Contact: Overture` regardless of which page they're on. See [SITE_NAVIGATION_GUIDE.md](SITE_NAVIGATION_GUIDE.md) for full details.
+
 > **Repo privacy:** To make this GitHub repository private, go to: **GitHub → your repository → Settings → Danger Zone → Change repository visibility → Make private**. This guide cannot change GitHub repository settings.
 
 > **Dual-version forms:** Every page with an enquiry form now has both a **Fallback** version (email-only, works immediately) and an **Overture** version (connects to your Overture CRM, same field IDs). Import the Fallback version first to go live straight away. When Overture is ready, swap in the Overture version — no disruption, no data loss. Full Overture connection instructions are in [OVERTURE_SETUP_GUIDE.md](OVERTURE_SETUP_GUIDE.md).
+
+> **Navigation setup:** Before or after importing templates, set up your WordPress Primary Menu. Full instructions — including the 3-click booking rule, audience journey maps, and WooCommerce shop structure — are in [SITE_NAVIGATION_GUIDE.md](SITE_NAVIGATION_GUIDE.md).
 
 ---
 
