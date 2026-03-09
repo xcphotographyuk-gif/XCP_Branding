@@ -19,11 +19,14 @@ Work top to bottom within each page. Finish one page before starting the next.
 1. [🏠 Home Page](#-home-page) — 9 files
 2. [👤 About Page](#-about-page) — 5 files
 3. [🎯 Services Page](#-services-page) — 3 files
-4. [📷 Portfolio Page](#-portfolio-page) — 2 files
-5. [📬 Contact Page](#-contact-page) — 3 files
-6. [📖 Blog / Stories Page](#-blog--stories-page) — 6 files
-7. [📅 Booking Page](#-booking-page) — 3 files
-8. [🌐 Global: Header & Footer](#-global-elements--header--footer)
+4. [🔗 Service Sub-pages](#-service-sub-pages-individual-service-landing-pages) — 4 files (optional, for SEO)
+5. [📷 Portfolio Page](#-portfolio-page) — 2 files
+6. [📬 Contact Page](#-contact-page) — 3 files
+7. [📖 Blog / Stories Page](#-blog--stories-page) — 6 files
+8. [📅 Booking Page](#-booking-page) — 3 files
+9. [✅ Thank You Page](#-thank-you-page) — 1 file
+10. [🔒 Privacy Policy Page](#-privacy-policy-page) — 1 file
+11. [🌐 Global: Header & Footer](#-global-elements--header--footer)
 
 ---
 
@@ -171,7 +174,59 @@ After importing each section, add an Elementor **Posts** widget inside each sect
 | 2 | Booking Calendar + FAQ | `XCP_Booking_S2_Calendar_FAQ.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Booking_S2_Calendar_FAQ.json) |
 | 3 | Closing CTA | `XCP_Booking_S3_CTA.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Booking_S3_CTA.json) |
 
-✅ **Booking page complete — [→ Next: Global Header & Footer](#-global-elements--header--footer)**
+✅ **Booking page complete — [→ Next: Thank You Page](#-thank-you-page)**
+
+---
+
+## ✅ THANK YOU PAGE
+
+Create a new WordPress page titled **"Thank You"** at the URL `/thank-you`. Import this template into that page.
+
+After importing the contact form, go to Elementor → form widget → Content → Actions After Submit. Add a **Redirect** action pointing to `/thank-you`. This redirects visitors automatically after a successful form submission.
+
+| # | Section | File | Link |
+|---|---|---|---|
+| 1 | Thank You / Confirmation | `XCP_ThankYou_P1.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_ThankYou_P1.json) |
+
+✅ **Thank You page complete — [→ Next: Privacy Policy Page](#-privacy-policy-page)**
+
+---
+
+## 🔒 PRIVACY POLICY PAGE
+
+> **GDPR requirement** — a Privacy Policy page is legally required if you collect any personal data from UK visitors (including form submissions). Create a new WordPress page titled **"Privacy Policy"** at the URL `/privacy-policy` and import this template.
+
+| # | Section | File | Link |
+|---|---|---|---|
+| 1 | Privacy Policy Content | `XCP_Privacy_Policy_P1.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Privacy_Policy_P1.json) |
+
+> After importing, review the content and update any details that don't match your business (e.g. confirm the email address, adjust the Overture section if you are not yet using it). You should also add a link to this page in the footer — open `XCP_Footer.json` in Elementor and add a Privacy Policy link to the legal links column.
+
+✅ **Privacy Policy page complete — [→ Next: Global Header & Footer](#-global-elements--header--footer)**
+
+---
+
+## 🔗 SERVICE SUB-PAGES (Individual Service Landing Pages)
+
+These are **optional but recommended** for SEO. Each is a standalone page for a specific service type. Create separate WordPress pages for each (e.g. `/services/brand-photography/`, `/services/documentary/`, etc.) and import the relevant template.
+
+| # | Service | File | WordPress URL slug | Link |
+|---|---|---|---|---|
+| 1 | Brand Photography Session | `XCP_Service_BrandPhotography_P1.json` | `services/brand-photography` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Service_BrandPhotography_P1.json) |
+| 2 | Documentary Business Storytelling | `XCP_Service_Documentary_P1.json` | `services/documentary` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Service_Documentary_P1.json) |
+| 3 | Corporate Portraits & Headshots | `XCP_Service_CorporatePortraits_P1.json` | `services/corporate-portraits` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Service_CorporatePortraits_P1.json) |
+| 4 | Event & Performance Photography | `XCP_Service_Events_P1.json` | `services/events` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Service_Events_P1.json) |
+
+**How to set up sub-pages in WordPress:**
+1. WordPress Admin → Pages → Add New
+2. Title: e.g. "Brand Photography Brighton"
+3. URL slug: `services/brand-photography` (set this in Page Attributes → Permalink)
+4. Set Parent Page to "Services" — this creates a proper `/services/brand-photography/` URL hierarchy
+5. Publish the page, then open with Elementor to import the template
+
+> **SEO note:** Each sub-page targets a specific search term (e.g. "brand photography Brighton") whereas the main Services page is too broad to rank well for any individual service. Sub-pages significantly increase your chances of appearing in search results for specific service queries.
+
+✅ **Service sub-pages complete — [→ Next: Global Header & Footer](#-global-elements--header--footer)**
 
 ---
 
@@ -206,6 +261,18 @@ Then assign via **Theme Builder → All Pages**.
 - **Contact details** — replace any dummy phone/email with your real ones
 - **Prices** — £1,495 floor showing correctly on Services and wherever pricing appears
 - **Images** — placeholders will show; add yours from the `images/` folder in this repo
+
+---
+
+## Can I turn off my laptop while the agent is working?
+
+**Yes — completely safe to do so.**
+
+Once you have opened a task with the GitHub Copilot agent (by submitting the issue or PR), the agent runs entirely in GitHub's cloud infrastructure. Your laptop plays no part in the process. Every change the agent makes is committed directly to this GitHub repository.
+
+When you return, open the Pull Request in GitHub and all the changes will be there, committed with a clear message. You can then download or pull the updated files and carry on.
+
+**There is nothing running on your laptop. You can close the browser, turn off the machine, and come back in the morning.**
 
 ---
 

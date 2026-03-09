@@ -106,17 +106,19 @@ All pages optimized for:
 
 ## Implementation Priority
 
-1. ✅ Homepage — Templates complete (`XCP_HomeP1–P5_*_FINAL.json`); placeholder images must be replaced
-2. ✅ About Page — Templates complete (`XCP_About_P1_Hero_Story.json`, `XCP_About_P2_Process_CTA.json`)
-3. ⚠️ Services Page — Template exists (`XCP_Services_P1_Packages.json`); pricing to be confirmed; booking CTA to add
-4. ✅ Portfolio Page — Templates complete (`XCP_Portfolio_P1_Hero_Filter.json`, `XCP_Portfolio_P2_Gallery_CTA.json`); real images needed
-5. ⚠️ Contact Page — Template complete (`XCP_Contact_P1_Complete.json`); GDPR consent field and Overture API webhook required
-6. ✅ Blog/Stories Page — Template created (`XCP_Blog_P1_Grid_CTA.json`); 5 blog posts written and ready to publish
-7. ✅ Header/Navigation — Template created (`XCP_Header_Navigation.json`); configure Elementor Pro Theme Builder
-8. ✅ Footer — Template created (`XCP_Footer.json`); update contact details and social URLs before importing
-9. ✅ Booking Page — Template created (`XCP_Booking_Page.json`); hero, Overture/Calendly embed placeholder, FAQ accordion, closing CTA; update embed URL with your Overture or Calendly link before import
-10. ❌ Privacy Policy — Required for GDPR; create via WordPress → Pages
-11. ❌ Terms & Conditions — Recommended; create via WordPress → Pages
+1. ✅ Homepage — Templates complete (9 sections across `XCP_Home_S1a` through `XCP_Home_S6_Contact_Form.json`); placeholder images must be replaced
+2. ✅ About Page — Templates complete (5 sections: `XCP_About_S1a` through `XCP_About_S4_Steps34_CTA.json`)
+3. ✅ Services Page — Templates complete (3 sections: `XCP_Services_S1_Hero_Intro.json`, `XCP_Services_S2_Foundation_Elevation.json`, `XCP_Services_S3_Transformation_Bespoke.json`)
+4. ✅ Service Sub-pages — 4 individual service landing pages for SEO: Brand Photography, Documentary, Corporate Portraits, Events (`XCP_Service_*_P1.json`)
+5. ✅ Portfolio Page — Templates complete (`XCP_Portfolio_P1_Hero_Filter.json`, `XCP_Portfolio_P2_Gallery_CTA.json`); real images needed
+6. ✅ Contact Page — 3 sections complete; **currently using email fallback form** (`XCP_Contact_P2_Form_Fallback.json`); Overture form available in `XCP_Contact_P2_Form_Overture.json` when ready — see OVERTURE_SETUP_GUIDE.md
+7. ✅ Blog/Stories Page — 6 sections complete (`XCP_Blog_S1` through `XCP_Blog_S6_Music_Shows.json`); blog posts written and ready to publish
+8. ✅ Header/Navigation — Template created (`XCP_Header_Navigation.json`); configure Elementor Pro Theme Builder
+9. ✅ Footer — Template created (`XCP_Footer.json`); update contact details and social URLs before importing
+10. ✅ Booking Page — 3 sections complete (`XCP_Booking_S1_Hero_Trust.json`, `XCP_Booking_S2_Calendar_FAQ.json`, `XCP_Booking_S3_CTA.json`)
+11. ✅ Thank You Page — Template created (`XCP_ThankYou_P1.json`); import into a WordPress page at /thank-you and set as form redirect target
+12. ✅ Privacy Policy — Template created (`XCP_Privacy_Policy_P1.json`); GDPR-compliant content included; review and import into WordPress page at /privacy-policy
+13. ❌ Terms & Conditions — Recommended; create manually in WordPress → Pages (standard service contract T&Cs to be drafted separately)
 
 **See `PHASED_DEVELOPMENT_AUDIT.md` for the full gap analysis and phased build roadmap.**
 
