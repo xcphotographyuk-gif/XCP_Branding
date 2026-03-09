@@ -4,11 +4,11 @@
 
 ---
 
-> ## 📋 Currently Using: Email Fallback Form
+> ## ✅ Currently Using: Overture Form (Email Confirmed Working)
 >
-> **The contact page is currently set up with `XCP_Contact_P2_Form_Fallback.json`** — which sends enquiries directly to info@xcphotography.co.uk via WordPress mail. It works immediately with zero external services.
+> **The contact page is now set up with `XCP_Contact_P2_Form_Overture.json`** — email notifications are confirmed working and arriving at info@xcphotography.co.uk with full enquiry details.
 >
-> This guide is for when you are ready to connect Overture. When that time comes, replace section 2 of the contact page with `XCP_Contact_P2_Form_Overture.json` and follow the steps below. All field IDs are identical — no disruption to any live forms.
+> **Next step:** Connect Overture CRM. Follow the WPCode snippet steps below to enable the Overture booking integration. The form does not need to be re-imported — just add the snippet and activate it.
 
 ---
 
@@ -264,16 +264,23 @@ Done. Every form submission named `XCP Contact: Overture` will now create a book
 
 ## Using the form on any page
 
-The snippet fires for any form whose **Form Name** is `XCP Contact: Overture`. You can import or copy the form section onto any page and it works automatically with no additional setup.
+**Yes — the form works on any page.** The WPCode snippet fires for any Elementor form whose **Form Name** is `XCP Contact: Overture`, regardless of which page it is on. No additional snippet or setup is needed per page.
 
-To add the form to the Home page when you switch from fallback to Overture:
-1. In Elementor, open the Home page
-2. Find the contact form section (imported from `XCP_Home_S6_Contact_Form.json`)
-3. Click the form widget → Content tab → Form Name
-4. Change the value from `XCP Contact: Email Fallback` to `XCP Contact: Overture`
-5. Save the page
+Each of the three pages with an enquiry form has a dedicated Overture JSON file already in this repository:
 
-The WPCode snippet will then handle those submissions too.
+| Page | Overture JSON to import |
+|---|---|
+| Contact page | `XCP_Contact_P2_Form_Overture.json` ✅ already active |
+| Home page | `XCP_Home_S6_Contact_Form_Overture.json` |
+| Services page | `XCP_Services_S3_Transformation_Bespoke_Overture.json` |
+
+**To switch the Home or Services page from fallback to Overture:**
+1. In Elementor, open the page
+2. Delete the fallback form section (the one imported from `XCP_Home_S6_Contact_Form.json` or `XCP_Services_S3_Transformation_Bespoke.json`)
+3. Import the matching Overture JSON file from this repository using **Elementor → folder icon → Import Template → Insert**
+4. Save the page — the WPCode snippet picks it up automatically
+
+> **Alternative (if you do not want to re-import):** Open the existing form widget → Content tab → Form Name → change the value from `XCP Contact: Email Fallback` to `XCP Contact: Overture` and save. The Overture integration will then fire for that form. Note: this keeps the existing email_to and email content from the fallback, so the email notification will still work correctly.
 
 ---
 
