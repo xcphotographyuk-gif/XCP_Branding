@@ -244,12 +244,13 @@ Add the following schema to the site's `<head>` section via a WordPress plugin (
         "itemOffered": {
           "@type": "Service",
           "name": "Brand Photography Session",
-          "description": "Strategic brand photography sessions from half-day to full-day, delivering 20-50+ professionally edited images for web and print."
+          "description": "Bespoke brand photography sessions scoped to your brief, objectives, and deliverables. Sessions range from half-day to full-day and beyond. Investment is quoted per project following a free discovery call."
         },
         "priceSpecification": {
           "@type": "PriceSpecification",
           "priceCurrency": "GBP",
-          "minPrice": "1495"
+          "minPrice": "1495",
+          "description": "Sessions are individually scoped and priced. Investment starts from £1,495 and varies based on session length, locations, editing scope, and usage rights."
         }
       },
       {
@@ -257,12 +258,13 @@ Add the following schema to the site's `<head>` section via a WordPress plugin (
         "itemOffered": {
           "@type": "Service",
           "name": "Documentary Business Photography",
-          "description": "Authentic behind-the-scenes storytelling that captures the real culture, process, and personality of your brand."
+          "description": "Authentic behind-the-scenes storytelling that captures the real culture, process, and personality of your brand. Projects are individually scoped and quoted following a discovery call."
         },
         "priceSpecification": {
           "@type": "PriceSpecification",
           "priceCurrency": "GBP",
-          "minPrice": "1495"
+          "minPrice": "1495",
+          "description": "Investment starts from £1,495 and is quoted per project based on scope, locations, and deliverables."
         }
       },
       {
@@ -270,7 +272,15 @@ Add the following schema to the site's `<head>` section via a WordPress plugin (
         "itemOffered": {
           "@type": "Service",
           "name": "Corporate Event Photography",
-          "description": "Professional event coverage for conferences, launches, exhibitions, and corporate gatherings."
+          "description": "Professional event coverage for conferences, launches, exhibitions, and corporate gatherings. Pricing is project-specific and quoted on enquiry."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Music & Performance Photography",
+          "description": "Documentary music photography for artists, venues, and promoters. Covering live performance, portraits, and behind-the-scenes content across Brighton, London, and the UK."
         }
       }
     ]

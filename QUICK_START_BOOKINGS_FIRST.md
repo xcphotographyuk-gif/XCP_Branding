@@ -429,22 +429,32 @@ Best,
 
 ## PRICING CLARITY (Critical for Bookings)
 
-**On your Services page, show:**
+**On your Services page, show "from" pricing — not fixed tiers.**
 
-**Brand Foundation - £800**
-- 2-hour session
-- 20+ edited images
-- Perfect for: New businesses, refreshing website
+Every session is scoped to the client's brief, brand, and deliverables. No two projects are identical, so no fixed price list applies. Display starting investment to signal premium positioning and filter enquiries appropriately, then quote per project after the discovery call.
 
-**Brand Elevation - £1,800**
-- Half-day session
-- 50+ edited images
-- Perfect for: Established businesses, team photos
+**Services page copy (recommended):**
 
-**Brand Transformation - £3,500**
-- Full-day session
-- 100+ edited images
-- Perfect for: Complete brand refresh, campaigns
+> **Brand & Documentary Photography — from £1,495**
+>
+> Sessions are scoped individually based on your brief, objectives, and deliverables.  
+> Investment varies depending on session length, number of locations, editing scope, and usage rights.  
+> Every project starts with a free discovery call.
+>
+> **[Book Your Free Discovery Call →](https://xcphotography.co/contact)**
+
+**Why this works:**
+- "From £1,495" anchors expectation at the right level without locking you into a number you can't honour
+- Signals bespoke, premium positioning — not a menu of packages
+- Filters out clients whose budget is below your floor without requiring a price conversation up front
+- Directs all enquiries to the discovery call, where you scope properly before quoting
+
+**What NOT to do:**
+- ❌ Do not list photography sessions as fixed-price products in WooCommerce — the price cannot be guaranteed in advance and each session is custom scoped
+- ❌ Do not show a table of package tiers with set prices if you cannot guarantee those prices apply
+- ❌ Do not hide pricing entirely — "contact for pricing" alone reads as unaffordable and costs enquiries
+
+**WooCommerce is for physical products only** (prints, canvases, gifts, digital downloads). Photography services are booked through the contact/discovery call form — not the shop.
 
 **Include investment ranges. Hidden pricing = lost bookings.**
 

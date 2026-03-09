@@ -103,20 +103,22 @@ Delivery time varies, but expect 7-10 business days for a full edit.
 
 Let me be direct here, because I know this is often the first question.
 
-Professional brand photography in Brighton typically starts from **£1,495** for a half-day session. Full-day sessions start from around £2,500-£3,500. Multi-day brand transformation projects are priced on scope.
+Professional brand photography in Brighton starts from **£1,495**. Every session is individually scoped and quoted — investment varies based on session length, number of locations, editing scope, number of people involved, and usage rights. There's no fixed menu of packages, because no two briefs are identical.
+
+A free discovery call lets us understand your project properly before any pricing is discussed. There's no commitment on that call — it's simply a conversation to establish whether we're the right fit and what your project actually needs.
 
 If you're seeing offers significantly below this, it's worth asking some questions. What's included? What's the editing quality like? What's their experience with brand (rather than portrait or wedding) photography specifically?
 
-I'm not saying cheap is always bad — but brand photography is a business investment, not a commodity. The images will represent your business for 2-3 years across every platform you use. The cheapest option rarely turns out to be the cheapest in the long run.
+Brand photography is a business investment, not a commodity. The images will represent your business for 2–3 years across every platform you use. The cheapest option rarely turns out to be the cheapest in the long run.
 
-**What affects the price:**
-- Session duration (half-day vs full-day vs multi-day)
+**What affects the investment:**
+- Session duration (half-day, full-day, multi-day)
 - Number of locations
 - Number of people involved
 - Level of pre-production planning required
 - Quantity of final images delivered
-- Commercial usage rights
-- Whether travel outside Sussex is involved
+- Commercial usage rights and licensing
+- Travel outside Sussex
 
 At XC Photography, every session includes a pre-shoot discovery consultation, on-location photography, professional editing, and full commercial usage rights. No hidden extras.
 
