@@ -280,7 +280,7 @@ Create pages with these exact slugs so they match all CTA link references in the
 ## Sitemap (Visual)
 
 ```
-xcphotgraphy.co
+xcphotography.co  (or your registered domain)
 │
 ├── / (Home)
 │   └── [CTA → /contact]
