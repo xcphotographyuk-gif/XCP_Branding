@@ -13,7 +13,7 @@ The JSON template (`XCP_Contact_P2_Form_Overture.json`) has everything pre-built
 
 **The JSON does not contain your API key. Import the file as-is, then add the key via WPCode. Done.**
 
-> **Do I need to re-import the form or update it when the API key changes?** No. The Elementor form JSON contains the webhook URL and field layout only — it has no API key inside it. When you update your key (in `wp-config.php` or in the WPCode snippet), the form continues to work without any changes. You never need to re-import the form JSON just because the key changed.
+> **Do I need to re-import the form or update it when the API key changes or the Overture API version changes?** No. The Elementor form JSON contains the webhook URL and field layout only — it has no API key inside it. When you update your key (in `wp-config.php` or in the WPCode snippet), the form continues to work without any changes. The form and WPCode snippet are confirmed compatible with **Overture Agency API v0.1.3 (OAS 3.1)**. You never need to re-import the form JSON just because the key changed or a new API version was released.
 
 > **Why is the key not in the JSON?** Elementor does not support importing custom webhook headers via JSON template files. Adding the key to the JSON would cause the import to fail with an "invalid file" error. The WPCode snippet method adds the header server-side, securely, without touching the JSON at all.
 
@@ -167,6 +167,7 @@ Submit a test enquiry. Within a few seconds a new **Pending** booking should app
 
 | Setting | Value |
 |---|---|
+| Overture API version | v0.1.3 (OAS 3.1) |
 | Webhook URL | `https://xcphotography.overturehq.com/api/bookings` |
 | HTTP Method | POST |
 | Authorization | Bearer token via WPCode snippet |
@@ -177,18 +178,20 @@ Submit a test enquiry. Within a few seconds a new **Pending** booking should app
 
 ## Field Mapping Reference
 
-Form field IDs match Overture Booking API field names exactly.
+Form field IDs are sent to Overture via the webhook POST. Overture processes each field according to its own internal mapping — some fields set booking properties directly, others are matched to a person record or stored as further information.
 
-| Form label | field_id | Overture API field |
+| Form label | field_id | Overture API field / handling |
 |---|---|---|
-| Your Name | promoterName | promoterName |
-| Type of Project | name | name (booking title) |
-| Preferred Discovery Call Date | date | date |
-| County / Region | venueState | venueState |
-| Country | venueCountry | venueCountry |
-| Tell Me About Your Brand & Vision | message | info[] |
-| Email Address | email | Person record (auto-matched) |
-| Phone Number | phone | Person record (auto-matched) |
+| Your Name | promoterName | Stored on the booking record |
+| Type of Project | name | name (booking title, required by API) |
+| Preferred Discovery Call Date | date | date (booking date, required by API) |
+| County / Region | venueState | Stored on the booking record |
+| Country | venueCountry | venueCountry (booking field) |
+| Tell Me About Your Brand & Vision | message | info[] (further information) |
+| Email Address | email | Person record (auto-matched or created by Overture) |
+| Phone Number | phone | Person record (auto-matched or created by Overture) |
+
+The **required** fields for the `/api/bookings` endpoint are `date` and `name`. Both are always present in every form submission.
 
 **Why "Discovery Call Date" and not "Shoot Date"?**
 
