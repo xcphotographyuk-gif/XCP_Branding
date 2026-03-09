@@ -10,7 +10,7 @@ Work top to bottom within each page. Finish one page before starting the next.
 
 > **Repo privacy:** To make this GitHub repository private, go to: **GitHub → your repository → Settings → Danger Zone → Change repository visibility → Make private**. This guide cannot change GitHub repository settings.
 
-> **Form on every page:** The WPCode snippet targets the form by its name (`XCP Contact: Overture`). You can import or copy the form section onto any page and it will work automatically. No per-page setup is needed.
+> **Form on every page:** Both the Contact page form and the Home page form currently send enquiries by email to info@xcphotography.co.uk. When you upgrade to Overture, update both forms at the same time. Full Overture connection instructions are in [OVERTURE_SETUP_GUIDE.md](OVERTURE_SETUP_GUIDE.md).
 
 ---
 
@@ -41,7 +41,7 @@ Work top to bottom within each page. Finish one page before starting the next.
 | 8 | Final CTA | `XCP_Home_S5b_CTA.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Home_S5b_CTA.json) |
 | 9 | Contact Form | `XCP_Home_S6_Contact_Form.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Home_S6_Contact_Form.json) |
 
-> Section 9 uses the same form name (`XCP Contact: Overture`) as the Contact page form. Your WPCode snippet covers both automatically. No per-page setup needed.
+> Section 9 sends enquiries via email (to info@xcphotography.co.uk) using the same email fallback approach as the Contact page form. When you upgrade to the Overture form later, you can update both forms at the same time.
 
 ✅ **Home page complete — [→ Next: About Page](#-about-page)**
 
@@ -89,10 +89,12 @@ Work top to bottom within each page. Finish one page before starting the next.
 | # | Section | File | Link |
 |---|---|---|---|
 | 1 | Hero | `XCP_Contact_P1_Hero.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Contact_P1_Hero.json) |
-| 2 | Contact Form | `XCP_Contact_P2_Form_Overture.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Contact_P2_Form_Overture.json) |
+| 2 | Contact Form ✅ **Use this now** | `XCP_Contact_P2_Form_Fallback.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Contact_P2_Form_Fallback.json) |
 | 3 | Closing CTA | `XCP_Contact_P4_CTA.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Contact_P4_CTA.json) |
 
-> No Overture account yet? Use [`XCP_Contact_P2_Form_Fallback.json`](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Contact_P2_Form_Fallback.json) for section 2 — swap it for the Overture version once connected. Field IDs are identical so there is no disruption to live forms.
+> **Currently active form:** `XCP_Contact_P2_Form_Fallback.json` — sends enquiries directly to **info@xcphotography.co.uk** via WordPress mail. No API key or external service needed. Import this now and your contact page is live immediately.
+>
+> **Upgrading to Overture later:** Once the Overture API connection is confirmed working, replace section 2 with `XCP_Contact_P2_Form_Overture.json`. All field IDs are identical — no disruption to live forms. Full setup steps are in [OVERTURE_SETUP_GUIDE.md](OVERTURE_SETUP_GUIDE.md).
 
 ---
 

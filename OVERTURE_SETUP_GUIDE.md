@@ -4,6 +4,14 @@
 
 ---
 
+> ## 📋 Currently Using: Email Fallback Form
+>
+> **The contact page is currently set up with `XCP_Contact_P2_Form_Fallback.json`** — which sends enquiries directly to info@xcphotography.co.uk via WordPress mail. It works immediately with zero external services.
+>
+> This guide is for when you are ready to connect Overture. When that time comes, replace section 2 of the contact page with `XCP_Contact_P2_Form_Overture.json` and follow the steps below. All field IDs are identical — no disruption to any live forms.
+
+---
+
 ## Quick Summary
 
 The JSON template (`XCP_Contact_P2_Form_Overture.json`) has everything pre-built:
