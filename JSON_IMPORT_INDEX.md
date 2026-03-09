@@ -98,33 +98,31 @@ Work top to bottom within each page. Finish one page before starting the next.
 
 ---
 
-### 🔑 Overture API Setup — Where to Add Your Key
+### 🔑 Switching to Overture — 3 steps when you're ready
 
-> **Full step-by-step guide: [OVERTURE_SETUP_GUIDE.md](OVERTURE_SETUP_GUIDE.md)** — covers key location, webhook URL, field mapping, Address API note, and troubleshooting.
+> **Full guide: [OVERTURE_SETUP_GUIDE.md](OVERTURE_SETUP_GUIDE.md)**
 
-**Quick answer:**
-1. Get your API key: Overture Admin → **Settings → Integrations → API Keys** → copy Bearer token
-2. In Elementor: open Contact page → click form widget → **Content tab → Additional Options → Custom Headers**
-3. Add header: `Authorization` = `Bearer YOUR_OVERTURE_API_KEY`
-4. Set webhook URL to: `https://YOUR-OVERTURE-INSTANCE/api/bookings`
+**Step 1:** In Elementor on the Contact page, delete the fallback form section and import `XCP_Contact_P2_Form_Overture.json` in its place. Field IDs are identical — no data loss.
 
-**Form field → Overture Booking API mapping (field IDs already set in the JSON — no transformation needed):**
+**Step 2:** In WordPress admin → Code Snippets (WPCode) → Add Snippet → PHP Snippet. Title it `XCP Overture Booking Integration`. Paste the snippet from [OVERTURE_SETUP_GUIDE.md](OVERTURE_SETUP_GUIDE.md) Step 2. Set status to **Active** and save.
 
-| Form label | `field_id` in JSON | Overture API field | Resource |
-|---|---|---|---|
-| Your Name | `promoterName` | `promoterName` | Booking |
-| Type of Project | `name` | `name` (booking title) | Booking |
-| Preferred Shoot Date | `date` | `date` | Booking |
-| County / Region | `venueState` | `venueState` | Booking |
-| Country | `venueCountry` | `venueCountry` | Booking |
-| Email Address | `email` | Person record | Overture auto-matches / creates |
-| Phone Number | `phone` | Person record | Overture auto-matches / creates |
-| Brand & Vision message | `message` | `info[]` array | Booking |
-| Source URL (hidden) | `source` | Source tag | Booking |
+**Step 3:** Submit a test enquiry. Check Overture → Bookings for a new Pending booking. If nothing appears, check `wp-content/debug.log` for a line starting with `XCP Overture:` — it will tell you the exact HTTP error from Overture.
 
-> All new bookings created via the API default to `status: "Pending"` — they will appear in your Overture dashboard ready to action.
+> ⚠️ **Do not use the old snippet** (titled "XCP Overture Authorization Header") — it used the wrong approach and will not create bookings. Delete it and use the new one from the guide.
 
-> **Address resource** (`POST /api/addresses`): shoot location address is added in Overture **after** the enquiry is received, linked to the Person record created from `email`. No address fields are needed on the contact form — `venueState` and `venueCountry` on the form give enough location context at enquiry stage.
+**Form field → Overture Booking API mapping:**
+
+| Form label | `field_id` | Overture API field |
+|---|---|---|
+| Your Name | `promoterName` | `promoterName` |
+| Type of Project | `name` | `name` (booking title, required) |
+| Preferred Date | `date` | `date` (required — defaults to today if left blank) |
+| County / Region | `venueState` | `venueState` |
+| Country | `venueCountry` | `venueCountry` |
+| Email Address | `email` | Person record (auto-matched or created) |
+| Phone Number | `phone` | Person record |
+| Brand & Vision | `message` | `info[]` — "Brand & Vision" heading |
+| Source URL (hidden) | `source` | `info[]` — "Source" heading |
 
 ✅ **Contact page complete — [→ Next: Blog / Stories Page](#-blog--stories-page)**
 

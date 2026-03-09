@@ -145,11 +145,11 @@
                   }
                 ],
                 "submit_actions": [
-                  "email",
-                  "webhook"
+                  "email"
                 ],
-                "webhook": "https://xcphotography.overturehq.com/api/bookings",
-                "webhook_advanced_data": "yes",
+                "email_to": "info@xcphotography.co.uk",
+                "email_subject": "New Enquiry: {field_id:name} from {field_id:promoterName}",
+                "email_content": "Name: {field_id:promoterName}\nEmail: {field_id:email}\nPhone: {field_id:phone}\nProject Type: {field_id:name}\nPreferred Date: {field_id:date}\nCounty / Region: {field_id:venueState}\nCountry: {field_id:venueCountry}\n\nMessage:\n{field_id:message}\n\nSource: {field_id:source}",
                 "button_text": "Send My Enquiry",
                 "button_size": "lg",
                 "button_align": "left",

@@ -15,39 +15,31 @@
 ## Quick Summary
 
 The JSON template (`XCP_Contact_P2_Form_Overture.json`) has everything pre-built:
-- Webhook URL: `https://xcphotography.overturehq.com/api/bookings`
-- All field IDs mapped to Overture API field names exactly
-- Authorization added via WPCode snippet after import (see Step 2 below)
+- Form Name: `XCP Contact: Overture` (already set in the JSON)
+- Email action: sends a backup email to info@xcphotography.co.uk on every submission
+- All field IDs matched to Overture API field names exactly
 
-**The JSON does not contain your API key. Import the file as-is, then add the key via WPCode. Done.**
+**The Overture connection is handled by a WPCode PHP snippet (not Elementor's built-in webhook).** The snippet hooks into the form submission, builds the correct Overture API payload, and sends it directly to Overture with proper `Authorization` and `Content-Type` headers. This is the approach that works — the previous snippet only added a header to Elementor's own webhook, which sent data in the wrong format.
 
-> **Do I need to re-import the form or update it when the API key changes or the Overture API version changes?** No. The Elementor form JSON contains the webhook URL and field layout only — it has no API key inside it. When you update your key (in `wp-config.php` or in the WPCode snippet), the form continues to work without any changes. The form and WPCode snippet are confirmed compatible with **Overture Agency API v0.1.3 (OAS 3.1)**. You never need to re-import the form JSON just because the key changed or a new API version was released.
-
-> **Why is the key not in the JSON?** Elementor does not support importing custom webhook headers via JSON template files. Adding the key to the JSON would cause the import to fail with an "invalid file" error. The WPCode snippet method adds the header server-side, securely, without touching the JSON at all.
+**The JSON does not contain your API key. Import the file as-is, then add the WPCode snippet (Step 2) with your key. Done.**
 
 ---
 
-## ⚡ Getting "submission failed" right now? Fix it in 30 seconds.
+## ⚡ Form submitting but no booking in Overture? Fix it in 2 minutes.
 
-> **If the admin-ajax.php Response tab shows `"errors":{"":""}`, Overture returned a 401 Unauthorized. The two fixes below resolve this 95% of the time. Try them before reading anything else.**
+> **Step 1 — Confirm you are using the correct WPCode snippet.**
+> The previous snippet used `elementor_pro/forms/webhooks/request_args` — this only added a header and sent data in the wrong format. If your snippet still contains that filter name, **delete the old snippet and add the new one from Step 2 of this guide**. The new snippet uses `elementor_pro/forms/new_record` and builds the correct Overture API payload.
 >
-> **Fix 1 — Confirm the WPCode snippet is Active (10 seconds)**
-> WordPress admin → Code Snippets (WPCode) → find the Overture snippet → the toggle at the top of the page must be **blue (Active)**. If it is grey, click it, then click **Save Snippet**. Test the form again.
+> **Step 2 — Confirm the snippet is Active.**
+> WordPress admin → Code Snippets (WPCode) → find the Overture snippet → the toggle at the top of the page must be **blue (Active)**. If it is grey, click it, then click **Save Snippet**.
 >
-> **Fix 2 — Refresh the API key (30 seconds)**
+> **Step 3 — Confirm the API key.**
 > Log in to Overture → **Settings → API** → copy the key shown there.
+> - If `wp-config.php` defines `OVERTURE_FORM_KEY`, update that value in File Manager and save. The snippet reads it automatically.
+> - If it does not, find `YOUR_OVERTURE_API_KEY` in the WPCode snippet and replace it with the key you just copied.
 >
-> **If your `wp-config.php` defines `OVERTURE_FORM_KEY`** (you will see a line like `define( 'OVERTURE_FORM_KEY', '…' );` in that file), the snippet reads the key from there automatically. Open wp-config.php in File Manager, confirm the key value between the single quotes exactly matches what Overture shows, and save. The WPCode snippet itself does not need editing.
->
-> **If you do not have `OVERTURE_FORM_KEY` in wp-config.php**, find this line in the WPCode snippet:
-> ```
->             $api_key = defined( 'OVERTURE_FORM_KEY' ) ? OVERTURE_FORM_KEY : 'YOUR_OVERTURE_API_KEY';
-> ```
-> Replace `YOUR_OVERTURE_API_KEY` (everything between the single quotes at the end of the line) with the key you just copied from Overture. Click **Save Snippet**. Test the form again.
->
-> Both of these produce the same `errors: {"":""}` response in the browser. You cannot tell from the browser which one it is — just do both.
->
-> If the error persists after both fixes, continue to the full troubleshooting section below.
+> **Step 4 — Check the debug log.**
+> Enable `WP_DEBUG_LOG` in `wp-config.php` (see "Checking the Overture response via WordPress debug log" below), submit the form, then read `wp-content/debug.log`. The log line will start with `XCP Overture:` and show the HTTP status Overture returned. A 200 or 201 means success. A 401 means the API key is wrong. A 422 means a field value was rejected — the log body will name the specific field.
 
 ---
 
@@ -63,25 +55,19 @@ If you previously added an Authorization hidden field, regenerate your API key i
 
 ## Step 1: Import the form JSON
 
-Import `XCP_Contact_P2_Form_Overture.json` on your Contact page, or `XCP_Home_S6_Contact_Form.json` on your Home page (or any page where you want the form). You can import on as many pages as you like, in any order.
+Import `XCP_Contact_P2_Form_Overture.json` on your Contact page. The import creates the Elementor layout only — the Overture connection is handled entirely by the WPCode snippet in Step 2.
 
-**The API key is not in the JSON file and is not needed for the import to work.** The import only creates the Elementor layout. The API key is only used when a visitor actually submits the form. Import first, add the key second.
-
-Do not add `custom_headers` to the JSON manually. Elementor does not support this field during template import and will reject the file as invalid. Use the WPCode snippet in Step 2 instead.
-
-The webhook URL is pre-set to `https://xcphotography.overturehq.com/api/bookings`.
+**The API key is not in the JSON file.** Import first, add the WPCode snippet second.
 
 ### After import: confirm the Form Name in Elementor
 
-After importing, open the form widget in Elementor (click the form, then click the pencil/edit icon). Go to the **Content** tab. Near the top you will see a field called **Form Name**. It must read exactly:
+After importing, open the form widget in Elementor (click the form, then the pencil/edit icon). Go to the **Content** tab. Near the top you will see a field called **Form Name**. It must read exactly:
 
 ```
 XCP Contact: Overture
 ```
 
-This is not a hidden ID field. It is a plain text field at the top of the Content tab, visible to the editor only. The JSON pre-sets this value, so if you imported the JSON it will already be correct. If you built the form by hand, type it in manually.
-
-**The snippet checks this field name to decide whether to add the Authorization header.** If the name is missing, blank, or spelt differently (including different capitalisation), the snippet will not fire and Overture will return an error on submission.
+This is a plain text field at the top of the Content tab. The JSON pre-sets it correctly. **If you built the form by hand, type this value in exactly — the WPCode snippet matches on this name.**
 
 ---
 
@@ -89,9 +75,15 @@ This is not a hidden ID field. It is a plain text field at the top of the Conten
 
 ### What WPCode is (and what it is not)
 
-WPCode is a **free WordPress plugin**. You install it from inside WordPress like any other plugin. Once installed, it gives you a simple code editor inside your WordPress admin panel, where you paste PHP directly into a text box.
+WPCode is a **free WordPress plugin**. Install it from WordPress admin → Plugins → Add New. Once active, it gives you a code editor inside WordPress admin where you paste PHP into a text box.
 
-**There is no PHP file to create. No file to zip. No uploading.** It is just copy, paste, save, activate. That is all.
+**There is no PHP file to create, zip, or upload.** It is copy, paste, save, activate.
+
+---
+
+### How it works (important context)
+
+The previous approach added a header to Elementor's built-in webhook — but Elementor's webhook sends data in its own format and Overture rejected it. The snippet below takes a different approach: it hooks directly into the form submission event, builds a correctly-structured Overture API payload, and sends it to Overture itself. This is the correct, working implementation.
 
 ---
 
@@ -102,45 +94,122 @@ WPCode is a **free WordPress plugin**. You install it from inside WordPress like
 2. Search for **WPCode**
 3. Install and activate the free version
 
-**Then, every time:** Add the snippet
-1. In WordPress admin go to **Code Snippets → Add Snippet** (WPCode adds this menu item)
+**Then:** Add the snippet
+1. Go to **Code Snippets → Add Snippet** (WPCode adds this menu item)
 2. Hover over **Add Your Custom Code (New Snippet)** and click **Use Snippet**
 3. Choose **PHP Snippet** from the code type options
-4. Give it the title: `XCP Overture Authorization Header`
+4. Give it the title: `XCP Overture Booking Integration`
 5. Copy and paste this entire block into the code editor:
 
 ```php
-add_filter(
-    'elementor_pro/forms/webhooks/request_args',
-    function ( $request_args, $record ) {
-        if ( 'XCP Contact: Overture' === $record->get_form_settings( 'form_name' ) ) {
-            $api_key = defined( 'OVERTURE_FORM_KEY' ) ? OVERTURE_FORM_KEY : 'YOUR_OVERTURE_API_KEY';
-            $request_args['headers']['Authorization'] = 'Bearer ' . $api_key;
+add_action(
+    'elementor_pro/forms/new_record',
+    function ( $record, $ajax_handler ) {
+
+        // Only fire for the Overture contact form.
+        if ( 'XCP Contact: Overture' !== $record->get_form_settings( 'form_name' ) ) {
+            return;
         }
-        return $request_args;
+
+        // Read the API key — from wp-config.php constant if defined, otherwise from the fallback below.
+        $api_key = defined( 'OVERTURE_FORM_KEY' ) ? OVERTURE_FORM_KEY : 'YOUR_OVERTURE_API_KEY';
+
+        // Extract submitted field values by field_id.
+        $raw    = $record->get_field( [ 'id', 'value' ] );
+        $fields = [];
+        foreach ( $raw as $field ) {
+            $fields[ $field['id'] ] = $field['value'];
+        }
+
+        // Validate and sanitise the date — Overture requires YYYY-MM-DD format.
+        $raw_date = ! empty( $fields['date'] ) ? trim( $fields['date'] ) : '';
+        $parsed   = $raw_date ? DateTime::createFromFormat( 'Y-m-d', $raw_date ) : false;
+        $date     = ( $parsed && $parsed->format( 'Y-m-d' ) === $raw_date ) ? $raw_date : gmdate( 'Y-m-d' );
+
+        // Build the Overture API payload.
+        // 'name' and 'date' are required by the Overture /api/bookings endpoint.
+        $payload = [
+            'name'         => ! empty( $fields['name'] ) ? sanitize_text_field( $fields['name'] ) : 'Website Enquiry',
+            'date'         => $date,
+            'promoterName' => ! empty( $fields['promoterName'] ) ? sanitize_text_field( $fields['promoterName'] ) : '',
+            'venueState'   => ! empty( $fields['venueState'] )   ? sanitize_text_field( $fields['venueState'] )   : '',
+            'venueCountry' => ! empty( $fields['venueCountry'] ) ? sanitize_text_field( $fields['venueCountry'] ) : 'United Kingdom',
+            'email'        => ! empty( $fields['email'] )        ? sanitize_email( $fields['email'] )             : '',
+            'phone'        => ! empty( $fields['phone'] )        ? sanitize_text_field( $fields['phone'] )        : '',
+            'info'         => [],
+        ];
+
+        // Add the brand/vision message as a further information entry.
+        if ( ! empty( $fields['message'] ) ) {
+            $payload['info'][] = [
+                'heading' => 'Brand & Vision',
+                'body'    => sanitize_textarea_field( $fields['message'] ),
+            ];
+        }
+
+        // Add the source URL as a further information entry.
+        if ( ! empty( $fields['source'] ) ) {
+            $payload['info'][] = [
+                'heading' => 'Source',
+                'body'    => esc_url_raw( $fields['source'] ),
+            ];
+        }
+
+        // Send to Overture.
+        $response = wp_remote_post(
+            'https://xcphotography.overturehq.com/api/bookings',
+            [
+                'method'  => 'POST',
+                'timeout' => 30,
+                'headers' => [
+                    'Authorization' => 'Bearer ' . $api_key,
+                    'Content-Type'  => 'application/json',
+                    'Accept'        => 'application/json',
+                ],
+                'body'    => wp_json_encode( $payload ),
+            ]
+        );
+
+        // Log results to the WordPress debug log (search for 'XCP Overture:' in wp-content/debug.log).
+        if ( is_wp_error( $response ) ) {
+            // Log only the error code, not the full message, to avoid leaking internal network details.
+            error_log( 'XCP Overture: connection error — code: ' . $response->get_error_code() );
+        } else {
+            $status = wp_remote_retrieve_response_code( $response );
+            if ( $status < 200 || $status >= 300 ) {
+                // Log the status and first 200 chars of the body for diagnostics.
+                $body = substr( wp_remote_retrieve_body( $response ), 0, 200 );
+                error_log( 'XCP Overture: HTTP ' . intval( $status ) . ' — ' . $body );
+            } else {
+                error_log( 'XCP Overture: booking created — HTTP ' . intval( $status ) );
+            }
+        }
     },
     10,
     2
 );
 ```
 
-6. **Set the API key** — the snippet reads `OVERTURE_FORM_KEY` automatically if that constant is defined in your `wp-config.php`. If you can see a line like `define( 'OVERTURE_FORM_KEY', '…' );` in your wp-config.php, no change to the snippet is needed — it will use that value. If you do not have that constant, find the text `YOUR_OVERTURE_API_KEY` in the code you just pasted and replace it with your actual token from **Overture → Settings → Integrations → API Keys**.
+6. **Set the API key** — the snippet reads `OVERTURE_FORM_KEY` automatically if that constant is defined in your `wp-config.php`. If you can see a line like `define( 'OVERTURE_FORM_KEY', '…' );` in that file, the snippet will use it and you do not need to change anything. If you do not have that constant, find the text `YOUR_OVERTURE_API_KEY` in the code you just pasted and replace it with your actual token from **Overture → Settings → Integrations → API Keys**.
 7. At the top of the page, toggle the snippet from **Inactive** to **Active**
 8. Click **Save Snippet**
 
-Done. The code now runs automatically in the background every time someone submits the form. You never have to touch it again unless you need to update the API key.
+Done. Every form submission named `XCP Contact: Overture` will now create a booking in Overture automatically. The email action in the form sends you a backup copy by email as well.
 
 ---
 
 ## Using the form on any page
 
-The snippet targets the form by its name (`XCP Contact: Overture`), not by which page it is on. This means:
+The snippet fires for any form whose **Form Name** is `XCP Contact: Overture`. You can import or copy the form section onto any page and it works automatically with no additional setup.
 
-- Import the form JSON on your Contact page
-- Copy the form section in Elementor and paste it onto any other page (Home, Services, Booking, etc.)
-- No additional setup needed. The snippet picks up any submission from that form, on any page, and adds the Authorization header automatically.
+To add the form to the Home page when you switch from fallback to Overture:
+1. In Elementor, open the Home page
+2. Find the contact form section (imported from `XCP_Home_S6_Contact_Form.json`)
+3. Click the form widget → Content tab → Form Name
+4. Change the value from `XCP Contact: Email Fallback` to `XCP Contact: Overture`
+5. Save the page
 
-The form name is set in the Elementor form widget under **Content → Form Name**. The JSON pre-sets this to `XCP Contact: Overture`. Do not change it unless you also update the snippet to match exactly.
+The WPCode snippet will then handle those submissions too.
 
 ---
 
@@ -151,23 +220,25 @@ Before submitting a test enquiry, confirm these four things in WPCode:
 | Check | What it should show |
 |---|---|
 | Code Type | PHP Snippet |
-| Snippet status (top of page) | Active (toggled on, not grey/inactive) |
+| Snippet status (top of page) | Active (toggled on, blue — not grey) |
 | Insert Method | Auto Insert |
 | Location | Run Everywhere |
 
-The code itself should match the block in Step 2 exactly, with either:
-- `OVERTURE_FORM_KEY` already defined in your `wp-config.php` (the snippet will read the key automatically), or
-- `YOUR_OVERTURE_API_KEY` replaced by your actual key from Overture.
+The code must contain either:
+- `OVERTURE_FORM_KEY` as a constant already defined in your `wp-config.php` (snippet reads it automatically), or
+- `YOUR_OVERTURE_API_KEY` replaced by your actual token from Overture → Settings → Integrations → API Keys
 
-No other changes needed.
-
-If the snippet is set to **Inactive**, the Authorization header is never added and Overture will reject the request silently. Toggle to **Active** and click **Save Snippet** before testing.
+**If you previously had an older snippet titled "XCP Overture Authorization Header"** — delete it. It used the wrong hook (`elementor_pro/forms/webhooks/request_args`) and sent data in Elementor's format instead of Overture's expected JSON. The new snippet above replaces it entirely.
 
 ---
 
 ## Step 4: Test
 
-Submit a test enquiry. Within a few seconds a new **Pending** booking should appear in **Overture → Bookings**.
+Fill in the contact form and submit a test enquiry. Within a few seconds:
+- A new **Pending** booking should appear in **Overture → Bookings**
+- A backup email should arrive at info@xcphotography.co.uk
+
+If the booking appears in Overture, the integration is working correctly regardless of what message the browser shows.
 
 ---
 
@@ -176,9 +247,10 @@ Submit a test enquiry. Within a few seconds a new **Pending** booking should app
 | Setting | Value |
 |---|---|
 | Overture API version | v0.1.3 (OAS 3.1) |
-| Webhook URL | `https://xcphotography.overturehq.com/api/bookings` |
-| HTTP Method | POST |
-| Authorization | Bearer token via WPCode snippet |
+| Overture endpoint | `https://xcphotography.overturehq.com/api/bookings` |
+| HTTP Method | POST (sent by WPCode PHP snippet, not Elementor webhook) |
+| Content-Type | `application/json` |
+| Authorization | `Bearer {your API key}` — set in the WPCode snippet |
 | Form name (must match snippet) | `XCP Contact: Overture` |
 | New booking status | Pending |
 
@@ -281,16 +353,17 @@ The fallback form sends enquiries to `info@xcphotography.co.uk`. This is already
 
 ## How to see the actual error
 
-The "There was an error" message Elementor shows is generic. It does not tell you what went wrong. To find out what actually happened, use your browser's developer tools while submitting the form.
+> **With the current WPCode snippet (using `elementor_pro/forms/new_record`), the browser will always show the Elementor success message even if Overture fails.** The Overture call happens entirely in PHP after the form has already responded to the browser. This is intentional — visitors see a clean success and you get the email backup regardless. To see whether Overture accepted or rejected the booking, you must read the WordPress debug log (see "Checking the Overture response via WordPress debug log" below). Look for lines starting with `XCP Overture:`.
 
 ### How the form submission works (important context)
 
-When a visitor submits the form, two separate requests happen:
+When a visitor submits the form:
 
-1. **Browser → WordPress** — the form data is sent from the browser to your WordPress site as an AJAX request to `admin-ajax.php`. This request **does appear** in your browser's Network tab.
-2. **WordPress → Overture** — WordPress then makes a server-side POST to `https://xcphotography.overturehq.com/api/bookings` with the Authorization header. This request is made by the server, not the browser, so it **does NOT appear** in your browser's Network tab.
+1. **Browser → WordPress** — the form data is sent to WordPress via `admin-ajax.php`. This appears in the browser's Network tab.
+2. **Elementor** — processes the form actions (email backup is sent).
+3. **PHP action hook → Overture** — the WPCode snippet fires via `elementor_pro/forms/new_record`, builds the Overture JSON payload, and POSTs it to `https://xcphotography.overturehq.com/api/bookings`. This is a server-side call made after the browser has already received the success response. It does **not** appear in the browser Network tab and **does not** affect the browser success/error message.
 
-**You will never see an `overturehq.com` row in your browser Network tab.** That call happens entirely on the server. What you will see is `admin-ajax.php`.
+**The browser Network tab cannot tell you whether Overture succeeded.** Check Overture → Bookings directly, or enable `WP_DEBUG_LOG` and read the debug log.
 
 > **What about `r.stripe.com` rows?**
 > You may see multiple requests to `r.stripe.com` in the Network tab. These are Stripe telemetry beacons. They fire automatically on every page load because Stripe.js is embedded somewhere on the site. They have nothing to do with your form or Overture. Ignore them entirely.
@@ -437,28 +510,28 @@ The browser Network tab has told you everything it can. The Response body `{"suc
 3. Add immediately below it: `define( 'WP_DEBUG_LOG', true );`
 4. Submit a test enquiry via the form
 5. In your hosting file manager, navigate to `wp-content/` and download `debug.log` (it only appears after an error has been logged)
-6. Search the file for `overture` or `xcphotography.overturehq` — you will find a line showing the HTTP status Overture returned (401, 403, 422, etc.) and the response body with the specific reason
+6. Search the file for `XCP Overture:` — the WPCode snippet logs every Overture response with this prefix. You will see either `XCP Overture: booking created — HTTP 201` (success) or `XCP Overture: HTTP 401 — {body}` (failure with the Overture error message)
 7. **Undo your changes when done** — never leave debug mode on a live site. If you edited the standard `define( 'WP_DEBUG', true );` line, change it back to `false`. If you added two new `define` lines above the final `require_once ABSPATH . 'wp-settings.php';`, delete those two lines entirely and save.
 
-> **What you will likely find:** Given the `errors: {"": ""}` response, the most common cause is a **401 Unauthorized** (WPCode snippet Inactive, or the API key in the snippet is wrong or expired). The second possibility is **422 Unprocessable** (a field value Overture rejected). The debug log will tell you which one and, for 422, will name the specific field.
+> **What you will likely find:** A **401 Unauthorized** (API key wrong, expired, or snippet Inactive) or a **422 Unprocessable** (a field value Overture rejected — the log body will name the specific field).
 
 ### If the Overture booking is not being created
 
 Work through this checklist in order:
 
-1. **Form Name** - In Elementor, open the form widget → Content tab → Form Name. It must be exactly: `XCP Contact: Overture`
+1. **WPCode snippet** — WordPress admin → Code Snippets (WPCode). The snippet must exist, be titled `XCP Overture Booking Integration`, and the toggle must be **Active** (blue). If the toggle is grey, activate it and click Save Snippet.
+
+2. **Correct snippet** — the snippet code must begin with `add_action('elementor_pro/forms/new_record', ...`. If it begins with `add_filter('elementor_pro/forms/webhooks/request_args', ...)`, that is the old incorrect version — delete it and add the new one from Step 2 of this guide.
+
+3. **Form Name** — in Elementor, open the form widget → Content tab → Form Name. It must be exactly: `XCP Contact: Overture`
    - Capital X, capital C, capital O
    - A colon, then a space, then Overture with a capital O
    - No trailing spaces, no quotes
    - Any difference and the snippet will not fire
 
-2. **Snippet status** - In WordPress admin → Code Snippets (WPCode), find the Overture snippet. The toggle must show **Active** (blue/green, not grey). Click Save Snippet after changing it.
+4. **Elementor Pro** — the `elementor_pro/forms/new_record` action requires Elementor Pro. Check WordPress admin → Plugins — Elementor Pro must be listed as active (not just Elementor free). If only the free version is active, use the fallback form.
 
-3. **Webhook URL** - In Elementor, open the form widget → Content tab → Actions After Submit → Webhook. The URL must be: `https://xcphotography.overturehq.com/api/bookings`
-
-4. **Elementor Pro** - The webhook action requires Elementor Pro. If the Webhook option does not appear in Actions After Submit, your site is on the free version of Elementor. Use the fallback form instead.
-
-5. **Check Overture directly** - Log in to Overture and go to Bookings. If a booking appeared with status Pending, the submission worked even if Elementor showed an error message. The error message is a known display glitch in some Elementor versions.
+5. **Check Overture directly** — log in to Overture and go to Bookings. If a booking appeared with status Pending, the integration is working even if Elementor showed an error message on screen.
 
 ---
 
@@ -467,26 +540,21 @@ Work through this checklist in order:
 | Symptom | Likely cause | Fix |
 |---|---|---|
 | I am looking at a list of database tables (`wp_bmmgvw4m5z_options`, `wp_bmmgvw4m5z_posts`, etc.) and cannot find `wp-config.php` | You are in **phpMyAdmin** (the database browser) — wrong tool | Close phpMyAdmin. In cPanel, scroll to the **Files** section (not Databases) and click **File Manager** instead. `wp-config.php` is a file on disk, not a database table. |
-| I can see `wp-admin`, `wp-content`, and `wp-includes` in File Manager but no `wp-config.php` | The left-hand **folder tree** only shows folders — files never appear in the tree | Look at the **very top** of the left folder tree — you will see the root entry (your domain URL, e.g. `xjk.0aa.myftpupload.com`, or `public_html`). **Click on that top-level entry**. The **right-hand file list** will refresh to show the files at that level — `wp-config.php` will be there. It is **not inside** `wp-admin`, `wp-content`, or `wp-includes` — it is at the same level as those folders, visible only in the right-hand file list. |
-| I opened `wp-config.php` but cannot find the line `define( 'WP_DEBUG', false );` anywhere in it | Your hosting uses a minimal wp-config.php that just loads another config file | This is normal for some hosts. See the ⚠️ callout inside step 2 above for exact instructions — in short: add `define( 'WP_DEBUG', true );` and `define( 'WP_DEBUG_LOG', true );` as new lines immediately before the final `require_once ABSPATH . 'wp-settings.php';` line, then save. Do not delete any existing lines. |
-| "Invalid file" on import | Non-standard fields in the JSON | Re-download the file from the repo. The fixed versions no longer contain `_comment` fields that caused this error. |
-| "There was an error" on form submission | Overture may have rejected the request, or the webhook is not configured | First check Overture → Bookings to see if a booking was created anyway (display glitch). If not, check the WPCode snippet is Active and the API key is correct. Enable WP_DEBUG_LOG temporarily to see the server-side Overture response. See "How to see the actual error" above. |
-| You see r.stripe.com rows in the Network tab | Normal — Stripe.js telemetry beacons fire on every page load | Ignore them. They are unrelated to your form or Overture. The Overture webhook is server-side and will not appear in the browser Network tab at all. |
-| You see admin-ajax.php in the Network tab after Submit | Normal — this is the form submission from browser to WordPress | Click the admin-ajax.php POST row and read the **Response** tab (not Headers, not Cookies) for error detail. |
-| Response tab shows `"errors": {"": ""}` | Webhook action failed — Overture returned a non-2xx HTTP status | Enable WP_DEBUG_LOG (see above) to see whether Overture returned 401, 403, or 422, then fix accordingly |
-| Response tab shows `"errors": {"": ""}` and WPCode snippet is Active | API key is wrong or expired | Regenerate API key in Overture → Settings → API. If `OVERTURE_FORM_KEY` is defined in wp-config.php, update the value there. Otherwise paste the new key into the WPCode snippet and Save Snippet. The form does **not** need to be re-imported. |
-| Elementor shows an error but a booking appeared in Overture | Known Elementor display glitch | The submission worked. Dismiss the error and confirm in Overture. |
-| Form submits but no booking appears in Overture | Snippet not set to Active, or Form Name mismatch | Check the WPCode snippet is **Active**. Check the form widget Form Name is exactly `XCP Contact: Overture`. |
-| Snippet is Active but still no booking | Form Name in Elementor does not match the snippet | Open the form widget in Elementor → Content tab → Form Name field. It must be exactly `XCP Contact: Overture` (capital X, capital C, capital O, colon, space). Any difference and the snippet will not fire. |
-| 401 Unauthorized (visible in WP debug log) | API key wrong, missing, revoked, or snippet Inactive | Regenerate key in Overture → Settings → API. If `OVERTURE_FORM_KEY` is defined in wp-config.php, update the value there and save. Otherwise paste the new key into the WPCode snippet. Make sure the snippet is Active. |
+| I can see `wp-admin`, `wp-content`, and `wp-includes` in File Manager but no `wp-config.php` | The left-hand **folder tree** only shows folders — files never appear in the tree | Look at the **very top** of the left folder tree — you will see the root entry (your domain URL, e.g. `xjk.0aa.myftpupload.com`, or `public_html`). **Click on that top-level entry**. The **right-hand file list** will refresh to show the files at that level — `wp-config.php` will be there. |
+| I opened `wp-config.php` but cannot find the line `define( 'WP_DEBUG', false );` anywhere in it | Your hosting uses a minimal wp-config.php that just loads another config file | This is normal for some hosts. Add `define( 'WP_DEBUG', true );` and `define( 'WP_DEBUG_LOG', true );` as new lines immediately before the final `require_once ABSPATH . 'wp-settings.php';` line, then save. Do not delete any existing lines. |
+| "Invalid file" on import | Non-standard fields in the JSON | Re-download the file from the repo Raw view. |
+| Form submits successfully (green tick) but no booking in Overture | WPCode snippet not Active, wrong snippet version, or Form Name mismatch | Check: (1) snippet exists and is Active; (2) snippet begins with `add_action('elementor_pro/forms/new_record'`; (3) Form Name in Elementor is exactly `XCP Contact: Overture`. Enable WP_DEBUG_LOG and check the log for `XCP Overture:` lines. |
+| `XCP Overture: HTTP 401` in debug log | API key wrong, expired, or snippet Inactive | Regenerate key in Overture → Settings → API. If `OVERTURE_FORM_KEY` is defined in wp-config.php, update that value. Otherwise find `YOUR_OVERTURE_API_KEY` in the WPCode snippet and replace it. API keys are hex strings (0–9 and a–f only). |
+| `XCP Overture: HTTP 401` and `OVERTURE_FORM_KEY` in wp-config.php | Key value in wp-config.php contains a typo | Open wp-config.php in File Manager, copy the key value character by character against the key shown in Overture → Settings → API. Any non-hex character (like 'lase') is a typo. |
+| `XCP Overture: HTTP 403` in debug log | Key lacks permission | Regenerate key in Overture with Booking write scope |
+| `XCP Overture: HTTP 404` in debug log | Wrong endpoint URL | The URL in the snippet is hardcoded as `https://xcphotography.overturehq.com/api/bookings`. Confirm your Overture subdomain matches. |
+| `XCP Overture: HTTP 422` in debug log | Required field missing or wrong format | The log body names the specific field. Most commonly the `date` field — the form provides a date only if the user fills it in; the snippet defaults to today if empty. |
+| `XCP Overture: connection error` in debug log | WordPress cannot reach overturehq.com | Temporary network issue. Test again. If persistent, check hosting firewall is not blocking outbound HTTPS. |
+| You see r.stripe.com rows in the Network tab | Normal — Stripe.js telemetry beacons | Ignore them. Unrelated to your form. |
+| Form submits but no email received | WordPress mail not configured | Install and configure WP Mail SMTP (free). Without it, WordPress uses PHP mail which many hosts block. |
 | 401 Unauthorized and `OVERTURE_FORM_KEY` is defined in wp-config.php | The key value in wp-config.php may contain a typo or be outdated | Open wp-config.php in File Manager, copy the value of `OVERTURE_FORM_KEY`, paste it into a plain-text editor and compare it character-by-character against the key shown in Overture → Settings → API. API keys are typically hex strings (digits 0–9 and letters a–f only). Any other character is a sign of a typo. Correct the value in wp-config.php and save. |
-| 403 Forbidden (visible in WP debug log) | Key lacks permission | Regenerate key in Overture with Booking write scope |
-| 404 (visible in WP debug log) | Wrong webhook URL | Confirm exactly: `https://xcphotography.overturehq.com/api/bookings` |
-| 422 Unprocessable (visible in WP debug log) | Required field missing or wrong format | Check date field outputs YYYY-MM-DD. The 422 response body in the debug log lists the specific field name. |
-| Key visible in page HTML | Key is in a form field, not the snippet | Delete that hidden field, use the WPCode snippet |
-| Fallback form submits but no email received | To address does not exist on the server | Confirm the email address in Elementor form → Content → Email → To is `info@xcphotography.co.uk` (or another address that exists). WordPress cannot deliver to a non-existent mailbox. |
-| Browser console or security scanner warns about CSP / unsafe-eval | Stripe.js requires string evaluation to run | Stripe.js (`js.stripe.com`) uses `eval()` internally and will not function without `unsafe-eval` in the site's Content Security Policy. If you are implementing a CSP on the site, your `script-src` directive must include `'unsafe-eval'` and `https://js.stripe.com`. This is a Stripe requirement, not a site code issue. See the CSP note below. |
-| Browser or accessibility scanner warns "form field has no id or name" on the date picker | Flatpickr date picker internal input has no id/name by default | The flagged element (`<input class="numInput cur-year">`) is the year navigation widget inside the calendar popup, not the submitted date field. It does not affect form submissions. Add the JavaScript WPCode snippet in the "Optional: date picker autofill fix" section below to silence the warning. |
+| Browser console or security scanner warns about CSP / unsafe-eval | Stripe.js requires string evaluation to run | See the CSP note below. |
+| Browser or accessibility scanner warns "form field has no id or name" on the date picker | Flatpickr date picker internal input has no id/name by default | See "Optional: date picker autofill fix" below. |
 
 ---
 
