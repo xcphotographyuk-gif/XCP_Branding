@@ -73,19 +73,22 @@ The JSON template (`XCP_Contact_P2_Form_Overture.json`) has everything pre-built
 >
 > **Fix:** All six form JSON files in this repository have been corrected. Re-import them from this repository. After re-import, the email notification will show real names, emails, and messages.
 >
-> **If you prefer to fix manually in Elementor** (without re-importing): open the form widget → **Email** tab → edit the Subject and Message body, replacing every `{field_id:X}` token with `[field id="X"]` — e.g.:
+> **If you prefer to fix manually in Elementor** (without re-importing): open the form widget → **Email** tab → edit the Subject and Message body. Use the Elementor `custom_id` values (see Field Mapping Reference below) — e.g.:
 >
-> | Wrong (old) | Correct (new) |
+> | Field label | Correct Elementor token |
 > |---|---|
-> | `{field_id:promoterName}` | `[field id="promoterName"]` |
-> | `{field_id:email}` | `[field id="email"]` |
-> | `{field_id:phone}` | `[field id="phone"]` |
-> | `{field_id:name}` | `[field id="name"]` |
-> | `{field_id:date}` | `[field id="date"]` |
-> | `{field_id:venueState}` | `[field id="venueState"]` |
-> | `{field_id:venueCountry}` | `[field id="venueCountry"]` |
-> | `{field_id:message}` | `[field id="message"]` |
-> | `{field_id:source}` | `[field id="source"]` |
+> | Your Name | `[field id="name"]` |
+> | Email Address | `[field id="email"]` |
+> | Phone Number | `[field id="phone"]` |
+> | Type of Project | `[field id="project_type"]` |
+> | Preferred Date | `[field id="discovery_date"]` |
+> | Preferred Time | `[field id="preferred_time"]` |
+> | County / Region | `[field id="county"]` |
+> | Country | `[field id="country"]` |
+> | Tell Me About Your Brand & Vision | `[field id="brand_vision"]` |
+> | Tell Me About Your Project *(Services form)* | `[field id="project_details"]` |
+> | Service of Interest *(Services form)* | `[field id="service_interest"]` |
+> | Source URL | `[field id="source_url"]` |
 >
 > This is an email template fix only. It does not affect Overture bookings or the WPCode PHP snippet.
 
@@ -173,36 +176,45 @@ add_action(
         }
 
         // Validate and sanitise the date — Overture requires YYYY-MM-DD format.
-        $raw_date = ! empty( $fields['date'] ) ? trim( $fields['date'] ) : '';
+        // Field custom_id is 'discovery_date' in all XCP Overture forms.
+        $raw_date = ! empty( $fields['discovery_date'] ) ? trim( $fields['discovery_date'] ) : '';
         $parsed   = $raw_date ? DateTime::createFromFormat( 'Y-m-d', $raw_date ) : false;
         $date     = ( $parsed && $parsed->format( 'Y-m-d' ) === $raw_date ) ? $raw_date : gmdate( 'Y-m-d' );
+
+        // Booking name: project type (Contact/Home forms) or service interest (Services form).
+        $booking_name = ! empty( $fields['project_type'] )     ? sanitize_text_field( $fields['project_type'] ) :
+                        ( ! empty( $fields['service_interest'] ) ? sanitize_text_field( $fields['service_interest'] ) : 'Website Enquiry' );
+
+        // Enquiry message: brand_vision (Contact/Home) or project_details (Services form).
+        $enquiry_message = ! empty( $fields['brand_vision'] )    ? $fields['brand_vision'] :
+                           ( ! empty( $fields['project_details'] ) ? $fields['project_details'] : '' );
 
         // Build the Overture API payload.
         // 'name' and 'date' are required by the Overture /api/bookings endpoint.
         $payload = [
-            'name'         => ! empty( $fields['name'] ) ? sanitize_text_field( $fields['name'] ) : 'Website Enquiry',
+            'name'         => $booking_name,
             'date'         => $date,
-            'promoterName' => ! empty( $fields['promoterName'] ) ? sanitize_text_field( $fields['promoterName'] ) : '',
-            'venueState'   => ! empty( $fields['venueState'] )   ? sanitize_text_field( $fields['venueState'] )   : '',
-            'venueCountry' => ! empty( $fields['venueCountry'] ) ? sanitize_text_field( $fields['venueCountry'] ) : 'United Kingdom',
-            'email'        => ! empty( $fields['email'] )        ? sanitize_email( $fields['email'] )             : '',
-            'phone'        => ! empty( $fields['phone'] )        ? sanitize_text_field( $fields['phone'] )        : '',
+            'promoterName' => ! empty( $fields['name'] )    ? sanitize_text_field( $fields['name'] )    : '',
+            'venueState'   => ! empty( $fields['county'] )  ? sanitize_text_field( $fields['county'] )  : '',
+            'venueCountry' => ! empty( $fields['country'] ) ? sanitize_text_field( $fields['country'] ) : 'United Kingdom',
+            'email'        => ! empty( $fields['email'] )   ? sanitize_email( $fields['email'] )        : '',
+            'phone'        => ! empty( $fields['phone'] )   ? sanitize_text_field( $fields['phone'] )   : '',
             'info'         => [],
         ];
 
-        // Add the brand/vision message as a further information entry.
-        if ( ! empty( $fields['message'] ) ) {
+        // Add the brand/vision or project details as a further information entry.
+        if ( ! empty( $enquiry_message ) ) {
             $payload['info'][] = [
-                'heading' => 'Brand & Vision',
-                'body'    => sanitize_textarea_field( $fields['message'] ),
+                'heading' => 'Enquiry',
+                'body'    => sanitize_textarea_field( $enquiry_message ),
             ];
         }
 
         // Add the source URL as a further information entry.
-        if ( ! empty( $fields['source'] ) ) {
+        if ( ! empty( $fields['source_url'] ) ) {
             $payload['info'][] = [
                 'heading' => 'Source',
-                'body'    => esc_url_raw( $fields['source'] ),
+                'body'    => esc_url_raw( $fields['source_url'] ),
             ];
         }
 
@@ -324,18 +336,24 @@ If the booking appears in Overture, the integration is working correctly regardl
 
 ## Field Mapping Reference
 
-Form field IDs are sent to Overture via the webhook POST. Overture processes each field according to its own internal mapping — some fields set booking properties directly, others are matched to a person record or stored as further information.
+The table below shows each form field, its Elementor `custom_id` (what appears in `[field id="…"]` email tokens and in the WPCode PHP snippet's `$fields['…']` array), and how it maps to the Overture API.
 
-| Form label | field_id | Overture API field / handling |
+| Form label | Elementor custom_id | Overture API field / handling |
 |---|---|---|
-| Your Name | promoterName | Stored on the booking record |
-| Type of Project | name | name (booking title, required by API) |
-| Preferred Discovery Call Date | date | date (booking date, required by API) |
-| County / Region | venueState | Stored on the booking record |
-| Country | venueCountry | venueCountry (booking field) |
-| Tell Me About Your Brand & Vision | message | info[] (further information) |
-| Email Address | email | Person record (auto-matched or created by Overture) |
-| Phone Number | phone | Person record (auto-matched or created by Overture) |
+| Your Name | `name` | `promoterName` (stored on the booking record) |
+| Type of Project | `project_type` | `name` (booking title, required by API) |
+| Service of Interest *(Services page only)* | `service_interest` | `name` (booking title, required by API) |
+| Preferred Discovery Call Date | `discovery_date` | `date` (booking date, required by API) |
+| Preferred Time of Day | `preferred_time` | `info[]` (further information: "Preferred Time") |
+| County / Region | `county` | `venueState` (stored on the booking record) |
+| Country | `country` | `venueCountry` (booking field) |
+| Tell Me About Your Brand & Vision | `brand_vision` | `info[]` (further information: "Enquiry") |
+| Tell Me About Your Project *(Services page only)* | `project_details` | `info[]` (further information: "Enquiry") |
+| Email Address | `email` | `email` (person record, auto-matched or created) |
+| Phone Number | `phone` | `phone` (person record) |
+| Source URL | `source_url` | `info[]` (further information: "Source") |
+
+> **Note on email tokens:** In Elementor Pro form email notification templates, `[field id="X"]` must use the Elementor `custom_id` (middle column above), **not** the Overture API field name. The WPCode PHP snippet handles the translation from Elementor custom_id to Overture API field name.
 
 The **required** fields for the `/api/bookings` endpoint are `date` and `name`. Both are always present in every form submission.
 
@@ -618,7 +636,7 @@ Work through this checklist in order:
 | `XCP Overture: connection error` in debug log | WordPress cannot reach overturehq.com | Temporary network issue. Test again. If persistent, check hosting firewall is not blocking outbound HTTPS. |
 | You see r.stripe.com rows in the Network tab | Normal — Stripe.js telemetry beacons | Ignore them. Unrelated to your form. |
 | Form submits but no email received | WordPress mail not configured | Install and configure WP Mail SMTP (free). Without it, WordPress uses PHP mail which many hosts block. |
-| Email arrives but the subject or body contains raw tokens like `{field_id:name}` or `{field_id:promoterName}` instead of real values | The email notification template in the form was using Overture field-mapping syntax (`{field_id:X}`) instead of Elementor's email token syntax (`[field id="X"]`) | Re-import the updated form JSON files from this repository (all six `XCP_*Form*.json` files have been corrected). In Elementor, go to the form widget → Email tab and confirm the Subject line and Message body now use `[field id="promoterName"]`-style tokens. If you edited the email template manually in Elementor, update each `{field_id:X}` token to `[field id="X"]` (e.g. `{field_id:email}` → `[field id="email"]`). |
+| Email arrives but the subject or body contains raw tokens like `{field_id:name}` or `[field id="promoterName"]` instead of real values | The email notification template used wrong field IDs — either old Overture-style syntax (`{field_id:X}`) or old field names that no longer match the form's `custom_id` values | Re-import the updated form JSON files from this repository (all three Overture `XCP_*Form*_Overture.json` files have been corrected). In Elementor, go to the form widget → Email tab and confirm tokens use the actual `custom_id` values: `[field id="name"]` for the person's name, `[field id="project_type"]` for project type, `[field id="discovery_date"]` for the date, `[field id="county"]` and `[field id="country"]` for location, and `[field id="brand_vision"]` (or `[field id="project_details"]` on the Services form) for the message. See the Field Mapping Reference section for the full list. |
 | 401 Unauthorized and `OVERTURE_FORM_KEY` is defined in wp-config.php | The key value in wp-config.php may contain a typo, or the snippet uses the wrong constant name | Two checks: (1) open wp-config.php in File Manager, copy the value of `OVERTURE_FORM_KEY` and compare it character-by-character against the key shown in Overture → Settings → API; (2) in the WPCode snippet, confirm the api_key line reads `defined( 'OVERTURE_FORM_KEY' ) ? OVERTURE_FORM_KEY : 'YOUR_OVERTURE_API_KEY'` — if you see your actual key value inside `defined( '...' )` that is the wrong pattern and the snippet will never use the constant. |
 | Browser console or security scanner warns about CSP / unsafe-eval | Stripe.js requires string evaluation to run | See the CSP note below. |
 | Browser or accessibility scanner warns "form field has no id or name" on the date picker | Flatpickr date picker internal month and year inputs have no id/name by default | See "Date picker autofill fix" below. |
@@ -780,7 +798,7 @@ The email notification template inside the form was using `{field_id:X}` tokens,
 All six form JSON files in this repository have been corrected. To fix this:
 
 1. Re-import the updated form JSON files from this repository (delete the existing form section in Elementor and re-import, or update the Email notification tab manually in each form widget).
-2. In Elementor, open the form widget → **Email** tab. Confirm the Subject line reads `New Enquiry: [field id="name"] from [field id="promoterName"]` and the Message body uses `[field id="X"]` tokens throughout.
+2. In Elementor, open the form widget → **Email** tab. Confirm the Subject line reads `New Enquiry: [field id="project_type"] from [field id="name"]` and the Message body uses `[field id="X"]` tokens with the correct `custom_id` values (see Field Mapping Reference).
 3. Save and test — submit the form and check that the email body shows the actual values typed in by the visitor.
 
 This is a template-only fix — it has no effect on Overture bookings or the WPCode PHP snippet.
