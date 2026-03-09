@@ -10,7 +10,7 @@ Work top to bottom within each page. Finish one page before starting the next.
 
 > **Repo privacy:** To make this GitHub repository private, go to: **GitHub → your repository → Settings → Danger Zone → Change repository visibility → Make private**. This guide cannot change GitHub repository settings.
 
-> **Form on every page:** Both the Contact page form and the Home page form currently send enquiries by email to info@xcphotography.co.uk. When you upgrade to Overture, update both forms at the same time. Full Overture connection instructions are in [OVERTURE_SETUP_GUIDE.md](OVERTURE_SETUP_GUIDE.md).
+> **Dual-version forms:** Every page with an enquiry form now has both a **Fallback** version (email-only, works immediately) and an **Overture** version (connects to your Overture CRM, same field IDs). Import the Fallback version first to go live straight away. When Overture is ready, swap in the Overture version — no disruption, no data loss. Full Overture connection instructions are in [OVERTURE_SETUP_GUIDE.md](OVERTURE_SETUP_GUIDE.md).
 
 ---
 
@@ -42,9 +42,10 @@ Work top to bottom within each page. Finish one page before starting the next.
 | 6 | Process Timeline | `XCP_Home_S4b_Process.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Home_S4b_Process.json) |
 | 7 | Behind the Lens — Statement + Shoot Images | `XCP_Home_S5a_Shoots_Statement.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Home_S5a_Shoots_Statement.json) |
 | 8 | Final CTA | `XCP_Home_S5b_CTA.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Home_S5b_CTA.json) |
-| 9 | Contact Form | `XCP_Home_S6_Contact_Form.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Home_S6_Contact_Form.json) |
+| 9 | Contact Form — **Fallback** ✅ Use this first | `XCP_Home_S6_Contact_Form.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Home_S6_Contact_Form.json) |
+| 9 | Contact Form — **Overture** (swap in when ready) | `XCP_Home_S6_Contact_Form_Overture.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Home_S6_Contact_Form_Overture.json) |
 
-> Section 9 sends enquiries via email (to info@xcphotography.co.uk) using the same email fallback approach as the Contact page form. When you upgrade to the Overture form later, you can update both forms at the same time.
+> **Section 9 — two versions:** Import `XCP_Home_S6_Contact_Form.json` (Fallback) first. It sends enquiries directly to info@xcphotography.co.uk by email — no API key needed. When you are ready to connect Overture, delete the fallback section and import `XCP_Home_S6_Contact_Form_Overture.json` instead. The WPCode snippet in [OVERTURE_SETUP_GUIDE.md](OVERTURE_SETUP_GUIDE.md) will pick it up automatically — its Form Name is `XCP Contact: Overture`, identical to the Contact page Overture form.
 
 ✅ **Home page complete — [→ Next: About Page](#-about-page)**
 
@@ -70,7 +71,10 @@ Work top to bottom within each page. Finish one page before starting the next.
 |---|---|---|---|
 | 1 | Hero + Intro | `XCP_Services_S1_Hero_Intro.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Services_S1_Hero_Intro.json) |
 | 2 | Brand Foundation + Elevation | `XCP_Services_S2_Foundation_Elevation.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Services_S2_Foundation_Elevation.json) |
-| 3 | Transformation + Bespoke Enquiry | `XCP_Services_S3_Transformation_Bespoke.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Services_S3_Transformation_Bespoke.json) |
+| 3 | Transformation + Bespoke Enquiry — **Fallback** ✅ Use this first | `XCP_Services_S3_Transformation_Bespoke.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Services_S3_Transformation_Bespoke.json) |
+| 3 | Transformation + Bespoke Enquiry — **Overture** (swap in when ready) | `XCP_Services_S3_Transformation_Bespoke_Overture.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Services_S3_Transformation_Bespoke_Overture.json) |
+
+> **Section 3 — two versions:** Import `XCP_Services_S3_Transformation_Bespoke.json` (Fallback) first. When Overture is connected, swap in `XCP_Services_S3_Transformation_Bespoke_Overture.json`. The WPCode snippet fires automatically — the Overture version Form Name is `XCP Contact: Overture`.
 
 ✅ **Services page complete — [→ Next: Portfolio Page](#-portfolio-page)**
 
@@ -92,7 +96,8 @@ Work top to bottom within each page. Finish one page before starting the next.
 | # | Section | File | Link |
 |---|---|---|---|
 | 1 | Hero | `XCP_Contact_P1_Hero.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Contact_P1_Hero.json) |
-| 2 | Contact Form ✅ **Use this now** | `XCP_Contact_P2_Form_Fallback.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Contact_P2_Form_Fallback.json) |
+| 2 | Contact Form — **Fallback** ✅ Use this first | `XCP_Contact_P2_Form_Fallback.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Contact_P2_Form_Fallback.json) |
+| 2 | Contact Form — **Overture** (swap in when ready) | `XCP_Contact_P2_Form_Overture.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Contact_P2_Form_Overture.json) |
 | 3 | Closing CTA | `XCP_Contact_P4_CTA.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Contact_P4_CTA.json) |
 
 > **Currently active form:** `XCP_Contact_P2_Form_Fallback.json` — sends enquiries directly to **info@xcphotography.co.uk** via WordPress mail. No API key or external service needed. Import this now and your contact page is live immediately.
@@ -105,9 +110,19 @@ Work top to bottom within each page. Finish one page before starting the next.
 
 > **Full guide: [OVERTURE_SETUP_GUIDE.md](OVERTURE_SETUP_GUIDE.md)**
 
-**Step 1:** In Elementor on the Contact page, delete the fallback form section and import `XCP_Contact_P2_Form_Overture.json` in its place. Field IDs are identical — no data loss.
+**Step 1:** On each page that has a fallback form (Contact page, Home page, Services page), open the page in Elementor, delete the fallback form section, and import the matching Overture version:
+
+| Page | Delete | Import instead |
+|---|---|---|
+| Contact page | `XCP_Contact_P2_Form_Fallback.json` section | `XCP_Contact_P2_Form_Overture.json` |
+| Home page | `XCP_Home_S6_Contact_Form.json` section | `XCP_Home_S6_Contact_Form_Overture.json` |
+| Services page | `XCP_Services_S3_Transformation_Bespoke.json` section | `XCP_Services_S3_Transformation_Bespoke_Overture.json` |
+
+All field IDs are identical across versions — no data loss.
 
 **Step 2:** In WordPress admin → Code Snippets (WPCode) → Add Snippet → PHP Snippet. Title it `XCP Overture Booking Integration`. Paste the snippet from [OVERTURE_SETUP_GUIDE.md](OVERTURE_SETUP_GUIDE.md) Step 2. Set status to **Active** and save.
+
+> The WPCode snippet fires for **any** form whose Form Name is `XCP Contact: Overture`. All three Overture versions use this exact name — one snippet covers all pages automatically.
 
 **Step 3:** Submit a test enquiry. Check Overture → Bookings for a new Pending booking. If nothing appears, check `wp-content/debug.log` for a line starting with `XCP Overture:` — it will tell you the exact HTTP error from Overture.
 

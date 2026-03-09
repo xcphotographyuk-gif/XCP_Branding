@@ -1,121 +1,56 @@
 {
   "version": "0.4",
-  "title": "Services – Transformation & Bespoke",
+  "title": "XCP Home: Contact Form: OVERTURE VERSION: Section 6",
   "type": "page",
   "content": [
     {
-      "id": "service_package_3",
+      "id": "home_form_overture_section",
       "elType": "section",
       "settings": {
-        "layout": "full_width",
-        "_title": "Brand Transformation Package"
+        "_title": "Home: Contact Form (Overture)",
+        "layout": "boxed",
+        "structure": "10"
       },
       "elements": [
         {
-          "id": "pkg3_img_col",
-          "elType": "column",
-          "settings": {},
-          "elements": [
-            {
-              "id": "pkg3_image",
-              "elType": "widget",
-              "widgetType": "image",
-              "settings": {
-                "image": {
-                  "url": "[uc_local]assets/images/services/package-transformation.jpg"
-                },
-                "image_size": "large"
-              }
-            }
-          ]
-        },
-        {
-          "id": "pkg3_content_col",
+          "id": "home_form_overture_col",
           "elType": "column",
           "settings": {
-            "content_position": "middle"
+            "_column_size": 100
           },
           "elements": [
             {
-              "id": "pkg3_label",
+              "id": "home_fo_eyebrow",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p>Premium Experience</p>"
+                "editor": "<p>Get in Touch</p>"
               }
             },
             {
-              "id": "pkg3_heading",
+              "id": "home_fo_heading",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
-                "title": "Brand Transformation",
-                "header_size": "h3"
-              }
-            },
-            {
-              "id": "pkg3_description",
-              "elType": "widget",
-              "widgetType": "text-editor",
-              "settings": {
-                "editor": "<p>Complete visual rebrand or extensive content library creation. A true partnership investment in your brand's future.</p><p><strong>What's Included:</strong></p><ul><li>Multi-day strategic photography project</li><li>Comprehensive brand strategy sessions</li><li>100+ professionally edited images</li><li>Multiple locations, concepts, & setups</li><li>Team headshots, environmental, lifestyle, product</li><li>Behind-the-scenes content capture</li><li>All formats optimized for every platform</li><li>Full commercial usage rights</li><li>12-month ongoing support & consulting</li><li>Quarterly refresh sessions available</li></ul><p><strong>Ideal For:</strong> Organizations ready for comprehensive brand transformation</p>"
-              }
-            },
-            {
-              "id": "pkg3_cta",
-              "elType": "widget",
-              "widgetType": "button",
-              "settings": {
-                "text": "Transform Your Brand",
-                "link": {
-                  "url": "#contact"
-                }
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "service_bespoke",
-      "elType": "section",
-      "settings": {
-        "_title": "Bespoke Enquiry",
-        "layout": "boxed"
-      },
-      "elements": [
-        {
-          "id": "bespoke_col",
-          "elType": "column",
-          "settings": {
-            "_column_size": 100,
-            "text_align": "center"
-          },
-          "elements": [
-            {
-              "id": "bespoke_heading",
-              "elType": "widget",
-              "widgetType": "heading",
-              "settings": {
-                "title": "Bespoke Visual Storytelling",
+                "title": "Tell Me About Your Vision",
                 "header_size": "h2",
                 "align": "center"
               }
             },
             {
-              "id": "bespoke_intro",
+              "id": "home_fo_intro",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p>Your brand has a story. I help you tell it through powerful, authentic, and cinematic imagery. For a detailed discussion about your project, please use the enquiry form below.</p>"
+                "editor": "<p>Send your enquiry and I will respond within 24 hours. No pressure, no scripts. Just an honest conversation about your brand.</p>"
               }
             },
             {
-              "id": "bespoke_form",
+              "id": "home_fo_widget",
               "elType": "widget",
               "widgetType": "form",
               "settings": {
-                "form_name": "Bespoke Project Enquiry",
+                "form_name": "XCP Contact: Overture",
                 "form_fields": [
                   {
                     "field_type": "text",
@@ -142,19 +77,11 @@
                     "width": "50"
                   },
                   {
-                    "field_type": "text",
-                    "field_label": "Business Name",
-                    "field_id": "businessName",
-                    "required": "no",
-                    "placeholder": "Your business or brand name",
-                    "width": "50"
-                  },
-                  {
                     "field_type": "select",
-                    "field_label": "Service of Interest",
+                    "field_label": "Type of Project",
                     "field_id": "name",
                     "required": "yes",
-                    "field_options": "Brand Photography Session\nDocumentary Business Storytelling\nCorporate Portraits & Headshots\nEvent & Performance Coverage\nEditorial Work\nFine Art Commission\nWorkshop or Photography Course\nBrand Foundation Package\nBrand Elevation Package\nBrand Transformation Package\nBespoke Project",
+                    "field_options": "Brand Photography Session\nDocumentary Business Storytelling\nCorporate Portraits & Headshots\nEvent & Performance Coverage\nEditorial Work\nFine Art Commission\nWorkshop or Photography Course\nNot Sure Yet - Let's Talk",
                     "width": "50"
                   },
                   {
@@ -184,11 +111,11 @@
                   },
                   {
                     "field_type": "textarea",
-                    "field_label": "Tell Me About Your Project",
+                    "field_label": "Tell Me About Your Brand & Vision",
                     "field_id": "message",
                     "required": "yes",
-                    "placeholder": "What is your brand story? What do you want to create? Include any links, ideas, or references that would help me understand your vision.",
-                    "rows": 6,
+                    "placeholder": "What does your brand stand for? Who is your ideal client? What do you hope authentic photography will do for your business?",
+                    "rows": 5,
                     "width": "100"
                   },
                   {
@@ -197,6 +124,13 @@
                     "field_id": "source",
                     "required": "no",
                     "default_value": "[xcp_page_url]",
+                    "width": "100"
+                  },
+                  {
+                    "field_type": "acceptance",
+                    "field_label": "Yes, I'd like to receive occasional updates from XC Photography: availability, workshops and editorial news. No spam, unsubscribe any time.",
+                    "field_id": "email_marketing_optin",
+                    "required": "no",
                     "width": "100"
                   },
                   {
@@ -213,11 +147,11 @@
                   "email"
                 ],
                 "email_to": "info@xcphotography.co.uk",
-                "email_subject": "New Bespoke Enquiry: {field_id:name} from {field_id:promoterName}",
-                "email_content": "Name: {field_id:promoterName}\nBusiness: {field_id:businessName}\nEmail: {field_id:email}\nPhone: {field_id:phone}\nService of Interest: {field_id:name}\nPreferred Date: {field_id:date}\nCounty / Region: {field_id:venueState}\nCountry: {field_id:venueCountry}\n\nProject Brief:\n{field_id:message}\n\nSource: {field_id:source}",
+                "email_subject": "New Enquiry: {field_id:name} from {field_id:promoterName}",
+                "email_content": "Name: {field_id:promoterName}\nEmail: {field_id:email}\nPhone: {field_id:phone}\nProject Type: {field_id:name}\nPreferred Date: {field_id:date}\nCounty / Region: {field_id:venueState}\nCountry: {field_id:venueCountry}\n\nMessage:\n{field_id:message}\n\nSource: {field_id:source}",
                 "button_text": "Send My Enquiry",
                 "button_size": "lg",
-                "button_align": "left",
+                "button_align": "center",
                 "success_message": "Thank you. Your enquiry is on its way. I will be in touch within 24 hours.",
                 "error_message": "Something went wrong. Please email me directly at info@xcphotography.co.uk."
               }
