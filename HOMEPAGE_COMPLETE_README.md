@@ -52,7 +52,7 @@ Your homepage is **100% ready** with professional, SEO-optimized, conversion-foc
 **Subhead:** "Iconic Imagery for Iconic Brands with an Edge"  
 **Primary CTA:** "Book a Consultation" (gold button → /booking)  
 **Secondary CTA:** "View Portfolio" (outline → /portfolio)  
-**Layout:** Full-screen (100vh), dark gradient overlay, Montserrat 700 heading
+**Layout:** Hero section with Raleway 700 heading and supporting typography; height and background as defined in the imported Elementor template.
 
 ### Parallax Section
 **Headline:** "Your Authentic Story. Their Undivided Attention."  

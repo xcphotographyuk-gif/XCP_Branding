@@ -34,11 +34,11 @@
 
 **What to Import (in this order):**
 - XCP_Header_Navigation.json + XCP_Footer.json (global elements first)
-- XCP_HomeP1_Hero_Gallery_FINAL.json → HomeP2 → HomeP3 → HomeP4 → HomeP5
-- XCP_About_P1_Hero_Story.json + XCP_About_P2_Process_CTA.json
+- XCP_Home_S1a_* templates (Home hero + gallery sections, imported in section order)
+- XCP_About_S1a_* templates (About hero + story sections, imported in section order)
 - XCP_Services_P1_Packages.json
 - XCP_Portfolio_P1_Hero_Filter.json + XCP_Portfolio_P2_Gallery_CTA.json
-- XCP_Contact_P1_Complete.json + XCP_ContactForm_Section.json
+- XCP_Contact_P1_Hero.json + XCP_Contact_P2_Form_Fallback.json
 
 ---
 

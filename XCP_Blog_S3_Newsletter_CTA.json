@@ -56,6 +56,9 @@
                 "submit_actions": [
                   "email"
                 ],
+                "email_to": "info@xcphotography.co.uk",
+                "email_subject": "New Newsletter Signup from XC Photography",
+                "email_content": "New newsletter signup:\n\nEmail: {field_id:newsletter_email}",
                 "button_text": "Subscribe",
                 "button_size": "md",
                 "button_align": "left"

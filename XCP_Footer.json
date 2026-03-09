@@ -142,7 +142,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<ul><li><a href='/services'>Brand Photography</a></li><li><a href='/services'>Documentary Storytelling</a></li><li><a href='/services'>Corporate Portraits</a></li><li><a href='/services'>Event Coverage</a></li><li><a href='/services'>Editorial Work</a></li></ul>"
+                "editor": "<ul><li><a href='/services/brand-photography'>Brand Photography</a></li><li><a href='/services/documentary'>Documentary Storytelling</a></li><li><a href='/services/corporate-portraits'>Corporate Portraits</a></li><li><a href='/services/events'>Event Coverage</a></li><li><a href='/services/editorial-work'>Editorial Work</a></li></ul>"
               }
             }
           ]
@@ -235,7 +235,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p><a href='/privacy-policy'>Privacy Policy</a><a href='/terms-and-conditions'>Terms &amp; Conditions</a><a href='/cookie-policy'>Cookie Policy</a></p>"
+                "editor": "<p><a href='/privacy-policy'>Privacy Policy</a> | <a href='/terms-and-conditions'>Terms &amp; Conditions</a> | <a href='/cookie-policy'>Cookie Policy</a></p>"
               }
             }
           ]

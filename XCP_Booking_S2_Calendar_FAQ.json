@@ -35,7 +35,7 @@
               "elType": "widget",
               "widgetType": "html",
               "settings": {
-                "html": "<!-- Overture / Calendly booking calendar embed -->\n<!-- Replace the src URL below with your Overture or Calendly embed URL -->\n<!-- Overture embed: Overture Admin → Booking Pages → Embed Code -->\n<!-- Calendly embed: calendly.com/[your-username]/discovery-call -->\n<div>\n  <iframe\n    src=\"https://calendly.com/xcphotographyuk/discovery-call\"\n    width=\"100%\"\n    height=\"700\"\n    title=\"Book a Discovery Call with XC Photography\"\n    loading=\"lazy\"\n    sandbox=\"allow-forms allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox\"\n    allow=\"payment; geolocation\"\n  ></iframe>\n</div>"
+                "html": "<!-- Overture / Calendly booking calendar embed -->\n<!-- Replace the src URL below with your Overture or Calendly embed URL -->\n<!-- Overture embed: Overture Admin → Booking Pages → Embed Code -->\n<!-- Calendly embed: calendly.com/[your-username]/discovery-call -->\n<div>\n  <iframe\n    src=\"https://calendly.com/xcphotographyuk/discovery-call\"\n    width=\"100%\"\n    height=\"700\"\n    title=\"Book a Discovery Call with XC Photography\"\n    loading=\"lazy\"\n    sandbox=\"allow-forms allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox\"\n  ></iframe>\n</div>"
               }
             }
           ]
