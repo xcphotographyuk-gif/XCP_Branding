@@ -1,0 +1,579 @@
+{
+  "version": "0.4",
+  "title": "XCP Workshops: Formats & Pricing — Section 2 of 3",
+  "type": "page",
+  "content": [
+    {
+      "id": "workshop_inperson_heading",
+      "elType": "section",
+      "settings": {
+        "_title": "In-Person Workshops Header",
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "inperson_hdr_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "inperson_eyebrow",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>In-Person Workshops</p>"
+              }
+            },
+            {
+              "id": "inperson_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Go Somewhere. Make Something.",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "inperson_intro",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>These are photography days built around real locations with real character. London. Brighton. Edinburgh. Beyond. Each workshop is designed around a specific photographic challenge — and a curated day that makes the experience worth the journey.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workshop_cards_inperson",
+      "elType": "section",
+      "settings": {
+        "_title": "In-Person Workshop Cards",
+        "layout": "boxed",
+        "structure": "50_50"
+      },
+      "elements": [
+        {
+          "id": "card_monopoly_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "monopoly_img",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "[uc_local]assets/images/workshop-monopoly-run.jpg"
+                }
+              }
+            },
+            {
+              "id": "monopoly_tag",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>London · Full Day · Max 10</p>"
+              }
+            },
+            {
+              "id": "monopoly_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "The Monopoly Run",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "monopoly_sub",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p><em>Documentary Photography from the Back of a Routemaster</em></p>"
+              }
+            },
+            {
+              "id": "monopoly_desc",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>A curated day aboard a hired Routemaster bus navigating iconic Monopoly board locations across London. Mayfair. Marylebone. Whitechapel. Liverpool Street. King's Cross. Photograph each neighbourhood's character, light, and human stories. Hop on and off at stops, shoot freely, regroup on the bus for on-the-spot reviews.</p><p>Not a standard photo walk. A moving classroom with one of the most photogenic vehicles ever built.</p>"
+              }
+            },
+            {
+              "id": "monopoly_includes",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p><strong>Includes:</strong> Routemaster hire, route map, shot list, on-bus reviews, printed contact sheet, arrival refreshments, curated London lunch, afternoon refreshments on the bus, post-processing editing session</p>"
+              }
+            },
+            {
+              "id": "monopoly_price",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "£895 per person · £1,595 per couple",
+                "header_size": "h4"
+              }
+            },
+            {
+              "id": "monopoly_freq",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p><em>Runs quarterly — spring and autumn. Next dates on enquiry.</em></p>"
+              }
+            },
+            {
+              "id": "monopoly_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Reserve a Place — The Monopoly Run",
+                "link": {
+                  "url": "#workshop-booking",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "left"
+              }
+            }
+          ]
+        },
+        {
+          "id": "card_brighton_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "brighton_img",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "[uc_local]assets/images/workshop-sound-celluloid.jpg"
+                }
+              }
+            },
+            {
+              "id": "brighton_tag",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Brighton · Half Day + Optional Evening · Max 8</p>"
+              }
+            },
+            {
+              "id": "brighton_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Sound &amp; Celluloid",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "brighton_sub",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p><em>Brighton Music &amp; Movies Photography Walk</em></p>"
+              }
+            },
+            {
+              "id": "brighton_desc",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Brighton's streets are a film set that nobody locked. From the Quadrophenia alley behind St James's Street to the Duke of York's Picturehouse (the UK's oldest cinema), to graffiti depicting iconic musicians on Kensington Gardens — this walk follows the city's musical and cinematic history through a camera lens.</p><p>Optionally continues into an evening gig or film screening, blending the day's learning with a real working environment.</p>"
+              }
+            },
+            {
+              "id": "brighton_includes",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p><strong>Includes:</strong> Route map with location notes, historical context cards, post-walk online gallery, arrival coffee, curated Brighton lunch, afternoon refreshments, post-walk editing session</p>"
+              }
+            },
+            {
+              "id": "brighton_price",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "£595 per person",
+                "header_size": "h4"
+              }
+            },
+            {
+              "id": "brighton_freq",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p><em>Monthly spring–autumn; bi-monthly in winter. Meeting point: Duke of York's Picturehouse, Preston Circus.</em></p>"
+              }
+            },
+            {
+              "id": "brighton_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Reserve a Place — Sound &amp; Celluloid",
+                "link": {
+                  "url": "#workshop-booking",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workshop_bespoke_inperson",
+      "elType": "section",
+      "settings": {
+        "_title": "Bespoke In-Person",
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "bespoke_ip_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "bespoke_ip_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Bespoke In-Person Workshops",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "bespoke_ip_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Private workshops are available for individuals, couples, or small groups (up to 4). You choose the location, the subject matter, and the pace. Xavier designs the day around your specific photographic goals — whether that is portraiture, street photography, documentary, or event coverage. Bespoke pricing on enquiry.</p>"
+              }
+            },
+            {
+              "id": "bespoke_ip_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Enquire About a Private Workshop",
+                "link": {
+                  "url": "#workshop-booking",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workshop_divider",
+      "elType": "section",
+      "settings": {
+        "_title": "Divider",
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "divider_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "section_divider",
+              "elType": "widget",
+              "widgetType": "divider",
+              "settings": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workshop_online_heading",
+      "elType": "section",
+      "settings": {
+        "_title": "Online Workshops Header",
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "online_hdr_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "online_eyebrow",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Online Workshops</p>"
+              }
+            },
+            {
+              "id": "online_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Learn From Wherever You Are",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "online_intro",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Live, interactive online workshops via Zoom. Small groups (maximum 8), real feedback, real critique. Not pre-recorded. Not passive. You show up, you shoot your assignments, and you talk through your work with Xavier directly.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workshop_online_cards",
+      "elType": "section",
+      "settings": {
+        "_title": "Online Workshop Cards",
+        "layout": "boxed",
+        "structure": "33"
+      },
+      "elements": [
+        {
+          "id": "online_col1",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_column_size_tablet": 50,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "online_w1_tag",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Online · 3 Sessions · Max 8</p>"
+              }
+            },
+            {
+              "id": "online_w1_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Brand Photography Fundamentals",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "online_w1_desc",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Three live sessions covering the core principles of photographing brands authentically — light, composition, storytelling, and delivery. Assignments between sessions. Image critiques in each session.</p><p>Suitable for photographers who want to add brand photography to their services, and for business owners who want to understand what makes commercial photography work.</p>"
+              }
+            },
+            {
+              "id": "online_w1_includes",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p><strong>Includes:</strong> 3 × 90-minute live Zoom sessions, assignment briefs, group image critique, private Slack channel for questions between sessions, session recordings</p>"
+              }
+            },
+            {
+              "id": "online_w1_price",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "£395 per person",
+                "header_size": "h4"
+              }
+            },
+            {
+              "id": "online_w1_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Reserve — Brand Fundamentals",
+                "link": {
+                  "url": "#workshop-booking",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "left"
+              }
+            }
+          ]
+        },
+        {
+          "id": "online_col2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_column_size_tablet": 50,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "online_w2_tag",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Online · 1 Session · Max 8</p>"
+              }
+            },
+            {
+              "id": "online_w2_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Music Photography Masterclass",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "online_w2_desc",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>A focused 2-hour session on the specific challenges of photographing live music — low light, fast movement, unpredictable stages, pit rules, and how to create images that tell the story of a performance rather than just document it.</p><p>Includes equipment recommendations for different budget levels and a camera settings walkthrough for common live music scenarios.</p>"
+              }
+            },
+            {
+              "id": "online_w2_includes",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p><strong>Includes:</strong> 2-hour live Zoom session, equipment guide, camera settings reference card (digital), Q&amp;A, session recording</p>"
+              }
+            },
+            {
+              "id": "online_w2_price",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "£195 per person",
+                "header_size": "h4"
+              }
+            },
+            {
+              "id": "online_w2_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Reserve — Music Masterclass",
+                "link": {
+                  "url": "#workshop-booking",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "left"
+              }
+            }
+          ]
+        },
+        {
+          "id": "online_col3",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "online_w3_tag",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Online · 1-to-1 · 90 Minutes</p>"
+              }
+            },
+            {
+              "id": "online_w3_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Portfolio Review &amp; Mentoring",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "online_w3_desc",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>A private 90-minute session focused entirely on your portfolio and your goals. Xavier reviews a selection of your current work and gives direct, honest feedback on what is working, what isn't, and what to focus on next.</p><p>Suitable for photographers at any stage — from those considering going professional to those looking to reposition an existing business.</p>"
+              }
+            },
+            {
+              "id": "online_w3_includes",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p><strong>Includes:</strong> 90-minute 1-to-1 Zoom session, written summary of key recommendations sent after the session, 30-day follow-up email access</p>"
+              }
+            },
+            {
+              "id": "online_w3_price",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "£295 per session",
+                "header_size": "h4"
+              }
+            },
+            {
+              "id": "online_w3_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Reserve — Portfolio Review",
+                "link": {
+                  "url": "#workshop-booking",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

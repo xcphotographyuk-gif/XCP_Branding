@@ -23,10 +23,15 @@ Work top to bottom within each page. Finish one page before starting the next.
 5. [📷 Portfolio Page](#-portfolio-page) — 2 files
 6. [📬 Contact Page](#-contact-page) — 4 files
 7. [📖 Blog / Stories Page](#-blog--stories-page) — 6 files
-8. [📅 Booking Page](#-booking-page) — 3 files
-9. [✅ Thank You Page](#-thank-you-page) — 1 file
-10. [🔒 Privacy Policy Page](#-privacy-policy-page) — 1 file
-11. [🌐 Global: Header & Footer](#-global-elements--header--footer)
+8. [✍️ Blog Post Template](#-blog-post-template--individual-post-layout) — 1 file (apply to each post)
+9. [🎵 Magazine Review Template](#-magazine-review-template--music--events) — 1 file (apply to each review)
+10. [🎓 Workshops Page](#-workshops-page) — 3 files
+11. [🛍️ Shop Page](#-shop-page) — 3 files
+12. [🖼️ Shop: Individual Print Product Page](#-shop-individual-print-product-page-template) — 1 file (use as template per print)
+13. [📅 Booking Page](#-booking-page) — 3 files
+14. [✅ Thank You Page](#-thank-you-page) — 1 file
+15. [🔒 Privacy Policy Page](#-privacy-policy-page) — 1 file
+16. [🌐 Global: Header & Footer](#-global-elements--header--footer)
 
 ---
 
@@ -182,7 +187,136 @@ The blog is structured as four distinct content channels, each with its own iden
 
 After importing each section, add an Elementor **Posts** widget inside each section where the placeholder note appears, filtered to the relevant category.
 
-✅ **Blog page complete — [→ Next: Booking Page](#-booking-page)**
+✅ **Blog page complete — [→ Next: Blog Post Template](#-blog-post-template--individual-post-layout)**
+
+---
+
+## ✍️ BLOG POST TEMPLATE — Individual Post Layout
+
+Apply this template when creating each individual blog post. Works for all three blog channels: Brand Photography / Educational, Stories & Notes, and Music & Shows.
+
+**How to use:**
+1. In WordPress, create a new **Post** (not Page) in the appropriate category
+2. Open the post with Elementor
+3. Click the folder icon (bottom-left) → Import Template → select `XCP_Blog_Post_Template.json` → Insert
+4. Replace all placeholder text with your post content
+5. Replace placeholder images with your actual post images
+6. Update the sidebar category tags to match the post's category
+7. Publish the post
+
+| # | Section | File | Link |
+|---|---|---|---|
+| — | Individual Post Layout (all channels) | `XCP_Blog_Post_Template.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Blog_Post_Template.json) |
+
+> **Template sections:** Post hero (category + title + meta) → Featured image → Two-column body (article left, sidebar right) → Pull quote panel → Author bio → Related posts / back link.
+>
+> **Sidebar:** Includes a brief Xavier bio, an enquiry CTA (Sessions from £1,495), and category tags. Update category tags per post.
+>
+> **Affiliate links:** Use this template for Photographer Hub (gear review) posts — insert affiliate product links naturally within the body copy. Add the standard affiliate disclosure at the top of each gear review post (see `BLOG_POST_TEMPLATE.md` for the disclosure text).
+
+✅ **Blog post template set — [→ Next: Magazine Review Template](#-magazine-review-template--music--events)**
+
+---
+
+## 🎵 MAGAZINE REVIEW TEMPLATE — Music & Events
+
+Apply this template to individual music and events reviews and previews. This is the layout for the **Music & Shows** channel — live reviews, gig previews, and event photography pieces.
+
+**How to use:**
+1. Create a new WordPress **Post** in the `Music and Shows` → `Show Reviews` category
+2. Open with Elementor → Import `XCP_Magazine_Review_Template.json`
+3. Replace all bracketed placeholders [like this] with real content
+4. Replace hero background image with your best shot from the event
+5. Update the setlist sidebar
+6. Replace star rating in the rating widget (★ = filled, ☆ = empty)
+7. Publish
+
+| # | Section | File | Link |
+|---|---|---|---|
+| — | Music & Events Review Layout | `XCP_Magazine_Review_Template.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Magazine_Review_Template.json) |
+
+> **Template sections:** Full-width event hero (image + title + meta) → Event info panel (star rating + event details) → Opening paragraph → Lead photo → Review body (article + setlist sidebar) → Highlights → Photographing the night → Verdict → Full gallery CTA.
+>
+> **The "Photographing the night" section** is unique to XCP reviews — it connects the writing to the images and demonstrates photographic expertise. Always include this. Reference the specific gear used, the light conditions, and what made this gig interesting (or difficult) to shoot.
+>
+> **Gallery CTA:** Points to `/portfolio` by default. Update to link to the specific show gallery page if you create one.
+
+✅ **Magazine review template set — [→ Next: Workshops Page](#-workshops-page)**
+
+---
+
+## 🎓 WORKSHOPS PAGE
+
+Create a new WordPress page titled **"Workshops"** at the URL `/workshops`. Import all three sections in order.
+
+| # | Section | File | Link |
+|---|---|---|---|
+| 1 | Hero + Philosophy + What's Included | `XCP_Workshop_S1_Hero.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Workshop_S1_Hero.json) |
+| 2 | In-Person &amp; Online Workshop Formats + Pricing | `XCP_Workshop_S2_Formats_Pricing.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Workshop_S2_Formats_Pricing.json) |
+| 3 | Deposit Booking Form | `XCP_Workshop_S3_Deposit_Booking.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Workshop_S3_Deposit_Booking.json) |
+
+> **In-person workshops:** The Monopoly Run (London, £895/person or £1,595/couple) and Sound & Celluloid (Brighton, £595/person). All hospitality, post-processing session, and personalised camera settings card included in every in-person workshop.
+>
+> **Online workshops:** Brand Photography Fundamentals — 3 sessions (£395), Music Photography Masterclass — 1 session (£195), Portfolio Review & Mentoring — 1-to-1 (£295).
+>
+> **Deposit process:** The booking form (Section 3) sends enquiries to info@xcphotography.co.uk. After responding to confirm availability, send the deposit payment link manually (via Stripe, PayPal, or your preferred payment method). Deposits: 50% for in-person, full payment for online. Balance due 14 days before the workshop date.
+>
+> **Anchor link:** The "Reserve Your Place" buttons throughout the page link to `#workshop-booking` — the booking form section has `css_id: workshop-booking` set in Elementor → Advanced → CSS ID. Confirm this is set after import.
+>
+> **Adding workshops to navigation:** Add "Workshops" to the main navigation in `XCP_Header_Navigation.json`. Re-import the header template, or add the menu item directly via WordPress → Appearance → Menus.
+
+✅ **Workshops page complete — [→ Next: Shop Page](#-shop-page)**
+
+---
+
+## 🛍️ SHOP PAGE
+
+Create a new WordPress page titled **"Shop"** at the URL `/shop`. Import all three sections in order. WooCommerce must be installed and active before importing — the product listing widgets require it.
+
+| # | Section | File | Link |
+|---|---|---|---|
+| 1 | Hero + Collections Intro | `XCP_Shop_S1_Hero_Collections.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Shop_S1_Hero_Collections.json) |
+| 2 | Product Categories (Prints / Books / Gifts / Workshop Passes) | `XCP_Shop_S2_Categories.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Shop_S2_Categories.json) |
+
+> **WooCommerce setup:** See `SHOP_SETUP_GUIDE.md` for full setup instructions. See `PRODUCT_CSV_IMPORT_GUIDE.md` for importing the initial product list via CSV. Install WooCommerce → Stripe → Printify (or Gelato) before adding products.
+>
+> **After import — add product widgets:** In Section 2, after each category's "Browse" button, add an Elementor **WooCommerce Products** widget filtered to that category (Prints / Books / Gifts / Workshop Passes). Set to 3 columns, 6 products per category.
+>
+> **Categories to create in WooCommerce:** Products → Categories: `prints`, `books`, `gifts`, `workshop-passes`. Sub-categories for prints: `framed-prints`, `unframed-prints`, `limited-editions`.
+>
+> **Payment:** WooCommerce Stripe plugin (recommended). See `SHOP_SETUP_GUIDE.md` Part 1 for Stripe setup.
+>
+> **Shipping zones:** UK Standard, UK Express, International. Configure in WooCommerce → Settings → Shipping.
+
+✅ **Shop page complete — [→ Next: Individual Print Product Page Template](#-shop-individual-print-product-page-template)**
+
+---
+
+## 🖼️ SHOP: Individual Print Product Page Template
+
+This template is applied to **each individual print product page** in WooCommerce. Every print gets its own Elementor-designed product page — not a generic WooCommerce default. Each print has a unique description, location note, artist note, and gallery of images (main shot, framed version, detail crop).
+
+**How to set up:**
+1. In WooCommerce → Products → Add New, create the product (name, price, size variants, frame variants)
+2. Open the product page with Elementor (enable Elementor on Products in Elementor → Settings → Post Types)
+3. Import `XCP_Shop_Product_Print_Template.json`
+4. Replace all placeholder content with content specific to this print
+5. In the product info column: replace the WooCommerce note widget with the actual WooCommerce **Add to Cart** and **Product Price** widgets (from Elementor Pro's WooCommerce widget library)
+6. Publish
+
+| # | Template | File | Link |
+|---|---|---|---|
+| — | Fine Art Print Product Page | `XCP_Shop_Product_Print_Template.json` | [→ Open](https://github.com/xcphotographyuk-gif/XCP_Branding/blob/copilot/audit-website-structure/XCP_Shop_Product_Print_Template.json) |
+
+> **Unique content per print:** Every print gets its own "About This Print" story (2–4 sentences), "A Note From Xavier" (2–3 sentences), and location/context metadata. Never use generic descriptions like "This image was taken in Brighton and is available in A3, A2 etc." — write a specific story for each image.
+>
+> **Framed and unframed options:** In WooCommerce, set up product variations: Size (A4 / A3 / A2 / A1 / 60×90 / 90×120) × Format (Unframed / Matt White Frame / Matt Black Frame / Natural Oak Frame). Price each variation separately.
+>
+> **Limited editions:** If the print is a limited edition, add edition size and number remaining to the product info column. Update the `[X] remaining` line as editions sell.
+>
+> **Books and gifts:** Use the same template approach — import, customise content per product, replace the WooCommerce note with live product widgets. Books and gifts will have simpler variant structures (typically just quantity).
+
+✅ **Product page template set — [→ Next: Booking Page](#-booking-page)**
 
 ---
 

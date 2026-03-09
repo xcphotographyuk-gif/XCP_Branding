@@ -266,11 +266,22 @@ Done. Every form submission named `XCP Contact: Overture` will now create a book
 
 **Yes — the form works on any page.** The WPCode snippet fires for any Elementor form whose **Form Name** is `XCP Contact: Overture`, regardless of which page it is on. No additional snippet or setup is needed per page.
 
+### Can I just copy the form section from the Contact page?
+
+**Yes, absolutely.** In Elementor you can:
+- **Copy/paste:** Right-click the form section in Elementor → Copy → open another page → right-click where you want it → Paste. The form name is preserved, so the WPCode snippet fires on that page too.
+- **Import the JSON:** Import any of the three Overture form JSON files on any page — they all share the same Form Name and all work with the same WPCode snippet.
+- **Use the Contact page form JSON directly on a new page:** Import `XCP_Contact_P2_Form_Overture.json` on any new page. It will work immediately for email, and for Overture once the WPCode snippet is active.
+
+> **One form JSON, any number of pages.** There is no limit. Every page that has a form with the name `XCP Contact: Overture` will send to your email and (when the snippet is active and your API key is correct) to Overture automatically.
+
+### The three dedicated Overture form files
+
 Each of the three pages with an enquiry form has a dedicated Overture JSON file already in this repository:
 
 | Page | Overture JSON to import |
 |---|---|
-| Contact page | `XCP_Contact_P2_Form_Overture.json` ✅ already active |
+| Contact page | `XCP_Contact_P2_Form_Overture.json` ✅ already active — email confirmed working |
 | Home page | `XCP_Home_S6_Contact_Form_Overture.json` |
 | Services page | `XCP_Services_S3_Transformation_Bespoke_Overture.json` |
 

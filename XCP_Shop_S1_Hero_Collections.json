@@ -1,0 +1,145 @@
+{
+  "version": "0.4",
+  "title": "XCP Shop: Hero + Collections Intro — Section 1 of 3",
+  "type": "page",
+  "content": [
+    {
+      "id": "shop_hero",
+      "elType": "section",
+      "settings": {
+        "_title": "Shop Hero",
+        "layout": "full_width",
+        "background_image": {
+          "url": "[uc_local]assets/images/shop-hero.jpg"
+        },
+        "content_position": "middle"
+      },
+      "elements": [
+        {
+          "id": "shop_hero_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "shop_eyebrow",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>The XC Photography Shop</p>"
+              }
+            },
+            {
+              "id": "shop_hero_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Photography That Belongs on Your Walls",
+                "header_size": "h1",
+                "align": "center"
+              }
+            },
+            {
+              "id": "shop_hero_sub",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Fine art prints, limited edition photographs, photobooks, and photography gifts — sourced, printed, and delivered with the same attention to detail that goes into every shoot. Available framed or unframed. Shipped across the UK.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shop_trust_bar",
+      "elType": "section",
+      "settings": {
+        "_title": "Shop Trust Bar",
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "shop_trust_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "shop_trust_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>✦ Giclée fine art printing &nbsp;&nbsp;|&nbsp;&nbsp; ✦ Framed or unframed &nbsp;&nbsp;|&nbsp;&nbsp; ✦ Limited editions signed and numbered &nbsp;&nbsp;|&nbsp;&nbsp; ✦ Shipped UK-wide &nbsp;&nbsp;|&nbsp;&nbsp; ✦ Gift wrapping available</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shop_intro_text",
+      "elType": "section",
+      "settings": {
+        "_title": "Shop Introduction",
+        "layout": "boxed",
+        "structure": "50_50"
+      },
+      "elements": [
+        {
+          "id": "shop_intro_col_text",
+          "elType": "column",
+          "settings": {
+            "_column_size": 55,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "shop_intro_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Images Worth Living With",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "shop_intro_body",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Every image in this shop has been photographed, edited, and selected by Xavier Clarke. Nothing is stock. Nothing is generic. These are images from real shoots, real places, and real moments — printed on archival papers and canvases that will hold their quality for decades.</p><p>Prints are available in a range of sizes, framed and unframed. Frames are sourced from UK suppliers. All prints are produced using giclée printing to museum-standard specifications.</p><p>Limited editions are signed and numbered by Xavier. Once an edition sells out, it will not be reprinted in that size or format. If something catches your eye, it is worth not waiting.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "shop_intro_col_img",
+          "elType": "column",
+          "settings": {
+            "_column_size": 45,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "shop_intro_img",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "[uc_local]assets/images/shop-print-detail.jpg"
+                },
+                "caption_source": "custom",
+                "caption": "Giclée fine art print — available framed or unframed. UK delivery."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
