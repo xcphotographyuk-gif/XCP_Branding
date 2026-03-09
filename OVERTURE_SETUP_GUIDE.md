@@ -593,6 +593,7 @@ Work through this checklist in order:
 | 401 Unauthorized and `OVERTURE_FORM_KEY` is defined in wp-config.php | The key value in wp-config.php may contain a typo, or the snippet uses the wrong constant name | Two checks: (1) open wp-config.php in File Manager, copy the value of `OVERTURE_FORM_KEY` and compare it character-by-character against the key shown in Overture → Settings → API; (2) in the WPCode snippet, confirm the api_key line reads `defined( 'OVERTURE_FORM_KEY' ) ? OVERTURE_FORM_KEY : 'YOUR_OVERTURE_API_KEY'` — if you see your actual key value inside `defined( '...' )` that is the wrong pattern and the snippet will never use the constant. |
 | Browser console or security scanner warns about CSP / unsafe-eval | Stripe.js requires string evaluation to run | See the CSP note below. |
 | Browser or accessibility scanner warns "form field has no id or name" on the date picker | Flatpickr date picker internal month and year inputs have no id/name by default | See "Date picker autofill fix" below. |
+| Accessibility scanner or Chrome DevTools warns "Duplicate form field id in the same form" — 8 resources | All form fields in the JSON templates previously had empty `custom_id` values, so Elementor generated the same blank ID for every field in the form | Re-import the updated form JSON files from this repository (all six `XCP_*Form*.json` files have been fixed with unique `custom_id` values). After re-import Elementor will render unique `id="form-field-name"`, `id="form-field-email"` etc. on each field. |
 
 ---
 
@@ -701,6 +702,17 @@ define( 'OVERTURE_FORM_KEY', 'paste-your-key-here' );
 ```
 
 The snippet checks for that constant first and uses it automatically.
+
+---
+
+**Should I remove the form from all pages because of the browser audit warnings?**
+
+No. The forms are essential — they are the primary way clients enquire and book. The audit warnings that triggered this question are all fixable without removing any forms:
+
+- **CSP `unsafe-eval` blocked** — caused by Stripe.js, not your form. If you have a CSP header, add `'unsafe-eval'` to `script-src` as shown in the CSP note below. If you have no CSP header, this is an advisory warning only and nothing is actually blocked.
+- **Duplicate form field id** — caused by empty `custom_id` values in the old JSON templates. All six form JSON files have been updated with unique field IDs. Re-import them from this repository to fix the warnings permanently. Do not delete the form.
+- **Form field with no id or name** (2 nodes) — caused by flatpickr's internal calendar controls (month and year spinners). These are not submitted form fields. Fix via the WPCode JavaScript snippet described in the "Date picker autofill fix" section below.
+- **Deprecated feature warnings** (`partytown-sandbox-sw.html`, `compat.min.js`) — these come from third-party WordPress and hosting scripts, not from the XCP form templates. They cannot be fixed by removing or changing the enquiry form.
 
 ---
 

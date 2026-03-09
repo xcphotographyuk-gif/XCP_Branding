@@ -123,7 +123,9 @@
                     "field_id": "promoterName",
                     "required": "yes",
                     "placeholder": "First and last name",
-                    "width": "50"
+                    "width": "50",
+                    "custom_id": "name",
+                    "_id": "u4cfszc"
                   },
                   {
                     "field_type": "email",
@@ -131,7 +133,9 @@
                     "field_id": "email",
                     "required": "yes",
                     "placeholder": "hello@yourbrand.co.uk",
-                    "width": "50"
+                    "width": "50",
+                    "custom_id": "email",
+                    "_id": "va5m9er"
                   },
                   {
                     "field_type": "tel",
@@ -139,7 +143,9 @@
                     "field_id": "phone",
                     "required": "no",
                     "placeholder": "+44 (0) 7XXX XXXXXX",
-                    "width": "50"
+                    "width": "50",
+                    "custom_id": "phone",
+                    "_id": "2sc5sd7"
                   },
                   {
                     "field_type": "text",
@@ -147,7 +153,9 @@
                     "field_id": "businessName",
                     "required": "no",
                     "placeholder": "Your business or brand name",
-                    "width": "50"
+                    "width": "50",
+                    "custom_id": "business_name",
+                    "_id": "ixrn9fj"
                   },
                   {
                     "field_type": "select",
@@ -155,7 +163,9 @@
                     "field_id": "name",
                     "required": "yes",
                     "field_options": "Brand Photography Session\nDocumentary Business Storytelling\nCorporate Portraits & Headshots\nEvent & Performance Coverage\nEditorial Work\nFine Art Commission\nWorkshop or Photography Course\nBrand Foundation Package\nBrand Elevation Package\nBrand Transformation Package\nBespoke Project",
-                    "width": "50"
+                    "width": "50",
+                    "custom_id": "service_interest",
+                    "_id": "8bxh3s2"
                   },
                   {
                     "field_type": "date",
@@ -163,7 +173,9 @@
                     "field_id": "date",
                     "required": "no",
                     "placeholder": "When works for a quick call?",
-                    "width": "50"
+                    "width": "50",
+                    "custom_id": "discovery_date",
+                    "_id": "6szxfu2"
                   },
                   {
                     "field_type": "text",
@@ -171,7 +183,9 @@
                     "field_id": "venueState",
                     "required": "no",
                     "placeholder": "e.g. East Sussex, Greater London",
-                    "width": "50"
+                    "width": "50",
+                    "custom_id": "county",
+                    "_id": "b212qgb"
                   },
                   {
                     "field_type": "select",
@@ -180,7 +194,9 @@
                     "required": "no",
                     "field_options": "United Kingdom\nInternational",
                     "default_value": "United Kingdom",
-                    "width": "50"
+                    "width": "50",
+                    "custom_id": "country",
+                    "_id": "5gu1foz"
                   },
                   {
                     "field_type": "textarea",
@@ -189,7 +205,9 @@
                     "required": "yes",
                     "placeholder": "What is your brand story? What do you want to create? Include any links, ideas, or references that would help me understand your vision.",
                     "rows": 6,
-                    "width": "100"
+                    "width": "100",
+                    "custom_id": "project_details",
+                    "_id": "sep3muf"
                   },
                   {
                     "field_type": "hidden",
@@ -197,7 +215,9 @@
                     "field_id": "source",
                     "required": "no",
                     "default_value": "[xcp_page_url]",
-                    "width": "100"
+                    "width": "100",
+                    "custom_id": "source_url",
+                    "_id": "jnn3cb9"
                   },
                   {
                     "field_type": "acceptance",
@@ -206,7 +226,9 @@
                     "required": "yes",
                     "width": "100",
                     "custom_messages": "yes",
-                    "required_message": "Please confirm you have read and agree to the Privacy Policy before submitting."
+                    "required_message": "Please confirm you have read and agree to the Privacy Policy before submitting.",
+                    "custom_id": "privacy_consent",
+                    "_id": "1hxwc6v"
                   }
                 ],
                 "submit_actions": [

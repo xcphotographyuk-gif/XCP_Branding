@@ -59,7 +59,9 @@
                     "field_id": "promoterName",
                     "required": "yes",
                     "placeholder": "First and last name",
-                    "width": "50"
+                    "width": "50",
+                    "custom_id": "name",
+                    "_id": "qjbf2ns"
                   },
                   {
                     "field_type": "email",
@@ -67,7 +69,9 @@
                     "field_id": "email",
                     "required": "yes",
                     "placeholder": "hello@yourbrand.co.uk",
-                    "width": "50"
+                    "width": "50",
+                    "custom_id": "email",
+                    "_id": "20ewavr"
                   },
                   {
                     "field_type": "tel",
@@ -75,7 +79,9 @@
                     "field_id": "phone",
                     "required": "no",
                     "placeholder": "+44 (0) 7XXX XXXXXX",
-                    "width": "50"
+                    "width": "50",
+                    "custom_id": "phone",
+                    "_id": "6iwrh62"
                   },
                   {
                     "field_type": "select",
@@ -83,7 +89,9 @@
                     "field_id": "name",
                     "required": "yes",
                     "field_options": "Brand Photography Session\nDocumentary Business Storytelling\nCorporate Portraits & Headshots\nEvent & Performance Coverage\nEditorial Work\nFine Art Commission\nWorkshop or Photography Course\nNot Sure Yet - Let's Talk",
-                    "width": "50"
+                    "width": "50",
+                    "custom_id": "project_type",
+                    "_id": "b0h3j3w"
                   },
                   {
                     "field_type": "date",
@@ -91,7 +99,9 @@
                     "field_id": "date",
                     "required": "no",
                     "placeholder": "When works for a quick call?",
-                    "width": "50"
+                    "width": "50",
+                    "custom_id": "discovery_date",
+                    "_id": "otxdt82"
                   },
                   {
                     "field_type": "text",
@@ -99,7 +109,9 @@
                     "field_id": "venueState",
                     "required": "no",
                     "placeholder": "e.g. East Sussex, Greater London",
-                    "width": "50"
+                    "width": "50",
+                    "custom_id": "county",
+                    "_id": "01crxbq"
                   },
                   {
                     "field_type": "select",
@@ -108,7 +120,9 @@
                     "required": "no",
                     "field_options": "United Kingdom\nInternational",
                     "default_value": "United Kingdom",
-                    "width": "50"
+                    "width": "50",
+                    "custom_id": "country",
+                    "_id": "pwmsnu6"
                   },
                   {
                     "field_type": "textarea",
@@ -117,7 +131,9 @@
                     "required": "yes",
                     "placeholder": "What does your brand stand for? Who is your ideal client? What do you hope authentic photography will do for your business? The more you share, the better I can prepare.",
                     "rows": 6,
-                    "width": "100"
+                    "width": "100",
+                    "custom_id": "brand_vision",
+                    "_id": "dr31yay"
                   },
                   {
                     "field_type": "hidden",
@@ -125,14 +141,18 @@
                     "field_id": "source",
                     "required": "no",
                     "default_value": "[xcp_page_url]",
-                    "width": "100"
+                    "width": "100",
+                    "custom_id": "source_url",
+                    "_id": "nwrbime"
                   },
                   {
                     "field_type": "acceptance",
                     "field_label": "Yes, I'd like to receive occasional updates from XC Photography: availability, workshops and editorial news. No spam, unsubscribe any time.",
                     "field_id": "email_marketing_optin",
                     "required": "no",
-                    "width": "100"
+                    "width": "100",
+                    "custom_id": "marketing_consent",
+                    "_id": "8gd555g"
                   },
                   {
                     "field_type": "acceptance",
@@ -141,7 +161,9 @@
                     "required": "yes",
                     "width": "100",
                     "custom_messages": "yes",
-                    "required_message": "Please confirm you have read and agree to the Privacy Policy before submitting."
+                    "required_message": "Please confirm you have read and agree to the Privacy Policy before submitting.",
+                    "custom_id": "privacy_consent",
+                    "_id": "4qqfipt"
                   }
                 ],
                 "submit_actions": [
