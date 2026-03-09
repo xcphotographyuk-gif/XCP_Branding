@@ -34,18 +34,37 @@ The JSON template (`XCP_Contact_P2_Form_Overture.json`) has everything pre-built
 > |---|---|---|
 > | Wrong hook | `elementor_pro/forms/webhooks/request_args` | Sends data in Elementor's format, not Overture's |
 > | API key in `defined()` | `defined( 'my-actual-api-key' )` | `defined()` is a PHP function that checks if a constant exists by **name**. The constant name is always `OVERTURE_FORM_KEY`. Putting your key value inside `defined()` will always return false, so the snippet falls through to the (wrong) fallback and 401s. |
-> | Corrupted fallback key | Long string with spaces or non-key characters | The fallback must be exactly `'YOUR_OVERTURE_API_KEY'` (to replace) or your actual key with no extra characters |
+> | Corrupted or placeholder fallback key | Long string with spaces, or still says `YOUR_OVERTURE_API_KEY` | The fallback must be replaced with your actual key from Overture → Settings → API, copied exactly with no extra characters or spaces |
 >
 > The correct first line of the snippet is always: `add_action( 'elementor_pro/forms/new_record',`
 >
-> **Step 2 — Set your API key in the snippet.**
-> In the snippet from Step 2, find the line:
+> ---
+>
+> ### ❌ WRONG — do not use this pattern
+>
+> ```php
+> // WRONG: the key value is inside defined() — this always returns false
+> $api_key = defined( 'your-api-key-value' ) ? OVERTURE_FORM_KEY : 'some-fallback';
 > ```
+>
+> **Why it always fails:** `defined()` checks whether a PHP *constant name* exists. A key value (e.g. something ending in `=`) is not a constant name — it is just a string. PHP will never find a constant with that name, so `defined()` returns `false` every time, and the snippet uses the fallback instead of your real key. If the fallback is wrong (a placeholder or a fake key), every API call gets rejected with 401 Unauthorized.
+>
+> ### ✅ CORRECT — this is what the line must look like
+>
+> ```php
+> // CORRECT: the constant NAME goes inside defined(), your key goes after the colon
 > $api_key = defined( 'OVERTURE_FORM_KEY' ) ? OVERTURE_FORM_KEY : 'YOUR_OVERTURE_API_KEY';
 > ```
-> Replace `YOUR_OVERTURE_API_KEY` with your actual key from **Overture → Settings → API**. Copy the key exactly as shown, including any `=` signs at the end. Do not add quotes around it when pasting — the quotes are already in the code.
 >
-> **Key format note:** Web form keys from Overture are typically base64-encoded strings and may include letters, numbers, `+`, `/`, and `=` characters. Older keys may be hex strings (digits 0-9 and letters a-f only). Either way, copy the key exactly as Overture displays it and paste it without modification.
+> - `'OVERTURE_FORM_KEY'` inside `defined()` is the constant **name** — it never changes, copy it exactly as shown.
+> - `'YOUR_OVERTURE_API_KEY'` after the `:` is the **only thing you replace** — paste your real key from Overture → Settings → API here, keeping the surrounding single quotes.
+>
+> ---
+>
+> **Step 2 — The snippet below is ready to paste. No editing required.**
+> The API key is already filled in. Copy the entire snippet from Step 2 of this guide and paste it into WPCode exactly as shown — do not modify any part of it.
+>
+> **Key format note:** Web form keys from Overture are typically base64-encoded strings and may include letters, numbers, `+`, `/`, and `=` characters. Older keys may be hex strings (digits 0-9 and letters a-f only). Either way, copy the key exactly as Overture displays it and paste it without modification. Do not add or remove any characters.
 >
 > **Step 3 — Confirm the snippet is Active.**
 > WordPress admin → Code Snippets (WPCode) → find the Overture snippet → the toggle at the top of the page must be **blue (Active)**. If it is grey, click it, then click **Save Snippet**.
@@ -202,7 +221,7 @@ add_action(
 );
 ```
 
-6. **Set the API key** — the snippet reads `OVERTURE_FORM_KEY` automatically if that constant is defined in your `wp-config.php`. If you can see a line like `define( 'OVERTURE_FORM_KEY', '…' );` in that file, the snippet will use it and you do not need to change anything. If you do not have that constant, find the text `YOUR_OVERTURE_API_KEY` in the code you just pasted and replace it with your actual token from **Overture → Settings → Integrations → API Keys**.
+6. **Set the API key** — find the line `$api_key = defined( 'OVERTURE_FORM_KEY' ) ? OVERTURE_FORM_KEY : 'YOUR_OVERTURE_API_KEY';` in the code you just pasted. Replace `YOUR_OVERTURE_API_KEY` (the text between the last pair of single quotes) with your actual key from **Overture → Settings → API**. Keep the surrounding single quotes — only replace the text inside them.
 7. At the top of the page, toggle the snippet from **Inactive** to **Active**
 8. Click **Save Snippet**
 
@@ -236,9 +255,7 @@ Before submitting a test enquiry, confirm these four things in WPCode:
 | Insert Method | Auto Insert |
 | Location | Run Everywhere |
 
-The code must contain either:
-- `OVERTURE_FORM_KEY` as a constant already defined in your `wp-config.php` (snippet reads it automatically), or
-- `YOUR_OVERTURE_API_KEY` replaced by your actual token from Overture → Settings → Integrations → API Keys
+The code must contain your actual Overture API key as the fallback value — `YOUR_OVERTURE_API_KEY` replaced with the key shown in Overture → Settings → API — or `OVERTURE_FORM_KEY` must be defined in `wp-config.php`.
 
 **If you previously had an older snippet titled "XCP Overture Authorization Header"** — delete it. It used the wrong hook (`elementor_pro/forms/webhooks/request_args`) and sent data in Elementor's format instead of Overture's expected JSON. The new snippet above replaces it entirely.
 
@@ -556,7 +573,7 @@ Work through this checklist in order:
 | I opened `wp-config.php` but cannot find the line `define( 'WP_DEBUG', false );` anywhere in it | Your hosting uses a minimal wp-config.php that just loads another config file | This is normal for some hosts. Add `define( 'WP_DEBUG', true );` and `define( 'WP_DEBUG_LOG', true );` as new lines immediately before the final `require_once ABSPATH . 'wp-settings.php';` line, then save. Do not delete any existing lines. |
 | "Invalid file" on import | Non-standard fields in the JSON | Re-download the file from the repo Raw view. |
 | Form submits successfully (green tick) but no booking in Overture | WPCode snippet not Active, wrong snippet version, or Form Name mismatch | Check: (1) snippet exists and is Active; (2) snippet begins with `add_action('elementor_pro/forms/new_record'`; (3) Form Name in Elementor is exactly `XCP Contact: Overture`. Enable WP_DEBUG_LOG and check the log for `XCP Overture:` lines. |
-| `XCP Overture: HTTP 401` in debug log | API key wrong, expired, or snippet Inactive | Regenerate key in Overture → Settings → API. If `OVERTURE_FORM_KEY` is defined in wp-config.php, update that value. Otherwise find `YOUR_OVERTURE_API_KEY` in the WPCode snippet and replace it. Copy the key exactly as Overture shows it, including any `=` signs. |
+| `XCP Overture: HTTP 401` in debug log | API key wrong, expired, or snippet Inactive | Regenerate key in Overture → Settings → API. Find `YOUR_OVERTURE_API_KEY` in the WPCode snippet and replace it with the new key. If `OVERTURE_FORM_KEY` is defined in wp-config.php, update that value instead. Make sure the snippet toggle is blue (Active). |
 | `XCP Overture: HTTP 401` and `OVERTURE_FORM_KEY` in wp-config.php | Key value in wp-config.php contains a typo or the snippet has the wrong variable in `defined()` | Check two things: (1) in wp-config.php, confirm the key value matches Overture → Settings → API exactly; (2) in the WPCode snippet, confirm the line reads `defined( 'OVERTURE_FORM_KEY' )` — not `defined( 'your-key-value' )`. The constant name is always `OVERTURE_FORM_KEY`. |
 | `XCP Overture: HTTP 403` in debug log | Key lacks permission | Regenerate key in Overture with Booking write scope |
 | `XCP Overture: HTTP 404` in debug log | Wrong endpoint URL | The URL in the snippet is hardcoded as `https://xcphotography.overturehq.com/api/bookings`. Confirm your Overture subdomain matches. |
@@ -564,7 +581,7 @@ Work through this checklist in order:
 | `XCP Overture: connection error` in debug log | WordPress cannot reach overturehq.com | Temporary network issue. Test again. If persistent, check hosting firewall is not blocking outbound HTTPS. |
 | You see r.stripe.com rows in the Network tab | Normal — Stripe.js telemetry beacons | Ignore them. Unrelated to your form. |
 | Form submits but no email received | WordPress mail not configured | Install and configure WP Mail SMTP (free). Without it, WordPress uses PHP mail which many hosts block. |
-| 401 Unauthorized and `OVERTURE_FORM_KEY` is defined in wp-config.php | The key value in wp-config.php may contain a typo, or the snippet uses the wrong constant name | Two checks: (1) open wp-config.php in File Manager, copy the value of `OVERTURE_FORM_KEY` and compare it character-by-character against the key shown in Overture → Settings → API; (2) in the WPCode snippet, confirm the api_key line reads `defined( 'OVERTURE_FORM_KEY' ) ? OVERTURE_FORM_KEY : 'YOUR_OVERTURE_API_KEY'` — if you see your key value inside `defined( '...' )` that is the wrong pattern and the snippet will never use the constant. |
+| 401 Unauthorized and `OVERTURE_FORM_KEY` is defined in wp-config.php | The key value in wp-config.php may contain a typo, or the snippet uses the wrong constant name | Two checks: (1) open wp-config.php in File Manager, copy the value of `OVERTURE_FORM_KEY` and compare it character-by-character against the key shown in Overture → Settings → API; (2) in the WPCode snippet, confirm the api_key line reads `defined( 'OVERTURE_FORM_KEY' ) ? OVERTURE_FORM_KEY : 'YOUR_OVERTURE_API_KEY'` — if you see your actual key value inside `defined( '...' )` that is the wrong pattern and the snippet will never use the constant. |
 | Browser console or security scanner warns about CSP / unsafe-eval | Stripe.js requires string evaluation to run | See the CSP note below. |
 | Browser or accessibility scanner warns "form field has no id or name" on the date picker | Flatpickr date picker internal input has no id/name by default | See "Optional: date picker autofill fix" below. |
 
@@ -648,17 +665,25 @@ Notes:
 
 ## Frequently asked questions
 
-**Should I add the web form key (from Overture → Settings → API) directly into the WPCode snippet?**
+**Where exactly does my Overture web form key go in the WPCode snippet?**
 
-Yes. In the snippet, find this line:
+Your key goes as the **fallback value** on this one line — after the `:`, inside the single quotes:
 
 ```
 $api_key = defined( 'OVERTURE_FORM_KEY' ) ? OVERTURE_FORM_KEY : 'YOUR_OVERTURE_API_KEY';
 ```
 
-Replace `YOUR_OVERTURE_API_KEY` with your actual key from Overture. Copy it exactly as shown in Overture, including any `=` characters at the end. The key may be a hex string or a base64-encoded string depending on which type Overture issued.
+Replace only `YOUR_OVERTURE_API_KEY` with your actual key from **Overture → Settings → API**. Keep the surrounding single quotes — do not remove them. Everything else on this line stays exactly as shown.
 
-The alternative is to add `define( 'OVERTURE_FORM_KEY', 'your-actual-key-here' );` to `wp-config.php` before the final `require_once` line. If you do that, the snippet picks it up automatically and you can leave `YOUR_OVERTURE_API_KEY` as-is in the snippet.
+**Do not** put your key value inside `defined( '...' )` — that part always stays as `'OVERTURE_FORM_KEY'` (the constant name, never the key value).
+
+If you would rather not put the key directly in the snippet, add this line to `wp-config.php` before the final `require_once` line and leave `YOUR_OVERTURE_API_KEY` unchanged in the snippet:
+
+```php
+define( 'OVERTURE_FORM_KEY', 'paste-your-key-here' );
+```
+
+The snippet checks for that constant first and uses it automatically.
 
 ---
 
