@@ -2,6 +2,17 @@
 
 > **Navigation setup guide:** See [SITE_NAVIGATION_GUIDE.md](SITE_NAVIGATION_GUIDE.md) for WordPress menu setup, 3-click booking rule, audience journey maps, and WooCommerce shop structure.
 
+## Domain Setup
+
+| Item | Value |
+|---|---|
+| **Primary domain** | `xcphotography.co` |
+| **Redirect** | `xcphotography.co.uk` → `xcphotography.co` (active redirect, future transfer planned) |
+| **Admin URL** | `https://xcphotography.co/wp-admin` |
+| **Contact email** | `info@xcphotography.co.uk` (mailbox hosted at .co.uk; works independently of domain redirect) |
+
+> **Note:** All internal links and Elementor templates should use `xcphotography.co` as the base URL. Legacy references to `xcphotography.co.uk` in older docs still resolve correctly via redirect, but new work should reference `.co`.
+
 ## Site Structure & Visitor Journey
 
 ### Primary Pages
