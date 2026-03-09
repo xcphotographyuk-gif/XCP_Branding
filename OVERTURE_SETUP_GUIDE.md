@@ -13,6 +13,8 @@ The JSON template (`XCP_Contact_P2_Form_Overture.json`) has everything pre-built
 
 **The JSON does not contain your API key. Import the file as-is, then add the key via WPCode. Done.**
 
+> **Do I need to re-import the form or update it when the API key changes?** No. The Elementor form JSON contains the webhook URL and field layout only — it has no API key inside it. When you update your key (in `wp-config.php` or in the WPCode snippet), the form continues to work without any changes. You never need to re-import the form JSON just because the key changed.
+
 > **Why is the key not in the JSON?** Elementor does not support importing custom webhook headers via JSON template files. Adding the key to the JSON would cause the import to fail with an "invalid file" error. The WPCode snippet method adds the header server-side, securely, without touching the JSON at all.
 
 ---
@@ -366,7 +368,7 @@ This is the most important pattern to understand. In Elementor's response JSON, 
 | Most likely cause | Overture HTTP status | How to confirm |
 |---|---|---|
 | WPCode snippet is **Inactive** — Authorization header never sent | 401 Unauthorized | Check WPCode → snippet toggle is blue/Active |
-| API key in snippet is **wrong, expired, or contains a typo** | 401 Unauthorized | Regenerate key in Overture, paste fresh into snippet |
+| API key in snippet is **wrong, expired, or contains a typo** | 401 Unauthorized | Regenerate key in Overture → Settings → API. If `OVERTURE_FORM_KEY` is defined in wp-config.php, update the value there and save. Otherwise paste the new key into the WPCode snippet and Save Snippet |
 | Form Name in Elementor **does not exactly match** the snippet | 401 Unauthorized (header not added) | Check Content tab → Form Name = `XCP Contact: Overture` exactly |
 | Overture rejected a **field value** (wrong format, empty required field) | 422 Unprocessable | Enable WP_DEBUG_LOG — the 422 body names the specific field |
 | Wrong webhook URL | 404 Not Found | Confirm URL = `https://xcphotography.overturehq.com/api/bookings` |
@@ -461,11 +463,11 @@ Work through this checklist in order:
 | You see r.stripe.com rows in the Network tab | Normal — Stripe.js telemetry beacons fire on every page load | Ignore them. They are unrelated to your form or Overture. The Overture webhook is server-side and will not appear in the browser Network tab at all. |
 | You see admin-ajax.php in the Network tab after Submit | Normal — this is the form submission from browser to WordPress | Click the admin-ajax.php POST row and read the **Response** tab (not Headers, not Cookies) for error detail. |
 | Response tab shows `"errors": {"": ""}` | Webhook action failed — Overture returned a non-2xx HTTP status | Enable WP_DEBUG_LOG (see above) to see whether Overture returned 401, 403, or 422, then fix accordingly |
-| Response tab shows `"errors": {"": ""}` and WPCode snippet is Active | API key in the snippet is wrong or expired | Regenerate API key in Overture → Settings → API, paste the new key into the WPCode snippet, Save Snippet |
+| Response tab shows `"errors": {"": ""}` and WPCode snippet is Active | API key is wrong or expired | Regenerate API key in Overture → Settings → API. If `OVERTURE_FORM_KEY` is defined in wp-config.php, update the value there. Otherwise paste the new key into the WPCode snippet and Save Snippet. The form does **not** need to be re-imported. |
 | Elementor shows an error but a booking appeared in Overture | Known Elementor display glitch | The submission worked. Dismiss the error and confirm in Overture. |
 | Form submits but no booking appears in Overture | Snippet not set to Active, or Form Name mismatch | Check the WPCode snippet is **Active**. Check the form widget Form Name is exactly `XCP Contact: Overture`. |
 | Snippet is Active but still no booking | Form Name in Elementor does not match the snippet | Open the form widget in Elementor → Content tab → Form Name field. It must be exactly `XCP Contact: Overture` (capital X, capital C, capital O, colon, space). Any difference and the snippet will not fire. |
-| 401 Unauthorized (visible in WP debug log) | API key wrong, missing, revoked, or snippet Inactive | Regenerate in Overture, update the WPCode snippet, make sure the snippet is Active |
+| 401 Unauthorized (visible in WP debug log) | API key wrong, missing, revoked, or snippet Inactive | Regenerate key in Overture → Settings → API. If `OVERTURE_FORM_KEY` is defined in wp-config.php, update the value there and save. Otherwise paste the new key into the WPCode snippet. Make sure the snippet is Active. |
 | 401 Unauthorized and `OVERTURE_FORM_KEY` is defined in wp-config.php | The key value in wp-config.php may contain a typo or be outdated | Open wp-config.php in File Manager, copy the value of `OVERTURE_FORM_KEY`, paste it into a plain-text editor and compare it character-by-character against the key shown in Overture → Settings → API. API keys are typically hex strings (digits 0–9 and letters a–f only). Any other character is a sign of a typo. Correct the value in wp-config.php and save. |
 | 403 Forbidden (visible in WP debug log) | Key lacks permission | Regenerate key in Overture with Booking write scope |
 | 404 (visible in WP debug log) | Wrong webhook URL | Confirm exactly: `https://xcphotography.overturehq.com/api/bookings` |
