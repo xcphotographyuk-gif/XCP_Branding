@@ -8,29 +8,13 @@
       "elType": "section",
       "settings": {
         "layout": "boxed",
-        "content_width": {
-          "unit": "px",
-          "size": 1200
-        },
-        "padding": {
-          "unit": "px",
-          "top": 80,
-          "right": 20,
-          "bottom": 80,
-          "left": 20
-        },
         "_title": "Core Values"
       },
       "elements": [
         {
           "id": "about_values_col",
           "elType": "column",
-          "settings": {
-            "width": {
-              "unit": "%",
-              "size": 100
-            }
-          },
+          "settings": {},
           "elements": [
             {
               "id": "about_values_heading",
@@ -39,15 +23,7 @@
               "settings": {
                 "title": "I Start With Understanding. The Camera Comes Second.",
                 "header_size": "h2",
-                "align": "center",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 42
-                },
-                "typography_font_size_mobile": {
-                  "unit": "px",
-                  "size": 28
-                }
+                "align": "center"
               }
             },
             {

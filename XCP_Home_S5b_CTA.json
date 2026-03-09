@@ -8,16 +8,7 @@
       "elType": "section",
       "settings": {
         "_title": "Final CTA",
-        "layout": "boxed",
-        "background_background": "classic",
-        "background_color": "#000000",
-        "padding": {
-          "unit": "px",
-          "top": "90",
-          "right": "20",
-          "bottom": "90",
-          "left": "20"
-        }
+        "layout": "boxed"
       },
       "elements": [
         {
@@ -35,22 +26,7 @@
               "settings": {
                 "title": "Ready to Create Your Visual Impact?",
                 "header_size": "h2",
-                "align": "center",
-                "typography_font_family": "Montserrat",
-                "typography_font_weight": "700",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 42
-                },
-                "typography_font_size_tablet": {
-                  "unit": "px",
-                  "size": 34
-                },
-                "typography_font_size_mobile": {
-                  "unit": "px",
-                  "size": 28
-                },
-                "color": "#FFFFFF"
+                "align": "center"
               }
             },
             {
@@ -71,25 +47,7 @@
                   "url": "/booking",
                   "is_external": false
                 },
-                "align": "center",
-                "size": "lg",
-                "background_color": "",
-                "button_text_color": "#000000",
-                "border_radius": {
-                  "unit": "px",
-                  "top": "0",
-                  "right": "0",
-                  "bottom": "0",
-                  "left": "0"
-                },
-                "margin": {
-                  "unit": "px",
-                  "top": "36",
-                  "right": "0",
-                  "bottom": "0",
-                  "left": "0",
-                  "isLinked": false
-                }
+                "align": "center"
               }
             }
           ]

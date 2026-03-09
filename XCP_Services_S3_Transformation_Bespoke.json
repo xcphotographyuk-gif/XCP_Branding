@@ -8,33 +8,13 @@
       "elType": "section",
       "settings": {
         "layout": "full_width",
-        "padding": {
-          "unit": "px",
-          "top": 40,
-          "right": 20,
-          "bottom": 80,
-          "left": 20
-        },
         "_title": "Brand Transformation Package"
       },
       "elements": [
         {
           "id": "pkg3_img_col",
           "elType": "column",
-          "settings": {
-            "width": {
-              "unit": "%",
-              "size": 40
-            },
-            "width_tablet": {
-              "unit": "%",
-              "size": 100
-            },
-            "width_mobile": {
-              "unit": "%",
-              "size": 100
-            }
-          },
+          "settings": {},
           "elements": [
             {
               "id": "pkg3_image",
@@ -44,12 +24,7 @@
                 "image": {
                   "url": "[uc_local]assets/images/services/package-transformation.jpg"
                 },
-                "image_size": "large",
-                "object_fit": "cover",
-                "height": {
-                  "unit": "px",
-                  "size": 500
-                }
+                "image_size": "large"
               }
             }
           ]
@@ -58,26 +33,7 @@
           "id": "pkg3_content_col",
           "elType": "column",
           "settings": {
-            "width": {
-              "unit": "%",
-              "size": 60
-            },
-            "width_tablet": {
-              "unit": "%",
-              "size": 100
-            },
-            "width_mobile": {
-              "unit": "%",
-              "size": 100
-            },
-            "content_position": "middle",
-            "padding": {
-              "unit": "px",
-              "top": 40,
-              "right": 60,
-              "bottom": 40,
-              "left": 60
-            }
+            "content_position": "middle"
           },
           "elements": [
             {
@@ -94,11 +50,7 @@
               "widgetType": "heading",
               "settings": {
                 "title": "Brand Transformation",
-                "header_size": "h3",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 36
-                }
+                "header_size": "h3"
               }
             },
             {
@@ -117,11 +69,6 @@
                 "text": "Transform Your Brand",
                 "link": {
                   "url": "#contact"
-                },
-                "size": "md",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 16
                 }
               }
             }
@@ -134,17 +81,7 @@
       "elType": "section",
       "settings": {
         "_title": "Bespoke Enquiry",
-        "layout": "boxed",
-        "background_background": "classic",
-        "background_color": "#F8F8F8",
-        "padding": {
-          "unit": "px",
-          "top": "80",
-          "right": "20",
-          "bottom": "80",
-          "left": "20",
-          "isLinked": false
-        }
+        "layout": "boxed"
       },
       "elements": [
         {
@@ -162,8 +99,7 @@
               "settings": {
                 "title": "Bespoke Visual Storytelling",
                 "header_size": "h2",
-                "align": "center",
-                "color": "#000000"
+                "align": "center"
               }
             },
             {
@@ -242,10 +178,7 @@
                 ],
                 "submit": {
                   "value": "Send Enquiry",
-                  "size": "md",
-                  "background_color": "#000000",
-                  "background_color_hover": "#333333",
-                  "color": "#FFFFFF"
+                  "size": "md"
                 },
                 "email": {
                   "to": "xavier@xcphotography.co.uk",

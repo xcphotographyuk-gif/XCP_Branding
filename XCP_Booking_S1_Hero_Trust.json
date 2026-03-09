@@ -9,21 +9,7 @@
       "settings": {
         "_title": "Booking Hero",
         "layout": "full_width",
-        "min_height": {
-          "unit": "vh",
-          "size": 50
-        },
-        "background_background": "classic",
-        "background_color": "#1a1a1a",
-        "content_position": "middle",
-        "padding": {
-          "unit": "px",
-          "top": "100",
-          "right": "20",
-          "bottom": "80",
-          "left": "20",
-          "isLinked": false
-        }
+        "content_position": "middle"
       },
       "elements": [
         {
@@ -48,22 +34,7 @@
               "settings": {
                 "title": "Book Your Discovery Call",
                 "header_size": "h1",
-                "align": "center",
-                "title_color": "#ffffff",
-                "typography_font_family": "Raleway",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 52
-                },
-                "typography_font_size_tablet": {
-                  "unit": "px",
-                  "size": 38
-                },
-                "typography_font_size_mobile": {
-                  "unit": "px",
-                  "size": 28
-                },
-                "typography_font_weight": "700"
+                "align": "center"
               }
             },
             {
@@ -83,21 +54,7 @@
       "elType": "section",
       "settings": {
         "_title": "Trust Bar",
-        "layout": "boxed",
-        "content_width": {
-          "unit": "px",
-          "size": 1100
-        },
-        "background_background": "classic",
-        "background_color": "#E8E4DC",
-        "padding": {
-          "unit": "px",
-          "top": "20",
-          "right": "20",
-          "bottom": "20",
-          "left": "20",
-          "isLinked": false
-        }
+        "layout": "boxed"
       },
       "elements": [
         {

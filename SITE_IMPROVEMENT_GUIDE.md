@@ -62,7 +62,7 @@ Address the 4 questions every prospective client has:
 A: We start with a discovery call to understand your brand, objectives, and where the images will be used. From there we plan locations, shot types, and scheduling. On the day, everything is relaxed and guided — you don't need to know how to pose. I'll handle all of that.
 
 **Q: How is it priced?**  
-A: Investment starts from £1,495 and is quoted per project based on session length, locations, editing scope, and usage rights. We discuss this on the discovery call before any commitment is made.
+A: Sessions are shown on the site from £1,495 — this is the starting point and qualifier, not the typical project cost. Every project is individually scoped after the discovery call. The average project runs £3,500–£5,000 for photography (Xavier Clarke only). Additional production elements — hair & makeup, videographer, location hire, shoot producer — are quoted separately based on what your brief requires. We agree the full investment before any commitment is made.
 
 **Q: How long until I receive my images?**  
 A: Final edited images are typically delivered within [5–10 business days] of the session. You'll receive a private online gallery with high-resolution downloads.

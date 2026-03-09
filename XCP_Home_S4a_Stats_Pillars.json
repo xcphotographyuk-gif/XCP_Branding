@@ -8,16 +8,7 @@
       "elType": "section",
       "settings": {
         "_title": "Statistics Section",
-        "layout": "boxed",
-        "background_background": "classic",
-        "background_color": "#F8F8F8",
-        "padding": {
-          "unit": "px",
-          "top": "80",
-          "right": "20",
-          "bottom": "80",
-          "left": "20"
-        }
+        "layout": "boxed"
       },
       "elements": [
         {
@@ -36,12 +27,7 @@
               "widgetType": "heading",
               "settings": {
                 "title": "500+",
-                "header_size": "h3",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 48
-                },
-                "color": "#000000"
+                "header_size": "h3"
               }
             },
             {
@@ -70,12 +56,7 @@
               "widgetType": "heading",
               "settings": {
                 "title": "150+",
-                "header_size": "h3",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 48
-                },
-                "color": "#000000"
+                "header_size": "h3"
               }
             },
             {
@@ -104,12 +85,7 @@
               "widgetType": "heading",
               "settings": {
                 "title": "20+",
-                "header_size": "h3",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 48
-                },
-                "color": "#000000"
+                "header_size": "h3"
               }
             },
             {
@@ -138,12 +114,7 @@
               "widgetType": "heading",
               "settings": {
                 "title": "10+",
-                "header_size": "h3",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 48
-                },
-                "color": "#000000"
+                "header_size": "h3"
               }
             },
             {
@@ -163,18 +134,7 @@
       "elType": "section",
       "settings": {
         "_title": "Three Pillars of the XCP Approach",
-        "layout": "boxed",
-        "content_width": "boxed",
-        "background_background": "classic",
-        "background_color": "#FFFFFF",
-        "padding": {
-          "unit": "px",
-          "top": "80",
-          "right": "20",
-          "bottom": "80",
-          "left": "20",
-          "isLinked": false
-        }
+        "layout": "boxed"
       },
       "elements": [
         {
@@ -184,14 +144,6 @@
             "_column_size": 33,
             "_column_size_tablet": 100,
             "_column_size_mobile": 100,
-            "padding": {
-              "unit": "px",
-              "top": "20",
-              "right": "30",
-              "bottom": "20",
-              "left": "30",
-              "isLinked": false
-            },
             "text_align": "center"
           },
           "elements": [
@@ -202,12 +154,7 @@
               "settings": {
                 "title": "Exceptional Image Quality",
                 "header_size": "h3",
-                "align": "center",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 22
-                },
-                "color": "#000000"
+                "align": "center"
               }
             },
             {
@@ -215,8 +162,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p>Timeless, captivating images that elevate your authority and share your brand's story with the people who matter to your business.</p>",
-                "text_color": "#333333"
+                "editor": "<p>Timeless, captivating images that elevate your authority and share your brand's story with the people who matter to your business.</p>"
               }
             }
           ]
@@ -228,14 +174,6 @@
             "_column_size": 33,
             "_column_size_tablet": 100,
             "_column_size_mobile": 100,
-            "padding": {
-              "unit": "px",
-              "top": "20",
-              "right": "30",
-              "bottom": "20",
-              "left": "30",
-              "isLinked": false
-            },
             "text_align": "center"
           },
           "elements": [
@@ -246,12 +184,7 @@
               "settings": {
                 "title": "Personalised Collaboration",
                 "header_size": "h3",
-                "align": "center",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 22
-                },
-                "color": "#000000"
+                "align": "center"
               }
             },
             {
@@ -259,8 +192,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p>A dedicated partnership built from concept to final delivery. Every project is shaped around what makes you unique: your story, your audience, your vision.</p>",
-                "text_color": "#333333"
+                "editor": "<p>A dedicated partnership built from concept to final delivery. Every project is shaped around what makes you unique: your story, your audience, your vision.</p>"
               }
             }
           ]
@@ -272,14 +204,6 @@
             "_column_size": 33,
             "_column_size_tablet": 100,
             "_column_size_mobile": 100,
-            "padding": {
-              "unit": "px",
-              "top": "20",
-              "right": "30",
-              "bottom": "20",
-              "left": "30",
-              "isLinked": false
-            },
             "text_align": "center"
           },
           "elements": [
@@ -290,12 +214,7 @@
               "settings": {
                 "title": "Narrative-Led Content",
                 "header_size": "h3",
-                "align": "center",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 22
-                },
-                "color": "#000000"
+                "align": "center"
               }
             },
             {
@@ -303,8 +222,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p>A decade of active visual work, from gallery exhibitions and headline music photography to brand work across the UK and Europe. Imagery that does not just look good, it says something.</p>",
-                "text_color": "#333333"
+                "editor": "<p>A decade of active visual work, from gallery exhibitions and headline music photography to brand work across the UK and Europe. Imagery that does not just look good, it says something.</p>"
               }
             }
           ]

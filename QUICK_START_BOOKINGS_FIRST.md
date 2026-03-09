@@ -437,17 +437,29 @@ Every session is scoped to the client's brief, brand, and deliverables. No two p
 
 > **Brand & Documentary Photography — from £1,495**
 >
-> Sessions are scoped individually based on your brief, objectives, and deliverables.  
-> Investment varies depending on session length, number of locations, editing scope, and usage rights.  
-> Every project starts with a free discovery call.
+> Every session is scoped to your brief. Investment is quoted after a free discovery call — no fixed packages, no guesswork.
+>
+> **Photography fee (Xavier Clarke):** typically £3,500–£5,000 depending on session length, number of locations, outfits, images required, and usage rights.
+>
+> **Additional production** (quoted separately, based on your brief):  
+> Hair & makeup · Videographer · Location hire · Shoot producer
 >
 > **[Book Your Free Discovery Call →](https://xcphotography.co/contact)**
 
-**Why this works:**
-- "From £1,495" anchors expectation at the right level without locking you into a number you can't honour
-- Signals bespoke, premium positioning — not a menu of packages
-- Filters out clients whose budget is below your floor without requiring a price conversation up front
-- Directs all enquiries to the discovery call, where you scope properly before quoting
+**How the pricing strategy works:**
+
+**£1,495** is the public-facing starting price — its job is to act as a **qualifier**, not to represent a typical project. It filters out time-wasters and signals premium positioning without requiring a price conversation before the discovery call.
+
+**Expected average per project: £3,500–£5,000** (Xavier's photography fee only — not including hair & makeup, videographer, location hire, or shoot producer, which are additional and quoted separately based on the brief).
+
+The discovery call is where scope, deliverables, and actual investment are established. Clients who pass the £1,495 qualifier are already self-selected as serious. The proposal that follows the call reflects the real project scope.
+
+**Why "from £1,495" on the site works:**
+- Filters enquiries without requiring a price gatekeeper conversation
+- Positions the service as premium and bespoke — not a commodity package
+- Low enough to attract serious business enquiries; high enough to deter tyre-kickers
+- Real investment is always established in the discovery call — never locked in by the website
+- Keeps pricing honest: no fixed tier table that can't be honoured
 
 **What NOT to do:**
 - ❌ Do not list photography sessions as fixed-price products in WooCommerce — the price cannot be guaranteed in advance and each session is custom scoped

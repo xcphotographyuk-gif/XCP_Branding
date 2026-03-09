@@ -7,30 +7,14 @@
       "id": "portfolio_full_gallery",
       "elType": "section",
       "settings": {
-        "layout": "full_width",
-        "padding": {
-          "unit": "px",
-          "top": 0,
-          "right": 0,
-          "bottom": 80,
-          "left": 0
-        },
-        "background_background": "classic",
-        "background_color": "#f8f8f8"
+        "layout": "full_width"
       },
       "elements": [
         {
           "id": "gallery_col",
           "elType": "column",
           "settings": {
-            "_column_size": 100,
-            "padding": {
-              "unit": "px",
-              "top": 0,
-              "right": 0,
-              "bottom": 0,
-              "left": 0
-            }
+            "_column_size": 100
           },
           "elements": [
             {
@@ -103,14 +87,8 @@
                 "columns": 4,
                 "columns_tablet": 2,
                 "columns_mobile": 1,
-                "gap": {
-                  "unit": "px",
-                  "size": 10
-                },
                 "gallery_layout": "masonry",
                 "link_to": "file",
-                "overlay_background": "yes",
-                "image_hover_animation": "zoom",
                 "lazyload": "yes"
               }
             }
@@ -123,21 +101,7 @@
       "elType": "section",
       "settings": {
         "layout": "boxed",
-        "min_height": {
-          "unit": "px",
-          "size": 400
-        },
-        "background_background": "gradient",
-        "background_color": "#1a1a1a",
-        "background_color_b": "#2d2d2d",
-        "content_position": "middle",
-        "padding": {
-          "unit": "px",
-          "top": 80,
-          "right": 20,
-          "bottom": 80,
-          "left": 20
-        }
+        "content_position": "middle"
       },
       "elements": [
         {
@@ -154,8 +118,7 @@
               "settings": {
                 "title": "Ready to Create Your Story?",
                 "header_size": "h2",
-                "align": "center",
-                "color": "#ffffff"
+                "align": "center"
               }
             },
             {
@@ -177,7 +140,6 @@
                   "url": "/contact"
                 },
                 "align": "center",
-                "size": "lg",
                 "button_type": "primary"
               }
             }

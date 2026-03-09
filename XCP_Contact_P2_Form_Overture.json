@@ -9,22 +9,7 @@
       "settings": {
         "_title": "Contact Form: Overture (Primary)",
         "layout": "boxed",
-        "content_width": {
-          "unit": "px",
-          "size": 1200
-        },
-        "structure": "20",
-        "background_background": "classic",
-        "background_color": "#000000",
-        "padding": {
-          "unit": "px",
-          "top": "80",
-          "right": "20",
-          "bottom": "80",
-          "left": "20",
-          "isLinked": false
-        },
-        "gap": "wide"
+        "structure": "20"
       },
       "elements": [
         {
@@ -33,15 +18,7 @@
           "settings": {
             "_column_size": 60,
             "_column_size_tablet": 100,
-            "_column_size_mobile": 100,
-            "padding": {
-              "unit": "px",
-              "top": "0",
-              "right": "50",
-              "bottom": "0",
-              "left": "0",
-              "isLinked": false
-            }
+            "_column_size_mobile": 100
           },
           "elements": [
             {
@@ -176,25 +153,6 @@
                 "button_text": "Send My Enquiry",
                 "button_size": "lg",
                 "button_align": "left",
-                "button_background_color": "",
-                "button_text_color": "#000000",
-                "button_hover_background_color": "#b8962e",
-                "button_border_radius": {
-                  "unit": "px",
-                  "top": "0",
-                  "right": "0",
-                  "bottom": "0",
-                  "left": "0",
-                  "isLinked": true
-                },
-                "button_padding": {
-                  "unit": "px",
-                  "top": "16",
-                  "right": "48",
-                  "bottom": "16",
-                  "left": "48",
-                  "isLinked": false
-                },
                 "success_message": "Thank you. Your enquiry is on its way. I will be in touch within 24 hours.",
                 "error_message": "Something went wrong. Please email me directly at info@xcphotography.co.uk."
               }
@@ -207,17 +165,7 @@
           "settings": {
             "_column_size": 40,
             "_column_size_tablet": 100,
-            "_column_size_mobile": 100,
-            "background_background": "classic",
-            "background_color": "#0d0d0d",
-            "padding": {
-              "unit": "px",
-              "top": "50",
-              "right": "40",
-              "bottom": "50",
-              "left": "40",
-              "isLinked": false
-            }
+            "_column_size_mobile": 100
           },
           "elements": [
             {
@@ -241,14 +189,7 @@
               "id": "info_divider_o",
               "elType": "widget",
               "widgetType": "divider",
-              "settings": {
-                "style": "solid",
-                "color": "rgba(232,228,220,0.15)",
-                "gap": {
-                  "unit": "px",
-                  "size": 28
-                }
-              }
+              "settings": {}
             },
             {
               "id": "info_contact_o",

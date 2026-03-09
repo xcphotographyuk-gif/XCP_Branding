@@ -8,14 +8,7 @@
       "elType": "section",
       "settings": {
         "_title": "Process Timeline",
-        "layout": "boxed",
-        "padding": {
-          "unit": "px",
-          "top": "80",
-          "right": "20",
-          "bottom": "80",
-          "left": "20"
-        }
+        "layout": "boxed"
       },
       "elements": [
         {
@@ -32,11 +25,7 @@
               "settings": {
                 "title": "From Vision to Visual Impact: Here's How It Works",
                 "header_size": "h2",
-                "align": "center",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 42
-                }
+                "align": "center"
               }
             }
           ]
@@ -46,14 +35,7 @@
           "elType": "column",
           "settings": {
             "_column_size": 50,
-            "_column_size_mobile": 100,
-            "padding": {
-              "unit": "px",
-              "top": "40",
-              "right": "30",
-              "bottom": "40",
-              "left": "30"
-            }
+            "_column_size_mobile": 100
           },
           "elements": [
             {
@@ -62,12 +44,7 @@
               "widgetType": "heading",
               "settings": {
                 "title": "01",
-                "header_size": "h3",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 72
-                },
-                "color": "#CCCCCC"
+                "header_size": "h3"
               }
             },
             {
@@ -76,11 +53,7 @@
               "widgetType": "heading",
               "settings": {
                 "title": "Discover Your Story",
-                "header_size": "h3",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 28
-                }
+                "header_size": "h3"
               }
             },
             {
@@ -98,14 +71,7 @@
           "elType": "column",
           "settings": {
             "_column_size": 50,
-            "_column_size_mobile": 100,
-            "padding": {
-              "unit": "px",
-              "top": "40",
-              "right": "30",
-              "bottom": "40",
-              "left": "30"
-            }
+            "_column_size_mobile": 100
           },
           "elements": [
             {
@@ -114,12 +80,7 @@
               "widgetType": "heading",
               "settings": {
                 "title": "02",
-                "header_size": "h3",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 72
-                },
-                "color": "#CCCCCC"
+                "header_size": "h3"
               }
             },
             {
@@ -128,11 +89,7 @@
               "widgetType": "heading",
               "settings": {
                 "title": "Design Your Experience",
-                "header_size": "h3",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 28
-                }
+                "header_size": "h3"
               }
             },
             {
@@ -150,14 +107,7 @@
           "elType": "column",
           "settings": {
             "_column_size": 50,
-            "_column_size_mobile": 100,
-            "padding": {
-              "unit": "px",
-              "top": "40",
-              "right": "30",
-              "bottom": "40",
-              "left": "30"
-            }
+            "_column_size_mobile": 100
           },
           "elements": [
             {
@@ -166,12 +116,7 @@
               "widgetType": "heading",
               "settings": {
                 "title": "03",
-                "header_size": "h3",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 72
-                },
-                "color": "#CCCCCC"
+                "header_size": "h3"
               }
             },
             {
@@ -180,11 +125,7 @@
               "widgetType": "heading",
               "settings": {
                 "title": "Capture What Matters",
-                "header_size": "h3",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 28
-                }
+                "header_size": "h3"
               }
             },
             {
@@ -202,14 +143,7 @@
           "elType": "column",
           "settings": {
             "_column_size": 50,
-            "_column_size_mobile": 100,
-            "padding": {
-              "unit": "px",
-              "top": "40",
-              "right": "30",
-              "bottom": "40",
-              "left": "30"
-            }
+            "_column_size_mobile": 100
           },
           "elements": [
             {
@@ -218,12 +152,7 @@
               "widgetType": "heading",
               "settings": {
                 "title": "04",
-                "header_size": "h3",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 72
-                },
-                "color": "#CCCCCC"
+                "header_size": "h3"
               }
             },
             {
@@ -232,11 +161,7 @@
               "widgetType": "heading",
               "settings": {
                 "title": "Deliver Results That Perform",
-                "header_size": "h3",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 28
-                }
+                "header_size": "h3"
               }
             },
             {

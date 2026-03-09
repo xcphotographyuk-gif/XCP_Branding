@@ -8,33 +8,13 @@
       "elType": "section",
       "settings": {
         "layout": "full_width",
-        "padding": {
-          "unit": "px",
-          "top": 40,
-          "right": 20,
-          "bottom": 40,
-          "left": 20
-        },
         "_title": "Brand Foundation Package"
       },
       "elements": [
         {
           "id": "pkg1_img_col",
           "elType": "column",
-          "settings": {
-            "width": {
-              "unit": "%",
-              "size": 40
-            },
-            "width_tablet": {
-              "unit": "%",
-              "size": 100
-            },
-            "width_mobile": {
-              "unit": "%",
-              "size": 100
-            }
-          },
+          "settings": {},
           "elements": [
             {
               "id": "pkg1_image",
@@ -44,12 +24,7 @@
                 "image": {
                   "url": "[uc_local]assets/images/services/package-foundation.jpg"
                 },
-                "image_size": "large",
-                "object_fit": "cover",
-                "height": {
-                  "unit": "px",
-                  "size": 500
-                }
+                "image_size": "large"
               }
             }
           ]
@@ -58,26 +33,7 @@
           "id": "pkg1_content_col",
           "elType": "column",
           "settings": {
-            "width": {
-              "unit": "%",
-              "size": 60
-            },
-            "width_tablet": {
-              "unit": "%",
-              "size": 100
-            },
-            "width_mobile": {
-              "unit": "%",
-              "size": 100
-            },
-            "content_position": "middle",
-            "padding": {
-              "unit": "px",
-              "top": 40,
-              "right": 60,
-              "bottom": 40,
-              "left": 60
-            }
+            "content_position": "middle"
           },
           "elements": [
             {
@@ -94,11 +50,7 @@
               "widgetType": "heading",
               "settings": {
                 "title": "Brand Foundation",
-                "header_size": "h3",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 36
-                }
+                "header_size": "h3"
               }
             },
             {
@@ -117,11 +69,6 @@
                 "text": "Discuss This Package",
                 "link": {
                   "url": "#contact"
-                },
-                "size": "md",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 16
                 }
               }
             }
@@ -134,15 +81,6 @@
       "elType": "section",
       "settings": {
         "layout": "full_width",
-        "background_background": "classic",
-        "background_color": "#F8F8F8",
-        "padding": {
-          "unit": "px",
-          "top": 40,
-          "right": 20,
-          "bottom": 40,
-          "left": 20
-        },
         "_title": "Brand Elevation Package"
       },
       "elements": [
@@ -150,26 +88,7 @@
           "id": "pkg2_content_col",
           "elType": "column",
           "settings": {
-            "width": {
-              "unit": "%",
-              "size": 60
-            },
-            "width_tablet": {
-              "unit": "%",
-              "size": 100
-            },
-            "width_mobile": {
-              "unit": "%",
-              "size": 100
-            },
-            "content_position": "middle",
-            "padding": {
-              "unit": "px",
-              "top": 40,
-              "right": 60,
-              "bottom": 40,
-              "left": 60
-            }
+            "content_position": "middle"
           },
           "elements": [
             {
@@ -186,11 +105,7 @@
               "widgetType": "heading",
               "settings": {
                 "title": "Brand Elevation",
-                "header_size": "h3",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 36
-                }
+                "header_size": "h3"
               }
             },
             {
@@ -210,12 +125,7 @@
                 "link": {
                   "url": "#contact"
                 },
-                "size": "md",
-                "button_type": "primary",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 16
-                }
+                "button_type": "primary"
               }
             }
           ]
@@ -223,20 +133,7 @@
         {
           "id": "pkg2_img_col",
           "elType": "column",
-          "settings": {
-            "width": {
-              "unit": "%",
-              "size": 40
-            },
-            "width_tablet": {
-              "unit": "%",
-              "size": 100
-            },
-            "width_mobile": {
-              "unit": "%",
-              "size": 100
-            }
-          },
+          "settings": {},
           "elements": [
             {
               "id": "pkg2_image",
@@ -246,12 +143,7 @@
                 "image": {
                   "url": "[uc_local]assets/images/services/package-elevation.jpg"
                 },
-                "image_size": "large",
-                "object_fit": "cover",
-                "height": {
-                  "unit": "px",
-                  "size": 500
-                }
+                "image_size": "large"
               }
             }
           ]

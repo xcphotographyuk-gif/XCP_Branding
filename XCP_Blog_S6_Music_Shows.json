@@ -8,21 +8,7 @@
       "elType": "section",
       "settings": {
         "_title": "Blog: Music and Shows - Header",
-        "layout": "boxed",
-        "content_width": {
-          "unit": "px",
-          "size": 1200
-        },
-        "background_background": "classic",
-        "background_color": "#000000",
-        "padding": {
-          "unit": "px",
-          "top": "80",
-          "right": "20",
-          "bottom": "40",
-          "left": "20",
-          "isLinked": false
-        }
+        "layout": "boxed"
       },
       "elements": [
         {
@@ -66,21 +52,7 @@
       "elType": "section",
       "settings": {
         "_title": "Blog: Music - Show Reviews",
-        "layout": "boxed",
-        "content_width": {
-          "unit": "px",
-          "size": 1200
-        },
-        "background_background": "classic",
-        "background_color": "#0d0d0d",
-        "padding": {
-          "unit": "px",
-          "top": "60",
-          "right": "20",
-          "bottom": "60",
-          "left": "20",
-          "isLinked": false
-        }
+        "layout": "boxed"
       },
       "elements": [
         {
@@ -124,22 +96,7 @@
       "elType": "section",
       "settings": {
         "_title": "Blog: Music - Podcast and Radio Panels",
-        "layout": "boxed",
-        "content_width": {
-          "unit": "px",
-          "size": 1200
-        },
-        "background_background": "classic",
-        "background_color": "#000000",
-        "padding": {
-          "unit": "px",
-          "top": "60",
-          "right": "20",
-          "bottom": "80",
-          "left": "20",
-          "isLinked": false
-        },
-        "gap": "wide"
+        "layout": "boxed"
       },
       "elements": [
         {
@@ -148,17 +105,7 @@
           "settings": {
             "_column_size": 50,
             "_column_size_tablet": 100,
-            "_column_size_mobile": 100,
-            "background_background": "classic",
-            "background_color": "#0d0d0d",
-            "padding": {
-              "unit": "px",
-              "top": "40",
-              "right": "40",
-              "bottom": "40",
-              "left": "40",
-              "isLinked": false
-            }
+            "_column_size_mobile": 100
           },
           "elements": [
             {
@@ -194,17 +141,7 @@
           "settings": {
             "_column_size": 50,
             "_column_size_tablet": 100,
-            "_column_size_mobile": 100,
-            "background_background": "classic",
-            "background_color": "#0d0d0d",
-            "padding": {
-              "unit": "px",
-              "top": "40",
-              "right": "40",
-              "bottom": "40",
-              "left": "40",
-              "isLinked": false
-            }
+            "_column_size_mobile": 100
           },
           "elements": [
             {

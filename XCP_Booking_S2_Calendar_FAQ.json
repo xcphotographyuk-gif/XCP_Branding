@@ -9,21 +9,7 @@
       "settings": {
         "_title": "Booking Calendar & Info",
         "layout": "boxed",
-        "content_width": {
-          "unit": "px",
-          "size": 1200
-        },
-        "structure": "20",
-        "background_background": "classic",
-        "background_color": "#f8f8f8",
-        "padding": {
-          "unit": "px",
-          "top": "80",
-          "right": "20",
-          "bottom": "80",
-          "left": "20",
-          "isLinked": false
-        }
+        "structure": "20"
       },
       "elements": [
         {
@@ -32,23 +18,7 @@
           "settings": {
             "_column_size": 60,
             "_column_size_tablet": 100,
-            "_column_size_mobile": 100,
-            "padding": {
-              "unit": "px",
-              "top": "0",
-              "right": "40",
-              "bottom": "0",
-              "left": "0",
-              "isLinked": false
-            },
-            "padding_tablet": {
-              "unit": "px",
-              "top": "0",
-              "right": "0",
-              "bottom": "40",
-              "left": "0",
-              "isLinked": false
-            }
+            "_column_size_mobile": 100
           },
           "elements": [
             {
@@ -57,13 +27,7 @@
               "widgetType": "heading",
               "settings": {
                 "title": "Choose a Time That Works for You",
-                "header_size": "h2",
-                "typography_font_family": "Raleway",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 30
-                },
-                "typography_font_weight": "700"
+                "header_size": "h2"
               }
             },
             {
@@ -71,8 +35,7 @@
               "elType": "widget",
               "widgetType": "html",
               "settings": {
-                "html": "<!-- Overture / Calendly booking calendar embed -->\n<!-- Replace the src URL below with your Overture or Calendly embed URL -->\n<!-- Overture embed: Overture Admin → Booking Pages → Embed Code -->\n<!-- Calendly embed: calendly.com/[your-username]/discovery-call -->\n<div>\n  <iframe\n    src=\"https://calendly.com/xcphotographyuk/discovery-call\"\n    width=\"100%\"\n    height=\"700\"\n    title=\"Book a Discovery Call with XC Photography\"\n    loading=\"lazy\"\n    sandbox=\"allow-forms allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox\"\n    allow=\"payment; geolocation\"\n  ></iframe>\n</div>",
-                "_element_custom_width": "100"
+                "html": "<!-- Overture / Calendly booking calendar embed -->\n<!-- Replace the src URL below with your Overture or Calendly embed URL -->\n<!-- Overture embed: Overture Admin → Booking Pages → Embed Code -->\n<!-- Calendly embed: calendly.com/[your-username]/discovery-call -->\n<div>\n  <iframe\n    src=\"https://calendly.com/xcphotographyuk/discovery-call\"\n    width=\"100%\"\n    height=\"700\"\n    title=\"Book a Discovery Call with XC Photography\"\n    loading=\"lazy\"\n    sandbox=\"allow-forms allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox\"\n    allow=\"payment; geolocation\"\n  ></iframe>\n</div>"
               }
             }
           ]
@@ -92,13 +55,7 @@
               "widgetType": "heading",
               "settings": {
                 "title": "What Happens on the Call?",
-                "header_size": "h3",
-                "typography_font_family": "Raleway",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 22
-                },
-                "typography_font_weight": "700"
+                "header_size": "h3"
               }
             },
             {
@@ -134,21 +91,7 @@
       "elType": "section",
       "settings": {
         "_title": "Booking FAQ",
-        "layout": "boxed",
-        "content_width": {
-          "unit": "px",
-          "size": 900
-        },
-        "background_background": "classic",
-        "background_color": "#ffffff",
-        "padding": {
-          "unit": "px",
-          "top": "80",
-          "right": "20",
-          "bottom": "80",
-          "left": "20",
-          "isLinked": false
-        }
+        "layout": "boxed"
       },
       "elements": [
         {
@@ -165,13 +108,7 @@
               "settings": {
                 "title": "Frequently Asked Questions",
                 "header_size": "h2",
-                "align": "center",
-                "typography_font_family": "Raleway",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 36
-                },
-                "typography_font_weight": "700"
+                "align": "center"
               }
             },
             {
@@ -202,13 +139,7 @@
                   }
                 ],
                 "active_item": 1,
-                "title_html_tag": "h4",
-                "title_typography_font_family": "Raleway",
-                "title_typography_font_weight": "600",
-                "title_typography_font_size": {
-                  "unit": "px",
-                  "size": 17
-                }
+                "title_html_tag": "h4"
               }
             }
           ]

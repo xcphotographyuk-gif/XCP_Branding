@@ -9,21 +9,7 @@
       "settings": {
         "_title": "Home: Contact Form",
         "layout": "boxed",
-        "content_width": {
-          "unit": "px",
-          "size": 800
-        },
-        "structure": "10",
-        "background_background": "classic",
-        "background_color": "#000000",
-        "padding": {
-          "unit": "px",
-          "top": "80",
-          "right": "20",
-          "bottom": "80",
-          "left": "20",
-          "isLinked": false
-        }
+        "structure": "10"
       },
       "elements": [
         {
@@ -166,25 +152,6 @@
                 "button_text": "Send My Enquiry",
                 "button_size": "lg",
                 "button_align": "center",
-                "button_background_color": "",
-                "button_text_color": "#000000",
-                "button_hover_background_color": "#b8962e",
-                "button_border_radius": {
-                  "unit": "px",
-                  "top": "0",
-                  "right": "0",
-                  "bottom": "0",
-                  "left": "0",
-                  "isLinked": true
-                },
-                "button_padding": {
-                  "unit": "px",
-                  "top": "16",
-                  "right": "48",
-                  "bottom": "16",
-                  "left": "48",
-                  "isLinked": false
-                },
                 "success_message": "Thank you. Your enquiry is on its way. I will be in touch within 24 hours.",
                 "error_message": "Something went wrong. Please email me directly at info@xcphotography.co.uk."
               }
