@@ -592,25 +592,26 @@ Work through this checklist in order:
 | Form submits but no email received | WordPress mail not configured | Install and configure WP Mail SMTP (free). Without it, WordPress uses PHP mail which many hosts block. |
 | 401 Unauthorized and `OVERTURE_FORM_KEY` is defined in wp-config.php | The key value in wp-config.php may contain a typo, or the snippet uses the wrong constant name | Two checks: (1) open wp-config.php in File Manager, copy the value of `OVERTURE_FORM_KEY` and compare it character-by-character against the key shown in Overture → Settings → API; (2) in the WPCode snippet, confirm the api_key line reads `defined( 'OVERTURE_FORM_KEY' ) ? OVERTURE_FORM_KEY : 'YOUR_OVERTURE_API_KEY'` — if you see your actual key value inside `defined( '...' )` that is the wrong pattern and the snippet will never use the constant. |
 | Browser console or security scanner warns about CSP / unsafe-eval | Stripe.js requires string evaluation to run | See the CSP note below. |
-| Browser or accessibility scanner warns "form field has no id or name" on the date picker | Flatpickr date picker internal input has no id/name by default | See "Optional: date picker autofill fix" below. |
+| Browser or accessibility scanner warns "form field has no id or name" on the date picker | Flatpickr date picker internal month and year inputs have no id/name by default | See "Date picker autofill fix" below. |
 
 ---
 
-## Optional: date picker autofill fix
+## Date picker autofill fix
 
-Browsers and accessibility scanners may report:
+Browsers and accessibility scanners report:
 
 > *"A form field element has neither an id nor a name attribute. This might prevent the browser from correctly autofilling the form."*
 
-The element flagged is flatpickr's internal year-navigation control:
+The elements flagged are flatpickr's internal calendar navigation controls — there are **two** of them per date field:
 
 ```html
-<input class="numInput cur-year" type="number" tabindex="-1" aria-label="Year">
+<input class="numInput cur-month" type="number" tabindex="-1" aria-label="Month">
+<input class="numInput cur-year"  type="number" tabindex="-1" aria-label="Year">
 ```
 
-This input is generated automatically at runtime by Elementor's date picker (flatpickr). It is **not** the submitted date field — it is a display widget that lets the visitor change the year shown in the calendar pop-up. Its value is never included in the form data sent to Overture. The warning does not affect form submissions or bookings.
+These inputs are generated automatically at runtime by Elementor's date picker (flatpickr). They are **not** the submitted date field — they are display widgets that let the visitor navigate the month and year shown in the calendar pop-up. Their values are never included in the form data sent to Overture. The warnings do not affect form submissions or bookings.
 
-To silence the warning, add a second WPCode snippet alongside the PHP snippet from Step 2.
+To silence both warnings, add a WPCode JavaScript snippet (or update the existing `XCP Flatpickr Accessibility Patch` snippet if you added it previously).
 
 **Title:** `XCP Flatpickr Accessibility Patch`
 
@@ -619,7 +620,12 @@ In WPCode (Code Snippets → Add Snippet), choose **JavaScript Snippet** as the 
 ```javascript
 (function () {
     function patchFlatpickrInputs(root) {
-        (root || document).querySelectorAll('.numInput.cur-year:not([id])').forEach(function (el, i) {
+        var scope = root || document;
+        scope.querySelectorAll('.numInput.cur-month:not([id])').forEach(function (el, i) {
+            el.id   = 'fp-month-' + i;
+            el.name = 'fp-month-' + i;
+        });
+        scope.querySelectorAll('.numInput.cur-year:not([id])').forEach(function (el, i) {
             el.id   = 'fp-year-' + i;
             el.name = 'fp-year-' + i;
         });
@@ -644,7 +650,7 @@ In WPCode (Code Snippets → Add Snippet), choose **JavaScript Snippet** as the 
 
 Set the snippet to **Active** and click **Save Snippet**.
 
-This snippet watches for flatpickr calendar pop-ups (they are injected into the page dynamically when the visitor focuses the date field) and adds a unique `id` and `name` to the year input when it appears. It has no effect on form submissions, styling, or Overture bookings.
+This snippet watches for flatpickr calendar pop-ups (they are injected into the page dynamically when the visitor focuses the date field) and adds a unique `id` and `name` to both the month and year navigation inputs when they appear. It has no effect on form submissions, styling, or Overture bookings.
 
 ---
 
