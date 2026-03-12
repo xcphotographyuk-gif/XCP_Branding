@@ -1,0 +1,387 @@
+{
+  "version": "0.4",
+  "title": "Services - Workshops",
+  "type": "section",
+  "content": [
+    {
+      "id": "workshops_hero",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "min_height": {"unit": "vh", "size": 68},
+        "background_background": "classic",
+        "background_image": {"url": "[uc_local]assets/images/services/workshops-hero.jpg"},
+        "background_position": "center center",
+        "background_size": "cover",
+        "background_overlay_background": "classic",
+        "background_overlay_color": "rgba(0,0,0,0.45)",
+        "content_position": "middle",
+        "padding": {"unit": "px", "top": 100, "right": 20, "bottom": 100, "left": 20},
+        "_title": "Workshops Hero"
+      },
+      "elements": [
+        {
+          "id": "workshops_hero_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "workshops_hero_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Photography Workshops",
+                "header_size": "h1",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_font_size": {"unit": "px", "size": 56},
+                "typography_font_size_tablet": {"unit": "px", "size": 42},
+                "typography_font_size_mobile": {"unit": "px", "size": 34}
+              }
+            },
+            {
+              "id": "workshops_hero_subhead",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #FFFFFF; font-size: 22px; max-width: 800px; margin: 20px auto; line-height: 1.6;'>Master the art of visual storytelling. Intensive, hands-on workshops from £1,500 tailored to your goals. From street photography to studio mastery—elevate your craft with expert guidance.</p>",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workshops_intro",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {"unit": "px", "size": 1100},
+        "padding": {"unit": "px", "top": 80, "right": 20, "bottom": 50, "left": 20},
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "_title": "Workshops Introduction"
+      },
+      "elements": [
+        {
+          "id": "workshops_intro_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "workshops_intro_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 18px; max-width: 900px; margin: 0 auto; line-height: 1.8;'>Whether you're discovering your visual voice or refining your professional practice, these workshops combine technical mastery with creative exploration. Learn in intimate group settings or customize a 1:1 experience tailored to your specific goals.</p>",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workshop_street",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "padding": {"unit": "px", "top": 50, "right": 20, "bottom": 50, "left": 20},
+        "background_background": "classic",
+        "background_color": "#F8F8F8",
+        "_title": "Street Photography Workshop"
+      },
+      "elements": [
+        {
+          "id": "street_img_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 45},
+            "width_tablet": {"unit": "%", "size": 100},
+            "width_mobile": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "street_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "[uc_local]assets/images/services/workshop-street.jpg"},
+                "image_size": "large",
+                "object_fit": "cover",
+                "height": {"unit": "px", "size": 500}
+              }
+            }
+          ]
+        },
+        {
+          "id": "street_content_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 55},
+            "width_tablet": {"unit": "%", "size": 100},
+            "width_mobile": {"unit": "%", "size": 100},
+            "content_position": "middle",
+            "padding": {"unit": "px", "top": 40, "right": 60, "bottom": 40, "left": 60}
+          },
+          "elements": [
+            {
+              "id": "street_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "City Walk Street Photography",
+                "header_size": "h3",
+                "typography_font_size": {"unit": "px", "size": 36},
+                "typography_font_size_mobile": {"unit": "px", "size": 28}
+              }
+            },
+            {
+              "id": "street_description",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size: 17px; line-height: 1.8; margin: 20px 0; color: #666666;'>Discover the art of capturing authentic moments in urban environments. Learn composition, timing, light, and how to tell compelling stories through candid imagery as we explore the city together.</p><p style='font-size: 16px; line-height: 1.7; margin: 25px 0 15px; color: #1A1A1A;'><strong>What You'll Learn:</strong></p><ul style='font-size: 16px; line-height: 1.8; margin-left: 20px; color: #666666;'><li>Reading light and shadow in urban settings</li><li>Anticipating and capturing decisive moments</li><li>Compositional techniques for street scenes</li><li>Working with natural light and reflections</li><li>Ethics and etiquette of street photography</li><li>Post-processing for authentic street imagery</li></ul><p style='font-size: 16px; margin-top: 25px; color: #888888;'><strong>Format:</strong> 4-hour walking workshop | Group (max 6) or 1:1</p>"
+              }
+            },
+            {
+              "id": "street_cta",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Book This Workshop",
+                "link": {"url": "#contact"},
+                "size": "md",
+                "typography_font_size": {"unit": "px", "size": 16},
+                "margin": {"unit": "px", "top": 25}
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workshop_music",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "padding": {"unit": "px", "top": 50, "right": 20, "bottom": 50, "left": 20},
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "_title": "Music Photography Workshop"
+      },
+      "elements": [
+        {
+          "id": "music_content_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 55},
+            "width_tablet": {"unit": "%", "size": 100},
+            "width_mobile": {"unit": "%", "size": 100},
+            "content_position": "middle",
+            "padding": {"unit": "px", "top": 40, "right": 60, "bottom": 40, "left": 60}
+          },
+          "elements": [
+            {
+              "id": "music_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Music Photography Masterclass",
+                "header_size": "h3",
+                "typography_font_size": {"unit": "px", "size": 36},
+                "typography_font_size_mobile": {"unit": "px", "size": 28}
+              }
+            },
+            {
+              "id": "music_description",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size: 17px; line-height: 1.8; margin: 20px 0; color: #666666;'>Capture the energy and emotion of live music. From gigs to festivals, learn the techniques that transform performance moments into powerful visual narratives.</p><p style='font-size: 16px; line-height: 1.7; margin: 25px 0 15px; color: #1A1A1A;'><strong>What You'll Learn:</strong></p><ul style='font-size: 16px; line-height: 1.8; margin-left: 20px; color: #666666;'><li>Working in challenging lighting conditions</li><li>Capturing movement and emotion on stage</li><li>Camera settings for live performances</li><li>Positioning and timing for peak moments</li><li>Building relationships with artists and venues</li><li>Post-processing for dramatic concert imagery</li></ul><p style='font-size: 16px; margin-top: 25px; color: #888888;'><strong>Format:</strong> Half-day theory + live venue session | Group or 1:1</p>"
+              }
+            },
+            {
+              "id": "music_cta",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Book This Workshop",
+                "link": {"url": "#contact"},
+                "size": "md",
+                "typography_font_size": {"unit": "px", "size": 16},
+                "margin": {"unit": "px", "top": 25}
+              }
+            }
+          ]
+        },
+        {
+          "id": "music_img_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 45},
+            "width_tablet": {"unit": "%", "size": 100},
+            "width_mobile": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "music_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "[uc_local]assets/images/services/workshop-music.jpg"},
+                "image_size": "large",
+                "object_fit": "cover",
+                "height": {"unit": "px", "size": 500}
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workshop_studio",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "padding": {"unit": "px", "top": 50, "right": 20, "bottom": 80, "left": 20},
+        "background_background": "classic",
+        "background_color": "#F8F8F8",
+        "_title": "Studio Photography Workshop"
+      },
+      "elements": [
+        {
+          "id": "studio_img_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 45},
+            "width_tablet": {"unit": "%", "size": 100},
+            "width_mobile": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "studio_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "[uc_local]assets/images/services/workshop-studio.jpg"},
+                "image_size": "large",
+                "object_fit": "cover",
+                "height": {"unit": "px", "size": 500}
+              }
+            }
+          ]
+        },
+        {
+          "id": "studio_content_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 55},
+            "width_tablet": {"unit": "%", "size": 100},
+            "width_mobile": {"unit": "%", "size": 100},
+            "content_position": "middle",
+            "padding": {"unit": "px", "top": 40, "right": 60, "bottom": 40, "left": 60}
+          },
+          "elements": [
+            {
+              "id": "studio_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Studio Photography Intensive",
+                "header_size": "h3",
+                "typography_font_size": {"unit": "px", "size": 36},
+                "typography_font_size_mobile": {"unit": "px", "size": 28}
+              }
+            },
+            {
+              "id": "studio_description",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size: 17px; line-height: 1.8; margin: 20px 0; color: #666666;'>Master controlled lighting and studio techniques. Perfect for photographers ready to elevate their portrait and commercial work through precision and creative lighting mastery.</p><p style='font-size: 16px; line-height: 1.7; margin: 25px 0 15px; color: #1A1A1A;'><strong>What You'll Learn:</strong></p><ul style='font-size: 16px; line-height: 1.8; margin-left: 20px; color: #666666;'><li>Studio lighting fundamentals and advanced setups</li><li>Portrait posing and directing subjects</li><li>Working with modifiers (softboxes, reflectors, scrims)</li><li>Creating mood and atmosphere with light</li><li>Commercial photography techniques</li><li>Professional workflow and client management</li></ul><p style='font-size: 16px; margin-top: 25px; color: #888888;'><strong>Format:</strong> Full-day intensive | Group sessions or customizable 1:1</p>"
+              }
+            },
+            {
+              "id": "studio_cta",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Book This Workshop",
+                "link": {"url": "#contact"},
+                "size": "md",
+                "typography_font_size": {"unit": "px", "size": 16},
+                "margin": {"unit": "px", "top": 25}
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workshops_cta",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "padding": {"unit": "px", "top": 70, "right": 20, "bottom": 80, "left": 20},
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "_title": "Workshops CTA"
+      },
+      "elements": [
+        {
+          "id": "workshops_cta_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "workshops_cta_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Ready to Elevate Your Photography?",
+                "header_size": "h3",
+                "align": "center",
+                "title_color": "#1A1A1A",
+                "typography_font_size": {"unit": "px", "size": 38},
+                "typography_font_size_mobile": {"unit": "px", "size": 28}
+              }
+            },
+            {
+              "id": "workshops_cta_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 18px; max-width: 750px; margin: 25px auto 40px; line-height: 1.7;'>Join an upcoming group workshop or book a customized 1:1 session tailored to your specific learning goals. Limited spaces available to ensure hands-on, personalized instruction.</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "workshops_cta_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "View Workshop Calendar",
+                "align": "center",
+                "button_type": "primary",
+                "size": "lg",
+                "background_color": "#D4AF37",
+                "color": "#000000",
+                "typography_font_size": {"unit": "px", "size": 18},
+                "padding": {"unit": "px", "top": 16, "right": 40, "bottom": 16, "left": 40},
+                "border_radius": {"unit": "px", "size": 4}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
