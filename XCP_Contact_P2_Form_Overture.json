@@ -1,0 +1,256 @@
+{
+  "version": "0.4",
+  "title": "XCP Contact: Form + Info Panel: OVERTURE VERSION: Section 2 of 4",
+  "type": "page",
+  "content": [
+    {
+      "id": "contact_form_overture",
+      "elType": "section",
+      "settings": {
+        "_title": "Contact Form: Overture (Primary)",
+        "layout": "boxed",
+        "structure": "20"
+      },
+      "elements": [
+        {
+          "id": "form_col_overture",
+          "elType": "column",
+          "settings": {
+            "_column_size": 60,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "form_eyebrow_o",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Get in Touch</p>"
+              }
+            },
+            {
+              "id": "form_heading_o",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Tell Me About Your Vision",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "form_intro_o",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Send your enquiry and I will respond within 24 hours. No pressure, no scripts. Just an honest conversation about your brand and what great photography can do for it.</p>"
+              }
+            },
+            {
+              "id": "contact_form_widget_overture",
+              "elType": "widget",
+              "widgetType": "form",
+              "settings": {
+                "form_name": "XCP Contact: Overture",
+                "form_fields": [
+                  {
+                    "field_type": "text",
+                    "field_label": "Your Name",
+                    "field_id": "promoterName",
+                    "required": "yes",
+                    "placeholder": "First and last name",
+                    "width": "50",
+                    "custom_id": "name",
+                    "_id": "qjbf2ns"
+                  },
+                  {
+                    "field_type": "email",
+                    "field_label": "Email Address",
+                    "field_id": "email",
+                    "required": "yes",
+                    "placeholder": "hello@yourbrand.co.uk",
+                    "width": "50",
+                    "custom_id": "email",
+                    "_id": "20ewavr"
+                  },
+                  {
+                    "field_type": "tel",
+                    "field_label": "Phone Number",
+                    "field_id": "phone",
+                    "required": "no",
+                    "placeholder": "+44 (0) 7XXX XXXXXX",
+                    "width": "50",
+                    "custom_id": "phone",
+                    "_id": "6iwrh62"
+                  },
+                  {
+                    "field_type": "select",
+                    "field_label": "Type of Project",
+                    "field_id": "name",
+                    "required": "yes",
+                    "field_options": "Brand Photography Session\nDocumentary Business Storytelling\nCorporate Portraits & Headshots\nEvent & Performance Coverage\nEditorial Work\nFine Art Commission\nWorkshop or Photography Course\nNot Sure Yet - Let's Talk",
+                    "width": "50",
+                    "custom_id": "project_type",
+                    "_id": "b0h3j3w"
+                  },
+                  {
+                    "field_type": "date",
+                    "field_label": "Preferred Discovery Call Date (if known)",
+                    "field_id": "date",
+                    "required": "no",
+                    "placeholder": "When works for a quick call?",
+                    "width": "50",
+                    "custom_id": "discovery_date",
+                    "_id": "otxdt82"
+                  },
+                  {
+                    "field_type": "select",
+                    "field_label": "Preferred Time of Day",
+                    "field_id": "preferred_time",
+                    "required": "no",
+                    "field_options": "Morning (10:30am – 12:00pm)\nAfternoon (12:45pm – 4:00pm)",
+                    "width": "50",
+                    "custom_id": "preferred_time",
+                    "_id": "pto001"
+                  },
+                  {
+                    "field_type": "text",
+                    "field_label": "County / Region",
+                    "field_id": "venueState",
+                    "required": "no",
+                    "placeholder": "e.g. East Sussex, Greater London",
+                    "width": "50",
+                    "custom_id": "county",
+                    "_id": "01crxbq"
+                  },
+                  {
+                    "field_type": "select",
+                    "field_label": "Country",
+                    "field_id": "venueCountry",
+                    "required": "no",
+                    "field_options": "United Kingdom\nInternational",
+                    "default_value": "United Kingdom",
+                    "width": "50",
+                    "custom_id": "country",
+                    "_id": "pwmsnu6"
+                  },
+                  {
+                    "field_type": "textarea",
+                    "field_label": "Tell Me About Your Brand & Vision",
+                    "field_id": "message",
+                    "required": "yes",
+                    "placeholder": "What does your brand stand for? Who is your ideal client? What do you hope authentic photography will do for your business? The more you share, the better I can prepare.",
+                    "rows": 6,
+                    "width": "100",
+                    "custom_id": "brand_vision",
+                    "_id": "dr31yay"
+                  },
+                  {
+                    "field_type": "hidden",
+                    "field_label": "Source URL",
+                    "field_id": "source",
+                    "required": "no",
+                    "default_value": "[xcp_page_url]",
+                    "width": "100",
+                    "custom_id": "source_url",
+                    "_id": "nwrbime"
+                  },
+                  {
+                    "field_type": "acceptance",
+                    "field_label": "Yes, I'd like to receive occasional updates from XC Photography: availability, workshops and editorial news. No spam, unsubscribe any time.",
+                    "field_id": "email_marketing_optin",
+                    "required": "no",
+                    "width": "100",
+                    "custom_id": "marketing_consent",
+                    "_id": "8gd555g"
+                  },
+                  {
+                    "field_type": "acceptance",
+                    "field_label": "I have read and agree to the <a href='/privacy-policy' target='_blank'>Privacy Policy</a> and consent to XC Photography contacting me about my enquiry.",
+                    "field_id": "gdpr_consent",
+                    "required": "yes",
+                    "width": "100",
+                    "custom_messages": "yes",
+                    "required_message": "Please confirm you have read and agree to the Privacy Policy before submitting.",
+                    "custom_id": "privacy_consent",
+                    "_id": "4qqfipt"
+                  }
+                ],
+                "submit_actions": [
+                  "email"
+                ],
+                "email_to": "info@xcphotography.co.uk,xavier@xcphotography.co.uk,xcphotographyuk@gmail.com",
+                "email_subject": "New Enquiry: [field id=\"project_type\"] from [field id=\"name\"]",
+                "email_content": "Name: [field id=\"name\"]\nEmail: [field id=\"email\"]\nPhone: [field id=\"phone\"]\nProject Type: [field id=\"project_type\"]\nPreferred Date: [field id=\"discovery_date\"]\nPreferred Time: [field id=\"preferred_time\"]\nCounty / Region: [field id=\"county\"]\nCountry: [field id=\"country\"]\n\nMessage:\n[field id=\"brand_vision\"]\n\nSource: [field id=\"source_url\"]",
+                "button_text": "Send My Enquiry",
+                "button_size": "lg",
+                "button_align": "left",
+                "success_message": "Thank you. Your enquiry is on its way. I will be in touch within 24 hours.",
+                "error_message": "Something went wrong. Please email me directly at info@xcphotography.co.uk or xavier@xcphotography.co.uk."
+              }
+            }
+          ]
+        },
+        {
+          "id": "info_col_overture",
+          "elType": "column",
+          "settings": {
+            "_column_size": 40,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "info_heading_o",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "What Happens Next",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "info_steps_o",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<ol><li><strong>You send your enquiry.</strong> This form takes less than 3 minutes.</li><li><strong>I respond within 24 hours</strong> with any questions I need answered.</li><li><strong>I put together a tailored proposal</strong> specific to your brand and goals, not a generic price list.</li><li><strong>We create something worth remembering.</strong></li></ol>"
+              }
+            },
+            {
+              "id": "info_divider_o",
+              "elType": "widget",
+              "widgetType": "divider",
+              "settings": {}
+            },
+            {
+              "id": "info_contact_o",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Direct Contact",
+                "header_size": "h4"
+              }
+            },
+            {
+              "id": "info_details_o",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p><strong>Xavier Clarke</strong><br>XC Photography<br><br><a href='mailto:info@xcphotography.co.uk'>info@xcphotography.co.uk</a><br><br>Brighton-based &middot; UK &amp; International<br>Mon-Fri 9am-6pm &middot; Sat by appointment</p>"
+              }
+            },
+            {
+              "id": "info_note_o",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div><strong>Not ready to enquire yet?</strong><br>That's fine. <a href='/portfolio'>Browse the portfolio</a> first, or <a href='/stories'>read the blog</a>.</div>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "version": "0.4",
+  "title": "About – Hero",
+  "type": "page",
+  "content": [
+    {
+      "id": "about_hero",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "background_image": {
+          "url": "[uc_local]assets/images/about/hero-partnership.jpg"
+        },
+        "content_position": "middle",
+        "_title": "About Hero"
+      },
+      "elements": [
+        {
+          "id": "about_hero_col",
+          "elType": "column",
+          "settings": {},
+          "elements": [
+            {
+              "id": "about_hero_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Who Takes Your Photographs Matters",
+                "header_size": "h1",
+                "align": "center",
+                "align_tablet": "center",
+                "align_mobile": "center"
+              }
+            },
+            {
+              "id": "about_hero_subhead",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Partnership, not just photography. Your vision, elevated through imagery that truly reflects who you are and connects with the people who were always meant to find you.</p>",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

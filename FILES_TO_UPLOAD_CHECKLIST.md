@@ -98,17 +98,47 @@
 ---
 
 ### Contact Page:
-- [ ] **XCP_Contact_P1_Complete.json**
-  - Complete contact page
-  - Upload to templates
+- [ ] **XCP_Contact_P1_Hero.json** — Contact page hero section
+- [ ] **XCP_Contact_P2_Form_Fallback.json** — Contact form (email only — use this now while Overture is being configured)
+  - *(Optional upgrade)* **XCP_Contact_P2_Form_Overture.json** — swap in once Overture is live
+- [ ] **XCP_Contact_P4_CTA.json** — Bottom CTA section
 
 **After uploading:**
 - Pages → Add New → Title: "Contact"
 - Edit with Elementor
-- Insert template
-- Configure contact form
-- Add Calendly link
+- Import sections in order: Hero → Form → CTA
+- Configure contact form email recipient in Elementor Pro → Form → Actions After Submit → Email
+- (Optional) If using Overture, configure your Overture API key in WordPress → Elementor → Integrations and add a Webhook action to the form (webhook is not preconfigured in this template)
 - Publish
+
+---
+
+### Global Templates (Elementor Pro Theme Builder):
+- [ ] **XCP_Header_Navigation.json**
+  - Sticky header with logo, navigation, "Book a Call" CTA button
+  - Upload via: Templates → Theme Builder → Header → Add New → Import
+  - Set display conditions: Entire Site
+  - Replace `[uc_local]XCP_Logo_White.png` with your uploaded logo
+
+- [ ] **XCP_Footer.json**
+  - Footer with brand info, quick links, services, contact details, social icons, legal bar
+  - Upload via: Templates → Theme Builder → Footer → Add New → Import
+  - Set display conditions: Entire Site
+  - Update social media URLs and contact details
+
+---
+
+### Booking Page:
+- [ ] **XCP_Booking_S1_Hero_Trust.json** — Booking page hero with trust signals
+- [ ] **XCP_Booking_S2_Calendar_FAQ.json** — Calendar embed and FAQ accordion
+- [ ] **XCP_Booking_S3_CTA.json** — Bottom call-to-action section
+
+**After uploading:**
+- Pages → Add New → Title: "Book a Discovery Call"
+- Edit with Elementor
+- Import sections in order: Hero → Calendar/FAQ → CTA
+- **Replace the Calendly iframe URL** in the HTML widget (Booking S2) with your actual Overture or Calendly embed URL
+- Publish and link from Header "Book a Call" button
 
 ---
 

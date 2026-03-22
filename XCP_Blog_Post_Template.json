@@ -1,0 +1,442 @@
+{
+  "version": "0.4",
+  "title": "XCP Blog Post: Individual Post Layout Template",
+  "type": "page",
+  "content": [
+    {
+      "id": "post_hero",
+      "elType": "section",
+      "settings": {
+        "_title": "Post Hero",
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "post_hero_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "post_category_label",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Category: Brand Photography</p>"
+              }
+            },
+            {
+              "id": "post_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Post Title Goes Here — Replace With Your Headline",
+                "header_size": "h1",
+                "align": "left"
+              }
+            },
+            {
+              "id": "post_meta",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>By <strong>Xavier Clarke</strong> &nbsp;·&nbsp; [Post Date] &nbsp;·&nbsp; [X] min read</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post_featured_image",
+      "elType": "section",
+      "settings": {
+        "_title": "Featured Image",
+        "layout": "full_width"
+      },
+      "elements": [
+        {
+          "id": "post_img_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "post_hero_img",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "[uc_local]assets/images/blog-post-featured.jpg"
+                },
+                "caption_source": "custom",
+                "caption": "Caption: Describe what is happening in this image and why it matters. Alt text should describe the image for screen readers."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post_body",
+      "elType": "section",
+      "settings": {
+        "_title": "Post Body",
+        "layout": "boxed",
+        "structure": "70_30"
+      },
+      "elements": [
+        {
+          "id": "post_content_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 70,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "post_intro",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Opening paragraph — 2–3 sentences that hook the reader and establish the problem or story you are addressing. Write in second person where possible (you/your). This paragraph should make the reader nod and keep scrolling.</p>"
+              }
+            },
+            {
+              "id": "post_h2_1",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "First Main Point or Section Heading",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "post_body_1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Body copy for your first point. Keep paragraphs short — 2 to 3 sentences maximum. Use bold for key terms or insights. Include a specific example, story, or piece of evidence here.</p><p>Second paragraph continuing the thought. Bring in a real client example, a location, or a specific result where possible. Authenticity is more persuasive than generic advice.</p>"
+              }
+            },
+            {
+              "id": "post_body_img",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "[uc_local]assets/images/blog-post-inline.jpg"
+                },
+                "caption_source": "custom",
+                "caption": "In-post image caption. Describe what is shown and its relevance."
+              }
+            },
+            {
+              "id": "post_h2_2",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Second Main Point or Section Heading",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "post_body_2",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Body copy for the second main point. If you are covering a process or technique, a numbered list works well here:</p><ol><li><strong>Step one</strong> — brief explanation of why this matters.</li><li><strong>Step two</strong> — practical instruction, not just theory.</li><li><strong>Step three</strong> — what the reader should expect as a result.</li></ol><p>Follow the list with a short paragraph that bridges to the next idea.</p>"
+              }
+            },
+            {
+              "id": "post_h2_3",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Third Point, Case Study, or Gear Recommendation",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "post_body_3",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Use this section for a case study, gear pick, or deeper dive. If including affiliate links, introduce the product naturally in context — not as a hard sell. Example: <em>\"The [Product Name] changed the way I approach [specific situation]. Here is why it earns its place in my kit.\"</em></p><p><strong>Why I recommend it:</strong> Specific benefit tied to real use. One or two sentences max. Link the product name to the affiliate URL.</p>"
+              }
+            },
+            {
+              "id": "post_divider_1",
+              "elType": "widget",
+              "widgetType": "divider",
+              "settings": {}
+            },
+            {
+              "id": "post_conclusion_h2",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Putting It All Together",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "post_conclusion",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Closing paragraph — summarise the core takeaway without repeating everything above. Redirect to action: what should the reader do next? Book a call, read another post, download the guide, or enquire about a shoot.</p><p>End with a question or invitation that opens the door to conversation. This is where authentic voice matters most.</p>"
+              }
+            },
+            {
+              "id": "post_cta_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Book a Discovery Call",
+                "link": {
+                  "url": "/booking",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "left"
+              }
+            }
+          ]
+        },
+        {
+          "id": "post_sidebar_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 30,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "sidebar_about_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "About Xavier",
+                "header_size": "h4"
+              }
+            },
+            {
+              "id": "sidebar_about_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Xavier Clarke is a brand and documentary photographer based in Brighton. He shoots for businesses that want photography with purpose — images that do a job, not just look good.</p>"
+              }
+            },
+            {
+              "id": "sidebar_divider",
+              "elType": "widget",
+              "widgetType": "divider",
+              "settings": {}
+            },
+            {
+              "id": "sidebar_cta_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Ready to Talk?",
+                "header_size": "h4"
+              }
+            },
+            {
+              "id": "sidebar_cta_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Sessions from <strong>£1,495</strong>. Tailored proposals. No scripts or generic packages.</p>"
+              }
+            },
+            {
+              "id": "sidebar_cta_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Enquire Now",
+                "link": {
+                  "url": "/contact",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "left"
+              }
+            },
+            {
+              "id": "sidebar_divider_2",
+              "elType": "widget",
+              "widgetType": "divider",
+              "settings": {}
+            },
+            {
+              "id": "sidebar_tags_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Filed Under",
+                "header_size": "h5"
+              }
+            },
+            {
+              "id": "sidebar_tags_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Brand Photography · Brighton · Documentary · Business Storytelling</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post_pull_quote",
+      "elType": "section",
+      "settings": {
+        "_title": "Pull Quote",
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "pull_quote_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 80,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "pull_quote_text",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "\"Replace this with the most memorable line from this post — something that encapsulates the core insight in a single sentence.\"",
+                "header_size": "h3",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post_author_bio",
+      "elType": "section",
+      "settings": {
+        "_title": "Author Bio",
+        "layout": "boxed",
+        "structure": "20"
+      },
+      "elements": [
+        {
+          "id": "author_img_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 20,
+            "_column_size_tablet": 30,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "author_img",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "[uc_local]assets/images/xavier-bio.jpg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "author_text_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 80,
+            "_column_size_tablet": 70,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "author_name",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Xavier Clarke",
+                "header_size": "h4"
+              }
+            },
+            {
+              "id": "author_bio",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Brand and documentary photographer, Brighton. Xavier works with businesses across the UK and internationally, creating photography that earns its place in marketing strategies — not just on walls. He shoots Micro Four Thirds and has a particular interest in the intersection of music, culture, and commercial photography.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post_more_reading",
+      "elType": "section",
+      "settings": {
+        "_title": "More Reading",
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "more_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "more_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "You Might Also Like",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "more_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Add an Elementor <strong>Posts</strong> widget here, filtered to the same category as this post. Set columns to 3, show 3 posts, exclude current post.</p>"
+              }
+            },
+            {
+              "id": "more_back_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "← Back to Stories",
+                "link": {
+                  "url": "/stories",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "version": "0.4",
+  "title": "XCP Shop: Fine Art Print Product Page Template",
+  "type": "page",
+  "content": [
+    {
+      "id": "product_breadcrumb",
+      "elType": "section",
+      "settings": {
+        "_title": "Breadcrumb",
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "breadcrumb_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "breadcrumb_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p><a href=\"/shop\">Shop</a> &nbsp;/&nbsp; <a href=\"/shop/prints\">Prints</a> &nbsp;/&nbsp; [Print Title]</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "product_main",
+      "elType": "section",
+      "settings": {
+        "_title": "Product Main",
+        "layout": "boxed",
+        "structure": "60_40"
+      },
+      "elements": [
+        {
+          "id": "product_gallery_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 60,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "product_main_img",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "[uc_local]assets/images/print-product-main.jpg"
+                },
+                "caption_source": "custom",
+                "caption": "Shown unframed. Framed options available — see below."
+              }
+            },
+            {
+              "id": "product_detail_img1",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "[uc_local]assets/images/print-product-framed.jpg"
+                },
+                "caption_source": "custom",
+                "caption": "Shown framed in matt black. Three frame finishes available."
+              }
+            },
+            {
+              "id": "product_detail_img2",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "[uc_local]assets/images/print-product-detail.jpg"
+                },
+                "caption_source": "custom",
+                "caption": "Print detail — giclée on Hahnemühle Photo Rag 308gsm."
+              }
+            }
+          ]
+        },
+        {
+          "id": "product_info_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 40,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "product_category_tag",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Fine Art Print · Limited Edition</p>"
+              }
+            },
+            {
+              "id": "product_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "[Print Title — Replace With Image Name]",
+                "header_size": "h1"
+              }
+            },
+            {
+              "id": "product_edition_note",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Edition of [XX] &nbsp;·&nbsp; Signed and numbered by Xavier Clarke &nbsp;·&nbsp; [X] remaining</p>"
+              }
+            },
+            {
+              "id": "product_woocommerce_placeholder",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p><em>Replace this widget with the WooCommerce <strong>Single Product</strong> widget (or use Elementor Pro's WooCommerce product widgets to display price, size selector, frame selector, and Add to Cart button). Set the product via WooCommerce product ID.</em></p><p><strong>Sizes in this range:</strong> A4 · A3 · A2 · A1 · 60×90cm · 90×120cm</p><p><strong>Framing:</strong> Unframed · Matt White Frame · Matt Black Frame · Natural Oak Frame</p><p>Prices vary by size. See WooCommerce product for live pricing.</p>"
+              }
+            },
+            {
+              "id": "product_divider",
+              "elType": "widget",
+              "widgetType": "divider",
+              "settings": {}
+            },
+            {
+              "id": "product_about_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "About This Print",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "product_about_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>[Write the unique description for this specific image here. Describe the moment, the location, what was happening. Not generic — every print gets its own story in 2–4 sentences. Example: \"Taken during the morning rush at Bond Street station, this image captures a split second of stillness within the relentless forward motion of the city. The geometry of the escalator banks and the single figure pausing to check her phone create a tension that holds the eye long after you've looked away.\"]</p>"
+              }
+            },
+            {
+              "id": "product_location_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Location &amp; Context",
+                "header_size": "h4"
+              }
+            },
+            {
+              "id": "product_location_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p><strong>Location:</strong> [City, specific location if relevant]<br><strong>Photographed:</strong> [Month Year]<br><strong>Camera:</strong> [Camera body used]<br><strong>Series:</strong> [Series name if part of a series, or 'Standalone']</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "product_print_specs",
+      "elType": "section",
+      "settings": {
+        "_title": "Print Specifications",
+        "layout": "boxed",
+        "structure": "33"
+      },
+      "elements": [
+        {
+          "id": "spec_col1",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_column_size_tablet": 50,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "spec_h1",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Print Quality",
+                "header_size": "h4"
+              }
+            },
+            {
+              "id": "spec_t1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Giclée printing on Hahnemühle Photo Rag 308gsm archival paper. Pigment-based inks rated 100+ years lightfastness. Produced in the UK by specialist fine art print studios.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "spec_col2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_column_size_tablet": 50,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "spec_h2",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Framing",
+                "header_size": "h4"
+              }
+            },
+            {
+              "id": "spec_t2",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Sustainably sourced UK hardwood frames. Museum-grade UV-protective glass. Deep-profile mount in warm white. Ready to hang on arrival — no assembly required.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "spec_col3",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "spec_h3",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Delivery",
+                "header_size": "h4"
+              }
+            },
+            {
+              "id": "spec_t3",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>UK tracked delivery. Unframed prints: flat-packed or rolled in protective tube (size-dependent). Framed prints: double-boxed with corner protection. Typical lead time: 5–7 working days.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "product_artist_note",
+      "elType": "section",
+      "settings": {
+        "_title": "Artist Note",
+        "layout": "boxed",
+        "structure": "20"
+      },
+      "elements": [
+        {
+          "id": "artist_img_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 20,
+            "_column_size_tablet": 30,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "artist_note_img",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "[uc_local]assets/images/xavier-bio.jpg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "artist_text_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 80,
+            "_column_size_tablet": 70,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "artist_note_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "A Note From Xavier",
+                "header_size": "h4"
+              }
+            },
+            {
+              "id": "artist_note_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>[Write a brief personal note about why this image was selected for print, what it means to you, or what you hope it brings to the wall it ends up on. 2–3 sentences. First person. Genuine.] &mdash; Xavier Clarke, XC Photography</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "product_related",
+      "elType": "section",
+      "settings": {
+        "_title": "Related Products",
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "related_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "related_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "You May Also Like",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "related_woo_note",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p><em>Add Elementor WooCommerce <strong>Related Products</strong> widget here — it will automatically display related prints from the same WooCommerce product category.</em></p>"
+              }
+            },
+            {
+              "id": "related_back_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "← Back to Prints",
+                "link": {
+                  "url": "/shop/prints",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

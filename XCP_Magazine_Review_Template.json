@@ -1,0 +1,467 @@
+{
+  "version": "0.4",
+  "title": "XCP Magazine: Music & Events Review — Individual Review Template",
+  "type": "page",
+  "content": [
+    {
+      "id": "review_hero",
+      "elType": "section",
+      "settings": {
+        "_title": "Review Hero",
+        "layout": "full_width",
+        "background_image": {
+          "url": "[uc_local]assets/images/review-hero-placeholder.jpg"
+        },
+        "content_position": "bottom"
+      },
+      "elements": [
+        {
+          "id": "review_hero_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "review_channel_label",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Music &amp; Shows &nbsp;·&nbsp; Live Review</p>"
+              }
+            },
+            {
+              "id": "review_hero_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Artist Name — Venue Name, City",
+                "header_size": "h1",
+                "align": "left"
+              }
+            },
+            {
+              "id": "review_meta_bar",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>[Date of show] &nbsp;·&nbsp; Reviewed by <strong>Xavier Clarke</strong> &nbsp;·&nbsp; Photography: XC Photography</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "review_info_panel",
+      "elType": "section",
+      "settings": {
+        "_title": "Event Info Panel",
+        "layout": "boxed",
+        "structure": "60_40"
+      },
+      "elements": [
+        {
+          "id": "review_rating_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 40,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "review_rating_label",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Overall Rating</p>"
+              }
+            },
+            {
+              "id": "review_stars",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "★★★★☆",
+                "header_size": "h2",
+                "align": "left"
+              }
+            },
+            {
+              "id": "review_rating_note",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p><em>Replace stars above: ★ = filled, ☆ = empty. Max 5.</em></p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "review_details_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 60,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "review_details_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Event Details",
+                "header_size": "h4"
+              }
+            },
+            {
+              "id": "review_details_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p><strong>Venue:</strong> [Venue name and city]<br><strong>Date:</strong> [Full date]<br><strong>Support:</strong> [Support acts, or 'None']<br><strong>Capacity:</strong> [Approximate venue capacity]<br><strong>Ticket price:</strong> [£XX–£XX]<br><strong>Genre:</strong> [Genre tags]</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "review_opener",
+      "elType": "section",
+      "settings": {
+        "_title": "Review Opening",
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "review_opener_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "review_opener_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Opening paragraph — set the scene. Where were you standing, what was the light like, what was the first thing that hit you when [Artist Name] took the stage? The best reviews start with a moment, not a fact. Pull the reader into the room.</p><p>Second paragraph — context. Who is this artist, and why should the reader care? Brief biography or background in 2–3 sentences. Not a Wikipedia entry — only what is relevant to understanding the performance you are reviewing.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "review_photo_lead",
+      "elType": "section",
+      "settings": {
+        "_title": "Lead Photo",
+        "layout": "full_width"
+      },
+      "elements": [
+        {
+          "id": "review_lead_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "review_lead_img",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "[uc_local]assets/images/review-lead-photo.jpg"
+                },
+                "caption_source": "custom",
+                "caption": "[Artist Name] at [Venue], [City], [Date]. Photography: Xavier Clarke / XC Photography."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "review_body_main",
+      "elType": "section",
+      "settings": {
+        "_title": "Review Body",
+        "layout": "boxed",
+        "structure": "70_30"
+      },
+      "elements": [
+        {
+          "id": "review_body_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 70,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "review_h2_support",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Support Act(s)",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "review_support_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>2–3 sentences on each support act. What worked, what didn't, what surprised you. If there were no support acts, remove this section.</p>"
+              }
+            },
+            {
+              "id": "review_h2_main",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "The Main Event",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "review_main_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>The heart of the review. Describe the performance as it unfolded — not song by song (unless something specific warrants it), but in terms of energy, narrative, and atmosphere. What moments defined the night? What did the audience respond to and when?</p><p>Use specific details. A particular song, a between-song comment, a moment where the lighting hit exactly right, or where everything briefly went wrong and recovered — these are the things that make a review worth reading rather than just consulting a setlist online.</p><p>Keep paragraphs short. This is magazine writing, not a thesis.</p>"
+              }
+            },
+            {
+              "id": "review_inline_img",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "[uc_local]assets/images/review-inline-photo.jpg"
+                },
+                "caption_source": "custom",
+                "caption": "Caption describing the moment captured. Photography: Xavier Clarke / XC Photography."
+              }
+            },
+            {
+              "id": "review_h2_highlights",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Highlights",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "review_highlights_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Pick 2–3 moments from the night that stood out above everything else. These could be specific songs, visual moments, crowd interactions, or unexpected surprises. Write a short paragraph on each — not bullet points. Give each highlight a sentence or two of context.</p><p><strong>Highlight 1:</strong> [Specific song or moment] — description of why this landed, what made it work, how the room responded.</p><p><strong>Highlight 2:</strong> [Next standout moment] — same treatment. Be specific and sensory. What could you hear, see, feel from your position?</p>"
+              }
+            },
+            {
+              "id": "review_h2_photography",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Photographing the Night",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "review_photo_notes",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>A short behind-the-lens note — what the conditions were like to photograph, what gear was used, what made this particular gig challenging or rewarding from a photographic standpoint. This section distinguishes XC Photography reviews from any other — it connects the writing directly to the images.</p><p>Example: <em>Shooting the pit at [Venue] with the OM System OM-5 and a 40–150mm, the backlit stage made metering unpredictable from the off. The breakthrough came mid-set when [Artist Name] stepped forward into the front wash — everything changed in an instant.</em></p>"
+              }
+            },
+            {
+              "id": "review_divider",
+              "elType": "widget",
+              "widgetType": "divider",
+              "settings": {}
+            },
+            {
+              "id": "review_verdict_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Verdict",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "review_verdict_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Closing paragraph — your honest, considered assessment. Would you go again? Would you recommend it to a friend who had never heard this artist? What does this show tell us about where [Artist Name] is headed? End with one strong, memorable sentence that stays with the reader.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "review_sidebar_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 30,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "sidebar_setlist_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Setlist",
+                "header_size": "h4"
+              }
+            },
+            {
+              "id": "sidebar_setlist_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<ol><li>Song Title</li><li>Song Title</li><li>Song Title</li><li>Song Title</li><li>Song Title</li><li>Song Title</li><li>Song Title</li><li>Song Title</li><li>Song Title</li><li>Song Title</li><li><em>Encore: Song Title</em></li></ol>"
+              }
+            },
+            {
+              "id": "sidebar_divider_1",
+              "elType": "widget",
+              "widgetType": "divider",
+              "settings": {}
+            },
+            {
+              "id": "sidebar_hire_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Event Photography",
+                "header_size": "h4"
+              }
+            },
+            {
+              "id": "sidebar_hire_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Need a photographer for your next event, show, or tour? XC Photography covers music, corporate events, and performance across the UK and internationally.</p>"
+              }
+            },
+            {
+              "id": "sidebar_hire_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Book Event Coverage",
+                "link": {
+                  "url": "/contact",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "left"
+              }
+            },
+            {
+              "id": "sidebar_divider_2",
+              "elType": "widget",
+              "widgetType": "divider",
+              "settings": {}
+            },
+            {
+              "id": "sidebar_channel_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Music &amp; Shows",
+                "header_size": "h5"
+              }
+            },
+            {
+              "id": "sidebar_channel_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Live reviews, previews, and photography from stages across Brighton, the UK, and beyond. Part of The XC Photography Magazine.</p>"
+              }
+            },
+            {
+              "id": "sidebar_channel_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "More Reviews",
+                "link": {
+                  "url": "/stories?category=music-and-shows",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "review_gallery_cta",
+      "elType": "section",
+      "settings": {
+        "_title": "Gallery CTA",
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "gallery_cta_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "gallery_cta_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Full Gallery",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "gallery_cta_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>The full image gallery from this show is available in the XC Photography portfolio. All images available for editorial use, personal archive, or as fine art prints.</p>"
+              }
+            },
+            {
+              "id": "gallery_cta_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "View Full Gallery",
+                "link": {
+                  "url": "/portfolio",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
