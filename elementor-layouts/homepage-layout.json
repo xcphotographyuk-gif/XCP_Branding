@@ -1,0 +1,869 @@
+{
+  "version": "0.4",
+  "title": "XC Photography Homepage Layout",
+  "type": "page",
+  "content": [
+    {
+      "id": "hero-section",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "full_width",
+        "content_width": {
+          "unit": "px",
+          "size": 1140
+        },
+        "height": "min-height",
+        "custom_height": {
+          "unit": "vh",
+          "size": 100
+        },
+        "background_background": "classic",
+        "background_image": {
+          "url": "",
+          "id": ""
+        },
+        "background_position": "center center",
+        "background_size": "cover",
+        "background_overlay_background": "classic",
+        "background_overlay_color": "rgba(0,0,0,0.5)",
+        "background_overlay_opacity": {
+          "unit": "px",
+          "size": 0.5
+        }
+      },
+      "elements": [
+        {
+          "id": "hero-column",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "content_position": "middle",
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "hero-h1",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Capturing Your Most Precious Moments",
+                "header_size": "h1",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Raleway",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 56
+                },
+                "typography_font_weight": "700",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.2
+                },
+                "text_shadow_text_shadow_type": "yes",
+                "text_shadow_text_shadow": {
+                  "horizontal": 2,
+                  "vertical": 2,
+                  "blur": 10,
+                  "color": "rgba(0,0,0,0.5)"
+                }
+              }
+            },
+            {
+              "id": "hero-h2",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Professional Photography That Tells Your Story",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#E8E8E8",
+                "typography_typography": "custom",
+                "typography_font_family": "Raleway",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 32
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": 20,
+                  "right": 0,
+                  "bottom": 10,
+                  "left": 0
+                }
+              }
+            },
+            {
+              "id": "hero-subheading",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #CCCCCC; font-size: 18px; font-family: Raleway; max-width: 700px; margin: 0 auto;'>From weddings to portraits, commercial shoots to special events - we create timeless imagery that captures the essence of your unique moments.</p>",
+                "_margin": {
+                  "unit": "px",
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 40,
+                  "left": 0
+                }
+              }
+            },
+            {
+              "id": "hero-buttons",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Book Your Free Consultation",
+                "link": {
+                  "url": "#contact-form",
+                  "is_external": false
+                },
+                "align": "center",
+                "button_type": "primary",
+                "size": "lg",
+                "button_background_color": "#D4AF37",
+                "button_text_color": "#000000",
+                "typography_typography": "custom",
+                "typography_font_family": "Raleway",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 18
+                },
+                "typography_font_weight": "600",
+                "button_border_radius": {
+                  "unit": "px",
+                  "top": 4,
+                  "right": 4,
+                  "bottom": 4,
+                  "left": 4
+                },
+                "_padding": {
+                  "unit": "px",
+                  "top": 18,
+                  "right": 40,
+                  "bottom": 18,
+                  "left": 40
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": 0,
+                  "right": 10,
+                  "bottom": 0,
+                  "left": 0
+                }
+              }
+            },
+            {
+              "id": "hero-button-2",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "View Portfolio",
+                "link": {
+                  "url": "/portfolio",
+                  "is_external": false
+                },
+                "align": "center",
+                "button_type": "secondary",
+                "size": "lg",
+                "button_background_color": "transparent",
+                "button_text_color": "#FFFFFF",
+                "button_border_border": "solid",
+                "button_border_width": {
+                  "unit": "px",
+                  "top": 2,
+                  "right": 2,
+                  "bottom": 2,
+                  "left": 2
+                },
+                "button_border_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Raleway",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 18
+                },
+                "typography_font_weight": "600",
+                "button_border_radius": {
+                  "unit": "px",
+                  "top": 4,
+                  "right": 4,
+                  "bottom": 4,
+                  "left": 4
+                },
+                "_padding": {
+                  "unit": "px",
+                  "top": 18,
+                  "right": 40,
+                  "bottom": 18,
+                  "left": 40
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "intro-narrative-section",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 900
+        },
+        "background_background": "classic",
+        "background_color": "#F5F5F5",
+        "_padding": {
+          "unit": "px",
+          "top": 80,
+          "right": 20,
+          "bottom": 80,
+          "left": 20
+        },
+        "_margin": {
+          "unit": "px",
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "elements": [
+        {
+          "id": "intro-column",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 100,
+            "content_position": "top"
+          },
+          "elements": [
+            {
+              "id": "intro-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div style='background: linear-gradient(135deg, #E8E8E8 0%, #D4D4D4 100%); padding: 50px 60px; border-left: 5px solid #D4AF37; box-shadow: 0 4px 15px rgba(0,0,0,0.1);'><p style='font-family: \"Playfair Display\", serif; font-size: 22px; line-height: 1.8; color: #2C2C2C; font-weight: 400; text-align: center; margin: 0;'>At XC Photography, we believe every moment deserves to be preserved with artistry and authenticity. Our commitment is to deliver not just photographs, but timeless memories that resonate with emotion and excellence. Whether it's the intimacy of a wedding, the personality in a portrait, or the dynamism of a commercial project, we approach each assignment with dedication, creativity, and professional precision.</p></div>",
+                "_margin": {
+                  "unit": "px",
+                  "top": 0,
+                  "right": "auto",
+                  "bottom": 0,
+                  "left": "auto"
+                },
+                "_margin_tablet": {
+                  "unit": "px",
+                  "top": 0,
+                  "right": 20,
+                  "bottom": 0,
+                  "left": 20
+                },
+                "_margin_mobile": {
+                  "unit": "px",
+                  "top": 0,
+                  "right": 10,
+                  "bottom": 0,
+                  "left": 10
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "micro-portfolio-section",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1200
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "_padding": {
+          "unit": "px",
+          "top": 80,
+          "right": 20,
+          "bottom": 80,
+          "left": 20
+        }
+      },
+      "elements": [
+        {
+          "id": "portfolio-column",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "portfolio-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Featured Work",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#2C2C2C",
+                "typography_typography": "custom",
+                "typography_font_family": "Raleway",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 42
+                },
+                "typography_font_weight": "700",
+                "_margin": {
+                  "unit": "px",
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 50,
+                  "left": 0
+                }
+              }
+            },
+            {
+              "id": "portfolio-gallery",
+              "elType": "widget",
+              "widgetType": "image-gallery",
+              "settings": {
+                "gallery": [],
+                "gallery_layout": "masonry",
+                "columns": 3,
+                "columns_tablet": 2,
+                "columns_mobile": 1,
+                "image_spacing": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "link_to": "file",
+                "hover_animation": "grow",
+                "gallery_display_caption": "yes",
+                "caption": "title",
+                "overlay_background": "rgba(0,0,0,0.7)",
+                "overlay_opacity": {
+                  "unit": "px",
+                  "size": 0.8
+                },
+                "image_border_radius": {
+                  "unit": "px",
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                }
+              }
+            },
+            {
+              "id": "portfolio-note",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 14px; font-style: italic; margin-top: 30px;'>Note: Add 9 curated images from your Media Library to the gallery widget above. Each image can include a title that will appear on hover.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "about-section",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1140
+        },
+        "background_background": "classic",
+        "background_color": "#F9F9F9",
+        "_padding": {
+          "unit": "px",
+          "top": 80,
+          "right": 20,
+          "bottom": 80,
+          "left": 20
+        }
+      },
+      "elements": [
+        {
+          "id": "about-column-left",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 50,
+            "content_position": "middle",
+            "_padding_tablet": {
+              "unit": "px",
+              "top": 0,
+              "right": 0,
+              "bottom": 30,
+              "left": 0
+            }
+          },
+          "elements": [
+            {
+              "id": "about-image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "",
+                  "id": ""
+                },
+                "image_size": "full",
+                "align": "center",
+                "image_border_radius": {
+                  "unit": "px",
+                  "top": 8,
+                  "right": 8,
+                  "bottom": 8,
+                  "left": 8
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 4,
+                  "blur": 20,
+                  "spread": 0,
+                  "color": "rgba(0,0,0,0.15)"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "about-column-right",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 50,
+            "content_position": "middle",
+            "_padding": {
+              "unit": "px",
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 40
+            },
+            "_padding_tablet": {
+              "unit": "px",
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "elements": [
+            {
+              "id": "about-title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "About XC Photography",
+                "header_size": "h2",
+                "align": "left",
+                "title_color": "#2C2C2C",
+                "typography_typography": "custom",
+                "typography_font_family": "Raleway",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 38
+                },
+                "typography_font_weight": "700",
+                "_margin": {
+                  "unit": "px",
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 25,
+                  "left": 0
+                }
+              }
+            },
+            {
+              "id": "about-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-family: Raleway, sans-serif; font-size: 17px; line-height: 1.7; color: #555555;'>With years of experience and a passion for visual storytelling, XC Photography brings a unique blend of technical expertise and artistic vision to every project. We specialize in creating compelling imagery that connects with audiences and stands the test of time.</p><p style='font-family: Raleway, sans-serif; font-size: 17px; line-height: 1.7; color: #555555; margin-top: 20px;'>Our approach is collaborative and client-focused, ensuring that your vision is not only realized but exceeded. From concept to final delivery, we handle every detail with professionalism and care.</p>",
+                "_margin": {
+                  "unit": "px",
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 30,
+                  "left": 0
+                }
+              }
+            },
+            {
+              "id": "about-button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Learn More About Us",
+                "link": {
+                  "url": "/about",
+                  "is_external": false
+                },
+                "align": "left",
+                "button_type": "primary",
+                "size": "md",
+                "button_background_color": "#D4AF37",
+                "button_text_color": "#000000",
+                "typography_typography": "custom",
+                "typography_font_family": "Raleway",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16
+                },
+                "typography_font_weight": "600",
+                "button_border_radius": {
+                  "unit": "px",
+                  "top": 4,
+                  "right": 4,
+                  "bottom": 4,
+                  "left": 4
+                },
+                "_padding": {
+                  "unit": "px",
+                  "top": 15,
+                  "right": 35,
+                  "bottom": 15,
+                  "left": 35
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contact-section",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 800
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "_padding": {
+          "unit": "px",
+          "top": 80,
+          "right": 20,
+          "bottom": 80,
+          "left": 20
+        },
+        "html_tag": "section",
+        "css_classes": "contact-form"
+      },
+      "elements": [
+        {
+          "id": "contact-column",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "contact-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Get Started Today",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#2C2C2C",
+                "typography_typography": "custom",
+                "typography_font_family": "Raleway",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 42
+                },
+                "typography_font_weight": "700",
+                "_margin": {
+                  "unit": "px",
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 15,
+                  "left": 0
+                }
+              }
+            },
+            {
+              "id": "contact-subheading",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 18px; margin-bottom: 40px;'>Fill out the quick form below and let's discuss how we can bring your vision to life.</p>"
+              }
+            },
+            {
+              "id": "contact-form-stage1",
+              "elType": "widget",
+              "widgetType": "form",
+              "settings": {
+                "form_name": "Quick Contact Form",
+                "form_fields": [
+                  {
+                    "custom_id": "name",
+                    "field_type": "text",
+                    "field_label": "Your Name",
+                    "placeholder": "Enter your full name",
+                    "required": "yes",
+                    "field_width": "100"
+                  },
+                  {
+                    "custom_id": "email",
+                    "field_type": "email",
+                    "field_label": "Email Address",
+                    "placeholder": "your.email@example.com",
+                    "required": "yes",
+                    "field_width": "100"
+                  },
+                  {
+                    "custom_id": "phone",
+                    "field_type": "tel",
+                    "field_label": "Phone Number",
+                    "placeholder": "Your contact number",
+                    "required": "no",
+                    "field_width": "100"
+                  },
+                  {
+                    "custom_id": "requirement",
+                    "field_type": "textarea",
+                    "field_label": "General Requirement Description",
+                    "placeholder": "Tell us about your photography needs (wedding, portrait, commercial, event, etc.)",
+                    "required": "yes",
+                    "rows": 5,
+                    "field_width": "100"
+                  }
+                ],
+                "button_text": "Submit & Continue",
+                "button_size": "md",
+                "button_align": "center",
+                "button_background_color": "#D4AF37",
+                "button_text_color": "#000000",
+                "button_typography_typography": "custom",
+                "button_typography_font_family": "Raleway",
+                "button_typography_font_size": {
+                  "unit": "px",
+                  "size": 18
+                },
+                "button_typography_font_weight": "600",
+                "form_fields_background_color": "#F9F9F9",
+                "form_fields_text_color": "#2C2C2C",
+                "field_border_radius": {
+                  "unit": "px",
+                  "top": 4,
+                  "right": 4,
+                  "bottom": 4,
+                  "left": 4
+                },
+                "submit_actions": ["email", "redirect"],
+                "email_to": "info@xcphotography.com",
+                "email_subject": "New Contact Form Submission",
+                "redirect_to": "#qualifier-form"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qualifier-section",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 800
+        },
+        "background_background": "classic",
+        "background_color": "#F5F5F5",
+        "_padding": {
+          "unit": "px",
+          "top": 80,
+          "right": 20,
+          "bottom": 80,
+          "left": 20
+        },
+        "html_tag": "section",
+        "css_classes": "qualifier-form"
+      },
+      "elements": [
+        {
+          "id": "qualifier-column",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "qualifier-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Tell Us More (Optional)",
+                "header_size": "h3",
+                "align": "center",
+                "title_color": "#2C2C2C",
+                "typography_typography": "custom",
+                "typography_font_family": "Raleway",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 32
+                },
+                "typography_font_weight": "600",
+                "_margin": {
+                  "unit": "px",
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 15,
+                  "left": 0
+                }
+              }
+            },
+            {
+              "id": "qualifier-subheading",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 16px; margin-bottom: 35px;'>Help us better understand your needs by providing additional details about your project.</p>"
+              }
+            },
+            {
+              "id": "qualifier-form-stage2",
+              "elType": "widget",
+              "widgetType": "form",
+              "settings": {
+                "form_name": "Project Qualifier Form",
+                "form_fields": [
+                  {
+                    "custom_id": "event_type",
+                    "field_type": "select",
+                    "field_label": "Event/Project Type",
+                    "placeholder": "Select type",
+                    "required": "no",
+                    "field_width": "100",
+                    "field_options": "Wedding\nPortrait Session\nCommercial Shoot\nCorporate Event\nFamily Photos\nEngagement\nOther"
+                  },
+                  {
+                    "custom_id": "timeline",
+                    "field_type": "date",
+                    "field_label": "Preferred Timeline/Event Date",
+                    "placeholder": "Select date",
+                    "required": "no",
+                    "field_width": "50"
+                  },
+                  {
+                    "custom_id": "budget",
+                    "field_type": "select",
+                    "field_label": "Budget Range",
+                    "placeholder": "Select range",
+                    "required": "no",
+                    "field_width": "50",
+                    "field_options": "Under £500\n£500 - £1,000\n£1,000 - £2,500\n£2,500 - £5,000\nOver £5,000\nFlexible"
+                  },
+                  {
+                    "custom_id": "location",
+                    "field_type": "text",
+                    "field_label": "Location/Venue",
+                    "placeholder": "Where will the shoot take place?",
+                    "required": "no",
+                    "field_width": "100"
+                  },
+                  {
+                    "custom_id": "guests",
+                    "field_type": "number",
+                    "field_label": "Number of Attendees/Subjects",
+                    "placeholder": "Approximate number",
+                    "required": "no",
+                    "field_width": "50",
+                    "min": 1
+                  },
+                  {
+                    "custom_id": "duration",
+                    "field_type": "select",
+                    "field_label": "Expected Duration",
+                    "placeholder": "Select duration",
+                    "required": "no",
+                    "field_width": "50",
+                    "field_options": "1-2 hours\n3-4 hours\nHalf day (4-6 hours)\nFull day (8+ hours)\nMultiple days"
+                  },
+                  {
+                    "custom_id": "visibility",
+                    "field_type": "radio",
+                    "field_label": "Portfolio/Social Media Usage",
+                    "required": "no",
+                    "field_width": "100",
+                    "field_options": "Yes, you may use images for marketing\nNo, please keep images private\nI'd like to discuss this"
+                  },
+                  {
+                    "custom_id": "additional_notes",
+                    "field_type": "textarea",
+                    "field_label": "Additional Notes or Special Requests",
+                    "placeholder": "Any specific requirements, styles, or ideas you have in mind?",
+                    "required": "no",
+                    "rows": 4,
+                    "field_width": "100"
+                  }
+                ],
+                "button_text": "Complete Submission",
+                "button_size": "md",
+                "button_align": "center",
+                "button_background_color": "#2C2C2C",
+                "button_text_color": "#FFFFFF",
+                "button_typography_typography": "custom",
+                "button_typography_font_family": "Raleway",
+                "button_typography_font_size": {
+                  "unit": "px",
+                  "size": 18
+                },
+                "button_typography_font_weight": "600",
+                "form_fields_background_color": "#FFFFFF",
+                "form_fields_text_color": "#2C2C2C",
+                "field_border_radius": {
+                  "unit": "px",
+                  "top": 4,
+                  "right": 4,
+                  "bottom": 4,
+                  "left": 4
+                },
+                "submit_actions": ["email"],
+                "email_to": "info@xcphotography.com",
+                "email_subject": "New Qualified Lead - Project Details",
+                "success_message": "Thank you! We'll be in touch within 24 hours to discuss your project in detail."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {
+    "post_title": "XC Photography - Home",
+    "template": "elementor_canvas",
+    "post_status": "publish"
+  },
+  "export_version": "1.0"
+}
