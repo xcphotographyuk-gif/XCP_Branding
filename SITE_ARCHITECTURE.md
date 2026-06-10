@@ -29,21 +29,38 @@
    - Service packages focused on client outcomes
    - Investment guidance
    - Ideal client fit indicators
+   - Extended services: Pop-Up Portraits, Workshops, Retreats
    - CTA: "Find Your Perfect Package"
 
-5. **Blog/Stories Page**
-   - "Insights for Your Brand Journey"
+5. **Shop Page** ✅ NEW
+   - "Bring Your Story Home"
+   - Fine Art Prints (A3+ to A0, £375-£1,425)
+   - Wall Art (A4 to larger formats, from £95)
+   - Merchandise & Gifts (mugs, apparel, blankets)
+   - Gift Sets (curated collections)
+   - Hotel du Vin Exclusives (premium collection for discerning clients)
+   - CTA: "Explore the Collection"
+
+6. **Blog/Stories Page**
+   - "Stories, Insights & Inspiration"
    - Educational content
    - Client transformation stories
    - Industry insights
-   - CTA: "Start Your Own Story"
+   - Behind-the-scenes features
+   - CTA: "Load More Posts"
 
-6. **Contact Page**
+7. **Contact Page**
    - "Let's Bring Your Vision to Life"
    - Comprehensive contact form
    - What to expect next
    - FAQs
    - Direct contact options
+
+8. **Privacy & Cookies Policy Page** ✅ NEW
+   - Legal compliance (GDPR)
+   - Data protection information
+   - Cookie policy and consent management
+   - User rights and contact information
 
 ### Navigation Flow
 
@@ -52,8 +69,14 @@
 - About
 - Portfolio
 - Services
+- Shop ✅ NEW
 - Stories (Blog)
 - Contact
+
+**Footer Navigation:**
+- Privacy Policy ✅ NEW
+- Terms & Conditions
+- Social Media Links
 
 **User Journey Paths:**
 
@@ -107,11 +130,13 @@ All pages optimized for:
 ## Implementation Priority
 
 1. ✅ Homepage - COMPLETE
-2. 🔄 About Page - IN PROGRESS
-3. 🔄 Services Page - IN PROGRESS
-4. 🔄 Portfolio Page - IN PROGRESS
-5. 🔄 Contact Page - IN PROGRESS
-6. 🔄 Blog/Stories Page - IN PROGRESS
+2. ✅ About Page - COMPLETE
+3. ✅ Services Page - COMPLETE (includes extended services)
+4. ✅ Portfolio Page - COMPLETE
+5. ✅ Contact Page - COMPLETE
+6. ✅ Shop Page - COMPLETE (6 sections including Hotel du Vin Exclusives)
+7. ✅ Blog/Stories Page - COMPLETE
+8. ✅ Privacy Policy Page - COMPLETE
 
 ---
 
@@ -122,3 +147,40 @@ All pages optimized for:
 - Consistent naming: `XCP_[PageName]_[Section].json`
 - Image paths: `[uc_local]assets/images/[page]/`
 - Global styles applied via theme settings
+- Total of 23 production-ready templates
+- Full site architecture complete and ready for deployment
+
+---
+
+## New Page Details
+
+### Shop Page Architecture
+**Revenue Stream:** E-commerce integration for prints, merchandise, and exclusive items
+**Sub-categories:**
+1. Fine Art Prints - Premium pricing (£375-£1,425), museum-quality
+2. Wall Art - Accessible pricing (from £95), multiple sizes
+3. Merchandise & Gifts - Everyday items (mugs, apparel, blankets)
+4. Gift Sets - Curated collections for gifting
+5. Hotel du Vin Exclusives - Premium collection for high-caliber clients
+
+**Integration Points:**
+- WooCommerce or Shopify integration
+- Payment gateway setup
+- Inventory management
+- Shipping options (The Print Space for fine art, Gelato/Printful for merchandise)
+
+### Extended Services Architecture
+**New Service Offerings:**
+1. Pop-Up Portraits - Lower commitment, accessible entry point
+2. Workshops - Education revenue stream, community building
+3. Retreats - High-ticket offering, transformative experiences
+
+**Business Strategy:**
+- Multiple price points for different client segments
+- Recurring revenue through workshops
+- Premium positioning through retreats
+- Community engagement and brand loyalty
+
+### Content Pages
+**Blog/Stories:** Dynamic content platform for SEO, engagement, and thought leadership
+**Privacy Policy:** Legal compliance, builds trust, required for GDPR and cookie consent

@@ -1,0 +1,402 @@
+{
+  "version": "0.4",
+  "title": "Shop - Fine Art Prints",
+  "type": "section",
+  "content": [
+    {
+      "id": "fineart_intro",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {"unit": "px", "size": 1200},
+        "padding": {"unit": "px", "top": 80, "right": 20, "bottom": 40, "left": 20},
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "_title": "Fine Art Introduction"
+      },
+      "elements": [
+        {
+          "id": "fineart_intro_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "fineart_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Fine Art Prints",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#1A1A1A",
+                "typography_font_size": {"unit": "px", "size": 48},
+                "typography_font_size_tablet": {"unit": "px", "size": 38},
+                "typography_font_size_mobile": {"unit": "px", "size": 30}
+              }
+            },
+            {
+              "id": "fineart_subtitle",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 20px; max-width: 800px; margin: 20px auto 40px; line-height: 1.7;'>Hand-crafted fine art prints featuring the acclaimed City Spirit Collection. Each piece is created through meticulous long exposure techniques, extensive layering, and individual frame curation—a labor-intensive artistic process resulting in museum-quality works. Professionally framed, mounted, and delivered with a certificate of authenticity.</p><p style='text-align: center; color: #888888; font-size: 16px; font-style: italic; margin-top: 30px;'>Printed by The Print Space, London's premier fine art printing specialists.</p>",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fineart_sizes",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "padding": {"unit": "px", "top": 40, "right": 20, "bottom": 80, "left": 20},
+        "background_background": "classic",
+        "background_color": "#F8F8F8",
+        "_title": "Print Sizes Grid"
+      },
+      "elements": [
+        {
+          "id": "size_a3plus",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 50},
+            "width_tablet": {"unit": "%", "size": 50},
+            "width_mobile": {"unit": "%", "size": 100},
+            "padding": {"unit": "px", "top": 30, "right": 30, "bottom": 30, "left": 30}
+          },
+          "elements": [
+            {
+              "id": "size_a3plus_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "[uc_local]assets/images/shop/fineart-a3plus.jpg"},
+                "image_size": "large",
+                "hover_animation": "grow"
+              }
+            },
+            {
+              "id": "size_a3plus_name",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "A3+ (329 × 483mm)",
+                "header_size": "h3",
+                "align": "center",
+                "title_color": "#1A1A1A",
+                "typography_font_size": {"unit": "px", "size": 28},
+                "margin": {"unit": "px", "top": 25}
+              }
+            },
+            {
+              "id": "size_a3plus_desc",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 16px; line-height: 1.6; margin: 15px auto;'>Perfect for intimate spaces. Fully framed with museum-grade mounting, ready to hang with premium fixings included.</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "size_a3plus_price",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "£375",
+                "header_size": "h4",
+                "align": "center",
+                "title_color": "#D4AF37",
+                "typography_font_size": {"unit": "px", "size": 36},
+                "typography_font_weight": "700",
+                "margin": {"unit": "px", "top": 15}
+              }
+            },
+            {
+              "id": "size_a3plus_features",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<ul style='font-size: 14px; color: #888888; line-height: 1.8; max-width: 280px; margin: 15px auto; list-style: none; padding: 0;'><li>✓ Certificate of Authenticity</li><li>✓ Premium Frame & Mount</li><li>✓ Ready to Hang</li><li>✓ Archival Quality</li></ul>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "size_a3plus_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Enquire Now",
+                "align": "center",
+                "button_type": "default",
+                "size": "md",
+                "background_color": "#1A1A1A",
+                "color": "#FFFFFF",
+                "typography_font_size": {"unit": "px", "size": 16},
+                "padding": {"unit": "px", "top": 12, "right": 35, "bottom": 12, "left": 35},
+                "border_radius": {"unit": "px", "size": 4},
+                "margin": {"unit": "px", "top": 20}
+              }
+            }
+          ]
+        },
+        {
+          "id": "size_a2",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 50},
+            "width_tablet": {"unit": "%", "size": 50},
+            "width_mobile": {"unit": "%", "size": 100},
+            "padding": {"unit": "px", "top": 30, "right": 30, "bottom": 30, "left": 30}
+          },
+          "elements": [
+            {
+              "id": "size_a2_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "[uc_local]assets/images/shop/fineart-a2.jpg"},
+                "image_size": "large",
+                "hover_animation": "grow"
+              }
+            },
+            {
+              "id": "size_a2_name",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "A2 (420 × 594mm)",
+                "header_size": "h3",
+                "align": "center",
+                "title_color": "#1A1A1A",
+                "typography_font_size": {"unit": "px", "size": 28},
+                "margin": {"unit": "px", "top": 25}
+              }
+            },
+            {
+              "id": "size_a2_desc",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 16px; line-height: 1.6; margin: 15px auto;'>A striking presence for living spaces and professional environments. Museum-quality framing with conservation-grade materials.</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "size_a2_price",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "£720",
+                "header_size": "h4",
+                "align": "center",
+                "title_color": "#D4AF37",
+                "typography_font_size": {"unit": "px", "size": 36},
+                "typography_font_weight": "700",
+                "margin": {"unit": "px", "top": 15}
+              }
+            },
+            {
+              "id": "size_a2_features",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<ul style='font-size: 14px; color: #888888; line-height: 1.8; max-width: 280px; margin: 15px auto; list-style: none; padding: 0;'><li>✓ Certificate of Authenticity</li><li>✓ Premium Frame & Mount</li><li>✓ Ready to Hang</li><li>✓ Archival Quality</li></ul>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "size_a2_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Enquire Now",
+                "align": "center",
+                "button_type": "default",
+                "size": "md",
+                "background_color": "#1A1A1A",
+                "color": "#FFFFFF",
+                "typography_font_size": {"unit": "px", "size": 16},
+                "padding": {"unit": "px", "top": 12, "right": 35, "bottom": 12, "left": 35},
+                "border_radius": {"unit": "px", "size": 4},
+                "margin": {"unit": "px", "top": 20}
+              }
+            }
+          ]
+        },
+        {
+          "id": "size_a1",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 50},
+            "width_tablet": {"unit": "%", "size": 50},
+            "width_mobile": {"unit": "%", "size": 100},
+            "padding": {"unit": "px", "top": 30, "right": 30, "bottom": 30, "left": 30}
+          },
+          "elements": [
+            {
+              "id": "size_a1_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "[uc_local]assets/images/shop/fineart-a1.jpg"},
+                "image_size": "large",
+                "hover_animation": "grow"
+              }
+            },
+            {
+              "id": "size_a1_name",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "A1 (594 × 841mm)",
+                "header_size": "h3",
+                "align": "center",
+                "title_color": "#1A1A1A",
+                "typography_font_size": {"unit": "px", "size": 28},
+                "margin": {"unit": "px", "top": 25}
+              }
+            },
+            {
+              "id": "size_a1_desc",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 16px; line-height: 1.6; margin: 15px auto;'>Command attention with this gallery-standard format. Ideal for feature walls and spaces that deserve a statement piece.</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "size_a1_price",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "£1,200",
+                "header_size": "h4",
+                "align": "center",
+                "title_color": "#D4AF37",
+                "typography_font_size": {"unit": "px", "size": 36},
+                "typography_font_weight": "700",
+                "margin": {"unit": "px", "top": 15}
+              }
+            },
+            {
+              "id": "size_a1_features",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<ul style='font-size: 14px; color: #888888; line-height: 1.8; max-width: 280px; margin: 15px auto; list-style: none; padding: 0;'><li>✓ Certificate of Authenticity</li><li>✓ Premium Frame & Mount</li><li>✓ Ready to Hang</li><li>✓ Archival Quality</li></ul>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "size_a1_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Enquire Now",
+                "align": "center",
+                "button_type": "default",
+                "size": "md",
+                "background_color": "#1A1A1A",
+                "color": "#FFFFFF",
+                "typography_font_size": {"unit": "px", "size": 16},
+                "padding": {"unit": "px", "top": 12, "right": 35, "bottom": 12, "left": 35},
+                "border_radius": {"unit": "px", "size": 4},
+                "margin": {"unit": "px", "top": 20}
+              }
+            }
+          ]
+        },
+        {
+          "id": "size_a0",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 50},
+            "width_tablet": {"unit": "%", "size": 50},
+            "width_mobile": {"unit": "%", "size": 100},
+            "padding": {"unit": "px", "top": 30, "right": 30, "bottom": 30, "left": 30}
+          },
+          "elements": [
+            {
+              "id": "size_a0_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "[uc_local]assets/images/shop/fineart-a0.jpg"},
+                "image_size": "large",
+                "hover_animation": "grow"
+              }
+            },
+            {
+              "id": "size_a0_name",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "A0 (841 × 1189mm)",
+                "header_size": "h3",
+                "align": "center",
+                "title_color": "#1A1A1A",
+                "typography_font_size": {"unit": "px", "size": 28},
+                "margin": {"unit": "px", "top": 25}
+              }
+            },
+            {
+              "id": "size_a0_desc",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 16px; line-height: 1.6; margin: 15px auto;'>The ultimate statement piece. A museum-scale work of art for collectors and spaces that demand the extraordinary.</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "size_a0_price",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "£1,425",
+                "header_size": "h4",
+                "align": "center",
+                "title_color": "#D4AF37",
+                "typography_font_size": {"unit": "px", "size": 36},
+                "typography_font_weight": "700",
+                "margin": {"unit": "px", "top": 15}
+              }
+            },
+            {
+              "id": "size_a0_features",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<ul style='font-size: 14px; color: #888888; line-height: 1.8; max-width: 280px; margin: 15px auto; list-style: none; padding: 0;'><li>✓ Certificate of Authenticity</li><li>✓ Premium Frame & Mount</li><li>✓ Ready to Hang</li><li>✓ Archival Quality</li></ul>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "size_a0_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Enquire Now",
+                "align": "center",
+                "button_type": "default",
+                "size": "md",
+                "background_color": "#1A1A1A",
+                "color": "#FFFFFF",
+                "typography_font_size": {"unit": "px", "size": 16},
+                "padding": {"unit": "px", "top": 12, "right": 35, "bottom": 12, "left": 35},
+                "border_radius": {"unit": "px", "size": 4},
+                "margin": {"unit": "px", "top": 20}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

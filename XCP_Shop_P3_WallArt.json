@@ -1,0 +1,326 @@
+{
+  "version": "0.4",
+  "title": "Shop - Wall Art",
+  "type": "section",
+  "content": [
+    {
+      "id": "wallart_intro",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {"unit": "px", "size": 1200},
+        "padding": {"unit": "px", "top": 80, "right": 20, "bottom": 60, "left": 20},
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "_title": "Wall Art Introduction"
+      },
+      "elements": [
+        {
+          "id": "wallart_intro_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "wallart_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Wall Art Collection",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#1A1A1A",
+                "typography_font_size": {"unit": "px", "size": 48},
+                "typography_font_size_tablet": {"unit": "px", "size": 38},
+                "typography_font_size_mobile": {"unit": "px", "size": 30}
+              }
+            },
+            {
+              "id": "wallart_subtitle",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 20px; max-width: 800px; margin: 20px auto; line-height: 1.7;'>Cinematic imagery that transforms your space into a gallery. From intimate moments to bold statements, each piece is crafted to captivate and inspire—bringing the artistry of storytelling into your everyday environment.</p>",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wallart_showcase",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "min_height": {"unit": "vh", "size": 60},
+        "background_background": "classic",
+        "background_image": {"url": "[uc_local]assets/images/shop/wallart-hero.jpg"},
+        "background_position": "center center",
+        "background_size": "cover",
+        "background_overlay_background": "classic",
+        "background_overlay_color": "rgba(0,0,0,0.3)",
+        "content_position": "middle",
+        "padding": {"unit": "px", "top": 80, "right": 20, "bottom": 80, "left": 20},
+        "_title": "Wall Art Showcase"
+      },
+      "elements": [
+        {
+          "id": "wallart_showcase_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "wallart_showcase_text",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Where Moments Become Art",
+                "header_size": "h3",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_font_size": {"unit": "px", "size": 42},
+                "typography_font_size_mobile": {"unit": "px", "size": 28}
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wallart_sizes",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "padding": {"unit": "px", "top": 80, "right": 20, "bottom": 80, "left": 20},
+        "background_background": "classic",
+        "background_color": "#F8F8F8",
+        "_title": "Wall Art Sizes"
+      },
+      "elements": [
+        {
+          "id": "size_a4",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 33.33},
+            "width_tablet": {"unit": "%", "size": 50},
+            "width_mobile": {"unit": "%", "size": 100},
+            "padding": {"unit": "px", "top": 20, "right": 20, "bottom": 20, "left": 20}
+          },
+          "elements": [
+            {
+              "id": "size_a4_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "[uc_local]assets/images/shop/wallart-a4.jpg"},
+                "image_size": "medium",
+                "hover_animation": "grow"
+              }
+            },
+            {
+              "id": "size_a4_name",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "A4 Print",
+                "header_size": "h4",
+                "align": "center",
+                "title_color": "#1A1A1A",
+                "typography_font_size": {"unit": "px", "size": 24},
+                "margin": {"unit": "px", "top": 20}
+              }
+            },
+            {
+              "id": "size_a4_desc",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 15px; margin: 10px auto;'>Intimate and impactful. Perfect for desks, shelves, and creating curated gallery walls.</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "size_a4_price",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "From £95",
+                "header_size": "h5",
+                "align": "center",
+                "title_color": "#D4AF37",
+                "typography_font_size": {"unit": "px", "size": 28},
+                "margin": {"unit": "px", "top": 10}
+              }
+            }
+          ]
+        },
+        {
+          "id": "size_a3",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 33.33},
+            "width_tablet": {"unit": "%", "size": 50},
+            "width_mobile": {"unit": "%", "size": 100},
+            "padding": {"unit": "px", "top": 20, "right": 20, "bottom": 20, "left": 20}
+          },
+          "elements": [
+            {
+              "id": "size_a3_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "[uc_local]assets/images/shop/wallart-a3.jpg"},
+                "image_size": "medium",
+                "hover_animation": "grow"
+              }
+            },
+            {
+              "id": "size_a3_name",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "A3 Print",
+                "header_size": "h4",
+                "align": "center",
+                "title_color": "#1A1A1A",
+                "typography_font_size": {"unit": "px", "size": 24},
+                "margin": {"unit": "px", "top": 20}
+              }
+            },
+            {
+              "id": "size_a3_desc",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 15px; margin: 10px auto;'>The sweet spot between presence and versatility. Ideal for living rooms and hallways.</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "size_a3_price",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "From £250",
+                "header_size": "h5",
+                "align": "center",
+                "title_color": "#D4AF37",
+                "typography_font_size": {"unit": "px", "size": 28},
+                "margin": {"unit": "px", "top": 10}
+              }
+            }
+          ]
+        },
+        {
+          "id": "size_a3plus",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 33.33},
+            "width_tablet": {"unit": "%", "size": 50},
+            "width_mobile": {"unit": "%", "size": 100},
+            "padding": {"unit": "px", "top": 20, "right": 20, "bottom": 20, "left": 20}
+          },
+          "elements": [
+            {
+              "id": "size_a3plus_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "[uc_local]assets/images/shop/wallart-a3plus.jpg"},
+                "image_size": "medium",
+                "hover_animation": "grow"
+              }
+            },
+            {
+              "id": "size_a3plus_name",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "A3+ Print",
+                "header_size": "h4",
+                "align": "center",
+                "title_color": "#1A1A1A",
+                "typography_font_size": {"unit": "px", "size": 24},
+                "margin": {"unit": "px", "top": 20}
+              }
+            },
+            {
+              "id": "size_a3plus_desc",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 15px; margin: 10px auto;'>Make a statement without overwhelming your space. Perfect for bedrooms and feature walls.</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "size_a3plus_price",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "From £290",
+                "header_size": "h5",
+                "align": "center",
+                "title_color": "#D4AF37",
+                "typography_font_size": {"unit": "px", "size": 28},
+                "margin": {"unit": "px", "top": 10}
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wallart_cta",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "padding": {"unit": "px", "top": 60, "right": 20, "bottom": 80, "left": 20},
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "_title": "Wall Art CTA"
+      },
+      "elements": [
+        {
+          "id": "wallart_cta_col",
+          "elType": "column",
+          "settings": {
+            "width": {"unit": "%", "size": 100}
+          },
+          "elements": [
+            {
+              "id": "wallart_cta_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666; font-size: 18px; max-width: 700px; margin: 20px auto;'>Additional sizes available upon request. All wall art prints are available unframed or with custom framing options to suit your aesthetic.</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "wallart_cta_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Request Custom Size",
+                "align": "center",
+                "button_type": "primary",
+                "size": "lg",
+                "background_color": "#D4AF37",
+                "color": "#000000",
+                "typography_font_size": {"unit": "px", "size": 18},
+                "padding": {"unit": "px", "top": 16, "right": 40, "bottom": 16, "left": 40},
+                "border_radius": {"unit": "px", "size": 4},
+                "margin": {"unit": "px", "top": 30}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
