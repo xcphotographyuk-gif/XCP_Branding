@@ -1,0 +1,156 @@
+{
+  "version": "0.4",
+  "title": "XCP Contact Form - Short Qualifier",
+  "type": "section",
+  "content": [
+    {
+      "id": "contact-form-short",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 800
+        },
+        "gap": "default",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20"
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF"
+      },
+      "elements": [
+        {
+          "id": "form-heading",
+          "elType": "column",
+          "settings": {
+            "width": "100"
+          },
+          "elements": [
+            {
+              "id": "heading-widget",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Let's Talk About Your Project",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#1a1a1a"
+              }
+            },
+            {
+              "id": "text-widget",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666666;'>Complete this short form to begin the conversation. I'll respond within 24 hours.</p>",
+                "align": "center"
+              }
+            }
+          ]
+        },
+        {
+          "id": "form-column",
+          "elType": "column",
+          "settings": {
+            "width": "100"
+          },
+          "elements": [
+            {
+              "id": "contact-form-widget",
+              "elType": "widget",
+              "widgetType": "form",
+              "settings": {
+                "form_name": "XCP Contact - Short Qualifier",
+                "form_fields": [
+                  {
+                    "custom_id": "name",
+                    "field_type": "text",
+                    "field_label": "Your Name",
+                    "placeholder": "Full Name",
+                    "required": "yes",
+                    "width": "50"
+                  },
+                  {
+                    "custom_id": "email",
+                    "field_type": "email",
+                    "field_label": "Email Address",
+                    "placeholder": "your@email.com",
+                    "required": "yes",
+                    "width": "50"
+                  },
+                  {
+                    "custom_id": "company",
+                    "field_type": "text",
+                    "field_label": "Company/Brand Name",
+                    "placeholder": "Your Company",
+                    "required": "no",
+                    "width": "100"
+                  },
+                  {
+                    "custom_id": "photoshoot_type",
+                    "field_type": "select",
+                    "field_label": "Type of Photography",
+                    "placeholder": "Select service type",
+                    "required": "yes",
+                    "width": "50",
+                    "field_options": "Brand Photography\nProduct Photography\nCommercial/Advertising\nDocumentary/Reportage\nHeadshots & Portraits\nEvent Coverage\nOther"
+                  },
+                  {
+                    "custom_id": "budget",
+                    "field_type": "select",
+                    "field_label": "Budget Range",
+                    "placeholder": "Select budget range",
+                    "required": "yes",
+                    "width": "50",
+                    "field_options": "Under £500\n£500 - £1,000\n£1,000 - £2,500\n£2,500 - £5,000\n£5,000+\nPrefer to discuss"
+                  },
+                  {
+                    "custom_id": "timeline",
+                    "field_type": "select",
+                    "field_label": "Project Timeline",
+                    "placeholder": "When do you need this?",
+                    "required": "yes",
+                    "width": "50",
+                    "field_options": "ASAP (Within 2 weeks)\n1-2 months\n2-3 months\n3-6 months\n6+ months\nFlexible"
+                  },
+                  {
+                    "custom_id": "referral",
+                    "field_type": "select",
+                    "field_label": "How did you hear about me?",
+                    "placeholder": "Select source",
+                    "required": "no",
+                    "width": "50",
+                    "field_options": "Google Search\nSocial Media\nReferral\nPrevious Client\nOnline Portfolio\nOther"
+                  },
+                  {
+                    "custom_id": "message",
+                    "field_type": "textarea",
+                    "field_label": "Project Details",
+                    "placeholder": "Brief description of your project and what you're looking to achieve...",
+                    "required": "yes",
+                    "width": "100",
+                    "rows": "5"
+                  }
+                ],
+                "button_text": "Send Inquiry",
+                "button_size": "md",
+                "button_align": "left",
+                "submit_actions": ["email"],
+                "email_to": "your@email.com",
+                "email_subject": "New Contact Form Submission - [field id=\"company\"]",
+                "email_content": "New inquiry from: [field id=\"name\"]\nEmail: [field id=\"email\"]\nCompany: [field id=\"company\"]\n\nPhotography Type: [field id=\"photoshoot_type\"]\nBudget: [field id=\"budget\"]\nTimeline: [field id=\"timeline\"]\nReferral Source: [field id=\"referral\"]\n\nProject Details:\n[field id=\"message\"]",
+                "success_message": "Thank you for your inquiry! I'll review your project details and respond within 24 hours.",
+                "error_message": "There was an error submitting your form. Please try again or email me directly."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
