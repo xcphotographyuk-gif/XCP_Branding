@@ -209,7 +209,7 @@ If you've been putting off updating your:
 
 Now's the time.
 
-Investment starts at £800.
+Investment starts at £1,495.
 
 DM to chat or book: [link in bio]
 ```
@@ -242,7 +242,7 @@ DM to chat or book: [link in bio]
 - Got 2-5 responses/inquiries
 - Booked 1-3 consultation calls
 
-**Potential revenue:** £800-£3,500 from Week 1 bookings
+**Potential revenue:** £1,495+ from Week 1 bookings
 
 ---
 
@@ -586,12 +586,12 @@ DM to chat or book: [link in bio]
 ### Week 1:
 - **Effort:** 10-12 hours
 - **Result:** 2-5 consultation calls booked
-- **Revenue:** £800-£3,500 (1-3 bookings)
+- **Revenue:** £1,495+ per session (1-3 bookings)
 
 ### Month 1:
 - **Effort:** 10-12 hours/week
 - **Result:** 10-15 consultation calls
-- **Revenue:** £2,400-£10,500 (3-6 bookings)
+- **Revenue:** £4,485–£8,970+ (3–6 bookings at £1,495+)
 
 ### Month 3:
 - **Effort:** 10-12 hours/week + passive income setup

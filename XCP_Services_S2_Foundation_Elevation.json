@@ -1,0 +1,154 @@
+{
+  "version": "0.4",
+  "title": "Services – Foundation & Elevation",
+  "type": "page",
+  "content": [
+    {
+      "id": "service_package_1",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "_title": "Brand Foundation Package"
+      },
+      "elements": [
+        {
+          "id": "pkg1_img_col",
+          "elType": "column",
+          "settings": {},
+          "elements": [
+            {
+              "id": "pkg1_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "[uc_local]assets/images/services/package-foundation.jpg"
+                },
+                "image_size": "large"
+              }
+            }
+          ]
+        },
+        {
+          "id": "pkg1_content_col",
+          "elType": "column",
+          "settings": {
+            "content_position": "middle"
+          },
+          "elements": [
+            {
+              "id": "pkg1_label",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Perfect for New Brands</p>"
+              }
+            },
+            {
+              "id": "pkg1_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Brand Foundation",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "pkg1_description",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Essential imagery to establish your professional presence. Perfect for launching your brand or refreshing your visual identity.</p><p><strong>What's Included:</strong></p><ul><li>2-hour strategic photography session</li><li>Pre-session brand discovery consultation</li><li>20+ professionally edited images</li><li>Web & print ready formats</li><li>Commercial usage rights</li></ul><p><strong>Ideal For:</strong> Entrepreneurs, startups, solopreneurs establishing their visual identity</p>"
+              }
+            },
+            {
+              "id": "pkg1_cta",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Discuss This Package",
+                "link": {
+                  "url": "#contact"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "service_package_2",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "_title": "Brand Elevation Package"
+      },
+      "elements": [
+        {
+          "id": "pkg2_content_col",
+          "elType": "column",
+          "settings": {
+            "content_position": "middle"
+          },
+          "elements": [
+            {
+              "id": "pkg2_label",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Most Popular</p>"
+              }
+            },
+            {
+              "id": "pkg2_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Brand Elevation",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "pkg2_description",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Comprehensive imagery collection designed to elevate your brand across all platforms and marketing materials.</p><p><strong>What's Included:</strong></p><ul><li>Full-day strategic photography session</li><li>In-depth brand strategy consultation</li><li>50+ professionally edited images</li><li>Multiple locations/setups</li><li>Headshots, lifestyle, environmental portraits</li><li>Web, print & social media ready formats</li><li>Full commercial usage rights</li><li>6-month support for usage questions</li></ul><p><strong>Ideal For:</strong> Established businesses scaling their brand presence</p>"
+              }
+            },
+            {
+              "id": "pkg2_cta",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Elevate Your Brand",
+                "link": {
+                  "url": "#contact"
+                },
+                "button_type": "primary"
+              }
+            }
+          ]
+        },
+        {
+          "id": "pkg2_img_col",
+          "elType": "column",
+          "settings": {},
+          "elements": [
+            {
+              "id": "pkg2_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "[uc_local]assets/images/services/package-elevation.jpg"
+                },
+                "image_size": "large"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

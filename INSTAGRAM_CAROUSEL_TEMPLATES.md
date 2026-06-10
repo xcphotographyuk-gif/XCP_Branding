@@ -1,7 +1,7 @@
 # Instagram Carousel Templates for XC Photography
 ## Build Your Tribe Inspired Content Strategy
 
-**Purpose:** 10 ready-to-use carousel templates with slide-by-slide content, hooks, and CTAs. Inspired by Brock Johnson's "Build Your Tribe" Instagram growth methodology for photographers.
+**Purpose:** 10 ready-to-use carousel templates with slide-by-slide content, hooks, and CTAs for growing an engaged photography audience on Instagram.
 
 **Why Carousels Work:**
 - 2-3× more engagement than single images
@@ -1024,7 +1024,7 @@ First come, first served!
 
 ---
 
-## Build Your Tribe Method (Brock Johnson)
+## Carousel Growth Method
 
 **Key Principles:**
 1. **Value First** - Educate before you sell

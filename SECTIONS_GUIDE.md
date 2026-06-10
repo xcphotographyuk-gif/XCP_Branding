@@ -415,7 +415,7 @@ Logo grid displaying trusted brand partners.
 - Text Gray: #666666
 
 ### Typography (Already Set Globally)
-- Headings: Montserrat
+- Headings: Raleway
 - Body: Open Sans
 
 ### Spacing Standards

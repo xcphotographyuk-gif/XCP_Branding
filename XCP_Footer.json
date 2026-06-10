@@ -1,0 +1,246 @@
+{
+  "version": "0.4",
+  "title": "XCP Site Footer",
+  "type": "footer",
+  "content": [
+    {
+      "id": "footer-main",
+      "elType": "section",
+      "settings": {
+        "_title": "Footer Main",
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "footer-brand-col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 35,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "footer-logo",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "id": "",
+                  "url": "[uc_local]XCP_Logo_White.png",
+                  "alt": "XC Photography",
+                  "source": "library",
+                  "size": ""
+                },
+                "image_size": "full",
+                "align": "left"
+              }
+            },
+            {
+              "id": "footer-tagline",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Premium brand photography for businesses and personal brands that demand visual excellence.</p>"
+              }
+            },
+            {
+              "id": "footer-social",
+              "elType": "widget",
+              "widgetType": "social-icons",
+              "settings": {
+                "social_icon_list": [
+                  {
+                    "social_icon": {
+                      "value": "fab fa-instagram",
+                      "library": "fa-brands"
+                    },
+                    "link": {
+                      "url": "https://www.instagram.com/xcphotographyuk",
+                      "is_external": true,
+                      "nofollow": false
+                    }
+                  },
+                  {
+                    "social_icon": {
+                      "value": "fab fa-linkedin-in",
+                      "library": "fa-brands"
+                    },
+                    "link": {
+                      "url": "https://www.linkedin.com/in/xcphotographyuk",
+                      "is_external": true,
+                      "nofollow": false
+                    }
+                  },
+                  {
+                    "social_icon": {
+                      "value": "fab fa-facebook-f",
+                      "library": "fa-brands"
+                    },
+                    "link": {
+                      "url": "https://www.facebook.com/xcphotographyuk",
+                      "is_external": true,
+                      "nofollow": false
+                    }
+                  }
+                ],
+                "shape": "circle",
+                "columns": "inline",
+                "align": "left"
+              }
+            }
+          ]
+        },
+        {
+          "id": "footer-nav-col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 20,
+            "_column_size_tablet": 50,
+            "_column_size_mobile": 50
+          },
+          "elements": [
+            {
+              "id": "footer-nav-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Explore",
+                "header_size": "h5"
+              }
+            },
+            {
+              "id": "footer-nav-links",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<ul><li><a href='/'>Home</a></li><li><a href='/about'>About</a></li><li><a href='/services'>Services</a></li><li><a href='/portfolio'>Portfolio</a></li><li><a href='/stories'>Stories</a></li><li><a href='/contact'>Contact</a></li></ul>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "footer-services-col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 20,
+            "_column_size_tablet": 50,
+            "_column_size_mobile": 50
+          },
+          "elements": [
+            {
+              "id": "footer-services-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Services",
+                "header_size": "h5"
+              }
+            },
+            {
+              "id": "footer-services-links",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<ul><li><a href='/services/brand-photography'>Brand Photography</a></li><li><a href='/services/documentary'>Documentary Storytelling</a></li><li><a href='/services/corporate-portraits'>Corporate Portraits</a></li><li><a href='/services/events'>Event Coverage</a></li><li><a href='/services/editorial-work'>Editorial Work</a></li></ul>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "footer-contact-col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "footer-contact-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Get in Touch",
+                "header_size": "h5"
+              }
+            },
+            {
+              "id": "footer-contact-details",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div><p><a href='mailto:info@xcphotography.co.uk'>info@xcphotography.co.uk</a></p><p><a href='tel:+441234567890'>+44 (0) 1234 567890</a></p><p>Mon–Fri: 9:00 AM – 6:00 PM<br>Sat: By Appointment</p></div>"
+              }
+            },
+            {
+              "id": "footer-book-cta",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Book a Discovery Call",
+                "link": {
+                  "url": "/contact",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "footer-bottom",
+      "elType": "section",
+      "settings": {
+        "_title": "Footer Bottom Bar",
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "footer-copyright-col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 60,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100,
+            "vertical_align": "middle"
+          },
+          "elements": [
+            {
+              "id": "footer-copyright",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>&copy; 2026 XC Photography. All rights reserved. Registered in England &amp; Wales.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "footer-legal-col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 40,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100,
+            "vertical_align": "middle",
+            "text_align": "right"
+          },
+          "elements": [
+            {
+              "id": "footer-legal-links",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p><a href='/privacy-policy'>Privacy Policy</a> | <a href='/terms-and-conditions'>Terms &amp; Conditions</a> | <a href='/cookie-policy'>Cookie Policy</a></p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

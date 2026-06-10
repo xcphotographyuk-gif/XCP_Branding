@@ -2,7 +2,7 @@
 SEOTaggingEngine.lua - Professional SEO Tagging for Stock Photography
 Copyright 2025 XC Photography
 
-Based on SEO tagging best practices from Clemencey Wright methodology:
+Implements structured SEO tagging best practices for stock photography:
 - Hierarchical keyword structure (broad → specific)
 - Conceptual and emotional keywords alongside descriptive
 - Buyer-intent focused tagging
@@ -14,7 +14,7 @@ Based on SEO tagging best practices from Clemencey Wright methodology:
 local SEOTaggingEngine = {}
 
 -- ============================================================================
--- CLEMENCEY WRIGHT SEO TAGGING METHODOLOGY
+-- XCP STRUCTURED SEO TAGGING METHODOLOGY
 -- ============================================================================
 -- Key principles:
 -- 1. Start broad, get specific (hierarchy)
@@ -160,7 +160,7 @@ SEOTaggingEngine.TemporalKeywords = {
 -- KEYWORD GENERATION FUNCTIONS
 -- ============================================================================
 
--- Generate comprehensive keyword list following Clemencey Wright methodology
+-- Generate comprehensive keyword list using XCP structured keywording approach
 function SEOTaggingEngine.generateKeywords(style, options)
     local keywords = {}
     local usedKeywords = {}  -- Prevent duplicates

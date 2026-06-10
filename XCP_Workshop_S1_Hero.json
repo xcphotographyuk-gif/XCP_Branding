@@ -1,0 +1,260 @@
+{
+  "version": "0.4",
+  "title": "XCP Workshops: Hero + Overview — Section 1 of 3",
+  "type": "page",
+  "content": [
+    {
+      "id": "workshop_hero",
+      "elType": "section",
+      "settings": {
+        "_title": "Workshop Hero",
+        "layout": "full_width",
+        "background_image": {
+          "url": "[uc_local]assets/images/workshop-hero.jpg"
+        },
+        "content_position": "middle"
+      },
+      "elements": [
+        {
+          "id": "workshop_hero_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "workshop_eyebrow",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Curated Photography Experiences</p>"
+              }
+            },
+            {
+              "id": "workshop_hero_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Workshops With Xavier Clarke",
+                "header_size": "h1",
+                "align": "center"
+              }
+            },
+            {
+              "id": "workshop_hero_sub",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Not training courses. Not generic seminars. Curated photography experiences — in-person and online — designed to change the way you see and work. Every place is limited. Every day is designed.</p>"
+              }
+            },
+            {
+              "id": "workshop_hero_cta",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Reserve Your Place",
+                "link": {
+                  "url": "#workshop-booking",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workshop_trust_bar",
+      "elType": "section",
+      "settings": {
+        "_title": "Trust Bar",
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "workshop_trust_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "workshop_trust_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>✦ Maximum 10 participants per in-person event &nbsp;&nbsp;|&nbsp;&nbsp; ✦ All hospitality included &nbsp;&nbsp;|&nbsp;&nbsp; ✦ Post-processing editing session every workshop &nbsp;&nbsp;|&nbsp;&nbsp; ✦ Personalised camera settings card to keep</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workshop_philosophy",
+      "elType": "section",
+      "settings": {
+        "_title": "Workshop Philosophy",
+        "layout": "boxed",
+        "structure": "50_50"
+      },
+      "elements": [
+        {
+          "id": "philosophy_text_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 55,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "philosophy_eyebrow",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Why These Workshops Exist</p>"
+              }
+            },
+            {
+              "id": "philosophy_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Your Day Is Curated End to End",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "philosophy_body",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>XC Photography workshops are not courses with modules and certificates. They are immersive days — or shorter focused sessions — led by Xavier Clarke, designed around specific subjects, locations, and photographic challenges.</p><p>Every in-person workshop includes arrival refreshments, a curated lunch at a 4-star or independent venue, afternoon refreshments, and a post-processing editing session at the end of the day. You will leave with a personalised, printed camera settings card — a quick-reference guide covering the key exposure decisions and technique reminders relevant to that specific workshop. Something you can keep in your kit bag and use immediately.</p><p>Accommodation is available for multi-day formats, sourced at preferred rates from partner properties. The benchmark is Hotel du Vin or Malmaison standard. Nothing below 4-star will be recommended.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "philosophy_img_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 45,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "philosophy_img",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "[uc_local]assets/images/workshop-philosophy.jpg"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workshop_what_included",
+      "elType": "section",
+      "settings": {
+        "_title": "What Is Included",
+        "layout": "boxed",
+        "structure": "33"
+      },
+      "elements": [
+        {
+          "id": "included_col1",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_column_size_tablet": 50,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "inc_h1",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "All Hospitality",
+                "header_size": "h4"
+              }
+            },
+            {
+              "id": "inc_t1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Arrival coffee and pastries, a curated lunch, afternoon refreshments, and dinner for full-day workshops. Sourced from independent venues — nothing generic, nothing below 4-star standard.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "included_col2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_column_size_tablet": 50,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "inc_h2",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Post-Processing Session",
+                "header_size": "h4"
+              }
+            },
+            {
+              "id": "inc_t2",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Every workshop ends with a dedicated editing review. You work through your own images from the day alongside Xavier — developing a consistent editing style you can apply independently. Not a Lightroom tutorial. About finding your visual voice.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "included_col3",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "inc_h3",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Your Camera Settings Card",
+                "header_size": "h4"
+              }
+            },
+            {
+              "id": "inc_t3",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>A personalised, printed and laminated quick-reference card covering the key camera settings and exposure decisions for the specific subject matter of your workshop. You leave with something you can keep in your camera bag and use tomorrow.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

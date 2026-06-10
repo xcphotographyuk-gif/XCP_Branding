@@ -8,30 +8,28 @@
       "elType": "section",
       "settings": {
         "layout": "full_width",
-        "min_height": {"unit": "vh", "size": 75},
-        "background_background": "classic",
-        "background_image": {"url": "[uc_local]assets/images/portfolio-hero.jpg"},
-        "background_position": "center center",
-        "background_size": "cover",
-        "background_attachment": "scroll",
+        "background_image": {
+          "url": "[uc_local]assets/images/portfolio-hero.jpg"
+        },
         "content_position": "middle",
-        "padding": {"unit": "%", "top": 10, "right": 5, "bottom": 10, "left": 5}
+        "_title": "Portfolio Hero"
       },
       "elements": [
         {
           "id": "portfolio_hero_col",
           "elType": "column",
-          "settings": {"_column_size": 100},
+          "settings": {
+            "_column_size": 100
+          },
           "elements": [
             {
               "id": "portfolio_title",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
-                "title": "Stories That Resonate",
+                "title": "Portfolio",
                 "header_size": "h1",
-                "align": "center",
-                "color": "#ffffff"
+                "align": "center"
               }
             },
             {
@@ -39,7 +37,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align: center; font-size: 1.25rem; max-width: 700px; margin: 0 auto; color: #ffffff;'>Every image tells a story. Every story creates connection. See how brands like yours have elevated their visual presence and connected with their ideal audience.</p>",
+                "editor": "<p>A decade of visual work: gallery exhibitions, headline music photography, brand documentary, and street portraiture. Work that has been exhibited, published, and trusted by some of the UK's most respected venues and brands.</p>",
                 "align": "center"
               }
             }
@@ -51,21 +49,102 @@
       "id": "portfolio_intro",
       "elType": "section",
       "settings": {
-        "layout": "boxed",
-        "padding": {"unit": "px", "top": 80, "right": 20, "bottom": 40, "left": 20}
+        "layout": "full_width",
+        "_title": "Portfolio Categories"
       },
       "elements": [
         {
-          "id": "intro_col",
+          "id": "cat-col-1",
           "elType": "column",
-          "settings": {"_column_size": 100},
+          "settings": {
+            "_column_size": 33,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100,
+            "background_image": {
+              "url": "[uc_local]assets/images/portfolio-music.jpg"
+            }
+          },
           "elements": [
             {
-              "id": "intro_text",
+              "id": "cat-heading-1",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Music & Nightlife",
+                "header_size": "h3",
+                "align": "center"
+              }
+            },
+            {
+              "id": "cat-text-1",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<h2 style='text-align: center; margin-bottom: 20px;'>Your Brand. Your Audience. Your Story.</h2><p style='text-align: center; max-width: 800px; margin: 0 auto; font-size: 1.1rem;'>Browse work by category to see how strategic imagery transforms brands across industries—from corporate portraits that command respect to documentary storytelling that creates emotional connection.</p>"
+                "editor": "<p>Capturing the energy of the stage.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "cat-col-2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100,
+            "background_image": {
+              "url": "[uc_local]assets/images/portfolio-city.jpg"
+            }
+          },
+          "elements": [
+            {
+              "id": "cat-heading-2",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "City Spirit",
+                "header_size": "h3",
+                "align": "center"
+              }
+            },
+            {
+              "id": "cat-text-2",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Finding the soul of the street.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "cat-col-3",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100,
+            "background_image": {
+              "url": "[uc_local]assets/images/portfolio-portraits.jpg"
+            }
+          },
+          "elements": [
+            {
+              "id": "cat-heading-3",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Portraits & Branding",
+                "header_size": "h3",
+                "align": "center"
+              }
+            },
+            {
+              "id": "cat-text-3",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Telling stories, one person at a time.</p>"
               }
             }
           ]
@@ -77,13 +156,15 @@
       "elType": "section",
       "settings": {
         "layout": "boxed",
-        "padding": {"unit": "px", "top": 40, "right": 20, "bottom": 80, "left": 20}
+        "_title": "Portfolio Gallery"
       },
       "elements": [
         {
           "id": "featured_col",
           "elType": "column",
-          "settings": {"_column_size": 100},
+          "settings": {
+            "_column_size": 100
+          },
           "elements": [
             {
               "id": "featured_heading",
@@ -101,24 +182,48 @@
               "widgetType": "gallery",
               "settings": {
                 "gallery": [
-                  {"id": "", "url": "[uc_local]assets/images/portfolio-1.jpg"},
-                  {"id": "", "url": "[uc_local]assets/images/portfolio-2.jpg"},
-                  {"id": "", "url": "[uc_local]assets/images/portfolio-3.jpg"},
-                  {"id": "", "url": "[uc_local]assets/images/portfolio-4.jpg"},
-                  {"id": "", "url": "[uc_local]assets/images/portfolio-5.jpg"},
-                  {"id": "", "url": "[uc_local]assets/images/portfolio-6.jpg"},
-                  {"id": "", "url": "[uc_local]assets/images/portfolio-7.jpg"},
-                  {"id": "", "url": "[uc_local]assets/images/portfolio-8.jpg"},
-                  {"id": "", "url": "[uc_local]assets/images/portfolio-9.jpg"}
+                  {
+                    "id": "",
+                    "url": "[uc_local]assets/images/portfolio-1.jpg"
+                  },
+                  {
+                    "id": "",
+                    "url": "[uc_local]assets/images/portfolio-2.jpg"
+                  },
+                  {
+                    "id": "",
+                    "url": "[uc_local]assets/images/portfolio-3.jpg"
+                  },
+                  {
+                    "id": "",
+                    "url": "[uc_local]assets/images/portfolio-4.jpg"
+                  },
+                  {
+                    "id": "",
+                    "url": "[uc_local]assets/images/portfolio-5.jpg"
+                  },
+                  {
+                    "id": "",
+                    "url": "[uc_local]assets/images/portfolio-6.jpg"
+                  },
+                  {
+                    "id": "",
+                    "url": "[uc_local]assets/images/portfolio-7.jpg"
+                  },
+                  {
+                    "id": "",
+                    "url": "[uc_local]assets/images/portfolio-8.jpg"
+                  },
+                  {
+                    "id": "",
+                    "url": "[uc_local]assets/images/portfolio-9.jpg"
+                  }
                 ],
                 "columns": 3,
                 "columns_tablet": 2,
                 "columns_mobile": 1,
-                "gap": {"unit": "px", "size": 20},
                 "gallery_layout": "grid",
-                "link_to": "file",
-                "overlay_background": "yes",
-                "image_hover_animation": "grow"
+                "link_to": "file"
               }
             }
           ]

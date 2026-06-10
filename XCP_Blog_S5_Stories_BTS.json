@@ -1,0 +1,153 @@
+{
+  "version": "0.4",
+  "title": "Blog - Stories and Notes: Personal BTS",
+  "type": "page",
+  "content": [
+    {
+      "id": "blog_s5_stories",
+      "elType": "section",
+      "settings": {
+        "_title": "Blog: Stories and Notes - Header",
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "blog_s5_stories_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "blog_s5_stories_eyebrow",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Stories and Notes</p>"
+              }
+            },
+            {
+              "id": "blog_s5_stories_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "No Filter. No Spin. Just the Real Work.",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "blog_s5_stories_intro",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Not every post needs to be useful. Some things are just worth writing down. Personal projects I'm working on, places I have visited, things I have noticed, and the occasional behind-the-scenes look at what goes into a shoot without identifying the people in it. No names, no locations that would compromise anyone's privacy.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blog_s5_stories_subcats",
+      "elType": "section",
+      "settings": {
+        "_title": "Blog: Stories - Sub-categories",
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "blog_s5_bts_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "blog_s5_bts_head",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "From the Pit and the Studio Floor",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "blog_s5_bts_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>The stuff that does not make it into a portfolio. The failed attempts, the strange locations, the things I tried that did not work, and occasionally something that worked better than expected. General BTS notes written with client privacy protected.</p><p><a href='/stories/category/behind-the-lens'>Read behind-the-lens posts</a></p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "blog_s5_personal_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "blog_s5_personal_head",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Off the Clock, Camera in Hand",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "blog_s5_personal_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Work I do purely for myself, places I explore with a camera, and ongoing personal projects that may or may not ever become anything. Authentic, unfiltered and often unrelated to branding photography entirely.</p><p><a href='/stories/category/personal-projects'>See personal projects</a></p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blog_s5_stories_latest",
+      "elType": "section",
+      "settings": {
+        "_title": "Blog: Stories - Latest Posts",
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "blog_s5_stories_latest_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "blog_s5_stories_latest_head",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Latest: Stories, Notes and Behind-the-Scenes",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "blog_s5_stories_latest_note",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Add an Elementor Posts widget here, filtered to the category <strong>Stories and Notes</strong> (behind-the-lens, personal-projects), set to show 3 or 6 posts in a grid layout.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

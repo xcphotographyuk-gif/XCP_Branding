@@ -1,0 +1,126 @@
+{
+  "version": "0.4",
+  "title": "XCP Site Header & Navigation",
+  "type": "header",
+  "content": [
+    {
+      "id": "header-section",
+      "elType": "section",
+      "settings": {
+        "_title": "Main Header",
+        "layout": "full_width",
+        "sticky": "yes",
+        "sticky_on": [
+          "desktop",
+          "tablet",
+          "mobile"
+        ],
+        "sticky_offset": 0,
+        "sticky_effects_offset": 0
+      },
+      "elements": [
+        {
+          "id": "header-logo-col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_column_size_tablet": 70,
+            "_column_size_mobile": 70,
+            "vertical_align": "middle"
+          },
+          "elements": [
+            {
+              "id": "header-logo",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "id": "",
+                  "url": "[uc_local]XCP_Logo_White.png",
+                  "alt": "XC Photography logo",
+                  "source": "library",
+                  "size": ""
+                },
+                "image_size": "full",
+                "align": "left",
+                "link_to": "custom",
+                "link": {
+                  "url": "/",
+                  "is_external": false,
+                  "nofollow": false
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "header-nav-col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 55,
+            "_column_size_tablet": 0,
+            "_column_size_mobile": 0,
+            "vertical_align": "middle",
+            "hide_mobile": "hidden-mobile",
+            "hide_tablet": "hidden-tablet"
+          },
+          "elements": [
+            {
+              "id": "header-nav-menu",
+              "elType": "widget",
+              "widgetType": "nav-menu",
+              "settings": {
+                "menu": "primary",
+                "layout": "horizontal",
+                "align_items": "center"
+              }
+            }
+          ]
+        },
+        {
+          "id": "header-cta-col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 20,
+            "_column_size_tablet": 30,
+            "_column_size_mobile": 30,
+            "vertical_align": "middle",
+            "text_align": "right"
+          },
+          "elements": [
+            {
+              "id": "header-cta-button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Book a Call",
+                "link": {
+                  "url": "/contact",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "right",
+                "button_type": "outline",
+                "hide_desktop": "",
+                "hide_tablet": "hidden-tablet",
+                "hide_mobile": "hidden-mobile"
+              }
+            },
+            {
+              "id": "header-hamburger",
+              "elType": "widget",
+              "widgetType": "nav-menu",
+              "settings": {
+                "menu": "primary",
+                "layout": "dropdown",
+                "hide_desktop": "hidden-desktop",
+                "hide_tablet": "",
+                "hide_mobile": ""
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

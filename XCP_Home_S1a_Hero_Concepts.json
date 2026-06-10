@@ -1,0 +1,181 @@
+{
+  "version": "0.4",
+  "title": "XCP Home S1a - Hero + Concept Boxes",
+  "type": "page",
+  "content": [
+    {
+      "id": "hero-section",
+      "elType": "section",
+      "settings": {
+        "_title": "Hero Section",
+        "layout": "full_width",
+        "background_image": {
+          "url": "[uc_local]assets/images/hero/homepage-hero.jpg"
+        },
+        "content_position": "middle",
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "flex_justify_content": "center"
+      },
+      "elements": [
+        {
+          "id": "hero-content",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "content_position": "middle"
+          },
+          "elements": [
+            {
+              "id": "hero-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Branding & Documentary Photography That Demands Attention",
+                "header_size": "h1",
+                "align": "center"
+              }
+            },
+            {
+              "id": "hero-subheading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Iconic Imagery for Iconic Brands with an Edge",
+                "header_size": "h2",
+                "align": "center"
+              }
+            },
+            {
+              "id": "hero-cta-primary",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Book a Consultation",
+                "link": {
+                  "url": "/booking"
+                },
+                "align": "center"
+              }
+            },
+            {
+              "id": "hero-cta-secondary",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "View Portfolio",
+                "link": {
+                  "url": "/portfolio"
+                },
+                "align": "center",
+                "button_type": "outline"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "concept-boxes-section",
+      "elType": "section",
+      "settings": {
+        "_title": "Brand Story Concept Boxes",
+        "layout": "full_width"
+      },
+      "elements": [
+        {
+          "id": "concept-box-1",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_column_size_tablet": 50,
+            "_column_size_mobile": 100,
+            "content_position": "middle",
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "concept-text-1",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Striking Stories",
+                "header_size": "h3",
+                "align": "center"
+              }
+            }
+          ]
+        },
+        {
+          "id": "concept-box-2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_column_size_tablet": 50,
+            "_column_size_mobile": 100,
+            "content_position": "middle",
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "concept-text-2",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Embrace Individuality",
+                "header_size": "h3",
+                "align": "center"
+              }
+            }
+          ]
+        },
+        {
+          "id": "concept-box-3",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_column_size_tablet": 50,
+            "_column_size_mobile": 100,
+            "content_position": "middle",
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "concept-text-3",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Timeless Beauty",
+                "header_size": "h3",
+                "align": "center"
+              }
+            }
+          ]
+        },
+        {
+          "id": "concept-box-4",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_column_size_tablet": 50,
+            "_column_size_mobile": 100,
+            "content_position": "middle",
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "concept-text-4",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Unseen Confidence",
+                "header_size": "h3",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

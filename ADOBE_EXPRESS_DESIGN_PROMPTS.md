@@ -9,8 +9,8 @@
 3. Let AI generate the layout
 4. Add your photos where marked `[BLANK]`
 5. Copy/paste provided narrative text
-6. Customize colors to match XCP brand (teal #2DD4BF, charcoal #1F2937)
-7. Export (PDF for print, PNG for digital)
+6. Brand colours: black `#000000` backgrounds · platinum `#E8E4DC` accents · white `#FFFFFF` text
+7. Export (PDF for print at 300dpi, PNG for digital)
 
 ---
 
@@ -19,9 +19,9 @@
 ### Adobe Express Prompt:
 ```
 Create a modern professional tri-fold brochure for XC Photography brand photography services. 
-Clean, minimalist design with teal (#2DD4BF) and charcoal (#1F2937) color scheme.
-White background with teal accents.
-Sans-serif fonts (Open Sans or similar).
+Clean, minimal design with platinum (#E8E4DC) accents on pure black (#000000).
+Black background sections with white body text sections.
+Raleway font throughout — ExtraBold for headlines, Light for body.
 High-quality photography placeholders.
 
 FRONT PANEL (when folded):
@@ -131,8 +131,8 @@ Book your free 15-minute discovery call
 Create a modern product catalogue for XC Photography print shop. 
 8.5x11 inch layout, portrait orientation.
 Grid-based design showcasing photography prints, wall art, and gifts.
-Teal and charcoal color scheme with white background.
-Professional, gallery-like aesthetic.
+Pure black (#000000) and platinum (#E8E4DC) colour scheme, white page sections.
+Raleway font — ExtraBold headlines, Light body. Professional, gallery aesthetic.
 
 PAGE 1 (COVER):
 - Large featured product image [BLANK]
@@ -236,7 +236,8 @@ Perfect for gifts or your own space.
 ### Adobe Express Prompt:
 ```
 Create a workshop/education catalogue for XC Photography workshops and training.
-Modern, inspiring design with teal and charcoal color scheme.
+Modern, inspiring design with platinum (#E8E4DC) accents on black (#000000), white body pages.
+Raleway font — ExtraBold headlines, Light body.
 8.5x11 inch, portrait orientation.
 Include photos of photographers learning, behind-the-scenes teaching moments.
 
@@ -291,49 +292,50 @@ Personalized guidance tailored to your goals. Portfolio reviews, business strate
 **Online Courses**
 Learn at your own pace. Lifetime access to video lessons, resources, and community.
 
-**Beginner Workshop - "M43 Music Photography Fundamentals"**
-**What:** Master shooting live music with micro four-thirds gear
+**Beginner Workshop — "Brand Photography Fundamentals"**
+**What:** Master brand and documentary photography — light, composition, directing subjects
 **When:** Monthly sessions
-**Price:** £120 (4-hour hands-on workshop)
+**Price:** £295 per person (half-day, 4 hours)
 **You'll Learn:**
-- Low-light photography techniques
-- Gear selection and settings
-- Movement and timing
-- Post-processing workflow
+- Natural light and available light techniques
+- Composing editorial and documentary frames
+- Directing non-model subjects confidently
+- Post-processing workflow basics
+- When to shoot yourself vs. when to hire a photographer
 
-Limited to 6 students. Includes venue access and model release.
+Limited to 8 participants. Includes location access.
 
-**Advanced Workshop - "Building Your Photography Business"**
-**What:** Turn your photography passion into profit
-**Price:** £250 (full-day intensive)
+**Advanced Workshop — "Building Your Photography Business"**
+**What:** Turn your photography practice into a premium business
+**Price:** £595 per person (full-day intensive)
 **Covers:**
-- Pricing and packages
-- Client acquisition
-- Marketing strategies
+- Premium pricing and packages
+- Client acquisition and outreach
+- Marketing and visibility strategy
 - Portfolio development
-- Legal and contracts
+- Contracts and client management
 
-Includes workbook, templates, and 30-day email support.
+Includes workbook, templates, and 30-day email follow-up.
 
 **1-on-1 Mentoring Packages:**
 
-**Bronze: £150/month**
-- 2 x 30-min video calls
-- Email support
+**Foundation: £500/month**
+- 2 × 45-min video calls
+- Email support between sessions
 - Portfolio review
 
-**Silver: £275/month**
-- 4 x 45-min video calls
+**Growth: £850/month**
+- 4 × 60-min video calls
 - Priority email support
-- Portfolio + website review
+- Portfolio and website review
 - Marketing strategy session
 
-**Gold: £450/month**
-- Weekly 60-min calls
+**Intensive: £1,500/month**
+- Weekly 90-min calls
 - Unlimited email support
 - Full business audit
-- Personalized action plan
-- Accountability partnership
+- Personalised action plan
+- Accountability and weekly check-ins
 
 **Back Page:**
 **Ready to grow your skills?**
@@ -376,54 +378,54 @@ FOOTER:
 **Header Subtitle:**
 "Professional photography shouldn't be stiff and uncomfortable. Our approach is authentic, relaxed, and focused on you."
 
-**PACKAGE 1: ESSENTIALS**
-**£450**
-
-**What's Included:**
-- 45-minute session
-- 1 location
-- 15 edited high-res images
-- Online gallery
-- Commercial rights
-
-**Best For:**
-Solo professionals needing updated headshots and personal brand images
-
----
-
-**PACKAGE 2: PROFESSIONAL** ⭐ Most Popular
-**£850**
-
-**What's Included:**
-- 90-minute session
-- Up to 2 locations
-- 30 edited high-res images
-- Pre-session consultation
-- Styling guide
-- Online gallery
-- Commercial rights
-
-**Best For:**
-Small businesses, entrepreneurs, coaches who need diverse brand content
-
----
-
-**PACKAGE 3: PREMIUM**
-**£1,500**
+**PACKAGE 1: BRAND FOUNDATION**
+**£1,495**
 
 **What's Included:**
 - Half-day session (4 hours)
-- Multiple locations
-- 60+ edited high-res images
+- 1–2 locations
+- 30+ edited high-res images
 - Pre-session planning call
-- Styling consultation
-- Shot list creation
-- Online gallery + USB
-- Commercial rights
-- Priority editing (3-day delivery)
+- Online gallery
+- Full commercial rights
 
 **Best For:**
-Established businesses needing extensive brand library for year-round marketing
+Businesses and professionals needing a strong, usable brand image library to launch or relaunch their visual presence
+
+---
+
+**PACKAGE 2: BRAND ELEVATION** ⭐ Most Popular
+**£2,500**
+
+**What's Included:**
+- Full-day session (8 hours)
+- Multiple locations
+- 60+ edited high-res images
+- Pre-session consultation
+- Shot list and location planning
+- Online gallery
+- Full commercial rights
+
+**Best For:**
+Established businesses needing deep, diverse brand content for a full year of marketing
+
+---
+
+**PACKAGE 3: BRAND TRANSFORMATION**
+**£4,500**
+
+**What's Included:**
+- Multi-day campaign (up to 2 days)
+- Multiple locations and environments
+- 100+ edited high-res images
+- Full pre-production: brief, shot list, location scout
+- Priority editing (5-day delivery)
+- Online gallery + USB archive
+- Full commercial rights
+- One round of selects review
+
+**Best For:**
+Brands relaunching, scaling, or building a comprehensive visual identity from scratch
 
 ---
 
@@ -434,13 +436,13 @@ Established businesses needing extensive brand library for year-round marketing
 - Raw files: £200
 
 **CTA:**
-**Book Your Free 15-Minute Discovery Call**
-Let's chat about your vision and goals (no obligation)
+**Book Your Free Discovery Call**
+Let's discuss your project — no obligation
 
-📞 [Your Phone] | ✉️ hello@xcphotography.co | 🌐 xcphotography.co
+📞 [Your Phone] | ✉️ hello@xcphotography.co.uk | 🌐 xcphotography.co
 
 **Footer:**
-All prices listed are starting rates. Custom packages available. Payment plans offered.
+All prices listed are starting rates. Sessions scale with scope. Custom packages available.
 
 ---
 
@@ -549,15 +551,19 @@ Reply "SPRING" to claim your spot
 ## Design Tips for All Materials
 
 ### Brand Colors:
-- Primary: Teal #2DD4BF
-- Secondary: Charcoal #1F2937
-- Accent: White #FFFFFF
-- Optional: Light gray #F3F4F6 for backgrounds
+- Primary background: Black `#000000`
+- Primary accent: Platinum `#E8E4DC` (warm white gold)
+- Body text on light sections: `#333333`
+- Headings on light sections: `#000000`
+- White text on black: `#FFFFFF`
+- Hotel du Vin credential only: Gold `#d4af37` — nowhere else
 
 ### Fonts:
-- Headlines: Montserrat Bold or similar sans-serif
-- Body: Open Sans Regular or similar
-- Keep it clean and modern
+- All fonts: **Raleway** (available in Adobe Express)
+  - Headlines: Raleway ExtraBold (800) or Bold (700)
+  - Subheadings: Raleway SemiBold (600)
+  - Body: Raleway Light (300) or Regular (400)
+  - Labels/caps: Raleway SemiBold (600), letter-spacing 2–3px
 
 ### Image Quality:
 - Use only your best work

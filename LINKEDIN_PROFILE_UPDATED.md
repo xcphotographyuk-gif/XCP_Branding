@@ -7,45 +7,40 @@
 
 ## HEADLINE (120 characters max)
 ```
-Brand & Documentary Photographer | Brighton-Based | Serving UK & International Clients | Authentic Visual Storytelling
+Brand & Documentary Photographer | London & Brighton | I make images that stop the scroll | XC Photography
 ```
 
 ---
 
-## ABOUT SECTION (Client-Benefit Focused with AIDA Structure)
+## ABOUT SECTION (Xavier's authentic voice — intent, understanding, personality)
 
 ```
-Your brand deserves more than stock photos and staged smiles.
+Your brand deserves more than stock photos and staged smiles. But it also deserves more than a photographer who shows up, fires off some frames, and hands you a folder of images you're not sure what to do with.
 
-Think about the last time an image stopped your scroll. Not because it was perfect, but because it felt real. That's what your customers are craving. That's what builds trust before they ever reach out.
+Before I pick up a camera, I need to understand three things: who you actually are, who you're trying to reach, and what it is about you that will make those people stop and pay attention. Not your elevator pitch. The actual thing.
 
-Whether your team needs authentic brand imagery that reflects your culture, or your workspace walls are crying out for fine art that tells your story, professional photography isn't just about looking good. It's about being remembered.
+That conversation shapes every decision I make — the location, the light, the timing, the moments I chase and the ones I let go. I've spent 15+ years making the technical side of photography invisible — it's automatic, and it needs to be. I've trained seriously in the discipline of brand photography, with formal rigour behind every decision I make. But technique alone doesn't make the image. Understanding does.
 
-📸 SERVICES THAT ELEVATE YOUR BRAND:
-• Brand Photography Sessions (from £1,495) - headshots, team culture, office environments that capture who you really are
-• Documentary-Style Business Photography - behind-the-scenes storytelling that connects with your audience
-• Live Event & Performance Coverage - authentic moments from conferences, launches, and corporate events
-• Professional Headshots & Portraits - confidence-building imagery for individuals and teams
-• Workshops, Retreats & Photography Courses - learn to see your brand through a new lens
-• Fine Art & Wall Art for Your Space - museum-quality prints that transform offices, hotels, and homes into branded experiences
+What I'm actually creating — every time — is a photograph with intent behind it. One that shows the personality of the person, place, or thing — not a performance of it. An image that makes your ideal client stop mid-scroll and think: that's exactly who I want to work with.
 
-🎯 YOUR RESULTS:
-• Stand out in crowded newsfeeds with imagery that stops the scroll
-• Build trust with authentic visuals that reflect your real culture
-• Create 6-12 months of social content from a single session
-• Transform bland office walls into conversation-starting brand statements
-• Own your visual narrative instead of relying on generic stock photos
+📸 WHAT THIS LOOKS LIKE IN PRACTICE:
+• Brand Photography Sessions (from £1,495) — your real self, captured with purpose
+• Documentary Business Photography — authentic storytelling, not staged scenarios
+• Corporate Portraits & Team Photography — images that say something, not just show something
+• Event & Performance Coverage — the real moments, preserved properly
+• Workshops & 1-2-1 Mentoring — helping others see their brand through a sharper lens
+• Fine Art & Wall Art — imagery that transforms the spaces where your clients meet you
 
-💡 THE ROI OF REAL IMAGERY:
-When potential clients land on your website or LinkedIn, your visuals speak first. Generic photos say "we're like everyone else." Authentic brand photography says "we're worth paying attention to." The difference shows in engagement rates, conversion rates, and how long people stay on your pages.
+🎯 WHAT CHANGES FOR YOUR BUSINESS:
+• Your ideal clients find you — and arrive already trusting you
+• Your visual presence finally matches the quality of what you actually deliver
+• One well-planned session creates 6–12 months of content across every platform
+• You stop sending people to your website with a quiet apology attached
 
-Fine art for your workspace isn't decoration. It's identity. It tells clients, employees, and partners what you value the moment they walk through the door. From corporate offices to hotel collections, curated imagery shapes how people feel about your space.
+📍 London & Brighton. UK-wide. Internationally for the right projects.
 
-Serving clients across the UK and internationally from Brighton. Available for on-location shoots, multi-day projects, and custom commissions.
-
-🌐 PORTFOLIO & BOOKING: www.xcphotography.co/services
-
-Ready to see what authentic visual storytelling could do for your brand? Book your free discovery call and let's explore how the right imagery can transform your business presence, both online and in your physical space.
+Ready to talk about what your brand actually needs? Book a free 20-minute discovery call — no pitch, just a real conversation about whether this is the right fit.
+🌐 xcphotography.co
 ```
 
 ---

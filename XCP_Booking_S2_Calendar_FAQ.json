@@ -1,0 +1,150 @@
+{
+  "version": "0.4",
+  "title": "Booking – Calendar & FAQ",
+  "type": "page",
+  "content": [
+    {
+      "id": "booking_main",
+      "elType": "section",
+      "settings": {
+        "_title": "Booking Calendar & Info",
+        "layout": "boxed",
+        "structure": "20"
+      },
+      "elements": [
+        {
+          "id": "booking_calendar_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 60,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "booking_calendar_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Choose a Time That Works for You",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "booking_calendar_embed",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<!-- Overture / Calendly booking calendar embed -->\n<!-- Replace the src URL below with your Overture or Calendly embed URL -->\n<!-- Overture embed: Overture Admin → Booking Pages → Embed Code -->\n<!-- Calendly embed: calendly.com/[your-username]/discovery-call -->\n<div>\n  <iframe\n    src=\"https://calendly.com/xcphotographyuk/discovery-call\"\n    width=\"100%\"\n    height=\"700\"\n    title=\"Book a Discovery Call with XC Photography\"\n    loading=\"lazy\"\n    sandbox=\"allow-forms allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox\"\n  ></iframe>\n</div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "booking_info_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 40,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "booking_what_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "What Happens on the Call?",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "booking_what_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<ul><li>🎯 &nbsp;<strong>We learn about your brand</strong>: your goals, your audience, and the story you want to tell.</li><li>📸 &nbsp;<strong>We explore your vision</strong>: the look, feel, and emotional impact you're aiming for.</li><li>💡 &nbsp;<strong>We share ideas</strong>: concepts, locations, and approaches that fit your brand perfectly.</li><li>✅ &nbsp;<strong>We assess fit</strong>, because the best work happens when photographer and client are genuinely aligned.</li><li>📋 &nbsp;<strong>Next steps</strong>: if it's a great fit, we'll outline a tailored proposal. No pressure either way.</li></ul>"
+              }
+            },
+            {
+              "id": "booking_duration_box",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div><p>The Details</p><p>📅 <strong>30 minutes</strong> via Zoom or phone<br>📍 Available UK-wide<br>🎁 <strong>Completely free</strong>, no obligation<br>⏱ Response within 24 hours of booking</p></div>"
+              }
+            },
+            {
+              "id": "booking_prefer_form",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Prefer to reach out by email first? <a href='/contact'>Use the contact form →</a></p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "booking_faq",
+      "elType": "section",
+      "settings": {
+        "_title": "Booking FAQ",
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "faq_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "faq_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Frequently Asked Questions",
+                "header_size": "h2",
+                "align": "center"
+              }
+            },
+            {
+              "id": "faq_accordion",
+              "elType": "widget",
+              "widgetType": "accordion",
+              "settings": {
+                "tabs": [
+                  {
+                    "tab_title": "Do I need to prepare anything before the call?",
+                    "tab_content": "Not at all. Just show up as you are. If you have a few thoughts about your brand or some visual references you love, feel free to share them, but it's absolutely not required. The conversation will naturally surface everything we need."
+                  },
+                  {
+                    "tab_title": "How quickly will I get a proposal after the call?",
+                    "tab_content": "If we're a great fit, you'll receive a tailored proposal within 48 hours of your discovery call. It will include a recommended package, an outline of what we'll create together, and investment details."
+                  },
+                  {
+                    "tab_title": "What if I'm not ready to book but want to learn more?",
+                    "tab_content": "That's completely fine. The discovery call is exactly the right place to start. There's no expectation to commit on the day. Many of our best client relationships began with a relaxed exploratory conversation months before the shoot."
+                  },
+                  {
+                    "tab_title": "Do you work with clients outside Brighton?",
+                    "tab_content": "Yes, XC Photography shoots across the UK. We travel for the right brief. Travel costs for locations more than 50 miles from Brighton are outlined transparently in your proposal."
+                  },
+                  {
+                    "tab_title": "What if I need to reschedule?",
+                    "tab_content": "No problem at all. Use the reschedule link in your booking confirmation email, or email info@xcphotography.co.uk and we'll sort it within the hour."
+                  }
+                ],
+                "active_item": 1,
+                "title_html_tag": "h4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -270,7 +270,7 @@ end
 
 -- ============================================================================
 -- STOCK PHOTOGRAPHY CONTENT GENERATOR (Alamy, Shutterstock, Getty, etc.)
--- Uses SEOTaggingEngine based on Clemencey Wright methodology
+-- Uses SEOTaggingEngine structured keywording approach
 -- ============================================================================
 
 local function generateStockContent(photo, metadata, prefs, options)
@@ -289,13 +289,13 @@ local function generateStockContent(photo, metadata, prefs, options)
         photographerCredit = photographerCredit,
     }
     
-    -- Generate SEO-optimized title using Clemencey Wright methodology
+    -- Generate SEO-optimized title using XCP structured keywording
     local title = SEOTaggingEngine.generateTitle(style, seoOptions)
     
     -- Generate comprehensive description
     local caption = SEOTaggingEngine.generateDescription(style, seoOptions)
     
-    -- Generate extensive keywords (following Clemencey Wright's hierarchical approach)
+    -- Generate extensive keywords using XCP hierarchical keywording approach
     local keywords = SEOTaggingEngine.generateKeywords(style, seoOptions)
     
     -- Optimize keywords for the specific platform
@@ -318,7 +318,7 @@ local function generateStockContent(photo, metadata, prefs, options)
     -- Platform-specific notes with keyword count
     local recommendation = SEOTaggingEngine.getKeywordRecommendation(stockPlatform)
     local platformNotes = {
-        alamy = string.format("Optimized for Alamy (Clemencey Wright SEO methodology). %d keywords generated (recommended: %d-%d). %s", 
+        alamy = string.format("Optimized for Alamy. %d keywords generated (recommended: %d-%d). %s", 
             #optimizedKeywords, recommendation.min, recommendation.max, releaseInfo),
         shutterstock = string.format("Optimized for Shutterstock. %d keywords. %s", #optimizedKeywords, releaseInfo),
         getty = string.format("Optimized for Getty Images. %d keywords. %s", #optimizedKeywords, releaseInfo),
@@ -336,7 +336,7 @@ local function generateStockContent(photo, metadata, prefs, options)
         instructions = platformNotes[stockPlatform] or platformNotes.general,
         modelRelease = modelRelease,
         propertyRelease = propertyRelease,
-        seoMethodology = "Clemencey Wright",
+        seoMethodology = "three-layer keywording",
     }
 end
 
@@ -866,7 +866,7 @@ local function multiPlatformPrep()
                             instructionsText = instructionsText .. "Description:\n" .. stockContent.caption .. "\n\n"
                             instructionsText = instructionsText .. "Keywords (" .. stockContent.keywordCount .. "):\n" .. stockContent.keywords .. "\n\n"
                             instructionsText = instructionsText .. "Notes: " .. stockContent.instructions .. "\n"
-                            instructionsText = instructionsText .. "SEO Methodology: Clemencey Wright\n\n"
+                            instructionsText = instructionsText .. "SEO Methodology: three-layer keywording (specific / mid-level / general)\n\n"
                         end
                         
                         photo:setRawMetadata('instructions', instructionsText)
@@ -991,7 +991,7 @@ local function multiPlatformPrep()
             message = message .. "\nYou can copy/paste the appropriate text for each platform."
             
             if props.prepareStock then
-                message = message .. "\n\n📷 Stock keywords generated using Clemencey Wright SEO methodology."
+                message = message .. "\n\n📷 Stock keywords generated using XCP structured three-layer keywording."
             end
             
             if props.privacyMode then

@@ -1,0 +1,259 @@
+{
+  "version": "0.4",
+  "title": "XCP Thank You / Confirmation Page",
+  "type": "page",
+  "content": [
+    {
+      "id": "thankyou_hero",
+      "elType": "section",
+      "settings": {
+        "_title": "Thank You Hero",
+        "layout": "boxed",
+        "content_position": "middle"
+      },
+      "elements": [
+        {
+          "id": "thankyou_hero_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "thankyou_eyebrow",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Enquiry Received</p>"
+              }
+            },
+            {
+              "id": "thankyou_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Thank You — I'll Be in Touch Shortly",
+                "header_size": "h1",
+                "align": "center"
+              }
+            },
+            {
+              "id": "thankyou_intro",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Your enquiry has been received. I personally read every message and typically respond within 24 hours, Monday to Friday. Look out for a reply from info@xcphotography.co.uk — check your junk folder just in case.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thankyou_next_steps",
+      "elType": "section",
+      "settings": {
+        "_title": "What Happens Next",
+        "layout": "boxed",
+        "structure": "30"
+      },
+      "elements": [
+        {
+          "id": "thankyou_step1_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33
+          },
+          "elements": [
+            {
+              "id": "thankyou_step1_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "1. I Read Your Enquiry",
+                "header_size": "h3",
+                "align": "center"
+              }
+            },
+            {
+              "id": "thankyou_step1_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Every enquiry is read personally. I will review your project brief and consider how I can best serve your goals.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "thankyou_step2_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33
+          },
+          "elements": [
+            {
+              "id": "thankyou_step2_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "2. Discovery Call",
+                "header_size": "h3",
+                "align": "center"
+              }
+            },
+            {
+              "id": "thankyou_step2_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Within 24 hours I will reply to propose a short discovery call — no obligation, no sales pitch. Just an honest conversation about your vision and how photography can serve it.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "thankyou_step3_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33
+          },
+          "elements": [
+            {
+              "id": "thankyou_step3_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "3. Your Proposal",
+                "header_size": "h3",
+                "align": "center"
+              }
+            },
+            {
+              "id": "thankyou_step3_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>After our call, I will send a personalised proposal covering the shoot concept, deliverables, timeline, and investment. You choose whether to proceed — on your terms, in your own time.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thankyou_explore",
+      "elType": "section",
+      "settings": {
+        "_title": "While You Wait — Explore",
+        "layout": "boxed",
+        "structure": "30"
+      },
+      "elements": [
+        {
+          "id": "thankyou_explore_col1",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "thankyou_portfolio_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Browse the Portfolio",
+                "header_size": "h4",
+                "align": "center"
+              }
+            },
+            {
+              "id": "thankyou_portfolio_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "View Portfolio",
+                "link": {
+                  "url": "/portfolio",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "center"
+              }
+            }
+          ]
+        },
+        {
+          "id": "thankyou_explore_col2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "thankyou_services_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Explore Services",
+                "header_size": "h4",
+                "align": "center"
+              }
+            },
+            {
+              "id": "thankyou_services_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "View Services",
+                "link": {
+                  "url": "/services",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "center"
+              }
+            }
+          ]
+        },
+        {
+          "id": "thankyou_explore_col3",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "thankyou_about_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Read My Story",
+                "header_size": "h4",
+                "align": "center"
+              }
+            },
+            {
+              "id": "thankyou_about_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "About Xavier",
+                "link": {
+                  "url": "/about",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

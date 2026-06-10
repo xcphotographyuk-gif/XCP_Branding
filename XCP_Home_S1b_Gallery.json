@@ -1,0 +1,141 @@
+{
+  "version": "0.4",
+  "title": "XCP Home S1b - 4-Box Gallery Bar",
+  "type": "page",
+  "content": [
+    {
+      "id": "gallery-bar-section",
+      "elType": "section",
+      "settings": {
+        "_title": "4-Box Gallery Bar",
+        "layout": "full_width"
+      },
+      "elements": [
+        {
+          "id": "gallery-column-1",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_column_size_tablet": 50,
+            "_column_size_mobile": 100,
+            "background_image": {
+              "url": "[uc_local]assets/images/gallery-1.jpg"
+            }
+          },
+          "elements": [
+            {
+              "id": "gallery-text-1",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Brand Photography",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "gallery-desc-1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Visuals that elevate your brand and connect with the people who matter to your business.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "gallery-column-2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_column_size_tablet": 50,
+            "_column_size_mobile": 100,
+            "background_image": {
+              "url": "[uc_local]assets/images/gallery-2.jpg"
+            }
+          },
+          "elements": [
+            {
+              "id": "gallery-text-2",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Documentary Stories",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "gallery-desc-2",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Authentic moments that reveal the heart of your brand story.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "gallery-column-3",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_column_size_tablet": 50,
+            "_column_size_mobile": 100,
+            "background_image": {
+              "url": "[uc_local]assets/images/gallery-3.jpg"
+            }
+          },
+          "elements": [
+            {
+              "id": "gallery-text-3",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Portrait Sessions",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "gallery-desc-3",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Images that capture your authentic presence and build instant trust.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "gallery-column-4",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_column_size_tablet": 50,
+            "_column_size_mobile": 100,
+            "background_image": {
+              "url": "[uc_local]assets/images/gallery-4.jpg"
+            }
+          },
+          "elements": [
+            {
+              "id": "gallery-text-4",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Event Coverage",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "gallery-desc-4",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>The energy and emotion of your moments, preserved forever.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

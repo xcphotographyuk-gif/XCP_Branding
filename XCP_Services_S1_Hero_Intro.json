@@ -1,0 +1,82 @@
+{
+  "version": "0.4",
+  "title": "Services – Hero & Intro",
+  "type": "page",
+  "content": [
+    {
+      "id": "services_hero",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "background_image": {
+          "url": "[uc_local]assets/images/services/hero-services.jpg"
+        },
+        "content_position": "middle",
+        "_title": "Services Hero"
+      },
+      "elements": [
+        {
+          "id": "services_hero_col",
+          "elType": "column",
+          "settings": {},
+          "elements": [
+            {
+              "id": "services_hero_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Brand Photography in Brighton and Across the UK",
+                "header_size": "h1",
+                "align": "center"
+              }
+            },
+            {
+              "id": "services_hero_subhead",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Strategic photography packages built on a decade of active visual work, designed to help the right brands show up in a way that commands genuine attention.</p>",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "services_intro",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "_title": "Services Intro"
+      },
+      "elements": [
+        {
+          "id": "services_intro_col",
+          "elType": "column",
+          "settings": {},
+          "elements": [
+            {
+              "id": "services_intro_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "What You're Actually Getting",
+                "header_size": "h2",
+                "align": "center"
+              }
+            },
+            {
+              "id": "services_intro_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>You're not buying photographs. You're getting a process that starts long before the camera comes out, and imagery that reflects who you actually are when it does. Every package is built around getting that part right first.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "version": "0.4",
+  "title": "XCP Contact: Why Xavier: Section 3 of 4",
+  "type": "page",
+  "content": [
+    {
+      "id": "contact_trust",
+      "elType": "section",
+      "settings": {
+        "_title": "Why Xavier",
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "contact_trust_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "trust_eyebrow",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Why Work With Xavier</p>"
+              }
+            },
+            {
+              "id": "trust_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Photography You Can Actually Use",
+                "header_size": "h2",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contact_trust_pillars",
+      "elType": "section",
+      "settings": {
+        "_title": "Trust Pillars",
+        "layout": "boxed",
+        "structure": "33"
+      },
+      "elements": [
+        {
+          "id": "trust_col1",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_column_size_tablet": 50,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "trust_p1_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Decade of Experience",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "trust_p1_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Over ten years shooting brands, artists, and live events across the UK and internationally. Every shoot is informed by real commercial experience, not just technique.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "trust_col2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_column_size_tablet": 50,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "trust_p2_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Strategic, Not Just Beautiful",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "trust_p2_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Great photography has a job to do. Every image is designed around your business goals, your audience, and where the images will be used. Looks matter. Results matter more.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "trust_col3",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "trust_p3_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Transparent Investment",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "trust_p3_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Sessions start from <strong>£1,495</strong>. Every proposal is tailored. No generic price lists, no hidden fees. You will know exactly what you are getting and what it costs before any commitment.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contact_trust_statement",
+      "elType": "section",
+      "settings": {
+        "_title": "Statement",
+        "layout": "boxed",
+        "background_image": {
+          "url": "[uc_local]assets/images/contact-statement.jpg"
+        },
+        "content_position": "middle"
+      },
+      "elements": [
+        {
+          "id": "trust_stmt_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "trust_stmt_text",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Trusted by businesses across Brighton, the UK, and internationally.",
+                "header_size": "h3",
+                "align": "center"
+              }
+            },
+            {
+              "id": "trust_stmt_sub",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>From independent brands and creative studios to heritage venues and global artists, XC Photography delivers imagery that earns its place in your marketing, year after year.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

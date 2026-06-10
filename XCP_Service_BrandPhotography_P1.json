@@ -1,0 +1,286 @@
+{
+  "version": "0.4",
+  "title": "XCP Service: Brand Photography — Sub-page",
+  "type": "page",
+  "content": [
+    {
+      "id": "brand_hero",
+      "elType": "section",
+      "settings": {
+        "_title": "Brand Photography Hero",
+        "layout": "full_width",
+        "background_image": {
+          "url": "[uc_local]assets/images/brand-photography-hero.jpg"
+        },
+        "content_position": "middle"
+      },
+      "elements": [
+        {
+          "id": "brand_hero_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "brand_eyebrow",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Brand Photography Session</p>"
+              }
+            },
+            {
+              "id": "brand_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Imagery That Tells Your Brand Story",
+                "header_size": "h1",
+                "align": "center"
+              }
+            },
+            {
+              "id": "brand_subtitle",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>A focused brand photography session designed to give you a complete library of professional images that reflect who you are, what you do, and the clients you want to attract. From £1,495.</p>"
+              }
+            },
+            {
+              "id": "brand_cta_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Enquire About Your Brand Session",
+                "link": {
+                  "url": "/contact",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brand_overview",
+      "elType": "section",
+      "settings": {
+        "_title": "Brand Photography Overview",
+        "layout": "boxed",
+        "structure": "20"
+      },
+      "elements": [
+        {
+          "id": "brand_overview_text_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 60,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "brand_overview_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "What a Brand Photography Session Includes",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "brand_overview_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>A brand photography session with XCP Photography is more than a shoot — it is a strategic visual content creation day built around your business goals.</p><p>We begin with a pre-shoot creative consultation to understand your brand, your audience, and your content needs. On the day, we work through a planned shot list covering portraits, lifestyle, product, workspace, and detail shots tailored to your brand identity.</p><ul><li>Pre-shoot creative brief and location scouting</li><li>Full day or half day shoot options</li><li>Multiple look and location changes</li><li>Up to 80 edited digital images (full day)</li><li>24–48 hour turnaround on your gallery</li><li>Commercial usage licence included</li><li>Optional: hair and makeup coordination</li></ul>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "brand_overview_image_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 40,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "brand_overview_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "[uc_local]assets/images/brand-photography-overview.jpg"
+                },
+                "image_size": "large"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brand_investment",
+      "elType": "section",
+      "settings": {
+        "_title": "Investment",
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "brand_investment_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "brand_investment_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Investment",
+                "header_size": "h2",
+                "align": "center"
+              }
+            },
+            {
+              "id": "brand_investment_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Brand photography sessions start from <strong>£1,495</strong>. This is a qualifying investment — it reflects the level of creative and commercial commitment required to produce imagery that genuinely moves your business forward.</p><p>The average XCP brand photography project runs between £3,500 and £5,000, reflecting the full scope of a multi-location, multi-look session with pre-shoot consultation and post-shoot editing to publication standard. Hair, makeup, videography, and location hire are quoted separately based on your needs.</p><p>A detailed proposal with transparent pricing is provided after your discovery call — no surprise costs, no pressure.</p>"
+              }
+            },
+            {
+              "id": "brand_investment_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Start Your Enquiry",
+                "link": {
+                  "url": "/contact",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brand_portfolio_samples",
+      "elType": "section",
+      "settings": {
+        "_title": "Brand Photography Portfolio Samples",
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "brand_portfolio_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "brand_portfolio_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Recent Brand Photography Work",
+                "header_size": "h2",
+                "align": "center"
+              }
+            },
+            {
+              "id": "brand_portfolio_note",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align:center;\">Add an Elementor Gallery widget here filtered to your 'Brand Photography' portfolio category. Go to Widget → Gallery, or use the Portfolio widget if you have Elementor Pro.</p>"
+              }
+            },
+            {
+              "id": "brand_portfolio_cta_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "View Full Portfolio",
+                "link": {
+                  "url": "/portfolio",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brand_closing_cta",
+      "elType": "section",
+      "settings": {
+        "_title": "Brand Photography Closing CTA",
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "brand_closing_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "brand_closing_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Ready to Tell Your Brand Story?",
+                "header_size": "h2",
+                "align": "center"
+              }
+            },
+            {
+              "id": "brand_closing_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Enquire today. I respond personally within 24 hours and we will start with a no-pressure discovery call to see whether we are the right fit.</p>"
+              }
+            },
+            {
+              "id": "brand_closing_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Enquire Now",
+                "link": {
+                  "url": "/contact",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

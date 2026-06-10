@@ -1,0 +1,237 @@
+{
+  "version": "0.4",
+  "title": "XCP Workshops: Deposit Booking Form — Section 3 of 3",
+  "type": "page",
+  "content": [
+    {
+      "id": "workshop_booking_section",
+      "elType": "section",
+      "settings": {
+        "_title": "Workshop Booking Form",
+        "layout": "boxed",
+        "structure": "60_40",
+        "css_id": "workshop-booking"
+      },
+      "elements": [
+        {
+          "id": "booking_form_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 60,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "booking_eyebrow",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Reserve Your Place</p>"
+              }
+            },
+            {
+              "id": "booking_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Secure Your Spot",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "booking_intro",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Fill in the form and I will come back to you within 24 hours to confirm availability, answer any questions, and arrange the deposit. Places are limited and confirmed only on receipt of deposit.</p>"
+              }
+            },
+            {
+              "id": "workshop_booking_form",
+              "elType": "widget",
+              "widgetType": "form",
+              "settings": {
+                "form_name": "XCP Workshop Booking",
+                "form_fields": [
+                  {
+                    "field_type": "text",
+                    "field_label": "Your Name",
+                    "field_id": "name",
+                    "required": "yes",
+                    "placeholder": "First and last name",
+                    "width": "50",
+                    "custom_id": "name",
+                    "_id": "wb_name"
+                  },
+                  {
+                    "field_type": "email",
+                    "field_label": "Email Address",
+                    "field_id": "email",
+                    "required": "yes",
+                    "placeholder": "hello@youremail.co.uk",
+                    "width": "50",
+                    "custom_id": "email",
+                    "_id": "wb_email"
+                  },
+                  {
+                    "field_type": "tel",
+                    "field_label": "Phone Number",
+                    "field_id": "phone",
+                    "required": "no",
+                    "placeholder": "+44 (0) 7XXX XXXXXX",
+                    "width": "50",
+                    "custom_id": "phone",
+                    "_id": "wb_phone"
+                  },
+                  {
+                    "field_type": "select",
+                    "field_label": "Workshop",
+                    "field_id": "workshop_name",
+                    "required": "yes",
+                    "field_options": "The Monopoly Run — London (£895 / £1,595 couple)\nSound & Celluloid — Brighton Walk (£595)\nBrand Photography Fundamentals — Online 3-session (£395)\nMusic Photography Masterclass — Online (£195)\nPortfolio Review & Mentoring — 1-to-1 Online (£295)\nBespoke Private Workshop — enquire for pricing",
+                    "width": "100",
+                    "custom_id": "workshop_name",
+                    "_id": "wb_workshop"
+                  },
+                  {
+                    "field_type": "select",
+                    "field_label": "Number of Places",
+                    "field_id": "places",
+                    "required": "yes",
+                    "field_options": "1 place\n2 places (couple)\n3 places\n4 places\nGroup enquiry — contact me",
+                    "width": "50",
+                    "custom_id": "places",
+                    "_id": "wb_places"
+                  },
+                  {
+                    "field_type": "date",
+                    "field_label": "Preferred Date (if known)",
+                    "field_id": "preferred_date",
+                    "required": "no",
+                    "placeholder": "When works best for you?",
+                    "width": "50",
+                    "custom_id": "preferred_date",
+                    "_id": "wb_date"
+                  },
+                  {
+                    "field_type": "textarea",
+                    "field_label": "Anything I Should Know",
+                    "field_id": "notes",
+                    "required": "no",
+                    "placeholder": "Any questions, dietary requirements, specific goals, or anything else that will help me prepare your day.",
+                    "rows": 4,
+                    "width": "100",
+                    "custom_id": "notes",
+                    "_id": "wb_notes"
+                  },
+                  {
+                    "field_type": "acceptance",
+                    "field_label": "I understand that places are held for 48 hours pending deposit payment. If no deposit is received within 48 hours, my place will be released.",
+                    "field_id": "deposit_consent",
+                    "required": "yes",
+                    "width": "100",
+                    "custom_messages": "yes",
+                    "required_message": "Please confirm you understand the deposit policy before submitting.",
+                    "custom_id": "deposit_consent",
+                    "_id": "wb_deposit_ack"
+                  },
+                  {
+                    "field_type": "acceptance",
+                    "field_label": "I have read and agree to the <a href=\"/privacy-policy\">Privacy Policy</a> and consent to XC Photography contacting me about my booking enquiry.",
+                    "field_id": "privacy_consent",
+                    "required": "yes",
+                    "width": "100",
+                    "custom_messages": "yes",
+                    "required_message": "Please confirm you have read and agree to the Privacy Policy.",
+                    "custom_id": "privacy_consent",
+                    "_id": "wb_privacy"
+                  }
+                ],
+                "submit_actions": [
+                  "email"
+                ],
+                "email_to": "info@xcphotography.co.uk",
+                "email_subject": "Workshop Booking: [field id=\"workshop_name\"] — [field id=\"name\"]",
+                "email_content": "Name: [field id=\"name\"]\nEmail: [field id=\"email\"]\nPhone: [field id=\"phone\"]\nWorkshop: [field id=\"workshop_name\"]\nPlaces: [field id=\"places\"]\nPreferred Date: [field id=\"preferred_date\"]\n\nNotes:\n[field id=\"notes\"]",
+                "button_text": "Send My Booking Enquiry",
+                "button_size": "lg",
+                "button_align": "left",
+                "success_message": "Thank you — your workshop enquiry is on its way. I will be in touch within 24 hours to confirm availability and arrange your deposit.",
+                "error_message": "Something went wrong. Please email me directly at info@xcphotography.co.uk."
+              }
+            }
+          ]
+        },
+        {
+          "id": "booking_info_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 40,
+            "_column_size_tablet": 100,
+            "_column_size_mobile": 100
+          },
+          "elements": [
+            {
+              "id": "deposit_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "About Deposits",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "deposit_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<ol><li><strong>Submit this form.</strong> Takes less than 2 minutes.</li><li><strong>I confirm availability</strong> within 24 hours and answer any questions.</li><li><strong>You pay the deposit</strong> to confirm your place. Places are held for 48 hours pending payment.</li><li><strong>Your day is confirmed</strong> and I send joining information, any prep notes, and what to bring.</li></ol>"
+              }
+            },
+            {
+              "id": "deposit_policy_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Deposit Policy",
+                "header_size": "h4"
+              }
+            },
+            {
+              "id": "deposit_policy_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>The deposit amount varies by workshop and will be confirmed when I respond to your enquiry. As a guide:</p><ul><li><strong>In-person full day:</strong> 50% of the total on booking, remainder 14 days before the workshop date.</li><li><strong>Online workshops:</strong> Full payment required to confirm your place.</li><li><strong>Private/bespoke:</strong> Terms agreed individually — deposit typically 50%.</li></ul><p>Deposits are non-refundable if you cancel within 14 days of the workshop date. Transfers to another date are accommodated where possible.</p>"
+              }
+            },
+            {
+              "id": "deposit_divider",
+              "elType": "widget",
+              "widgetType": "divider",
+              "settings": {}
+            },
+            {
+              "id": "deposit_contact_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Questions First?",
+                "header_size": "h4"
+              }
+            },
+            {
+              "id": "deposit_contact_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p><strong>Xavier Clarke</strong><br>XC Photography<br><a href=\"mailto:info@xcphotography.co.uk\">info@xcphotography.co.uk</a><br><br>Brighton-based · UK &amp; International<br>Mon–Fri 9am–6pm · Sat by appointment</p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
